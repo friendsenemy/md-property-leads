@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Property Leads â Probate Lead Generator</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ð </text></svg>">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- âââ Header âââ -->
+    <header class="header">
+        <div class="header-title">
+            <div>
+                <div class="logo">MD PROPERTY LEADS</div>
+                <div class="subtitle">Maryland Probate Lead Generator</div>
+            </div>
+        </div>
+        <div class="header-actions">
+            <span id="lastScrapeInfo" style="font-size:0.8rem; color:var(--text-dim); font-family:var(--font-mono);">
+                Loading...
+            </span>
+            <button class="btn btn-export" id="exportBtn">
+                <span class="icon">â¬</span> Export Skip Trace
+            </button>
+            <button class="btn btn-primary" id="scrapeBtn">
+                <span class="icon">â¡</span> Run Scrape Now
+            </button>
+        </div>
+    </header>
+
+    <!-- âââ Scrape Status Bar âââ -->
+    <div class="scrape-bar" id="scrapeBar">
+        <div class="spinner"></div>
+        <span class="message" id="scrapeMessage">Starting scrape pipeline...</span>
+    </div>
+
+    <!-- âââ Stats Grid âââ -->
+    <div class="stats-grid">
+        <div class="stat-card cyan">
+            <div class="stat-label">Total Leads</div>
+            <div class="stat-value" id="statTotal">0</div>
+        </div>
+        <div class="stat-card purple">
+            <div class="stat-label">New Leads</div>
+            <div class="stat-value" id="statNew">0</div>
+        </div>
+        <div class="stat-card pink">
+            <div class="stat-label">Hot Leads</div>
+            <div class="stat-value" id="statHot">0</div>
+        </div>
+        <div class="stat-card yellow">
+            <div class="stat-label">Contacted</div>
+            <div class="stat-value" id="statContacted">0</div>
+        </div>
+        <div class="stat-card green">
+            <div class="stat-label">Properties</div>
+            <div class="stat-value" id="statProperties">0</div>
+        </div>
+    </div>
+
+    <!-- âââ Controls âââ -->
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">ð</span>
+            <input type="text" id="searchInput" placeholder="Search by name, address, or county...">
+        </div>
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="new">New</button>
+            <button class="filter-btn" data-filter="hot">Hot</button>
+            <button class="filter-btn" data-filter="contacted">Contacted</button>
+            <button class="filter-btn" data-filter="closed">Closed</button>
+        </div>
+    </div>
+
+    <!-- âââ Leads Table âââ -->
+    <div class="leads-container">
+        <table class="leads-table">
+            <thead>
+                <tr>
+                    <th onclick="App.sortBy('name')">
+                        Name <span class="sort-arrow">â</span>
+                    </th>
+                    <th onclick="App.sortBy('date_of_death')">
+                        Date of Death <span class="sort-arrow">â</span>
+                    </th>
+                    <th>Property Address</th>
+                    <th onclick="App.sortBy('county')">
+                        County <span class="sort-arrow">â</span>
+                    </th>
+                    <th onclick="App.sortBy('assessed_value')">
+                        Assessed Value <span class="sort-arrow">â</span>
+                    </th>
+                    <th onclick="App.sortBy('status')">
+                        Status <span class="sort-arrow">â</span>
+                    </th>
+                    <th onclick="App.sortBy('created_at')">
+                        Found <span class="sort-arrow">â</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="leadsBody">
+            </tbody>
+        </table>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display:none;">
+            <div class="icon">ðï¸</div>
+            <h3>No leads yet</h3>
+            <p>Click "Run Scrape Now" to scan Maryland obituaries and cross-reference property records. Leads will appear here automatically.</p>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <span id="pageInfo">No leads found</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="prevBtn" onclick="App.prevPage()">â Prev</button>
+                <button class="page-btn" id="nextBtn" onclick="App.nextPage()">Next â</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- âââ Lead Detail Modal âââ -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Lead Details</h2>
+            <button class="modal-close" id="modalClose">â</button>
+        </div>
+        <div class="modal-body" id="modalBody">
+            <!-- Populated by JS -->
+        </div>
+        <div class="modal-footer">
+            <select id="leadStatusSelect">
+                <option value="new">New</option>
+                <option value="hot">Hot</option>
+                <option value="contacted">Contacted</option>
+                <option value="closed">Closed</option>
+            </select>
+            <textarea id="leadNotes" placeholder="Add notes..."></textarea>
+            <button class="btn btn-primary" id="saveLeadBtn">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
