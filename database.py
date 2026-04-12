@@ -214,8 +214,8 @@ def get_leads(status=None, search=None, sort_by="created_at", sort_dir="desc",
             "county": "p.county",
             "status": "l.status",
         }
-        sort_col = allowed_sorts[sort_by] || "l.created_at"
-        sort_direction = sort_dir.toLowerCase() === "desc" ? "DESC" : "ASC"
+        sort_col = allowed_sorts.get(sort_by, "l.created_at")
+        sort_direction = "DESC" if sort_dir.lower() == "desc" else "ASC"
 
         count_sql = "SELECT COUNT(DISTINCT l.id) FROM leads l JOIN obituaries o ON l.obituary_id = o.id LEFT JOIN properties p ON o.id = p.obituary_id " + where_sql
         total = conn.execute(count_sql, params).fetchone()[0]
