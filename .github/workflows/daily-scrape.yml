@@ -2,22 +2,31 @@ name: Daily Scrape Trigger
 
 on:
   schedule:
-    # Run at 6:00 AM EST (11:00 UTC) every day
-    - cron: '0 11 * * *'
+    # Run at 12:00 PM EST/EDT (16:00-17:00 UTC) every day
+    # Using 16:00 UTC = noon EDT (summer) / 11 AM EST (winter)
+    - cron: '0 16 * * *'
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
   trigger-scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Wake up Render service and trigger scrape
+      - name: Wake up Render service
         run: |
-          # First hit the homepage to wake up the service
-          echo "Waking up service..."
+          echo "Waking up Render service..."
           curl -s -o /dev/null -w "%{http_code}" ${{ secrets.RENDER_URL }}/ || true
-          sleep 10
-          # Trigger the scrape
+          echo "Waiting 60s for service to spin up..."
+          sleep 60
+
+      - name: Trigger daily scrape
+        run: |
           echo "Triggering daily scrape..."
-          curl -s -X POST ${{ secrets.RENDER_URL }}/api/scrape/start \
+          RESPONSE=$(curl -s -X POST ${{ secrets.RENDER_URL }}/api/scrape/start \
             -H "Content-Type: application/json" \
-            -w "\nHTTP Status: %{http_code}\n"
+            -w "\nHTTP_STATUS:%{http_code}")
+          echo "$RESPONSE"
+          STATUS=$(echo "$RESPONSE" | grep -o 'HTTP_STATUS:[0-9]*' | cut -d: -f2)
+          if [ "$STATUS" -ne 200 ]; then
+            echo "Scrape trigger failed with status $STATUS"
+            exit 1
+          fi
