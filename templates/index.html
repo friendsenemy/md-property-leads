@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Property Leads Ã¢ÂÂ Pre-Probate Lead Generator</title>
+    <title>MD Property Leads — Pre-Probate Lead Generator</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>Ã°ÂÂÂ </text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
 </head>
 <body>
 
 <div class="app-container">
 
-    <!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Header Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
+    <!-- ═══ Header ═══ -->
     <header class="header">
         <div class="header-title">
             <div>
@@ -30,21 +30,21 @@
                 Loading...
             </span>
             <button class="btn btn-export" id="exportBtn">
-                <span class="icon">Ã¢Â¬Â</span> Export Skip Trace
+                <span class="icon">⬇</span> Export Skip Trace
             </button>
             <button class="btn btn-primary" id="scrapeBtn">
-                <span class="icon">Ã¢ÂÂ¡</span> Run Scrape Now
+                <span class="icon">⚡</span> Run Scrape Now
             </button>
         </div>
     </header>
 
-    <!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Scrape Status Bar Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
+    <!-- ═══ Scrape Status Bar ═══ -->
     <div class="scrape-bar" id="scrapeBar">
         <div class="spinner"></div>
         <span class="message" id="scrapeMessage">Starting scrape pipeline...</span>
     </div>
 
-    <!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Stats Grid Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
+    <!-- ═══ Stats Grid ═══ -->
     <div class="stats-grid">
         <div class="stat-card cyan">
             <div class="stat-label">Total Leads</div>
@@ -68,10 +68,10 @@
         </div>
     </div>
 
-    <!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Controls Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
+    <!-- ═══ Controls ═══ -->
     <div class="controls">
         <div class="search-box">
-            <span class="search-icon">Ã°ÂÂÂ</span>
+            <span class="search-icon">🔍</span>
             <input type="text" id="searchInput" placeholder="Search by name, address, or county...">
         </div>
         <div class="filter-group">
@@ -83,29 +83,29 @@
         </div>
     </div>
 
-    <!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Leads Table Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
+    <!-- ═══ Leads Table ═══ -->
     <div class="leads-container">
         <table class="leads-table">
             <thead>
                 <tr>
                     <th onclick="App.sortBy('name')">
-                        Name <span class="sort-arrow">Ã¢ÂÂ</span>
+                        Name <span class="sort-arrow">↕</span>
                     </th>
                     <th onclick="App.sortBy('date_of_death')">
-                        Date of Death <span class="sort-arrow">Ã¢ÂÂ</span>
+                        Date of Death <span class="sort-arrow">↕</span>
                     </th>
                     <th>Property Address</th>
                     <th onclick="App.sortBy('county')">
-                        County <span class="sort-arrow">Ã¢ÂÂ</span>
+                        County <span class="sort-arrow">↕</span>
                     </th>
                     <th onclick="App.sortBy('assessed_value')">
-                        Assessed Value <span class="sort-arrow">Ã¢ÂÂ</span>
+                        Assessed Value <span class="sort-arrow">↕</span>
                     </th>
                     <th onclick="App.sortBy('status')">
-                        Status <span class="sort-arrow">Ã¢ÂÂ</span>
+                        Status <span class="sort-arrow">↕</span>
                     </th>
                     <th onclick="App.sortBy('created_at')">
-                        Found <span class="sort-arrow">Ã¢ÂÂ</span>
+                        Found <span class="sort-arrow">↕</span>
                     </th>
                 </tr>
             </thead>
@@ -115,7 +115,7 @@
 
         <!-- Empty State -->
         <div class="empty-state" id="emptyState" style="display:none;">
-            <div class="icon">Ã°ÂÂÂÃ¯Â¸Â</div>
+            <div class="icon">🏚️</div>
             <h3>No leads yet</h3>
             <p>Click "Run Scrape Now" to scan Maryland obituaries and cross-reference property records. Leads will appear here automatically.</p>
         </div>
@@ -124,20 +124,20 @@
         <div class="pagination">
             <span id="pageInfo">No leads found</span>
             <div class="pagination-buttons">
-                <button class="page-btn" id="prevBtn" onclick="App.prevPage()">Ã¢ÂÂ Prev</button>
-                <button class="page-btn" id="nextBtn" onclick="App.nextPage()">Next Ã¢ÂÂ</button>
+                <button class="page-btn" id="prevBtn" onclick="App.prevPage()">← Prev</button>
+                <button class="page-btn" id="nextBtn" onclick="App.nextPage()">Next →</button>
             </div>
         </div>
     </div>
 
 </div>
 
-<!-- Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Lead Detail Modal Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ -->
+<!-- ═══ Lead Detail Modal ═══ -->
 <div class="modal-overlay" id="modalOverlay">
     <div class="modal">
         <div class="modal-header">
             <h2>Lead Details</h2>
-            <button class="modal-close" id="modalClose">Ã¢ÂÂ</button>
+            <button class="modal-close" id="modalClose">✕</button>
         </div>
         <div class="modal-body" id="modalBody">
             <!-- Populated by JS -->
@@ -158,4 +158,3 @@
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
-
