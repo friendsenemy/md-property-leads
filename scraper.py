@@ -297,7 +297,7 @@ def _parse_json_obituary(raw, source_label):
                 "date_of_birth": date_of_birth,
                 "age": raw.get("age"),
                 "city": city_data.get("fullName", "") if isinstance(city_data, dict) else str(city_data),
-                "state": state_data.get("code", "MD") if isinstance(state_data, dict) else str(state_data),
+                "state": (state_data.get("code") or "MD") if isinstance(state_data, dict) else (str(state_data) if state_data else "MD"),
                 "obituary_url": obituary_url,
                 "obituary_text": raw.get("obitSnippet", "") or "",
                 "survived_by": "",
