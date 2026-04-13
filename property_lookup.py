@@ -6,20 +6,22 @@ Uses the LICENSED dataset 9xq5-z8s2 which includes actual property owner
 names. Requires Socrata account credentials (HTTP Basic Auth) for access.
 
 Environment variables needed:
-  MD_OPENDATA_APP_TOKEN  â Socrata app token (optional, improves rate limits)
-  MD_OPENDATA_USERNAME   â Socrata account email (required for licensed data)
-  MD_OPENDATA_PASSWORD   â Socrata account password (required for licensed data)
+  MD_OPENDATA_APP_TOKEN  — Socrata app token (optional, improves rate limits)
+  MD_OPENDATA_USERNAME   — Socrata account email (required for licensed data)
+  MD_OPENDATA_PASSWORD   — Socrata account password (required for licensed data)
 """
 
 import os
 import logging
+import math
+from datetime import datetime
 import requests
 
 logger = logging.getLogger(__name__)
 
-# âââââââââââââââââââââââââââââââââââââââââââââ
-#  Configuration â Licensed dataset (active)
-# âââââââââââââââââââââââââââââââââââââââââââââ
+# ─────────────────────────────────────────────
+#  Configuration — Licensed dataset (active)
+# ─────────────────────────────────────────────
 
 DATASET_ID = "9xq5-z8s2"
 OWNER_NAME_FIELD = "record_key_owner_s_name_mdp_field_ownname1_sdat_field_7"
@@ -115,7 +117,7 @@ def search_property_by_name(last_name, first_name="", city=""):
     # Build the SoQL WHERE clause
     where_parts = []
 
-    # Name matching â search for LAST NAME in the owner/grantor field
+    # Name matching — search for LAST NAME in the owner/grantor field
     if first_name:
         # Try "LAST FIRST" pattern (most common in SDAT records)
         name_pattern = f"{last_name} {first_name}"
@@ -129,7 +131,7 @@ def search_property_by_name(last_name, first_name="", city=""):
 
     where_clause = " AND ".join(where_parts)
 
-    # Build the API URL â keep params minimal to avoid Cloudflare blocks
+    # Build the API URL — keep params minimal to avoid Cloudflare blocks
     # County filtering happens in post-processing via city param
     url = f"{SOCRATA_BASE}/{DATASET_ID}.json"
 
@@ -179,7 +181,7 @@ def search_property_by_name(last_name, first_name="", city=""):
 
         elif resp.status_code in (401, 403):
             logger.error(
-                "Socrata API %s â check MD_OPENDATA_USERNAME/PASSWORD env vars "
+                "Socrata API %s — check MD_OPENDATA_USERNAME/PASSWORD env vars "
                 "(Basic Auth required for licensed dataset)", resp.status_code
             )
             return []
@@ -276,7 +278,7 @@ def _format_record(record):
         except (ValueError, TypeError):
             pass
 
-        return {
+        prop = {
             "owner_name": record.get(OWNER_NAME_FIELD, ""),
             "property_address": address.strip() if address else "",
             "city": record.get(
@@ -313,6 +315,12 @@ def _format_record(record):
             ),
         }
 
+        # Calculate estimated equity
+        equity = estimate_equity(prop)
+        prop.update(equity)
+
+        return prop
+
     except Exception as e:
         logger.debug(f"Error formatting record: {e}")
         return None
@@ -321,7 +329,7 @@ def _format_record(record):
 def _filter_by_name(properties, last_name, first_name):
     """
     Post-filter properties to ensure name match quality.
-    The API LIKE search is broad â this tightens the match.
+    The API LIKE search is broad — this tightens the match.
     """
     filtered = []
     last_upper = last_name.upper()
@@ -336,7 +344,7 @@ def _filter_by_name(properties, last_name, first_name):
         if last_upper not in owner:
             continue
 
-        # Check first name (allow partial â "ROBERT" matches "ROBT")
+        # Check first name (allow partial — "ROBERT" matches "ROBT")
         if first_upper:
             if first_upper in owner:
                 filtered.append(prop)
@@ -369,3 +377,172 @@ def _escape(value):
     """Escape single quotes for SoQL string literals."""
     return value.replace("'", "''")
 
+
+# ─────────────────────────────────────────────
+#  Equity Estimation
+# ─────────────────────────────────────────────
+
+# Historical average 30-year fixed mortgage rates by era
+_RATE_BY_ERA = [
+    (2021, 0.055),   # 2021+: ~5.5%
+    (2011, 0.040),   # 2011-2020: ~4.0%
+    (2006, 0.055),   # 2006-2010: ~5.5%
+    (2000, 0.060),   # 2000-2005: ~6.0%
+    (1990, 0.075),   # 1990-1999: ~7.5%
+    (0,    0.085),   # Pre-1990: ~8.5%
+]
+
+
+def _get_mortgage_rate(year):
+    """Return approximate average mortgage rate for the origination year."""
+    for cutoff, rate in _RATE_BY_ERA:
+        if year >= cutoff:
+            return rate
+    return 0.085
+
+
+def _remaining_mortgage_balance(original_amount, annual_rate, term_years, months_elapsed):
+    """
+    Calculate remaining mortgage balance using standard amortization.
+    Returns 0 if the loan term has been exceeded.
+    """
+    if original_amount <= 0 or annual_rate <= 0 or term_years <= 0:
+        return 0
+
+    total_months = term_years * 12
+    if months_elapsed >= total_months:
+        return 0
+
+    monthly_rate = annual_rate / 12
+    # Monthly payment formula
+    payment = original_amount * (monthly_rate * (1 + monthly_rate) ** total_months) / \
+              ((1 + monthly_rate) ** total_months - 1)
+    # Remaining balance formula
+    remaining = original_amount * ((1 + monthly_rate) ** total_months -
+                                    (1 + monthly_rate) ** months_elapsed) / \
+                ((1 + monthly_rate) ** total_months - 1)
+    return max(0, remaining)
+
+
+def estimate_equity(prop):
+    """
+    Estimate equity for a property based on available SDAT data.
+
+    Uses assessed value as market value proxy (MD targets 100% assessment).
+    Estimates mortgage from last sale price + amortization assumptions.
+
+    Returns dict with:
+        estimated_market_value, estimated_mortgage_balance, known_liens,
+        estimated_equity, equity_percent, equity_confidence
+
+    IMPORTANT: These are estimates only. Actual mortgage data is not available
+    from SDAT. Confidence reflects data quality, not prediction accuracy.
+    """
+    result = {
+        "estimated_market_value": None,
+        "estimated_mortgage_balance": None,
+        "known_liens": None,
+        "estimated_equity": None,
+        "equity_percent": None,
+        "equity_confidence": "unknown",
+    }
+
+    # ── Step 1: Estimate market value from assessed value ──
+    assessed = 0
+    try:
+        assessed = float(prop.get("assessed_value") or 0)
+    except (ValueError, TypeError):
+        pass
+
+    if assessed <= 0:
+        # No assessed value = can't estimate anything
+        return result
+
+    # MD SDAT assesses at ~100% market value; small bump for assessment lag
+    estimated_market = round(assessed * 1.05)
+    result["estimated_market_value"] = estimated_market
+
+    # ── Step 2: Estimate mortgage from last sale ──
+    sale_price = 0
+    try:
+        sale_price = float(prop.get("sale_price") or 0)
+    except (ValueError, TypeError):
+        pass
+
+    transfer_date_str = prop.get("transfer_date", "")
+    transfer_year = None
+    months_since_transfer = None
+
+    if transfer_date_str:
+        try:
+            # SDAT format: YYYY-MM-DD or sometimes just YYYY
+            if len(transfer_date_str) >= 10:
+                td = datetime.strptime(transfer_date_str[:10], "%Y-%m-%d")
+            elif len(transfer_date_str) >= 4:
+                td = datetime(int(transfer_date_str[:4]), 6, 1)
+            else:
+                td = None
+
+            if td:
+                transfer_year = td.year
+                now = datetime.now()
+                months_since_transfer = (now.year - td.year) * 12 + (now.month - td.month)
+        except (ValueError, TypeError):
+            pass
+
+    # Determine if sale_price is usable (filter out family transfers: $0, $1, $100)
+    sale_is_usable = sale_price > 1000
+
+    estimated_mortgage = 0
+    confidence = "unknown"
+
+    if sale_is_usable and months_since_transfer is not None and transfer_year:
+        # Assume 80% LTV at purchase, 30-year fixed
+        original_mortgage = sale_price * 0.80
+        rate = _get_mortgage_rate(transfer_year)
+        estimated_mortgage = round(_remaining_mortgage_balance(
+            original_mortgage, rate, 30, months_since_transfer
+        ))
+        result["estimated_mortgage_balance"] = estimated_mortgage
+
+        # Confidence based on data recency
+        if months_since_transfer <= 120:  # Within 10 years
+            confidence = "medium"
+        elif months_since_transfer <= 240:  # 10-20 years
+            confidence = "medium"
+        else:  # 20+ years — likely paid off or refinanced
+            confidence = "low"
+
+        # If sale was recent and price close to assessed, higher confidence
+        if months_since_transfer <= 60 and sale_price > assessed * 0.5:
+            confidence = "high"
+
+    elif not sale_is_usable and months_since_transfer is not None:
+        # Family transfer ($0/$1/$100) — likely no mortgage, but uncertain
+        estimated_mortgage = 0
+        result["estimated_mortgage_balance"] = 0
+        confidence = "low"
+    else:
+        # No sale data at all — can't estimate mortgage
+        # Assume property could be free & clear (common in probate)
+        estimated_mortgage = 0
+        result["estimated_mortgage_balance"] = None
+        confidence = "low"
+
+    # ── Step 3: Calculate equity ──
+    known_liens = 0  # No lien data from SDAT
+    result["known_liens"] = 0
+
+    if result["estimated_mortgage_balance"] is not None:
+        equity = estimated_market - estimated_mortgage - known_liens
+        result["estimated_equity"] = round(equity)
+        if estimated_market > 0:
+            result["equity_percent"] = round((equity / estimated_market) * 100, 1)
+    else:
+        # Can still provide a ceiling estimate (full assessed value as max equity)
+        result["estimated_equity"] = estimated_market
+        result["equity_percent"] = 100.0
+        confidence = "low"
+
+    result["equity_confidence"] = confidence
+    return result
