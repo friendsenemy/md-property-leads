@@ -340,6 +340,41 @@ def fetch_obituary_details(url):
             if age_match:
                 details["age"] = int(age_match.group(1))
 
+            # Extract date of death from obituary text
+            # Common patterns: "passed away on January 1, 2025",
+            #   "died March 15, 2025", "on April 3, 2025"
+            dod_match = re.search(
+                r"(?:passed away|passed|died|departed|entered into rest|"
+                r"went home to be with|transitioned)"
+                r"[^,.\d]{0,40}?"
+                r"(\w+ \d{1,2},?\s*\d{4}|\d{1,2}/\d{1,2}/\d{2,4})",
+                text, re.IGNORECASE
+            )
+            if dod_match:
+                details["date_of_death"] = dod_match.group(1).strip()
+
+            # Extract date of birth from obituary text
+            # Common patterns: "born on January 1, 1940", "born January 1, 1940"
+            dob_match = re.search(
+                r"(?:born|born on)"
+                r"[^,.\d]{0,40}?"
+                r"(\w+ \d{1,2},?\s*\d{4}|\d{1,2}/\d{1,2}/\d{2,4})",
+                text, re.IGNORECASE
+            )
+            if dob_match:
+                details["date_of_birth"] = dob_match.group(1).strip()
+
+        # Also check for structured date elements in the page (Legacy uses these)
+        date_els = soup.select("[class*='date'], [class*='Date'], time")
+        for el in date_els:
+            date_text = el.get_text(strip=True)
+            if not date_text:
+                continue
+            # Check datetime attribute (more reliable)
+            dt_attr = el.get("datetime", "")
+            if dt_attr and not details.get("date_of_death"):
+                details.setdefault("date_of_death", dt_attr)
+
         time.sleep(random.uniform(1.0, 2.0))
         return details
 
