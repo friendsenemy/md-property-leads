@@ -244,7 +244,7 @@ def api_scrape_status():
     return jsonify(scrape_status)
 
 
-@app.route("/api/export")
+@app.route("/api/export/skip-trace")
 def api_export():
     """Export leads as CSV for skip tracing."""
     status = request.args.get("status", "all")
