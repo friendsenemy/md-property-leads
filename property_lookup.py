@@ -475,7 +475,9 @@ def estimate_equity(prop):
 
     if transfer_date_str:
         try:
-            # SDAT format: YYYY-MM-DD or sometimes just YYYY
+            # SDAT format: YYYY-MM-DD or YYYY.MM.DD or sometimes just YYYY
+            # Normalize dots to dashes for consistent parsing
+            transfer_date_str = transfer_date_str.replace(".", "-")
             if len(transfer_date_str) >= 10:
                 td = datetime.strptime(transfer_date_str[:10], "%Y-%m-%d")
             elif len(transfer_date_str) >= 4:
