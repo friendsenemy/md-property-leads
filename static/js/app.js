@@ -1,6 +1,6 @@
-/* âââââââââââââââââââââââââââââââââââââââââââââââ
-   MD Property Leads â Frontend JavaScript
-   âââââââââââââââââââââââââââââââââââââââââââââââ */
+/* ═══════════════════════════════════════════════
+   MD Property Leads — Frontend JavaScript
+   ═══════════════════════════════════════════════ */
 
 const App = {
     state: {
@@ -17,7 +17,7 @@ const App = {
         scrapeRunning: false,
     },
 
-    // âââ Init âââ
+    // ─── Init ───
     init() {
         this.bindEvents();
         this.loadStats();
@@ -27,7 +27,7 @@ const App = {
         setInterval(() => this.pollScrapeStatus(), 5000);
     },
 
-    // âââ Event Binding âââ
+    // ─── Event Binding ───
     bindEvents() {
         // Search
         const searchInput = document.getElementById("searchInput");
@@ -76,7 +76,7 @@ const App = {
         });
     },
 
-    // âââ API Calls âââ
+    // ─── API Calls ───
     async loadStats() {
         try {
             const resp = await fetch("/api/stats");
@@ -180,7 +180,7 @@ const App = {
         }
     },
 
-    // âââ Rendering âââ
+    // ─── Rendering ───
     renderStats(stats) {
         document.getElementById("statTotal").textContent = stats.total_leads || 0;
         document.getElementById("statNew").textContent = stats.new_leads || 0;
@@ -193,7 +193,7 @@ const App = {
         const el = document.getElementById("lastScrapeInfo");
         if (lastScrape) {
             const time = lastScrape.completed_at || lastScrape.started_at;
-            el.textContent = `Last scan: ${this.formatDate(time)} â ${lastScrape.leads_created} leads`;
+            el.textContent = `Last scan: ${this.formatDate(time)} — ${lastScrape.leads_created} leads`;
         } else {
             el.textContent = "No scans run yet";
         }
@@ -223,20 +223,20 @@ const App = {
                         ${this.escapeHtml(lead.full_name)}
                         ${lead.obituary_url ?
                             `<a href="${lead.obituary_url}" target="_blank" class="obit-link"
-                                onclick="event.stopPropagation()">View Obituary â</a>` : ""}
+                                onclick="event.stopPropagation()">View Obituary ↗</a>` : ""}
                     </td>
                     <td class="date-cell">${this.escapeHtml(lead.date_of_death || "N/A")}</td>
                     <td class="property-cell">
                         <div class="address">${this.escapeHtml(primaryProp.property_address || "N/A")}</div>
                         <div class="meta">
                             ${props.length > 1 ? `+${props.length - 1} more properties` : ""}
-                            ${primaryProp.property_type ? `â¢ ${primaryProp.property_type}` : ""}
+                            ${primaryProp.property_type ? `• ${primaryProp.property_type}` : ""}
                         </div>
                     </td>
                     <td class="county-cell">${this.escapeHtml(primaryProp.county || "N/A")}</td>
                     <td class="value-cell">${totalValue ? "$" + totalValue.toLocaleString() : "N/A"}</td>
                     <td>
-                        <span class="status-badge ${lead.status}">${lead.status}</span>
+                        <span class="status-badge ${lead.status}">${this.getStatusLabel(lead)}</span>
                     </td>
                     <td class="date-cell">${this.formatDate(lead.lead_created_at)}</td>
                 </tr>
@@ -256,7 +256,7 @@ const App = {
         document.getElementById("nextBtn").disabled = this.state.page >= this.state.pages;
     },
 
-    // âââ Modal âââ
+    // ─── Modal ───
     openLead(leadId) {
         const lead = this.state.leads.find((l) => l.lead_id === leadId);
         if (!lead) return;
@@ -338,7 +338,7 @@ const App = {
                 ${lead.obituary_url ? `
                 <div class="detail-row">
                     <span class="label">Obituary</span>
-                    <span class="value"><a href="${lead.obituary_url}" target="_blank">View on Legacy.com â</a></span>
+                    <span class="value"><a href="${lead.obituary_url}" target="_blank">View on Legacy.com ↗</a></span>
                 </div>` : ""}
             </div>
 
@@ -370,7 +370,7 @@ const App = {
         document.getElementById("modalOverlay").classList.remove("active");
     },
 
-    // âââ Pagination âââ
+    // ─── Pagination ───
     prevPage() {
         if (this.state.page > 1) {
             this.state.page--;
@@ -385,7 +385,7 @@ const App = {
         }
     },
 
-    // âââ Sorting âââ
+    // ─── Sorting ───
     sortBy(column) {
         if (this.state.sortBy === column) {
             this.state.sortDir = this.state.sortDir === "desc" ? "asc" : "desc";
@@ -396,7 +396,7 @@ const App = {
         this.loadLeads();
     },
 
-    // âââ Helpers âââ
+    // ─── Helpers ───
     updateScrapeBar(active, message) {
         const bar = document.getElementById("scrapeBar");
         const msg = document.getElementById("scrapeMessage");
@@ -419,6 +419,23 @@ const App = {
             });
         } catch {
             return dateStr;
+        }
+    },
+
+    getStatusLabel(lead) {
+        if (lead.status !== "new") return lead.status;
+        // For "new" leads, show age in days
+        try {
+            const created = new Date(lead.lead_created_at);
+            if (isNaN(created)) return "new";
+            const now = new Date();
+            const diffMs = now - created;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            if (diffDays === 0) return "new";
+            if (diffDays === 1) return "1-Day Old";
+            return `${diffDays}-Day Old`;
+        } catch {
+            return "new";
         }
     },
 
