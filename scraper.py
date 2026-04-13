@@ -176,12 +176,13 @@ def scrape_legacy_obituaries(max_pages=2):
                 logger.error(f"Parse error for county {county} page {page}: {e}")
                 continue
 
-    # Deduplicate by personId or name + date (newspaper and county pages overlap heavily)
+    # Deduplicate by URL, personId, or name + date (newspaper and county pages overlap heavily)
     seen = set()
     unique = []
     for obit in obituaries:
+        url = obit.get("obituary_url", "")
         pid = obit.get("person_id", "")
-        key = pid if pid else (obit["full_name"].lower(), obit.get("date_of_death", ""))
+        key = url if url else (pid if pid else (obit["full_name"].lower(), obit.get("date_of_death", "")))
         if key not in seen:
             seen.add(key)
             unique.append(obit)
@@ -196,12 +197,17 @@ def _extract_obituaries_json(html, source_label):
     Extract obituary data from embedded JSON in Legacy.com HTML.
     Legacy embeds obituary listings as a JSON array in the page source.
     Both newspaper and county pages use this same structure.
+
+    Updated 2026-04: Legacy.com changed their JSON schema.
+    Entries now have: {title, link, imgLink, imgWidth, imgHeight}
+    instead of the old personId/name/location format.
     """
     obituaries = []
 
     try:
-        # Find the obituaries JSON array that contains personId entries
-        # (pages may have multiple "obituaries" arrays; we want the one with personId)
+        # Find the obituaries JSON array that contains actual obit entries.
+        # We look for "link" as the marker since every obituary has a link field.
+        # (Pages may have multiple "obituaries" arrays; we want the one with real data)
         search_start = 0
         target_start = -1
 
@@ -209,9 +215,10 @@ def _extract_obituaries_json(html, source_label):
             idx = html.find('"obituaries":[', search_start)
             if idx == -1:
                 break
-            # Check if this array contains personId (the real obit data)
-            nearby = html[idx:idx + 300]
-            if "personId" in nearby:
+            # Check if this array contains link (the real obit data)
+            # Also accept personId for backwards compatibility
+            nearby = html[idx:idx + 500]
+            if '"link"' in nearby or '"personId"' in nearby:
                 target_start = idx + len('"obituaries":')
                 break
             search_start = idx + 1
@@ -249,56 +256,118 @@ def _extract_obituaries_json(html, source_label):
 
 
 def _parse_json_obituary(raw, source_label):
-    """Parse a single obituary from the embedded JSON data."""
-    try:
-        name_data = raw.get("name", {})
-        location_data = raw.get("location", {})
-        city_data = location_data.get("city", {})
-        state_data = location_data.get("state", {})
-        links_data = raw.get("links", {})
-        obit_url_data = links_data.get("obituaryUrl", {})
+    """
+    Parse a single obituary from the embedded JSON data.
 
-        full_name = name_data.get("fullName", "")
-        first_name = name_data.get("firstName", "")
-        last_name = name_data.get("lastName", "")
-        middle_name = name_data.get("middleName", "") or ""
-
-        # Parse dates from fromToYears field (format: "MM/DD/YYYY - MM/DD/YYYY")
-        date_of_birth = ""
-        date_of_death = ""
-        from_to = raw.get("fromToYears", "")
-        if from_to and " - " in str(from_to):
-            parts = str(from_to).split(" - ")
-            if len(parts) == 2:
-                date_of_birth = parts[0].strip()
-                date_of_death = parts[1].strip()
-
-        # Get obituary URL
-        obituary_url = ""
-        if isinstance(obit_url_data, dict):
-            obituary_url = obit_url_data.get("href", "")
-        elif isinstance(obit_url_data, str):
-            obituary_url = obit_url_data
-
-        obit = {
-            "full_name": full_name,
-            "first_name": first_name,
-            "last_name": last_name,
-            "middle_name": middle_name,
-            "date_of_death": date_of_death,
-            "date_of_birth": date_of_birth,
-            "age": raw.get("age"),
-            "city": city_data.get("fullName", "") if isinstance(city_data, dict) else str(city_data),
-            "state": state_data.get("code", "MD") if isinstance(state_data, dict) else str(state_data),
-            "obituary_url": obituary_url,
-            "obituary_text": raw.get("obitSnippet", "") or "",
-            "survived_by": "",
-            "source": f"Legacy.com/{source_label}",
-            "scraped_at": datetime.now().isoformat(),
-            "person_id": str(raw.get("personId", "")),
+    Current Legacy.com schema (as of 2026-04):
+        {
+            "imgHeight": 300,
+            "imgLink": "https://cache.legacy.net/...",
+            "imgWidth": 300,
+            "link": "https://www.legacy.com/us/obituaries/...",
+            "title": "Firstname Lastname (YYYY - YYYY)"
         }
 
-        return obit
+    Also supports the old schema with personId/name/location for
+    backwards compatibility in case Legacy.com serves both formats.
+    """
+    try:
+        # --- Try new schema first (title + link) ---
+        title = raw.get("title", "")
+        link = raw.get("link", "")
+
+        if title and link:
+            full_name = title
+            date_of_birth = ""
+            date_of_death = ""
+
+            # Parse name and years from title: "Name (YYYY - YYYY)"
+            year_match = re.match(
+                r"^(.*?)\s*\((\d{4})\s*-\s*(\d{4})\)\s*$", title
+            )
+            if year_match:
+                full_name = year_match.group(1).strip()
+                date_of_birth = year_match.group(2)
+                date_of_death = year_match.group(3)
+            else:
+                # Try format without birth year: "Name (YYYY)"
+                year_match2 = re.match(r"^(.*?)\s*\((\d{4})\)\s*$", title)
+                if year_match2:
+                    full_name = year_match2.group(1).strip()
+                    date_of_death = year_match2.group(2)
+
+            # Split name into parts
+            name_parts = full_name.split()
+            first_name = name_parts[0] if name_parts else ""
+            last_name = name_parts[-1] if len(name_parts) > 1 else ""
+            middle_name = " ".join(name_parts[1:-1]) if len(name_parts) > 2 else ""
+
+            return {
+                "full_name": full_name,
+                "first_name": first_name,
+                "last_name": last_name,
+                "middle_name": middle_name,
+                "date_of_death": date_of_death,
+                "date_of_birth": date_of_birth,
+                "age": None,
+                "city": "",
+                "state": "MD",
+                "obituary_url": link,
+                "obituary_text": "",
+                "survived_by": "",
+                "source": f"Legacy.com/{source_label}",
+                "scraped_at": datetime.now().isoformat(),
+                "person_id": "",
+            }
+
+        # --- Fallback: old schema with personId/name/location ---
+        name_data = raw.get("name", {})
+        if isinstance(name_data, dict) and name_data.get("fullName"):
+            location_data = raw.get("location", {})
+            city_data = location_data.get("city", {})
+            state_data = location_data.get("state", {})
+            links_data = raw.get("links", {})
+            obit_url_data = links_data.get("obituaryUrl", {})
+
+            full_name = name_data.get("fullName", "")
+            first_name = name_data.get("firstName", "")
+            last_name = name_data.get("lastName", "")
+            middle_name = name_data.get("middleName", "") or ""
+
+            date_of_birth = ""
+            date_of_death = ""
+            from_to = raw.get("fromToYears", "")
+            if from_to and " - " in str(from_to):
+                parts = str(from_to).split(" - ")
+                if len(parts) == 2:
+                    date_of_birth = parts[0].strip()
+                    date_of_death = parts[1].strip()
+
+            obituary_url = ""
+            if isinstance(obit_url_data, dict):
+                obituary_url = obit_url_data.get("href", "")
+            elif isinstance(obit_url_data, str):
+                obituary_url = obit_url_data
+
+            return {
+                "full_name": full_name,
+                "first_name": first_name,
+                "last_name": last_name,
+                "middle_name": middle_name,
+                "date_of_death": date_of_death,
+                "date_of_birth": date_of_birth,
+                "age": raw.get("age"),
+                "city": city_data.get("fullName", "") if isinstance(city_data, dict) else str(city_data),
+                "state": state_data.get("code", "MD") if isinstance(state_data, dict) else str(state_data),
+                "obituary_url": obituary_url,
+                "obituary_text": raw.get("obitSnippet", "") or "",
+                "survived_by": "",
+                "source": f"Legacy.com/{source_label}",
+                "scraped_at": datetime.now().isoformat(),
+                "person_id": str(raw.get("personId", "")),
+            }
+
+        return None
 
     except Exception as e:
         logger.debug(f"Error parsing obituary JSON: {e}")
