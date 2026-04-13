@@ -35,9 +35,9 @@ scrape_lock = threading.Lock()
 scrape_status = {"running": False, "message": "Idle"}
 
 
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 # Scrape Pipeline - OPTIMIZED with concurrent lookups
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 
 def _process_single_obituary(obit):
     """
@@ -53,7 +53,7 @@ def _process_single_obituary(obit):
             try:
                 details = fetch_obituary_details(obit_url)
                 if details:
-                    # Merge details into obit â only fill empty fields
+                    # Merge details into obit — only fill empty fields
                     for key in ("date_of_death", "date_of_birth", "survived_by",
                                 "obituary_text", "age"):
                         if details.get(key) and not obit.get(key):
@@ -169,9 +169,9 @@ def run_scrape_pipeline():
         scrape_lock.release()
 
 
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 # Routes - Pages
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 
 @app.route("/")
 def index():
@@ -179,9 +179,9 @@ def index():
     return render_template("index.html")
 
 
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 # Routes - API
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 
 @app.route("/api/leads")
 def api_leads():
@@ -260,6 +260,8 @@ def api_export():
         "Property Address", "City", "County", "State", "Zip Code",
         "Property Type", "Assessed Value", "Land Value", "Improvement Value",
         "Lot Size", "Year Built", "Account Number",
+        "Est. Market Value", "Est. Mortgage Balance", "Known Liens",
+        "Est. Equity", "Equity %", "Equity Confidence",
         "Survived By / Possible Heirs",
         "Obituary URL",
         "Lead Status", "Notes", "Lead Date",
@@ -288,6 +290,12 @@ def api_export():
             lead.get("lot_size", ""),
             lead.get("year_built", ""),
             lead.get("account_number", ""),
+            lead.get("estimated_market_value", ""),
+            lead.get("estimated_mortgage_balance", ""),
+            lead.get("known_liens", ""),
+            lead.get("estimated_equity", ""),
+            lead.get("equity_percent", ""),
+            lead.get("equity_confidence", ""),
             lead.get("survived_by", ""),
             lead.get("obituary_url", ""),
             lead.get("status", ""),
@@ -307,9 +315,9 @@ def api_export():
     )
 
 
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 # Startup
-# ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ──────────────────────────────────────────────────────
 
 def create_app():
     """Application factory."""
