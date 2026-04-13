@@ -429,18 +429,18 @@ const App = {
 
     getStatusLabel(lead) {
         if (lead.status !== "new") return lead.status;
-        // For "new" leads, show age in days
         try {
-            const created = new Date(lead.lead_created_at);
-            if (isNaN(created)) return "new";
+            const created = new Date(lead.lead_created_at + "Z");
+            if (isNaN(created)) return "NEW";
             const now = new Date();
-            const diffMs = now - created;
-            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-            if (diffDays === 0) return "new";
-            if (diffDays === 1) return "1-Day Old";
-            return `${diffDays}-Day Old`;
+            const createdDate = new Date(created.getFullYear(), created.getMonth(), created.getDate());
+            const todayDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const diffDays = Math.round((todayDate - createdDate) / (1000 * 60 * 60 * 24));
+            if (diffDays <= 0) return "NEW";
+            if (diffDays === 1) return "1-DAY OLD";
+            return `${diffDays}-DAYS OLD`;
         } catch {
-            return "new";
+            return "NEW";
         }
     },
 
