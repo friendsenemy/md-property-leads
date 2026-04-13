@@ -177,17 +177,23 @@ def scrape_legacy_obituaries(max_pages=2):
                 logger.error(f"Parse error for county {county} page {page}: {e}")
                 continue
 
-    # Deduplicate by URL, personId, or name + date (newspaper and county pages overlap heavily)
-    seen = set()
-    unique = []
+    # Deduplicate by name, preferring richer records (old-schema with age/personId)
+    by_name = {}
     for obit in obituaries:
-        url = obit.get("obituary_url", "")
-        pid = obit.get("person_id", "")
-        key = url if url else (pid if pid else (obit["full_name"].lower(), obit.get("date_of_death", "")))
-        if key not in seen:
-            seen.add(key)
-            unique.append(obit)
-
+        key = obit["full_name"].strip().lower()
+        existing = by_name.get(key)
+        if existing is None:
+            by_name[key] = obit
+        else:
+            new_score = (1 if obit.get("age") else 0) + \
+                        (1 if obit.get("person_id") else 0) + \
+                        (1 if obit.get("obituary_text") else 0)
+            old_score = (1 if existing.get("age") else 0) + \
+                        (1 if existing.get("person_id") else 0) + \
+                        (1 if existing.get("obituary_text") else 0)
+            if new_score > old_score:
+                by_name[key] = obit
+    unique = list(by_name.values())
     logger.info(f"Total unique obituaries after dedup: {len(unique)} (from {len(obituaries)} raw)")
     return unique
 
