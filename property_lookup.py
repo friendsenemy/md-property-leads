@@ -2,15 +2,13 @@
 Maryland Property Lookup via Socrata Open Data API
 Searches MD Real Property Assessments for property ownership records.
 
-TWO MODES:
-  1. STOPGAP (current): Uses public dataset ed4q-f8tm, searches grantor
-     (seller) name field. Catches properties the deceased transferred.
-  2. FULL (after license): Uses dataset 9xq5-z8s2 with owner names.
-     Just change DATASET_ID and OWNER_NAME_FIELD below.
+Uses the LICENSED dataset 9xq5-z8s2 which includes actual property owner
+names. Requires Socrata account credentials (HTTP Basic Auth) for access.
 
-To switch to full mode once licensed access is granted:
-  DATASET_ID = "9xq5-z8s2"
-  OWNER_NAME_FIELD = "owner_name"  # confirm exact field name after access
+Environment variables needed:
+  MD_OPENDATA_APP_TOKEN  â Socrata app token (optional, improves rate limits)
+  MD_OPENDATA_USERNAME   â Socrata account email (required for licensed data)
+  MD_OPENDATA_PASSWORD   â Socrata account password (required for licensed data)
 """
 
 import os
@@ -20,19 +18,16 @@ import requests
 logger = logging.getLogger(__name__)
 
 # âââââââââââââââââââââââââââââââââââââââââââââ
-#  Configuration â CHANGE THESE WHEN LICENSED
+#  Configuration â Licensed dataset (active)
 # âââââââââââââââââââââââââââââââââââââââââââââ
 
-# Public dataset (grantor names only, no current owner)
-DATASET_ID = "ed4q-f8tm"
-OWNER_NAME_FIELD = "sales_segment_1_grantor_name_mdp_field_grntnam1_sdat_field_80"
-
-# Licensed dataset (uncomment when access granted):
-# DATASET_ID = "9xq5-z8s2"
-# OWNER_NAME_FIELD = "owner_name"  # verify exact field name after access
+DATASET_ID = "9xq5-z8s2"
+OWNER_NAME_FIELD = "record_key_owner_s_name_mdp_field_ownname1_sdat_field_7"
 
 SOCRATA_BASE = "https://opendata.maryland.gov/resource"
 APP_TOKEN = os.environ.get("MD_OPENDATA_APP_TOKEN", "")
+SOCRATA_USERNAME = os.environ.get("MD_OPENDATA_USERNAME", "")
+SOCRATA_PASSWORD = os.environ.get("MD_OPENDATA_PASSWORD", "")
 
 # Fields to retrieve from the API (verified against actual dataset schema)
 SELECT_FIELDS = [
@@ -151,9 +146,14 @@ def search_property_by_name(last_name, first_name="", city=""):
         "User-Agent": "MD-Property-Leads/1.0",
     }
 
+    # Basic Auth required for licensed/restricted datasets
+    auth = None
+    if SOCRATA_USERNAME and SOCRATA_PASSWORD:
+        auth = (SOCRATA_USERNAME, SOCRATA_PASSWORD)
+
     try:
         logger.info(f"Socrata API search: {last_name} {first_name} (city={city})")
-        resp = requests.get(url, params=params, headers=headers, timeout=30)
+        resp = requests.get(url, params=params, headers=headers, auth=auth, timeout=30)
 
         if resp.status_code == 200:
             records = resp.json()
@@ -177,8 +177,11 @@ def search_property_by_name(last_name, first_name="", city=""):
             logger.info(f"Found {len(properties)} properties for {first_name} {last_name}")
             return properties
 
-        elif resp.status_code == 403:
-            logger.error("Socrata API 403 â check APP_TOKEN or dataset access")
+        elif resp.status_code in (401, 403):
+            logger.error(
+                "Socrata API %s â check MD_OPENDATA_USERNAME/PASSWORD env vars "
+                "(Basic Auth required for licensed dataset)", resp.status_code
+            )
             return []
         else:
             logger.warning(f"Socrata API {resp.status_code}: {resp.text[:200]}")
@@ -223,8 +226,12 @@ def _search_statewide(last_name, first_name=""):
         "User-Agent": "MD-Property-Leads/1.0",
     }
 
+    auth = None
+    if SOCRATA_USERNAME and SOCRATA_PASSWORD:
+        auth = (SOCRATA_USERNAME, SOCRATA_PASSWORD)
+
     try:
-        resp = requests.get(url, params=params, headers=headers, timeout=30)
+        resp = requests.get(url, params=params, headers=headers, auth=auth, timeout=30)
         if resp.status_code == 200:
             records = resp.json()
             properties = [_format_record(r) for r in records]
@@ -361,3 +368,4 @@ def _get_county_codes(city):
 def _escape(value):
     """Escape single quotes for SoQL string literals."""
     return value.replace("'", "''")
+
