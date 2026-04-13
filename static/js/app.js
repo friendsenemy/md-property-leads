@@ -235,6 +235,7 @@ const App = {
                     </td>
                     <td class="county-cell">${this.escapeHtml(primaryProp.county || "N/A")}</td>
                     <td class="value-cell">${totalValue ? "$" + totalValue.toLocaleString() : "N/A"}</td>
+                    <td class="equity-cell">${this.renderEquityBadge(primaryProp)}</td>
                     <td>
                         <span class="status-badge ${lead.status}">${this.getStatusLabel(lead)}</span>
                     </td>
@@ -304,6 +305,10 @@ const App = {
                 <div class="detail-row">
                     <span class="label">Account #</span>
                     <span class="value" style="font-family:var(--font-mono)">${this.escapeHtml(p.account_number || "N/A")}</span>
+                </div>
+                <div style="margin-top:8px; padding-top:8px; border-top:1px solid var(--border);">
+                    <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:var(--cyan-dim); margin-bottom:6px;">Estimated Equity</div>
+                    ${this.renderEquityDetails(p)}
                 </div>
             </div>
         `).join("");
@@ -437,6 +442,70 @@ const App = {
         } catch {
             return "new";
         }
+    },
+
+    getEquityTier(prop) {
+        const pct = prop.equity_percent;
+        const conf = prop.equity_confidence;
+        if (conf === "unknown" || pct == null) return "unknown";
+        if (pct >= 70) return "high";
+        if (pct >= 40) return "medium";
+        return "low";
+    },
+
+    renderEquityBadge(prop) {
+        if (!prop || prop.estimated_equity == null) {
+            return '<span class="equity-badge unknown">N/A</span>';
+        }
+        const tier = this.getEquityTier(prop);
+        const equity = parseFloat(prop.estimated_equity);
+        const pct = prop.equity_percent != null ? `${prop.equity_percent}%` : "";
+        const confLabel = prop.equity_confidence || "unknown";
+        return `<span class="equity-badge ${tier}" title="Confidence: ${confLabel}">
+            $${equity.toLocaleString()}
+            <span class="equity-pct">${pct}</span>
+        </span>`;
+    },
+
+    renderEquityDetails(prop) {
+        if (!prop) return "";
+        const tier = this.getEquityTier(prop);
+        const confLabels = { high: "High", medium: "Medium", low: "Low", unknown: "Insufficient Data" };
+        return `
+            <div class="detail-row">
+                <span class="label">Est. Market Value</span>
+                <span class="value" style="font-family:var(--font-mono); color:var(--text-primary)">
+                    ${prop.estimated_market_value ? "$" + parseFloat(prop.estimated_market_value).toLocaleString() : "N/A"}
+                </span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Est. Mortgage Bal.</span>
+                <span class="value" style="font-family:var(--font-mono); color:var(--red)">
+                    ${prop.estimated_mortgage_balance != null ? "$" + parseFloat(prop.estimated_mortgage_balance).toLocaleString() : "Unknown"}
+                </span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Known Liens</span>
+                <span class="value" style="font-family:var(--font-mono)">
+                    ${prop.known_liens != null ? "$" + parseFloat(prop.known_liens).toLocaleString() : "N/A"}
+                </span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Est. Equity</span>
+                <span class="value equity-badge-inline ${tier}" style="font-family:var(--font-mono); font-weight:700">
+                    ${prop.estimated_equity != null ? "$" + parseFloat(prop.estimated_equity).toLocaleString() : "N/A"}
+                    ${prop.equity_percent != null ? ` (${prop.equity_percent}%)` : ""}
+                </span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Confidence</span>
+                <span class="value">
+                    <span class="equity-conf-badge ${prop.equity_confidence || 'unknown'}">
+                        ${confLabels[prop.equity_confidence] || "Unknown"}
+                    </span>
+                </span>
+            </div>
+        `;
     },
 
     escapeHtml(str) {
