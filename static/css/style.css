@@ -1,6 +1,6 @@
-/* âââââââââââââââââââââââââââââââââââââââââââââââ
-   MD PROPERTY LEADS â Cyberpunk Neon Theme
-   âââââââââââââââââââââââââââââââââââââââââââââââ */
+/* ═══════════════════════════════════════════════
+   MD PROPERTY LEADS — Cyberpunk Neon Theme
+   ═══════════════════════════════════════════════ */
 
 :root {
     --bg-primary: #0a0a0f;
@@ -38,7 +38,7 @@
     --shadow-glow: 0 0 20px rgba(0, 240, 255, 0.1);
 }
 
-/* âââ Reset & Base âââ */
+/* ─── Reset & Base ─── */
 
 * {
     margin: 0;
@@ -78,14 +78,14 @@ body::before {
 a { color: var(--cyan); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* âââ Scrollbar âââ */
+/* ─── Scrollbar ─── */
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-secondary); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--cyan-dim); }
 
-/* âââ Layout âââ */
+/* ─── Layout ─── */
 
 .app-container {
     position: relative;
@@ -95,7 +95,7 @@ a:hover { text-decoration: underline; }
     padding: 20px;
 }
 
-/* âââ Header âââ */
+/* ─── Header ─── */
 
 .header {
     display: flex;
@@ -155,7 +155,7 @@ a:hover { text-decoration: underline; }
     gap: 12px;
 }
 
-/* âââ Buttons âââ */
+/* ─── Buttons ─── */
 
 .btn {
     display: inline-flex;
@@ -219,7 +219,7 @@ a:hover { text-decoration: underline; }
     to { transform: rotate(360deg); }
 }
 
-/* âââ Stats Bar âââ */
+/* ─── Stats Bar ─── */
 
 .stats-grid {
     display: grid;
@@ -279,7 +279,7 @@ a:hover { text-decoration: underline; }
 .stat-card.pink .stat-value { color: var(--pink); }
 .stat-card.yellow .stat-value { color: var(--yellow); }
 
-/* âââ Controls Bar âââ */
+/* ─── Controls Bar ─── */
 
 .controls {
     display: flex;
@@ -356,7 +356,7 @@ a:hover { text-decoration: underline; }
     font-weight: 600;
 }
 
-/* âââ Leads Table âââ */
+/* ─── Leads Table ─── */
 
 .leads-container {
     background: var(--bg-secondary);
@@ -456,7 +456,7 @@ a:hover { text-decoration: underline; }
     font-weight: 500;
 }
 
-/* âââ Status Badge âââ */
+/* ─── Status Badge ─── */
 
 .status-badge {
     display: inline-block;
@@ -498,7 +498,7 @@ a:hover { text-decoration: underline; }
     border: 1px solid rgba(90, 90, 106, 0.2);
 }
 
-/* âââ Lead Detail Modal âââ */
+/* ─── Lead Detail Modal ─── */
 
 .modal-overlay {
     display: none;
@@ -635,7 +635,7 @@ a:hover { text-decoration: underline; }
     border-color: var(--cyan-dim);
 }
 
-/* âââ Pagination âââ */
+/* ─── Pagination ─── */
 
 .pagination {
     display: flex;
@@ -674,7 +674,7 @@ a:hover { text-decoration: underline; }
     cursor: not-allowed;
 }
 
-/* âââ Scrape Status Bar âââ */
+/* ─── Scrape Status Bar ─── */
 
 .scrape-bar {
     display: none;
@@ -711,7 +711,7 @@ a:hover { text-decoration: underline; }
     font-size: 0.8rem;
 }
 
-/* âââ Empty State âââ */
+/* ─── Empty State ─── */
 
 .empty-state {
     text-align: center;
@@ -737,7 +737,7 @@ a:hover { text-decoration: underline; }
     margin: 0 auto;
 }
 
-/* âââ Responsive âââ */
+/* ─── Responsive ─── */
 
 @media (max-width: 768px) {
     .header {
