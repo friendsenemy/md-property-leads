@@ -181,11 +181,216 @@ def scrape_legacy_obituaries(max_pages=2):
     seen = set()
     unique = []
     for obit in obituaries:
-        url = obit.get("ObituaryURL", "")
-        pid = obit.get("PersonID", "")
-        key = url if url else (pid if pid else (obit["FullName"].lower(), obit.get("DateOfDeath", "")))
-        if key not in seen:$����������������䁹�Ё���͕���6VV��FB��W���V�VR�V�B��&�B�����vvW"��f�b%67&VB��V�V�VR��V�VR�B�&�GV&�W2g&���Vv7��6�� �b"�'��V��&�GV&�W2��F�F�&Vf�&RFVGW�"��&WGW&�V�VP���FVb�W�G&7E��&�GV&�W5��6�ↇF���6�W&6U��&V��"" �W�G&7B�&�GV'�FFg&��V�&VFFVB�4�����Vv7��6���D����Vv7�V�&VG2�&�GV'�Ɨ7F��w22�4��'&���F�RvR6�W&6R�&�F��Ww7W"�B6�V�G�vW2W6RF��26�R7G'V7GW&RࠢWFFVB##b�C��Vv7��6��vW2��r6��F��Et�&�&�GV&�W2"'&�3���6���'&����FV�2�v�F��Wr66�V���F�F�R�Ɩ����tƖ�����Т"��&vR'&���S�FV�2�v�F���B66�V���W'6��B���R���6F�������ТvRW�G&7Bg&�����F6���r'&�2F�vWB����V�6�fW&vR�"" ��&�GV&�W2��Р�G'���2f��B���&�GV&�W2�4��'&�2F�B6��F��7GV��&�BV�G&�W2�2vW2�fR�V�F��R&�&�GV&�W2"'&�3�vR6���V7Bg&��WfW'���P�2F�B6��F��2&V�FF��FV�F�f�VB'�&Ɩ�"�"'W'6��B"�W�2��6V&6��7F'B� ����&u��&�G2��Р�v���RG'VS���G���F���f��B�r&�&�GV&�W2#��r�6V&6��7F'B���b�G������'&V���26�V6��bF��2'&�6��F��2&V��&�GV'�FF��V&'���F�Ŷ�G���G��SТ�br"&Ɩ�""���V&'��"r"'W'6��B""r���V&'���'%�7F'B��G���V�r"&�&�GV&�W2#��r���2f��BF�R�F6���r6��6��r'&6�WBf�"F�R'"'%�7F'B��G���V�r"&�&�GV&�W2#��r���2f��BF�R�F6���r6��6��r'&6�WBf�"F�R'&��'&6U�6�V�B��f�"���&�vR�'%�7F'B��VↇF�����b�F�Ŷ����u�s��'&6U�6�V�B���VƖb�F�Ŷ����u�s��'&6U�6�V�B����b'&6U�6�V�B����'%�V�B����'&V���G'���&u��6����F�Ŷ'%�7F'C�'%�V�EТ7W'&V�E��&�G2��6�����G2�&u��6�␢���&u��&�G2�W�FV�B�7W'&V�E��&�G2��W�6WBf�VTW'&�#��70��6V&6��7F'B��G����2'6RV6�V�G'�g&�����&�GV'�'&�2�6��6�ƖFF��rFFg&��&�F�7FGW&W0�f�"�&W2�����&u��&�G3��2�6�V�66Rf�V�B��W2g&��&�F�66�V�2F�6�������W0�2�Wr66�V��F�F�R�Ɩ����tƖ��FW67&�F���2��B66�V��W'6��B���R���6F����FFUv�GF��FFT�V�v�B�fu7F"���26�V6�v��6�66�V�F��2V�G'�W6W2&6VB��v��6��W�2W��7@��5��Wu�66�V��'F�F�R"���&W2�"&Ɩ�"���&W0��5���E�66�V��'W'6��B"���&W2�""&��R"���&W0���b�5��Wu�66�V���2�Wr66�V�V�G'��Ɩ���&W2�vWB�&Ɩ�"�""��F�F�R��&W2�vWB�'F�F�R"�""��'6VB��'6U�f�F�2�F�F�R���b'6VC��'6VE�&�&�GV'��W&�%��Ɩ氢�&�GV&�W2�V�B�'6VB��VƖb�5���E�66�V���2��B66�V�V�G'� ���R��&W2�vWB�&��R"�""��'6VB��'6U�f�F�2���R���b'6VC��'6VE�'W'6����B%���&W2�vWB�'W'6��B"�""���&�GV&�W2�V�B�'6VB���&WGW&��&�GV&�W0��W�6WBW�6WF���2S����vvW"�FV'Vr�b$W'&�"'6��r�&�GV'��4���W�"��&WGW&��Р��FVb�'6U�f�F�2�F�F�R���"" �'6Rf�F���f�g&���&�GV'�F�F�R�"&��R"f�V�B���Vv7��&�GV&�W2ࠢ6�����GFW&�3���$f�'7B֖FF�R�7B�����Օ����"�&�'F��BFVF��V'0��$f�'7B֖FF�R�7B�&�'F��V"�҄FVF������"�v�fV�vP��$f�'7B֖FF�R�7B������"���ǒF�RFVF��V" �"" �gV�����R�" �FFU��e�&�'F��" �FFU��e�FVF��" ���b��BF�F�R�&���F�w&�FR6�FR��F�R72F�B&WGW&�2��&W6V6�ц6��2Ɨ7B�"F�7B6��F���s���6���V�G2�&r��&w5�T'r ��W'6��B�FFT�dFVF��Ɩ�g&����B66�V����"Ɩ�g&���Wr66�V���2'6RF�F�R7G&��r�6�����f�&�G2���W7G&FVB&�fP�26�����GFW&�$��R�%�V"�E�V"�"�"$��R��V"�"�"$��R�%�T"�E�T"� ��b��BF�F�R7G&�����&WGW&����P���b"�"��B��F�F�S��&WGW&����P��2W�G&7BF�R'B��&V�F�W6W0��V%�GFW&��"r���G�GҒ���G�GҒ��r ��b�F6���&R�6V&6���V%�GFW&��F�F�R����b�F6��w&�W�"���2v�B&�vRƖ�R��#��FFU��e�&�'F���F6��w&�W���FFU��e�FVF���F6��w&�W�"��V�6S��2G'�f�&�Bv�F��WB&�'F��V#�$��R������ ��V%��F6�"�&R��F6��"%����2���G�Gҕ�2�B"�F�F�R���b�V%��F6�#��gV�����R��V%��F6�"�w&�W���7G&����FFU��e�FVF���V%��F6�"�w&�W�"���27ƗB��R��F�'G0���U�'G2�gV�����R�7ƗB���f�'7E���R���U�'G5���b��U�'G2V�6R" ��7E���R���U�'G5����b�V���U�'G2��V�6R" �֖FF�U���R�""������U�'G5���Ғ�b�V���U�'G2��"V�6R" ��&WGW&���&gV�����R#�gV�����R��&f�'7E���R#�f�'7E���R��&�7E���R#��7E���R��&֖FF�U���R#�֖FF�U���R��&FFU��e�FVF�#�FFU��e�FVF���&FFU��e�&�'F�#�FFU��e�&�'F���&vR#����R��&6�G�#�""��'7FFR#�$�B"��&�&�GV'��W&�#�Ɩ���&�&�GV'��FW�B#�""��'7W'f�fVE�'�#�""��'6�W&6R#�b$�Vv7��6����6�W&6U��&V��"��'67&VE�B#�FFWF��R���r���6�f�&�B����'W'6����B#�""��Р�&WGW&����P��W�6WBW�6WF���2S����vvW"�FV'Vr�b$W'&�"'6��r�&�GV'��4���W�"��&WGW&����P���FVbfWF6���&�GV'��FWF��2�W&��"" �fWF6�F�RgV���&�GV'�vRF�W�G&7BFF�F����FWF��0�Ɩ�R7W'f�fVB�'���f��B��&R&V6�6RFFW2�"" �G'���&W7�&WVW7G2�vWB�W&���VFW'3ԄTDU%2�F��V�WC�R���b&W7�7FGW5�6�FR�#��&WGW&��Р�6�W�&VWF�gV�6�W�&W7�FW�B�&�F���'6W""��FWF��2��Р�2vWBgV���&�GV'�FW�@��&�E�&�G��6�W�6V�V7E���R��"��&�GV'��FW�B���&�B�&�G���6�72��t�&�GV'�FW�Bu��'F�6�R ����b�&�E�&�G���FW�B��&�E�&�G��vWE�FW�B�""�7G&��G'VR��FWF��5�&�&�GV'��FW�B%��FW�@��2W�G&7B7W'f�fVB�'���f�&�F���7W'f�fVE��F6��&R�6V&6���""��7W'f�fVB'���VfW2&V���GƗ27W'f�fVB'�� �"'7W'f�f�'2��6�VFR�������÷�B�"��FW�B�&R�t��$T44P����b7W'f�fVE��F6���FWF��5�'7W'f�fVE�'�%��7W'f�fVE��F6��w&�W���7G&�����2W�G&7BvP�vU��F6��&R�6V&6��""���vW�vVB��2���G��7Ғ"�FW�B�&R�t��$T44R���bvU��F6���FWF��5�&vR%����B�vU��F6��w&�W�����2W�G&7BFFR�bFVF�g&���&�GV'�FW�@�26�����GFW&�3�'76VBv�����V'��##R"��2&F�VB�&6�R�##R"�&��&��2�##R �F�E��F6��&R�6V&6���""��76VBv��76VG�F�VG�FW'FVG�V�FW&VB��F�&W7G� �"'vV�B���RF�&Rv�F��G&�6�F���VB� �"%������E׳�C�� �""��r��G��'����2��G�G���G��'���G��'���G�"�GҒ"��FW�B�&R�t��$T44P����bF�E��F6���FWF��5�&FFU��e�FVF�%��F�E��F6��w&�W���7G&�����2W�G&7BFFR�b&�'F�g&���&�GV'�FW�@�26�����GFW&�3�&&�&�����V'���C"�&&�&���V'���C �F�%��F6��&R�6V&6���""���<�onacrocting)"
-                r"[^,,.\d]{0,40}?"
+        url = obit.get("obituary_url", "")
+        pid = obit.get("person_id", "")
+        key = url if url else (pid if pid else (obit["full_name"].lower(), obit.get("date_of_death", "")))
+        if key not in seen:
+            seen.add(key)
+            unique.append(obit)
+
+    logger.info(f"Total unique obituaries after dedup: {len(unique)} (from {len(obituaries)} raw)")
+    return unique
+
+
+def _extract_obituaries_json(html, source_label):
+    """
+    Extract obituary data from embedded JSON in Legacy.com HTML.
+    Updated 2026-04: Legacy.com pages now contain TWO "obituaries" arrays:
+      1. A small array (~10 items) with new schema: {title, link, imgLink, ...}
+      2. A large array (~50 items) with old schema: {personId, name, location, ...}
+    We extract from ALL matching arrays to get maximum coverage.
+    """
+    obituaries = []
+    try:
+        search_start = 0
+        all_raw_obits = []
+
+        while True:
+            idx = html.find('"obituaries":[', search_start)
+            if idx == -1:
+                break
+
+            nearby = html[idx:idx + 500]
+            if '"link"' in nearby or '"personId"' in nearby:
+                arr_start = idx + len('"obituaries":')
+                depth = 0
+                end_idx = arr_start
+                for i in range(arr_start, min(len(html), arr_start + 500000)):
+                    if html[i] == '[':
+                        depth += 1
+                    elif html[i] == ']':
+                        depth -= 1
+                        if depth == 0:
+                            end_idx = i + 1
+                            break
+
+                json_str = html[arr_start:end_idx]
+                try:
+                    raw_obits = json.loads(json_str)
+                    all_raw_obits.extend(raw_obits)
+                    logger.debug(f"Found array with {len(raw_obits)} items for {source_label}")
+                except json.JSONDecodeError as e:
+                    logger.error(f"JSON parse error in array for {source_label}: {e}")
+
+            search_start = idx + 1
+
+        if not all_raw_obits:
+            logger.debug(f"No obituaries JSON found for {source_label}")
+            return []
+
+        for raw in all_raw_obits:
+            obit = _parse_json_obituary(raw, source_label)
+            if obit and obit["full_name"]:
+                obituaries.append(obit)
+
+    except Exception as e:
+        logger.error(f"Error extracting obituaries for {source_label}: {e}")
+
+    return obituaries
+
+
+def _parse_json_obituary(raw, source_label):
+    """
+    Parse a single obituary JSON object from Legacy.com.
+    Legacy.com pages serve TWO schemas:
+      1. Old/rich schema (preferred): personId, name{}, location{}, age,
+         fromToYears, obitSnippet, links{} - ~50 items per page
+      2. New/minimal schema (fallback): title, link, imgLink - ~10 items
+    We try old schema FIRST because it has much richer data.
+    """
+    try:
+        # --- Try old schema first (personId/name/location) - RICHER DATA ---
+        name_data = raw.get("name", {})
+        if isinstance(name_data, dict) and name_data.get("fullName"):
+            location_data = raw.get("location", {})
+            city_data = location_data.get("city", {})
+            state_data = location_data.get("state", {})
+            links_data = raw.get("links", {})
+            obit_url_data = links_data.get("obituaryUrl", {})
+
+            full_name = name_data.get("fullName", "")
+            first_name = name_data.get("firstName", "")
+            last_name = name_data.get("lastName", "")
+            middle_name = name_data.get("middleName", "") or ""
+
+            date_of_birth = ""
+            date_of_death = ""
+            from_to = raw.get("fromToYears", "")
+            if from_to and " - " in str(from_to):
+                parts = str(from_to).split(" - ")
+                if len(parts) == 2:
+                    date_of_birth = parts[0].strip()
+                    date_of_death = parts[1].strip()
+
+            obituary_url = ""
+            if isinstance(obit_url_data, dict):
+                obituary_url = obit_url_data.get("href", "")
+            elif isinstance(obit_url_data, str):
+                obituary_url = obit_url_data
+
+            return {
+                "full_name": full_name,
+                "first_name": first_name,
+                "last_name": last_name,
+                "middle_name": middle_name,
+                "date_of_death": date_of_death,
+                "date_of_birth": date_of_birth,
+                "age": raw.get("age"),
+                "city": city_data.get("fullName", "") if isinstance(city_data, dict) else str(city_data),
+                "state": state_data.get("code", "MD") if isinstance(state_data, dict) else str(state_data),
+                "obituary_url": obituary_url,
+                "obituary_text": raw.get("obitSnippet", "") or "",
+                "survived_by": "",
+                "source": f"Legacy.com/{source_label}",
+                "scraped_at": datetime.now().isoformat(),
+                "person_id": str(raw.get("personId", "")),
+            }
+
+        # --- Fallback: new schema (title + link) ---
+        title = raw.get("title", "")
+        link = raw.get("link", "")
+        if title and link:
+            full_name = title
+            date_of_birth = ""
+            date_of_death = ""
+
+            year_match = re.match(r"^(.*?)\s*\((\d{4})\s*-\s*(\d{4})\)\s*$", title)
+            if year_match:
+                full_name = year_match.group(1).strip()
+                date_of_birth = year_match.group(2)
+                date_of_death = year_match.group(3)
+            else:
+                year_match2 = re.match(r"^(.*?)\s*\((\d{4})\)\s*$", title)
+                if year_match2:
+                    full_name = year_match2.group(1).strip()
+                    date_of_death = year_match2.group(2)
+
+            name_parts = full_name.split()
+            first_name = name_parts[0] if name_parts else ""
+            last_name = name_parts[-1] if len(name_parts) > 1 else ""
+            middle_name = " ".join(name_parts[1:-1]) if len(name_parts) > 2 else ""
+
+            return {
+                "full_name": full_name,
+                "first_name": first_name,
+                "last_name": last_name,
+                "middle_name": middle_name,
+                "date_of_death": date_of_death,
+                "date_of_birth": date_of_birth,
+                "age": None,
+                "city": "",
+                "state": "MD",
+                "obituary_url": link,
+                "obituary_text": "",
+                "survived_by": "",
+                "source": f"Legacy.com/{source_label}",
+                "scraped_at": datetime.now().isoformat(),
+                "person_id": "",
+            }
+
+        return None
+
+    except Exception as e:
+        logger.debug(f"Error parsing obituary JSON: {e}")
+        return None
+
+
+def _fetch_obituary_details(url, session):
+    """
+    Fetch the full obituary page to extract additional details
+    like survived_by, full obituary text, date of birth, etc.
+    """
+    try:
+        resp = session.get(url, timeout=15)
+        if resp.status_code != 200:
+            return {}
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+        details = {}
+
+        # Get full obituary text
+        obit_div = soup.select_one(
+            "[class*='ObituaryText'], [class*='obit-text'], "
+            "[class*='obituary-text'], [data-component='ObituaryText']"
+        )
+        if obit_div:
+            details["obituary_text"] = obit_div.get_text(separator=" ", strip=True)
+
+        # Extract survived by
+        text = details.get("obituary_text", "")
+        if text:
+            survived_match = re.search(
+                r"(?:survived by|is survived by|leaves behind|"
+                r"left to cherish)(.*?)(?:\.|;|$)",
+                text, re.IGNORECASE
+            )
+            if survived_match:
+                details["survived_by"] = survived_match.group(1).strip()[:500]
+
+            # Extract date of birth if not already known
+            dob_match = re.search(
+                r"(?:born on|born|date of birth)[:\s]*?"
+                r"[^,.\d]{0,40}?"
                 r"(\w+ \d{1,2},?\s*\d{4}|\d{1,2}/\d{1,2}/\d{2,4})",
                 text, re.IGNORECASE
             )
