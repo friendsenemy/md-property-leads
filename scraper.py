@@ -414,3 +414,13 @@ def _fetch_obituary_details(url, session):
     except Exception as e:
         logger.error(f"Error fetching obituary details from {url}: {e}")
         return {}
+
+
+def fetch_obituary_details(url):
+    """
+    Public wrapper for _fetch_obituary_details.
+    Creates its own session so callers don't need to manage one.
+    """
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    return _fetch_obituary_details(url, session)
