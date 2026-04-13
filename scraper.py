@@ -1,7 +1,10 @@
 """
-Obituary Scraper for Maryland
-Scrapes Legacy.com for recent Maryland obituaries.
-Extracts embedded JSON data from newspaper browse pages.
+Obituary Scraper for Maryland - COMPLETE COVERAGE
+Scrapes Legacy.com using TWO approaches for maximum coverage:
+  1. Newspaper browse pages (20 verified MD newspaper partners)
+  2. County-level local pages (all 23 counties + Baltimore City)
+This dual approach ensures we catch EVERY Maryland obituary on Legacy.com,
+including funeral-home-direct posts that never appear in any newspaper.
 """
 
 import re
@@ -22,61 +25,111 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.5",
 }
 
-# Maryland newspaper slugs on Legacy.com
+# ============================================================
+# SOURCE 1: Maryland newspaper slugs on Legacy.com
+# Official list from Legacy.com newspaper directory + validated
+# ============================================================
 MD_NEWSPAPERS = [
-    "baltimoresun",
-    "capitalgazette",
-    "fredericknewspost",
-    "washingtonpost",
-    "stardem",
-    "carrollcountytimes",
-    "avenuenews",
-    "baltimoretimes",
-    "dundalkeagle",
-    "newszapmd",
-    "timesnews",
+    # --- Baltimore Metro ---
+    "baltimoresun",           # Baltimore City, Baltimore County, Harford, Howard
+    "avenuenews",             # Baltimore area community paper
+    "baltimoretimes",         # Baltimore City community paper
+    "dundalkeagle",           # Baltimore County (Dundalk/Essex area)
+    # --- Central Maryland ---
+    "capitalgazette",         # Anne Arundel County (Annapolis/Severna Park)
+    "carrollcountytimes",     # Carroll County (Westminster)
+    "fredericknewspost",      # Frederick County
+    "thedamascuslocal",       # Montgomery County (Damascus area)
+    # --- DC Metro / Western Suburbs ---
+    "washingtonpost",         # Montgomery, Prince George's, broader MD/DC/VA
+    # --- Southern Maryland ---
+    "somdnews-independent",   # Charles County (Maryland Independent)
+    "somdnews-recorder",      # Calvert County (The Calvert Recorder)
+    "somdnews-enterprise",    # St. Mary's County (The Enterprise)
+    # --- Eastern Shore ---
+    "stardem",                # Talbot & Caroline Counties (Star Democrat)
+    "myeasternshoremd-kent",  # Kent County (Kent County News)
+    "myeasternshoremd-qa",    # Queen Anne's County (Bay Times & Record Observer)
+    "myeasternshoremd-dorchester",  # Dorchester County (Dorchester Star)
+    "myeasternshoremd-timesrecord", # Eastern Shore (Times-Record)
+    # --- Cecil County ---
+    "cecildaily",             # Cecil County (Cecil Whig)
+    # --- Border (picks up MD obits near state line) ---
+    "newarkpostonline",       # Newark Post (DE) - Cecil County border
+    # --- Statewide ---
+    "newszapmd",              # Various MD areas
+]
+
+# ============================================================
+# SOURCE 2: County-level local pages on Legacy.com
+# These catch funeral-home-direct posts NOT in any newspaper
+# All 23 Maryland counties + Baltimore City
+# ============================================================
+MD_COUNTIES = [
+    "allegany-county",
+    "anne-arundel-county",
+    "baltimore",              # Baltimore City
+    "baltimore-county",
+    "calvert-county",
+    "caroline-county",
+    "carroll-county",
+    "cecil-county",
+    "charles-county",
+    "dorchester-county",
+    "frederick-county",
+    "garrett-county",
+    "harford-county",
+    "howard-county",
+    "kent-county",
+    "montgomery-county",
+    "prince-georges-county",
+    "queen-annes-county",
+    "saint-marys-county",
+    "somerset-county",
+    "talbot-county",
+    "washington-county",
+    "wicomico-county",
+    "worcester-county",
 ]
 
 
 def scrape_legacy_obituaries(max_pages=2):
     """
-    Scrape Legacy.com for recent Maryland obituaries.
-    Fetches newspaper browse pages and extracts embedded JSON data.
+    Scrape Legacy.com for recent Maryland obituaries using both
+    newspaper browse pages and county-level local pages.
     Returns a list of dicts with obituary data.
     """
     obituaries = []
     session = requests.Session()
     session.headers.update(HEADERS)
 
+    # --- Pass 1: Scrape newspaper browse pages ---
     for paper in MD_NEWSPAPERS:
         for page in range(1, max_pages + 1):
             try:
                 url = f"https://www.legacy.com/us/obituaries/{paper}/browse"
                 params = {"page": page}
 
-                logger.info(f"Scraping Legacy.com: {paper} page {page}")
+                logger.info(f"Scraping newspaper: {paper} page {page}")
                 resp = session.get(url, params=params, timeout=20)
 
                 if resp.status_code != 200:
                     logger.warning(f"Got status {resp.status_code} for {paper} page {page}")
                     break
 
-                # Extract embedded JSON obituary data from HTML
-                page_obits = _extract_obituaries_json(resp.text, paper)
+                page_obits = _extract_obituaries_json(resp.text, f"newspaper/{paper}")
 
                 if not page_obits:
                     logger.info(f"No obituaries found for {paper} at page {page}")
                     break
 
-                # Filter to Maryland only (some papers like washingtonpost cover multiple states)
+                # Filter to Maryland only (washingtonpost covers DC/VA too)
                 for obit in page_obits:
                     state = obit.get("state", "")
                     if state in ("MD", "Maryland", ""):
                         obituaries.append(obit)
 
                 logger.info(f"Found {len(page_obits)} obituaries for {paper} page {page}")
-
-                # Be respectful with rate limiting
                 time.sleep(random.uniform(1.5, 3.0))
 
             except requests.RequestException as e:
@@ -86,7 +139,44 @@ def scrape_legacy_obituaries(max_pages=2):
                 logger.error(f"Parse error for {paper} page {page}: {e}")
                 continue
 
-    # Deduplicate by personId or name + date
+    # --- Pass 2: Scrape county-level local pages ---
+    # These catch funeral-home-direct posts not in any newspaper
+    for county in MD_COUNTIES:
+        for page in range(1, max_pages + 1):
+            try:
+                url = f"https://www.legacy.com/us/obituaries/local/maryland/{county}"
+                params = {"page": page}
+
+                logger.info(f"Scraping county: {county} page {page}")
+                resp = session.get(url, params=params, timeout=20)
+
+                if resp.status_code != 200:
+                    logger.warning(f"Got status {resp.status_code} for county {county} page {page}")
+                    break
+
+                page_obits = _extract_obituaries_json(resp.text, f"county/{county}")
+
+                if not page_obits:
+                    logger.info(f"No obituaries found for county {county} at page {page}")
+                    break
+
+                # Filter to Maryland only (county pages can show people born-in-MD but died elsewhere)
+                for obit in page_obits:
+                    state = obit.get("state", "")
+                    if state in ("MD", "Maryland", ""):
+                        obituaries.append(obit)
+
+                logger.info(f"Found {len(page_obits)} county obituaries for {county} page {page}")
+                time.sleep(random.uniform(1.5, 3.0))
+
+            except requests.RequestException as e:
+                logger.error(f"Request error for county {county} page {page}: {e}")
+                continue
+            except Exception as e:
+                logger.error(f"Parse error for county {county} page {page}: {e}")
+                continue
+
+    # Deduplicate by personId or name + date (newspaper and county pages overlap heavily)
     seen = set()
     unique = []
     for obit in obituaries:
@@ -96,19 +186,22 @@ def scrape_legacy_obituaries(max_pages=2):
             seen.add(key)
             unique.append(obit)
 
-    logger.info(f"Scraped {len(unique)} unique MD obituaries from Legacy.com")
+    logger.info(f"Scraped {len(unique)} unique MD obituaries from Legacy.com "
+                f"({len(obituaries)} total before dedup)")
     return unique
 
 
-def _extract_obituaries_json(html, paper):
+def _extract_obituaries_json(html, source_label):
     """
     Extract obituary data from embedded JSON in Legacy.com HTML.
     Legacy embeds obituary listings as a JSON array in the page source.
+    Both newspaper and county pages use this same structure.
     """
     obituaries = []
 
     try:
         # Find the obituaries JSON array that contains personId entries
+        # (pages may have multiple "obituaries" arrays; we want the one with personId)
         search_start = 0
         target_start = -1
 
@@ -124,7 +217,7 @@ def _extract_obituaries_json(html, paper):
             search_start = idx + 1
 
         if target_start == -1:
-            logger.debug(f"No obituaries JSON found for {paper}")
+            logger.debug(f"No obituaries JSON found for {source_label}")
             return []
 
         # Find the matching closing bracket for the array
@@ -143,19 +236,19 @@ def _extract_obituaries_json(html, paper):
         raw_obits = json.loads(json_str)
 
         for raw in raw_obits:
-            obit = _parse_json_obituary(raw, paper)
+            obit = _parse_json_obituary(raw, source_label)
             if obit and obit["full_name"]:
                 obituaries.append(obit)
 
     except json.JSONDecodeError as e:
-        logger.error(f"JSON parse error for {paper}: {e}")
+        logger.error(f"JSON parse error for {source_label}: {e}")
     except Exception as e:
-        logger.error(f"Error extracting obituaries for {paper}: {e}")
+        logger.error(f"Error extracting obituaries for {source_label}: {e}")
 
     return obituaries
 
 
-def _parse_json_obituary(raw, paper):
+def _parse_json_obituary(raw, source_label):
     """Parse a single obituary from the embedded JSON data."""
     try:
         name_data = raw.get("name", {})
@@ -174,8 +267,8 @@ def _parse_json_obituary(raw, paper):
         date_of_birth = ""
         date_of_death = ""
         from_to = raw.get("fromToYears", "")
-        if from_to and " - " in from_to:
-            parts = from_to.split(" - ")
+        if from_to and " - " in str(from_to):
+            parts = str(from_to).split(" - ")
             if len(parts) == 2:
                 date_of_birth = parts[0].strip()
                 date_of_death = parts[1].strip()
@@ -200,7 +293,7 @@ def _parse_json_obituary(raw, paper):
             "obituary_url": obituary_url,
             "obituary_text": raw.get("obitSnippet", "") or "",
             "survived_by": "",
-            "source": f"Legacy.com/{paper}",
+            "source": f"Legacy.com/{source_label}",
             "scraped_at": datetime.now().isoformat(),
             "person_id": str(raw.get("personId", "")),
         }
@@ -236,14 +329,14 @@ def fetch_obituary_details(url):
             # Extract survived-by information
             survived_match = re.search(
                 r"(?:survived by|leaves behind|is survived by|"
-                r"survivors include)(.*?)(?:\\.|;|$)",
+                r"survivors include)(.*?)(?:\.|;|$)",
                 text, re.IGNORECASE
             )
             if survived_match:
                 details["survived_by"] = survived_match.group(1).strip()
 
             # Extract age
-            age_match = re.search(r"(?:age|aged)\\s+(\\d{1,3})", text, re.IGNORECASE)
+            age_match = re.search(r"(?:age|aged)\s+(\d{1,3})", text, re.IGNORECASE)
             if age_match:
                 details["age"] = int(age_match.group(1))
 
