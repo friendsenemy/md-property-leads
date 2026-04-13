@@ -72,6 +72,15 @@ def init_db():
                 year_built TEXT DEFAULT '',
                 account_number TEXT DEFAULT '',
                 legal_description TEXT DEFAULT '',
+                square_footage TEXT DEFAULT '',
+                transfer_date TEXT DEFAULT '',
+                sale_price TEXT DEFAULT '',
+                estimated_market_value REAL,
+                estimated_mortgage_balance REAL,
+                known_liens REAL,
+                estimated_equity REAL,
+                equity_percent REAL,
+                equity_confidence TEXT DEFAULT 'unknown',
                 created_at TEXT DEFAULT (datetime('now')),
                 FOREIGN KEY (obituary_id) REFERENCES obituaries(id) ON DELETE CASCADE
             );
@@ -104,6 +113,26 @@ def init_db():
             CREATE INDEX IF NOT EXISTS idx_leads_status ON leads(status);
             CREATE INDEX IF NOT EXISTS idx_leads_created ON leads(created_at);
         """)
+
+        # Migration: add equity columns to existing databases
+        _migrate_columns = [
+            ("properties", "square_footage", "TEXT DEFAULT ''"),
+            ("properties", "transfer_date", "TEXT DEFAULT ''"),
+            ("properties", "sale_price", "TEXT DEFAULT ''"),
+            ("properties", "estimated_market_value", "REAL"),
+            ("properties", "estimated_mortgage_balance", "REAL"),
+            ("properties", "known_liens", "REAL"),
+            ("properties", "estimated_equity", "REAL"),
+            ("properties", "equity_percent", "REAL"),
+            ("properties", "equity_confidence", "TEXT DEFAULT 'unknown'"),
+        ]
+        for table, col, col_type in _migrate_columns:
+            try:
+                conn.execute(f"ALTER TABLE {table} ADD COLUMN {col} {col_type}")
+                logger.info(f"Migration: added {col} to {table}")
+            except Exception:
+                pass  # Column already exists
+
     logger.info("Database initialized")
 
 
@@ -148,8 +177,10 @@ def insert_property(obituary_id, prop):
             (obituary_id, owner_name, property_address, city, county, state,
              zip_code, property_type, assessed_value, land_value,
              improvement_value, lot_size, year_built, account_number,
-             legal_description)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+             legal_description, square_footage, transfer_date, sale_price,
+             estimated_market_value, estimated_mortgage_balance, known_liens,
+             estimated_equity, equity_percent, equity_confidence)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             obituary_id,
             prop.get("owner_name", ""),
@@ -166,6 +197,15 @@ def insert_property(obituary_id, prop):
             prop.get("year_built", ""),
             prop.get("account_number", ""),
             prop.get("legal_description", ""),
+            prop.get("square_footage", ""),
+            prop.get("transfer_date", ""),
+            prop.get("sale_price", ""),
+            prop.get("estimated_market_value"),
+            prop.get("estimated_mortgage_balance"),
+            prop.get("known_liens"),
+            prop.get("estimated_equity"),
+            prop.get("equity_percent"),
+            prop.get("equity_confidence", "unknown"),
         ))
         return cursor.lastrowid
 
@@ -213,6 +253,8 @@ def get_leads(status=None, search=None, sort_by="created_at", sort_dir="desc",
             "assessed_value": "CAST(p.assessed_value AS REAL)",
             "county": "p.county",
             "status": "l.status",
+            "estimated_equity": "COALESCE(p.estimated_equity, 0)",
+            "equity_percent": "COALESCE(p.equity_percent, 0)",
         }
         sort_col = allowed_sorts.get(sort_by, "l.created_at")
         sort_direction = "DESC" if sort_dir.lower() == "desc" else "ASC"
@@ -266,6 +308,9 @@ def get_leads_for_export(status=None):
                 p.property_type, p.assessed_value, p.land_value,
                 p.improvement_value, p.lot_size, p.year_built,
                 p.account_number,
+                p.estimated_market_value, p.estimated_mortgage_balance,
+                p.known_liens, p.estimated_equity, p.equity_percent,
+                p.equity_confidence,
                 l.status, l.notes,
                 l.created_at as lead_date
             FROM leads l
