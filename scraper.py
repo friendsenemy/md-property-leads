@@ -403,6 +403,16 @@ def _fetch_obituary_details(url, session):
             if dob_match:
                 details["date_of_birth"] = dob_match.group(1).strip()
 
+            # Extract date of death from obituary text
+            dod_match = re.search(
+                r"(?:passed away|died|passed on|departed this life|entered into eternal rest|went home to be with the lord|passed peacefully|departed|passed)"
+                r"[^,.\d]{0,80}?"
+                r"(?:on\s+)?(\w+ \d{1,2},?\s*\d{4}|\d{1,2}/\d{1,2}/\d{2,4})",
+                text, re.IGNORECASE
+            )
+            if dod_match:
+                details["date_of_death"] = dod_match.group(1).strip()
+
         # Also check for structured date elements in the page (Legacy uses these)
         date_els = soup.select("[class*='date'], [class*='Date'], time")
         for el in date_els:
