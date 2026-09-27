@@ -156,7 +156,7 @@ const TitleApp = {
                         <div class="address">${this.esc(p.property_address || "N/A")}${p.city ? `, ${this.esc(p.city)}` : ""}</div>
                         <div class="meta">${this.esc(p.property_type || "")}${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? ` • owner on +${r.other_parcels_same_owner.length} parcels` : ""}</div>
                     </td>
-                    <td class="name-cell" style="font-family:var(--font-mono); font-size:0.8rem">${this.esc(p.owner_name)}${this.notesOf(r) ? '<span class="note-badge" title="Has notes">✎</span>' : ""}</td>
+                    <td class="name-cell" style="font-family:var(--font-mono); font-size:0.8rem">${this.esc(p.owner_name)}${p.owner_name_2 ? `<div style="color:var(--text-secondary); font-size:0.72rem">${this.esc(p.owner_name_2)}</div>` : ""}${this.notesOf(r) ? '<span class="note-badge" title="Has notes">✎</span>' : ""}</td>
                     <td><span class="cls cls-${r.title_class[0]}" title="${this.esc(r.title_class_label)}">${r.title_class}</span> <span class="flags">${this.flagChips(r.flags)}</span></td>
                     <td class="county-cell">${this.esc(p.county)}</td>
                     <td class="date-cell">${p.transfer_date && p.transfer_date !== "0000.00.00" ? this.esc(p.transfer_date.slice(0, 4)) + ` <span class="yrs">(${r._years}y)</span>` : "N/A"}</td>
