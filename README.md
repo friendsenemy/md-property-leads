@@ -42,6 +42,9 @@ GitHub Pages: Settings → Pages → Source: *Deploy from a branch* → `main` /
 | `index.html`, `static/` | The dashboard |
 | `data/leads.json` | Every lead ever found (append-only, deduped) |
 | `data/seen.json` | Obituaries already checked, so SDAT isn't queried twice |
+| `engine2/` | Title Leads engine: index builder, owner parser, signals, scoring, scan |
+| `data/title/` | Title-scan output shards (per county + statewide top) |
+| `static/js/title.js`, `static/js/aerial.js` | Title Leads tab and the free aerial/street imagery panel |
 | `app.py`, `database.py` | Legacy Flask/SQLite server — optional, for running locally |
 
 ## Run locally
@@ -51,6 +54,45 @@ pip install -r requirements.txt
 MD_OPENDATA_USERNAME=you@example.com MD_OPENDATA_PASSWORD=... python pipeline.py
 python -m http.server 8000   # then open http://localhost:8000
 ```
+
+## Engine 2 — Title Leads (statewide, property-first)
+
+The second tab on the dashboard. Instead of starting from a death, it starts from
+every parcel in Maryland and looks for ownership that appears unresolved.
+
+Weekly (Mondays, or **Actions → Title Scan (Engine 2) → Run workflow**):
+
+1. `engine2/build_index.py` pulls all ~2.4M SDAT parcels (slim columns) into a
+   local SQLite index. Cached for the week; never committed.
+2. `engine2/title_scan.py` classifies every owner (individual, co-owners, estate,
+   trust, LLC, government…), flags title signals, scores, and writes
+   `data/title/<county>.json` (top 400 per county), `data/title/top.json`
+   (statewide top 1000) and `data/title/summary.json`.
+3. It also backfills lat/lon + deed liber/folio onto obituary leads so both tabs
+   get the aerial panel.
+
+Signals used today (all from SDAT, no death or probate lookup):
+
+| Flag | Meaning |
+|---|---|
+| `ESTATE_IN_NAME` / `DECEASED_IN_NAME` / `PERSONAL_REP` | Decedent's estate is still the titled owner (class **E1**) |
+| `HEIRS_IN_NAME` | "Heirs of …" on title — unprobated inheritance (**E2**) |
+| `LIFE_ESTATE` | Remainder interest pending (**E3**) |
+| `SURVIVING` | Surviving co-owner noted (**E4**) |
+| `STALE_OWNERSHIP` | No transfer in 12+ years; **S1/S2/S3** at 12/25/40 yrs |
+| `ABSENTEE`, `NO_HOMESTEAD`, `VACANT_LAND`, `OLD_STRUCTURE`, `POOR_CONDITION`, `MAIL_MISMATCH` | Distress indicators |
+
+Scores: **Title Complexity**, **Financial**, **Distress**, blended into
+**Research Priority**. Every point has a reason shown in the lead modal. Weights
+and thresholds live in `engine2/config.py`.
+
+**Not yet automated:** death confirmation and probate status. There is no free,
+authorized statewide death file, and the Register of Wills estate search
+prohibits commercial use without written permission (request pending). Both are
+designed as pluggable providers in a later phase.
+
+Imagery: Maryland iMAP 6-inch aerials (2020 west / 2022 Eastern Shore) and USGS
+NAIP, plus Street View / Maps / Mapillary links — no API keys, no billing.
 
 ## Data sources
 

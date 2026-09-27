@@ -3761,7 +3761,12 @@
      "known_liens": 0,
      "estimated_equity": 463155,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.93452",
+     "lon": "-76.606018",
+     "deed_liber": "11167",
+     "deed_folio": "0139",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4459,7 +4464,12 @@
      "known_liens": 0,
      "estimated_equity": 86415,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.884272",
+     "lon": "-76.559711",
+     "deed_liber": "02539",
+     "deed_folio": "0374",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BROWN JOHN D",
@@ -10254,7 +10264,12 @@
      "known_liens": 0,
      "estimated_equity": 96122,
      "equity_percent": 84.7,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.62139",
+     "lon": "-78.802863",
+     "deed_liber": "00704",
+     "deed_folio": "0398",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JOHNSON MICHAEL A-SUSAN A",
@@ -10280,7 +10295,12 @@
      "known_liens": 0,
      "estimated_equity": 110541,
      "equity_percent": 97.4,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.630755",
+     "lon": "-78.803625",
+     "deed_liber": "00652",
+     "deed_folio": "0204",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JOHNSON MICHAEL JR",
@@ -10306,7 +10326,12 @@
      "known_liens": 0,
      "estimated_equity": 29889,
      "equity_percent": 57.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.657169",
+     "lon": "-78.752573",
+     "deed_liber": "02675",
+     "deed_folio": "0184",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "JOHNSON MICHAEL",
@@ -10968,7 +10993,12 @@
      "known_liens": 0,
      "estimated_equity": 92085,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.641999",
+     "lon": "-78.744225",
+     "deed_liber": "03053",
+     "deed_folio": "0238",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BROWN MILDRED A",
@@ -12915,7 +12945,12 @@
      "known_liens": 0,
      "estimated_equity": 28304,
      "equity_percent": 88.4,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.557122",
+     "lon": "-78.975486",
+     "deed_liber": "02746",
+     "deed_folio": "0362",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "HOGAN BRIAN J",
@@ -14041,7 +14076,12 @@
      "known_liens": 0,
      "estimated_equity": -223404,
      "equity_percent": -10.7,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "38.939562",
+     "lon": "-76.581286",
+     "deed_liber": "40467",
+     "deed_folio": "0185",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "PRICE BARBARA",
@@ -15571,7 +15611,12 @@
      "known_liens": 0,
      "estimated_equity": 105315,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.594986",
+     "lon": "-78.834991",
+     "deed_liber": "01530",
+     "deed_folio": "0232",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MILLER NANCY E",
@@ -16016,7 +16061,12 @@
      "known_liens": 0,
      "estimated_equity": 112140,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.624899",
+     "lon": "-78.735376",
+     "deed_liber": "00591",
+     "deed_folio": "0211",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "PRICE JOHN M ETAL",
@@ -16042,7 +16092,12 @@
      "known_liens": 0,
      "estimated_equity": 155295,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.673511",
+     "lon": "-78.794035",
+     "deed_liber": "00290",
+     "deed_folio": "0595",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "PRICE JOHN M ETAL",
@@ -16068,7 +16123,12 @@
      "known_liens": 0,
      "estimated_equity": 19635,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.673619",
+     "lon": "-78.794285",
+     "deed_liber": "00290",
+     "deed_folio": "0595",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "PRICE JOHN J",
@@ -19153,7 +19213,12 @@
      "known_liens": 0,
      "estimated_equity": -3393,
      "equity_percent": -18.0,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.662061531698114",
+     "lon": "-78.93166717995278",
+     "deed_liber": "02734",
+     "deed_folio": "0169",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MILLER JAMES",
@@ -19179,7 +19244,12 @@
      "known_liens": 0,
      "estimated_equity": -2025,
      "equity_percent": -385.7,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.689456",
+     "lon": "-78.747583",
+     "deed_liber": "01794",
+     "deed_folio": "0391",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MILLER JAMES",
@@ -19205,7 +19275,12 @@
      "known_liens": 0,
      "estimated_equity": 3960,
      "equity_percent": 60.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.6896",
+     "lon": "-78.747428",
+     "deed_liber": "01794",
+     "deed_folio": "0391",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MILLER JAMES ET UX",
@@ -19231,7 +19306,12 @@
      "known_liens": 0,
      "estimated_equity": 182490,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.659221",
+     "lon": "-78.810375",
+     "deed_liber": "00419",
+     "deed_folio": "0397",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MILLER JAMES TRUSTEE",

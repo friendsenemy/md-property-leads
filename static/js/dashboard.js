@@ -53,7 +53,8 @@ const App = {
         return Object.assign({}, lead, {
             _primary: primary,
             _county: primary.county || "",
-            _assessed: total,
+            _assessed: parseFloat(primary.assessed_value) || 0,   // primary property (matches the equity column)
+            _portfolio: total,
             _equity: primary.estimated_equity != null ? parseFloat(primary.estimated_equity) : null,
             _search: [
                 lead.full_name, lead.city, lead.survived_by,
@@ -228,7 +229,7 @@ const App = {
                         </div>
                     </td>
                     <td class="county-cell">${this.esc(lead._county || "N/A")}</td>
-                    <td class="value-cell">${lead._assessed ? "$" + lead._assessed.toLocaleString() : "N/A"}</td>
+                    <td class="value-cell">${lead._assessed ? "$" + lead._assessed.toLocaleString() : "N/A"}${n > 1 && lead._portfolio > lead._assessed ? `<div class="meta" title="All ${n} matched properties">$${lead._portfolio.toLocaleString()} across ${n}</div>` : ""}</td>
                     <td class="equity-cell">${this.equityBadge(p)}</td>
                     <td><span class="status-badge ${status === "new" ? this.ageClass(lead) : status}">${this.statusLabel(lead, status)}</span></td>
                     <td class="date-cell">${this.formatDate(lead.found_at)}</td>
@@ -269,6 +270,8 @@ const App = {
                     <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:var(--cyan-dim); margin-bottom:6px;">Estimated Equity</div>
                     ${this.equityDetails(p)}
                 </div>
+                ${p.deed_liber ? `<div class="detail-row"><span class="label">Deed</span><span class="value" style="font-family:var(--font-mono)">Liber ${this.esc(p.deed_liber)} / Folio ${this.esc(p.deed_folio || "?")}</span></div>` : ""}
+                <div style="margin-top:10px;">${Aerial.panel(p, (p.account_number || "").replace(/\W/g, ""))}</div>
             </div>`).join("");
 
         document.getElementById("modalBody").innerHTML = `
@@ -288,6 +291,8 @@ const App = {
                 <h3>Properties (${props.length})</h3>
                 ${propsHtml || '<p style="color:var(--text-dim)">No property details available</p>'}
             </div>`;
+
+        Aerial.bind(document.getElementById("modalBody"));
 
         const sel = document.getElementById("leadStatusSelect");
         const notes = document.getElementById("leadNotes");

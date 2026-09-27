@@ -1,0 +1,84 @@
+name: Title Scan (Engine 2)
+
+# Statewide property-first scan for unresolved-title signals.
+# Independent of daily-scrape.yml: if this fails, obituary leads keep flowing.
+
+on:
+  schedule:
+    # Mondays 08:00 UTC (4 AM EDT). Index rebuild + scan take ~45-90 min.
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+    inputs:
+      rebuild_index:
+        description: 'Force a fresh SDAT index pull (ignore weekly cache)'
+        default: 'false'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: title-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install requests==2.31.0
+
+      - name: Compute cache key (ISO week)
+        id: week
+        run: echo "key=sdat-index-$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+
+      - name: Restore SDAT index
+        if: github.event.inputs.rebuild_index != 'true'
+        id: restore
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+
+      - name: Build SDAT index (statewide, ~2.4M parcels)
+        if: steps.restore.outputs.cache-hit != 'true'
+        env:
+          MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
+          MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
+          MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
+        run: python -m engine2.build_index
+
+      - name: Save SDAT index
+        if: steps.restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+
+      - name: Run title scan
+        run: python -m engine2.title_scan
+
+      - name: Commit results
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/title data/leads.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          N=$(python -c "import json;print(json.load(open('data/title/summary.json'))['candidates'])")
+          git commit -m "Title scan: ${N} statewide candidates"
+          git pull --rebase origin main
+          git push

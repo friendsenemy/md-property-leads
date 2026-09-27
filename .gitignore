@@ -12,3 +12,7 @@ build/
 .idea/
 .vscode/
 *.log
+
+# Engine 2 local index (rebuilt weekly in Actions)
+.cache/
+*.sqlite
