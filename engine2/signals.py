@@ -108,8 +108,8 @@ def analyze(row, today=None):
 
     prop = {
         "account_number": row.get("acct"),
-        "owner_name": owner1,
-        "owner_name_2": owner2,
+        "owner_name": owner1 or owner2,
+        "owner_name_2": owner2 if owner1 else "",
         "owner_type": owner_type,
         "owners": split_individuals(owner1, owner2),
         "property_address": row.get("address") or "",

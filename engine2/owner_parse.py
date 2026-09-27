@@ -33,14 +33,22 @@ _FLAG_PATTERNS = [
 
 def clean(name):
     # SDAT glues markers on with hyphens ("NAOMI-LIFE EST", "ETAL-LIFE ESTATE"); treat as spaces.
-    name = (name or "").upper().replace(",", " ").replace(".", " ").replace("-", " ")
+    name = (name or "").upper().replace(",", " ").replace(".", " ").replace("-", " ").replace("(", " ").replace(")", " ")
     name = re.sub(r"\s+", " ", name).strip()
     return name
 
 
+_REAL_ESTATE = re.compile(r"\bREAL\s+(ESTATE|EST)S?\b")
+
+
+def _without_business_estate(text):
+    """'WAL-MART REAL ESTATE' is a company, not a decedent's estate."""
+    return _REAL_ESTATE.sub(" REALTY ", text)
+
+
 def flags_for(owner1, owner2=""):
     """Return the set of title-relevant flags found in the owner text."""
-    text = f" {clean(owner1)} {clean(owner2)} "
+    text = _without_business_estate(f" {clean(owner1)} {clean(owner2)} ")
     found = set()
     for flag, rx in _FLAG_PATTERNS:
         if rx.search(text):
@@ -63,6 +71,8 @@ def classify(owner1, owner2=""):
         return "UNKNOWN"
     if any(m in text for m in config.GOVERNMENT_MARKERS):
         return "GOVERNMENT"
+    if _REAL_ESTATE.search(text):
+        return "CORPORATION"
     life_estate = bool(re.search(r"\bLIFE\s+(ESTATE|EST)\b|\bL/E\b", text))
     estate_text = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text) if life_estate else text
     if any(m in estate_text for m in config.ESTATE_MARKERS):
@@ -121,13 +131,16 @@ def split_individuals(owner1, owner2=""):
     Returns [] when the string does not look like people.
     """
     text = f" {clean(owner1)} "
+    if _REAL_ESTATE.search(text):
+        return []
     probe = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text)
     if any(m in probe for m in config.BUSINESS_MARKERS + config.GOVERNMENT_MARKERS
            + config.NONPROFIT_MARKERS + config.TRUST_MARKERS + config.ESTATE_MARKERS):
         return []
     # Names after "C/O" are mail handlers, not owners; tenancy markers are noise.
     stripped = re.split(r"\bC/O\b", text)[0]
-    stripped = re.sub(r"\b(LIFE ESTATE|LIFE EST|L/E|LIFE TENANT|ET ?AL|ETAL|SURV(IVING|IVOR)?|H/W|T/E|J/T|T/C)\b", " ", stripped)
+    stripped = re.sub(r"\b(LIFE ESTATE|LIFE EST|L/E|LIFE TENANT|ET ?AL|ETAL|SURV(IVING|IVOR)?|H/W|T/E|J/T|T/C|DECEASED|DEC'?D|EST)\b", " ", stripped)
+    stripped = stripped.replace("/", " & ")   # "FRANK S/CONSTANCE FOARD" = two owners
     toks = _tokens(stripped)
     if not toks or len(toks) < 2 or len(toks) > 9:
         return []
