@@ -45,7 +45,7 @@ const TitleApp = {
             `Scan: ${this.fmtDT(s.generated_at)} · ${Number(s.index_rows || 0).toLocaleString()} parcels indexed · ${Number(s.candidates || 0).toLocaleString()} candidates`;
         document.getElementById("tstatCandidates").textContent = Number(s.candidates || 0).toLocaleString();
         document.getElementById("tstatEstate").textContent = Number((s.classes || {}).E1 || 0 + 0).toLocaleString();
-        const est = ["E1", "E2", "E3", "E4"].reduce((n, k) => n + ((s.classes || {})[k] || 0), 0);
+        const est = ["E1", "E2", "E3", "E4", "E5"].reduce((n, k) => n + ((s.classes || {})[k] || 0), 0);
         document.getElementById("tstatEstate").textContent = est.toLocaleString();
         document.getElementById("tstatCounties").textContent = Object.keys(s.counties || {}).length;
     },
