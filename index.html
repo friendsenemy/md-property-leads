@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Property Leads — Pre-Probate Lead Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+    <style>
+        .county-filter { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+        .county-filter select {
+            background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 8px 10px; font-family: var(--font-mono); font-size: 0.8rem;
+        }
+        .run-info { font-size:0.78rem; color:var(--text-dim); font-family:var(--font-mono); text-align:right; line-height:1.4; }
+        .run-info a { color: var(--cyan-dim); }
+        .status-badge.old { background: rgba(255, 214, 10, 0.08); color: var(--yellow); border: 1px solid rgba(255, 214, 10, 0.2); }
+        .obit-snippet { font-size:0.85rem; color:var(--text-secondary); line-height:1.5; margin-top:8px; white-space:pre-wrap; }
+        .note-badge { font-size:0.7rem; color: var(--purple); margin-left:6px; }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+
+    <header class="header">
+        <div class="header-title">
+            <div>
+                <div class="logo">MD PROPERTY LEADS</div>
+                <div class="subtitle">Maryland Pre-Probate Lead Generator</div>
+            </div>
+        </div>
+        <div class="header-actions">
+            <span id="lastScrapeInfo" class="run-info">Loading…</span>
+            <button class="btn btn-export" id="exportBtn">
+                <span class="icon">⬇</span> Export Skip Trace
+            </button>
+            <a class="btn btn-primary" id="scrapeBtn" href="https://github.com/friendsenemy/md-property-leads/actions/workflows/daily-scrape.yml" target="_blank" rel="noopener">
+                <span class="icon">⚡</span> Run Scrape Now
+            </a>
+        </div>
+    </header>
+
+    <div class="stats-grid">
+        <div class="stat-card cyan">
+            <div class="stat-label">Total Leads</div>
+            <div class="stat-value" id="statTotal">0</div>
+        </div>
+        <div class="stat-card purple">
+            <div class="stat-label">New (7 days)</div>
+            <div class="stat-value" id="statNew">0</div>
+        </div>
+        <div class="stat-card green">
+            <div class="stat-label">Properties</div>
+            <div class="stat-value" id="statProperties">0</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search by name, address, city, or county…">
+        </div>
+        <div class="county-filter">
+            <select id="countySelect"><option value="">All counties</option></select>
+        </div>
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="new">New</button>
+            <button class="filter-btn" data-filter="contacted">Contacted</button>
+            <button class="filter-btn" data-filter="closed">Closed</button>
+        </div>
+    </div>
+
+    <div class="leads-container">
+        <table class="leads-table">
+            <thead>
+                <tr>
+                    <th data-sort="full_name">Name <span class="sort-arrow">↕</span></th>
+                    <th data-sort="date_of_death">Date of Death <span class="sort-arrow">↕</span></th>
+                    <th>Property Address</th>
+                    <th data-sort="county">County <span class="sort-arrow">↕</span></th>
+                    <th data-sort="assessed_value">Assessed Value <span class="sort-arrow">↕</span></th>
+                    <th data-sort="estimated_equity">Est. Equity <span class="sort-arrow">↕</span></th>
+                    <th data-sort="status">Status <span class="sort-arrow">↕</span></th>
+                    <th data-sort="found_at">Found <span class="sort-arrow">↕</span></th>
+                </tr>
+            </thead>
+            <tbody id="leadsBody"></tbody>
+        </table>
+
+        <div class="empty-state" id="emptyState" style="display:none;">
+            <div class="icon">🏚️</div>
+            <h3 id="emptyTitle">No leads yet</h3>
+            <p id="emptyText">The daily scrape runs automatically every morning. Click "Run Scrape Now" to trigger one immediately from GitHub — results land here in about 10 minutes.</p>
+        </div>
+
+        <div class="pagination">
+            <span id="pageInfo">No leads found</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="prevBtn">← Prev</button>
+                <button class="page-btn" id="nextBtn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Lead Details</h2>
+            <button class="modal-close" id="modalClose">✕</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+            <select id="leadStatusSelect">
+                <option value="new">New</option>
+                <option value="contacted">Contacted</option>
+                <option value="closed">Closed</option>
+            </select>
+            <textarea id="leadNotes" placeholder="Add notes… (saved in this browser)"></textarea>
+            <button class="btn btn-primary" id="saveLeadBtn">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/dashboard.js"></script>
+</body>
+</html>

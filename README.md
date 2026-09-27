@@ -1,99 +1,60 @@
 # MD Property Leads
 
-**Maryland Probate Real Estate Lead Generator**
+**Maryland Pre-Probate Lead Generator** — finds recently deceased Marylanders who owned real estate, before the estate hits probate court.
 
-Automatically scrapes daily obituaries from Legacy.com for Maryland, cross-references deceased individuals against MD SDAT (State Department of Assessments and Taxation) property records, and surfaces leads where the deceased owned property â giving you first-mover advantage on potential estate sales.
+**Live dashboard:** https://pagesofpurposellc.com/md-property-leads/
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue)
-![Flask](https://img.shields.io/badge/Flask-3.0-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+## How it works
 
----
+Every morning a GitHub Action:
 
-## Features
+1. Scrapes new Maryland obituaries from Legacy.com (20 newspaper feeds + all 24 county pages)
+2. Pulls each obituary page for date of death, age, city, and survived-by heirs
+3. Searches the deceased's name against MD SDAT property ownership records (licensed Socrata dataset)
+4. Estimates equity from assessed value and last sale price
+5. Commits the results to `data/leads.json`
 
-- **Automated Daily Scraping** â Scheduled scraper runs at 6:00 AM daily via APScheduler
-- **Smart Cross-Referencing** â Matches obituary names against MD SDAT property ownership records
-- **Property-Only Leads** â Only surfaces leads where the deceased actually owned property
-- **Cyberpunk Dashboard** â Dark neon UI with real-time stats, search, filtering, and sorting
-- **Lead Management** â Track lead status (New â Hot â Contacted â Closed) with notes
-- **Skip Tracing Export** â Download leads as properly formatted CSV for skip tracing tools
-- **Manual Scrape Trigger** â Run a scrape on demand from the dashboard
+The dashboard is a static page on GitHub Pages that reads that file. No server, no database, nothing to keep alive. Lead status and notes are stored in your browser.
 
-## Quick Start
+## Running a scrape on demand
 
-### 1. Clone the repo
+Click **Run Scrape Now** on the dashboard (or go to Actions → Daily Scrape → Run workflow). Results appear in about 10 minutes — refresh the page.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/md-property-leads.git
-cd md-property-leads
-```
+## Setup (already done)
 
-### 2. Install dependencies
+Repository secrets (Settings → Secrets and variables → Actions):
+
+| Secret | Purpose |
+|---|---|
+| `MD_OPENDATA_USERNAME` | Socrata login email — required for the owner-name dataset |
+| `MD_OPENDATA_PASSWORD` | Socrata password |
+| `MD_OPENDATA_APP_TOKEN` | Optional, raises rate limits |
+
+GitHub Pages: Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)`.
+
+## Files
+
+| File | What it does |
+|---|---|
+| `pipeline.py` | The daily job: scrape → SDAT lookup → write `data/leads.json` |
+| `scraper.py` | Legacy.com scraper (uses `curl_cffi` to get past their TLS fingerprinting) |
+| `property_lookup.py` | SDAT Socrata queries + equity estimation |
+| `index.html`, `static/` | The dashboard |
+| `data/leads.json` | Every lead ever found (append-only, deduped) |
+| `data/seen.json` | Obituaries already checked, so SDAT isn't queried twice |
+| `app.py`, `database.py` | Legacy Flask/SQLite server — optional, for running locally |
+
+## Run locally
 
 ```bash
 pip install -r requirements.txt
+MD_OPENDATA_USERNAME=you@example.com MD_OPENDATA_PASSWORD=... python pipeline.py
+python -m http.server 8000   # then open http://localhost:8000
 ```
 
-### 3. Run the app
+## Data sources
 
-```bash
-python app.py
-```
+- Obituaries: Legacy.com (public listings)
+- Property: Maryland SDAT Real Property Assessments via opendata.maryland.gov — dataset `9xq5-z8s2` (owner names, login required). The public `ed4q-f8tm` dataset has the same fields with owner names removed.
 
-### 4. Open in browser
-
-Navigate to **http://localhost:5000**
-
-## How It Works
-
-1. **Scrape**: Pulls recent obituaries from Legacy.com across 28+ Maryland cities/regions
-2. **Parse**: Extracts name, date of death, age, survived-by info from obituary listings
-3. **Lookup**: Searches MD SDAT database for property records matching the deceased's name
-4. **Match**: If the deceased owned property in Maryland, a lead is created
-5. **Display**: Leads appear on the dashboard with property details, assessed values, and county info
-
-## Skip Tracing Export Format
-
-The CSV export includes all fields needed for standard skip tracing:
-
-| Field | Description |
-|-------|-------------|
-| First/Last/Middle Name | Deceased's parsed name |
-| Date of Death/Birth | Key dates |
-| Property Address | Full property address from SDAT |
-| County | Maryland county |
-| Assessed Value | Current assessed value |
-| Land/Improvement Value | Value breakdown |
-| Year Built | Property age |
-| Survived By | Potential heirs from obituary |
-| Obituary URL | Link to full obituary |
-
-## Configuration
-
-Edit the scrape schedule in `app.py`:
-
-```python
-scheduler.add_job(
-    run_scrape_pipeline,
-    trigger="cron",
-    hour=6,      # Change hour (0-23)
-    minute=0,    # Change minute (0-59)
-)
-```
-
-## Tech Stack
-
-- **Backend**: Python 3.9+ / Flask
-- **Scraping**: BeautifulSoup4 / Requests
-- **Database**: SQLite
-- **Scheduler**: APScheduler
-- **Frontend**: Vanilla JS with CSS custom properties
-
-## Legal Notice
-
-This tool accesses publicly available data from Legacy.com and the Maryland SDAT. Ensure you comply with all applicable terms of service and local laws when using scraped data for commercial purposes. Property records are public information in the state of Maryland.
-
-## License
-
-MIT
+Property records are public information in Maryland. Comply with Legacy.com's terms and applicable law when using this data commercially.
