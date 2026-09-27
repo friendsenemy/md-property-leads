@@ -3,6 +3,7 @@ Turn one parcel row from the index into flags and a property record.
 Pure functions; no I/O. Thresholds come from config.
 """
 
+import re
 from datetime import date
 
 from engine2 import config
@@ -25,6 +26,26 @@ def _year(datestr):
         y = int(s[:4])
         return y if 1800 < y <= date.today().year else None
     return None
+
+
+_ADDR_NOISE = re.compile(r"\b(APT|UNIT|STE|SUITE|LOT|BLDG|FL|#)\b.*$")
+
+
+def _addr_key(a):
+    """(house number, first street word) — ignores unit letters/suffixes."""
+    a = re.sub(r"[^A-Z0-9 ]", " ", a.upper())
+    a = _ADDR_NOISE.sub("", a)
+    m = re.match(r"\s*(\d+)\s*[A-Z]?\s+(?:[A-Z]\s+)?([A-Z]+)", a)
+    if not m:
+        return None
+    return m.group(1), m.group(2)
+
+
+def _same_street_address(mail, prem):
+    km, kp = _addr_key(mail), _addr_key(prem)
+    if not km or not kp:
+        return False           # PO BOX, out-of-state formats, etc. count as different
+    return km == kp
 
 
 def is_residential(land_use):
@@ -78,8 +99,12 @@ def analyze(row, today=None):
         flags.add("POOR_CONDITION")
     mail = (row.get("mail_addr") or "").strip().upper()
     prem = (row.get("address") or "").strip().upper()
-    if mail and prem and mail.split()[:2] != prem.split()[:2]:
+    if mail.startswith("C/O") or mail.startswith("C O "):
+        flags.add("CARE_OF")
+    elif mail and prem and not _same_street_address(mail, prem):
         flags.add("MAIL_MISMATCH")
+    if cond and cond in config.BELOW_AVERAGE_CONDITION_CODES:
+        flags.add("BELOW_AVG_CONDITION")
 
     prop = {
         "account_number": row.get("acct"),

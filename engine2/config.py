@@ -36,7 +36,7 @@ TITLE_POINTS = {
     "HEIRS_IN_NAME": 45,       # "HEIRS OF", "HEIRS"
     "DECEASED_IN_NAME": 45,    # "DECEASED", "DEC'D", "DECD"
     "PERSONAL_REP": 35,        # "PERS REP", "PERSONAL REP", "P/R", "PR OF"
-    "LIFE_ESTATE": 30,         # "LIFE ESTATE", "L/E", "LIFE TENANT"
+    "LIFE_ESTATE": 10,         # estate-planning deed: passes automatically at death; low complexity
     "CARE_OF": 10,             # "C/O" — someone else handles the mail
     "ET_AL": 15,               # "ET AL" — more owners than the record names
     "SURVIVING": 20,           # "SURV", "SURVIVING"
@@ -54,6 +54,7 @@ DISTRESS_POINTS = {
     "VACANT_LAND": 15,         # improvement value 0 on a residential-zoned lot
     "OLD_STRUCTURE": 10,       # built before OLD_STRUCTURE_YEAR
     "POOR_CONDITION": 25,      # CAMA dwelling condition code in POOR_CONDITION_CODES
+    "BELOW_AVG_CONDITION": 12, # "Below Average (3)" — 2% of parcels statewide
     "MAIL_MISMATCH": 20,       # owner mailing address differs from premise (when columns exist)
 }
 OLD_STRUCTURE_YEAR = 1950
@@ -61,6 +62,7 @@ OLD_STRUCTURE_YEAR = 1950
 # "Economy (2)", "Below Average (3)", "Average (4)". summary.json carries the
 # live distribution; adjust here if a county uses different labels.
 POOR_CONDITION_CODES = {"Low (1)", "Economy (2)", "Poor", "Very Poor", "Unsound"}
+BELOW_AVERAGE_CONDITION_CODES = {"Below Average (3)"}
 
 # ── Financial points (capped at 100) ────────────────────────────────────────
 FINANCIAL = {
@@ -106,7 +108,8 @@ ESTATE_MARKERS = (" ESTATE", " EST OF", " ESTATE OF", "ESTATE OF ", " HEIRS", " 
 # ── Presets shown in the dashboard (name → filter spec) ─────────────────────
 PRESETS = [
     {"id": "estate_named",   "label": "Estate / Heirs in Owner Name", "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP"]},
-    {"id": "life_estate",    "label": "Life Estate",                  "any_flags": ["LIFE_ESTATE"]},
+    {"id": "life_estate",    "label": "Life Estate (heirs pre-named)", "any_flags": ["LIFE_ESTATE"]},
+    {"id": "poor_condition", "label": "Poor / Below-Avg Condition",   "any_flags": ["POOR_CONDITION", "BELOW_AVG_CONDITION"]},
     {"id": "stale_absentee", "label": "Owned 25+ yrs, Absentee",      "min_years_since_transfer": 25, "flags": ["ABSENTEE"]},
     {"id": "stale_40",       "label": "Owned 40+ yrs",                "min_years_since_transfer": 40},
     {"id": "high_equity",    "label": "High Equity + Estate Signal",  "min_equity": 200000, "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE"]},

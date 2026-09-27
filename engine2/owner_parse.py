@@ -32,7 +32,8 @@ _FLAG_PATTERNS = [
 
 
 def clean(name):
-    name = (name or "").upper().replace(",", " ").replace(".", " ")
+    # SDAT glues markers on with hyphens ("NAOMI-LIFE EST", "ETAL-LIFE ESTATE"); treat as spaces.
+    name = (name or "").upper().replace(",", " ").replace(".", " ").replace("-", " ")
     name = re.sub(r"\s+", " ", name).strip()
     return name
 
@@ -44,6 +45,12 @@ def flags_for(owner1, owner2=""):
     for flag, rx in _FLAG_PATTERNS:
         if rx.search(text):
             found.add(flag)
+    # "LIFE ESTATE" contains "ESTATE": only keep ESTATE_IN_NAME when the text
+    # names a decedent's estate independently ("ESTATE OF", "EST OF", trailing "ESTATE").
+    if "LIFE_ESTATE" in found and "ESTATE_IN_NAME" in found:
+        stripped = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text)
+        if not re.search(r"\b(ESTATE OF|EST OF|ESTATE|EST)\b", stripped):
+            found.discard("ESTATE_IN_NAME")
     # "EST" alone is also a common abbreviation of a street name in legal text,
     # but in the owner field it is almost always "estate". Keep it.
     return found
@@ -56,7 +63,9 @@ def classify(owner1, owner2=""):
         return "UNKNOWN"
     if any(m in text for m in config.GOVERNMENT_MARKERS):
         return "GOVERNMENT"
-    if any(m in text for m in config.ESTATE_MARKERS):
+    life_estate = bool(re.search(r"\bLIFE\s+(ESTATE|EST)\b|\bL/E\b", text))
+    estate_text = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text) if life_estate else text
+    if any(m in estate_text for m in config.ESTATE_MARKERS):
         return "ESTATE"
     if " LLC" in text or " L L C" in text:
         return "LLC"
@@ -112,7 +121,8 @@ def split_individuals(owner1, owner2=""):
     Returns [] when the string does not look like people.
     """
     text = f" {clean(owner1)} "
-    if any(m in text for m in config.BUSINESS_MARKERS + config.GOVERNMENT_MARKERS
+    probe = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text)
+    if any(m in probe for m in config.BUSINESS_MARKERS + config.GOVERNMENT_MARKERS
            + config.NONPROFIT_MARKERS + config.TRUST_MARKERS + config.ESTATE_MARKERS):
         return []
     # Names after "C/O" are mail handlers, not owners; tenancy markers are noise.
