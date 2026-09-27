@@ -67,7 +67,7 @@ jobs:
           key: ${{ steps.week.outputs.key }}
 
       - name: Run title scan
-        run: python -m engine2.title_scan
+        run: python -m engine2.title_scan --no-backfill
 
       - name: Commit results
         # Outputs are regenerated files, so we always lay them on top of the
@@ -76,10 +76,12 @@ jobs:
         run: |
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p /tmp/out && cp -r data/title /tmp/out/ && cp data/leads.json /tmp/out/leads.json
+          mkdir -p /tmp/out && cp -r data/title /tmp/out/
           git fetch origin main
           git checkout -f -B main origin/main
-          rm -rf data/title && cp -r /tmp/out/title data/title && cp /tmp/out/leads.json data/leads.json
+          rm -rf data/title && cp -r /tmp/out/title data/title
+          # add coordinates to whatever obituary leads exist on latest main
+          python -m engine2.title_scan --backfill-only
           git add data/title data/leads.json
           if git diff --cached --quiet; then
             echo "No changes to commit."

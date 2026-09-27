@@ -76,7 +76,7 @@ def _previous_found_at():
     return seen
 
 
-def scan(index_path=config.INDEX_PATH, limit=None):
+def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
     previous = _previous_found_at()
     run_at = _now()
     db = sqlite3.connect(index_path)
@@ -180,7 +180,8 @@ def scan(index_path=config.INDEX_PATH, limit=None):
     }
     _dump(f"{config.OUTPUT_DIR}/summary.json", summary)
     log.info("done: scanned %d, candidates %d, counties %d", scanned, kept, len(counties))
-    backfill_leads_coords(db)
+    if backfill:
+        backfill_leads_coords(db)
     db.close()
     return summary
 
@@ -215,5 +216,13 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--index", default=config.INDEX_PATH)
     ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--no-backfill", action="store_true", help="skip writing lat/lon into data/leads.json")
+    ap.add_argument("--backfill-only", action="store_true", help="only update data/leads.json coordinates")
     a = ap.parse_args()
-    scan(a.index, a.limit)
+    if a.backfill_only:
+        _db = sqlite3.connect(a.index)
+        _db.row_factory = sqlite3.Row
+        backfill_leads_coords(_db)
+        _db.close()
+    else:
+        scan(a.index, a.limit, backfill=not a.no_backfill)
