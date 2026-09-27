@@ -40,6 +40,7 @@ TITLE_POINTS = {
     "CARE_OF": 10,             # "C/O" — someone else handles the mail
     "ET_AL": 15,               # "ET AL" — more owners than the record names
     "SURVIVING": 20,           # "SURV", "SURVIVING"
+    "CONSERVATOR": 25,         # conservator / guardian / POA on title — owner incapacitated
     "TRUSTEE": 8,              # trust-held; deceased-trustee check is a later phase
     "MULTIPLE_INDIVIDUALS": 6,
     # stale ownership: points per full year past the candidate threshold

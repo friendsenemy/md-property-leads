@@ -72,11 +72,14 @@ def analyze(row, today=None):
     flags = flags_for(owner1, owner2)
     if owner_type == "MULTIPLE_INDIVIDUALS":
         flags.add("MULTIPLE_INDIVIDUALS")
+    if owner_type == "TRUST":
+        # "SMITH FAMILY ESTATE TRUST" is estate planning, not a decedent's estate
+        flags.discard("ESTATE_IN_NAME")
 
     ty = _year(row.get("transfer_date"))
     years_since_transfer = (today.year - ty) if ty else None
     estate_signal = bool(flags & {"ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME",
-                                  "PERSONAL_REP", "LIFE_ESTATE", "SURVIVING"})
+                                  "PERSONAL_REP", "LIFE_ESTATE", "SURVIVING", "CONSERVATOR"})
     stale = years_since_transfer is not None and years_since_transfer >= config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER
     if not estate_signal and not stale:
         return None

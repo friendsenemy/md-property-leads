@@ -14,7 +14,7 @@ def title_complexity(flags, facts):
     pts, reasons = 0.0, []
     P = config.TITLE_POINTS
     for f in ("ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP",
-              "LIFE_ESTATE", "CARE_OF", "ET_AL", "SURVIVING", "TRUSTEE", "MULTIPLE_INDIVIDUALS"):
+              "LIFE_ESTATE", "CARE_OF", "ET_AL", "SURVIVING", "CONSERVATOR", "TRUSTEE", "MULTIPLE_INDIVIDUALS"):
         if f in flags:
             pts += P[f]
             reasons.append(f"{f.replace('_', ' ').title()} (+{P[f]})")
@@ -81,6 +81,8 @@ def title_class(flags, facts):
         return "E3", "Life estate — remainder interest pending"
     if "SURVIVING" in flags:
         return "E4", "Surviving co-owner noted on title"
+    if "CONSERVATOR" in flags:
+        return "E5", "Conservator / guardian / POA on title — owner likely incapacitated"
     y = facts.get("years_since_transfer") or 0
     if y >= 40:
         return "S3", f"No transfer in {y} years"

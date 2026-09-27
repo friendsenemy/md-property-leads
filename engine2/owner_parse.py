@@ -23,11 +23,12 @@ _FLAG_PATTERNS = [
     ("HEIRS_IN_NAME",    re.compile(r"\bHEIRS?\b")),
     ("DECEASED_IN_NAME", re.compile(r"\b(DECEASED|DEC'?D)\b")),
     ("PERSONAL_REP",     re.compile(r"\b(PERS(ONAL)? REP(RESENTATIVE)?|P/R|PR OF|EXECUT(OR|RIX)|ADMINISTRAT(OR|RIX))\b")),
-    ("LIFE_ESTATE",      re.compile(r"\b(LIFE ESTATE|L/E|LIFE TENANT|LIFE EST)\b")),
+    ("LIFE_ESTATE",      re.compile(r"\b(LIFE ESTATE|L/E|LIFE TENANT|LIFE EST|L EST)\b")),
     ("CARE_OF",          re.compile(r"\bC/O\b")),
     ("ET_AL",            re.compile(r"\b(ET ?AL|ETAL)\b")),
     ("SURVIVING",        re.compile(r"\b(SURV|SURVIVING|SURVIVOR)\b")),
     ("TRUSTEE",          re.compile(r"\b(TR|TRS|TRUSTEES?|TRUST)\b")),
+    ("CONSERVATOR",      re.compile(r"\b(CONSERVATOR|GUARDIAN|GDN|POA|ATTORNEY IN FACT|AIF)\b")),
 ]
 
 
@@ -39,6 +40,7 @@ def clean(name):
 
 
 _REAL_ESTATE = re.compile(r"\bREAL\s+(ESTATE|EST)S?\b")
+_LIFE_ESTATE = re.compile(r"\b(LIFE\s+(ESTATE|EST)|L\s+EST|L/E|LIFE TENANT)\b")
 
 
 def _without_business_estate(text):
@@ -56,7 +58,7 @@ def flags_for(owner1, owner2=""):
     # "LIFE ESTATE" contains "ESTATE": only keep ESTATE_IN_NAME when the text
     # names a decedent's estate independently ("ESTATE OF", "EST OF", trailing "ESTATE").
     if "LIFE_ESTATE" in found and "ESTATE_IN_NAME" in found:
-        stripped = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text)
+        stripped = _LIFE_ESTATE.sub(" ", text)
         if not re.search(r"\b(ESTATE OF|EST OF|ESTATE|EST)\b", stripped):
             found.discard("ESTATE_IN_NAME")
     # "EST" alone is also a common abbreviation of a street name in legal text,
@@ -73,9 +75,9 @@ def classify(owner1, owner2=""):
         return "GOVERNMENT"
     if _REAL_ESTATE.search(text):
         return "CORPORATION"
-    life_estate = bool(re.search(r"\bLIFE\s+(ESTATE|EST)\b|\bL/E\b", text))
-    estate_text = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text) if life_estate else text
-    if any(m in estate_text for m in config.ESTATE_MARKERS):
+    estate_text = _LIFE_ESTATE.sub(" ", text)
+    # Unambiguous decedent language wins over anything else
+    if re.search(r"\b(ESTATE OF|EST OF|HEIRS?( OF)?|PERS(ONAL)? REP|P/R|PR OF|DECEASED|DEC'?D|EXECUT(OR|RIX)|ADMINISTRAT(OR|RIX))\b", estate_text):
         return "ESTATE"
     if " LLC" in text or " L L C" in text:
         return "LLC"
@@ -85,6 +87,9 @@ def classify(owner1, owner2=""):
         return "NONPROFIT"
     if any(m in text for m in config.TRUST_MARKERS):
         return "TRUST"
+    # Bare "ESTATE"/"EST" with a person-shaped name ("SMITH JOHN A EST")
+    if any(m in estate_text for m in config.ESTATE_MARKERS):
+        return "ESTATE"
     people = split_individuals(owner1, owner2)
     if len(people) >= 2:
         return "MULTIPLE_INDIVIDUALS"
@@ -133,13 +138,13 @@ def split_individuals(owner1, owner2=""):
     text = f" {clean(owner1)} "
     if _REAL_ESTATE.search(text):
         return []
-    probe = re.sub(r"\bLIFE\s+(ESTATE|EST)\b", " ", text)
+    probe = _LIFE_ESTATE.sub(" ", text)
     if any(m in probe for m in config.BUSINESS_MARKERS + config.GOVERNMENT_MARKERS
            + config.NONPROFIT_MARKERS + config.TRUST_MARKERS + config.ESTATE_MARKERS):
         return []
     # Names after "C/O" are mail handlers, not owners; tenancy markers are noise.
     stripped = re.split(r"\bC/O\b", text)[0]
-    stripped = re.sub(r"\b(LIFE ESTATE|LIFE EST|L/E|LIFE TENANT|ET ?AL|ETAL|SURV(IVING|IVOR)?|H/W|T/E|J/T|T/C|DECEASED|DEC'?D|EST)\b", " ", stripped)
+    stripped = re.sub(r"\b(LIFE ESTATE|LIFE EST|L EST|L/E|LIFE TENANT|ET ?AL|ETAL|SURV(IVING|IVOR)?|H/W|T/E|J/T|T/C|DECEASED|DEC'?D|EST|CONSERVATOR|GUARDIAN|GDN|POA|AIF)\b", " ", stripped)
     stripped = stripped.replace("/", " & ")   # "FRANK S/CONSTANCE FOARD" = two owners
     toks = _tokens(stripped)
     if not toks or len(toks) < 2 or len(toks) > 9:

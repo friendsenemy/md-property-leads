@@ -255,9 +255,9 @@ const TitleApp = {
     tier(n) { return n >= 70 ? "high" : n >= 50 ? "mid" : "low"; },
     flagChips(flags) {
         const nice = { ESTATE_IN_NAME: "Estate", HEIRS_IN_NAME: "Heirs", DECEASED_IN_NAME: "Deceased", PERSONAL_REP: "Pers. Rep", LIFE_ESTATE: "Life Estate",
-            CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", TRUSTEE: "Trustee", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
+            CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", CONSERVATOR: "Conservator/POA", TRUSTEE: "Trustee", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
             ABSENTEE: "Absentee", NO_HOMESTEAD: "No Homestead", VACANT_LAND: "Vacant Lot", OLD_STRUCTURE: "Pre-1950", POOR_CONDITION: "Poor Cond.", BELOW_AVG_CONDITION: "Below-Avg Cond.", MAIL_MISMATCH: "Mail ≠ Site" };
-        const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE"]);
+        const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "CONSERVATOR"]);
         return (flags || []).map((f) => `<span class="chip ${strong.has(f) ? "chip-strong" : ""}">${nice[f] || f}</span>`).join(" ");
     },
     fmtDT(s) { const d = new Date(s); return isNaN(d) ? (s || "") : d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); },
