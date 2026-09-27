@@ -148,7 +148,8 @@ def process_obituary(obit):
     if not last or len(last) < 2:
         return key, obit, []
 
-    props = search_property_by_name(last, first, city=obit.get("city", ""))
+    props = search_property_by_name(last, first, city=obit.get("city", ""),
+                                   middle_name=obit.get("middle_name", ""))
     return key, obit, props or []
 
 

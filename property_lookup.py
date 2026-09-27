@@ -12,6 +12,7 @@ Environment variables needed:
 """
 
 import os
+import re
 import logging
 import math
 from datetime import datetime
@@ -96,7 +97,7 @@ CITY_TO_COUNTY = {
 }
 
 
-def search_property_by_name(last_name, first_name="", city=""):
+def search_property_by_name(last_name, first_name="", city="", middle_name=""):
     """
     Search MD property records by owner/grantor name via Socrata API.
 
@@ -122,7 +123,7 @@ def search_property_by_name(last_name, first_name="", city=""):
         # Try "LAST FIRST" pattern (most common in SDAT records)
         name_pattern = f"{last_name} {first_name}"
         where_parts.append(
-            f"upper({OWNER_NAME_FIELD}) like '%{_escape(name_pattern)}%'"
+            f"upper({OWNER_NAME_FIELD}) like '{_escape(name_pattern)}%'"
         )
     else:
         where_parts.append(
@@ -166,8 +167,7 @@ def search_property_by_name(last_name, first_name="", city=""):
             properties = [p for p in properties if p is not None]
 
             # Post-filter: verify name match quality
-            if first_name:
-                properties = _filter_by_name(properties, last_name, first_name)
+            properties = _filter_by_name(properties, last_name, first_name, middle_name)
 
             # Post-filter: prioritize properties in matching county
             county_codes = _get_county_codes(city)
@@ -204,7 +204,7 @@ def _search_statewide(last_name, first_name=""):
     if first_name:
         name_pattern = f"{last_name} {first_name}"
         where_parts.append(
-            f"upper({OWNER_NAME_FIELD}) like '%{_escape(name_pattern)}%'"
+            f"upper({OWNER_NAME_FIELD}) like '{_escape(name_pattern)}%'"
         )
     else:
         where_parts.append(
@@ -326,32 +326,51 @@ def _format_record(record):
         return None
 
 
-def _filter_by_name(properties, last_name, first_name):
+_OWNER_SUFFIXES = {"SR", "JR", "II", "III", "IV", "ETAL", "ET", "AL", "TR", "TRUSTEE",
+                   "WF", "HW", "LE", "&", "AND", "ESTATE", "EST", "REV", "LIV", "TRUST"}
+
+
+def _name_tokens(value):
+    return re.findall(r"[A-Z&]+", (value or "").upper().replace("'", ""))
+
+
+def _filter_by_name(properties, last_name, first_name, middle_name=""):
     """
-    Post-filter properties to ensure name match quality.
-    The API LIKE search is broad — this tightens the match.
+    Keep only records whose owner is plausibly the deceased.
+
+    SDAT owner names are "LAST FIRST [MIDDLE] [& CO-OWNER]". A record matches when:
+      - the first word is the last name (so "COLLINI ANTHONY CHARLES" is not Charles Anthony),
+      - the second word is the first name, or a 3+ letter short form of it
+        ("ROB" for ROBERT; "GEORGETTE" does not match GEORGE),
+      - any middle initial on the record agrees with the obituary's middle name.
     """
+    last_tokens = _name_tokens(last_name)
+    first_tokens = _name_tokens(first_name)
+    if not last_tokens:
+        return []
+    first = first_tokens[0] if first_tokens else ""
+    middle_tokens = _name_tokens(middle_name)
+    middle_initial = middle_tokens[0][0] if middle_tokens else ""
+    n = len(last_tokens)
+
     filtered = []
-    last_upper = last_name.upper()
-    first_upper = first_name.upper()
-
     for prop in properties:
-        owner = prop.get("owner_name", "").upper()
-        if not owner:
+        owner = _name_tokens(prop.get("owner_name", ""))
+        if owner[:n] != last_tokens:
             continue
-
-        # Must contain last name
-        if last_upper not in owner:
-            continue
-
-        # Check first name (allow partial — "ROBERT" matches "ROBT")
-        if first_upper:
-            if first_upper in owner:
-                filtered.append(prop)
-            elif len(first_upper) >= 3 and first_upper[:3] in owner:
-                filtered.append(prop)
-        else:
-            filtered.append(prop)
+        rest = owner[n:]
+        if first:
+            if not rest:
+                continue
+            given = rest[0]
+            if not (given == first or (len(given) >= 3 and first.startswith(given))):
+                continue
+            rest = rest[1:]
+        if middle_initial and rest:
+            nxt = rest[0]
+            if nxt not in _OWNER_SUFFIXES and nxt[0] != middle_initial:
+                continue
+        filtered.append(prop)
 
     return filtered
 
