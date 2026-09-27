@@ -58,7 +58,27 @@ def code_distributions(db):
     return out
 
 
+def _previous_found_at():
+    """account -> found_at from the last run's shards, so timestamps mean 'first seen'."""
+    seen = {}
+    if not os.path.isdir(config.OUTPUT_DIR):
+        return seen
+    for name in os.listdir(config.OUTPUT_DIR):
+        if not name.endswith(".json") or name in ("summary.json", "people.json"):
+            continue
+        try:
+            with open(os.path.join(config.OUTPUT_DIR, name), encoding="utf-8") as f:
+                for rec in json.load(f).get("rows", []):
+                    if rec.get("id") and rec.get("found_at"):
+                        seen.setdefault(rec["id"], rec["found_at"])
+        except (OSError, ValueError):
+            continue
+    return seen
+
+
 def scan(index_path=config.INDEX_PATH, limit=None):
+    previous = _previous_found_at()
+    run_at = _now()
     db = sqlite3.connect(index_path)
     db.row_factory = sqlite3.Row
     meta = dict(db.execute("SELECT k, v FROM meta").fetchall())
@@ -97,7 +117,7 @@ def scan(index_path=config.INDEX_PATH, limit=None):
                 "flags": sorted(flags),
                 "scores": s,
                 "property": prop,
-                "found_at": _now(),
+                "found_at": previous.get(prop["account_number"], run_at),
             }
             kept += 1
             seq += 1

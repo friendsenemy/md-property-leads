@@ -70,9 +70,16 @@ jobs:
         run: python -m engine2.title_scan
 
       - name: Commit results
+        # Outputs are regenerated files, so we always lay them on top of the
+        # latest main instead of rebasing (a re-run of an old commit would
+        # otherwise conflict and fail).
         run: |
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp -r data/title /tmp/out/ && cp data/leads.json /tmp/out/leads.json
+          git fetch origin main
+          git checkout -f -B main origin/main
+          rm -rf data/title && cp -r /tmp/out/title data/title && cp /tmp/out/leads.json data/leads.json
           git add data/title data/leads.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
@@ -80,5 +87,4 @@ jobs:
           fi
           N=$(python -c "import json;print(json.load(open('data/title/summary.json'))['candidates'])")
           git commit -m "Title scan: ${N} statewide candidates"
-          git pull --rebase origin main
-          git push
+          git push origin main
