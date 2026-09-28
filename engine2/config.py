@@ -48,16 +48,35 @@ TITLE_POINTS = {
     "STALE_CAP": 35,
 }
 
-# ── Distress points (capped at 100) ─────────────────────────────────────────
-DISTRESS_POINTS = {
-    "ABSENTEE": 30,            # not owner-occupied
-    "NO_HOMESTEAD": 10,        # no homestead credit on a residential parcel
-    "VACANT_LAND": 15,         # improvement value 0 on a residential-zoned lot
-    "OLD_STRUCTURE": 10,       # built before OLD_STRUCTURE_YEAR
-    "POOR_CONDITION": 25,      # CAMA dwelling condition code in POOR_CONDITION_CODES
-    "BELOW_AVG_CONDITION": 12, # "Below Average (3)" — 2% of parcels statewide
-    "MAIL_MISMATCH": 20,       # owner mailing address differs from premise (when columns exist)
+# ── Distress: HARD evidence (official records) vs SOFT indicators ───────────
+# distress = min(100, hard) + min(SOFT_CAP, soft). Soft alone can never make a
+# row look distressed; it only nudges rows that already have a title signal.
+DISTRESS_HARD_POINTS = {
+    "TAX_SALE_SOLD": 50,          # lien sold to an investor at the county tax sale
+    "TAX_SALE_STRUCK": 40,        # no bidder — county holds the lien, still delinquent
+    "TAX_SALE_LISTED": 25,        # advertised for sale; outcome not published yet
+    "TAX_SALE_REPEAT": 35,        # on the list in more than one year (needs 2027 data)
+    "VACANT_NOTICE": 40,          # official vacant-building notice (Baltimore City) — adapter pending
+    "CONDEMNED": 45,              # unsafe / condemned — adapter pending
+    "CODE_VIOLATIONS": 25,        # open code-enforcement violations — adapter pending
+    "RETURNED_MAIL": 20,          # your own mail came back — set via lead status
 }
+DISTRESS_SOFT_POINTS = {
+    "ABSENTEE": 10,
+    "NO_HOMESTEAD": 5,
+    "VACANT_LAND": 10,
+    "OLD_STRUCTURE": 5,
+    "POOR_CONDITION": 15,
+    "BELOW_AVG_CONDITION": 8,
+    "MAIL_MISMATCH": 8,
+}
+DISTRESS_SOFT_CAP = 30
+DISTRESS_POINTS = {**DISTRESS_HARD_POINTS, **DISTRESS_SOFT_POINTS}   # kept for anything that iterates all flags
+
+# Tax-sale records live in data/distress/taxsale-<year>.json (see docs). Newest
+# year wins; TAX_SALE_LISTED_NOT_SOLD (redeemed before sale) is recorded but
+# scores nothing.
+TAXSALE_DIR = "data/distress"
 OLD_STRUCTURE_YEAR = 1950
 # CAMA dwelling grade/condition labels as SDAT stores them, e.g. "Low (1)",
 # "Economy (2)", "Below Average (3)", "Average (4)". summary.json carries the
@@ -77,9 +96,9 @@ FINANCIAL = {
 
 # ── Research priority = weighted blend of the three ─────────────────────────
 PRIORITY_WEIGHTS = {
-    "title": 0.55,
+    "title": 0.50,
     "financial": 0.25,
-    "distress": 0.20,
+    "distress": 0.25,
 }
 
 # ── Owner classification vocab ──────────────────────────────────────────────
@@ -117,5 +136,7 @@ PRESETS = [
     {"id": "stale_40",       "label": "Owned 40+ yrs",                "min_years_since_transfer": 40},
     {"id": "high_equity",    "label": "High Equity + Estate Signal",  "min_equity": 200000, "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE"]},
     {"id": "vacant_lot",     "label": "Vacant Lot + Estate Signal",   "flags": ["VACANT_LAND"], "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME"]},
+    {"id": "tax_sale",       "label": "Tax Sale + Title Signal",      "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
+    {"id": "tax_sale_estate","label": "Tax Sale + Estate on Title",   "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "CONSERVATOR"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},
 ]

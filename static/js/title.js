@@ -112,6 +112,7 @@ const TitleApp = {
         const flags = new Set(r.flags || []);
         if (spec.flags && !spec.flags.every((f) => flags.has(f))) return false;
         if (spec.any_flags && !spec.any_flags.some((f) => flags.has(f))) return false;
+        if (spec.any_flags2 && !spec.any_flags2.some((f) => flags.has(f))) return false;
         if (spec.min_years_since_transfer && r._years < spec.min_years_since_transfer) return false;
         if (spec.min_equity && !(r._equity >= spec.min_equity)) return false;
         return true;
@@ -211,6 +212,15 @@ const TitleApp = {
                 <div style="margin-top:8px">${this.flagChips(r.flags)}</div>
                 <div class="aerial-note" style="margin-top:10px">Death and probate status: not yet automated (no free authorized source). See README → Engine 2 for what is and isn't checked.</div>
             </div>
+            ${p.tax_sale ? `<div class="detail-section">
+                <h3>Tax Sale — verified county record</h3>
+                <div class="detail-row"><span class="label">Status</span><span class="value" style="color:var(--red); font-weight:700">${{SOLD: "LIEN SOLD to investor — foreclosure of right of redemption possible after the statutory wait", STRUCK: "UNSOLD — county holds the lien; still delinquent", LISTED: "ADVERTISED for sale — results not yet published", LISTED_NOT_SOLD: "Advertised but not in sale results — likely redeemed before sale"}[p.tax_sale.status] || this.esc(p.tax_sale.status)}</span></div>
+                ${p.tax_sale.face != null ? `<div class="detail-row"><span class="label">Taxes / face</span><span class="value" style="font-family:var(--font-mono)">$${Number(p.tax_sale.face).toLocaleString()}</span></div>` : ""}
+                ${p.tax_sale.bid != null ? `<div class="detail-row"><span class="label">Winning bid</span><span class="value" style="font-family:var(--font-mono)">$${Number(p.tax_sale.bid).toLocaleString()}</span></div>` : ""}
+                ${p.tax_sale.bidder ? `<div class="detail-row"><span class="label">Lien buyer</span><span class="value">${this.esc(p.tax_sale.bidder)}</span></div>` : ""}
+                ${p.tax_sale.owner ? `<div class="detail-row"><span class="label">Name on tax record</span><span class="value" style="font-family:var(--font-mono)">${this.esc(p.tax_sale.owner)}</span></div>` : ""}
+                <div class="detail-row"><span class="label">Source</span><span class="value" style="font-size:0.78rem">${this.esc(p.tax_sale.source || "")} · ${this.esc(String(p.tax_sale.year || ""))}</span></div>
+            </div>` : ""}
             <div class="detail-section">
                 <h3>Estimated Equity</h3>
                 ${App.equityDetails(p)}
@@ -235,14 +245,14 @@ const TitleApp = {
         const H = ["Priority", "Title Class", "Flags", "Owner on Record", "Owner 2", "Owner Type", "Address", "City", "Zip", "County", "Account #",
             "Property Type", "Assessed", "Land", "Improvement", "Year Built", "Sq Ft", "Occupancy", "Homestead", "Condition",
             "Last Transfer", "Sale Price", "Years Since Transfer", "Deed Liber", "Deed Folio", "Est. Equity", "Equity %", "Equity Confidence",
-            "Title Score", "Financial Score", "Distress Score", "Lat", "Lon", "Status", "Notes"];
+            "Title Score", "Financial Score", "Distress Score", "Tax Sale Status", "Tax Sale Bid", "Lien Buyer", "Lat", "Lon", "Status", "Notes"];
         const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
         const lines = [H.join(",")];
         rows.forEach((r) => { const p = r.property; lines.push([
             r._priority, r.title_class, (r.flags || []).join("|"), p.owner_name, p.owner_name_2, p.owner_type, p.property_address, p.city, p.zip_code, p.county, `="${p.account_number || ""}"`,
             p.property_type, p.assessed_value, p.land_value, p.improvement_value, p.year_built, p.square_footage, p.occupancy_code, p.homestead_code, p.condition_code,
             p.transfer_date, p.sale_price, p.years_since_transfer, p.deed_liber, p.deed_folio, p.estimated_equity, p.equity_percent, p.equity_confidence,
-            r.scores.title_complexity, r.scores.financial, r.scores.distress, p.lat, p.lon, this.statusOf(r), this.notesOf(r),
+            r.scores.title_complexity, r.scores.financial, r.scores.distress, p.tax_sale ? p.tax_sale.status : "", p.tax_sale ? p.tax_sale.bid : "", p.tax_sale ? p.tax_sale.bidder : "", p.lat, p.lon, this.statusOf(r), this.notesOf(r),
         ].map(q).join(",")); });
         const blob = new Blob([lines.join("\r\n")], { type: "text/csv;charset=utf-8;" });
         const a = document.createElement("a");
@@ -255,10 +265,12 @@ const TitleApp = {
     tier(n) { return n >= 70 ? "high" : n >= 50 ? "mid" : "low"; },
     flagChips(flags) {
         const nice = { ESTATE_IN_NAME: "Estate", HEIRS_IN_NAME: "Heirs", DECEASED_IN_NAME: "Deceased", PERSONAL_REP: "Pers. Rep", LIFE_ESTATE: "Life Estate",
-            CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", CONSERVATOR: "Conservator/POA", TRUSTEE: "Trustee", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
+            CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", CONSERVATOR: "Conservator/POA", TRUSTEE: "Trustee",
+            TAX_SALE_SOLD: "TAX LIEN SOLD", TAX_SALE_STRUCK: "TAX SALE: UNSOLD", TAX_SALE_LISTED: "TAX SALE LISTED", RETURNED_MAIL: "Returned Mail", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
             ABSENTEE: "Absentee", NO_HOMESTEAD: "No Homestead", VACANT_LAND: "Vacant Lot", OLD_STRUCTURE: "Pre-1950", POOR_CONDITION: "Poor Cond.", BELOW_AVG_CONDITION: "Below-Avg Cond.", MAIL_MISMATCH: "Mail ≠ Site" };
         const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "CONSERVATOR"]);
-        return (flags || []).map((f) => `<span class="chip ${strong.has(f) ? "chip-strong" : ""}">${nice[f] || f}</span>`).join(" ");
+        const hard = new Set(["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS"]);
+        return (flags || []).map((f) => `<span class="chip ${strong.has(f) ? "chip-strong" : hard.has(f) ? "chip-hard" : ""}">${nice[f] || f}</span>`).join(" ");
     },
     fmtDT(s) { const d = new Date(s); return isNaN(d) ? (s || "") : d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); },
     esc(s) { return s == null ? "" : String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); },

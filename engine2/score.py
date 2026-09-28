@@ -27,12 +27,19 @@ def title_complexity(flags, facts):
 
 
 def distress(flags):
-    pts, reasons = 0.0, []
-    for f, v in config.DISTRESS_POINTS.items():
+    hard, soft, reasons = 0.0, 0.0, []
+    for f, v in config.DISTRESS_HARD_POINTS.items():
         if f in flags:
-            pts += v
+            hard += v
+            reasons.append(f"{f.replace('_', ' ').title()} (+{v}, verified record)")
+    for f, v in config.DISTRESS_SOFT_POINTS.items():
+        if f in flags:
+            soft += v
             reasons.append(f"{f.replace('_', ' ').title()} (+{v})")
-    return _cap(pts), reasons
+    soft = min(config.DISTRESS_SOFT_CAP, soft)
+    if soft == config.DISTRESS_SOFT_CAP:
+        reasons.append(f"Soft indicators capped at {config.DISTRESS_SOFT_CAP}")
+    return _cap(min(100, hard) + soft), reasons
 
 
 def financial(prop):
@@ -65,6 +72,7 @@ def score(prop, flags, facts):
     return {
         "title_complexity": t,
         "distress": d,
+        "distress_verified": any(f in flags for f in config.DISTRESS_HARD_POINTS),
         "financial": f,
         "priority": priority,
         "reasons": {"title": tr, "distress": dr, "financial": fr},

@@ -14,6 +14,7 @@ obituary dashboard can show the same aerial panel.
 """
 
 import argparse
+import glob
 import heapq
 import json
 import logging
@@ -76,7 +77,38 @@ def _previous_found_at():
     return seen
 
 
+def load_taxsale():
+    """Merge data/distress/taxsale-*.json → {acct: record}; newest year wins."""
+    merged, suffix16 = {}, {}
+    for path in sorted(glob.glob(f"{config.TAXSALE_DIR}/taxsale-*.json")):
+        try:
+            recs = json.load(open(path, encoding="utf-8")).get("records", {})
+        except (OSError, ValueError):
+            continue
+        for k, v in recs.items():
+            if k.startswith("16*"):
+                suffix16[k[3:]] = v
+            else:
+                merged[k] = v
+    log.info("tax-sale records: %d (+%d Montgomery by account)", len(merged), len(suffix16))
+    return merged, suffix16
+
+
+def apply_taxsale(prop, flags, taxsale, suffix16):
+    acct = prop["account_number"] or ""
+    rec = taxsale.get(acct)
+    if not rec and acct.startswith("16") and acct[-8:] in suffix16:
+        rec = suffix16[acct[-8:]]
+    if not rec:
+        return
+    st = rec.get("status")
+    if st in ("SOLD", "STRUCK", "LISTED"):
+        flags.add(f"TAX_SALE_{st}")
+    prop["tax_sale"] = {k: rec.get(k) for k in ("year", "status", "face", "bid", "bidder", "owner", "source") if rec.get(k) is not None}
+
+
 def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
+    taxsale, suffix16 = load_taxsale()
     previous = _previous_found_at()
     run_at = _now()
     db = sqlite3.connect(index_path)
@@ -105,6 +137,7 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             if not res:
                 continue
             prop, flags, facts = res
+            apply_taxsale(prop, flags, taxsale, suffix16)
             s = score(prop, flags, facts)
             if s["priority"] < config.MIN_PRIORITY_TO_KEEP:
                 continue
