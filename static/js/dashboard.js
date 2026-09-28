@@ -317,7 +317,7 @@ const App = {
             "Property Type", "Assessed Value", "Land Value", "Improvement Value", "Year Built", "Sq Ft",
             "Last Transfer Date", "Last Sale Price", "Est. Equity", "Equity %", "Equity Confidence",
             "Account #", "Survived By", "Status", "Notes", "Obituary URL", "Found"];
-        const q = (v) => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
+        const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
         const lines = [headers.join(",")];
         rows.forEach((l) => {
             const props = l.properties && l.properties.length ? l.properties : [{}];
@@ -327,7 +327,7 @@ const App = {
                     l.city, p.owner_name, p.property_address, p.city, p.county, "MD", p.zip_code,
                     p.property_type, p.assessed_value, p.land_value, p.improvement_value, p.year_built, p.square_footage,
                     p.transfer_date, p.sale_price, p.estimated_equity, p.equity_percent, p.equity_confidence,
-                    p.account_number, l.survived_by, this.statusOf(l), this.notesOf(l), l.obituary_url, l.found_at,
+                    `="${p.account_number || ""}"`, l.survived_by, this.statusOf(l), this.notesOf(l), l.obituary_url, l.found_at,
                 ].map(q).join(","));
             });
         });

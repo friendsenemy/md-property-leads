@@ -236,10 +236,10 @@ const TitleApp = {
             "Property Type", "Assessed", "Land", "Improvement", "Year Built", "Sq Ft", "Occupancy", "Homestead", "Condition",
             "Last Transfer", "Sale Price", "Years Since Transfer", "Deed Liber", "Deed Folio", "Est. Equity", "Equity %", "Equity Confidence",
             "Title Score", "Financial Score", "Distress Score", "Lat", "Lon", "Status", "Notes"];
-        const q = (v) => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
+        const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
         const lines = [H.join(",")];
         rows.forEach((r) => { const p = r.property; lines.push([
-            r._priority, r.title_class, (r.flags || []).join("|"), p.owner_name, p.owner_name_2, p.owner_type, p.property_address, p.city, p.zip_code, p.county, p.account_number,
+            r._priority, r.title_class, (r.flags || []).join("|"), p.owner_name, p.owner_name_2, p.owner_type, p.property_address, p.city, p.zip_code, p.county, `="${p.account_number || ""}"`,
             p.property_type, p.assessed_value, p.land_value, p.improvement_value, p.year_built, p.square_footage, p.occupancy_code, p.homestead_code, p.condition_code,
             p.transfer_date, p.sale_price, p.years_since_transfer, p.deed_liber, p.deed_folio, p.estimated_equity, p.equity_percent, p.equity_confidence,
             r.scores.title_complexity, r.scores.financial, r.scores.distress, p.lat, p.lon, this.statusOf(r), this.notesOf(r),
