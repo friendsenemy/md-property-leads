@@ -45,7 +45,7 @@ const TitleApp = {
             `Scan: ${this.fmtDT(s.generated_at)} · ${Number(s.index_rows || 0).toLocaleString()} parcels indexed · ${Number(s.candidates || 0).toLocaleString()} candidates`;
         document.getElementById("tstatCandidates").textContent = Number(s.candidates || 0).toLocaleString();
         document.getElementById("tstatEstate").textContent = Number((s.classes || {}).E1 || 0 + 0).toLocaleString();
-        const est = ["E1", "E2", "E3", "E4", "E5"].reduce((n, k) => n + ((s.classes || {})[k] || 0), 0);
+        const est = ["E1", "E2", "E3", "E4", "E5", "D1", "D4", "D5"].reduce((n, k) => n + ((s.classes || {})[k] || 0), 0);
         document.getElementById("tstatEstate").textContent = est.toLocaleString();
         document.getElementById("tstatCounties").textContent = Object.keys(s.counties || {}).length;
     },
@@ -115,6 +115,7 @@ const TitleApp = {
         if (spec.any_flags2 && !spec.any_flags2.some((f) => flags.has(f))) return false;
         if (spec.min_years_since_transfer && r._years < spec.min_years_since_transfer) return false;
         if (spec.min_equity && !(r._equity >= spec.min_equity)) return false;
+        if (spec.min_years_since_death && !((r.property.death_matches || []).some((m) => m.years_since_death >= spec.min_years_since_death && m.identity_confidence !== "LOW"))) return false;
         return true;
     },
 
@@ -212,6 +213,17 @@ const TitleApp = {
                 <div style="margin-top:8px">${this.flagChips(r.flags)}</div>
                 <div class="aerial-note" style="margin-top:10px">Death and probate status: not yet automated (no free authorized source). See README → Engine 2 for what is and isn't checked.</div>
             </div>
+            ${(p.death_matches || []).length ? `<div class="detail-section">
+                <h3>Death Record Match — Maryland death index 1973–2014</h3>
+                ${p.death_matches.map((m) => `
+                <div style="margin-bottom:10px; padding:10px; background:var(--bg-card); border-radius:var(--radius); border:1px solid var(--border);">
+                    <div class="detail-row"><span class="label">Owner</span><span class="value" style="font-weight:600">${this.esc(m.owner)}${m.record_middle ? ` <span style="color:var(--text-dim)">(record: ${this.esc(m.record_middle)})</span>` : ""}</span></div>
+                    <div class="detail-row"><span class="label">Died</span><span class="value" style="font-family:var(--font-mono)">${this.esc(m.death_date)} · ${m.years_since_death} yrs ago${m.age_at_death ? ` · age ${m.age_at_death}` : ""}</span></div>
+                    <div class="detail-row"><span class="label">Identity confidence</span><span class="value"><span class="prio prio-${m.identity_confidence === "HIGH" ? "high" : m.identity_confidence === "MEDIUM" ? "mid" : "low"}">${m.identity_confidence}</span> <span style="color:var(--text-dim); font-size:0.78rem">${m.identity_points} pts · ${m.same_name_deaths_statewide} Marylanders with this name died 1973–2014 · ${m.candidates_after_filters} plausible</span></span></div>
+                    <div class="detail-row"><span class="label">Death record</span><span class="value" style="font-size:0.78rem">${this.esc(m.source)} · cert ${this.esc(m.certificate)} · county ${this.esc(m.death_county_code)}</span></div>
+                </div>`).join("")}
+                <div class="aerial-note">Identity is inferred from name, middle initial, county and age vs. deed date. Verify before contact. Deaths after 2014 are not in this index.</div>
+            </div>` : ""}
             ${p.tax_sale ? `<div class="detail-section">
                 <h3>Tax Sale — verified county record</h3>
                 <div class="detail-row"><span class="label">Status</span><span class="value" style="color:var(--red); font-weight:700">${{SOLD: "LIEN SOLD to investor — foreclosure of right of redemption possible after the statutory wait", STRUCK: "UNSOLD — county holds the lien; still delinquent", LISTED: "ADVERTISED for sale — results not yet published", LISTED_NOT_SOLD: "Advertised but not in sale results — likely redeemed before sale"}[p.tax_sale.status] || this.esc(p.tax_sale.status)}</span></div>
@@ -245,14 +257,14 @@ const TitleApp = {
         const H = ["Priority", "Title Class", "Flags", "Owner on Record", "Owner 2", "Owner Type", "Address", "City", "Zip", "County", "Account #",
             "Property Type", "Assessed", "Land", "Improvement", "Year Built", "Sq Ft", "Occupancy", "Homestead", "Condition",
             "Last Transfer", "Sale Price", "Years Since Transfer", "Deed Liber", "Deed Folio", "Est. Equity", "Equity %", "Equity Confidence",
-            "Title Score", "Financial Score", "Distress Score", "Tax Sale Status", "Tax Sale Bid", "Lien Buyer", "Lat", "Lon", "Status", "Notes"];
+            "Title Score", "Financial Score", "Distress Score", "Tax Sale Status", "Tax Sale Bid", "Lien Buyer", "Death Match Owner", "Death Date", "Age at Death", "Identity Confidence", "Lat", "Lon", "Status", "Notes"];
         const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
         const lines = [H.join(",")];
         rows.forEach((r) => { const p = r.property; lines.push([
             r._priority, r.title_class, (r.flags || []).join("|"), p.owner_name, p.owner_name_2, p.owner_type, p.property_address, p.city, p.zip_code, p.county, `="${p.account_number || ""}"`,
             p.property_type, p.assessed_value, p.land_value, p.improvement_value, p.year_built, p.square_footage, p.occupancy_code, p.homestead_code, p.condition_code,
             p.transfer_date, p.sale_price, p.years_since_transfer, p.deed_liber, p.deed_folio, p.estimated_equity, p.equity_percent, p.equity_confidence,
-            r.scores.title_complexity, r.scores.financial, r.scores.distress, p.tax_sale ? p.tax_sale.status : "", p.tax_sale ? p.tax_sale.bid : "", p.tax_sale ? p.tax_sale.bidder : "", p.lat, p.lon, this.statusOf(r), this.notesOf(r),
+            r.scores.title_complexity, r.scores.financial, r.scores.distress, p.tax_sale ? p.tax_sale.status : "", p.tax_sale ? p.tax_sale.bid : "", p.tax_sale ? p.tax_sale.bidder : "", (p.death_matches || []).map((m) => m.owner).join("; "), (p.death_matches || []).map((m) => m.death_date).join("; "), (p.death_matches || []).map((m) => m.age_at_death).join("; "), (p.death_matches || []).map((m) => m.identity_confidence).join("; "), p.lat, p.lon, this.statusOf(r), this.notesOf(r),
         ].map(q).join(",")); });
         const blob = new Blob([lines.join("\r\n")], { type: "text/csv;charset=utf-8;" });
         const a = document.createElement("a");
@@ -266,9 +278,9 @@ const TitleApp = {
     flagChips(flags) {
         const nice = { ESTATE_IN_NAME: "Estate", HEIRS_IN_NAME: "Heirs", DECEASED_IN_NAME: "Deceased", PERSONAL_REP: "Pers. Rep", LIFE_ESTATE: "Life Estate",
             CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", CONSERVATOR: "Conservator/POA", TRUSTEE: "Trustee",
-            NO_RECORDED_TRANSFER: "No Deed on Record", TAX_SALE_SOLD: "TAX LIEN SOLD", TAX_SALE_STRUCK: "TAX SALE: UNSOLD", TAX_SALE_LISTED: "TAX SALE LISTED", RETURNED_MAIL: "Returned Mail", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
+            NO_RECORDED_TRANSFER: "No Deed on Record", DECEASED_SOLE_OWNER_HIGH: "OWNER DECEASED (high)", DECEASED_SOLE_OWNER_MEDIUM: "Owner Deceased (med)", DECEASED_SOLE_OWNER_LOW: "Owner Deceased? (low)", ALL_OWNERS_DECEASED: "ALL OWNERS DECEASED", CO_OWNER_DECEASED: "Co-owner Deceased", TAX_SALE_SOLD: "TAX LIEN SOLD", TAX_SALE_STRUCK: "TAX SALE: UNSOLD", TAX_SALE_LISTED: "TAX SALE LISTED", RETURNED_MAIL: "Returned Mail", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
             ABSENTEE: "Absentee", NO_HOMESTEAD: "No Homestead", VACANT_LAND: "Vacant Lot", OLD_STRUCTURE: "Pre-1950", POOR_CONDITION: "Poor Cond.", BELOW_AVG_CONDITION: "Below-Avg Cond.", MAIL_MISMATCH: "Mail ≠ Site" };
-        const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "CONSERVATOR"]);
+        const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "CONSERVATOR", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"]);
         const hard = new Set(["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS"]);
         return (flags || []).map((f) => `<span class="chip ${strong.has(f) ? "chip-strong" : hard.has(f) ? "chip-hard" : ""}">${nice[f] || f}</span>`).join(" ");
     },

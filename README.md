@@ -86,10 +86,18 @@ Scores: **Title Complexity**, **Financial**, **Distress**, blended into
 **Research Priority**. Every point has a reason shown in the lead modal. Weights
 and thresholds live in `engine2/config.py`.
 
-**Not yet automated:** death confirmation and probate status. There is no free,
-authorized statewide death file, and the Register of Wills estate search
-prohibits commercial use without written permission (request pending). Both are
-designed as pluggable providers in a later phase.
+**Death detection (automated, 1973–2014):** every individual owner is matched
+against the Maryland State Archives death index (MSA SE-151, 1.65M deaths,
+public domain via Reclaim The Records; `data/death/`). Each match carries a
+separate *identity confidence* (name rarity, middle initial, generational
+suffix, county of death, age vs. deed date; deeds recorded after the death are
+excluded). Classes **D1** deceased sole owner still on title, **D4** deceased
+co-owner, **D5** all owners deceased. Deaths after 2014 are not in the index —
+the daily obituary scrape covers new deaths going forward.
+
+**Not yet automated:** probate status. The Register of Wills estate search
+prohibits commercial use without written permission (request pending); it is a
+pluggable provider slot.
 
 Imagery: Maryland iMAP 6-inch aerials (2020 west / 2022 Eastern Shore) and USGS
 NAIP, plus Street View / Maps / Mapillary links — no API keys, no billing.

@@ -53,7 +53,7 @@ def is_residential(land_use):
     return lu.startswith("R") or any(h in lu for h in RESIDENTIAL_HINTS)
 
 
-def analyze(row, today=None, force=False):
+def analyze(row, today=None, force=False, deaths=None):
     """
     row: dict with the aliases from build_index.ALL_ALIASES.
     Returns (property_dict, flags:set, facts:dict) or None if ineligible.
@@ -84,7 +84,28 @@ def analyze(row, today=None, force=False):
     estate_signal = bool(flags & {"ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME",
                                   "PERSONAL_REP", "LIFE_ESTATE", "SURVIVING", "CONSERVATOR"})
     stale = no_recorded_transfer or (years_since_transfer is not None and years_since_transfer >= config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER)
-    if not estate_signal and not stale and not force:
+    owners = split_individuals(owner1, owner2)
+    death_matches, years_since_death = [], None
+    if deaths is not None and owners:
+        cc = (row.get("county_code") or "").zfill(2)
+        for o in owners:
+            m = deaths.match(o, cc, transfer_year=ty, no_recorded_transfer=no_recorded_transfer)
+            if m:
+                death_matches.append(m)
+        strong = [m for m in death_matches if m["identity_confidence"] in ("HIGH", "MEDIUM")]
+        if death_matches:
+            if len(owners) == 1:
+                flags.add("DECEASED_SOLE_OWNER_" + death_matches[0]["identity_confidence"])
+            elif strong and len(strong) == len(owners):
+                flags.add("ALL_OWNERS_DECEASED")
+            elif strong:
+                flags.add("CO_OWNER_DECEASED")
+            elif len(owners) == 1:
+                pass
+            if strong:
+                years_since_death = max(m["years_since_death"] for m in strong)
+    death_signal = bool(flags & {"DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"})
+    if not estate_signal and not stale and not force and not death_signal:
         return None
     if stale:
         flags.add("STALE_OWNERSHIP")
@@ -119,7 +140,8 @@ def analyze(row, today=None, force=False):
         "owner_name": owner1 or owner2,
         "owner_name_2": owner2 if owner1 else "",
         "owner_type": owner_type,
-        "owners": split_individuals(owner1, owner2),
+        "owners": owners,
+        "death_matches": death_matches,
         "property_address": row.get("address") or "",
         "city": row.get("city") or "",
         "zip_code": row.get("zip") or "",
@@ -149,5 +171,6 @@ def analyze(row, today=None, force=False):
     }
     prop.update(estimate_equity(prop))
     facts = {"residential": residential, "years_since_transfer": years_since_transfer,
-             "estate_signal": estate_signal, "no_recorded_transfer": no_recorded_transfer}
+             "estate_signal": estate_signal, "no_recorded_transfer": no_recorded_transfer,
+             "years_since_death": years_since_death}
     return prop, flags, facts

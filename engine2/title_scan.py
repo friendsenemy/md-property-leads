@@ -26,6 +26,7 @@ from datetime import datetime, timezone
 
 from engine2 import config
 from engine2.build_index import ALL_ALIASES
+from engine2.death_index import DeathIndex
 from engine2.score import score, title_class
 from engine2.signals import analyze
 
@@ -109,6 +110,12 @@ def apply_taxsale(prop, flags, taxsale, suffix16):
 
 def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
     taxsale, suffix16 = load_taxsale()
+    deaths = DeathIndex()
+    try:
+        deaths.load()
+    except Exception as e:  # never let the death provider break the scan
+        log.error("death index unavailable: %s", e)
+        deaths = None
     previous = _previous_found_at()
     run_at = _now()
     db = sqlite3.connect(index_path)
@@ -136,7 +143,7 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             scanned += 1
             acct = r["acct"] or ""
             in_taxsale = acct in taxsale or (acct.startswith("16") and acct[-8:] in suffix16)
-            res = analyze(dict(r), force=in_taxsale)
+            res = analyze(dict(r), force=in_taxsale, deaths=deaths)
             if not res:
                 continue
             prop, flags, facts = res

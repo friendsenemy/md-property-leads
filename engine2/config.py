@@ -49,6 +49,14 @@ TITLE_POINTS = {
     # decades-old (or unrecorded) deed AND a tax lien sold/struck: the person on
     # the deed has stopped paying — the best free proxy for "owner gone"
     "STALE_AND_DELINQUENT": 20,
+    # Death-index matches (MSA SE-151, 1973-2014). Points by identity confidence.
+    "DECEASED_SOLE_OWNER_HIGH": 55,
+    "DECEASED_SOLE_OWNER_MEDIUM": 35,
+    "DECEASED_SOLE_OWNER_LOW": 12,
+    "ALL_OWNERS_DECEASED": 60,       # every titled individual matched (any confidence ≥ MEDIUM)
+    "CO_OWNER_DECEASED": 15,         # one of several owners; survivor may hold by entireties
+    "DECADES_SINCE_DEATH_PER_YEAR": 1.0,  # extra per year since the (high/medium) death, capped below
+    "DECADES_SINCE_DEATH_CAP": 20,
 }
 
 # ── Distress: HARD evidence (official records) vs SOFT indicators ───────────
@@ -139,6 +147,9 @@ PRESETS = [
     {"id": "stale_40",       "label": "Owned 40+ yrs",                "min_years_since_transfer": 40},
     {"id": "high_equity",    "label": "High Equity + Estate Signal",  "min_equity": 200000, "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE"]},
     {"id": "vacant_lot",     "label": "Vacant Lot + Estate Signal",   "flags": ["VACANT_LAND"], "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME"]},
+    {"id": "deceased_owner", "label": "Deceased Owner (death index)", "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"]},
+    {"id": "deceased_10y",   "label": "Owner Dead 10+ yrs, Still on Title", "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"], "min_years_since_death": 10},
+    {"id": "deceased_taxsale","label": "Deceased Owner + Tax Sale",   "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale",       "label": "Tax Sale + Title Signal",      "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale_estate","label": "Tax Sale + Estate on Title",   "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "CONSERVATOR"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},

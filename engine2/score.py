@@ -26,6 +26,16 @@ def title_complexity(flags, facts):
         s = min(P["STALE_CAP"], (y - config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER) * P["STALE_PER_YEAR"] + 5)
         pts += s
         reasons.append(f"No transfer in {y} yrs (+{int(s)})")
+    for f in ("DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "DECEASED_SOLE_OWNER_LOW",
+              "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"):
+        if f in flags:
+            pts += P[f]
+            reasons.append(f"{f.replace('_', ' ').title()} (+{P[f]})")
+    ysd = facts.get("years_since_death")
+    if ysd and (flags & {"DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"}):
+        extra = min(P["DECADES_SINCE_DEATH_CAP"], ysd * P["DECADES_SINCE_DEATH_PER_YEAR"])
+        pts += extra
+        reasons.append(f"{ysd} years since death, no transfer (+{int(extra)})")
     long_held = facts.get("no_recorded_transfer") or (y or 0) >= 25
     if long_held and (flags & {"TAX_SALE_SOLD", "TAX_SALE_STRUCK"}):
         pts += P["STALE_AND_DELINQUENT"]
@@ -87,7 +97,11 @@ def score(prop, flags, facts):
 
 
 def title_class(flags, facts):
-    """Phase-1 classification (no probate data yet)."""
+    """Classification. D-classes come from the death index; E from SDAT owner text; S from deed age."""
+    if "ALL_OWNERS_DECEASED" in flags:
+        return "D5", "All titled owners deceased (death index) — no transfer since"
+    if "DECEASED_SOLE_OWNER_HIGH" in flags or "DECEASED_SOLE_OWNER_MEDIUM" in flags:
+        return "D1", "Deceased sole owner still on title (death index) — no estate check yet"
     if "ESTATE_IN_NAME" in flags or "DECEASED_IN_NAME" in flags or "PERSONAL_REP" in flags:
         return "E1", "Estate named as owner — decedent still on title"
     if "HEIRS_IN_NAME" in flags:
@@ -98,6 +112,10 @@ def title_class(flags, facts):
         return "E4", "Surviving co-owner noted on title"
     if "CONSERVATOR" in flags:
         return "E5", "Conservator / guardian / POA on title — owner likely incapacitated"
+    if "CO_OWNER_DECEASED" in flags:
+        return "D4", "One co-owner deceased (death index) — survivor may hold title"
+    if "DECEASED_SOLE_OWNER_LOW" in flags:
+        return "D1?", "Possible deceased owner (common name — low identity confidence)"
     y = facts.get("years_since_transfer") or 0
     if facts.get("no_recorded_transfer"):
         return "S3", "No recorded transfer — ownership predates SDAT sales records"
