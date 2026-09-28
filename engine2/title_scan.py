@@ -96,34 +96,50 @@ def load_taxsale():
 
 
 def load_probate():
+    """account -> [estate records]; a parcel can carry several (multi-generation)."""
     recs = {}
     for path in glob.glob(f"{config.PROBATE_DIR}/*.json"):
         try:
-            recs[os.path.splitext(os.path.basename(path))[0]] = json.load(open(path, encoding="utf-8"))
+            data = json.load(open(path, encoding="utf-8"))
         except (OSError, ValueError):
             continue
-    log.info("probate records (manual imports): %d", len(recs))
+        acct = os.path.splitext(os.path.basename(path))[0]
+        if isinstance(data, dict) and "estates" in data:
+            recs[acct] = data["estates"]
+        elif isinstance(data, dict) and data.get("estate_number"):
+            recs[acct] = [data]
+    log.info("probate records (manual imports): %d parcels, %d estates",
+             len(recs), sum(len(v) for v in recs.values()))
     return recs
 
 
+PROBATE_FLAG = {"D3": "PROBATE_CLOSED_STILL_TITLED", "D2-S": "PROBATE_OPEN_STALE",
+                "D2": "PROBATE_OPEN", "D1": "PROBATE_NONE_FOUND"}
+KEEP = ("estate_number", "county", "status", "type", "decedent", "date_of_death", "date_opened",
+        "date_closed", "will", "foreign_proceeding", "personal_reps", "interested_persons",
+        "last_docket_activity", "days_since_last_docket", "death_to_probate_days",
+        "title_class", "title_class_label", "imported_at", "source")
+
+
 def apply_probate(prop, flags, probate):
-    rec = probate.get(prop["account_number"] or "")
-    if not rec:
+    recs = probate.get(prop["account_number"] or "")
+    if not recs:
         return
-    cls = rec.get("title_class", "")
-    if cls == "D3":
-        flags.add("PROBATE_CLOSED_STILL_TITLED")
-    elif cls == "D2-S":
-        flags.add("PROBATE_OPEN_STALE")
-    elif cls == "D2":
-        flags.add("PROBATE_OPEN")
-    elif cls == "D1":
-        flags.add("PROBATE_NONE_FOUND")
-    prop["probate"] = {k: rec.get(k) for k in ("estate_number", "county", "status", "type", "decedent", "date_of_death",
-                                                 "date_opened", "date_closed", "will", "personal_reps", "interested_persons",
-                                                 "last_docket_activity", "days_since_last_docket", "death_to_probate_days",
-                                                 "title_class", "title_class_label", "imported_at", "source")}
-    prop["probate"]["docket_entries"] = len(rec.get("docket") or [])
+    out = []
+    for rec in recs:
+        f = PROBATE_FLAG.get(rec.get("title_class", ""))
+        if f:
+            flags.add(f)
+        if rec.get("foreign_proceeding"):
+            flags.add("FOREIGN_PROBATE")
+        slim = {k: rec.get(k) for k in KEEP}
+        slim["docket_entries"] = len(rec.get("docket") or [])
+        out.append(slim)
+    # Two or more estates on one parcel = the owner died, then an heir died
+    if len({r.get("decedent") for r in out if r.get("decedent")}) > 1:
+        flags.add("MULTI_GENERATION_ESTATES")
+    prop["probate_estates"] = out
+    prop["probate"] = out[0]
 
 
 def apply_taxsale(prop, flags, taxsale, suffix16):

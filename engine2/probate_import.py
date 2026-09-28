@@ -42,7 +42,7 @@ DOCKET = re.compile(r"^\s*(\d{2}/\d{2}/\d{4})\s+(\d+)\s+(\d{4})\s+(.+?)\s+(\d+)\
 
 RELATION = re.compile(r"\b([A-Z][A-Z'\-]+(?:\s+[A-Z]\.?)?(?:\s+[A-Z][A-Z'\-]+){1,2}),\s*(SON|DAUGHTER|SPOUSE|WIFE|HUSBAND|BROTHER|SISTER|MOTHER|FATHER|GRANDSON|GRANDDAUGHTER|NIECE|NEPHEW|FRIEND|HEIR)\b")
 JOINT = re.compile(r"JNT WITH\s+([A-Z][A-Z .'\-]+?)(?:\s+#|\s*$)")
-CORR = re.compile(r"CORRESPONDENCE RECEIVED FROM\s+([A-Z][A-Z .'\-]+?)\s*$")
+CORR = re.compile(r"CORRESPONDENCE RECEIVED FROM\s+([A-Z][A-Z .'\-]+?)(?:,\s*(ESQUIRE|ESQ\.?))?\s*$")
 SUCC = re.compile(r"APPOINTING\s+([A-Z][A-Z .'\-]+?),\s*SUCCESSOR")
 MAIL_TO = re.compile(r"CERTIFIED/REGISTERED MAIL/\s*([A-Z][A-Z .'\-]+?)(?:,\s*ESQUIRE)?\s*$")
 
@@ -67,8 +67,11 @@ def parse(text):
     if m:
         for name, addr in PR_ITEM.findall(m.group(1)):
             prs.append({"name": name.strip(" ,"), "address": addr.strip()})
-        if not prs and m.group(1).strip():
-            prs.append({"name": m.group(1).strip().splitlines()[0], "address": ""})
+        if not prs:
+            first = m.group(1).strip().splitlines()[0].strip() if m.group(1).strip() else ""
+            # blank "Personal Reps:" runs straight into the next label — don't capture it
+            if first and not re.match(r"^(Attorney|NOTE|Docket|Date|Aliases|Reference)\b", first, re.I):
+                prs.append({"name": first, "address": ""})
     rec["personal_reps"] = prs
     docket = []
     for filed, num, code, desc, pages in DOCKET.findall(text):
@@ -94,8 +97,8 @@ def parse(text):
             add(nm, rel, f"docket {d['n']}")
         for nm in JOINT.findall(d["desc"]):
             add(nm, "JOINT_OWNER_NONPROBATE", f"docket {d['n']}")
-        for nm in CORR.findall(d["desc"]):
-            add(nm, "CORRESPONDENT", f"docket {d['n']}")
+        for nm, esq in CORR.findall(d["desc"]):
+            add(nm, "ATTORNEY" if esq else "CORRESPONDENT", f"docket {d['n']}")
         for nm in SUCC.findall(d["desc"]):
             add(nm, "SUCCESSOR_PR", f"docket {d['n']}")
         for nm in MAIL_TO.findall(d["desc"]):
@@ -111,9 +114,25 @@ def parse(text):
     if rec["last_docket_activity"]:
         rec["days_since_last_docket"] = (today - date.fromisoformat(rec["last_docket_activity"])).days
     rec["status"] = rec["status"].upper()
+    # FP = foreign proceeding: the real probate is in another jurisdiction and only
+    # an exemplified copy is filed here. The will and heir list live in that court.
+    rec["foreign_proceeding"] = rec.get("type", "").upper() == "FP" or "FOREIGN" in rec.get("will", "").upper()
     rec["imported_at"] = today.isoformat()
     rec["source"] = "Register of Wills Estate Search (manual lookup)"
     return rec
+
+
+def load_existing(path):
+    """Existing estates for this account, so a parcel can carry more than one."""
+    if not os.path.exists(path):
+        return []
+    try:
+        data = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    if isinstance(data, dict) and "estates" in data:
+        return data["estates"]
+    return [data] if isinstance(data, dict) and data.get("estate_number") else []
 
 
 def classify(rec, still_titled_to_decedent=True):
@@ -142,10 +161,15 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     for acct in [x.strip() for x in a.accounts.split(",") if x.strip()]:
         path = os.path.join(OUT_DIR, f"{acct}.json")
+        estates = [e for e in load_existing(path) if e.get("estate_number") != rec["estate_number"]]
+        estates.append(rec)
+        estates.sort(key=lambda e: _d(e.get("date_of_death") or "") or date.min)
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(rec, f, ensure_ascii=False, indent=1)
-        print(f"wrote {path}: estate {rec['estate_number']} {rec['status']} → {code} ({label}); "
-              f"PR {', '.join(p['name'] for p in rec['personal_reps']) or '—'}; {len(rec['interested_persons'])} people; {len(rec['docket'])} docket entries")
+            json.dump({"account": acct, "estates": estates}, f, ensure_ascii=False, indent=1)
+        print(f"wrote {path}: estate {rec['estate_number']} ({rec['decedent']}) {rec['status']} → {code} ({label}); "
+              f"PR {', '.join(p['name'] for p in rec['personal_reps']) or '—'}; "
+              f"{len(rec['interested_persons'])} people; {len(rec['docket'])} docket entries; "
+              f"{len(estates)} estate(s) now on this parcel")
 
 
 if __name__ == "__main__":

@@ -31,7 +31,8 @@ def title_complexity(flags, facts):
         if f in flags:
             pts += P[f]
             reasons.append(f"{f.replace('_', ' ').title()} (+{P[f]})")
-    for f in ("PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"):
+    for f in ("PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND",
+              "MULTI_GENERATION_ESTATES", "FOREIGN_PROBATE"):
         if f in flags:
             pts += P[f]
             reasons.append(f"{f.replace('_', ' ').title()} (+{P[f]}, Register of Wills record)")
@@ -102,6 +103,8 @@ def score(prop, flags, facts):
 
 def title_class(flags, facts):
     """Classification. D-classes come from probate/death records; E from SDAT owner text; S from deed age."""
+    if "MULTI_GENERATION_ESTATES" in flags:
+        return "D6", "Owner died, then an heir died — title never moved through either estate"
     if "PROBATE_CLOSED_STILL_TITLED" in flags:
         return "D3", "Estate CLOSED but property still titled to decedent (Register of Wills)"
     if "PROBATE_OPEN_STALE" in flags:

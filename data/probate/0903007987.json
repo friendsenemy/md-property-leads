@@ -1,162 +1,257 @@
 {
- "estate_number": "11180",
- "status": "CLOSED",
- "type": "RE",
- "date_opened": "03/16/1998",
- "date_closed": "05/10/2001",
- "decedent": "THOMAS B. CURRY",
- "date_of_death": "8/31/1997",
- "date_of_filing": "03/10/1998",
- "will": "NO WILL",
- "aliases": "",
- "attorney": "",
- "county": "Charles",
- "personal_reps": [
+ "account": "0903007987",
+ "estates": [
   {
-   "name": "CARLTON ANTOINE CURRY",
-   "address": "3604 26TH AVENUE, TEMPLE HILLS, MD 20748"
+   "estate_number": "11180",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/16/1998",
+   "date_closed": "05/10/2001",
+   "decedent": "THOMAS B. CURRY",
+   "date_of_death": "8/31/1997",
+   "date_of_filing": "03/10/1998",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "Charles",
+   "personal_reps": [
+    {
+     "name": "CARLTON ANTOINE CURRY",
+     "address": "3604 26TH AVENUE, TEMPLE HILLS, MD 20748"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/10/1998",
+     "n": 1,
+     "code": "1112",
+     "desc": "PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/10/1998",
+     "n": 2,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/10/1998",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "03/10/1998",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/1998",
+     "n": 11,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "12/14/1998",
+     "n": 13,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS, MAYNARD T. CURRY, SON, TAX PAID REC # 5169",
+     "pages": 2
+    },
+    {
+     "filed": "02/12/1999",
+     "n": 23,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS-JNT WITH MARY L. SMITH #5371",
+     "pages": 2
+    },
+    {
+     "filed": "06/20/2000",
+     "n": 32,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW/SHOW CAUSE ORDER TO MR. THOMAS F. MUDD",
+     "pages": 2
+    },
+    {
+     "filed": "06/29/2000",
+     "n": 33,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL/MAYNARD T. CURRY",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2000",
+     "n": 34,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL/THOMAS F. MUDD, ESQUIRE",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2001",
+     "n": 43,
+     "code": "1385",
+     "desc": "THIRD AND FINAL ACCOUNT FILED/ APPROVED 5/10/01",
+     "pages": 2
+    },
+    {
+     "filed": "01/14/2009",
+     "n": 47,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM CONSTANCE G. STARKS",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2009",
+     "n": 48,
+     "code": "1376",
+     "desc": "PETITION FOR APPOINTMENT OF SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "01/27/2009",
+     "n": 49,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPOINTING CARLTON ANTOINE CURRY, SUCCESSOR PR",
+     "pages": 1
+    },
+    {
+     "filed": "01/28/2009",
+     "n": 50,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2009-01-28",
+   "interested_persons": [
+    {
+     "name": "CARLTON ANTOINE CURRY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "MAYNARD T. CURRY",
+     "role": "SON",
+     "source": "docket 13"
+    },
+    {
+     "name": "MARY L. SMITH",
+     "role": "JOINT_OWNER_NONPROBATE",
+     "source": "docket 23"
+    },
+    {
+     "name": "THOMAS F. MUDD",
+     "role": "NOTICED_PARTY",
+     "source": "docket 34"
+    },
+    {
+     "name": "CONSTANCE G. STARKS",
+     "role": "CORRESPONDENT",
+     "source": "docket 47"
+    }
+   ],
+   "death_to_probate_days": 197,
+   "probate_age_days": 1151,
+   "days_since_last_docket": 6452,
+   "foreign_proceeding": false,
+   "imported_at": "2026-09-28",
+   "source": "Register of Wills Estate Search (manual lookup)",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent"
+  },
+  {
+   "estate_number": "16108",
+   "status": "CLOSED",
+   "type": "FP",
+   "date_opened": "07/28/2008",
+   "date_closed": "03/12/2009",
+   "decedent": "MAYNARD THOMAS CURRY",
+   "date_of_death": "2/29/2008",
+   "date_of_filing": "07/28/2008",
+   "will": "FOREIGN WILL",
+   "aliases": "MAYNARD T CURRY",
+   "attorney": "",
+   "county": "Charles",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "07/28/2008",
+     "n": 1,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM CONSTANCE G STARKS, ESQUIRE",
+     "pages": 1
+    },
+    {
+     "filed": "07/28/2008",
+     "n": 2,
+     "code": "1133",
+     "desc": "APPLICATION BY FOREIGN PERSONAL REPRESENTATIVE TO SET INHERITANCE TAX",
+     "pages": 2
+    },
+    {
+     "filed": "07/28/2008",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/28/2008",
+     "n": 4,
+     "code": "1237",
+     "desc": "EXEMPLIFIED COPY OF FOREIGN PROCEEDINGS",
+     "pages": 16
+    },
+    {
+     "filed": "07/28/2008",
+     "n": 5,
+     "code": "1134",
+     "desc": "NOTICE TO CREDITORS OF APPOINTMENT OF FOREIGN PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "07/28/2008",
+     "n": 6,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW - REQUEST FOR MD PUBLICATION FEES",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2008",
+     "n": 7,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "09/08/2008",
+     "n": 8,
+     "code": "1240",
+     "desc": "CERTIFICATE(S) OF PUBLICATION (FOREIGN REPRESENTATIVE)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2008-09-08",
+   "interested_persons": [
+    {
+     "name": "CONSTANCE G STARKS",
+     "role": "ATTORNEY",
+     "source": "docket 1"
+    }
+   ],
+   "death_to_probate_days": 150,
+   "probate_age_days": 227,
+   "days_since_last_docket": 6594,
+   "foreign_proceeding": true,
+   "imported_at": "2026-09-28",
+   "source": "Register of Wills Estate Search (manual lookup)",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent"
   }
- ],
- "docket": [
-  {
-   "filed": "03/10/1998",
-   "n": 1,
-   "code": "1112",
-   "desc": "PETITION FOR PROBATE",
-   "pages": 2
-  },
-  {
-   "filed": "03/10/1998",
-   "n": 2,
-   "code": "1115",
-   "desc": "BOND OF PERSONAL REPRESENTATIVE",
-   "pages": 2
-  },
-  {
-   "filed": "03/10/1998",
-   "n": 4,
-   "code": "1104",
-   "desc": "LIST OF INTERESTED PERSONS",
-   "pages": 2
-  },
-  {
-   "filed": "03/10/1998",
-   "n": 5,
-   "code": "1114",
-   "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
-   "pages": 1
-  },
-  {
-   "filed": "10/19/1998",
-   "n": 11,
-   "code": "1122",
-   "desc": "INVENTORY",
-   "pages": 3
-  },
-  {
-   "filed": "12/14/1998",
-   "n": 13,
-   "code": "1125",
-   "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS, MAYNARD T. CURRY, SON, TAX PAID REC # 5169",
-   "pages": 2
-  },
-  {
-   "filed": "02/12/1999",
-   "n": 23,
-   "code": "1125",
-   "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS-JNT WITH MARY L. SMITH #5371",
-   "pages": 2
-  },
-  {
-   "filed": "06/20/2000",
-   "n": 32,
-   "code": "1332",
-   "desc": "GENERAL CORRESPONDENCE OF ROW/SHOW CAUSE ORDER TO MR. THOMAS F. MUDD",
-   "pages": 2
-  },
-  {
-   "filed": "06/29/2000",
-   "n": 33,
-   "code": "1246",
-   "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL/MAYNARD T. CURRY",
-   "pages": 1
-  },
-  {
-   "filed": "06/29/2000",
-   "n": 34,
-   "code": "1246",
-   "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL/THOMAS F. MUDD, ESQUIRE",
-   "pages": 1
-  },
-  {
-   "filed": "05/02/2001",
-   "n": 43,
-   "code": "1385",
-   "desc": "THIRD AND FINAL ACCOUNT FILED/ APPROVED 5/10/01",
-   "pages": 2
-  },
-  {
-   "filed": "01/14/2009",
-   "n": 47,
-   "code": "1331",
-   "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM CONSTANCE G. STARKS",
-   "pages": 1
-  },
-  {
-   "filed": "01/14/2009",
-   "n": 48,
-   "code": "1376",
-   "desc": "PETITION FOR APPOINTMENT OF SUCCESSOR PERSONAL REPRESENTATIVE",
-   "pages": 3
-  },
-  {
-   "filed": "01/27/2009",
-   "n": 49,
-   "code": "1284",
-   "desc": "ORDER OF COURT APPOINTING CARLTON ANTOINE CURRY, SUCCESSOR PR",
-   "pages": 1
-  },
-  {
-   "filed": "01/28/2009",
-   "n": 50,
-   "code": "1272",
-   "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
-   "pages": 1
-  }
- ],
- "last_docket_activity": "2009-01-28",
- "interested_persons": [
-  {
-   "name": "CARLTON ANTOINE CURRY",
-   "role": "PERSONAL_REP",
-   "source": "estate header"
-  },
-  {
-   "name": "MAYNARD T. CURRY",
-   "role": "SON",
-   "source": "docket 13"
-  },
-  {
-   "name": "MARY L. SMITH",
-   "role": "JOINT_OWNER_NONPROBATE",
-   "source": "docket 23"
-  },
-  {
-   "name": "THOMAS F. MUDD",
-   "role": "NOTICED_PARTY",
-   "source": "docket 34"
-  },
-  {
-   "name": "CONSTANCE G. STARKS",
-   "role": "CORRESPONDENT",
-   "source": "docket 47"
-  }
- ],
- "death_to_probate_days": 197,
- "probate_age_days": 1151,
- "days_since_last_docket": 6452,
- "imported_at": "2026-09-28",
- "source": "Register of Wills Estate Search (manual lookup)",
- "title_class": "D3",
- "title_class_label": "Estate closed — property still titled to decedent"
+ ]
 }

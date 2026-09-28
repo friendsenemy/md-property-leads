@@ -62,6 +62,8 @@ TITLE_POINTS = {
     "PROBATE_OPEN_STALE": 35,            # D2-S
     "PROBATE_OPEN": 15,                  # D2: active administration — usually resolves itself
     "PROBATE_NONE_FOUND": 30,            # D1 confirmed: someone searched and found no estate
+    "MULTI_GENERATION_ESTATES": 40,      # D6: owner died, then an heir died, title never moved
+    "FOREIGN_PROBATE": 10,               # will/heirs are in another state's court file
 }
 
 # ── Distress: HARD evidence (official records) vs SOFT indicators ───────────
@@ -153,6 +155,7 @@ PRESETS = [
     {"id": "stale_40",       "label": "Owned 40+ yrs",                "min_years_since_transfer": 40},
     {"id": "high_equity",    "label": "High Equity + Estate Signal",  "min_equity": 200000, "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE"]},
     {"id": "vacant_lot",     "label": "Vacant Lot + Estate Signal",   "flags": ["VACANT_LAND"], "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME"]},
+    {"id": "multi_gen",      "label": "Multi-Generation (owner + heir died)", "any_flags": ["MULTI_GENERATION_ESTATES"]},
     {"id": "probate_known",  "label": "Probate Record Attached",         "any_flags": ["PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"]},
     {"id": "deceased_owner", "label": "Deceased Owner (death index)", "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"]},
     {"id": "deceased_10y",   "label": "Owner Dead 10+ yrs, Still on Title", "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"], "min_years_since_death": 10},
