@@ -53,7 +53,7 @@ def is_residential(land_use):
     return lu.startswith("R") or any(h in lu for h in RESIDENTIAL_HINTS)
 
 
-def analyze(row, today=None):
+def analyze(row, today=None, force=False):
     """
     row: dict with the aliases from build_index.ALL_ALIASES.
     Returns (property_dict, flags:set, facts:dict) or None if ineligible.
@@ -78,13 +78,18 @@ def analyze(row, today=None):
 
     ty = _year(row.get("transfer_date"))
     years_since_transfer = (today.year - ty) if ty else None
+    # "0000.00.00" / blank = deed predates SDAT's electronic sales records
+    # (roughly pre-1980s). That is the OLDEST ownership there is, not "unknown".
+    no_recorded_transfer = ty is None and (row.get("transfer_date") or "").strip() in ("", "0000.00.00", "0000-00-00")
     estate_signal = bool(flags & {"ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME",
                                   "PERSONAL_REP", "LIFE_ESTATE", "SURVIVING", "CONSERVATOR"})
-    stale = years_since_transfer is not None and years_since_transfer >= config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER
-    if not estate_signal and not stale:
+    stale = no_recorded_transfer or (years_since_transfer is not None and years_since_transfer >= config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER)
+    if not estate_signal and not stale and not force:
         return None
     if stale:
         flags.add("STALE_OWNERSHIP")
+    if no_recorded_transfer:
+        flags.add("NO_RECORDED_TRANSFER")
 
     residential = is_residential(row.get("land_use"))
     occ = (row.get("occupancy") or "").strip().upper()
@@ -144,5 +149,5 @@ def analyze(row, today=None):
     }
     prop.update(estimate_equity(prop))
     facts = {"residential": residential, "years_since_transfer": years_since_transfer,
-             "estate_signal": estate_signal}
+             "estate_signal": estate_signal, "no_recorded_transfer": no_recorded_transfer}
     return prop, flags, facts

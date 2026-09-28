@@ -117,6 +117,7 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
     total_rows = int(meta.get("rows", 0) or 0)
 
     per_county = defaultdict(list)     # county_slug -> heap of (priority, seq, record)
+    per_county_verified = defaultdict(list)  # rows with a verified distress record: never capped
     statewide = []
     people = defaultdict(list)
     flag_counts, class_counts, county_counts = Counter(), Counter(), Counter()
@@ -133,13 +134,16 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             break
         for r in chunk:
             scanned += 1
-            res = analyze(dict(r))
+            acct = r["acct"] or ""
+            in_taxsale = acct in taxsale or (acct.startswith("16") and acct[-8:] in suffix16)
+            res = analyze(dict(r), force=in_taxsale)
             if not res:
                 continue
             prop, flags, facts = res
             apply_taxsale(prop, flags, taxsale, suffix16)
             s = score(prop, flags, facts)
-            if s["priority"] < config.MIN_PRIORITY_TO_KEEP:
+            verified = s.get("distress_verified", False)
+            if s["priority"] < config.MIN_PRIORITY_TO_KEEP and not verified:
                 continue
             code, label = title_class(flags, facts)
             rec = {
@@ -162,11 +166,15 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             for o in prop["owners"]:
                 people[o["person_key"]].append(prop["account_number"])
             item = (s["priority"], seq, rec)
-            h = per_county[cs]
-            if len(h) < config.PER_COUNTY_LIMIT:
-                heapq.heappush(h, item)
+            if verified:
+                # verified-distress rows (tax sale etc.) bypass the per-county cap
+                per_county_verified[cs].append(item)
             else:
-                heapq.heappushpop(h, item)
+                h = per_county[cs]
+                if len(h) < config.PER_COUNTY_LIMIT:
+                    heapq.heappush(h, item)
+                else:
+                    heapq.heappushpop(h, item)
             if len(statewide) < config.STATEWIDE_TOP_LIMIT:
                 heapq.heappush(statewide, item)
             else:
@@ -185,8 +193,8 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
         return rows
 
     counties = {}
-    for cs, heap in per_county.items():
-        rows = finalize(heap)
+    for cs in set(per_county) | set(per_county_verified):
+        rows = finalize(list(per_county.get(cs, [])) + per_county_verified.get(cs, []))
         counties[cs] = {"county": rows[0]["property"]["county"] if rows else cs, "count": len(rows),
                         "total_candidates": county_counts[rows[0]["property"]["county"]] if rows else 0}
         _dump(f"{config.OUTPUT_DIR}/{cs}.json", {"generated_at": _now(), "county": counties[cs]["county"], "rows": rows})

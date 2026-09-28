@@ -19,10 +19,17 @@ def title_complexity(flags, facts):
             pts += P[f]
             reasons.append(f"{f.replace('_', ' ').title()} (+{P[f]})")
     y = facts.get("years_since_transfer")
-    if y and y >= config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER:
+    if facts.get("no_recorded_transfer"):
+        pts += P["STALE_CAP"]
+        reasons.append(f"No recorded transfer — deed predates electronic records (+{P['STALE_CAP']})")
+    elif y and y >= config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER:
         s = min(P["STALE_CAP"], (y - config.CANDIDATE_MIN_YEARS_SINCE_TRANSFER) * P["STALE_PER_YEAR"] + 5)
         pts += s
         reasons.append(f"No transfer in {y} yrs (+{int(s)})")
+    long_held = facts.get("no_recorded_transfer") or (y or 0) >= 25
+    if long_held and (flags & {"TAX_SALE_SOLD", "TAX_SALE_STRUCK"}):
+        pts += P["STALE_AND_DELINQUENT"]
+        reasons.append(f"Decades-old deed + tax lien: owner likely gone (+{P['STALE_AND_DELINQUENT']})")
     return _cap(pts), reasons
 
 
@@ -92,6 +99,8 @@ def title_class(flags, facts):
     if "CONSERVATOR" in flags:
         return "E5", "Conservator / guardian / POA on title — owner likely incapacitated"
     y = facts.get("years_since_transfer") or 0
+    if facts.get("no_recorded_transfer"):
+        return "S3", "No recorded transfer — ownership predates SDAT sales records"
     if y >= 40:
         return "S3", f"No transfer in {y} years"
     if y >= 25:

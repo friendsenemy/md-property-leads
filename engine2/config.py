@@ -46,6 +46,9 @@ TITLE_POINTS = {
     # stale ownership: points per full year past the candidate threshold
     "STALE_PER_YEAR": 1.5,
     "STALE_CAP": 35,
+    # decades-old (or unrecorded) deed AND a tax lien sold/struck: the person on
+    # the deed has stopped paying — the best free proxy for "owner gone"
+    "STALE_AND_DELINQUENT": 20,
 }
 
 # ── Distress: HARD evidence (official records) vs SOFT indicators ───────────
