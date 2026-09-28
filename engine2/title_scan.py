@@ -95,6 +95,37 @@ def load_taxsale():
     return merged, suffix16
 
 
+def load_probate():
+    recs = {}
+    for path in glob.glob(f"{config.PROBATE_DIR}/*.json"):
+        try:
+            recs[os.path.splitext(os.path.basename(path))[0]] = json.load(open(path, encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+    log.info("probate records (manual imports): %d", len(recs))
+    return recs
+
+
+def apply_probate(prop, flags, probate):
+    rec = probate.get(prop["account_number"] or "")
+    if not rec:
+        return
+    cls = rec.get("title_class", "")
+    if cls == "D3":
+        flags.add("PROBATE_CLOSED_STILL_TITLED")
+    elif cls == "D2-S":
+        flags.add("PROBATE_OPEN_STALE")
+    elif cls == "D2":
+        flags.add("PROBATE_OPEN")
+    elif cls == "D1":
+        flags.add("PROBATE_NONE_FOUND")
+    prop["probate"] = {k: rec.get(k) for k in ("estate_number", "county", "status", "type", "decedent", "date_of_death",
+                                                 "date_opened", "date_closed", "will", "personal_reps", "interested_persons",
+                                                 "last_docket_activity", "days_since_last_docket", "death_to_probate_days",
+                                                 "title_class", "title_class_label", "imported_at", "source")}
+    prop["probate"]["docket_entries"] = len(rec.get("docket") or [])
+
+
 def apply_taxsale(prop, flags, taxsale, suffix16):
     acct = prop["account_number"] or ""
     rec = taxsale.get(acct)
@@ -110,6 +141,7 @@ def apply_taxsale(prop, flags, taxsale, suffix16):
 
 def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
     taxsale, suffix16 = load_taxsale()
+    probate = load_probate()
     deaths = DeathIndex()
     try:
         deaths.load()
@@ -143,13 +175,14 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             scanned += 1
             acct = r["acct"] or ""
             in_taxsale = acct in taxsale or (acct.startswith("16") and acct[-8:] in suffix16)
-            res = analyze(dict(r), force=in_taxsale, deaths=deaths)
+            res = analyze(dict(r), force=in_taxsale or acct in probate, deaths=deaths)
             if not res:
                 continue
             prop, flags, facts = res
             apply_taxsale(prop, flags, taxsale, suffix16)
+            apply_probate(prop, flags, probate)
             s = score(prop, flags, facts)
-            verified = s.get("distress_verified", False)
+            verified = s.get("distress_verified", False) or bool(prop.get("probate"))
             if s["priority"] < config.MIN_PRIORITY_TO_KEEP and not verified:
                 continue
             code, label = title_class(flags, facts)

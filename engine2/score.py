@@ -31,6 +31,10 @@ def title_complexity(flags, facts):
         if f in flags:
             pts += P[f]
             reasons.append(f"{f.replace('_', ' ').title()} (+{P[f]})")
+    for f in ("PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"):
+        if f in flags:
+            pts += P[f]
+            reasons.append(f"{f.replace('_', ' ').title()} (+{P[f]}, Register of Wills record)")
     ysd = facts.get("years_since_death")
     if ysd and (flags & {"DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"}):
         extra = min(P["DECADES_SINCE_DEATH_CAP"], ysd * P["DECADES_SINCE_DEATH_PER_YEAR"])
@@ -97,7 +101,15 @@ def score(prop, flags, facts):
 
 
 def title_class(flags, facts):
-    """Classification. D-classes come from the death index; E from SDAT owner text; S from deed age."""
+    """Classification. D-classes come from probate/death records; E from SDAT owner text; S from deed age."""
+    if "PROBATE_CLOSED_STILL_TITLED" in flags:
+        return "D3", "Estate CLOSED but property still titled to decedent (Register of Wills)"
+    if "PROBATE_OPEN_STALE" in flags:
+        return "D2-S", "Estate open and stale (Register of Wills)"
+    if "PROBATE_OPEN" in flags:
+        return "D2", "Estate currently open (Register of Wills)"
+    if "PROBATE_NONE_FOUND" in flags:
+        return "D1", "Deceased owner — no Maryland estate located (Register of Wills searched)"
     if "ALL_OWNERS_DECEASED" in flags:
         return "D5", "All titled owners deceased (death index) — no transfer since"
     if "DECEASED_SOLE_OWNER_HIGH" in flags or "DECEASED_SOLE_OWNER_MEDIUM" in flags:

@@ -57,6 +57,11 @@ TITLE_POINTS = {
     "CO_OWNER_DECEASED": 15,         # one of several owners; survivor may hold by entireties
     "DECADES_SINCE_DEATH_PER_YEAR": 1.0,  # extra per year since the (high/medium) death, capped below
     "DECADES_SINCE_DEATH_CAP": 20,
+    # Probate records imported by hand (data/probate/<acct>.json)
+    "PROBATE_CLOSED_STILL_TITLED": 45,   # D3: estate closed, decedent still on deed
+    "PROBATE_OPEN_STALE": 35,            # D2-S
+    "PROBATE_OPEN": 15,                  # D2: active administration — usually resolves itself
+    "PROBATE_NONE_FOUND": 30,            # D1 confirmed: someone searched and found no estate
 }
 
 # ── Distress: HARD evidence (official records) vs SOFT indicators ───────────
@@ -88,6 +93,7 @@ DISTRESS_POINTS = {**DISTRESS_HARD_POINTS, **DISTRESS_SOFT_POINTS}   # kept for 
 # year wins; TAX_SALE_LISTED_NOT_SOLD (redeemed before sale) is recorded but
 # scores nothing.
 TAXSALE_DIR = "data/distress"
+PROBATE_DIR = "data/probate"
 OLD_STRUCTURE_YEAR = 1950
 # CAMA dwelling grade/condition labels as SDAT stores them, e.g. "Low (1)",
 # "Economy (2)", "Below Average (3)", "Average (4)". summary.json carries the
@@ -147,6 +153,7 @@ PRESETS = [
     {"id": "stale_40",       "label": "Owned 40+ yrs",                "min_years_since_transfer": 40},
     {"id": "high_equity",    "label": "High Equity + Estate Signal",  "min_equity": 200000, "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE"]},
     {"id": "vacant_lot",     "label": "Vacant Lot + Estate Signal",   "flags": ["VACANT_LAND"], "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME"]},
+    {"id": "probate_known",  "label": "Probate Record Attached",         "any_flags": ["PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"]},
     {"id": "deceased_owner", "label": "Deceased Owner (death index)", "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"]},
     {"id": "deceased_10y",   "label": "Owner Dead 10+ yrs, Still on Title", "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED"], "min_years_since_death": 10},
     {"id": "deceased_taxsale","label": "Deceased Owner + Tax Sale",   "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},

@@ -1,0 +1,50 @@
+name: Import Probate Record
+
+# Manual import of a Register of Wills estate record you looked up yourself.
+# Actions → Import Probate Record → Run workflow:
+#   accounts:  the SDAT account number(s) the estate applies to, comma-separated
+#   page_text: the whole Estate Record page (Ctrl+A, Ctrl+C on the record page)
+# The record is saved to data/probate/<account>.json and the lead reclassifies
+# on the next title scan (or run that workflow right after).
+
+on:
+  workflow_dispatch:
+    inputs:
+      accounts:
+        description: 'SDAT account number(s), comma-separated (e.g. 0903007987,0903006522)'
+        required: true
+      page_text:
+        description: 'Paste the entire Estate Record page text here'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: probate-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Parse and save
+        env:
+          ACCOUNTS: ${{ github.event.inputs.accounts }}
+          PAGE_TEXT: ${{ github.event.inputs.page_text }}
+        run: |
+          printf '%s' "$PAGE_TEXT" > /tmp/page.txt
+          python -m engine2.probate_import --accounts "$ACCOUNTS" --file /tmp/page.txt
+      - name: Commit
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/probate
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -m "Probate import: ${{ github.event.inputs.accounts }} (by ${{ github.actor }})"
+          git pull --rebase origin main
+          git push
