@@ -188,6 +188,10 @@ _ENTITY = re.compile(r"\b(LLC|L\.?L\.?C|INC|CORP(ORATION)?|CO|COMPANY|LTD|LP|LLP
                      r"PARTNERS(HIP)?|FUND|CAPITAL|ASSETS?|GROUP|VENTURES?|ENTERPRISES?|REALTY|DEVELOPMENT|ASSOCIATES|LIENS?|SEASON)\b")
 
 
+_LENDER = re.compile(r"\b(BANK|SAVINGS|MORTGAGE|LENDING|LOAN|FEDERAL NATIONAL|FANNIE|FREDDIE|HUD|SECRETARY OF HOUSING|"
+                     r"VETERANS AFFAIRS|CREDIT UNION|TRUSTEE|WILMINGTON|DEUTSCHE|WELLS FARGO|NATIONSTAR|SHELLPOINT|BAYVIEW)\b")
+
+
 def _same_person(a, b):
     """Do two SDAT-style owner strings refer to the same party? Compares the
     surname (first token) and requires a second shared token, so JACKSON BRYAN
@@ -228,7 +232,16 @@ def conveyance_from_list(rec, sdat_row, sale_dt):
         return "HIGH", f"Owner on title is now the lien bidder ({bidder.strip()})"
     t = _parse_sdat_date(sdat_row.get("transfer_date"))
     if t and t > sale_dt:
-        if _ENTITY.search(_norm_owner(now)):
+        now_n = _norm_owner(now)
+        # The owner's own surname inside the new entity means they moved it into
+        # their trust or LLC after redeeming. A lender means a mortgage
+        # foreclosure. Neither is a tax deed, so neither leaves a surplus.
+        surname = next((tok for tok in re.findall(r"[A-Z]+", _norm_owner(at_sale)) if len(tok) > 2), "")
+        if surname and re.search(rf"\b{re.escape(surname)}\b", now_n):
+            return "LOW", f"Title moved to {now.strip()} on {t.isoformat()} — same family name, likely the owner's own trust or LLC"
+        if _LENDER.search(now_n):
+            return "LOW", f"Title moved to a lender on {t.isoformat()} — mortgage foreclosure, not a tax deed"
+        if _ENTITY.search(now_n):
             return "MEDIUM", f"Title moved to {now.strip()} on {t.isoformat()}, after the sale"
         return "LOW", f"Title moved to an individual on {t.isoformat()} after the sale — likely redeemed then sold normally"
     return None, None
