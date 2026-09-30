@@ -51,7 +51,21 @@ DEED_RATIONAL_MAX_BID_TO_AV = 0.85
 # Only these stages are written out. TOO_EARLY is a watch state, not a lead, and
 # a bid far above value never produces a deed or a surplus -- neither belongs on
 # the dashboard.
-OPPORTUNITY_STAGES = {"CONVEYED", "FORECLOSURE_WINDOW", "CERT_STALE"}
+OPPORTUNITY_STAGES = {"CONVEYED", "FORECLOSURE_WINDOW", "CERT_STALE", "LIEN_STRANDED"}
+
+# A bid far above what the property is worth strands the lien holder. To get the
+# deed they must pay the residue (14-818(a)(2)), which here would cost more than
+# the property, so they never will -- they wait for a redemption that pays
+# interest, and if it never comes they let the certificate go void at 2 years.
+# 14-833(d)(1) then forfeits their money to the taxes on this same parcel.
+#
+# No deed means no surplus, which is why these are useless as surplus leads. But
+# it also means the OWNER KEEPS THE PROPERTY, and is sitting on a delinquency
+# with the one buyer who could have taken it now unable to. That is a buy lead
+# with almost no competition, because every investor list reads "sold at tax
+# sale" and moves on.
+LIEN_STRANDED_MIN_BID_TO_AV = 1.25      # bid exceeds value by enough that deeding is irrational
+LIEN_STRANDED_MIN_BID_TO_FACE = 500     # fallback when we have no assessed value to compare
 
 # TP 14-847: "The judgment of the court shall direct the collector to execute a
 # deed to the holder of the certificate of sale." So every completed Maryland tax
@@ -157,10 +171,17 @@ def _notice_due(transfer_date, sale_dt):
     return (d + timedelta(days=NOTICE_DEADLINE_DAYS)).isoformat()
 
 
-def stage(rec, sale_dt, owner_changed, today):
+def stage(rec, sale_dt, owner_changed, today, bid_to_av=None, bid_to_face=None):
     age = (today - sale_dt).days
     if owner_changed:
         return "CONVEYED", "Deed conveyed — purchaser paid the residue of the bid"
+    stranded = ((bid_to_av is not None and bid_to_av >= LIEN_STRANDED_MIN_BID_TO_AV)
+                or (bid_to_av is None and bid_to_face is not None and bid_to_face >= LIEN_STRANDED_MIN_BID_TO_FACE))
+    if stranded:
+        return "LIEN_STRANDED", ("Bid far above the property's value — taking the deed would cost the purchaser more "
+                                 "than the property is worth, so they almost certainly never will. The owner keeps it "
+                                 "and the certificate goes void at 2 years. Still delinquent, and nobody is competing "
+                                 "for it.")
     if age < REDEMPTION_WAIT_DAYS:
         return "TOO_EARLY", "Inside the statutory wait — no foreclosure may be filed yet"
     if age <= CERT_VOID_DAYS:
@@ -244,14 +265,15 @@ def build(index_path, today=None):
         transfer_now = (s.get("transfer_date") or "").strip()
         sale_dt = _parse_sale_date(rec)
 
-        # A change is only meaningful against a baseline we actually recorded.
-        owner_changed = bool(owner_before) and owner_before != owner_now
-        st, why = stage(rec, sale_dt, owner_changed, today)
-
         av = _f(s["land_value"]) + _f(s["impr_value"])
         bid, face = _f(rec.get("bid")), _f(rec.get("face"))
         est_surplus = round(bid - face, 2) if bid and face else None
         bid_to_av = round(bid / av, 3) if bid and av > 10000 else None
+        bid_to_face = round(bid / face, 1) if bid and face else None
+
+        # A change is only meaningful against a baseline we actually recorded.
+        owner_changed = bool(owner_before) and owner_before != owner_now
+        st, why = stage(rec, sale_dt, owner_changed, today, bid_to_av, bid_to_face)
 
         watch[acct] = {
             "owner1": s["owner1"], "transfer_date": transfer_now,
@@ -284,6 +306,7 @@ def build(index_path, today=None):
             "taxes_owed": face or None, "winning_bid": bid or None,
             "est_surplus": est_surplus, "assessed_value": av or None, "bid_to_assessed": bid_to_av,
             "deed_rational": (bid_to_av is not None and bid_to_av <= DEED_RATIONAL_MAX_BID_TO_AV),
+            "bid_to_face": bid_to_face,
             "days_since_sale": (today - sale_dt).days,
             "repeat_sale": rec.get("_repeat", False),
             "transfer_date": transfer_now,
@@ -333,12 +356,15 @@ def build(index_path, today=None):
             "source": "SDAT collector deed" + (f" · {h['conveyed_year']}" if h["conveyed_year"] else ""),
         })
 
-    dropped = len(leads)
-    leads = [r for r in leads if r["stage"] in OPPORTUNITY_STAGES
-             and not (r["stage"] == "CONVEYED" and r.get("bid_to_assessed") is not None and not r["deed_rational"])]
-    log.info("kept %d opportunities, dropped %d watch/no-opportunity rows", len(leads), dropped - len(leads))
+    before = len(leads)
+    leads = [r for r in leads if r["stage"] in OPPORTUNITY_STAGES]
+    log.info("kept %d opportunities, dropped %d not-yet-actionable rows", len(leads), before - len(leads))
+    log.info("  by stage: %s", dict(Counter(r["stage"] for r in leads)))
 
-    leads.sort(key=lambda r: (r["stage"] != "CONVEYED", -(r.get("est_surplus") or 0)))
+    rank = {"CONVEYED": 0, "FORECLOSURE_WINDOW": 1, "LIEN_STRANDED": 2, "CERT_STALE": 3}
+    leads.sort(key=lambda r: (rank.get(r["stage"], 9),
+                              -(r.get("est_surplus") or 0) if r["stage"] == "CONVEYED"
+                              else -(r.get("assessed_value") or 0)))
     with open(LEADS_PATH, "w", encoding="utf-8") as f:
         json.dump({"generated_at": _now(), "rows": leads}, f, ensure_ascii=False, separators=(",", ":"))
 

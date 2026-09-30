@@ -7,6 +7,7 @@ const STAGE_META = {
     CONVEYED:           { label: "Deed Conveyed",      cls: "stage-conveyed", blurb: "Purchaser paid the residue of the bid — a balance is owed to the former owner under TP §14-818(a)(4)." },
     FORECLOSURE_WINDOW: { label: "Foreclosure Window", cls: "stage-window",   blurb: "Past the statutory wait, title has NOT moved. The owner still holds it and can still sell." },
     CERT_STALE:         { label: "Needs Verifying",    cls: "stage-stale",    blurb: "Over 2 years since the sale and the owner never changed. Could be a void certificate (§14-833 — your opening), a redemption, a case still pending, or a deed SDAT has not indexed. Check the county tax account before calling." },
+    LIEN_STRANDED:      { label: "Lien Stranded",     cls: "stage-stranded", blurb: "The bid was far above what the property is worth. To take the deed the purchaser must pay that residue, which costs more than the property — so they almost certainly never will. The owner keeps it, still delinquent, and no other investor is looking." },
     TOO_EARLY:          { label: "Too Early",          cls: "stage-early",    blurb: "Inside the 6-month statutory wait — no foreclosure may be filed yet." },
 };
 
@@ -56,7 +57,7 @@ const SurplusApp = {
 
     stats() {
         const conveyed = this.rows.filter((r) => r.stage === "CONVEYED");
-        const window_ = this.rows.filter((r) => r.stage === "FORECLOSURE_WINDOW" || r.stage === "CERT_STALE");
+        const window_ = this.rows.filter((r) => r.stage === "FORECLOSURE_WINDOW" || r.stage === "CERT_STALE" || r.stage === "LIEN_STRANDED");
         const tracked = this.rows.filter((r) => r.deed_rational).reduce((n, r) => n + r._surplus, 0);
         document.getElementById("sstatConveyed").textContent = conveyed.length.toLocaleString();
         document.getElementById("sstatWindow").textContent = window_.length.toLocaleString();
@@ -158,7 +159,10 @@ const SurplusApp = {
                     <td class="county-cell">${this.esc(r.county || "")}</td>
                     <td class="date-cell">${this.esc(String(r.tax_sale_year || ""))} <span class="yrs">(${Math.round((r.days_since_sale || 0) / 30)}mo)</span></td>
                     <td class="value-cell">${this.money(r._bid)}</td>
-                    <td class="equity-cell" style="font-family:var(--font-mono); ${r._surplus > 0 && r.deed_rational ? "color:var(--green); font-weight:600" : "color:var(--text-secondary)"}">${r.est_surplus == null ? "—" : this.money(r._surplus)}</td>
+                    <td class="equity-cell" style="font-family:var(--font-mono); ${r.stage === "LIEN_STRANDED" ? "color:var(--yellow)" : (r._surplus > 0 && r.deed_rational ? "color:var(--green); font-weight:600" : "color:var(--text-secondary)")}">${
+                        r.stage === "LIEN_STRANDED"
+                            ? (r.bid_to_assessed != null ? (r.bid_to_assessed).toFixed(1) + "\u00d7 value" : (r.bid_to_face != null ? Math.round(r.bid_to_face) + "\u00d7 taxes" : "overbid"))
+                            : (r.est_surplus == null ? "\u2014" : this.money(r._surplus))}</td>
                     <td><span class="status-badge ${st}">${st.toUpperCase()}</span></td>
                 </tr>`;
             }).join("");
@@ -206,7 +210,7 @@ const SurplusApp = {
                 <div class="detail-row"><span class="label">Est. surplus</span><span class="value" style="font-family:var(--font-mono); color:${r.deed_rational ? "var(--green)" : "var(--text-secondary)"}; font-weight:600">${r.est_surplus == null ? "unknown — no bid or tax figure captured" : this.money(r._surplus)}</span></div>
                 <div class="detail-row"><span class="label">Bid ÷ assessed</span><span class="value">${r.bid_to_assessed == null ? "—" : (r.bid_to_assessed * 100).toFixed(0) + "%"} ${r.bid_to_assessed == null ? "" : r.deed_rational
                     ? '<span class="chip chip-good">deed is profitable — case likely completes</span>'
-                    : '<span class="chip">bid exceeds value — purchaser will probably walk, no surplus</span>'}</span></div>
+                    : '<span class="chip chip-hard">bid exceeds value — purchaser is stranded, owner keeps it</span>'}</span></div>
                 ${r.sold_to ? `<div class="detail-row"><span class="label">Lien buyer</span><span class="value">${this.esc(r.sold_to)}</span></div>` : ""}
                 <div class="detail-row"><span class="label">Source</span><span class="value" style="font-size:0.78rem">${this.esc(r.source || "")}</span></div>
                 <p style="font-size:0.76rem; color:var(--text-dim); margin:8px 0 0">Estimate only: bid minus the tax figure on the sale list. The exact balance is taxes + interest + penalties + costs of sale, which only the collector's record shows.</p>
@@ -250,6 +254,15 @@ const SurplusApp = {
                 + "They lose everything if the purchaser forecloses, so a sale that pays off the lien leaves them with something instead of nothing. "
                 + "Move now — the window closes when the purchaser files.";
         }
+        if (r.stage === "LIEN_STRANDED") {
+            return "<b>Buy lead, and an uncontested one.</b> The purchaser bid far more than the property is worth. Under §14-818(a)(2) the "
+                + "residue of that bid stays on credit until they take the deed — so taking it would cost them more than the property. They "
+                + "will not. They are waiting on a redemption that pays interest, and if it never comes the certificate goes void at two years "
+                + "and §14-833(d)(1) forfeits their money to the taxes on this very parcel.<br><br>"
+                + "Meanwhile the owner still owns it and is still delinquent. Every other investor's list says “sold at tax sale” and skips it. "
+                + "You can buy from the owner and redeem — and before a complaint is filed, §14-843 caps the purchaser's attorney fee at $500, "
+                + "so redeeming is cheap. Confirm the lien is still unredeemed on the county tax account first.";
+        }
         if (r.stage === "CERT_STALE") {
             return "<b>Verify before you call.</b> Over two years since the sale with the owner unchanged fits four different realities: the "
                 + "certificate went void under §14-833 and the owner still owns it free of that purchaser (your opening); the owner redeemed long "
@@ -263,7 +276,7 @@ const SurplusApp = {
     exportCSV() {
         const rows = this.sorted(this.filtered());
         if (!rows.length) { alert("Nothing to export with the current filters."); return; }
-        const H = ["Stage", "Stage Meaning", "Deed Likely", "Account #", "Address", "City", "Zip", "County",
+        const H = ["Stage", "Stage Meaning", "Deed Likely", "Bid/Taxes", "Account #", "Address", "City", "Zip", "County",
             "Owner on Record", "Owner 2", "Owner at Tax Sale", "Mailing Address", "Tax Sale Year", "Tax Sale Status",
             "Lien Buyer", "Winning Bid", "Taxes Owed", "Est. Surplus", "Assessed", "Bid/Assessed", "Days Since Sale",
             "Repeat Sale", "Deed on Record", "Last Transfer", "Grantor", "Year Built", "Occupancy", "Lat", "Lon", "Source", "Status", "Notes"];
@@ -271,7 +284,7 @@ const SurplusApp = {
         const lines = [H.join(",")];
         rows.forEach((r) => {
             const m = STAGE_META[r.stage] || {};
-            lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", `="${r.account}"`,
+            lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", r.bid_to_face, `="${r.account}"`,
                 r.address, r.city, r.zip, r.county, r.owner_of_record, r.owner2, r.owner_at_sale, r.mail,
                 r.tax_sale_year, r.tax_sale_status, r.sold_to, r.winning_bid, r.taxes_owed, r.est_surplus,
                 r.assessed_value, r.bid_to_assessed, r.days_since_sale, r.repeat_sale ? "YES" : "no",

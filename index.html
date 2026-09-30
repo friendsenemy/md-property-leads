@@ -33,6 +33,7 @@
         .stage-window   { color:#30d158; background:rgba(48,209,88,0.12); border-color:rgba(48,209,88,0.4); }
         .stage-stale    { color:#ff9f0a; background:rgba(255,159,10,0.10); border-color:rgba(255,159,10,0.30); }
         .stage-early    { color:var(--text-dim); background:rgba(255,255,255,0.04); border-color:var(--border); }
+        .stage-stranded { color:#bf5af2; background:rgba(191,90,242,0.12); border-color:rgba(191,90,242,0.45); }
         .chip-good { color:#30d158 !important; background:rgba(48,209,88,0.12) !important; border-color:rgba(48,209,88,0.45) !important; }
         /* engine 2 */
         .presets { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0 4px; }
@@ -244,7 +245,7 @@
             <div class="stat-value" id="sstatConveyed">0</div>
         </div>
         <div class="stat-card green">
-            <div class="stat-label">Still Owned — Buy Window Open</div>
+            <div class="stat-label">Still Owned — Buy Leads</div>
             <div class="stat-value" id="sstatWindow">0</div>
         </div>
         <div class="stat-card cyan">
@@ -269,8 +270,8 @@
             <button class="filter-btn active" data-stage="all">All</button>
             <button class="filter-btn" data-stage="CONVEYED">Deed Conveyed</button>
             <button class="filter-btn" data-stage="FORECLOSURE_WINDOW">Buy Window</button>
-            <button class="filter-btn" data-stage="CERT_STALE">Cert Stale</button>
-            <button class="filter-btn" data-stage="TOO_EARLY">Too Early</button>
+            <button class="filter-btn" data-stage="LIEN_STRANDED">Lien Stranded</button>
+            <button class="filter-btn" data-stage="CERT_STALE">Needs Verifying</button>
         </div>
         <div class="filter-group" id="surplusStatusFilters">
             <button class="filter-btn active" data-status="all">All</button>
@@ -292,7 +293,7 @@
                     <th data-sort="county">County <span class="sort-arrow">↕</span></th>
                     <th data-sort="days">Tax Sale <span class="sort-arrow">↕</span></th>
                     <th data-sort="bid">Winning Bid <span class="sort-arrow">↕</span></th>
-                    <th data-sort="est_surplus">Est. Surplus <span class="sort-arrow">↕</span></th>
+                    <th data-sort="est_surplus">Surplus / Overbid <span class="sort-arrow">↕</span></th>
                     <th>Status</th>
                 </tr>
             </thead>
