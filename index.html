@@ -248,6 +248,10 @@
             <div class="stat-label">Still Owned — Buy Leads</div>
             <div class="stat-value" id="sstatWindow">0</div>
         </div>
+        <div class="stat-card pink">
+            <div class="stat-label">Repeat Tax Sales — Didn't Pay Twice</div>
+            <div class="stat-value" id="sstatRepeat">0</div>
+        </div>
         <div class="stat-card cyan">
             <div class="stat-label">Est. Surplus Tracked</div>
             <div class="stat-value" id="sstatTracked">$0</div>
@@ -279,6 +283,9 @@
             <button class="filter-btn" data-status="contacted">Contacted</button>
             <button class="filter-btn" data-status="closed">Closed</button>
         </div>
+        <label class="filter-btn" for="surplusRepeat" style="display:inline-flex; align-items:center; gap:8px; cursor:pointer" title="Only parcels sold at tax sale in more than one year">
+            <input type="checkbox" id="surplusRepeat" style="accent-color:#ff453a; width:15px; height:15px"> Repeats only
+        </label>
         <button class="btn btn-export" id="surplusExport"><span class="icon">⬇</span> Export CSV</button>
     </div>
     <div class="run-info" id="surplusRunInfo" style="text-align:left; margin:6px 0 10px;"></div>

@@ -146,11 +146,13 @@ def load_taxsale_records():
             blob = json.load(f)
         for acct, rec in (blob.get("records") or {}).items():
             prev = out.get(acct)
+            years = set((prev or {}).get("_years", [])) | {int(rec.get("year") or 0)}
             # keep the most recent year for an account that sold more than once
             if prev is None or int(rec.get("year") or 0) >= int(prev.get("year") or 0):
                 rec = dict(rec)
-                rec["_repeat"] = bool(prev) and prev.get("year") != rec.get("year")
                 out[acct] = rec
+            out[acct]["_years"] = sorted(y for y in years if y)
+            out[acct]["_repeat"] = len(out[acct]["_years"]) > 1
     return out
 
 
@@ -333,6 +335,7 @@ def scan_collector_deeds(db, today):
             grantor_counts["(investor) " + (g1 or "").strip().upper()[:48]] += 1
         else:
             continue
+        row["owner1"] = row.get("owner1") or row.get("owner2")
         owner = (row.get("owner1") or "").upper()
         is_county = any(_glob(owner, p) for p in COUNTY_OWNER) and not resold
         year = (conveyed_on or "")[:4]
@@ -395,6 +398,7 @@ def build(index_path, today=None):
         if rec.get("status") not in ("SOLD", "STRUCK"):
             skipped_unconfirmed += 1
             continue
+        s["owner1"] = s.get("owner1") or s.get("owner2")      # SDAT sometimes fills only the second slot
         owner_now = _norm_owner(s["owner1"])
         prev = prior.get(acct) or {}
         owner_before = _norm_owner(prev.get("owner1"))
@@ -448,7 +452,8 @@ def build(index_path, today=None):
             "lat": s.get("lat"), "lon": s.get("lon"), "year_built": s.get("year_built"),
             "deed": f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/"),
             "grantor": s.get("grantor1"), "occupancy": s.get("occupancy"),
-            "owner_of_record": s["owner1"], "owner2": s.get("owner2"),
+            "owner_of_record": s["owner1"], "owner2": s.get("owner2") if s.get("owner2") != s["owner1"] else None,
+            "years_listed": rec.get("_years", []),
             "mail": " ".join(x for x in (s.get("mail_addr"), s.get("mail_city"), s.get("mail_zip")) if x),
             "owner_at_sale": rec.get("owner"), "tax_sale_year": rec.get("year"),
             "tax_sale_status": rec.get("status"), "sold_to": rec.get("bidder"),

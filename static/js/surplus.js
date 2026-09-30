@@ -13,7 +13,7 @@ const STAGE_META = {
 
 const SurplusApp = {
     rows: [], events: [], local: {}, generated: "",
-    state: { search: "", county: "", stage: "all", minSurplus: 0, status: "all", sort: "est_surplus", dir: -1, page: 1, perPage: 25 },
+    state: { search: "", county: "", stage: "all", minSurplus: 0, status: "all", repeat: false, sort: "est_surplus", dir: -1, page: 1, perPage: 25 },
 
     async init() {
         this.loadLocal();
@@ -62,6 +62,7 @@ const SurplusApp = {
         const tracked = this.rows.filter((r) => r.deed_rational).reduce((n, r) => n + r._surplus, 0);
         document.getElementById("sstatConveyed").textContent = conveyed.length.toLocaleString();
         document.getElementById("sstatWindow").textContent = window_.length.toLocaleString();
+        const rc = document.getElementById("sstatRepeat"); if (rc) rc.textContent = this.rows.filter((r) => r.repeat_sale).length.toLocaleString();
         document.getElementById("sstatTracked").textContent = tracked >= 1e6
             ? "$" + (tracked / 1e6).toFixed(1) + "M" : "$" + Math.round(tracked).toLocaleString();
         const info = document.getElementById("surplusRunInfo");
@@ -94,6 +95,8 @@ const SurplusApp = {
             document.querySelectorAll("#surplusStages .filter-btn").forEach((x) => x.classList.remove("active"));
             b.classList.add("active"); this.state.stage = b.dataset.stage; this.state.page = 1; this.render();
         }));
+        const rep = document.getElementById("surplusRepeat");
+        if (rep) rep.addEventListener("change", (e) => { this.state.repeat = e.target.checked; this.state.page = 1; this.render(); });
         document.querySelectorAll("#surplusStatusFilters .filter-btn").forEach((b) => b.addEventListener("click", () => {
             document.querySelectorAll("#surplusStatusFilters .filter-btn").forEach((x) => x.classList.remove("active"));
             b.classList.add("active"); this.state.status = b.dataset.status; this.state.page = 1; this.render();
@@ -114,6 +117,7 @@ const SurplusApp = {
             (s.stage === "all" || r.stage === s.stage) &&
             (!s.county || r.county === s.county) &&
             (!s.minSurplus || r._surplus >= s.minSurplus) &&
+            (!s.repeat || r.repeat_sale) &&
             (s.status === "all" || this.statusOf(r) === s.status) &&
             (!s.search || r._blob.includes(s.search))
         );
@@ -151,7 +155,7 @@ const SurplusApp = {
                     <td><span class="stage ${m.cls}" title="${this.esc(m.blurb || "")}">${this.esc(m.label)}</span>
                         ${r.deed_rational && r.stage !== "CONVEYED" ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
                         ${r.vacant_lot ? '<span class="chip" title="No improvements on the parcel">vacant lot</span>' : ""}
-                        ${r.repeat_sale ? '<span class="chip chip-hard" title="Sold at tax sale in more than one year">repeat</span>' : ""}
+                        ${r.repeat_sale ? `<span class="chip chip-hard" title="Sold at tax sale in ${(r.years_listed || []).join(", ")} — did not pay, nobody foreclosed, more than once">repeat ×${(r.years_listed || [2]).length}</span>` : ""}
                         ${r.historical ? '<span class="chip" title="Found from the collector deed in SDAT, not from a tax-sale list — this one reaches back before our list coverage">historical</span>' : ""}
                         ${r.conveyance_confidence === "HIGH" ? '<span class="chip chip-good" title="Owner on title today is the lien bidder named on the sale list">bidder holds title</span>' : ""}
                         ${r.conveyance_confidence === "MEDIUM" ? '<span class="chip" title="Title moved to an entity after the sale — tax-sale buyers are almost always LLCs">title moved</span>' : ""}
@@ -198,7 +202,7 @@ const SurplusApp = {
                 <div class="detail-row"><span class="label">Meaning</span><span class="value" style="font-size:0.82rem">${this.esc(m.blurb)}</span></div>
                 ${r.conveyance_note ? `<div class="detail-row"><span class="label">How we know</span><span class="value" style="font-size:0.82rem">${this.esc(r.conveyance_note)}</span></div>` : ""}
                 <div class="detail-row"><span class="label">Since sale</span><span class="value">${r.days_since_sale} days${r.tax_sale_year ? ` · ${this.esc(String(r.tax_sale_year))} sale` : ""}</span></div>
-                ${r.repeat_sale ? '<div class="detail-row"><span class="label">Repeat</span><span class="value" style="color:var(--yellow)">Sold at tax sale in more than one year</span></div>' : ""}
+                ${r.repeat_sale ? `<div class="detail-row"><span class="label">Repeat</span><span class="value" style="color:var(--yellow); font-weight:600">Sold at tax sale in ${(r.years_listed || []).join(", ")} — the owner did not pay and nobody foreclosed, ${(r.years_listed || []).length} times</span></div>` : ""}
             </div>
             <div class="detail-section">
                 <h3>Property</h3>
@@ -301,7 +305,7 @@ const SurplusApp = {
     exportCSV() {
         const rows = this.sorted(this.filtered());
         if (!rows.length) { alert("Nothing to export with the current filters."); return; }
-        const H = ["Stage", "Stage Meaning", "Deed Likely", "Bid/Taxes", "Deed Consideration", "Years Since Deed", "Legal Description", "Account #", "Address", "City", "Zip", "County",
+        const H = ["Stage", "Stage Meaning", "Deed Likely", "Bid/Taxes", "Deed Consideration", "Years Since Deed", "Legal Description", "Years Sold at Tax Sale", "Account #", "Address", "City", "Zip", "County",
             "Owner on Record", "Owner 2", "Owner at Tax Sale", "Mailing Address", "Tax Sale Year", "Tax Sale Status",
             "Lien Buyer", "Winning Bid", "Taxes Owed", "Est. Surplus", "Assessed", "Bid/Assessed", "Days Since Sale",
             "Repeat Sale", "Deed on Record", "Last Transfer", "Grantor", "Year Built", "Occupancy", "Lat", "Lon", "Source", "Status", "Notes"];
@@ -309,7 +313,7 @@ const SurplusApp = {
         const lines = [H.join(",")];
         rows.forEach((r) => {
             const m = STAGE_META[r.stage] || {};
-            lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", r.bid_to_face, r.consideration, r.years_since_conveyance, r.legal, `="${r.account}"`,
+            lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", r.bid_to_face, r.consideration, r.years_since_conveyance, r.legal, (r.years_listed || []).join(" "), `="${r.account}"`,
                 r.address, r.city, r.zip, r.county, r.owner_of_record, r.owner2, r.owner_at_sale, r.mail,
                 r.tax_sale_year, r.tax_sale_status, r.sold_to, r.winning_bid, r.taxes_owed, r.est_surplus,
                 r.assessed_value, r.bid_to_assessed, r.days_since_sale, r.repeat_sale ? "YES" : "no",
