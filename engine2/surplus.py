@@ -120,9 +120,16 @@ SALE_DATES = {
 def _parse_sale_date(rec):
     year = int(rec.get("year") or date.today().year)
     md = SALE_DATES.get(year, {}).get(rec.get("county"))
+    if not md:
+        # Counties hold their sale in the same week every year; for a backfilled
+        # year use that county's most recent known date. Any such sale is already
+        # past the 2-year mark, so a few days either way changes no stage.
+        for y in sorted(SALE_DATES, reverse=True):
+            md = SALE_DATES[y].get(rec.get("county"))
+            if md:
+                break
     if md:
         return date(year, *md)
-    log.warning("no sale date on file for %s %s — assuming June 1", rec.get("county"), year)
     return date(year, 6, 1)
 
 
@@ -364,7 +371,7 @@ def build(index_path, today=None):
             "deed_rational": (bid_to_av is not None and bid_to_av <= DEED_RATIONAL_MAX_BID_TO_AV),
             "bid_to_face": bid_to_face,
             "days_since_sale": (today - sale_dt).days,
-            "repeat_sale": rec.get("_repeat", False),
+            "repeat_sale": rec.get("_repeat", False), "partial": rec.get("partial", False),
             "transfer_date": transfer_now,
             "source": rec.get("source"),
         })

@@ -1,0 +1,74 @@
+name: Tax Sale Harvest
+
+on:
+  schedule:
+    # 2nd of every month, 09:00 UTC (5 AM ET). Maryland sales run March-August
+    # and counties post results within days, so a monthly pull catches each
+    # county's sale the month it happens and re-checks for late postings.
+    - cron: '0 9 2 * *'
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Years to harvest, e.g. 2026 or 2021-2025 (current year is live; earlier years come from the Internet Archive)"
+        required: false
+        default: ""
+      counties:
+        description: "Optional comma-separated RealAuction subdomains to limit to (e.g. charles,harford)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Harvest current year live
+        if: inputs.years == ''
+        run: python -m engine2.taxsale_harvest --counties "${{ inputs.counties }}"
+
+      - name: Harvest requested years (live + Internet Archive)
+        if: inputs.years != ''
+        run: python -m engine2.taxsale_harvest --years "${{ inputs.years }}" --counties "${{ inputs.counties }}"
+
+      - name: Commit results
+        id: commit
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp -r data/distress /tmp/out/
+          git fetch origin main
+          git checkout -f -B main origin/main
+          rm -rf data/distress && cp -r /tmp/out/distress data/distress
+          git add data/distress
+          if git diff --cached --quiet; then
+            echo "No changes to commit."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          python - <<'PY' > /tmp/msg.txt
+          import json, glob
+          parts = []
+          for p in sorted(glob.glob("data/distress/taxsale-*.json")):
+              b = json.load(open(p)); yr = p.split("-")[-1][:4]
+              parts.append(f"{yr}: {len(b.get('records', {}))} records")
+          print("Tax sale harvest: " + " · ".join(parts))
+          PY
+          git commit -F /tmp/msg.txt
+          git push origin main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Kick off the title scan so the new lists reach the dashboard
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run title-scan.yml --ref main

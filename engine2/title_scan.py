@@ -79,18 +79,27 @@ def _previous_found_at():
 
 
 def load_taxsale():
-    """Merge data/distress/taxsale-*.json → {acct: record}; newest year wins."""
-    merged, suffix16 = {}, {}
+    """Merge data/distress/taxsale-*.json → {acct: record}; newest year wins.
+
+    Each record also carries the set of years the account appeared in, so a
+    parcel that keeps coming back can be scored as a repeat.
+    """
+    merged, suffix16, years = {}, {}, defaultdict(set)
     for path in sorted(glob.glob(f"{config.TAXSALE_DIR}/taxsale-*.json")):
         try:
             recs = json.load(open(path, encoding="utf-8")).get("records", {})
         except (OSError, ValueError):
             continue
         for k, v in recs.items():
+            years[k].add(int(v.get("year") or 0))
             if k.startswith("16*"):
                 suffix16[k[3:]] = v
             else:
                 merged[k] = v
+    for k, v in merged.items():
+        v["years_listed"] = sorted(y for y in years[k] if y)
+    for k, v in suffix16.items():
+        v["years_listed"] = sorted(y for y in years["16*" + k] if y)
     log.info("tax-sale records: %d (+%d Montgomery by account)", len(merged), len(suffix16))
     return merged, suffix16
 
@@ -150,9 +159,18 @@ def apply_taxsale(prop, flags, taxsale, suffix16):
     if not rec:
         return
     st = rec.get("status")
-    if st in ("SOLD", "STRUCK", "LISTED"):
+    yr = int(rec.get("year") or 0)
+    current = yr >= datetime.now().year - 1
+    if st in ("SOLD", "STRUCK", "LISTED") and current:
+        # a live lien is hard, verified distress
         flags.add(f"TAX_SALE_{st}")
-    prop["tax_sale"] = {k: rec.get(k) for k in ("year", "status", "face", "bid", "bidder", "owner", "source") if rec.get(k) is not None}
+    elif st in ("SOLD", "STRUCK", "LISTED"):
+        # an old sale with no newer listing was most likely redeemed or went void;
+        # keep it as history, not as a current +50 hard signal
+        flags.add("TAX_SALE_HISTORY")
+    if len(rec.get("years_listed") or []) > 1:
+        flags.add("TAX_SALE_REPEAT")
+    prop["tax_sale"] = {k: rec.get(k) for k in ("year", "status", "face", "bid", "bidder", "owner", "source", "years_listed", "partial") if rec.get(k) is not None}
 
 
 def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):

@@ -73,7 +73,8 @@ DISTRESS_HARD_POINTS = {
     "TAX_SALE_SOLD": 50,          # lien sold to an investor at the county tax sale
     "TAX_SALE_STRUCK": 40,        # no bidder — county holds the lien, still delinquent
     "TAX_SALE_LISTED": 25,        # advertised for sale; outcome not published yet
-    "TAX_SALE_REPEAT": 35,        # on the list in more than one year (needs 2027 data)
+    "TAX_SALE_REPEAT": 35,        # on the list in more than one year
+    "TAX_SALE_HISTORY": 8,        # sold at tax sale in a past year, no current listing (likely redeemed/void)
     "VACANT_NOTICE": 40,          # official vacant-building notice (Baltimore City) — adapter pending
     "CONDEMNED": 45,              # unsafe / condemned — adapter pending
     "CODE_VIOLATIONS": 25,        # open code-enforcement violations — adapter pending
