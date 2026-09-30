@@ -32,6 +32,8 @@ from datetime import date, datetime, timezone
 
 import requests
 
+from engine2 import county_files
+
 log = logging.getLogger("harvest")
 OUT_DIR = os.path.join("data", "distress")
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
@@ -189,6 +191,49 @@ def fetch_wayback(sub, county, code, year, session):
     return {}
 
 
+# --------------------------------------------------------- county files -----
+
+def _fetch_file(url, session, year, via_wayback=False):
+    """Return bytes for a live URL, or the Wayback capture nearest to `year`."""
+    target = f"https://web.archive.org/web/{year}id_/{url}" if via_wayback else url
+    r = session.get(target, timeout=120, allow_redirects=True)
+    if r.status_code != 200 or len(r.content) < 2000:
+        return None
+    if via_wayback:
+        # Wayback redirects to the nearest capture; make sure it is from the year asked for
+        m = re.search(r"/web/(\d{4})\d+id_/", r.url)
+        if not m or m.group(1) != str(year):
+            return None
+    ctype = (r.headers.get("content-type") or "").lower()
+    if "html" in ctype and not r.content[:5].startswith(b"%PDF"):
+        return None
+    return r.content
+
+
+def fetch_county_file(county, year, session):
+    parser, urls = county_files.urls_for(county, year)
+    for via_wayback in (False, True):
+        for url in urls:
+            try:
+                data = _fetch_file(url, session, year, via_wayback)
+            except requests.RequestException as e:
+                log.debug("%s %s: %s", county, url, e)
+                data = None
+            if not data:
+                continue
+            src = ("web.archive.org capture of " if via_wayback else "") + url
+            try:
+                recs = parser(data, year, src)
+            except Exception as e:      # a malformed PDF should not kill the run
+                log.warning("%s %s: parse failed on %s (%s)", county, year, url, e)
+                continue
+            if recs:
+                log.info("%s %s %s: %d rows", county, year, "wayback" if via_wayback else "live", len(recs))
+                time.sleep(1.0 if via_wayback else 0.3)
+                return recs
+    return {}
+
+
 # --------------------------------------------------------------- merge -----
 
 def load_year(year):
@@ -255,6 +300,14 @@ def main():
                 blob = merge(blob, recs, county)
                 done[county] = {"rows": len(recs), "partial": any(r.get("partial") for r in recs.values()),
                                 "at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+        # counties that publish a results file on their own site (full lists, any year they keep up)
+        if not a.counties:
+            for county in county_files.COUNTY_FILES:
+                recs = fetch_county_file(county, year, session)
+                if recs:
+                    blob = merge(blob, recs, county)
+                    done[county] = {"rows": len(recs), "partial": False,
+                                    "at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
         if done:
             save_year(year, blob, done)
             log.info("== %s: %d records on file (%d counties refreshed this run)", year, len(blob["records"]), len(done))

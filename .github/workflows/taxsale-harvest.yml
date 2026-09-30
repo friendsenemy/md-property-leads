@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - run: pip install requests pdfplumber
 
       - name: Harvest current year live
         if: inputs.years == ''

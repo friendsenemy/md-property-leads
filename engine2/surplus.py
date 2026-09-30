@@ -339,6 +339,8 @@ def build(index_path, today=None):
 
         av = _f(s["land_value"]) + _f(s["impr_value"])
         bid, face = _f(rec.get("bid")), _f(rec.get("face"))
+        if not bid and rec.get("bid_factor") and av > 0:
+            bid = round(float(rec["bid_factor"]) * av, 2)     # Montgomery publishes bid as a share of assessment
         est_surplus = round(bid - face, 2) if bid and face else None
         bid_to_av = round(bid / av, 3) if bid and av > 10000 else None
         bid_to_face = round(bid / face, 1) if bid and face else None
