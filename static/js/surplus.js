@@ -65,8 +65,10 @@ const SurplusApp = {
             ? "$" + (tracked / 1e6).toFixed(1) + "M" : "$" + Math.round(tracked).toLocaleString();
         const info = document.getElementById("surplusRunInfo");
         if (!this.rows.length) { info.textContent = ""; return; }
-        info.innerHTML = `Watching <b>${this.rows.length.toLocaleString()}</b> tax-sale parcels · `
-            + `<b>${this.events.length.toLocaleString()}</b> conveyance${this.events.length === 1 ? "" : "s"} detected so far`
+        const hist = this.rows.filter((r) => r.historical).length;
+        info.innerHTML = `<b>${this.rows.length.toLocaleString()}</b> opportunities`
+            + (hist ? ` · <b>${hist.toLocaleString()}</b> found from collector deeds in the land records` : "")
+            + (this.events.length ? ` · <b>${this.events.length.toLocaleString()}</b> new conveyance${this.events.length === 1 ? "" : "s"} caught week-over-week` : "")
             + (this.generated ? ` · updated ${this.esc(this.fmtDT(this.generated))}` : "");
     },
 
@@ -148,7 +150,8 @@ const SurplusApp = {
                     <td><span class="stage ${m.cls}" title="${this.esc(m.blurb || "")}">${this.esc(m.label)}</span>
                         ${r.deed_rational ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
                         ${r.repeat_sale ? '<span class="chip chip-hard" title="Sold at tax sale in more than one year">repeat</span>' : ""}
-                        ${r.historical ? '<span class="chip" title="Found from the collector deed in SDAT, not from a tax-sale list — this one reaches back before our list coverage">historical</span>' : ""}</td>
+                        ${r.historical ? '<span class="chip" title="Found from the collector deed in SDAT, not from a tax-sale list — this one reaches back before our list coverage">historical</span>' : ""}
+                        ${r.resold ? '<span class="chip" title="The tax-sale purchaser took the deed and has since sold the property to someone else. The surplus was owed to the owner BEFORE the collector deed — the current owner is a later buyer with no claim">resold since</span>' : ""}</td>
                     <td class="property-cell">
                         <div class="address">${this.esc(r.address || "N/A")}${r.city ? `, ${this.esc(r.city)}` : ""}</div>
                         <div class="meta" style="font-family:var(--font-mono)">${this.esc(r.account)}${r.year_built ? ` · built ${this.esc(r.year_built)}` : ""}</div>

@@ -72,8 +72,19 @@ LIEN_STRANDED_MIN_BID_TO_FACE = 500     # fallback when we have no assessed valu
 # foreclosure leaves the COLLECTOR as grantor in the land records, whatever year
 # it happened. That makes past conveyances findable from SDAT alone -- we do not
 # need to have held that year's tax-sale list.
-COLLECTOR_GRANTOR = ("%COLLECTOR%", "%TREASURER%", "%DIRECTOR OF FINANCE%",
-                     "%TAX SALE%", "%TAX COLLECT%", "%SUPERVISOR OF ASSESSMENT%")
+# Calibrated against the real grantor strings the first statewide run produced
+# (data/surplus/grantor-sample.json). Bare "COLLECTOR" matched a man named
+# Philip Collector; bare "TAX SALE" matched investor LLCs. Both are out.
+# "%COLLECTOR OF%" rather than "OF TAXES": SDAT truncates the field, so
+# "PHILLIP G THOMPSON COLLECTOR OF TA" is real. The surname case has no "OF".
+COLLECTOR_GRANTOR = ("%COLLECTOR OF%", "%TAX COLLECTOR%", "%DIRECTOR OF FINANCE%", "%TREASURER%")
+NOT_A_COLLECTOR = ("LLC", "L.L.C", "INC", "CORP", "LTD", "TRUST", "INVESTORS", "HOLDINGS", "PARTNERS")
+
+# An entity like "TAX SALE HOLDINGS, LLC" as grantor is a tax-sale purchaser who
+# took the deed and has since sold the property on. The collector's deed is
+# then the transfer BEFORE this one (grantor2). The surplus was owed to whoever
+# owned it before the collector's deed, whenever that was.
+INVESTOR_GRANTOR = ("%TAX SALE%", "%TAX LIEN%", "%TAXSALE%")
 
 # TP 14-847: at 105 days the court may vest title "in the governing body of the
 # county or municipal corporation in fee simple". A collector deed TO a county is
@@ -94,14 +105,25 @@ def _now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+# Actual sale dates by county and year (docs/tax-sale-sources.md). The 6-month
+# and 2-year clocks in 14-833 run from these, so they are not guessed.
+SALE_DATES = {
+    2026: {"Allegany": (5, 28), "Anne Arundel": (6, 3), "Baltimore City": (5, 18), "Baltimore County": (8, 27),
+           "Calvert": (5, 22), "Caroline": (8, 21), "Carroll": (6, 29), "Cecil": (6, 1), "Charles": (5, 12),
+           "Dorchester": (5, 19), "Frederick": (5, 11), "Garrett": (5, 18), "Harford": (6, 3), "Howard": (6, 10),
+           "Kent": (5, 21), "Montgomery": (6, 8), "Prince George's": (5, 11), "Queen Anne's": (5, 19),
+           "St. Mary's": (3, 6), "Somerset": (6, 11), "Talbot": (5, 20), "Washington": (6, 2),
+           "Wicomico": (6, 9), "Worcester": (6, 9)},
+}
+
+
 def _parse_sale_date(rec):
-    """Approximate the sale date from the source label, else use the tax year."""
-    src = (rec.get("source") or "")
-    for token, mmdd in (("May", (5, 15)), ("Jun", (6, 15)), ("Apr", (4, 15)),
-                        ("Mar", (3, 15)), ("Jul", (7, 15))):
-        if token in src:
-            return date(int(rec.get("year") or date.today().year), *mmdd)
-    return date(int(rec.get("year") or date.today().year), 6, 1)
+    year = int(rec.get("year") or date.today().year)
+    md = SALE_DATES.get(year, {}).get(rec.get("county"))
+    if md:
+        return date(year, *md)
+    log.warning("no sale date on file for %s %s — assuming June 1", rec.get("county"), year)
+    return date(year, 6, 1)
 
 
 def load_taxsale_records():
@@ -207,23 +229,49 @@ def scan_collector_deeds(db, today):
     cur = db.cursor()
     cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, transfer_date, sale_price, "
             "deed_liber, deed_folio, grantor1, grantor2, transfer_date2, land_value, impr_value, year_built, occupancy")
-    q = f"SELECT {cols} FROM parcels WHERE {_like('UPPER(grantor1)', COLLECTOR_GRANTOR)}"
+    pats = COLLECTOR_GRANTOR + INVESTOR_GRANTOR
+    q = (f"SELECT {cols} FROM parcels WHERE {_like('UPPER(grantor1)', pats)} "
+         f"OR {_like('UPPER(grantor2)', COLLECTOR_GRANTOR)}")
     names = [c.strip() for c in cols.split(",")]
     out, grantor_counts = [], Counter()
-    for r in cur.execute(q, COLLECTOR_GRANTOR):
+
+    def is_collector(g):
+        g = (g or "").upper()
+        return (any(_glob(g, p) for p in COLLECTOR_GRANTOR)
+                and not any(tok in g for tok in NOT_A_COLLECTOR))
+
+    def is_investor(g):
+        g = (g or "").upper()
+        return any(_glob(g, p) for p in INVESTOR_GRANTOR) and any(tok in g for tok in NOT_A_COLLECTOR)
+
+    for r in cur.execute(q, pats + COLLECTOR_GRANTOR):
         row = dict(zip(names, r))
-        grantor_counts[(row.get("grantor1") or "").strip().upper()[:60]] += 1
+        g1, g2 = row.get("grantor1"), row.get("grantor2")
+        if is_collector(g1):
+            deed_grantor, conveyed_on, resold = g1, row["transfer_date"], False
+            grantor_counts[(g1 or "").strip().upper()[:60]] += 1
+        elif is_collector(g2):
+            # collector deed one transfer back; the purchaser has since sold it on
+            deed_grantor, conveyed_on, resold = g2, row["transfer_date2"], True
+            grantor_counts[(g2 or "").strip().upper()[:60]] += 1
+        elif is_investor(g1):
+            # investor flipped it; the collector deed before it was not captured by
+            # SDAT's two-transfer window, so its date is unknown
+            deed_grantor, conveyed_on, resold = g1, None, True
+            grantor_counts["(investor) " + (g1 or "").strip().upper()[:48]] += 1
+        else:
+            continue
         owner = (row.get("owner1") or "").upper()
-        is_county = any(_glob(owner, p) for p in COUNTY_OWNER)
-        year = (row.get("transfer_date") or "")[:4]
+        is_county = any(_glob(owner, p) for p in COUNTY_OWNER) and not resold
+        year = (conveyed_on or "")[:4]
         out.append({
             "account": row["acct"], "county": row["county"],
             "address": row["address"], "city": row["city"], "zip": row["zip"],
             "lat": row["lat"], "lon": row["lon"], "year_built": row["year_built"],
             "owner_now": row["owner1"], "owner2": row["owner2"],
-            "grantor": row["grantor1"], "prior_grantor": row["grantor2"],
+            "grantor": deed_grantor, "prior_grantor": row["grantor2"], "resold": resold,
             "deed": f"{row.get('deed_liber') or ''}/{row.get('deed_folio') or ''}".strip("/"),
-            "conveyed_on": row["transfer_date"],
+            "conveyed_on": conveyed_on,
             "conveyed_year": int(year) if year.isdigit() else None,
             "recorded_price": _f(row["sale_price"]) or None,
             "assessed_value": (_f(row["land_value"]) + _f(row["impr_value"])) or None,
@@ -255,9 +303,17 @@ def build(index_path, today=None):
     log.info("watching %d tax-sale accounts; %d matched in SDAT", len(taxsale), len(rows))
 
     watch, events, leads = {}, [], []
+    skipped_unconfirmed = 0
     for acct, rec in taxsale.items():
         s = rows.get(acct)
         if not s:
+            continue
+        # LISTED means advertised, outcome unknown -- often redeemed before the
+        # sale. Nothing here can be said to have "sold", so it has no place on a
+        # tab about what happened after a sale. (It is still a distress signal
+        # on the Title Leads tab.)
+        if rec.get("status") not in ("SOLD", "STRUCK"):
+            skipped_unconfirmed += 1
             continue
         owner_now = _norm_owner(s["owner1"])
         prev = prior.get(acct) or {}
@@ -334,6 +390,11 @@ def build(index_path, today=None):
     # Fold the historical collector deeds in. These need no baseline and no
     # tax-sale list, so they reach back as far as SDAT records the deed.
     known = {r["account"] for r in leads}
+
+    def is_coll(g):
+        g = (g or "").upper()
+        return any(_glob(g, p) for p in COLLECTOR_GRANTOR) and not any(t in g for t in NOT_A_COLLECTOR)
+
     for h in historical:
         if h["kind"] != "TAX_DEED" or h["account"] in known:
             continue
@@ -341,13 +402,16 @@ def build(index_path, today=None):
         bid, face = _f(ts.get("bid")), _f(ts.get("face"))
         leads.append({
             "account": h["account"], "county": h["county"], "stage": "CONVEYED",
-            "stage_why": "Deed executed by the tax collector — the foreclosure completed and the residue was paid",
+            "stage_why": ("Tax-sale purchaser took the deed and has since sold the property on" if h["resold"]
+                          else "Deed executed by the tax collector — the foreclosure completed and the residue was paid"),
             "address": h["address"], "city": h["city"], "zip": h["zip"],
             "lat": h["lat"], "lon": h["lon"], "year_built": h["year_built"],
             "deed": h["deed"], "grantor": h["grantor"], "occupancy": h["occupancy"],
             "owner_of_record": h["owner_now"], "owner2": h["owner2"], "mail": "",
             "owner_at_sale": ts.get("owner"), "tax_sale_year": ts.get("year") or h["conveyed_year"],
-            "tax_sale_status": ts.get("status") or "", "sold_to": ts.get("bidder") or h["owner_now"],
+            "tax_sale_status": ts.get("status") or "",
+            "sold_to": ts.get("bidder") or (h["grantor"] if h["resold"] and not is_coll(h["grantor"]) else h["owner_now"]),
+            "resold": h["resold"],
             "taxes_owed": face or None, "winning_bid": bid or h["recorded_price"],
             "est_surplus": round(bid - face, 2) if bid and face else None,
             "assessed_value": h["assessed_value"], "bid_to_assessed": None,
@@ -356,6 +420,7 @@ def build(index_path, today=None):
             "source": "SDAT collector deed" + (f" · {h['conveyed_year']}" if h["conveyed_year"] else ""),
         })
 
+    log.info("skipped %d LISTED/unconfirmed rows (no sale outcome to track)", skipped_unconfirmed)
     before = len(leads)
     leads = [r for r in leads if r["stage"] in OPPORTUNITY_STAGES]
     log.info("kept %d opportunities, dropped %d not-yet-actionable rows", len(leads), before - len(leads))
