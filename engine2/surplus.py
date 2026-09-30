@@ -24,6 +24,7 @@ import argparse
 import json
 import logging
 import os
+import re
 import sqlite3
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
@@ -181,6 +182,56 @@ def sdat_rows(db, accounts):
 
 def _norm_owner(v):
     return " ".join((v or "").upper().split())
+
+
+_ENTITY = re.compile(r"\b(LLC|L\.?L\.?C|INC|CORP(ORATION)?|CO|COMPANY|LTD|LP|LLP|TRUST|HOLDINGS?|INVESTMENTS?|INVESTORS|PROPERTIES|"
+                     r"PARTNERS(HIP)?|FUND|CAPITAL|ASSETS?|GROUP|VENTURES?|ENTERPRISES?|REALTY|DEVELOPMENT|ASSOCIATES|LIENS?|SEASON)\b")
+
+
+def _same_person(a, b):
+    """Do two SDAT-style owner strings refer to the same party? Compares the
+    surname (first token) and requires a second shared token, so JACKSON BRYAN
+    vs JACKSON B counts and JACKSON vs GREEN does not."""
+    ta = [t for t in re.findall(r"[A-Z]+", _norm_owner(a)) if len(t) > 1]
+    tb = [t for t in re.findall(r"[A-Z]+", _norm_owner(b)) if len(t) > 1]
+    if not ta or not tb:
+        return False
+    if ta[0] != tb[0]:
+        return False
+    return len(set(ta) & set(tb)) >= 2 or len(ta) == 1 or len(tb) == 1
+
+
+def _parse_sdat_date(v):
+    try:
+        return date.fromisoformat((v or "").strip().replace(".", "-")[:10])
+    except ValueError:
+        return None
+
+
+def conveyance_from_list(rec, sdat_row, sale_dt):
+    """Detect a completed foreclosure by comparing the owner named on the
+    tax-sale list with the owner on title now. Does not need a baseline, so it
+    works for every year we hold a list with owner names.
+
+    Returns (confidence, reason) or (None, None).
+      HIGH   today's owner is the lien bidder named on the list
+      MEDIUM title moved after the sale to an entity (tax-sale buyers are LLCs)
+      LOW    title moved after the sale to an individual -- likely a redemption
+             followed by an ordinary sale, so probably no surplus
+    """
+    at_sale = rec.get("owner")
+    now = sdat_row.get("owner1")
+    if not at_sale or not now or _same_person(at_sale, now):
+        return None, None
+    bidder = rec.get("bidder") or ""
+    if bidder and not bidder.startswith("#") and bidder.lower() != "county" and _same_person(bidder, now):
+        return "HIGH", f"Owner on title is now the lien bidder ({bidder.strip()})"
+    t = _parse_sdat_date(sdat_row.get("transfer_date"))
+    if t and t > sale_dt:
+        if _ENTITY.search(_norm_owner(now)):
+            return "MEDIUM", f"Title moved to {now.strip()} on {t.isoformat()}, after the sale"
+        return "LOW", f"Title moved to an individual on {t.isoformat()} after the sale — likely redeemed then sold normally"
+    return None, None
 
 
 def _notice_due(transfer_date, sale_dt):
@@ -345,9 +396,20 @@ def build(index_path, today=None):
         bid_to_av = round(bid / av, 3) if bid and av > 10000 else None
         bid_to_face = round(bid / face, 1) if bid and face else None
 
-        # A change is only meaningful against a baseline we actually recorded.
+        # A change is only meaningful against a baseline we actually recorded --
+        # OR against the owner named on the sale list itself, which the file-
+        # publishing counties give us for every year they keep up.
         owner_changed = bool(owner_before) and owner_before != owner_now
+        conf, conf_why = conveyance_from_list(rec, s, sale_dt)
+        if not owner_changed and conf in ("HIGH", "MEDIUM"):
+            owner_changed = True
         st, why = stage(rec, sale_dt, owner_changed, today, bid_to_av, bid_to_face)
+        if st == "CONVEYED" and conf_why:
+            why = conf_why
+        # a person at sale, a government on title now: the county took it (14-847
+        # or foreclosure of its own struck lien) -- that belongs on the other tab
+        county_took = (conf in ("HIGH", "MEDIUM", "LOW")
+                       and any(_glob(_norm_owner(owner_now), p) for p in COUNTY_OWNER))
 
         watch[acct] = {
             "owner1": s["owner1"], "transfer_date": transfer_now,
@@ -383,6 +445,9 @@ def build(index_path, today=None):
             "bid_to_face": bid_to_face,
             "days_since_sale": (today - sale_dt).days,
             "repeat_sale": rec.get("_repeat", False), "partial": rec.get("partial", False),
+            "conveyance_confidence": conf, "conveyance_note": conf_why,
+            "low_confidence_conveyance": (conf == "LOW"),
+            "county_took": county_took,
             "transfer_date": transfer_now,
             "source": rec.get("source"),
         })
@@ -455,7 +520,11 @@ def build(index_path, today=None):
     log.info("skipped %d LISTED/unconfirmed rows (no sale outcome to track); %d low-value collector deeds below the floor",
              skipped_unconfirmed, floor_dropped)
     before = len(leads)
-    leads = [r for r in leads if r["stage"] in OPPORTUNITY_STAGES]
+    low = sum(1 for r in leads if r.get("low_confidence_conveyance"))
+    # title moved to an individual after the sale: almost always a redemption
+    # followed by an ordinary sale, so neither a buy lead nor a surplus lead
+    leads = [r for r in leads if r["stage"] in OPPORTUNITY_STAGES and not r.get("low_confidence_conveyance")]
+    log.info("dropped %d rows where title moved to an individual after the sale (likely redeemed + sold)", low)
     log.info("kept %d opportunities, dropped %d not-yet-actionable rows", len(leads), before - len(leads))
     log.info("  by stage: %s", dict(Counter(r["stage"] for r in leads)))
 
@@ -467,6 +536,22 @@ def build(index_path, today=None):
         json.dump({"generated_at": _now(), "rows": leads}, f, ensure_ascii=False, separators=(",", ":"))
 
     vested = [h for h in historical if h["kind"] == "COUNTY_VESTED"]
+    seen_v = {h["account"] for h in vested}
+    for r in leads:
+        if r.get("county_took") and r["account"] not in seen_v:
+            seen_v.add(r["account"])
+            vested.append({
+                "account": r["account"], "county": r["county"], "address": r["address"], "city": r["city"],
+                "zip": r["zip"], "lat": r["lat"], "lon": r["lon"], "year_built": r["year_built"],
+                "owner_now": r["owner_of_record"], "owner2": r["owner2"], "grantor": r.get("grantor"),
+                "prior_grantor": None, "resold": False, "deed": r["deed"], "conveyed_on": r["transfer_date"],
+                "conveyed_year": int(r["transfer_date"][:4]) if (r.get("transfer_date") or "")[:4].isdigit() else r.get("tax_sale_year"),
+                "consideration": None, "assessed_value": r["assessed_value"], "occupancy": r["occupancy"],
+                "kind": "COUNTY_VESTED", "owner_at_sale": r.get("owner_at_sale"), "tax_sale_year": r.get("tax_sale_year"),
+                "detected_by": "owner on the sale list is a person; owner on title now is a government",
+            })
+    # keep county-vested parcels off the surplus tab
+    leads = [r for r in leads if not r.get("county_took")]
     with open(VESTED_PATH, "w", encoding="utf-8") as f:
         json.dump({"generated_at": _now(), "note":
                    "TP 14-847: where a certificate holder does not comply with the final judgment within 105 days, "

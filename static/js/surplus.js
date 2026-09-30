@@ -153,6 +153,8 @@ const SurplusApp = {
                         ${r.vacant_lot ? '<span class="chip" title="No improvements on the parcel">vacant lot</span>' : ""}
                         ${r.repeat_sale ? '<span class="chip chip-hard" title="Sold at tax sale in more than one year">repeat</span>' : ""}
                         ${r.historical ? '<span class="chip" title="Found from the collector deed in SDAT, not from a tax-sale list — this one reaches back before our list coverage">historical</span>' : ""}
+                        ${r.conveyance_confidence === "HIGH" ? '<span class="chip chip-good" title="Owner on title today is the lien bidder named on the sale list">bidder holds title</span>' : ""}
+                        ${r.conveyance_confidence === "MEDIUM" ? '<span class="chip" title="Title moved to an entity after the sale — tax-sale buyers are almost always LLCs">title moved</span>' : ""}
                         ${r.partial ? '<span class="chip" title="This year\'s list came from an Internet Archive capture of page 1 only — the county had more rows than we could recover">archive · partial</span>' : ""}
                         ${r.resold ? '<span class="chip" title="The tax-sale purchaser took the deed and has since sold the property to someone else. The surplus was owed to the owner BEFORE the collector deed — the current owner is a later buyer with no claim">resold since</span>' : ""}</td>
                     <td class="property-cell">
@@ -194,6 +196,7 @@ const SurplusApp = {
                 <h3>Stage</h3>
                 <div class="detail-row"><span class="label">Where it stands</span><span class="value" style="font-weight:600">${this.esc(m.label)}</span></div>
                 <div class="detail-row"><span class="label">Meaning</span><span class="value" style="font-size:0.82rem">${this.esc(m.blurb)}</span></div>
+                ${r.conveyance_note ? `<div class="detail-row"><span class="label">How we know</span><span class="value" style="font-size:0.82rem">${this.esc(r.conveyance_note)}</span></div>` : ""}
                 <div class="detail-row"><span class="label">Since sale</span><span class="value">${r.days_since_sale} days${r.tax_sale_year ? ` · ${this.esc(String(r.tax_sale_year))} sale` : ""}</span></div>
                 ${r.repeat_sale ? '<div class="detail-row"><span class="label">Repeat</span><span class="value" style="color:var(--yellow)">Sold at tax sale in more than one year</span></div>' : ""}
             </div>
