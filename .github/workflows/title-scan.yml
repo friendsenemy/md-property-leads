@@ -69,6 +69,9 @@ jobs:
       - name: Run title scan
         run: python -m engine2.title_scan --no-backfill
 
+      - name: Watch tax-sale outcomes (surplus + pre-deed buy leads)
+        run: python -m engine2.surplus --index .cache/sdat.sqlite
+
       - name: Commit results
         # Outputs are regenerated files, so we always lay them on top of the
         # latest main instead of rebasing (a re-run of an old commit would
@@ -77,12 +80,15 @@ jobs:
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p /tmp/out && cp -r data/title /tmp/out/
+          cp -r data/surplus /tmp/out/ 2>/dev/null || true
           git fetch origin main
           git checkout -f -B main origin/main
           rm -rf data/title && cp -r /tmp/out/title data/title
+          if [ -d /tmp/out/surplus ]; then rm -rf data/surplus && cp -r /tmp/out/surplus data/surplus; fi
           # add coordinates to whatever obituary leads exist on latest main
           python -m engine2.title_scan --backfill-only
           git add data/title data/leads.json
+          git add data/surplus 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
