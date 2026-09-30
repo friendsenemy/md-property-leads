@@ -27,6 +27,13 @@
         .view-tab { background:none; border:none; color:var(--text-secondary); padding:10px 16px; font-family:var(--font-mono); font-size:0.85rem; cursor:pointer; border-bottom:2px solid transparent; }
         .view-tab.active { color:var(--cyan); border-bottom-color:var(--cyan); }
         .view-tab-sub { font-size:0.7rem; color:var(--text-dim); margin-left:6px; }
+        /* surplus stage pills */
+        .stage { display:inline-block; padding:3px 9px; border-radius:999px; font-family:var(--font-mono); font-size:0.7rem; font-weight:600; white-space:nowrap; border:1px solid transparent; }
+        .stage-conveyed { color:#ffd60a; background:rgba(255,214,10,0.12); border-color:rgba(255,214,10,0.4); }
+        .stage-window   { color:#30d158; background:rgba(48,209,88,0.12); border-color:rgba(48,209,88,0.4); }
+        .stage-stale    { color:#ff9f0a; background:rgba(255,159,10,0.10); border-color:rgba(255,159,10,0.30); }
+        .stage-early    { color:var(--text-dim); background:rgba(255,255,255,0.04); border-color:var(--border); }
+        .chip-good { color:#30d158 !important; background:rgba(48,209,88,0.12) !important; border-color:rgba(48,209,88,0.45) !important; }
         /* engine 2 */
         .presets { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0 4px; }
         .prio-filter { display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:0.78rem; color:var(--text-secondary); }
@@ -90,6 +97,7 @@
     <div class="view-tabs">
         <button class="view-tab active" data-view="obits">Recent Death Leads</button>
         <button class="view-tab" data-view="title">Title Leads <span class="view-tab-sub">statewide · property-first</span></button>
+        <button class="view-tab" data-view="surplus">Surplus Funds Leads <span class="view-tab-sub">tax-sale outcomes</span></button>
     </div>
 
 <div id="view-obits">
@@ -228,6 +236,82 @@
     </div>
 </div><!-- /view-title -->
 
+<div id="view-surplus" style="display:none">
+    <div class="stats-grid">
+        <div class="stat-card yellow">
+            <div class="stat-label">Deed Conveyed — Surplus Owed</div>
+            <div class="stat-value" id="sstatConveyed">0</div>
+        </div>
+        <div class="stat-card green">
+            <div class="stat-label">Still Owned — Buy Window Open</div>
+            <div class="stat-value" id="sstatWindow">0</div>
+        </div>
+        <div class="stat-card cyan">
+            <div class="stat-label">Est. Surplus Tracked</div>
+            <div class="stat-value" id="sstatTracked">$0</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="surplusSearch" placeholder="Search owner, address, city, account, lien buyer…">
+        </div>
+        <div class="county-filter">
+            <select id="surplusCounty"><option value="">All counties</option></select>
+        </div>
+        <div class="prio-filter">
+            <label for="surplusMin">Min surplus <b id="surplusMinVal">$0</b></label>
+            <input type="range" id="surplusMin" min="0" max="250000" step="5000" value="0">
+        </div>
+        <div class="filter-group" id="surplusStages">
+            <button class="filter-btn active" data-stage="all">All</button>
+            <button class="filter-btn" data-stage="CONVEYED">Deed Conveyed</button>
+            <button class="filter-btn" data-stage="FORECLOSURE_WINDOW">Buy Window</button>
+            <button class="filter-btn" data-stage="CERT_STALE">Cert Stale</button>
+            <button class="filter-btn" data-stage="TOO_EARLY">Too Early</button>
+        </div>
+        <div class="filter-group" id="surplusStatusFilters">
+            <button class="filter-btn active" data-status="all">All</button>
+            <button class="filter-btn" data-status="new">New</button>
+            <button class="filter-btn" data-status="contacted">Contacted</button>
+            <button class="filter-btn" data-status="closed">Closed</button>
+        </div>
+        <button class="btn btn-export" id="surplusExport"><span class="icon">⬇</span> Export CSV</button>
+    </div>
+    <div class="run-info" id="surplusRunInfo" style="text-align:left; margin:6px 0 10px;"></div>
+
+    <div class="leads-container">
+        <table class="leads-table" id="surplusTable">
+            <thead>
+                <tr>
+                    <th data-sort="stage">Stage <span class="sort-arrow">↕</span></th>
+                    <th>Property</th>
+                    <th data-sort="owner">Owner on Record <span class="sort-arrow">↕</span></th>
+                    <th data-sort="county">County <span class="sort-arrow">↕</span></th>
+                    <th data-sort="days">Tax Sale <span class="sort-arrow">↕</span></th>
+                    <th data-sort="bid">Winning Bid <span class="sort-arrow">↕</span></th>
+                    <th data-sort="est_surplus">Est. Surplus <span class="sort-arrow">↕</span></th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="surplusBody"></tbody>
+        </table>
+        <div class="empty-state" id="surplusEmpty" style="display:none;">
+            <div class="icon">💰</div>
+            <h3 id="surplusEmptyTitle">No tax-sale watch yet</h3>
+            <p id="surplusEmptyText">Run the “Title Scan (Engine 2)” workflow on GitHub once. The first run records a baseline of who owns each tax-sale parcel; conveyances — and the surplus they create — start showing up from the run after that.</p>
+        </div>
+        <div class="pagination">
+            <span id="surplusPageInfo">No parcels</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="surplusPrev">← Prev</button>
+                <button class="page-btn" id="surplusNext">Next →</button>
+            </div>
+        </div>
+    </div>
+</div><!-- /view-surplus -->
+
 </div>
 
 <div class="modal-overlay" id="modalOverlay">
@@ -252,20 +336,28 @@
 <script src="static/js/aerial.js"></script>
 <script src="static/js/dashboard.js"></script>
 <script src="static/js/title.js"></script>
+<script src="static/js/surplus.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    let titleStarted = false;
+    const VIEWS = ["obits", "title", "surplus"];
+    const started = {};
+    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init() };
     document.querySelectorAll(".view-tab").forEach((tab) => tab.addEventListener("click", () => {
         document.querySelectorAll(".view-tab").forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");
         const v = tab.dataset.view;
-        document.getElementById("view-obits").style.display = v === "obits" ? "" : "none";
-        document.getElementById("view-title").style.display = v === "title" ? "" : "none";
-        if (v === "title" && !titleStarted) { titleStarted = true; TitleApp.init(); }
+        VIEWS.forEach((name) => {
+            const el = document.getElementById("view-" + name);
+            if (el) el.style.display = name === v ? "" : "none";
+        });
+        if (LAZY[v] && !started[v]) { started[v] = true; LAZY[v](); }
         try { localStorage.setItem("md_view", v); } catch {}
     }));
     let saved = null; try { saved = localStorage.getItem("md_view"); } catch {}
-    if (saved === "title") document.querySelector('.view-tab[data-view="title"]').click();
+    if (saved && saved !== "obits" && VIEWS.includes(saved)) {
+        const t = document.querySelector(`.view-tab[data-view="${saved}"]`);
+        if (t) t.click();
+    }
 });
 </script>
 </body>

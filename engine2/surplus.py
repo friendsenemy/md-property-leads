@@ -101,8 +101,9 @@ def load_watch():
 def sdat_rows(db, accounts):
     """Fetch the title-relevant SDAT columns for the accounts we watch."""
     cur = db.cursor()
-    cols = ("acct, county, address, city, owner1, owner2, transfer_date, sale_price, "
-            "deed_liber, deed_folio, grantor1, land_value, impr_value, occupancy, mail_addr, mail_city, mail_zip")
+    cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, transfer_date, sale_price, "
+            "deed_liber, deed_folio, grantor1, land_value, impr_value, year_built, occupancy, "
+            "mail_addr, mail_city, mail_zip")
     got = {}
     accts = list(accounts)
     for i in range(0, len(accts), 800):
@@ -197,7 +198,10 @@ def build(index_path, today=None):
 
         leads.append({
             "account": acct, "county": rec.get("county"), "stage": st, "stage_why": why,
-            "address": s.get("address") or rec.get("address"), "city": s.get("city"),
+            "address": s.get("address") or rec.get("address"), "city": s.get("city"), "zip": s.get("zip"),
+            "lat": s.get("lat"), "lon": s.get("lon"), "year_built": s.get("year_built"),
+            "deed": f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/"),
+            "grantor": s.get("grantor1"), "occupancy": s.get("occupancy"),
             "owner_of_record": s["owner1"], "owner2": s.get("owner2"),
             "mail": " ".join(x for x in (s.get("mail_addr"), s.get("mail_city"), s.get("mail_zip")) if x),
             "owner_at_sale": rec.get("owner"), "tax_sale_year": rec.get("year"),
