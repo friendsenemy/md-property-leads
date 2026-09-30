@@ -98,6 +98,7 @@
         <button class="view-tab active" data-view="obits">Recent Death Leads</button>
         <button class="view-tab" data-view="title">Title Leads <span class="view-tab-sub">statewide · property-first</span></button>
         <button class="view-tab" data-view="surplus">Surplus Funds Leads <span class="view-tab-sub">tax-sale outcomes</span></button>
+        <button class="view-tab" data-view="vested">Failed Foreclosures <span class="view-tab-sub">§14-847 · county took title</span></button>
     </div>
 
 <div id="view-obits">
@@ -312,6 +313,64 @@
     </div>
 </div><!-- /view-surplus -->
 
+<div id="view-vested" style="display:none">
+    <div class="stats-grid">
+        <div class="stat-card yellow">
+            <div class="stat-label">Parcels the County Took</div>
+            <div class="stat-value" id="vstatTotal">0</div>
+        </div>
+        <div class="stat-card purple">
+            <div class="stat-label">Last 3 Years</div>
+            <div class="stat-value" id="vstatRecent">0</div>
+        </div>
+        <div class="stat-card green">
+            <div class="stat-label">Assessed Value on County Books</div>
+            <div class="stat-value" id="vstatValue">$0</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="vestedSearch" placeholder="Search address, city, county, account…">
+        </div>
+        <div class="county-filter">
+            <select id="vestedCounty"><option value="">All counties</option></select>
+        </div>
+        <button class="btn btn-export" id="vestedExport"><span class="icon">⬇</span> Export CSV</button>
+    </div>
+    <div class="run-info" id="vestedRunInfo" style="text-align:left; margin:6px 0 10px;"></div>
+
+    <div class="leads-container">
+        <table class="leads-table" id="vestedTable">
+            <thead>
+                <tr>
+                    <th data-sort="year">Vested <span class="sort-arrow">↕</span></th>
+                    <th>Property</th>
+                    <th data-sort="owner">Now Owned By <span class="sort-arrow">↕</span></th>
+                    <th data-sort="county">County <span class="sort-arrow">↕</span></th>
+                    <th>Deeded By</th>
+                    <th data-sort="assessed">Assessed <span class="sort-arrow">↕</span></th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="vestedBody"></tbody>
+        </table>
+        <div class="empty-state" id="vestedEmpty" style="display:none;">
+            <div class="icon">🏛️</div>
+            <h3 id="vestedEmptyTitle">No failed foreclosures yet</h3>
+            <p id="vestedEmptyText">Run the “Title Scan (Engine 2)” workflow on GitHub. This tab finds parcels a tax collector deeded to a county — the §14-847 outcome where a purchaser won a judgment and then failed to pay for it. It reads the land records directly, so it reaches back as far as SDAT records the deed.</p>
+        </div>
+        <div class="pagination">
+            <span id="vestedPageInfo">No parcels</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="vestedPrev">← Prev</button>
+                <button class="page-btn" id="vestedNext">Next →</button>
+            </div>
+        </div>
+    </div>
+</div><!-- /view-vested -->
+
 </div>
 
 <div class="modal-overlay" id="modalOverlay">
@@ -337,11 +396,12 @@
 <script src="static/js/dashboard.js"></script>
 <script src="static/js/title.js"></script>
 <script src="static/js/surplus.js"></script>
+<script src="static/js/vested.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const VIEWS = ["obits", "title", "surplus"];
+    const VIEWS = ["obits", "title", "surplus", "vested"];
     const started = {};
-    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init() };
+    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init() };
     document.querySelectorAll(".view-tab").forEach((tab) => tab.addEventListener("click", () => {
         document.querySelectorAll(".view-tab").forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");

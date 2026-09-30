@@ -25,6 +25,7 @@ import json
 import logging
 import os
 import sqlite3
+from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 
 from engine2 import config
@@ -33,6 +34,7 @@ OUT_DIR = os.path.join("data", "surplus")
 WATCH_PATH = os.path.join(OUT_DIR, "watch.json")
 EVENTS_PATH = os.path.join(OUT_DIR, "events.json")
 LEADS_PATH = os.path.join(OUT_DIR, "leads.json")
+VESTED_PATH = os.path.join(OUT_DIR, "vested.json")
 
 log = logging.getLogger("surplus")
 
@@ -45,6 +47,26 @@ NOTICE_DEADLINE_DAYS = 90           # 14-818(a)(6) notice to the prior owner
 # Bid at or below this share of assessed value => deeding is rational, so the
 # case is likely to complete and produce a surplus.
 DEED_RATIONAL_MAX_BID_TO_AV = 0.85
+
+# Only these stages are written out. TOO_EARLY is a watch state, not a lead, and
+# a bid far above value never produces a deed or a surplus -- neither belongs on
+# the dashboard.
+OPPORTUNITY_STAGES = {"CONVEYED", "FORECLOSURE_WINDOW", "CERT_STALE"}
+
+# TP 14-847: "The judgment of the court shall direct the collector to execute a
+# deed to the holder of the certificate of sale." So every completed Maryland tax
+# foreclosure leaves the COLLECTOR as grantor in the land records, whatever year
+# it happened. That makes past conveyances findable from SDAT alone -- we do not
+# need to have held that year's tax-sale list.
+COLLECTOR_GRANTOR = ("%COLLECTOR%", "%TREASURER%", "%DIRECTOR OF FINANCE%",
+                     "%TAX SALE%", "%TAX COLLECT%", "%SUPERVISOR OF ASSESSMENT%")
+
+# TP 14-847: at 105 days the court may vest title "in the governing body of the
+# county or municipal corporation in fee simple". A collector deed TO a county is
+# that outcome -- the foreclosure collapsed and the county took it.
+COUNTY_OWNER = ("%COUNTY COMMISSIONER%", "%BOARD OF COUNTY%", "%MAYOR AND CITY COUNCIL%",
+                "%COUNTY OF %", "%COUNTY, MARYLAND%", "%COUNTY MARYLAND%",
+                "%CITY OF %", "%TOWN OF %", "%COUNTY EXECUTIVE%")
 
 
 def _f(v):
@@ -143,7 +165,58 @@ def stage(rec, sale_dt, owner_changed, today):
         return "TOO_EARLY", "Inside the statutory wait — no foreclosure may be filed yet"
     if age <= CERT_VOID_DAYS:
         return "FORECLOSURE_WINDOW", "Foreclosure may be filed and title has not moved — owner can still sell"
-    return "CERT_STALE", "Past the 2-year certificate deadline and title never moved"
+    return "CERT_STALE", ("Over 2 years since the sale and the SDAT owner never changed. Could be a void "
+                          "certificate (TP 14-833 — your opening), a redemption, a case still pending, or a "
+                          "recorded deed SDAT has not indexed. Check the county tax account before calling.")
+
+
+def _like(col, pats):
+    return "(" + " OR ".join(f"{col} LIKE ?" for _ in pats) + ")"
+
+
+def scan_collector_deeds(db, today):
+    """Every parcel whose last deed came from a tax collector, any year.
+
+    This is the answer to "how far back does it go": it does not depend on our
+    tax-sale lists at all. A collector deed to a private party means the
+    purchaser paid the residue of the bid, so a balance was owed to whoever owned
+    it before -- that is a surplus lead however old it is. A collector deed to a
+    county is the 14-847 failed-foreclosure outcome instead.
+    """
+    cur = db.cursor()
+    cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, transfer_date, sale_price, "
+            "deed_liber, deed_folio, grantor1, grantor2, transfer_date2, land_value, impr_value, year_built, occupancy")
+    q = f"SELECT {cols} FROM parcels WHERE {_like('UPPER(grantor1)', COLLECTOR_GRANTOR)}"
+    names = [c.strip() for c in cols.split(",")]
+    out, grantor_counts = [], Counter()
+    for r in cur.execute(q, COLLECTOR_GRANTOR):
+        row = dict(zip(names, r))
+        grantor_counts[(row.get("grantor1") or "").strip().upper()[:60]] += 1
+        owner = (row.get("owner1") or "").upper()
+        is_county = any(_glob(owner, p) for p in COUNTY_OWNER)
+        year = (row.get("transfer_date") or "")[:4]
+        out.append({
+            "account": row["acct"], "county": row["county"],
+            "address": row["address"], "city": row["city"], "zip": row["zip"],
+            "lat": row["lat"], "lon": row["lon"], "year_built": row["year_built"],
+            "owner_now": row["owner1"], "owner2": row["owner2"],
+            "grantor": row["grantor1"], "prior_grantor": row["grantor2"],
+            "deed": f"{row.get('deed_liber') or ''}/{row.get('deed_folio') or ''}".strip("/"),
+            "conveyed_on": row["transfer_date"],
+            "conveyed_year": int(year) if year.isdigit() else None,
+            "recorded_price": _f(row["sale_price"]) or None,
+            "assessed_value": (_f(row["land_value"]) + _f(row["impr_value"])) or None,
+            "occupancy": row["occupancy"],
+            "kind": "COUNTY_VESTED" if is_county else "TAX_DEED",
+        })
+    return out, grantor_counts
+
+
+def _glob(value, like_pattern):
+    """Match a SQL LIKE pattern in Python (only % wildcards are used here)."""
+    import re as _re
+    rx = "^" + ".*".join(_re.escape(part) for part in like_pattern.split("%")) + "$"
+    return bool(_re.match(rx, value or ""))
 
 
 def build(index_path, today=None):
@@ -155,7 +228,9 @@ def build(index_path, today=None):
     prior = load_watch()
     db = sqlite3.connect(index_path)
     rows = sdat_rows(db, taxsale.keys())
+    historical, grantor_counts = scan_collector_deeds(db, today)
     db.close()
+    log.info("collector-deed scan: %d parcels conveyed by a tax collector (any year)", len(historical))
     log.info("watching %d tax-sale accounts; %d matched in SDAT", len(taxsale), len(rows))
 
     watch, events, leads = {}, [], []
@@ -233,11 +308,55 @@ def build(index_path, today=None):
     with open(EVENTS_PATH, "w", encoding="utf-8") as f:
         json.dump({"generated_at": _now(), "events": merged}, f, ensure_ascii=False, indent=1)
 
+    # Fold the historical collector deeds in. These need no baseline and no
+    # tax-sale list, so they reach back as far as SDAT records the deed.
+    known = {r["account"] for r in leads}
+    for h in historical:
+        if h["kind"] != "TAX_DEED" or h["account"] in known:
+            continue
+        ts = taxsale.get(h["account"]) or {}
+        bid, face = _f(ts.get("bid")), _f(ts.get("face"))
+        leads.append({
+            "account": h["account"], "county": h["county"], "stage": "CONVEYED",
+            "stage_why": "Deed executed by the tax collector — the foreclosure completed and the residue was paid",
+            "address": h["address"], "city": h["city"], "zip": h["zip"],
+            "lat": h["lat"], "lon": h["lon"], "year_built": h["year_built"],
+            "deed": h["deed"], "grantor": h["grantor"], "occupancy": h["occupancy"],
+            "owner_of_record": h["owner_now"], "owner2": h["owner2"], "mail": "",
+            "owner_at_sale": ts.get("owner"), "tax_sale_year": ts.get("year") or h["conveyed_year"],
+            "tax_sale_status": ts.get("status") or "", "sold_to": ts.get("bidder") or h["owner_now"],
+            "taxes_owed": face or None, "winning_bid": bid or h["recorded_price"],
+            "est_surplus": round(bid - face, 2) if bid and face else None,
+            "assessed_value": h["assessed_value"], "bid_to_assessed": None,
+            "deed_rational": True, "days_since_sale": None, "repeat_sale": False,
+            "transfer_date": h["conveyed_on"], "historical": True,
+            "source": "SDAT collector deed" + (f" · {h['conveyed_year']}" if h["conveyed_year"] else ""),
+        })
+
+    dropped = len(leads)
+    leads = [r for r in leads if r["stage"] in OPPORTUNITY_STAGES
+             and not (r["stage"] == "CONVEYED" and r.get("bid_to_assessed") is not None and not r["deed_rational"])]
+    log.info("kept %d opportunities, dropped %d watch/no-opportunity rows", len(leads), dropped - len(leads))
+
     leads.sort(key=lambda r: (r["stage"] != "CONVEYED", -(r.get("est_surplus") or 0)))
     with open(LEADS_PATH, "w", encoding="utf-8") as f:
         json.dump({"generated_at": _now(), "rows": leads}, f, ensure_ascii=False, separators=(",", ":"))
 
-    from collections import Counter
+    vested = [h for h in historical if h["kind"] == "COUNTY_VESTED"]
+    with open(VESTED_PATH, "w", encoding="utf-8") as f:
+        json.dump({"generated_at": _now(), "note":
+                   "TP 14-847: where a certificate holder does not comply with the final judgment within 105 days, "
+                   "the court may vest title in the county in fee simple. A collector deed to a county is that "
+                   "outcome. The 90-day window before vesting lives only in the court docket and is not detectable here.",
+                   "rows": sorted(vested, key=lambda r: -(r.get("conveyed_year") or 0))}, f,
+                  ensure_ascii=False, separators=(",", ":"))
+
+    # So we can see what the real grantor strings look like and tighten the patterns.
+    with open(os.path.join(OUT_DIR, "grantor-sample.json"), "w", encoding="utf-8") as f:
+        json.dump({"generated_at": _now(), "top_matching_grantors": grantor_counts.most_common(60)},
+                  f, ensure_ascii=False, indent=1)
+    log.info("county-vested (14-847): %d", len(vested))
+
     c = Counter(r["stage"] for r in leads)
     log.info("stages: %s", dict(c))
     log.info("new conveyance events this run: %d (total %d)", len(merged) - len(old_events), len(merged))

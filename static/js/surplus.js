@@ -6,7 +6,7 @@ const SURPLUS_LS_KEY = "md_surplus_leads_local_v1";
 const STAGE_META = {
     CONVEYED:           { label: "Deed Conveyed",      cls: "stage-conveyed", blurb: "Purchaser paid the residue of the bid — a balance is owed to the former owner under TP §14-818(a)(4)." },
     FORECLOSURE_WINDOW: { label: "Foreclosure Window", cls: "stage-window",   blurb: "Past the statutory wait, title has NOT moved. The owner still holds it and can still sell." },
-    CERT_STALE:         { label: "Certificate Stale",  cls: "stage-stale",    blurb: "Past the 2-year certificate deadline and title never moved. Taxes are still owed." },
+    CERT_STALE:         { label: "Needs Verifying",    cls: "stage-stale",    blurb: "Over 2 years since the sale and the owner never changed. Could be a void certificate (§14-833 — your opening), a redemption, a case still pending, or a deed SDAT has not indexed. Check the county tax account before calling." },
     TOO_EARLY:          { label: "Too Early",          cls: "stage-early",    blurb: "Inside the 6-month statutory wait — no foreclosure may be filed yet." },
 };
 
@@ -146,7 +146,8 @@ const SurplusApp = {
                 return `<tr data-id="${this.esc(r.id)}">
                     <td><span class="stage ${m.cls}" title="${this.esc(m.blurb || "")}">${this.esc(m.label)}</span>
                         ${r.deed_rational ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
-                        ${r.repeat_sale ? '<span class="chip chip-hard" title="Sold at tax sale in more than one year">repeat</span>' : ""}</td>
+                        ${r.repeat_sale ? '<span class="chip chip-hard" title="Sold at tax sale in more than one year">repeat</span>' : ""}
+                        ${r.historical ? '<span class="chip" title="Found from the collector deed in SDAT, not from a tax-sale list — this one reaches back before our list coverage">historical</span>' : ""}</td>
                     <td class="property-cell">
                         <div class="address">${this.esc(r.address || "N/A")}${r.city ? `, ${this.esc(r.city)}` : ""}</div>
                         <div class="meta" style="font-family:var(--font-mono)">${this.esc(r.account)}${r.year_built ? ` · built ${this.esc(r.year_built)}` : ""}</div>
@@ -203,7 +204,7 @@ const SurplusApp = {
                 <div class="detail-row"><span class="label">Winning bid</span><span class="value" style="font-family:var(--font-mono)">${this.money(r._bid)}</span></div>
                 <div class="detail-row"><span class="label">Taxes owed at sale</span><span class="value" style="font-family:var(--font-mono)">${this.money(r.taxes_owed)}</span></div>
                 <div class="detail-row"><span class="label">Est. surplus</span><span class="value" style="font-family:var(--font-mono); color:${r.deed_rational ? "var(--green)" : "var(--text-secondary)"}; font-weight:600">${r.est_surplus == null ? "unknown — no bid or tax figure captured" : this.money(r._surplus)}</span></div>
-                <div class="detail-row"><span class="label">Bid ÷ assessed</span><span class="value">${r.bid_to_assessed == null ? "—" : (r.bid_to_assessed * 100).toFixed(0) + "%"} ${r.deed_rational
+                <div class="detail-row"><span class="label">Bid ÷ assessed</span><span class="value">${r.bid_to_assessed == null ? "—" : (r.bid_to_assessed * 100).toFixed(0) + "%"} ${r.bid_to_assessed == null ? "" : r.deed_rational
                     ? '<span class="chip chip-good">deed is profitable — case likely completes</span>'
                     : '<span class="chip">bid exceeds value — purchaser will probably walk, no surplus</span>'}</span></div>
                 ${r.sold_to ? `<div class="detail-row"><span class="label">Lien buyer</span><span class="value">${this.esc(r.sold_to)}</span></div>` : ""}
@@ -237,7 +238,9 @@ const SurplusApp = {
 
     nextStep(r) {
         if (r.stage === "CONVEYED") {
-            return "The property is gone — this is a <b>surplus</b> lead, not a buy lead. The former owner is owed the balance. "
+            return (r.historical ? "Found from the collector's deed in the land records, so we know the foreclosure completed but not who owned it "
+                + "before — SDAT only keeps the current owner. The county's surplus list (or the prior deed) gives you the name. " : "")
+                + "The property is gone — this is a <b>surplus</b> lead, not a buy lead. The former owner is owed the balance. "
                 + "Confirm the exact amount and whether it has been claimed by asking the county collector (see "
                 + "<code>docs/surplus-mpia-request.md</code>), then tell the former owner the money exists and point them at the county's "
                 + "free claim form. Do not offer to buy or take assignment of the claim without a Maryland lawyer signing off first.";
@@ -248,8 +251,10 @@ const SurplusApp = {
                 + "Move now — the window closes when the purchaser files.";
         }
         if (r.stage === "CERT_STALE") {
-            return "Past the 2-year deadline with title never moved, so that certificate is likely void — but the taxes are still owed and the "
-                + "property will come back around. Still an owner who has a problem and no obvious way out.";
+            return "<b>Verify before you call.</b> Over two years since the sale with the owner unchanged fits four different realities: the "
+                + "certificate went void under §14-833 and the owner still owns it free of that purchaser (your opening); the owner redeemed long "
+                + "ago; a complaint was filed in time and the case is still pending; or a deed was recorded and SDAT has not indexed it. "
+                + "The county tax account tells you which. Do not tell someone they still own their home until you have checked.";
         }
         return "Too early to act. No foreclosure may be filed until the statutory wait runs. Worth a look now if the owner already has other "
             + "distress signals on the Title Leads tab.";
