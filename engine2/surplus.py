@@ -235,7 +235,8 @@ def scan_collector_deeds(db, today):
     """
     cur = db.cursor()
     cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, transfer_date, sale_price, "
-            "deed_liber, deed_folio, grantor1, grantor2, transfer_date2, land_value, impr_value, year_built, occupancy")
+            "deed_liber, deed_folio, grantor1, grantor2, transfer_date2, land_value, impr_value, year_built, "
+            "occupancy, legal1, land_use")
     pats = COLLECTOR_GRANTOR + INVESTOR_GRANTOR
     q = (f"SELECT {cols} FROM parcels WHERE {_like('UPPER(grantor1)', pats)} "
          f"OR {_like('UPPER(grantor2)', COLLECTOR_GRANTOR)}")
@@ -280,8 +281,16 @@ def scan_collector_deeds(db, today):
             "deed": f"{row.get('deed_liber') or ''}/{row.get('deed_folio') or ''}".strip("/"),
             "conveyed_on": conveyed_on,
             "conveyed_year": int(year) if year.isdigit() else None,
-            "recorded_price": _f(row["sale_price"]) or None,
+            # Consideration recited on the collector's deed. On a Maryland tax deed
+            # this is normally the full purchase price -- the bid -- but it is NOT
+            # the surplus: that is this figure less taxes, interest, penalties and
+            # costs of sale, which only the collector's record shows.
+            "consideration": _f(row["sale_price"]) or None,
             "assessed_value": (_f(row["land_value"]) + _f(row["impr_value"])) or None,
+            "improvements": _f(row["impr_value"]) or 0,
+            "vacant_lot": _f(row["impr_value"]) == 0 and not str(row.get("year_built") or "").strip("0 "),
+            "legal": (row.get("legal1") or "").strip(),
+            "land_use": row.get("land_use"),
             "occupancy": row["occupancy"],
             "kind": "COUNTY_VESTED" if is_county else "TAX_DEED",
         })
@@ -402,32 +411,47 @@ def build(index_path, today=None):
         g = (g or "").upper()
         return any(_glob(g, p) for p in COLLECTOR_GRANTOR) and not any(t in g for t in NOT_A_COLLECTOR)
 
+    floor_dropped = 0
     for h in historical:
         if h["kind"] != "TAX_DEED" or h["account"] in known:
             continue
+        # A $900 deed on a paper lot carries no surplus worth a phone call. Keep
+        # real houses and real money; drop the sweeps of unbuildable lots.
+        if (h["assessed_value"] or 0) < config.MIN_ASSESSED_VALUE and (h["consideration"] or 0) < 10000:
+            floor_dropped += 1
+            continue
         ts = taxsale.get(h["account"]) or {}
         bid, face = _f(ts.get("bid")), _f(ts.get("face"))
+        bid = bid or h["consideration"] or 0
+        cy = h["conveyed_year"]
         leads.append({
             "account": h["account"], "county": h["county"], "stage": "CONVEYED",
             "stage_why": ("Tax-sale purchaser took the deed and has since sold the property on" if h["resold"]
                           else "Deed executed by the tax collector — the foreclosure completed and the residue was paid"),
-            "address": h["address"], "city": h["city"], "zip": h["zip"],
-            "lat": h["lat"], "lon": h["lon"], "year_built": h["year_built"],
+            "address": h["address"] or (h["legal"][:60] if h["legal"] else None), "city": h["city"], "zip": h["zip"],
+            "no_situs": not h["address"], "legal": h["legal"], "vacant_lot": h["vacant_lot"],
+            "lat": h["lat"], "lon": h["lon"], "year_built": h["year_built"] if not h["vacant_lot"] else None,
             "deed": h["deed"], "grantor": h["grantor"], "occupancy": h["occupancy"],
             "owner_of_record": h["owner_now"], "owner2": h["owner2"], "mail": "",
-            "owner_at_sale": ts.get("owner"), "tax_sale_year": ts.get("year") or h["conveyed_year"],
+            "owner_at_sale": ts.get("owner"), "tax_sale_year": ts.get("year") or cy,
             "tax_sale_status": ts.get("status") or "",
             "sold_to": ts.get("bidder") or (h["grantor"] if h["resold"] and not is_coll(h["grantor"]) else h["owner_now"]),
             "resold": h["resold"],
-            "taxes_owed": face or None, "winning_bid": bid or h["recorded_price"],
+            "taxes_owed": face or None,
+            "winning_bid": _f(ts.get("bid")) or None,            # only a real bid from a sale list
+            "consideration": h["consideration"],                  # what the collector's deed recites
             "est_surplus": round(bid - face, 2) if bid and face else None,
-            "assessed_value": h["assessed_value"], "bid_to_assessed": None,
-            "deed_rational": True, "days_since_sale": None, "repeat_sale": False,
+            "assessed_value": h["assessed_value"],
+            "consideration_to_assessed": (round(h["consideration"] / h["assessed_value"], 3)
+                                          if h["consideration"] and (h["assessed_value"] or 0) > 10000 else None),
+            "bid_to_assessed": None, "deed_rational": True, "days_since_sale": None, "repeat_sale": False,
+            "years_since_conveyance": (today.year - cy) if cy else None,
             "transfer_date": h["conveyed_on"], "historical": True,
             "source": "SDAT collector deed" + (f" · {h['conveyed_year']}" if h["conveyed_year"] else ""),
         })
 
-    log.info("skipped %d LISTED/unconfirmed rows (no sale outcome to track)", skipped_unconfirmed)
+    log.info("skipped %d LISTED/unconfirmed rows (no sale outcome to track); %d low-value collector deeds below the floor",
+             skipped_unconfirmed, floor_dropped)
     before = len(leads)
     leads = [r for r in leads if r["stage"] in OPPORTUNITY_STAGES]
     log.info("kept %d opportunities, dropped %d not-yet-actionable rows", len(leads), before - len(leads))

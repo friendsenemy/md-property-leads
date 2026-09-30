@@ -42,6 +42,7 @@ const SurplusApp = {
         r.id = "sf-" + r.account;
         r._surplus = Number(r.est_surplus || 0);
         r._bid = Number(r.winning_bid || 0);
+        r._consid = Number(r.consideration || 0);
         r._assessed = Number(r.assessed_value || 0);
         r._blob = [r.address, r.city, r.county, r.owner_of_record, r.owner_at_sale, r.sold_to, r.account]
             .filter(Boolean).join(" ").toLowerCase();
@@ -148,21 +149,25 @@ const SurplusApp = {
                 const st = this.statusOf(r), m = STAGE_META[r.stage] || { label: r.stage, cls: "" };
                 return `<tr data-id="${this.esc(r.id)}">
                     <td><span class="stage ${m.cls}" title="${this.esc(m.blurb || "")}">${this.esc(m.label)}</span>
-                        ${r.deed_rational ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
+                        ${r.deed_rational && r.stage !== "CONVEYED" ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
+                        ${r.vacant_lot ? '<span class="chip" title="No improvements on the parcel">vacant lot</span>' : ""}
                         ${r.repeat_sale ? '<span class="chip chip-hard" title="Sold at tax sale in more than one year">repeat</span>' : ""}
                         ${r.historical ? '<span class="chip" title="Found from the collector deed in SDAT, not from a tax-sale list — this one reaches back before our list coverage">historical</span>' : ""}
                         ${r.partial ? '<span class="chip" title="This year\'s list came from an Internet Archive capture of page 1 only — the county had more rows than we could recover">archive · partial</span>' : ""}
                         ${r.resold ? '<span class="chip" title="The tax-sale purchaser took the deed and has since sold the property to someone else. The surplus was owed to the owner BEFORE the collector deed — the current owner is a later buyer with no claim">resold since</span>' : ""}</td>
                     <td class="property-cell">
-                        <div class="address">${this.esc(r.address || "N/A")}${r.city ? `, ${this.esc(r.city)}` : ""}</div>
-                        <div class="meta" style="font-family:var(--font-mono)">${this.esc(r.account)}${r.year_built ? ` · built ${this.esc(r.year_built)}` : ""}</div>
+                        <div class="address"${r.no_situs ? ' style="color:var(--text-secondary); font-weight:400; font-size:0.8rem"' : ""}>${r.no_situs ? "no street address — " : ""}${this.esc(r.address || "N/A")}${r.city && !r.no_situs ? `, ${this.esc(r.city)}` : ""}</div>
+                        <div class="meta" style="font-family:var(--font-mono)">${this.esc(r.account)}${r.year_built && String(r.year_built).replace(/0/g, "") ? ` · built ${this.esc(r.year_built)}` : ""}${r.no_situs && r.city ? ` · ${this.esc(r.city)}` : ""}</div>
                     </td>
                     <td class="name-cell" style="font-family:var(--font-mono); font-size:0.8rem">${this.esc(r.owner_of_record || "—")}
                         ${r.owner_at_sale && r.owner_at_sale !== r.owner_of_record ? `<div style="color:var(--text-dim); font-size:0.7rem">at sale: ${this.esc(r.owner_at_sale)}</div>` : ""}
                         ${this.notesOf(r) ? '<span class="note-badge" title="Has notes">✎</span>' : ""}</td>
                     <td class="county-cell">${this.esc(r.county || "")}</td>
-                    <td class="date-cell">${this.esc(String(r.tax_sale_year || ""))} <span class="yrs">(${Math.round((r.days_since_sale || 0) / 30)}mo)</span></td>
-                    <td class="value-cell">${this.money(r._bid)}</td>
+                    <td class="date-cell">${this.esc(String(r.tax_sale_year || "—"))} <span class="yrs">${r.historical
+                        ? (r.years_since_conveyance != null ? `(deeded ${r.years_since_conveyance}y ago)` : "")
+                        : `(${Math.round((r.days_since_sale || 0) / 30)}mo)`}</span></td>
+                    <td class="value-cell">${r._bid ? this.money(r._bid) : (r._consid
+                        ? `<span title="No sale list covers this year, so this is the consideration recited on the collector's deed — on a tax deed normally the full purchase price">${this.money(r._consid)} <span class="yrs">deed</span></span>` : "—")}</td>
                     <td class="equity-cell" style="font-family:var(--font-mono); ${r.stage === "LIEN_STRANDED" ? "color:var(--yellow)" : (r._surplus > 0 && r.deed_rational ? "color:var(--green); font-weight:600" : "color:var(--text-secondary)")}">${
                         r.stage === "LIEN_STRANDED"
                             ? (r.bid_to_assessed != null ? (r.bid_to_assessed).toFixed(1) + "\u00d7 value" : (r.bid_to_face != null ? Math.round(r.bid_to_face) + "\u00d7 taxes" : "overbid"))
@@ -204,14 +209,27 @@ const SurplusApp = {
             <div class="detail-section">
                 <h3>Owner</h3>
                 <div class="detail-row"><span class="label">On record now</span><span class="value" style="font-family:var(--font-mono)">${this.esc(r.owner_of_record || "—")}${r.owner2 ? `<br>${this.esc(r.owner2)}` : ""}</span></div>
-                <div class="detail-row"><span class="label">Name at tax sale</span><span class="value" style="font-family:var(--font-mono)">${this.esc(r.owner_at_sale || "—")}</span></div>
+                <div class="detail-row"><span class="label">Name at tax sale</span><span class="value" style="font-family:var(--font-mono)">${r.owner_at_sale ? this.esc(r.owner_at_sale) : (r.historical ? '<span style="color:var(--text-dim); font-family:var(--font-sans); font-size:0.8rem">not in SDAT — on the deed, see above</span>' : "—")}</span></div>
+                ${r.legal ? `<div class="detail-row"><span class="label">Legal</span><span class="value" style="font-size:0.8rem">${this.esc(r.legal)}</span></div>` : ""}
                 ${r.mail ? `<div class="detail-row"><span class="label">Mailing address</span><span class="value">${this.esc(r.mail)}</span></div>` : ""}
             </div>
+            ${r.historical ? `<div class="detail-section">
+                <h3>Who Is Owed The Surplus</h3>
+                <p style="font-size:0.85rem; line-height:1.55">The balance was owed to whoever owned this parcel <b>before</b> the collector's deed.
+                SDAT keeps only the current owner, so that name is not in our data. It is on the deed itself: pull
+                <b style="font-family:var(--font-mono)">Liber / Folio ${this.esc(r.deed || "?")}</b> for ${this.esc(r.county || "")} County at
+                mdlandrec.net (free registration) — the former owner is named as the party whose interest was foreclosed. The county's
+                § 14-818(a)(6) notice list names them too, and says whether the balance was ever claimed.</p>
+            </div>` : ""}
             <div class="detail-section">
                 <h3>The Money</h3>
-                <div class="detail-row"><span class="label">Winning bid</span><span class="value" style="font-family:var(--font-mono)">${this.money(r._bid)}</span></div>
-                <div class="detail-row"><span class="label">Taxes owed at sale</span><span class="value" style="font-family:var(--font-mono)">${this.money(r.taxes_owed)}</span></div>
-                <div class="detail-row"><span class="label">Est. surplus</span><span class="value" style="font-family:var(--font-mono); color:${r.deed_rational ? "var(--green)" : "var(--text-secondary)"}; font-weight:600">${r.est_surplus == null ? "unknown — no bid or tax figure captured" : this.money(r._surplus)}</span></div>
+                ${r._bid ? `<div class="detail-row"><span class="label">Winning bid</span><span class="value" style="font-family:var(--font-mono)">${this.money(r._bid)}</span></div>`
+                    : r._consid ? `<div class="detail-row"><span class="label">Deed consideration</span><span class="value" style="font-family:var(--font-mono)">${this.money(r._consid)} <span style="color:var(--text-dim); font-family:var(--font-sans); font-size:0.78rem">— recited on the collector's deed; on a tax deed this is normally the full purchase price</span></span></div>`
+                    : ""}
+                ${r.consideration_to_assessed != null ? `<div class="detail-row"><span class="label">Consideration ÷ assessed</span><span class="value">${(r.consideration_to_assessed * 100).toFixed(0)}%</span></div>` : ""}
+                <div class="detail-row"><span class="label">Taxes owed at sale</span><span class="value" style="font-family:var(--font-mono)">${r.taxes_owed ? this.money(r.taxes_owed) : '<span style="color:var(--text-dim); font-family:var(--font-sans); font-size:0.8rem">not on any list we hold — only the collector\'s record has it</span>'}</span></div>
+                <div class="detail-row"><span class="label">Est. surplus</span><span class="value" style="font-family:var(--font-mono); color:${r.est_surplus != null ? "var(--green)" : "var(--text-secondary)"}; font-weight:600">${r.est_surplus != null ? this.money(r._surplus)
+                    : (r._consid ? `<span style="font-family:var(--font-sans); font-weight:400; font-size:0.82rem">≈ ${this.money(r._consid)} minus taxes, interest, penalties and costs of sale</span>` : "unknown")}</span></div>
                 <div class="detail-row"><span class="label">Bid ÷ assessed</span><span class="value">${r.bid_to_assessed == null ? "—" : (r.bid_to_assessed * 100).toFixed(0) + "%"} ${r.bid_to_assessed == null ? "" : r.deed_rational
                     ? '<span class="chip chip-good">deed is profitable — case likely completes</span>'
                     : '<span class="chip chip-hard">bid exceeds value — purchaser is stranded, owner keeps it</span>'}</span></div>
@@ -280,7 +298,7 @@ const SurplusApp = {
     exportCSV() {
         const rows = this.sorted(this.filtered());
         if (!rows.length) { alert("Nothing to export with the current filters."); return; }
-        const H = ["Stage", "Stage Meaning", "Deed Likely", "Bid/Taxes", "Account #", "Address", "City", "Zip", "County",
+        const H = ["Stage", "Stage Meaning", "Deed Likely", "Bid/Taxes", "Deed Consideration", "Years Since Deed", "Legal Description", "Account #", "Address", "City", "Zip", "County",
             "Owner on Record", "Owner 2", "Owner at Tax Sale", "Mailing Address", "Tax Sale Year", "Tax Sale Status",
             "Lien Buyer", "Winning Bid", "Taxes Owed", "Est. Surplus", "Assessed", "Bid/Assessed", "Days Since Sale",
             "Repeat Sale", "Deed on Record", "Last Transfer", "Grantor", "Year Built", "Occupancy", "Lat", "Lon", "Source", "Status", "Notes"];
@@ -288,7 +306,7 @@ const SurplusApp = {
         const lines = [H.join(",")];
         rows.forEach((r) => {
             const m = STAGE_META[r.stage] || {};
-            lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", r.bid_to_face, `="${r.account}"`,
+            lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", r.bid_to_face, r.consideration, r.years_since_conveyance, r.legal, `="${r.account}"`,
                 r.address, r.city, r.zip, r.county, r.owner_of_record, r.owner2, r.owner_at_sale, r.mail,
                 r.tax_sale_year, r.tax_sale_status, r.sold_to, r.winning_bid, r.taxes_owed, r.est_surplus,
                 r.assessed_value, r.bid_to_assessed, r.days_since_sale, r.repeat_sale ? "YES" : "no",
