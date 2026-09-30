@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MD Property Leads Field Guide</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a field manual — one column of reading width, four color-coded chapters that match the dashboard's tabs, examples set in "case file" boxes. */
+:root {
+  --paper: #f7f5ef;
+  --ink: #17202b;
+  --ink-2: #4b5563;
+  --rule: #d9d4c7;
+  --card: #ffffff;
+  --accent: #1f4e79;          /* ink navy: links, section markers */
+  --death: #b23a48;           /* Recent Death Leads */
+  --title: #2a6f97;           /* Title Leads */
+  --surplus: #b7791f;         /* Surplus (amber, same family as the dashboard) */
+  --buy: #2f855a;             /* Buy window / still owned */
+  --stranded: #6b46c1;        /* Lien stranded */
+  --county: #c05621;          /* Failed foreclosures */
+  --tint: rgba(23,32,43,0.04);
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #14181e; --ink: #ecebe4; --ink-2: #aab2bd; --rule: #2c333c; --card: #1b2129;
+  --accent: #8ab4dc; --death: #e07a86; --title: #6fb0d6; --surplus: #e2b04a; --buy: #6cc08b; --stranded: #b39ddb; --county: #f0925c;
+  --tint: rgba(255,255,255,0.05); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #14181e; --ink: #ecebe4; --ink-2: #aab2bd; --rule: #2c333c; --card: #1b2129;
+  --accent: #8ab4dc; --death: #e07a86; --title: #6fb0d6; --surplus: #e2b04a; --buy: #6cc08b; --stranded: #b39ddb; --county: #f0925c;
+  --tint: rgba(255,255,255,0.05); color-scheme: dark }
+
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; margin: 0; }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 80px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; line-height: 1.1; margin: 0; }
+h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; margin-top: 8px; }
+h3 { font-size: 1.15rem; font-weight: 700; }
+p { margin: 0; max-width: 68ch; }
+.lede { font-size: 1.25rem; color: var(--ink-2); margin-top: 14px; max-width: 60ch; }
+.eyebrow { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); }
+.stack { display: grid; gap: 14px; }
+.section { margin-top: 56px; padding-top: 28px; border-top: 2px solid var(--rule); }
+.chapter { --c: var(--accent); }
+.chapter .eyebrow { color: var(--c); }
+.chapter h2 { color: var(--c); }
+.tab-pill { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 0.78rem; padding: 4px 10px; border-radius: 999px; border: 1.5px solid var(--c); color: var(--c); margin-top: 10px; }
+.tab-pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 18px; }
+.box { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; min-width: 0; }
+.box h3 { margin-bottom: 8px; }
+.box.case { border-left: 5px solid var(--c); }
+.case .who { font-family: var(--mono); font-size: 0.82rem; color: var(--ink-2); }
+.num { font-family: var(--display); font-weight: 800; font-size: 1.6rem; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.say { background: var(--tint); border-radius: 8px; padding: 14px 16px; font-style: italic; margin-top: 14px; }
+.say b { font-style: normal; font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 6px; color: var(--c); }
+ol, ul { margin: 10px 0 0; padding-left: 22px; }
+li { margin: 6px 0; }
+li::marker { color: var(--c, var(--accent)); font-weight: 700; }
+.steps { counter-reset: s; list-style: none; padding: 0; display: grid; gap: 10px; margin-top: 14px; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 38px 1fr; gap: 12px; align-items: start; }
+.steps li::before { content: counter(s); font-family: var(--display); font-weight: 800; font-size: 1.3rem; color: var(--accent); background: var(--tint); border-radius: 8px; width: 38px; height: 38px; display: grid; place-items: center; }
+.stage { display: inline-block; font-family: var(--mono); font-size: 0.74rem; padding: 2px 9px; border-radius: 999px; border: 1.5px solid currentColor; }
+.warn { border: 1.5px solid var(--death); border-radius: 10px; padding: 16px 20px; background: var(--card); }
+.warn h3 { color: var(--death); }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.scroll { overflow-x: auto; }
+.mermaid { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 14px; margin-top: 18px; overflow-x: auto; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 18px; margin: 14px 0 0; }
+dt { font-family: var(--mono); font-size: 0.85rem; font-weight: 500; }
+dd { margin: 0; color: var(--ink-2); }
+@media (max-width: 520px) { dl { grid-template-columns: 1fr; gap: 2px 0; } dd { margin-bottom: 8px; } body { font-size: 16px; } }
+a { color: var(--accent); }
+.money { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.foot { margin-top: 60px; color: var(--ink-2); font-size: 0.9rem; border-top: 1px solid var(--rule); padding-top: 16px; }
+
+/* standalone page: give the guide its own ground and a way back */
+html, body { margin: 0; }
+.topbar { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.topbar .in { max-width: 860px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-family: var(--mono); font-size: 0.78rem; }
+.topbar a { color: var(--accent); text-decoration: none; }
+.topbar a:hover { text-decoration: underline; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 16px; font-family: var(--mono); font-size: 0.78rem; }
+.toc a { color: var(--accent); text-decoration: none; padding: 4px 10px; border: 1px solid var(--rule); border-radius: 999px; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+</head>
+<body>
+<div class="topbar"><div class="in"><a href="index.html">← Back to the dashboard</a><span>Pages of Purpose LLC · internal</span></div></div>
+
+
+<div class="wrap">
+
+<div class="eyebrow">Pages of Purpose LLC · how the lead tool works</div>
+<h1>MD Property Leads Field Guide</h1>
+<p class="lede">The tool finds Maryland property owners who have a problem they can't easily fix on their own, and it finds them before anyone else does. This guide explains each part in plain English, with a real case for each, and what to say when you pick up the phone.</p>
+<nav class="toc">
+  <a href="#start">Start here</a><a href="#death">Recent Death Leads</a><a href="#title">Title Leads</a><a href="#surplus">Surplus Funds</a><a href="#vested">Failed Foreclosures</a><a href="#routine">Daily routine</a><a href="#rules">The rules</a><a href="#glossary">Glossary</a>
+</nav>
+
+<div class="section" id="start">
+  <div class="eyebrow">Start here</div>
+  <h2>The one idea behind everything</h2>
+  <p style="margin-top:12px">Most people who sell a house for cash aren't in a hurry because they want to be. Something happened. Someone died and the house is stuck in their name. Taxes went unpaid and the county sold the debt to an investor. A court case ended and money is sitting unclaimed. Every tab on the dashboard finds one of those situations from <b>public records</b>, so we can reach the owner (or the heirs) with a real solution while every other investor is still buying the same tired mailing lists.</p>
+
+  <pre class="mermaid">
+flowchart LR
+  A["Public records\n(obituaries, state property data,\ntax-sale results, land records)"] --> B["The tool reads them\nevery day / every week"]
+  B --> C1["Recent Death Leads"]
+  B --> C2["Title Leads"]
+  B --> C3["Surplus Funds Leads"]
+  B --> C4["Failed Foreclosures"]
+  C1 --> D["You call, mail, or knock\nwith a specific offer"]
+  C2 --> D
+  C3 --> D
+  C4 --> D
+  D --> E["Deal closed"]
+  style A fill:#e8eef5,stroke:#1f4e79,color:#17202b
+  style E fill:#dff3e6,stroke:#2f855a,color:#17202b
+  </pre>
+
+  <div class="grid2">
+    <div class="box"><h3>Where the data comes from</h3>
+      <ul>
+        <li><b>Obituaries</b> posted in Maryland, scraped every morning.</li>
+        <li><b>SDAT</b> — the state's property database. Every parcel in Maryland (2.4 million), who owns it, what it's worth, when it last changed hands. Rebuilt every Monday.</li>
+        <li><b>County tax-sale results</b> — the list of properties whose unpaid taxes were sold to investors, with the bid amounts. Pulled monthly, and back through 2021 for the counties that keep old lists up.</li>
+        <li><b>Register of Wills</b> estate records, entered by hand when we look one up.</li>
+      </ul>
+    </div>
+    <div class="box"><h3>What "free" means here</h3>
+      <p>Every source is a public record. Nothing is bought, nothing is scraped from a site that forbids it. That matters when you're talking to a homeowner: we found them the same way a diligent title clerk would, not by buying their name.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TAB 1 -->
+<div class="section chapter" id="death" style="--c: var(--death)">
+  <div class="eyebrow">Tab 1</div>
+  <h2>Recent Death Leads</h2>
+  <div class="tab-pill">Recent Death Leads</div>
+  <div class="grid2">
+    <div class="box">
+      <h3>What it finds</h3>
+      <p>Someone in Maryland died this week, and they owned real estate. The tool matches the obituary to the state property database and shows you the house, what it's worth, and the owner's name on title.</p>
+      <h3 style="margin-top:16px">Why they'll sell</h3>
+      <p>The family now owns a house none of them lives in. It needs cleaning out, it has a mortgage or taxes due, and often three siblings in three states have to agree. A cash offer with a flexible closing date solves all of that at once.</p>
+    </div>
+    <div class="box case">
+      <div class="who">A typical case</div>
+      <h3>Widow dies in Waldorf, house in her name only</h3>
+      <p>The obituary names two adult children in Virginia and Florida. The house is owner-occupied, no transfer in 30 years, assessed at <span class="money">$310,000</span>. Neither child wants to move back. The lead shows up the morning the obituary posts.</p>
+      <div class="say"><b>What to say</b>"I'm sorry for your loss. I buy houses in Charles County, and I know settling a parent's home from out of state is a lot. If it would help, I can make an offer that lets you close whenever you're ready and leave anything behind you don't want to deal with."</div>
+    </div>
+  </div>
+  <p style="margin-top:14px"><b>Timing rule:</b> wait a respectful interval, and lead with help, not price. The families who call back are the ones who felt you weren't rushing them.</p>
+</div>
+
+<!-- ============================================================ TAB 2 -->
+<div class="section chapter" id="title" style="--c: var(--title)">
+  <div class="eyebrow">Tab 2</div>
+  <h2>Title Leads</h2>
+  <div class="tab-pill">Title Leads · statewide</div>
+  <div class="grid2">
+    <div class="box">
+      <h3>What it finds</h3>
+      <p>Properties where the name on title belongs to someone who is <b>already dead</b>, sometimes for decades. Estates that never finished. "Heirs of" on the deed. A dead co-owner. The tool checks every parcel in Maryland against death records and estate files and gives each one a class and a priority score.</p>
+      <h3 style="margin-top:16px">Why they'll sell</h3>
+      <p>Nobody can sell, refinance, or insure a house titled to a dead person without fixing the title first. The heirs are often stuck and don't know where to start. Meanwhile taxes pile up. We can buy the property and handle the estate work as part of the deal.</p>
+      <h3 style="margin-top:16px">Reading the class</h3>
+      <dl>
+        <dt>D6</dt><dd>Owner died, then an heir died. Title never moved through either estate. The best kind.</dd>
+        <dt>D3</dt><dd>Estate is closed but the house is still in the dead person's name. Someone forgot the deed.</dd>
+        <dt>D1 / D5</dt><dd>Owner (or every owner) appears deceased in state death records.</dd>
+        <dt>E1 / E2</dt><dd>"Estate of" or "Heirs of" written right on the deed.</dd>
+      </dl>
+    </div>
+    <div class="box case">
+      <div class="who">A real case · Charles County · class D6 · priority 91</div>
+      <h3>Three parcels, 128 acres, titled to a man who died in 1997</h3>
+      <p>Thomas Curry died in 1997 without a will. His estate opened and closed, but the land was never deeded out. His son Maynard, a co-owner on one parcel, died in 2008. In May 2026 the county sold the tax liens on all three parcels to three different investors. Total owed: <span class="money">$7,912</span>. Assessed value: <span class="money">$835,000</span>.</p>
+      <p style="margin-top:10px">The dashboard shows both estates, the personal representative's name and address, the attorney who handled it, and a countdown until the investors can foreclose.</p>
+      <div class="say"><b>What to say</b>"I'm reaching out about the family land on Thomas Curry's name. The tax liens on it were sold this spring, and after six months the buyers can start taking it. I'd like to make an offer that pays those off and puts real money in the family's hands before that happens."</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ TAB 3 -->
+<div class="section chapter" id="surplus" style="--c: var(--surplus)">
+  <div class="eyebrow">Tab 3</div>
+  <h2>Surplus Funds Leads</h2>
+  <div class="tab-pill">Surplus Funds Leads · tax-sale outcomes</div>
+  <p style="margin-top:14px">This tab is really <b>three</b> different plays that all start the same way: the county sold a property's unpaid taxes to an investor. What happens next decides which play it is. Each row is marked with its stage.</p>
+
+  <div class="scroll" style="margin-top:14px">
+  <table>
+    <tr><th>Stage on the tab</th><th>What it means</th><th>The play</th></tr>
+    <tr><td><span class="stage" style="color:var(--buy)">Buy Window</span></td><td>Lien sold 6 to 24 months ago. Owner still holds title. Investor may file to foreclose any day.</td><td><b>Buy the house.</b> Owner loses everything if they wait. A sale pays the lien and leaves them with money instead of nothing.</td></tr>
+    <tr><td><span class="stage" style="color:var(--stranded)">Lien Stranded</span></td><td>Investor bid far more than the house is worth. To take the deed they'd have to pay that. They never will.</td><td><b>Buy the house.</b> Owner keeps it by default and nobody else is calling them. Paying off the lien is cheap.</td></tr>
+    <tr><td><span class="stage" style="color:var(--surplus)">Deed Conveyed</span></td><td>Investor took the deed. They paid the full bid, which was far more than the taxes. The difference belongs to the <b>former</b> owner.</td><td><b>Tell them the money exists.</b> The house is gone. The former owner is owed a balance, often tens of thousands, and usually doesn't know it.</td></tr>
+    <tr><td><span class="stage" style="color:var(--death)">repeat ×2</span> <span style="font-size:0.85rem; color:var(--ink-2)">(a tag, not a stage)</span></td><td>Sold at tax sale in more than one year. The owner didn't pay <b>and</b> nobody foreclosed, twice over.</td><td><b>Move these to the top.</b> It's a chronic problem with no one solving it. Use the "Repeats only" checkbox to see just these, on any stage.</td></tr>
+    <tr><td><span class="stage" style="color:var(--county)">Needs Verifying</span></td><td>Over two years since the sale, owner unchanged. Could be a dead lien (good), a redemption, or a case still pending.</td><td>Check the county tax account first, then treat as Buy Window.</td></tr>
+  </table>
+  </div>
+
+  <div class="grid2">
+    <div class="box case" style="--c: var(--buy)">
+      <div class="who">A real case · Anne Arundel · Buy Window</div>
+      <h3>Sold at tax sale two years in a row, nobody took it</h3>
+      <p>A house assessed at <span class="money">$335,000</span> with about <span class="money">$2,000</span> in unpaid taxes was sold at the county tax sale in 2023, and again in 2024. Two different investors bid over <span class="money">$225,000</span> each time. Neither foreclosed. The owner still holds title and is still behind.</p>
+      <p style="margin-top:10px">That's a person with a recurring problem and a house worth real money. Every other investor's list says "sold at tax sale" and moves on.</p>
+      <div class="say"><b>What to say</b>"Your property's been on the county's tax sale list two years running. I can buy it, pay the county off at closing, and you walk away with the equity instead of watching it go to an investor for the taxes."</div>
+    </div>
+    <div class="box case" style="--c: var(--stranded)">
+      <div class="who">A real case · Prince George's · Lien Stranded + repeat</div>
+      <h3>An investor bid $290K on a $104K house. Twice, nobody took it.</h3>
+      <p>3801 Silver Park Dr, Suitland. Assessed at <span class="money">$104,000</span>. At the 2026 sale an investor bid <span class="money">$290,154</span>, nearly three times what it's worth. To take the deed they'd have to hand the county that $290K. They won't. The property is also tagged <b>repeat</b>: it was on the tax-sale list the year before too.</p>
+      <p style="margin-top:10px">So the owners keep the house by default, the lien buyer is stuck, the owners have shown twice they can't get out on their own, and no other investor's list will ever surface it. That's the best combination on the tab.</p>
+      <div class="say"><b>What to say</b>"Your house has been sold at the county tax sale two years running. The people who bought the lien can't realistically take it, but the debt doesn't go away either. I can buy it, clear the county at closing, and you'd walk away with real money instead of this coming back every spring."</div>
+    </div>
+    <div class="box case" style="--c: var(--surplus)">
+      <div class="who">A real case · Anne Arundel · Deed Conveyed (if it goes through)</div>
+      <h3>A $1.26M house sold for $707K, over $8K in taxes</h3>
+      <p>At the June 2026 sale, an investor bid <span class="money">$706,722</span> on a Riva property assessed at <span class="money">$1,258,633</span>. Taxes owed: <span class="money">$8,002</span>. If the investor forecloses and takes the deed, they pay the full bid to the county, and the county owes the former owner the difference: about <span class="money">$698,000</span>.</p>
+      <p style="margin-top:10px">Maryland law now requires the county to notify the former owner within 90 days and to have a simple claim process. Many never claim.</p>
+      <div class="say"><b>What to say</b>"I'm not calling about buying anything. When your property went through tax sale, the buyer paid a lot more than the taxes. Under Maryland law that difference is yours to claim from the county, and I can point you to the form."</div>
+    </div>
+  </div>
+
+  <div class="warn" style="margin-top:16px">
+    <h3>Surplus: the one rule that keeps us out of trouble</h3>
+    <p style="margin-top:8px">We <b>tell</b> people the money exists and where the free claim form is. We do <b>not</b> buy their claim, take an assignment of it, or charge a finder's fee. Maryland regulates that as a "foreclosure surplus acquisition" with contract rules and rescission rights, and a separate law voids finder's-fee agreements on money that's already gone to the state. Until a Maryland lawyer signs off, the surplus play is goodwill and relationship, and the same phone call is very often a buy conversation about something else they own.</p>
+  </div>
+</div>
+
+<!-- ============================================================ TAB 4 -->
+<div class="section chapter" id="vested" style="--c: var(--county)">
+  <div class="eyebrow">Tab 4</div>
+  <h2>Failed Foreclosures</h2>
+  <div class="tab-pill">Failed Foreclosures · §14-847</div>
+  <div class="grid2">
+    <div class="box">
+      <h3>What it finds</h3>
+      <p>Properties where a tax-sale investor won a court judgment and then <b>didn't pay for it</b>. When that happens, the court can hand the property to the county outright. The tool finds parcels the tax collector deeded to a county or town.</p>
+      <h3 style="margin-top:16px">Why it's a deal</h3>
+      <p>This isn't a homeowner lead. Nobody's losing a house; the county already owns it. It's an <b>acquisition</b> lead: counties don't want to hold houses. They sell them off by sealed bid, public sale, or direct negotiation, and a parcel that's been sitting on the county's books for a few years is one they'd like gone.</p>
+    </div>
+    <div class="box case">
+      <div class="who">A real case · Cecil County · vested 2022</div>
+      <h3>Two lots on E High St, Elkton, now owned by the town</h3>
+      <p>213A and 213B E High Street. The tax collector deeded both to the Town of Elkton in 2022 after the foreclosure fell through. Assessed at <span class="money">$25,200</span> each. They've sat on the town's books since.</p>
+      <div class="say"><b>What to say (to the town)</b>"I'm a local buyer. I see the town took title to two lots on East High in 2022. How does the town dispose of tax-sale property it's holding, and are those two available?"</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ HOW TO WORK IT -->
+<div class="section" id="routine">
+  <div class="eyebrow">Daily routine</div>
+  <h2>How to actually work the dashboard</h2>
+  <ol class="steps">
+    <li><div><b>Open the tab you're working.</b> Each one loads on its own. The three numbers at the top tell you what's new.</div></li>
+    <li><div><b>Sort by what matters.</b> Title Leads: priority score. Surplus: estimated surplus or the overbid multiple. Click any column header. On the Surplus tab, tick <b>"Repeats only"</b> first: those are the owners who've failed to pay two years running.</div></li>
+    <li><div><b>Click a row.</b> The details window shows everything we know: the property, the owner, the money, the dates, the estate files, an aerial photo, and a "Next Step" written for that specific stage.</div></li>
+    <li><div><b>Verify before you call.</b> Every lead is built from records that can lag. For tax-sale leads, check the county's tax account page to confirm the lien is still open. For death leads, confirm the obituary matches the owner. Ten minutes of checking beats an awkward call.</div></li>
+    <li><div><b>Mark it.</b> Set the status to Contacted or Closed and leave a note. Statuses are saved in your own browser, so each of us keeps our own list. Export CSV pulls the whole filtered view into a spreadsheet for mailing.</div></li>
+    <li><div><b>Come back Tuesday.</b> The property scan reruns every Monday morning. Obituaries update daily. Tax-sale lists refresh on the 2nd of the month. One thing to expect: the <b>Buy Window</b> only holds sales that are at least six months old, so this year's May and June sales move in during <b>November and December</b>, county by county, on their own.</div></li>
+  </ol>
+</div>
+
+<!-- ============================================================ RULES -->
+<div class="section" id="rules">
+  <div class="eyebrow">Know these cold</div>
+  <h2>Six Maryland rules that decide the deal</h2>
+  <div class="grid2">
+    <div class="box"><h3>1. A tax sale sells the <em>debt</em>, not the house.</h3><p>The investor buys the lien. The owner still owns the property and can pay it off ("redeem") at any time until a court ends that right.</p></div>
+    <div class="box"><h3>2. Six months before anyone can foreclose.</h3><p>The investor can't even file until six months after the sale. That window is when the owner can still sell to us cleanly.</p></div>
+    <div class="box"><h3>3. Two years or it dies.</h3><p>If the investor never files within two years of the sale, their certificate is void and the money they paid goes toward the property's taxes. The owner keeps the house.</p></div>
+    <div class="box"><h3>4. Redeeming is cheap before a lawsuit, expensive after.</h3><p>Before the investor files, their attorney fee is capped at $500. After, it jumps to $1,300–$1,500 plus costs. Move early.</p></div>
+    <div class="box"><h3>5. Surplus belongs to the former owner.</h3><p>When an investor takes the deed, the bid minus the taxes is owed to whoever lost the property. The county must notify them within 90 days and can't require a court order to pay it.</p></div>
+    <div class="box"><h3>6. Once there's a judgment, the owner has nothing to sell.</h3><p>A final judgment ends the right of redemption. You can't buy from someone who no longer owns it. The opportunity lives before judgment, not after.</p></div>
+  </div>
+</div>
+
+<!-- ============================================================ GLOSSARY -->
+<div class="section" id="glossary">
+  <div class="eyebrow">Words you'll see</div>
+  <h2>Glossary</h2>
+  <dl>
+    <dt>SDAT</dt><dd>Maryland's Department of Assessments and Taxation. The state property database.</dd>
+    <dt>Account number</dt><dd>The state's ID for a parcel. County code, then district, then account. Paste it into SDAT's site to see the record.</dd>
+    <dt>Lien / certificate</dt><dd>What the investor buys at a tax sale: the right to be repaid with interest, and to foreclose if they aren't.</dd>
+    <dt>Redeem</dt><dd>The owner pays off the lien plus interest and costs. Ends the investor's claim.</dd>
+    <dt>Foreclose the right of redemption</dt><dd>The court case the investor files to end the owner's right to pay it off and take the deed.</dd>
+    <dt>Struck</dt><dd>Nobody bid at the sale, so the county holds the lien itself.</dd>
+    <dt>Assessed value</dt><dd>The state's estimate of what the property is worth for tax purposes. Usually a bit under market.</dd>
+    <dt>Personal representative</dt><dd>The person the court put in charge of a dead person's estate. Often the one to call.</dd>
+    <dt>Register of Wills</dt><dd>The county office that holds estate files. Public, searchable by name.</dd>
+    <dt>Liber / Folio</dt><dd>Book and page number of a deed in the county land records. Look it up at mdlandrec.net to read the deed itself.</dd>
+    <dt>Repeat</dt><dd>The same parcel on the tax-sale list in more than one year. The owner didn't pay and nobody foreclosed, each time.</dd>
+    <dt>Surplus</dt><dd>What's left over after a tax-sale deed: the full bid minus the taxes, interest, and costs. Owed to the former owner.</dd>
+  </dl>
+</div>
+
+<div class="foot">Every example above is a real record from the dashboard or from a county's own published tax-sale list, except the Waldorf death lead, which is a composite. Owner names on the tax-sale cases are public record; use them with the same care you'd want used with yours. Statutes referenced: Md. Tax-Property §§ 14-818, 14-833, 14-843, 14-845, 14-847; Real Property § 7-301 et seq.; Commercial Law § 17-325.</div>
+
+</div>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "neutral", securityLevel: "loose" });
+</script>
+</body>
+</html>

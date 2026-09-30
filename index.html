@@ -92,6 +92,9 @@
             <a class="btn btn-primary" id="scrapeBtn" href="https://github.com/friendsenemy/md-property-leads/actions/workflows/daily-scrape.yml" target="_blank" rel="noopener">
                 <span class="icon">⚡</span> Run Scrape Now
             </a>
+            <a class="btn" href="guide.html" target="_blank" rel="noopener" title="How the tool works, what each tab means, and what to say — with real examples" style="margin-left:6px">
+                <span class="icon">📖</span> How to Use
+            </a>
         </div>
     </header>
 
@@ -100,6 +103,7 @@
         <button class="view-tab" data-view="title">Title Leads <span class="view-tab-sub">statewide · property-first</span></button>
         <button class="view-tab" data-view="surplus">Surplus Funds Leads <span class="view-tab-sub">tax-sale outcomes</span></button>
         <button class="view-tab" data-view="vested">Failed Foreclosures <span class="view-tab-sub">§14-847 · county took title</span></button>
+        <a class="view-tab" id="tabGuideLink" href="guide.html#start" target="_blank" rel="noopener" style="margin-left:auto; text-decoration:none; color:var(--text-dim)" title="Open the field guide for this tab">? what does this tab mean</a>
     </div>
 
 <div id="view-obits">
@@ -419,6 +423,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (el) el.style.display = name === v ? "" : "none";
         });
         if (LAZY[v] && !started[v]) { started[v] = true; LAZY[v](); }
+        const g = document.getElementById("tabGuideLink");
+        if (g) g.href = "guide.html#" + ({ obits: "death", title: "title", surplus: "surplus", vested: "vested" }[v] || "start");
         try { localStorage.setItem("md_view", v); } catch {}
     }));
     let saved = null; try { saved = localStorage.getItem("md_view"); } catch {}
