@@ -156,3 +156,67 @@ data and owner names for the whole county into a SQLite index on a
 schedule; (2) stand up the dashboard with one real tab; (3) add the
 tax-sale list feed and the List of Heirs feed; (4) only then score and
 classify; (5) write the field guide last, from real cases.
+
+## King George County: what was verified on 2026-10-01 (start here)
+
+**Parcel database (the SDAT equivalent) — free, bulk, no terms problem.**
+King George publishes its full CAMA assessment table as ArcGIS open data:
+
+    https://services2.arcgis.com/S8zMJrpz61FbvL5t/arcgis/rest/services/Parcels/FeatureServer/0/query
+    (hub: https://data-king-george.opendata.arcgis.com/ — "Parcels", updated daily; also "Addresses", "TaxIndex")
+
+15,056 parcels, 2,000 per page, 8 requests for the whole county. Useful
+fields: PIN (the parcel id, e.g. "33       130E" — keep the internal
+spaces, there is also PINNOSPACE), LNAM/FNAM (owner), ADD1/CITY/STATE/ZIP5
+(mailing), PHYSICALAD, TOTLD/IMPRV/TOTPR (land/improvements/total value),
+YRBLT, OCCUP, COND, ACRE, DESC1, DBOOK/DPAGE (deed), WBOOK/WPAGE (will
+book — title passed by will), GRNTR, SELLP/YRSLD. CVYR is the assessment
+year, not a conveyance year — do not use it as transfer date.
+
+Deed recency proxy: DBOOK is mixed-format. Values under ~1000 are old
+book numbers (decades old). Nine-digit values are instrument numbers
+YYNNNNNNN, so 250001786 is a 2025 deed — the year is the first two digits.
+
+First-pass counts on the live data:
+- 126 parcels whose owner text says ESTATE / HEIRS / LIFE ESTATE / DECEASED
+  (e.g. "ROBERT MILTON CURRY JR ESTATE", "NORRIS C W ESTATE" on deed book 30)
+- 175 more with ET AL and no estate word (co-heirs)
+- 97 with a will-book reference on the parcel (inherited title)
+- ~3,000 with a deed book number under 300 (very old title)
+- 3,242 whose owner mails outside the county (absentee)
+- 797 trustee-held (living trusts — mostly NOT estates; score separately)
+
+**Delinquency (per parcel, the piece the open data lacks).**
+Treasurer e-services, ASP.NET webforms behind a click-through legal
+statement that is a liability/SSN disclaimer with NO prohibition on
+automated or commercial use (read it; it is quoted nowhere else):
+
+    https://eservices.kinggeorgecountyva.gov/applications/REPublicInquiry/webform1.aspx   (inquiry — use this)
+    https://eservices.kinggeorgecountyva.gov/applications/PayREtax/webform1.aspx           (payment — avoid)
+
+Flow: GET webform1 -> POST __VIEWSTATE etc. + ctl00$MainContent$btnAccept
+-> it redirects to a second disclaimer (/applications/TRdisclaimer/) ->
+accept again -> the inquiry form. Keep one session. Walk the 15,056 PINs
+at a polite rate (one request per 1-2 s, one pass per month, overnight) —
+small county, small server. Store balance due, years delinquent, and the
+owner name the Treasurer has (it can differ from the GIS owner, which is
+itself a signal).
+
+**Entities.** For LLC/INC owners, the Virginia SCC Clerk's Information
+System (cis.scc.virginia.gov) shows status (active / cancelled /
+terminated) and the registered agent and officers. Check its terms before
+automating; a cancelled entity still on title is a stuck-title lead in its
+own right, and the officer names feed the death match.
+
+**Death match.** No free statewide death file for recent years. Use
+obituaries (same scraper, point it at King George / Fredericksburg /
+Dahlgren / Colonial Beach papers and funeral homes) matched against the
+GIS owner names; and the will-book / ESTATE / HEIRS fields above, which
+are the county telling you directly.
+
+**Build order for King George:** (1) nightly pull of the Parcels layer into
+SQLite; (2) dashboard with a Title tab from the owner-text / will-book /
+old-deed-book signals — that alone is ~400 leads on day one; (3) monthly
+delinquency walk via REPublicInquiry, joined by PIN; (4) obituary matching;
+(5) SCC entity status; (6) tax-sale notices (judicial sale lists from the
+Treasurer / the county's auction counsel) for the pre-auction buy window.
