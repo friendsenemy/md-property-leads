@@ -262,3 +262,46 @@ Per-type scoring: estate/heirs and et-al get the top title weight on sight;
 LLC/HOA/church get it only when SCC says the entity is gone or the taxes
 are delinquent; trusts and individuals get it only on a death match or a
 delinquency. That keeps 11,000 ordinary homeowners off the board.
+
+## Paid land records (Ray has King George SRA access): manual, not automated
+
+Virginia circuit court clerks' Secure Remote Access is a per-person
+subscription whose agreement bars bulk and automated access. Do NOT build
+it into a scheduled job. Use it two ways:
+
+1. **Per-lead, by hand, on the top of the board.** Pull the current deed
+   (all grantors/grantees), any List of Heirs, and open deeds of trust.
+   The tool shows the DBOOK/DPAGE and WBOOK/WPAGE to type in.
+2. **One monthly index query, pasted in.** Search the instrument index for
+   type **"List of Heirs"** (Va. Code 64.2-509) and **"Affidavit"** /
+   heirship filings, for the trailing 12 months. Ray exports or pastes the
+   result; the tool parses decedent, date of death, heirs, and joins to
+   parcels by owner name. Same manual-lookup / automated-parse pattern as
+   `engine2/probate_import.py`. This is the strongest dead-owner feed in
+   Virginia and it names the people to call.
+
+## Other feeds worth building for King George, in rough priority
+
+- **Published delinquent list.** Virginia treasurers must publish the list
+  of delinquent real estate annually (Va. Code 58.1-3924); King George
+  posts or advertises it. One document, every delinquent parcel with
+  amounts, free, no per-parcel walking. Find it before building the
+  15,000-PIN inquiry walk; the walk then becomes the *monthly refresh*
+  between annual lists.
+- **Judicial sale notices.** The Treasurer's counsel (often TACS or a local
+  firm) publishes the parcels being sued and the auction dates. That list
+  is the Virginia "buy window" — pre-auction, no redemption after.
+- **The "OR" co-owner split.** Thousands of KG parcels are titled "A OR B"
+  (survivorship). Match each name to obituaries separately. One dead =
+  survivor likely wants out; both dead = top lead.
+- **Code enforcement / condemnation / unsafe-structure orders** from the
+  county's Community Development department — hard distress, usually a
+  public list or FOIA-able.
+- **Virginia unclaimed property** (Treasury) for escheated tax-sale
+  surplus and for dead owners' other assets (an heir who learns there is
+  money waiting is a warm call).
+- **KG "Addresses" and "TaxIndex" open-data layers** — join for physical
+  address quality and any tax-map metadata the Parcels layer lacks.
+- **Virginia FOIA** (Va. Code 2.2-3700) is the equivalent of Maryland's
+  MPIA for the treasurer's surplus-distribution records after judicial
+  sales (58.1-3967): who was owed, how much, whether paid.
