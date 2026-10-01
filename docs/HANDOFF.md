@@ -305,3 +305,28 @@ it into a scheduled job. Use it two ways:
 - **Virginia FOIA** (Va. Code 2.2-3700) is the equivalent of Maryland's
   MPIA for the treasurer's surplus-distribution records after judicial
   sales (58.1-3967): who was owed, how much, whether paid.
+
+## Death sources for Virginia (there is no free bulk file — plan around that)
+
+Virginia death records become public 25 years after the event (VDH), so
+vital records cover 1912 to roughly 2001 today, searchable name-by-name
+through the VDH -> Ancestry open-records link (free for the open portion),
+FamilySearch (free account; certificate images to ~1987), and Library of
+Virginia indexes. All three forbid bulk/automated use. There is no
+Reclaim-The-Records-style public-domain Virginia death index equivalent to
+Maryland's SE-151. The 2001-2014 gap is covered one name at a time by the
+Social Security Death Index on FamilySearch; 2014-present only by
+obituaries and court records.
+
+Ranked for this tool:
+1. **List of Heirs / fiduciary qualification index** (circuit court clerk,
+   Ray's SRA, one manual index query per month, parsed by the tool). Ties
+   the death to the land and names the heirs. Build this feed first.
+2. **Obituaries**, daily: Free Lance-Star (Fredericksburg), Storke Funeral
+   Home (King George), Nash & Slaw, legacy.com by county. Match against
+   GIS owner names; split "A OR B" titles and match each.
+3. **Profile without a record**: owner on title 30+ years (low deed book)
+   + bills mailed to an address other than the property + delinquency
+   creeping. That is the dead-owner profile before any filing exists.
+4. Per-lead confirmation only: VDH/Ancestry index, FamilySearch, SSDI,
+   Find a Grave. Never scheduled, never bulk.
