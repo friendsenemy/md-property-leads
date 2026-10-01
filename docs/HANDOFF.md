@@ -220,3 +220,45 @@ old-deed-book signals — that alone is ~400 leads on day one; (3) monthly
 delinquency walk via REPublicInquiry, joined by PIN; (4) obituary matching;
 (5) SCC entity status; (6) tax-sale notices (judicial sale lists from the
 Treasurer / the county's auction counsel) for the pre-auction buy window.
+
+## Owner-entity taxonomy: every kind of owner, and what makes each one a lead
+
+Classify every parcel's owner into exactly one type, in this priority
+order (a name can match several patterns; the first wins). Counts are
+King George, 2026-10-01, from a rough first pass — expect them to move
+once the classifier is tightened.
+
+| Order | Type | KG parcels | What makes it a lead | Who to contact / where to look it up |
+|---|---|---|---|---|
+| 1 | **Estate / heirs / deceased / life estate** (ESTATE, EST, HEIRS OF, DEC'D, LIFE ESTATE, L/E, EXECUTOR/ADMINISTRATOR) | ~105 | Title is in a dead person's name. The highest-value class, period. | Circuit court clerk: qualification of executor/administrator; **List of Heirs** (Va. Code 64.2-509) in the land records names every heir. Will book on the parcel (WBOOK/WPAGE). |
+| 2 | **Et al / et ux** (ETAL, ETALS, ET AL, ET UX) | ~162 | Several co-owners, usually siblings who inherited. Any one of them can be the way in; none of them can sell alone. | Same as above; the deed itself lists them. |
+| 3 | **Trust / trustee** (TR, TRS, TRUSTEE, TRUST, REVOCABLE, IRREVOCABLE, LIVING/FAMILY TRUST) | ~761 | Usually a living person's estate-planning trust — NOT a lead by itself. Becomes one when the trustee (named in the owner string) appears in an obituary, or the trust is "FAMILY TRUST" with an old deed book and the house is absentee-owned. Score low; let the death match promote it. | Trustee names are right in the owner field. Successor trustee is in the trust instrument (not public) — the obituary's survivors list is the practical route. |
+| 4 | **Church / religious** (CHURCH, BAPTIST, METHODIST, EPISCOPAL, CHAPEL, MINISTRIES, CONGREGATION, DIOCESE, PARISH, TRUSTEES OF ___ CHURCH, DEACONS OF, TABERNACLE) | ~130 raw, fewer real | A dissolved or merged congregation whose building or lot still sits in the old name; a church holding a vacant lot it has no use for; "TRUSTEES OF ___ CHURCH" where the named trustees are long dead (Virginia church property is held by trustees appointed by the circuit court — old trustee deeds are a title problem the church itself cannot fix without a court order, Va. Code 57-7.1 ff.). | The denomination's regional body (district/diocese/association) if the local church is gone; SCC for incorporated churches; the circuit court for trustee appointments. Delinquent taxes on church property is a strong signal — active churches are exempt and would not be delinquent. |
+| 5 | **Cemetery** (CEMETERY, FAMILY CEMETERY, BURIAL) | 11 | Not a lead. Flag and exclude; adjacent parcels sometimes carry access easements worth knowing about. | — |
+| 6 | **Government** (COUNTY OF, BOARD OF SUPERVISORS, SCHOOL BOARD, SERVICE AUTHORITY, COMMONWEALTH, UNITED STATES, VDOT, NAVY, TOWN OF) | ~159 | Not a homeowner lead. County-held parcels acquired through tax sale or escheat can be acquisition targets (the Failed Foreclosures idea). | County administrator / real property office; surplus-property notices. |
+| 7 | **HOA / association / club / lodge / nonprofit** (HOMEOWNERS ASSOC, HOA, CIVIC, CLUB, LODGE, POST, AMERICAN LEGION, VFW, RURITAN, VOLUNTEER FIRE, SOCIETY, FOUNDATION, LEAGUE) | ~104 raw | A defunct HOA still holding common land or a leftover lot (very common in older subdivisions); a lodge or post that disbanded; a volunteer company that merged. Delinquent taxes + SCC status "cancelled" = nobody is minding it. | SCC (most are Virginia nonstock corporations); the subdivision's recorded declaration names the declarant; the county's HOA registry if any. |
+| 8 | **LLC / corporation / partnership / business** (LLC, INC, CORP, CO, LTD, LP, LLP, PARTNERSHIP, HOLDINGS, PROPERTIES, ENTERPRISES, BANK) | ~1,647 | **Entity status is the signal.** SCC "cancelled" or "terminated" + still on title = a stuck asset; the members/officers of record are the people to find, and *they* may be dead. Also: single-asset LLCs with out-of-state mailing addresses and delinquent taxes (an investor who gave up). Banks/servicers on title = REO, different play. | Virginia SCC Clerk's Information System (cis.scc.virginia.gov): status, formation date, registered agent, principal office, officers/directors for corps. Check its terms before automating; single lookups are public. Out-of-state entities: that state's registry. |
+| 9 | **Individual** | ~11,686 | The default. Becomes a lead through the other signals: obituary match, delinquency, absentee mailing address, old deed book, "OR" between two names (common in VA — survivorship) where one has died. | Obituaries; delinquency walk; the GIS mailing address. |
+| — | **Blank owner** | ~291 | Data gap or common area / right-of-way. Flag; check a sample by hand before scoring. | — |
+
+Classifier rules learned the hard way:
+
+- **Match organizational phrases, not bare words.** TEMPLE, CHRIST, CHURCH,
+  BISHOP, PARISH, POST, CLUB and FOUNDATION are all surnames or ordinary
+  words. "JEFFERY A TEMPLE LIVING TRUST" is a trust; "FOUNDATION PROPERTIES
+  LLC" is an LLC. Require the word in a church-shaped phrase ("___ BAPTIST
+  CHURCH", "TRUSTEES OF ___", "CHURCH OF ___") or let the higher-priority
+  trust/LLC rule win first, which the order above does.
+- **"OR" between two individual names** is Virginia's survivorship
+  shorthand ("ELLIS MISTY D OR JACKIE LEE"). Split on OR/AND/& and match
+  each person to the death sources separately; one dead co-owner is a
+  lead (the survivor usually wants out), both dead is a top lead.
+- **Semicolons** separate parties in the LNAM field ("LEWIS RUTH
+  ASHTON;LIFE ESTATE GARLAN…"). Split on ";" before anything else.
+- **Keep the raw string.** Every classification stores the original owner
+  text next to the type, so a wrong call can be seen and fixed.
+
+Per-type scoring: estate/heirs and et-al get the top title weight on sight;
+LLC/HOA/church get it only when SCC says the entity is gone or the taxes
+are delinquent; trusts and individuals get it only on a death match or a
+delinquency. That keeps 11,000 ordinary homeowners off the board.
