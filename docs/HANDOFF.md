@@ -216,10 +216,13 @@ are the county telling you directly.
 
 **Build order for King George:** (1) nightly pull of the Parcels layer into
 SQLite; (2) dashboard with a Title tab from the owner-text / will-book /
-old-deed-book signals — that alone is ~400 leads on day one; (3) monthly
-delinquency walk via REPublicInquiry, joined by PIN; (4) obituary matching;
-(5) SCC entity status; (6) tax-sale notices (judicial sale lists from the
-Treasurer / the county's auction counsel) for the pre-auction buy window.
+old-deed-book signals — that alone is ~400 leads on day one; (3) the
+historical obituary backfill matched against every owner name, then the
+daily scrape; (4) monthly delinquency walk via REPublicInquiry, joined by
+PIN, which also powers the no-record dead-owner profile; (5) SCC entity
+status; (6) tax-sale notices (judicial sale lists from the Treasurer / the
+county's auction counsel) for the pre-auction buy window; (7) List of
+Heirs monthly import as the heir-finding layer.
 
 ## Owner-entity taxonomy: every kind of owner, and what makes each one a lead
 
@@ -277,8 +280,10 @@ it into a scheduled job. Use it two ways:
    heirship filings, for the trailing 12 months. Ray exports or pastes the
    result; the tool parses decedent, date of death, heirs, and joins to
    parcels by owner name. Same manual-lookup / automated-parse pattern as
-   `engine2/probate_import.py`. This is the strongest dead-owner feed in
-   Virginia and it names the people to call.
+   `engine2/probate_import.py`. Useful because it names the heirs -- but
+   it only catches deaths where someone filed, and the title-curative
+   deals are mostly the ones where nobody did. See the death-sources
+   section for what comes first.
 
 ## Other feeds worth building for King George, in rough priority
 
@@ -318,15 +323,31 @@ Maryland's SE-151. The 2001-2014 gap is covered one name at a time by the
 Social Security Death Index on FamilySearch; 2014-present only by
 obituaries and court records.
 
-Ranked for this tool:
-1. **List of Heirs / fiduciary qualification index** (circuit court clerk,
-   Ray's SRA, one manual index query per month, parsed by the tool). Ties
-   the death to the land and names the heirs. Build this feed first.
-2. **Obituaries**, daily: Free Lance-Star (Fredericksburg), Storke Funeral
-   Home (King George), Nash & Slaw, legacy.com by county. Match against
-   GIS owner names; split "A OR B" titles and match each.
-3. **Profile without a record**: owner on title 30+ years (low deed book)
-   + bills mailed to an address other than the property + delinquency
-   creeping. That is the dead-owner profile before any filing exists.
-4. Per-lead confirmation only: VDH/Ancestry index, FamilySearch, SSDI,
-   Find a Grave. Never scheduled, never bulk.
+Ranked for this tool. The ordering principle, from Ray: the messy-title
+deals come from deaths where NOBODY filed anything -- no List of Heirs, no
+qualification, no probate. So the primary detection must not depend on a
+court filing. Filings are a confirmation layer, not the net.
+
+1. **Historical obituary backfill, then daily.** One-time pull of the full
+   obituary archive for King George and the surrounding area (legacy.com by
+   locality; Free Lance-Star archive; Storke Funeral Home, Nash & Slaw and
+   other local funeral homes) back as far as it goes (~20 years), matched
+   against EVERY current owner name in the parcel layer -- including each
+   name on "A OR B" and "A & B" titles. A 2009 death whose heirs never did
+   anything is found here and nowhere else. Then the daily scrape on top.
+   This is the first feed to build.
+2. **Profile without a record.** Deed book under ~300 (title decades old)
+   + bills mailed somewhere other than the property, or "C/O", or out of
+   area + delinquency creeping (from the monthly inquiry walk) +, where
+   the Treasurer shows it, returned mail. That is what an unreported death
+   looks like in county data. Score it as a D-class candidate.
+3. **Per-lead confirmation**, name by name, on the candidates the first two
+   steps produce: VDH index via the Ancestry open-records link (deaths 25+
+   years old, free), SSDI on FamilySearch (through ~2014), Find a Grave,
+   FamilySearch certificate images (to ~1987). Never scheduled, never bulk.
+4. **List of Heirs / fiduciary qualification index** (Ray's SRA, one manual
+   index query per month, parsed by the tool). Valuable when it exists --
+   it names the heirs -- but it only exists when someone filed, so it is a
+   confirmation and heir-finding layer, not the primary death source.
+5. **Land records** (SRA, manual) for curative work once the death is
+   known: the deed, who the heirs are by law, open deeds of trust.
