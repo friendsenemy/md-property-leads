@@ -9,6 +9,8 @@ const STAGE_META = {
     CERT_STALE:         { label: "Needs Verifying",    cls: "stage-stale",    blurb: "Over 2 years since the sale and the owner never changed. Could be a void certificate (§14-833 — your opening), a redemption, a case still pending, or a deed SDAT has not indexed. Check the county tax account before calling." },
     LIEN_STRANDED:      { label: "Lien Stranded",     cls: "stage-stranded", blurb: "The bid was far above what the property is worth. To take the deed the purchaser must pay that residue, which costs more than the property — so they almost certainly never will. The owner keeps it, still delinquent, and no other investor is looking." },
     TOO_EARLY:          { label: "Too Early",          cls: "stage-early",    blurb: "Inside the 6-month statutory wait — no foreclosure may be filed yet." },
+    AUCTION_SOLD:       { label: "Auction Sold",       cls: "stage-conveyed", blurb: "Mortgage foreclosure auction — the hammer price beat our estimate of the loan payoff. The difference, after junior liens, is owed to the former owner through the Circuit Court case. Hours old, not months." },
+    AUCTION_SCHEDULED:  { label: "Auction Scheduled",  cls: "stage-window",   blurb: "Mortgage foreclosure sale is on the calendar and the owner still holds title with equity on paper. They can still sell before the sale date, or postpone it by listing." },
 };
 
 const SurplusApp = {
@@ -33,6 +35,14 @@ const SurplusApp = {
             const r = await fetch(`data/surplus/events.json?t=${Date.now()}`, { cache: "no-store" });
             if (r.ok) this.events = ((await r.json()) || {}).events || [];
         } catch { this.events = []; }
+        try {
+            const r = await fetch(`data/surplus/auctions.json?t=${Date.now()}`, { cache: "no-store" });
+            if (r.ok) {
+                const j = await r.json();
+                this.auctionGenerated = j.generated_at || "";
+                (j.rows || []).forEach((a) => this.rows.push(this.decorateAuction(a)));
+            }
+        } catch {}
         this.fillCounties();
         this.stats();
         this.render();
@@ -49,6 +59,28 @@ const SurplusApp = {
         return r;
     },
 
+    // An auction row wears the same clothes as a tax-sale row so every filter,
+    // sort, column and the notes system work unchanged.
+    decorateAuction(a) {
+        a.id = a.id || ("auction:" + a.lot_id);
+        a.account = a.account || "";
+        a.address = a.sdat_address || a.address;
+        a.city = a.sdat_city || a.city;
+        a.est_surplus = a.surplus_est ? a.surplus_est[1] : null;
+        a._surplus = Number(a.est_surplus || 0);
+        a._bid = Number(a.hammer || 0);
+        a._consid = 0;
+        a._assessed = Number(a.assessed_value || 0);
+        a.deed_rational = true;
+        a.tax_sale_year = a.sale_date ? a.sale_date.slice(0, 4) : null;
+        a.days_since_sale = a.sale_date ? Math.round((Date.now() - new Date(a.sale_date)) / 86400000) : 0;
+        a.former_owner = a.owner_of_record;
+        a.conveyance_kind = "LENDER";
+        a._blob = [a.address, a.city, a.county, a.owner_of_record, a.owner2, a.mail, a.account, "auction", a.tier]
+            .filter(Boolean).join(" ").toLowerCase();
+        return a;
+    },
+
     fillCounties() {
         const counties = [...new Set(this.rows.map((r) => r.county).filter(Boolean))].sort();
         document.getElementById("surplusCounty").innerHTML =
@@ -63,6 +95,15 @@ const SurplusApp = {
         document.getElementById("sstatConveyed").textContent = conveyed.length.toLocaleString();
         document.getElementById("sstatWindow").textContent = window_.length.toLocaleString();
         const rc = document.getElementById("sstatRepeat"); if (rc) rc.textContent = this.rows.filter((r) => r.repeat_sale).length.toLocaleString();
+        const ac = document.getElementById("sstatAuction");
+        if (ac) {
+            const au = this.rows.filter((r) => r.stage === "AUCTION_SOLD" || r.stage === "AUCTION_SCHEDULED");
+            const strong = au.filter((r) => r.tier === "STRONG").length;
+            const fresh = au.filter((r) => r.first_seen && (Date.now() - new Date(r.first_seen)) < 7 * 86400000).length;
+            ac.textContent = au.length.toLocaleString();
+            const sub = document.getElementById("sstatAuctionSub");
+            if (sub) sub.textContent = au.length ? `${strong} strong · ${fresh} new this week` : "runs every weekday morning";
+        }
         document.getElementById("sstatTracked").textContent = tracked >= 1e6
             ? "$" + (tracked / 1e6).toFixed(1) + "M" : "$" + Math.round(tracked).toLocaleString();
         const info = document.getElementById("surplusRunInfo");
@@ -126,7 +167,7 @@ const SurplusApp = {
 
     sorted(rows) {
         const k = this.state.sort, d = this.state.dir;
-        const order = { CONVEYED: 4, FORECLOSURE_WINDOW: 3, CERT_STALE: 2, TOO_EARLY: 1 };
+        const order = { AUCTION_SOLD: 6, AUCTION_SCHEDULED: 5, CONVEYED: 4, FORECLOSURE_WINDOW: 3, CERT_STALE: 2, TOO_EARLY: 1 };
         const val = (r) => ({
             stage: order[r.stage] || 0, est_surplus: r._surplus, bid: r._bid, assessed: r._assessed,
             county: r.county || "", owner: r.owner_of_record || "", days: r.days_since_sale || 0,
@@ -154,7 +195,11 @@ const SurplusApp = {
                 const st = this.statusOf(r), m = STAGE_META[r.stage] || { label: r.stage, cls: "" };
                 return `<tr data-id="${this.esc(r.id)}">
                     <td><span class="stage ${m.cls}" title="${this.esc(m.blurb || "")}">${this.esc(m.label)}</span>
-                        ${r.deed_rational && r.stage !== "CONVEYED" ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
+                        ${r.tier === "STRONG" ? '<span class="chip chip-good" title="Hammer (or value) beats the estimated payoff by 30%+ and the estimated surplus is $25k or more">strong</span>' : ""}
+                        ${r.tier === "POSSIBLE" ? '<span class="chip" title="Estimated surplus $10k–25k, or the estimate rests on thin data">possible</span>' : ""}
+                        ${r.is_new ? '<span class="chip chip-hard" title="First seen today">new</span>' : ""}
+                        ${r.ambiguous_match ? '<span class="chip" title="More than one SDAT parcel matched this street address — check the account number">check match</span>' : ""}
+                        ${r.deed_rational && r.stage !== "CONVEYED" && !r.tier ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
                         ${r.vacant_lot ? '<span class="chip" title="No improvements on the parcel">vacant lot</span>' : ""}
                         ${r.repeat_sale ? `<span class="chip chip-hard" title="Sold at tax sale in ${(r.years_listed || []).join(", ")} — did not pay, nobody foreclosed, more than once">repeat ×${(r.years_listed || [2]).length}</span>` : ""}
                         ${r.historical ? '<span class="chip" title="Found from the collector deed in SDAT, not from a tax-sale list — this one reaches back before our list coverage">historical</span>' : ""}
@@ -197,6 +242,11 @@ const SurplusApp = {
         if (!r) return;
         const m = STAGE_META[r.stage] || { label: r.stage, blurb: "" };
         const ev = this.events.find((e) => e.account === r.account);
+        if (r.stage === "AUCTION_SOLD" || r.stage === "AUCTION_SCHEDULED") {
+            document.getElementById("modalBody").innerHTML = this.auctionModal(r, m);
+            this.afterModal(r);
+            return;
+        }
         document.getElementById("modalBody").innerHTML = `
             <div class="detail-section">
                 <h3>Stage</h3>
@@ -254,6 +304,10 @@ const SurplusApp = {
                 <h3>Imagery</h3>
                 ${Aerial.panel(r, r.id)}
             </div>`;
+        this.afterModal(r);
+    },
+
+    afterModal(r) {
         Aerial.bind(document.getElementById("modalBody"));
         document.querySelectorAll("#modalBody [data-copy]").forEach((b) => b.addEventListener("click", async () => {
             const txt = b.getAttribute("data-copy"), was = b.textContent;
@@ -272,6 +326,115 @@ const SurplusApp = {
             App.closeModal(); this.render();
         };
         document.getElementById("modalOverlay").classList.add("active");
+    },
+
+    auctionModal(r, m) {
+        const sold = r.stage === "AUCTION_SOLD";
+        const pe = r.payoff_est, se = r.surplus_est;
+        const rng = (t) => t ? `${this.money(t[0])} – ${this.money(t[2])}` : "—";
+        const links = this.findLinks(r, r.owner_of_record);
+        const occ = r.occupancy === "H" ? "Owner-occupied — they live (lived) here" : "Not owner-occupied — the mailing address is the lead";
+        const letter = sold ? this.auctionLetter(r) : this.preAuctionLetter(r);
+        return `
+            <div class="detail-section">
+                <h3>Stage</h3>
+                <div class="detail-row"><span class="label">Where it stands</span><span class="value" style="font-weight:600">${this.esc(m.label)} ${r.tier === "STRONG" ? '<span class="chip chip-good">strong</span>' : '<span class="chip">possible</span>'}</span></div>
+                <div class="detail-row"><span class="label">Meaning</span><span class="value" style="font-size:0.82rem">${this.esc(m.blurb)}</span></div>
+                <div class="detail-row"><span class="label">${sold ? "Sold" : "Sale date"}</span><span class="value" style="font-weight:600; color:var(--yellow)">${this.esc(r.sale_date || "—")}${sold ? ` · ${r.days_since_sale} day${r.days_since_sale === 1 ? "" : "s"} ago` : (r.days_since_sale < 0 ? ` · in ${-r.days_since_sale} days` : "")}</span></div>
+                <div class="detail-row"><span class="label">Why it qualified</span><span class="value" style="font-size:0.82rem">${this.esc(r.why || "")}</span></div>
+                <div class="detail-row"><span class="label">Auctioneer</span><span class="value" style="font-size:0.82rem"><a href="${this.esc(r.url || "#")}" target="_blank" rel="noopener">${this.esc(r.source || "")} ↗</a>${r.auction_title ? ` · ${this.esc(r.auction_title)}` : ""}</span></div>
+            </div>
+            <div class="detail-section">
+                <h3>Property</h3>
+                <div class="detail-row"><span class="label">Address</span><span class="value" style="font-weight:600">${this.esc(r.address || "")}${r.city ? `, ${this.esc(r.city)}` : ""} ${this.esc(r.zip || "")}</span></div>
+                <div class="detail-row"><span class="label">County</span><span class="value" style="color:var(--purple)">${this.esc(r.county || "")}</span></div>
+                <div class="detail-row"><span class="label">Account #</span><span class="value" style="font-family:var(--font-mono)">${this.esc(r.account)}${r.ambiguous_match ? ` <span class="chip">check — ${r.ambiguous_match} parcels matched</span>` : ""}</span></div>
+                <div class="detail-row"><span class="label">Assessed</span><span class="value" style="color:var(--green); font-family:var(--font-mono)">${this.money(r._assessed)}</span></div>
+                <div class="detail-row"><span class="label">Type</span><span class="value">${this.esc(r.dwelling_type || r.land_use || "")}${r.year_built && String(r.year_built).replace(/0/g, "") ? ` · built ${this.esc(r.year_built)}` : ""}</span></div>
+                <div class="detail-row"><span class="label">Occupancy</span><span class="value">${occ}</span></div>
+            </div>
+            <div class="detail-section">
+                <h3>${sold ? "Former Owner — Who The Surplus Belongs To" : "Owner — Still Holds Title"}</h3>
+                <div class="detail-row"><span class="label">Name</span><span class="value" style="font-family:var(--font-mono); font-weight:600; color:var(--yellow)">${this.esc(r.owner_of_record || "—")}${r.owner2 ? `<br>${this.esc(r.owner2)}` : ""}</span></div>
+                ${r.mail ? `<div class="detail-row"><span class="label">Mailing address</span><span class="value">${this.esc(r.mail)}${r.absentee ? ' <span class="chip">different from property</span>' : ""}</span></div>` : ""}
+                <div class="detail-row"><span class="label">They bought it</span><span class="value">${r.purchase_year ? `${this.esc(String(r.purchase_year))} for ${r.purchase_price ? this.money(r.purchase_price) : "an unrecorded price"}` : "no purchase on the deed (inherited or very old)"}${r.purchase_deed ? ` <span style="font-family:var(--font-mono); color:var(--text-dim)">(Liber/Folio ${this.esc(r.purchase_deed)})</span>` : ""}</span></div>
+                <div class="detail-row"><span class="label">Find them</span><span class="value" style="display:flex; flex-wrap:wrap; gap:6px 14px; font-size:0.85rem">${links.join("")}</span></div>
+            </div>
+            <div class="detail-section">
+                <h3>The Money (Estimated)</h3>
+                ${sold ? `<div class="detail-row"><span class="label">Hammer price</span><span class="value" style="font-family:var(--font-mono); font-weight:600">${this.money(r.hammer)}</span></div>` : ""}
+                ${r.deposit ? `<div class="detail-row"><span class="label">Deposit required</span><span class="value" style="font-family:var(--font-mono)">${this.money(r.deposit)}</span></div>` : ""}
+                <div class="detail-row"><span class="label">Est. loan payoff</span><span class="value" style="font-family:var(--font-mono)">${pe ? `${this.money(pe[1])} <span style="font-family:var(--font-sans); color:var(--text-dim); font-size:0.78rem">(range ${rng(pe)})</span>` : "—"}</span></div>
+                <div class="detail-row"><span class="label">${sold ? "Est. surplus" : "Est. equity"}</span><span class="value" style="font-family:var(--font-mono); font-weight:700; color:var(--green)">${se ? `${this.money(se[1])} <span style="font-family:var(--font-sans); font-weight:400; color:var(--text-dim); font-size:0.78rem">(range ${rng(se)})</span>` : "—"}</span></div>
+                <p style="font-size:0.76rem; color:var(--text-dim); margin:8px 0 0">The payoff is modelled from their own purchase price and year (95% loan, 30-year amortization, plus ~12% arrears and costs). A refinance, HELOC, second mortgage, HOA lien or judgment comes off the top and we cannot see those. ${sold ? "The real number is the auditor's account in the Circuit Court case." : "Confirm with the owner."}</p>
+            </div>
+            <div class="detail-section">
+                <h3>Next Step</h3>
+                <p style="font-size:0.85rem; line-height:1.55">${sold
+                    ? "<b>Reach the former owner this week.</b> The trustee files a report of sale; the court ratifies it after a 30-day exceptions window; then the auditor states the account and the surplus is paid out <b>by court order on a motion</b>. Competitors mail from the deed record months later — you have their name and address today.<br><br>"
+                      + "Before any agreement: a Maryland lawyer drafts it. Buying or taking assignment of the claim makes you a <b>foreclosure surplus purchaser</b> (RP §7-314/315: written contract, 12-pt type, 14-pt warning box, 10-day rescission after the audit). Helping for a fee makes you a <b>foreclosure consultant</b> (RP §7-301–307: no payment until done, no power of attorney, no holding their funds)."
+                    : "<b>Buy lead with a clock on it.</b> The owner still holds title and has equity on paper. A sale that closes before the auction pays the lender off and leaves them with the equity instead of nothing; a signed contract can also persuade the trustee to postpone. Everything in PHIFA applies to a homeowner in default — written contract, right to cancel, no equity-stripping — so the offer has to be a real market-rate purchase, papered by a Maryland lawyer."}</p>
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px">
+                    <button class="btn btn-sm" data-copy="${this.esc(letter)}">${sold ? "Copy letter to former owner" : "Copy letter to owner"}</button>
+                    ${sold ? `<button class="btn btn-sm" data-copy="${this.esc(this.heirChecklist(r, r.owner_of_record))}">Copy heir-search checklist</button>` : ""}
+                </div>
+            </div>
+            <div class="detail-section">
+                <h3>Imagery</h3>
+                ${Aerial.panel(r, r.id)}
+            </div>`;
+    },
+
+    findLinks(r, name) {
+        const p = this.personName(name);
+        const city = r.city || "";
+        const e = (v) => encodeURIComponent(v);
+        const links = [];
+        if (p) {
+            links.push(`<a href="https://www.truepeoplesearch.com/results?name=${e(p.full)}&citystatezip=${e(city + " MD")}" target="_blank" rel="noopener">TruePeopleSearch ↗</a>`);
+            links.push(`<a href="https://www.fastpeoplesearch.com/name/${e(p.first.toLowerCase() + "-" + p.last.toLowerCase())}_${e(city.toLowerCase().replace(/\s+/g, "-") + "-md")}" target="_blank" rel="noopener">FastPeopleSearch ↗</a>`);
+            links.push(`<a href="https://www.google.com/search?q=${e(`"${p.full}" ${city} Maryland`)}" target="_blank" rel="noopener">Google ↗</a>`);
+        } else if (name) {
+            links.push(`<a href="https://egov.maryland.gov/BusinessExpress/EntitySearch" target="_blank" rel="noopener">MD Business Express ↗</a>`);
+        }
+        links.push(`<a href="https://casesearch.courts.state.md.us/casesearch/" target="_blank" rel="noopener" title="Circuit Court, civil: the foreclosure case under the owner's name. Report of sale, ratification, auditor's account — the surplus number lives here">Case Search ↗</a>`);
+        links.push(`<a href="https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx" target="_blank" rel="noopener">SDAT ↗</a>`);
+        return links;
+    },
+
+    auctionLetter(r) {
+        const addr = `${r.address || ""}${r.city ? ", " + r.city : ""}${r.zip ? " " + r.zip : ""}`;
+        const p = this.personName(r.owner_of_record);
+        const amt = r.surplus_est ? `somewhere around ${this.money(r.surplus_est[1])}` : "a meaningful amount";
+        return `${p ? p.full : "To the owner of " + addr},
+
+I am writing about ${addr}, which was sold at a foreclosure auction on ${r.sale_date || "a recent date"}${r.hammer ? " for " + this.money(r.hammer) : ""}.
+
+Most people do not know this: when a foreclosure sale brings in more than what was owed on the loan, the extra money does not belong to the bank or the buyer. It belongs to you, the former owner. By our estimate that could be ${amt}, though the exact figure is set by the court's auditor.
+
+The money is paid out through the Circuit Court for ${r.county} County, in the foreclosure case, after the sale is ratified and the account is audited. You have to ask for it — it is not sent automatically — and there are deadlines.
+
+I am a local real-estate buyer and I came across this in public records. I am not asking you for anything. If you want, I will explain exactly where it stands and what to file. You can also call the Circuit Court clerk's civil department and ask about "surplus proceeds" in your foreclosure case.
+
+Dustin Ray
+Pages of Purpose LLC · Charlotte Hall, Maryland`;
+    },
+
+    preAuctionLetter(r) {
+        const addr = `${r.address || ""}${r.city ? ", " + r.city : ""}${r.zip ? " " + r.zip : ""}`;
+        const p = this.personName(r.owner_of_record);
+        return `${p ? p.full : "To the owner of " + addr},
+
+Public notice shows a foreclosure sale scheduled for ${addr} on ${r.sale_date || "an upcoming date"}.
+
+If that sale goes ahead, the house is sold at auction and whatever it brings over the loan balance is tied up in court for months — and often a lot less than the house is worth. If you sell it before the sale date, the loan is paid off at closing and the rest of the equity is yours, in cash, on the day.
+
+I buy houses in ${r.county} County for cash and can close quickly, with no repairs, no showings and no fees. I will make a written offer you can take to anyone you trust, and you keep every right the law gives a homeowner in this situation, including the right to cancel.
+
+If you would rather keep the house, I will tell you that too. Either way it costs nothing to talk.
+
+Dustin Ray
+Pages of Purpose LLC · Charlotte Hall, Maryland`;
     },
 
     // SDAT writes people as "LAST FIRST M" (or "LAST FIRST & SPOUSE"). Turn that into
@@ -402,7 +565,7 @@ Pages of Purpose LLC · Charlotte Hall, Maryland`;
         const rows = this.sorted(this.filtered());
         if (!rows.length) { alert("Nothing to export with the current filters."); return; }
         const H = ["Stage", "Stage Meaning", "Deed Likely", "Bid/Taxes", "Deed Consideration", "Years Since Deed", "Legal Description", "Years Sold at Tax Sale", "Account #", "Address", "City", "Zip", "County",
-            "Owner on Record", "Owner 2", "Owner at Tax Sale", "Mailing Address", "Former Owner", "Former Owner 2", "Former Owner Mail", "How Title Moved", "Tax Sale Year", "Tax Sale Status",
+            "Owner on Record", "Owner 2", "Owner at Tax Sale", "Mailing Address", "Former Owner", "Former Owner 2", "Former Owner Mail", "How Title Moved", "Tier", "Sale Date", "Hammer", "Est Payoff", "Est Surplus Range", "Tax Sale Year", "Tax Sale Status",
             "Lien Buyer", "Winning Bid", "Taxes Owed", "Est. Surplus", "Assessed", "Bid/Assessed", "Days Since Sale",
             "Repeat Sale", "Deed on Record", "Last Transfer", "Grantor", "Year Built", "Occupancy", "Lat", "Lon", "Source", "Status", "Notes"];
         const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
@@ -412,6 +575,7 @@ Pages of Purpose LLC · Charlotte Hall, Maryland`;
             lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", r.bid_to_face, r.consideration, r.years_since_conveyance, r.legal, (r.years_listed || []).join(" "), `="${r.account}"`,
                 r.address, r.city, r.zip, r.county, r.owner_of_record, r.owner2, r.owner_at_sale, r.mail,
                 r.former_owner || r.owner_at_sale, r.former_owner2, r.former_mail, r.conveyance_kind,
+                r.tier, r.sale_date, r.hammer, r.payoff_est ? r.payoff_est[1] : "", r.surplus_est ? `${r.surplus_est[0]}–${r.surplus_est[2]}` : "",
                 r.tax_sale_year, r.tax_sale_status, r.sold_to, r.winning_bid, r.taxes_owed, r.est_surplus,
                 r.assessed_value, r.bid_to_assessed, r.days_since_sale, r.repeat_sale ? "YES" : "no",
                 r.deed, r.transfer_date, r.grantor, r.year_built, r.occupancy, r.lat, r.lon, r.source,

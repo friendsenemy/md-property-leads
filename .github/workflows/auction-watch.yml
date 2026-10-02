@@ -1,0 +1,74 @@
+name: Auction Watch (foreclosure surplus)
+
+# Every weekday morning: pull yesterday's foreclosure auction results and the
+# upcoming sale calendar, match them to SDAT, keep only the ones with a likely
+# surplus (or pre-sale equity), and email the new strong ones.
+# Uses the same weekly SDAT index cache the Title Scan builds on Mondays.
+
+on:
+  schedule:
+    - cron: '17 11 * * 1-6'      # 7:17 AM ET, Mon–Sat
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auction-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install requests==2.31.0
+
+      - name: Compute cache key (ISO week)
+        id: week
+        run: echo "key=sdat-index-$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+      - name: Restore SDAT index
+        id: restore
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+      - name: Build SDAT index (only if this week's cache is missing)
+        if: steps.restore.outputs.cache-hit != 'true'
+        env:
+          MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
+          MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
+          MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
+        run: python -m engine2.build_index
+      - name: Save SDAT index
+        if: steps.restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+
+      - name: Watch auctions
+        run: python -m engine2.auction_watch --index .cache/sdat.sqlite
+
+      - name: Email new strong leads
+        env:
+          ALERT_TOKEN: ${{ secrets.ALERT_TOKEN }}
+        run: python -m engine2.alert
+
+      - name: Commit results
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp data/surplus/auctions.json data/surplus/auctions-seen.json /tmp/out/
+          git fetch origin main
+          git checkout -f -B main origin/main
+          cp /tmp/out/auctions.json /tmp/out/auctions-seen.json data/surplus/
+          git add data/surplus/auctions.json data/surplus/auctions-seen.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          N=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(d['counts']['kept'])")
+          S=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(sum(1 for r in d['rows'] if r['tier']=='STRONG'))")
+          git commit -m "Auction watch: ${N} surplus-likely sales (${S} strong)"
+          git push origin main
