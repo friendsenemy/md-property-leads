@@ -609,7 +609,7 @@ def build(index_path, today=None):
             "bid_to_assessed": None, "deed_rational": True, "days_since_sale": None, "repeat_sale": False,
             "years_since_conveyance": (today.year - cy) if cy else None,
             "transfer_date": h["conveyed_on"], "historical": True,
-            "conveyance_kind": "THIRD_PARTY" if h["resold"] else "TAX_DEED",
+            "conveyance_kind": classify_conveyance(h["grantor"], None),   # collector on the deed = TAX_DEED; an investor LLC = resold
             "former_owner": ts.get("owner"), "former_owner2": None, "former_mail": None,
             "former_occupancy": None, "former_deed": None, "former_transfer_date": None,
             "notice_due_by": None,
