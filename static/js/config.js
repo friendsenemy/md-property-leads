@@ -5,5 +5,5 @@
    written to one shared Google Sheet and shown to everyone. When empty, notes stay
    in each person's own browser (the old behaviour). */
 window.MDPL = {
-    SHARED_NOTES_URL: "",
+    SHARED_NOTES_URL: "https://script.google.com/macros/s/AKfycbzpEwPb5I4hEjA5YhtzfpcJSVRlhDJvQv5kAeV24KDJ9X9K5mA7QHkq1HJ-tYa_d2igUw/exec",
 };

@@ -1,5 +1,10 @@
 # Shared notes: one Google Sheet everyone's notes go to
 
+> **Status: LIVE** since 2026-10-02. Sheet "MD Property Leads — Notes" and the
+> Apps Script project "MD Property Leads Notes" both live in mrdustinray@gmail.com's
+> Google account; the web-app URL is in `static/js/config.js`. The steps below are
+> how it was built, kept for when it ever needs redoing.
+
 Right now each person's statuses and notes live in their own browser, so what
 Todd types at home never reaches Ray. This puts them in one Google Sheet that
 the dashboard reads on load and writes to on every Save. Free, no server, you
