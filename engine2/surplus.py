@@ -255,6 +255,34 @@ def conveyance_from_list(rec, sdat_row, sale_dt):
     return None, None
 
 
+def classify_conveyance(grantor, former_owner):
+    """Who signed the deed that moved title? That decides whether a surplus exists.
+      TAX_DEED      the collector -- 14-847 deed, residue sits with the county
+      OWNER_SOLD    the former owner themself -- an ordinary sale; the lien was
+                    paid at closing. No surplus. Not a lead.
+      LENDER        a bank/trustee -- mortgage foreclosure; any surplus is in the
+                    Circuit Court case (auditor's account), not with the collector
+      THIRD_PARTY   someone else -- usually the tax-sale buyer flipping after the
+                    collector's deed, so the chain is collector -> them -> today
+    """
+    g = _norm_owner(grantor)
+    if not g:
+        return "UNKNOWN"
+    if any(_glob(g, p) for p in COLLECTOR_GRANTOR) and not any(t in g for t in NOT_A_COLLECTOR):
+        return "TAX_DEED"
+    f = _norm_owner(former_owner)
+    if f:
+        if g == f or _same_person(g, f) or f[:12] == g[:12]:
+            return "OWNER_SOLD"
+        ft = [t for t in re.findall(r"[A-Z]+", f) if len(t) > 2]
+        gt = [t for t in re.findall(r"[A-Z]+", g) if len(t) > 2]
+        if ft and gt and ft[0] == gt[0] and not _ENTITY.search(f):
+            return "OWNER_SOLD"             # same family name on a person's deed
+    if _LENDER.search(g):
+        return "LENDER"
+    return "THIRD_PARTY"
+
+
 def _notice_due(transfer_date, sale_dt):
     """14-818(a)(6): the collector must notify the prior owner within 90 days of the deed.
 
@@ -408,6 +436,7 @@ def build(index_path, today=None):
 
     watch, events, leads = {}, [], []
     skipped_unconfirmed = 0
+    owner_sold = 0
     for acct, rec in taxsale.items():
         s = rows.get(acct)
         if not s:
@@ -444,14 +473,40 @@ def build(index_path, today=None):
         st, why = stage(rec, sale_dt, owner_changed, today, bid_to_av, bid_to_face, face, av)
         if st == "CONVEYED" and conf_why:
             why = conf_why
+        # Who the former owner was, and what we knew about them before title moved.
+        former = {
+            "former_owner": prev.get("owner1") if (owner_before and owner_before != owner_now) else rec.get("owner"),
+            "former_owner2": prev.get("owner2"), "former_mail": prev.get("mail"),
+            "former_occupancy": prev.get("occupancy"), "former_deed": prev.get("deed"),
+            "former_transfer_date": prev.get("transfer_date"),
+            "conveyance_kind": None, "notice_due_by": None,
+        }
+        if st == "CONVEYED":
+            former["conveyance_kind"] = classify_conveyance(s.get("grantor1"), former["former_owner"])
+            if former["conveyance_kind"] == "OWNER_SOLD":
+                # The owner sold it themself after the sale; the lien was paid at
+                # closing. Nothing is owed to anyone. Not a lead -- but keep the
+                # baseline current so we never re-detect it.
+                owner_sold += 1
+                watch[acct] = {"owner1": s["owner1"], "owner2": s.get("owner2"), "transfer_date": transfer_now,
+                               "deed": f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/"),
+                               "mail": " ".join(x for x in (s.get("mail_addr"), s.get("mail_city"), s.get("mail_zip")) if x),
+                               "occupancy": s.get("occupancy"),
+                               "first_seen": prev.get("first_seen") or _now(), "last_seen": _now()}
+                continue
+            if former["conveyance_kind"] in ("TAX_DEED", "THIRD_PARTY"):
+                former["notice_due_by"] = _notice_due(transfer_now, sale_dt)
         # a person at sale, a government on title now: the county took it (14-847
         # or foreclosure of its own struck lien) -- that belongs on the other tab
         county_took = (conf in ("HIGH", "MEDIUM", "LOW")
                        and any(_glob(_norm_owner(owner_now), p) for p in COUNTY_OWNER))
 
         watch[acct] = {
-            "owner1": s["owner1"], "transfer_date": transfer_now,
+            "owner1": s["owner1"], "owner2": s.get("owner2"), "transfer_date": transfer_now,
             "deed": f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/"),
+            # kept so that when title moves we still know where the FORMER owner got mail
+            "mail": " ".join(x for x in (s.get("mail_addr"), s.get("mail_city"), s.get("mail_zip")) if x),
+            "occupancy": s.get("occupancy"),
             "first_seen": prev.get("first_seen") or _now(),
             "last_seen": _now(),
         }
@@ -489,6 +544,7 @@ def build(index_path, today=None):
             "county_took": county_took,
             "transfer_date": transfer_now,
             "source": rec.get("source"),
+            **former,
         })
 
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -553,11 +609,15 @@ def build(index_path, today=None):
             "bid_to_assessed": None, "deed_rational": True, "days_since_sale": None, "repeat_sale": False,
             "years_since_conveyance": (today.year - cy) if cy else None,
             "transfer_date": h["conveyed_on"], "historical": True,
+            "conveyance_kind": "THIRD_PARTY" if h["resold"] else "TAX_DEED",
+            "former_owner": ts.get("owner"), "former_owner2": None, "former_mail": None,
+            "former_occupancy": None, "former_deed": None, "former_transfer_date": None,
+            "notice_due_by": None,
             "source": "SDAT collector deed" + (f" · {h['conveyed_year']}" if h["conveyed_year"] else ""),
         })
 
-    log.info("skipped %d LISTED/unconfirmed rows (no sale outcome to track); %d low-value collector deeds below the floor",
-             skipped_unconfirmed, floor_dropped)
+    log.info("skipped %d LISTED/unconfirmed rows (no sale outcome to track); %d owner-sold-it-themself rows (no surplus); "
+             "%d low-value collector deeds below the floor", skipped_unconfirmed, owner_sold, floor_dropped)
     before = len(leads)
     low = sum(1 for r in leads if r.get("low_confidence_conveyance"))
     # title moved to an individual after the sale: almost always a redemption

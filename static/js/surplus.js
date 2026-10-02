@@ -44,7 +44,7 @@ const SurplusApp = {
         r._bid = Number(r.winning_bid || 0);
         r._consid = Number(r.consideration || 0);
         r._assessed = Number(r.assessed_value || 0);
-        r._blob = [r.address, r.city, r.county, r.owner_of_record, r.owner_at_sale, r.sold_to, r.account]
+        r._blob = [r.address, r.city, r.county, r.owner_of_record, r.owner_at_sale, r.former_owner, r.sold_to, r.account]
             .filter(Boolean).join(" ").toLowerCase();
         return r;
     },
@@ -161,6 +161,7 @@ const SurplusApp = {
                         ${r.conveyance_confidence === "HIGH" ? '<span class="chip chip-good" title="Owner on title today is the lien bidder named on the sale list">bidder holds title</span>' : ""}
                         ${r.conveyance_confidence === "MEDIUM" ? '<span class="chip" title="Title moved to an entity after the sale — tax-sale buyers are almost always LLCs">title moved</span>' : ""}
                         ${r.partial ? '<span class="chip" title="This year\'s list came from an Internet Archive capture of page 1 only — the county had more rows than we could recover">archive · partial</span>' : ""}
+                        ${r.conveyance_kind === "LENDER" ? '<span class="chip chip-hard" title="The deed that moved title was signed by a bank or trustee — a mortgage foreclosure. Any surplus is in the Circuit Court case, not with the tax collector">mortgage foreclosure</span>' : ""}
                         ${r.resold ? '<span class="chip" title="The tax-sale purchaser took the deed and has since sold the property to someone else. The surplus was owed to the owner BEFORE the collector deed — the current owner is a later buyer with no claim">resold since</span>' : ""}</td>
                     <td class="property-cell">
                         <div class="address"${r.no_situs ? ' style="color:var(--text-secondary); font-weight:400; font-size:0.8rem"' : ""}>${r.no_situs ? "no street address — " : ""}${this.esc(r.address || "N/A")}${r.city && !r.no_situs ? `, ${this.esc(r.city)}` : ""}</div>
@@ -221,14 +222,7 @@ const SurplusApp = {
                 ${r.legal ? `<div class="detail-row"><span class="label">Legal</span><span class="value" style="font-size:0.8rem">${this.esc(r.legal)}</span></div>` : ""}
                 ${r.mail ? `<div class="detail-row"><span class="label">Mailing address</span><span class="value">${this.esc(r.mail)}</span></div>` : ""}
             </div>
-            ${r.historical ? `<div class="detail-section">
-                <h3>Who Is Owed The Surplus</h3>
-                <p style="font-size:0.85rem; line-height:1.55">The balance was owed to whoever owned this parcel <b>before</b> the collector's deed.
-                SDAT keeps only the current owner, so that name is not in our data. It is on the deed itself: pull
-                <b style="font-family:var(--font-mono)">Liber / Folio ${this.esc(r.deed || "?")}</b> for ${this.esc(r.county || "")} County at
-                mdlandrec.net (free registration) — the former owner is named as the party whose interest was foreclosed. The county's
-                § 14-818(a)(6) notice list names them too, and says whether the balance was ever claimed.</p>
-            </div>` : ""}
+            ${r.stage === "CONVEYED" ? this.formerOwnerPanel(r) : ""}
             <div class="detail-section">
                 <h3>The Money</h3>
                 ${r._bid ? `<div class="detail-row"><span class="label">Winning bid</span><span class="value" style="font-family:var(--font-mono)">${this.money(r._bid)}</span></div>`
@@ -261,6 +255,13 @@ const SurplusApp = {
                 ${Aerial.panel(r, r.id)}
             </div>`;
         Aerial.bind(document.getElementById("modalBody"));
+        document.querySelectorAll("#modalBody [data-copy]").forEach((b) => b.addEventListener("click", async () => {
+            const txt = b.getAttribute("data-copy"), was = b.textContent;
+            try { await navigator.clipboard.writeText(txt); } catch (_) {
+                const ta = document.createElement("textarea"); ta.value = txt; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+            }
+            b.textContent = "Copied ✓"; setTimeout(() => { b.textContent = was; }, 1500);
+        }));
         const sel = document.getElementById("leadStatusSelect"), notes = document.getElementById("leadNotes");
         sel.value = this.statusOf(r); notes.value = this.notesOf(r);
         SharedNotes.footer(r.id);
@@ -273,11 +274,102 @@ const SurplusApp = {
         document.getElementById("modalOverlay").classList.add("active");
     },
 
+    // SDAT writes people as "LAST FIRST M" (or "LAST FIRST & SPOUSE"). Turn that into
+    // something a person-search understands. Entities come back unchanged.
+    personName(raw) {
+        const n = String(raw || "").toUpperCase().replace(/[^A-Z&' -]/g, " ").replace(/\s+/g, " ").trim();
+        if (!n || /\b(LLC|L L C|INC|CORP|CORPORATION|LTD|LP|LLP|TRUST|TRUSTEE|TRUSTEES|HOLDINGS?|PROPERTIES|PROPERTY|ASSOC|ASSOCIATES|ASSOCIATION|ASSN|COMPANY|CO|BANK|CHURCH|PARTNERS|PARTNERSHIP|ENTERPRISES?|GROUP|REALTY|INVESTMENTS?|INVESTORS|DEVELOPMENT|FOUNDATION|MANAGEMENT|HOMES|BUILDERS|VENTURES?|CAPITAL|FUND|ESTATES?|ESTATE OF|MINISTRIES|CENTER|SERVICES|INDUSTRIES|INTERNATIONAL|NATIONAL|FEDERAL|CITY OF|COUNTY|STATE OF|BOARD|AUTHORITY|HOUSING|APARTMENTS|CONDOMINIUM|HOA)\b/.test(n) || /\b(ENTERPRI|ASSOCIAT|INVESTM|PROPERT|DEVELOP|HOLDING|PARTNER|MANAGEM|CORPORAT|FOUNDAT|MINISTR)\w*/.test(n)) return null;
+        const toks = n.split("&")[0].trim().split(" ").filter((t) => !/^(JR|SR|II|III|IV|ET|AL|UX|VIR|TR|TRS|ETAL)$/.test(t));
+        if (toks.length < 2) return null;
+        const last = toks[0], first = toks.find((t, i) => i > 0 && t.length > 1) || toks[1];
+        const cap = (w) => w.charAt(0) + w.slice(1).toLowerCase();
+        return { first: cap(first), last: cap(last), full: `${cap(first)} ${cap(last)}` };
+    },
+
+    formerOwnerPanel(r) {
+        const kind = r.conveyance_kind || (r.historical ? "TAX_DEED" : "THIRD_PARTY");
+        let name = r.former_owner || r.owner_at_sale || "";
+        // AA/PG sale lists truncate names at 18 characters; when the grantor on the
+        // new deed begins with the same letters it is the same party, spelled out.
+        if (name && r.grantor && r.grantor.toUpperCase().startsWith(name.toUpperCase().slice(0, 12))) name = r.grantor;
+        const p = this.personName(name);
+        const city = r.city || "";
+        const e = (v) => encodeURIComponent(v);
+        const links = [];
+        if (p) {
+            links.push(`<a href="https://www.truepeoplesearch.com/results?name=${e(p.full)}&citystatezip=${e(city + " MD")}" target="_blank" rel="noopener">TruePeopleSearch ↗</a>`);
+            links.push(`<a href="https://www.fastpeoplesearch.com/name/${e(p.first.toLowerCase() + "-" + p.last.toLowerCase())}_${e(city.toLowerCase().replace(/\s+/g, "-") + "-md")}" target="_blank" rel="noopener">FastPeopleSearch ↗</a>`);
+            links.push(`<a href="https://www.google.com/search?q=${e(`"${p.full}" obituary Maryland`)}" target="_blank" rel="noopener">Obituary search ↗</a>`);
+            links.push(`<a href="https://registers.maryland.gov/RowNetWeb/Estates/frmEstateSearch2.aspx" target="_blank" rel="noopener" title="Search last name ${this.esc(p.last)} — an open or closed estate names the personal representative and heirs">Register of Wills ↗</a>`);
+        } else if (name) {
+            links.push(`<a href="https://egov.maryland.gov/BusinessExpress/EntitySearch" target="_blank" rel="noopener" title="Resident agent and officers — the people behind the entity are who to find">MD Business Express ↗</a>`);
+            links.push(`<a href="https://www.google.com/search?q=${e(`"${name}" Maryland`)}" target="_blank" rel="noopener">Google ↗</a>`);
+        }
+        links.push(`<a href="https://casesearch.courts.state.md.us/casesearch/" target="_blank" rel="noopener" title="The foreclosure case (Circuit Court, civil) names every defendant: the owner, heirs, lienholders. Search the former owner's name in ${this.esc(r.county || "the")} County">Case Search ↗</a>`);
+        links.push(`<a href="https://mdlandrec.net/main/" target="_blank" rel="noopener" title="Free with registration. The deed at Liber/Folio ${this.esc(r.deed || "?")} recites the case number and the party foreclosed">mdlandrec ↗</a>`);
+
+        const kindText = {
+            TAX_DEED: "Collector's deed under §14-847 — the foreclosure completed and the balance of the bid is held by the county.",
+            THIRD_PARTY: "Title passed through a third party (usually the tax-sale buyer flipping after the collector's deed). Confirm the chain on mdlandrec; the balance, if any, is with the county.",
+            LENDER: "The deed was signed by a bank or trustee — a <b>mortgage</b> foreclosure, not a tax deed. Any surplus from that auction is in the Circuit Court case file (auditor's account), paid out by court order. Still owed to the former owner; PHIFA applies in full.",
+            UNKNOWN: "Grantor on the new deed is not recorded. Read the deed on mdlandrec to see who signed it.",
+        }[kind] || "";
+        const who = kind === "LENDER" ? "Circuit Court — foreclosure case (auditor's report)"
+            : `${this.esc(r.county || "")} County collector of taxes (Finance / Treasurer). Claim under §14-818(a)(5): county form, no court order, no fee.`;
+        const occ = r.former_occupancy === "H" ? "Owner-occupied at the time — they lived here" : (r.former_occupancy ? "Not owner-occupied — mailing address is the better lead" : null);
+        const letter = this.letterFor(r, p ? p.full : name);
+        return `<div class="detail-section">
+                <h3>Former Owner — Who The Refund Belongs To</h3>
+                <div class="detail-row"><span class="label">Former owner</span><span class="value" style="font-family:var(--font-mono); font-weight:600; color:var(--yellow)">${name ? this.esc(name) : '<span style="font-family:var(--font-sans); font-weight:400; color:var(--text-dim); font-size:0.8rem">not on any list we hold — it is on the deed (mdlandrec, below) and on the county\'s §14-818(a)(6) notice list</span>'}${r.former_owner2 ? `<br>${this.esc(r.former_owner2)}` : ""}</span></div>
+                ${r.former_mail ? `<div class="detail-row"><span class="label">Their mail went to</span><span class="value">${this.esc(r.former_mail)}</span></div>` : ""}
+                ${occ ? `<div class="detail-row"><span class="label">Lived there?</span><span class="value">${occ}</span></div>` : ""}
+                ${r.former_deed ? `<div class="detail-row"><span class="label">How they held it</span><span class="value" style="font-family:var(--font-mono)">Deed ${this.esc(r.former_deed)} · ${this.esc(r.former_transfer_date || "")} <span style="font-family:var(--font-sans); color:var(--text-dim); font-size:0.78rem">— pull it: if they inherited, the heirs are already named</span></span></div>` : ""}
+                <div class="detail-row"><span class="label">Lost title</span><span class="value">${this.esc(r.transfer_date || "date on deed")} → ${this.esc(r.owner_of_record || "")}${r.deed ? ` <span style="font-family:var(--font-mono); color:var(--text-dim)">(Liber/Folio ${this.esc(r.deed)})</span>` : ""}</span></div>
+                <div class="detail-row"><span class="label">How</span><span class="value" style="font-size:0.82rem">${kindText}</span></div>
+                <div class="detail-row"><span class="label">Who holds the money</span><span class="value" style="font-size:0.82rem">${who}</span></div>
+                ${r.notice_due_by ? `<div class="detail-row"><span class="label">County notice due</span><span class="value" style="color:var(--yellow)">${this.esc(r.notice_due_by)} — §14-818(a)(6), 90 days from the deed. If they moved, that letter went to the old address.</span></div>` : ""}
+                <div class="detail-row"><span class="label">Find them</span><span class="value" style="display:flex; flex-wrap:wrap; gap:6px 14px; font-size:0.85rem">${links.join("")}</span></div>
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px">
+                    <button class="btn btn-sm" data-copy="${this.esc(letter)}">Copy letter to former owner</button>
+                    <button class="btn btn-sm" data-copy="${this.esc(this.heirChecklist(r, name))}">Copy heir-search checklist</button>
+                </div>
+                <p style="font-size:0.76rem; color:var(--text-dim); margin:8px 0 0">Tell them the money exists and how to claim it for free. Do not buy or take assignment of the claim, charge a finder's fee, or sign anything with them until a Maryland lawyer has reviewed it — RP §7-301 et seq. (PHIFA) and CL §17-325 both bite here.</p>
+            </div>`;
+    },
+
+    letterFor(r, name) {
+        const amt = r.est_surplus != null ? `roughly ${this.money(r._surplus)}` : "a balance";
+        const addr = `${r.address || ""}${r.city ? ", " + r.city : ""}${r.zip ? " " + r.zip : ""}`;
+        const holder = r.conveyance_kind === "LENDER" ? `the Circuit Court for ${r.county} County, in the foreclosure case file` : `the ${r.county} County tax collector (Finance Office)`;
+        return `${name ? name : "To the former owner of " + addr},
+
+I am writing about the property at ${addr}, which you owned before it was sold at tax sale and later deeded away${r.transfer_date ? " in " + r.transfer_date.slice(0, 4) : ""}.
+
+When that happened, the buyer paid more than the taxes that were owed. Under Maryland law (Tax-Property Article § 14-818) the extra money — ${amt} by our estimate — does not go to the buyer or to the county. It belongs to the person who owned the property, which is you${name && /&/.test(r.former_owner || "") ? " (or your co-owner)" : ""}, or your heirs.
+
+That money is being held by ${holder}. You can claim it yourself, for free, with a county form. No lawyer and no court hearing is needed. ${r.conveyance_kind === "LENDER" ? "In a court foreclosure the auditor's report shows the amount and the court orders it paid to you." : "The county is required to mail you a notice, but that notice goes to the address on the old tax bill, which is why many people never see it."}
+
+I am not asking you for anything. I am a local real-estate buyer and I came across this in public records. If you would like, I will tell you exactly who to call and what to ask for. If you would rather handle it on your own, call the ${r.county} County Finance Office and ask about the "tax sale surplus" or "excess proceeds" for account number ${r.account}.
+
+Dustin Ray
+Pages of Purpose LLC · Charlotte Hall, Maryland`;
+    },
+
+    heirChecklist(r, name) {
+        return `HEIR SEARCH — ${name || "former owner"} — ${r.address || ""}, ${r.city || ""} (${r.county} County, acct ${r.account})
+
+1. Register of Wills estate search (registers.maryland.gov): last name, ${r.county} County. An estate names the personal representative and heirs, with addresses.
+2. Case Search (casesearch.courts.state.md.us): Circuit Court, civil, the former owner's name. The tax foreclosure case lists every defendant served — owner, spouse, heirs, lienholders — and the addresses they were served at.
+3. mdlandrec.net: read deed Liber/Folio ${r.deed || "?"} (the deed that took title). It recites the case number and the party foreclosed. Then read ${r.former_deed ? "their own deed, Liber/Folio " + r.former_deed : "the deed before it"} — if they took title by inheritance, the heirs are already named.
+4. Obituary: "${name}" obituary Maryland. Survivors listed = heirs. Note the funeral home; they keep next-of-kin contact.
+5. People search (TruePeopleSearch / FastPeopleSearch): current address, age, relatives. Relatives of the right surname in ${r.city || "the area"} are who to call.
+6. Still stuck: ask the county for the §14-818(a)(6) notice list by MPIA (docs/surplus-mpia-request.md) — it shows the name and address the notice went to, and whether the balance was ever paid out.
+7. Before any agreement: Maryland lawyer. RP §7-301 (PHIFA), CL §17-325.`;
+    },
+
     nextStep(r) {
         if (r.stage === "CONVEYED") {
-            return (r.historical ? "Found from the collector's deed in the land records, so we know the foreclosure completed but not who owned it "
-                + "before — SDAT only keeps the current owner. The county's surplus list (or the prior deed) gives you the name. " : "")
-                + "The property is gone — this is a <b>surplus</b> lead, not a buy lead. The former owner is owed the balance. "
+            return "The property is gone — this is a <b>surplus</b> lead, not a buy lead. The former owner is owed the balance. "
                 + "Confirm the exact amount and whether it has been claimed by asking the county collector (see "
                 + "<code>docs/surplus-mpia-request.md</code>), then tell the former owner the money exists and point them at the county's "
                 + "free claim form. Do not offer to buy or take assignment of the claim without a Maryland lawyer signing off first.";
@@ -310,7 +402,7 @@ const SurplusApp = {
         const rows = this.sorted(this.filtered());
         if (!rows.length) { alert("Nothing to export with the current filters."); return; }
         const H = ["Stage", "Stage Meaning", "Deed Likely", "Bid/Taxes", "Deed Consideration", "Years Since Deed", "Legal Description", "Years Sold at Tax Sale", "Account #", "Address", "City", "Zip", "County",
-            "Owner on Record", "Owner 2", "Owner at Tax Sale", "Mailing Address", "Tax Sale Year", "Tax Sale Status",
+            "Owner on Record", "Owner 2", "Owner at Tax Sale", "Mailing Address", "Former Owner", "Former Owner 2", "Former Owner Mail", "How Title Moved", "Tax Sale Year", "Tax Sale Status",
             "Lien Buyer", "Winning Bid", "Taxes Owed", "Est. Surplus", "Assessed", "Bid/Assessed", "Days Since Sale",
             "Repeat Sale", "Deed on Record", "Last Transfer", "Grantor", "Year Built", "Occupancy", "Lat", "Lon", "Source", "Status", "Notes"];
         const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
@@ -319,6 +411,7 @@ const SurplusApp = {
             const m = STAGE_META[r.stage] || {};
             lines.push([m.label || r.stage, m.blurb || "", r.deed_rational ? "YES" : "no", r.bid_to_face, r.consideration, r.years_since_conveyance, r.legal, (r.years_listed || []).join(" "), `="${r.account}"`,
                 r.address, r.city, r.zip, r.county, r.owner_of_record, r.owner2, r.owner_at_sale, r.mail,
+                r.former_owner || r.owner_at_sale, r.former_owner2, r.former_mail, r.conveyance_kind,
                 r.tax_sale_year, r.tax_sale_status, r.sold_to, r.winning_bid, r.taxes_owed, r.est_surplus,
                 r.assessed_value, r.bid_to_assessed, r.days_since_sale, r.repeat_sale ? "YES" : "no",
                 r.deed, r.transfer_date, r.grantor, r.year_built, r.occupancy, r.lat, r.lon, r.source,

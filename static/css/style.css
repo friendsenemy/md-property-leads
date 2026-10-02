@@ -847,3 +847,6 @@ a:hover { text-decoration: underline; }
         overflow-x: auto;
     }
 }
+
+/* small action buttons inside the lead modal (copy letter, copy checklist) */
+.btn-sm { font-size: 0.85rem; padding: 7px 12px; }
