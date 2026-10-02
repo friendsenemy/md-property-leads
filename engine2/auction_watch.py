@@ -90,18 +90,39 @@ def remaining_balance(principal, rate, years_elapsed, term=30):
     return principal * ((1 + r) ** n - (1 + r) ** k) / ((1 + r) ** n - 1)
 
 
-def estimate_payoff(purchase_price, purchase_year, sale_year):
-    """(low, mid, high) payoff estimate from the owner's own purchase.
-    Returns None when the purchase is unusable (no price, inherited, $0 deed)."""
-    if not purchase_price or purchase_price < 20000 or not purchase_year:
-        return None
-    yrs = max(sale_year - purchase_year, 0)
-    base = remaining_balance(purchase_price * ASSUMED_LTV, ASSUMED_RATE, yrs)
-    mid = base * (1 + ARREARS_FACTOR)
-    if yrs > REFI_HAIRCUT_YEARS:
-        # old loan: could have been paid down -- or cashed out. Widen both ways.
-        return (mid * 0.6, mid, purchase_price * ASSUMED_LTV * (1 + ARREARS_FACTOR))
-    return (mid * 0.85, mid, mid * 1.15)
+OLD_LOAN_YEARS = 15           # past this, the purchase loan tells us little: the debt being
+                              # foreclosed is a refinance, HELOC or reverse mortgage we cannot see
+DEPOSIT_MULTIPLE = 10         # trustees set the deposit near 10% of the debt / opening bid
+DEPOSIT_MIN_SIGNAL = 15000    # a flat $10k deposit is a floor convention, not a signal
+
+
+def estimate_payoff(purchase_price, purchase_year, sale_year, deposit=None, assessed=0):
+    """(low, mid, high, basis) payoff estimate. Two independent clues:
+       * the owner's own purchase price + year, amortised (fresh loans only)
+       * the trustee's required deposit x10
+    A foreclosure PROVES a debt exists, so an old purchase never yields $0: without
+    a deposit signal the estimate widens up toward value. Returns None when there
+    is nothing to go on."""
+    model = None
+    if purchase_price and purchase_price >= 20000 and purchase_year:
+        yrs = max(sale_year - purchase_year, 0)
+        base = remaining_balance(purchase_price * ASSUMED_LTV, ASSUMED_RATE, yrs) * (1 + ARREARS_FACTOR)
+        model = (base, yrs)
+    dep = deposit * DEPOSIT_MULTIPLE if deposit and deposit >= DEPOSIT_MIN_SIGNAL else None
+
+    if model and model[1] <= OLD_LOAN_YEARS:
+        m = model[0]
+        if dep:
+            mid = max(m, dep)
+            return (min(m, dep) * 0.9, mid, mid * 1.15, "purchase loan + deposit")
+        return (m * 0.85, m, m * 1.2, "purchase loan")
+    if dep:
+        return (dep * 0.8, dep, dep * 1.3, "deposit x10" + (" (purchase too old to model)" if model else ""))
+    if model:
+        # old loan, no deposit clue: anywhere from the amortised remainder up to most of the value
+        lo = model[0]
+        return (lo, max(lo, 0.5 * assessed), max(lo, 0.85 * assessed), "old purchase — debt is a later loan, size unknown")
+    return None
 
 
 # --- fetch + parse --------------------------------------------------------
@@ -242,39 +263,27 @@ def classify(lot, s, today):
     if re.match(r"^(19|20)\d\d", td):
         purch_year = int(td[:4])
     sale_year = int(lot["sale_date"][:4]) if lot.get("sale_date") else today.year
-    est = estimate_payoff(_f(s.get("sale_price")), purch_year, sale_year)
+    est4 = estimate_payoff(_f(s.get("sale_price")), purch_year, sale_year, lot.get("deposit"), av)
+    est, basis = (est4[:3], est4[3]) if est4 else (None, None)
     reasons = []
     tier = None
     hammer = lot.get("hammer")
     surplus = None
-    if lot["kind"] == "SOLD" and hammer:
-        if est:
-            lo, mid, hi = est
-            surplus = (hammer - hi, hammer - mid, hammer - lo)
-            if hammer - mid >= STRONG_MIN_SURPLUS and hammer >= mid * STRONG_MIN_RATIO:
-                tier = "STRONG"; reasons.append(f"hammer {hammer:,.0f} vs est. payoff {mid:,.0f}")
-            elif hammer - mid >= POSSIBLE_MIN_SURPLUS:
-                tier = "POSSIBLE"; reasons.append("hammer modestly above estimated payoff")
-            else:
-                reasons.append("hammer at or below estimated payoff — likely no surplus")
+    # STRONG is judged against the HIGH end of the payoff range (conservative);
+    # POSSIBLE against the middle.
+    value = hammer if (lot["kind"] == "SOLD" and hammer) else (av if lot["kind"] == "SCHEDULED" else None)
+    if value and est:
+        lo, mid, hi = est
+        surplus = (value - hi, value - mid, value - lo)
+        word = "hammer" if lot["kind"] == "SOLD" else "assessed"
+        if value - hi >= STRONG_MIN_SURPLUS and value >= hi * STRONG_MIN_RATIO:
+            tier = "STRONG"; reasons.append(f"{word} {value:,.0f} vs est. payoff {mid:,.0f}–{hi:,.0f} ({basis})")
+        elif value - mid >= POSSIBLE_MIN_SURPLUS:
+            tier = "POSSIBLE"; reasons.append(f"{word} {value:,.0f} vs est. payoff {mid:,.0f} ({basis}) — thin or uncertain margin")
         else:
-            # no usable purchase: fall back to value. A hammer well above assessment
-            # on a long-held home usually means equity.
-            if av >= MIN_ASSESSED and hammer >= 0.9 * av and (purch_year or 0) and sale_year - purch_year >= 12:
-                tier = "POSSIBLE"; reasons.append("no purchase price on deed; long-held and sold near value")
-            else:
-                reasons.append("no purchase price on deed to estimate the payoff")
-    elif lot["kind"] == "SCHEDULED":
-        # pre-auction: the owner still owns it. Equity on paper = buy lead.
-        if est:
-            lo, mid, hi = est
-            surplus = (av - hi, av - mid, av - lo)
-            if av - mid >= STRONG_MIN_SURPLUS and av >= mid * STRONG_MIN_RATIO:
-                tier = "STRONG"; reasons.append(f"assessed {av:,.0f} vs est. payoff {mid:,.0f} — equity to protect")
-            elif av - mid >= POSSIBLE_MIN_SURPLUS:
-                tier = "POSSIBLE"
-        elif lot.get("deposit") and av >= MIN_ASSESSED and lot["deposit"] * 10 < 0.7 * av:
-            tier = "POSSIBLE"; reasons.append("deposit suggests a debt well under value")
+            reasons.append(f"{word} at or below estimated payoff ({basis}) — likely no surplus")
+    elif value and not est:
+        reasons.append("no purchase price and no deposit signal — cannot estimate the payoff")
     if ent:
         reasons.append("owner is an entity — the person behind it is the contact")
         if tier == "STRONG":
@@ -332,7 +341,7 @@ def build(index_path, today=None):
             "purchase_price": _f(s.get("sale_price")) or None, "purchase_year": purch_year,
             "purchase_deed": f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/"),
             "grantor": s.get("grantor1"),
-            "payoff_est": [round(x) for x in est] if est else None,
+            "payoff_est": [round(x) for x in est] if est else None, "payoff_basis": basis,
             "surplus_est": [round(x) for x in surplus] if surplus else None,
             "ambiguous_match": s.get("_ambiguous"),
             "first_seen": first_seen,
