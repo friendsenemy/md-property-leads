@@ -276,7 +276,14 @@ def stage(rec, sale_dt, owner_changed, today, bid_to_av=None, bid_to_face=None, 
     age = (today - sale_dt).days
     if owner_changed:
         return "CONVEYED", "Deed conveyed — purchaser paid the residue of the bid"
-    overbid = ((bid_to_av is not None and bid_to_av >= LIEN_STRANDED_MIN_BID_TO_AV)
+    # What strands a purchaser is the RESIDUE -- bid minus the taxes they already
+    # paid at sale -- because 14-818(a)(2) says that is what they owe to deed.
+    # A bid that merely equals a debt bigger than the lot (common on PG paper
+    # lots) has no residue; that buyer forecloses happily. Not stranded.
+    residue_to_av = None
+    if bid_to_av is not None and av and bid_to_av * av > 0:
+        residue_to_av = (bid_to_av * av - (face or 0)) / av
+    overbid = ((residue_to_av is not None and residue_to_av >= LIEN_STRANDED_MIN_BID_TO_AV)
                or (bid_to_av is None and bid_to_face is not None and bid_to_face >= LIEN_STRANDED_MIN_BID_TO_FACE))
     real_debt = (face or 0) >= LIEN_STRANDED_MIN_FACE or (
         av and face and face >= LIEN_STRANDED_MIN_FACE_TO_TAX * av * EST_TAX_RATE)
