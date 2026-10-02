@@ -677,35 +677,50 @@ a:hover { text-decoration: underline; }
 }
 
 .modal-footer {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 16px 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px 24px 24px;
     border-top: 1px solid var(--border);
 }
 
-.modal-footer select {
-    padding: 8px 12px;
+.modal-footer .note-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.modal-footer .note-row label { font-size: 1rem; color: var(--text-secondary); }
+
+.modal-footer select,
+.modal-footer input[type="text"] {
+    padding: 12px 14px;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     color: var(--text-primary);
     font-family: var(--font);
-    font-size: 0.85rem;
+    font-size: 1.1rem;
 }
 
 .modal-footer textarea {
-    flex: 1;
-    padding: 8px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     color: var(--text-primary);
     font-family: var(--font);
-    font-size: 0.85rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
     resize: vertical;
-    min-height: 38px;
+    min-height: 170px;
 }
+
+.modal-footer .btn-primary { font-size: 1.1rem; padding: 12px 26px; }
+
+.note-history { display: grid; gap: 8px; }
+.note-history .note { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; font-size: 1.02rem; line-height: 1.45; white-space: pre-wrap; }
+.note-history .note .who { font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan); margin-bottom: 4px; }
+.note-sync { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); }
+.note-sync.on { color: var(--green); }
+.note-sync.err { color: #ff453a; }
 
 .modal-footer select:focus,
 .modal-footer textarea:focus {

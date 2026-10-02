@@ -67,6 +67,12 @@ OPPORTUNITY_STAGES = {"CONVEYED", "FORECLOSURE_WINDOW", "CERT_STALE", "LIEN_STRA
 # sale" and moves on.
 LIEN_STRANDED_MIN_BID_TO_AV = 1.25      # bid exceeds value by enough that deeding is irrational
 LIEN_STRANDED_MIN_BID_TO_FACE = 500     # fallback when we have no assessed value to compare
+# ...and the OWNER has to actually be behind. A $666 lien on a $2.7M medical
+# building is a missed front-foot fee the property manager pays on receipt,
+# not distress; the stranded play only exists when the debt is real money.
+LIEN_STRANDED_MIN_FACE = 2500           # dollars, or
+LIEN_STRANDED_MIN_FACE_TO_TAX = 0.5     # at least half a year's estimated tax bill
+EST_TAX_RATE = 0.011                    # rough MD effective rate on assessment, for that estimate only
 
 # TP 14-847: "The judgment of the court shall direct the collector to execute a
 # deed to the holder of the certificate of sale." So every completed Maryland tax
@@ -266,12 +272,20 @@ def _notice_due(transfer_date, sale_dt):
     return (d + timedelta(days=NOTICE_DEADLINE_DAYS)).isoformat()
 
 
-def stage(rec, sale_dt, owner_changed, today, bid_to_av=None, bid_to_face=None):
+def stage(rec, sale_dt, owner_changed, today, bid_to_av=None, bid_to_face=None, face=None, av=None):
     age = (today - sale_dt).days
     if owner_changed:
         return "CONVEYED", "Deed conveyed — purchaser paid the residue of the bid"
-    stranded = ((bid_to_av is not None and bid_to_av >= LIEN_STRANDED_MIN_BID_TO_AV)
-                or (bid_to_av is None and bid_to_face is not None and bid_to_face >= LIEN_STRANDED_MIN_BID_TO_FACE))
+    overbid = ((bid_to_av is not None and bid_to_av >= LIEN_STRANDED_MIN_BID_TO_AV)
+               or (bid_to_av is None and bid_to_face is not None and bid_to_face >= LIEN_STRANDED_MIN_BID_TO_FACE))
+    real_debt = (face or 0) >= LIEN_STRANDED_MIN_FACE or (
+        av and face and face >= LIEN_STRANDED_MIN_FACE_TO_TAX * av * EST_TAX_RATE)
+    stranded = overbid and real_debt
+    if overbid and not real_debt:
+        # investor is stranded but the owner is fine: a billing hiccup on a
+        # solvent property. Not a lead for anyone. Falls to the timeline, where
+        # a 4-month-old sale is TOO_EARLY and stays off the board.
+        pass
     if stranded:
         return "LIEN_STRANDED", ("Bid far above the property's value — taking the deed would cost the purchaser more "
                                  "than the property is worth, so they almost certainly never will. The owner keeps it "
@@ -420,7 +434,7 @@ def build(index_path, today=None):
         conf, conf_why = conveyance_from_list(rec, s, sale_dt)
         if not owner_changed and conf in ("HIGH", "MEDIUM"):
             owner_changed = True
-        st, why = stage(rec, sale_dt, owner_changed, today, bid_to_av, bid_to_face)
+        st, why = stage(rec, sale_dt, owner_changed, today, bid_to_av, bid_to_face, face, av)
         if st == "CONVEYED" and conf_why:
             why = conf_why
         # a person at sale, a government on title now: the county took it (14-847

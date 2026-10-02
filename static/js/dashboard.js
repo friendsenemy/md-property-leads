@@ -71,8 +71,8 @@ const App = {
     saveLocal() {
         try { localStorage.setItem(LS_KEY, JSON.stringify(this.local)); } catch {}
     },
-    statusOf(lead) { return (this.local[lead.id] && this.local[lead.id].status) || "new"; },
-    notesOf(lead) { return (this.local[lead.id] && this.local[lead.id].notes) || ""; },
+    statusOf(lead) { const s = SharedNotes.get(lead.id); if (s) return s.status || "new"; return (this.local[lead.id] && this.local[lead.id].status) || "new"; },
+    notesOf(lead)  { const s = SharedNotes.get(lead.id); if (s) return s.notes || "";   return (this.local[lead.id] && this.local[lead.id].notes) || ""; },
     setLead(id, status, notes) {
         this.local[id] = { status, notes, updated: new Date().toISOString() };
         this.saveLocal();
@@ -298,8 +298,10 @@ const App = {
         const notes = document.getElementById("leadNotes");
         sel.value = this.statusOf(lead);
         notes.value = this.notesOf(lead);
+        SharedNotes.footer(lead.id);
         document.getElementById("saveLeadBtn").onclick = () => {
             this.setLead(lead.id, sel.value, notes.value);
+            SharedNotes.save("death", lead.id, sel.value, notes.value, `${lead.first_name || ""} ${lead.last_name || ""} — ${(lead.property && lead.property.property_address) || ""}`.trim());
             this.closeModal();
             this.render();
         };
@@ -307,6 +309,7 @@ const App = {
     },
 
     closeModal() { document.getElementById("modalOverlay").classList.remove("active"); },
+    _sharedHook: document.addEventListener("mdpl:notes-loaded", () => { try { App.render(); } catch {} }),
 
     // ─── Export ───
     exportCSV() {

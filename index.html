@@ -393,17 +393,28 @@
         </div>
         <div class="modal-body" id="modalBody"></div>
         <div class="modal-footer">
-            <select id="leadStatusSelect">
-                <option value="new">New</option>
-                <option value="contacted">Contacted</option>
-                <option value="closed">Closed</option>
-            </select>
-            <textarea id="leadNotes" placeholder="Add notes… (saved in this browser)"></textarea>
-            <button class="btn btn-primary" id="saveLeadBtn">Save</button>
+            <div class="note-history" id="noteHistory"></div>
+            <div class="note-row">
+                <label for="leadStatusSelect">Status</label>
+                <select id="leadStatusSelect">
+                    <option value="new">New</option>
+                    <option value="contacted">Contacted</option>
+                    <option value="closed">Closed</option>
+                </select>
+                <label for="noteAuthor">Your name</label>
+                <input type="text" id="noteAuthor" placeholder="Ray / Todd" size="10" autocomplete="off">
+                <span class="note-sync" id="noteSync"></span>
+            </div>
+            <textarea id="leadNotes" placeholder="Add a note. Everyone using the dashboard sees it."></textarea>
+            <div class="note-row" style="justify-content:flex-end">
+                <button class="btn btn-primary" id="saveLeadBtn">Save</button>
+            </div>
         </div>
     </div>
 </div>
 
+<script src="static/js/config.js"></script>
+<script src="static/js/shared.js"></script>
 <script src="static/js/aerial.js"></script>
 <script src="static/js/dashboard.js"></script>
 <script src="static/js/title.js"></script>

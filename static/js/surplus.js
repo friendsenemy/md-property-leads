@@ -76,8 +76,9 @@ const SurplusApp = {
 
     loadLocal() { try { this.local = JSON.parse(localStorage.getItem(SURPLUS_LS_KEY) || "{}"); } catch { this.local = {}; } },
     saveLocal() { try { localStorage.setItem(SURPLUS_LS_KEY, JSON.stringify(this.local)); } catch {} },
-    statusOf(r) { return (this.local[r.id] && this.local[r.id].status) || "new"; },
-    notesOf(r) { return (this.local[r.id] && this.local[r.id].notes) || ""; },
+    statusOf(r) { const s = SharedNotes.get(r.id); if (s) return s.status || "new"; return (this.local[r.id] && this.local[r.id].status) || "new"; },
+    notesOf(r)  { const s = SharedNotes.get(r.id); if (s) return s.notes || "";   return (this.local[r.id] && this.local[r.id].notes) || ""; },
+    _sharedHook: document.addEventListener("mdpl:notes-loaded", () => { try { if (SurplusApp.rows.length) SurplusApp.render(); } catch {} }),
 
     bindEvents() {
         let t;
@@ -262,9 +263,12 @@ const SurplusApp = {
         Aerial.bind(document.getElementById("modalBody"));
         const sel = document.getElementById("leadStatusSelect"), notes = document.getElementById("leadNotes");
         sel.value = this.statusOf(r); notes.value = this.notesOf(r);
+        SharedNotes.footer(r.id);
         document.getElementById("saveLeadBtn").onclick = () => {
             this.local[r.id] = { status: sel.value, notes: notes.value, updated: new Date().toISOString() };
-            this.saveLocal(); App.closeModal(); this.render();
+            this.saveLocal();
+            SharedNotes.save("surplus", r.id, sel.value, notes.value, `${r.address || ""}, ${r.city || ""} — ${r.owner_of_record || ""}`);
+            App.closeModal(); this.render();
         };
         document.getElementById("modalOverlay").classList.add("active");
     },
