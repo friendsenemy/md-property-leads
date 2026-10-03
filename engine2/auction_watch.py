@@ -620,6 +620,7 @@ def build(index_path, today=None, backfill=0):
             seen = json.load(f).get("lots", {})
 
     rows, unmatched, dropped = [], 0, 0
+    processed = set()
     for lot in lots:
         if lot["kind"] == "SOLD" and not lot.get("hammer"):
             continue
@@ -687,6 +688,7 @@ def build(index_path, today=None, backfill=0):
         win, win_note = collection_window(lot.get("sale_date"), today) if lot["kind"] == "SOLD" else (None, None)
         first_seen = seen.get(lot["lot_id"], {}).get("first_seen") or datetime.now(timezone.utc).isoformat(timespec="seconds")
         seen[lot["lot_id"]] = {"first_seen": first_seen, "kind": lot["kind"], "tier": tier}
+        processed.add(lot["lot_id"])
         if not tier:
             dropped += 1; continue
         mail = " ".join(x for x in (s.get("mail_addr"), s.get("mail_city"), s.get("mail_zip")) if x)
@@ -732,7 +734,7 @@ def build(index_path, today=None, backfill=0):
             prev = json.load(f).get("rows", [])
     except (OSError, ValueError):
         prev = []
-    have = {r["lot_id"] for r in rows}
+    have = {r["lot_id"] for r in rows} | processed
     for r in prev:
         if r.get("stage") == "AUCTION_SOLD" and r.get("lot_id") not in have and r.get("sale_date"):
             if (today - date.fromisoformat(r["sale_date"])).days <= KEEP_SOLD_DAYS:
