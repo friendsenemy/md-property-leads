@@ -290,7 +290,7 @@ def classify(lot, s, today):
             tier = "POSSIBLE"
     if av and av < MIN_ASSESSED:
         tier = None; reasons.append("below the residential value floor")
-    return tier, reasons, est, surplus, av, owner, purch_year
+    return tier, reasons, est, surplus, av, owner, purch_year, basis
 
 
 def build(index_path, today=None):
@@ -318,10 +318,12 @@ def build(index_path, today=None):
     for lot in lots:
         if lot["kind"] == "SOLD" and not lot.get("hammer"):
             continue
+        if lot["kind"] == "SCHEDULED" and (lot.get("status") or "") not in ("active", "pre_sold", "upcoming", ""):
+            continue                                       # cancelled / postponed
         s = match_sdat(db, lot)
         if not s:
             unmatched += 1; continue
-        tier, reasons, est, surplus, av, owner, purch_year = classify(lot, s, today)
+        tier, reasons, est, surplus, av, owner, purch_year, basis = classify(lot, s, today)
         first_seen = seen.get(lot["lot_id"], {}).get("first_seen") or datetime.now(timezone.utc).isoformat(timespec="seconds")
         seen[lot["lot_id"]] = {"first_seen": first_seen, "kind": lot["kind"], "tier": tier}
         if not tier:
