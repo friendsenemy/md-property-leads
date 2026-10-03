@@ -311,6 +311,7 @@ TRUSTEE_WORD = re.compile(r"\b(TRUSTEES?|\(TR\)|TR|TRS|SUB(STITUTE)?\s*TR\w*)\b"
 TRUST_NOUN = re.compile(r"\b(TRUST|REV(OCABLE)?|LIVING|LVNG|FAMILY|FAM|MARITAL|RESIDUARY|IRREV(OCABLE)?|ESTATE|EST|CHURCH|FOUNDATION|REIT|BANK|COMPANY|CO|CORP|LLC|INC|CUSTODIAN|ETAL|ET AL)\b")
 
 
+FORECLOSURE_MAX_TO_AV = 1.0          # measured: confirmed foreclosures median 0.75x assessed, 90th pct 0.97x
 FORECLOSURE_CODE = "(4)"             # SDAT how-conveyed: non-arms-length such as a foreclosure, gift or auction
 MIN_FORECLOSURE_PRICE = 40000        # gifts and family transfers are $0 or nominal; an auction is not
 
@@ -638,15 +639,21 @@ def build(index_path, today=None, backfill=0):
             est4 = estimate_payoff(lot.get("borrower_price"), lot.get("borrower_bought_year"), sale_year, None, av,
                                    mortgage=lot.get("borrower_mortgage"))
             est, basis = (est4[:3], est4[3]) if est4 else (None, None)
+            ratio_av = (h / av) if av else 0
             if REO_OWNER.search(buyer):
                 tier, reasons, surplus = None, ["lender took the property back (REO) — a credit bid, no surplus"], None
+            elif ratio_av > FORECLOSURE_MAX_TO_AV:
+                # Confirmed foreclosures sell at a median 75% of assessment (90th pct 97%).
+                # Above assessment this is an estate, owner or tax auction wearing the same
+                # SDAT code -- a probate/buy lead maybe, but not a mortgage surplus.
+                tier, reasons, surplus = None, [f"sold at {ratio_av:.0%} of assessed — foreclosures sell below value; this looks like an estate or owner auction, not a foreclosure"], None
             elif est and h:
                 lo, mid, hi = est
                 surplus = (h - hi, h - mid, h - lo)
-                if h - hi >= STRONG_MIN_SURPLUS and h >= hi * STRONG_MIN_RATIO:
-                    tier = "STRONG"; reasons = [f"hammer {h:,.0f} vs est. payoff {mid:,.0f}–{hi:,.0f} ({basis})"]
+                if h - hi >= STRONG_MIN_SURPLUS and h >= hi * STRONG_MIN_RATIO and (ratio_av <= 0.9 or lot.get("borrower_mortgage")):
+                    tier = "STRONG"; reasons = [f"hammer {h:,.0f} ({ratio_av:.0%} of assessed) vs est. payoff {mid:,.0f}–{hi:,.0f} ({basis})"]
                 elif h - mid >= POSSIBLE_MIN_SURPLUS:
-                    tier = "POSSIBLE"; reasons = [f"hammer {h:,.0f} vs est. payoff {mid:,.0f} ({basis}) — thin or uncertain margin"]
+                    tier = "POSSIBLE"; reasons = [f"hammer {h:,.0f} ({ratio_av:.0%} of assessed) vs est. payoff {mid:,.0f} ({basis}) — thin or uncertain margin"]
                 else:
                     tier, reasons = None, [f"hammer at or below estimated payoff ({basis})"]
             else:
