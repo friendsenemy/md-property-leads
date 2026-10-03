@@ -544,6 +544,21 @@ def build(index_path, today=None, backfill=0):
         log.warning("tidewater: %s", e)
 
     try:
+        # diagnostics: how SDAT actually spells the grantor on recent deeds, so the
+        # trustee patterns can be tuned against reality rather than guesses
+        cutoff_s = date.fromordinal(today.toordinal() - TRUSTEE_DEED_LOOKBACK_DAYS).strftime("%Y.%m.%d")
+        samp = {}
+        total_recent = 0
+        for (g, n) in db.execute("SELECT UPPER(grantor1), COUNT(*) FROM parcels WHERE transfer_date >= ? "
+                                 "GROUP BY UPPER(grantor1) ORDER BY COUNT(*) DESC LIMIT 20000", (cutoff_s,)):
+            total_recent += n
+            gg = g or ""
+            if re.search(r"TRUST|\bTR\b|TRS|SUB|FORECLOS|AUCTION|SHERIFF|RECEIVER|BANK|MORTGAGE", gg):
+                samp[gg] = n
+        top = sorted(samp.items(), key=lambda kv: -kv[1])[:150]
+        with open(os.path.join(OUT_DIR, "grantor-trustee-sample.json"), "w", encoding="utf-8") as f:
+            json.dump({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "window_from": cutoff_s,
+                       "recent_transfers": total_recent, "top_trust_like_grantors": top}, f, indent=1)
         deeds = trustee_deeds(db, today)
         log.info("sdat trustee deeds in the last %d days: %d", TRUSTEE_DEED_LOOKBACK_DAYS, len(deeds))
         lots += [deed_lot(d) for d in deeds]

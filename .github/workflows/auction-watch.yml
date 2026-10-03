@@ -68,13 +68,14 @@ jobs:
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p /tmp/out && cp data/surplus/auctions.json data/surplus/auctions-seen.json /tmp/out/
-          cp data/surplus/auction-archive.json /tmp/out/ 2>/dev/null || true
+          cp data/surplus/auction-archive.json data/surplus/grantor-trustee-sample.json /tmp/out/ 2>/dev/null || true
           git fetch origin main
           git checkout -f -B main origin/main
           cp /tmp/out/auctions.json /tmp/out/auctions-seen.json data/surplus/
           [ -f /tmp/out/auction-archive.json ] && cp /tmp/out/auction-archive.json data/surplus/
+          [ -f /tmp/out/grantor-trustee-sample.json ] && cp /tmp/out/grantor-trustee-sample.json data/surplus/
           git add data/surplus/auctions.json data/surplus/auctions-seen.json
-          git add data/surplus/auction-archive.json 2>/dev/null || true
+          git add data/surplus/auction-archive.json data/surplus/grantor-trustee-sample.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(d['counts']['kept'])")
           S=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(sum(1 for r in d['rows'] if r['tier']=='STRONG'))")
