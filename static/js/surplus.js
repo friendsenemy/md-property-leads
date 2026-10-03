@@ -98,12 +98,13 @@ const SurplusApp = {
         const rc = document.getElementById("sstatRepeat"); if (rc) rc.textContent = this.rows.filter((r) => r.repeat_sale).length.toLocaleString();
         const ac = document.getElementById("sstatAuction");
         if (ac) {
-            const au = this.rows.filter((r) => r.stage === "AUCTION_SOLD" || r.stage === "AUCTION_SCHEDULED");
+            const au = this.rows.filter((r) => (r.stage === "AUCTION_SOLD" || r.stage === "AUCTION_SCHEDULED") && (this.state.deedScan || !(r.from_deed && !r.confirmed_by_auctioneer)));
             const strong = au.filter((r) => r.tier === "STRONG").length;
             const fresh = au.filter((r) => r.first_seen && (Date.now() - new Date(r.first_seen)) < 7 * 86400000).length;
             ac.textContent = au.length.toLocaleString();
             const sub = document.getElementById("sstatAuctionSub");
-            if (sub) sub.textContent = au.length ? `${strong} strong · ${fresh} new this week` : "runs every weekday morning";
+            const cand = this.rows.filter((r) => r.from_deed && !r.confirmed_by_auctioneer).length;
+            if (sub) sub.textContent = au.length ? `${strong} strong · ${fresh} new this week${!this.state.deedScan && cand ? ` · +${cand} deed-scan candidates (toggle)` : ""}` : "runs every weekday morning";
         }
         document.getElementById("sstatTracked").textContent = tracked >= 1e6
             ? "$" + (tracked / 1e6).toFixed(1) + "M" : "$" + Math.round(tracked).toLocaleString();
@@ -140,8 +141,8 @@ const SurplusApp = {
         }));
         const rep = document.getElementById("surplusRepeat");
         if (rep) rep.addEventListener("change", (e) => { this.state.repeat = e.target.checked; this.state.page = 1; this.render(); });
-        const hu = document.getElementById("surplusHideUnconfirmed");
-        if (hu) hu.addEventListener("change", (e) => { this.state.hideUnconfirmed = e.target.checked; this.state.page = 1; this.render(); });
+        const ds = document.getElementById("surplusDeedScan");
+        if (ds) ds.addEventListener("change", (e) => { this.state.deedScan = e.target.checked; this.state.page = 1; this.stats(); this.render(); });
         const arc = document.getElementById("surplusArchive");
         if (arc) arc.addEventListener("change", async (e) => {
             this.state.archive = e.target.checked; this.state.page = 1;
@@ -177,7 +178,7 @@ const SurplusApp = {
             (!s.county || r.county === s.county) &&
             (!s.minSurplus || r._surplus >= s.minSurplus) &&
             (!s.repeat || r.repeat_sale) &&
-            (!s.hideUnconfirmed || r.tier !== "UNCONFIRMED") &&
+            (s.deedScan || !(r.from_deed && !r.confirmed_by_auctioneer)) &&
             (s.status === "all" || this.statusOf(r) === s.status) &&
             (!s.search || r._blob.includes(s.search))
         );
