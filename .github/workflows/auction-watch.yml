@@ -9,6 +9,11 @@ on:
   schedule:
     - cron: '17 11 * * 1-6'      # 7:17 AM ET, Mon–Sat
   workflow_dispatch:
+    inputs:
+      backfill_pages:
+        description: 'Also walk N pages (100 past sales each, newest first; 141 = back to 2012) into the archive'
+        default: '0'
+        required: false
 
 permissions:
   contents: write
@@ -51,7 +56,7 @@ jobs:
           key: ${{ steps.week.outputs.key }}
 
       - name: Watch auctions
-        run: python -m engine2.auction_watch --index .cache/sdat.sqlite
+        run: python -m engine2.auction_watch --index .cache/sdat.sqlite --backfill "${{ github.event.inputs.backfill_pages || '0' }}"
 
       - name: Email new strong leads
         env:
@@ -63,10 +68,13 @@ jobs:
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p /tmp/out && cp data/surplus/auctions.json data/surplus/auctions-seen.json /tmp/out/
+          cp data/surplus/auction-archive.json /tmp/out/ 2>/dev/null || true
           git fetch origin main
           git checkout -f -B main origin/main
           cp /tmp/out/auctions.json /tmp/out/auctions-seen.json data/surplus/
+          [ -f /tmp/out/auction-archive.json ] && cp /tmp/out/auction-archive.json data/surplus/
           git add data/surplus/auctions.json data/surplus/auctions-seen.json
+          git add data/surplus/auction-archive.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(d['counts']['kept'])")
           S=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(sum(1 for r in d['rows'] if r['tier']=='STRONG'))")

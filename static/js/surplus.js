@@ -15,7 +15,8 @@ const STAGE_META = {
 
 const SurplusApp = {
     rows: [], events: [], local: {}, generated: "",
-    state: { search: "", county: "", stage: "all", minSurplus: 0, status: "all", repeat: false, sort: "est_surplus", dir: -1, page: 1, perPage: 25 },
+    state: { search: "", county: "", stage: "all", minSurplus: 0, status: "all", repeat: false, archive: false, sort: "est_surplus", dir: -1, page: 1, perPage: 25 },
+    archiveRows: null,
 
     async init() {
         this.loadLocal();
@@ -139,6 +140,18 @@ const SurplusApp = {
         }));
         const rep = document.getElementById("surplusRepeat");
         if (rep) rep.addEventListener("change", (e) => { this.state.repeat = e.target.checked; this.state.page = 1; this.render(); });
+        const arc = document.getElementById("surplusArchive");
+        if (arc) arc.addEventListener("change", async (e) => {
+            this.state.archive = e.target.checked; this.state.page = 1;
+            if (this.state.archive && this.archiveRows === null) {
+                this.archiveRows = [];
+                try {
+                    const r = await fetch(`data/surplus/auction-archive.json?t=${Date.now()}`, { cache: "no-store" });
+                    if (r.ok) this.archiveRows = (((await r.json()) || {}).rows || []).map((a) => this.decorateAuction(a));
+                } catch {}
+            }
+            this.fillCounties(); this.stats(); this.render();
+        });
         document.querySelectorAll("#surplusStatusFilters .filter-btn").forEach((b) => b.addEventListener("click", () => {
             document.querySelectorAll("#surplusStatusFilters .filter-btn").forEach((x) => x.classList.remove("active"));
             b.classList.add("active"); this.state.status = b.dataset.status; this.state.page = 1; this.render();
@@ -153,9 +166,11 @@ const SurplusApp = {
         document.getElementById("surplusExport").addEventListener("click", () => this.exportCSV());
     },
 
+    allRows() { return this.state.archive && this.archiveRows ? this.rows.concat(this.archiveRows) : this.rows; },
+
     filtered() {
         const s = this.state;
-        return this.rows.filter((r) =>
+        return this.allRows().filter((r) =>
             (s.stage === "all" || r.stage === s.stage) &&
             (!s.county || r.county === s.county) &&
             (!s.minSurplus || r._surplus >= s.minSurplus) &&
@@ -197,7 +212,10 @@ const SurplusApp = {
                     <td><span class="stage ${m.cls}" title="${this.esc(m.blurb || "")}">${this.esc(m.label)}</span>
                         ${r.tier === "STRONG" ? '<span class="chip chip-good" title="Hammer (or value) beats the estimated payoff by 30%+ and the estimated surplus is $25k or more">strong</span>' : ""}
                         ${r.tier === "POSSIBLE" ? '<span class="chip" title="Estimated surplus $10k–25k, or the estimate rests on thin data">possible</span>' : ""}
-                        ${r.is_new ? '<span class="chip chip-hard" title="First seen today">new</span>' : ""}
+                        ${r.is_new && !r.archive ? '<span class="chip chip-hard" title="First seen today">new</span>' : ""}
+                        ${r.archive ? '<span class="chip" title="Past auction result from the archive — surplus may still be unclaimed">archive</span>' : ""}
+                        ${r.collection_window === "COMPTROLLER" ? '<span class="chip" title="Over 3 years old — unclaimed registry funds have usually gone to the Comptroller; search claimitmd.gov">comptroller</span>' : ""}
+                        ${r.title_state === "BUYER_ON_TITLE" ? '<span class="chip" title="SDAT already shows the auction buyer — the former owner is named on the trustee\'s deed">buyer on title</span>' : ""}
                         ${r.ambiguous_match ? '<span class="chip" title="More than one SDAT parcel matched this street address — check the account number">check match</span>' : ""}
                         ${r.deed_rational && r.stage !== "CONVEYED" && !r.tier ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
                         ${r.vacant_lot ? '<span class="chip" title="No improvements on the parcel">vacant lot</span>' : ""}
@@ -355,11 +373,24 @@ const SurplusApp = {
             </div>
             <div class="detail-section">
                 <h3>${sold ? "Former Owner — Who The Surplus Belongs To" : "Owner — Still Holds Title"}</h3>
-                <div class="detail-row"><span class="label">Name</span><span class="value" style="font-family:var(--font-mono); font-weight:600; color:var(--yellow)">${this.esc(r.owner_of_record || "—")}${r.owner2 ? `<br>${this.esc(r.owner2)}` : ""}</span></div>
+                ${r.title_state === "BUYER_ON_TITLE" || r.title_state === "RESOLD" ? `
+                <div class="detail-row"><span class="label">On record now</span><span class="value" style="font-family:var(--font-mono)">${this.esc(r.buyer_on_record || "")} <span class="chip">${r.title_state === "RESOLD" ? "later buyer" : "auction buyer"}</span></span></div>
+                <div class="detail-row"><span class="label">Former owner</span><span class="value" style="font-size:0.82rem">Not in SDAT any more. ${r.trustee_deed ? `The trustee's deed at <b style="font-family:var(--font-mono)">Liber/Folio ${this.esc(r.trustee_deed)}</b> (mdlandrec, free) recites the Deed of Trust and names the borrowers.` : "Read the trustee's deed on mdlandrec — it names the borrowers."} The Circuit Court foreclosure case names them as defendants and has the auditor's account.</span></div>` : `
+                <div class="detail-row"><span class="label">Name</span><span class="value" style="font-family:var(--font-mono); font-weight:600; color:var(--yellow)">${this.esc(r.owner_of_record || "—")}${r.owner2 ? `<br>${this.esc(r.owner2)}` : ""}</span></div>`}
                 ${r.mail ? `<div class="detail-row"><span class="label">Mailing address</span><span class="value">${this.esc(r.mail)}${r.absentee ? ' <span class="chip">different from property</span>' : ""}</span></div>` : ""}
                 <div class="detail-row"><span class="label">They bought it</span><span class="value">${r.purchase_year ? `${this.esc(String(r.purchase_year))} for ${r.purchase_price ? this.money(r.purchase_price) : "an unrecorded price"}` : "no purchase on the deed (inherited or very old)"}${r.purchase_deed ? ` <span style="font-family:var(--font-mono); color:var(--text-dim)">(Liber/Folio ${this.esc(r.purchase_deed)})</span>` : ""}</span></div>
                 <div class="detail-row"><span class="label">Find them</span><span class="value" style="display:flex; flex-wrap:wrap; gap:6px 14px; font-size:0.85rem">${links.join("")}</span></div>
             </div>
+            ${sold ? `<div class="detail-section">
+                <h3>Has It Been Collected?</h3>
+                <div class="detail-row"><span class="label">Where the money is</span><span class="value" style="font-weight:600; color:${r.collection_window === "TOO_FRESH" ? "var(--green)" : (r.collection_window === "COMPTROLLER" ? "var(--yellow)" : "var(--text-primary)")}">${{ TOO_FRESH: "Too fresh to have been paid — you are first", COURT_REGISTRY: "Circuit Court registry (check the docket)", COMPTROLLER: "Probably with the Comptroller by now" }[r.collection_window] || "—"}</span></div>
+                <div class="detail-row"><span class="label">Why</span><span class="value" style="font-size:0.82rem">${this.esc(r.collection_note || "")}</span></div>
+                <div class="detail-row"><span class="label">Check it</span><span class="value" style="display:flex; flex-wrap:wrap; gap:6px 14px; font-size:0.85rem">
+                    <a href="https://casesearch.courts.state.md.us/casesearch/" target="_blank" rel="noopener" title="Circuit Court · civil · the former owner's name. Look for: Report of Sale, Order of Ratification, Auditor's Report, Order ratifying auditor's report, Motion/Order for release of surplus. A disbursement order means it was paid.">Case Search docket ↗</a>
+                    <a href="https://www.claimitmd.gov/" target="_blank" rel="noopener" title="Comptroller of Maryland unclaimed property. Search the former owner's last name; a hit with a Circuit Court as holder means the surplus is sitting there, unclaimed.">Comptroller — claimitmd.gov ↗</a>
+                </span></div>
+                <p style="font-size:0.76rem; color:var(--text-dim); margin:8px 0 0">Both checks are by name and take two minutes; neither can be automated (the court forbids it and the Comptroller uses a bot check). When you have looked, set the status to <b>Verified</b> or <b>Already paid out</b> so nobody else here spends time on it.</p>
+            </div>` : ""}
             <div class="detail-section">
                 <h3>The Money (Estimated)</h3>
                 ${sold ? `<div class="detail-row"><span class="label">Hammer price</span><span class="value" style="font-family:var(--font-mono); font-weight:600">${this.money(r.hammer)}</span></div>` : ""}
@@ -398,6 +429,7 @@ const SurplusApp = {
             links.push(`<a href="https://egov.maryland.gov/BusinessExpress/EntitySearch" target="_blank" rel="noopener">MD Business Express ↗</a>`);
         }
         links.push(`<a href="https://casesearch.courts.state.md.us/casesearch/" target="_blank" rel="noopener" title="Circuit Court, civil: the foreclosure case under the owner's name. Report of sale, ratification, auditor's account — the surplus number lives here">Case Search ↗</a>`);
+        links.push(`<a href="https://mdlandrec.net/main/" target="_blank" rel="noopener" title="Free with registration — deeds by Liber/Folio">mdlandrec ↗</a>`);
         links.push(`<a href="https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx" target="_blank" rel="noopener">SDAT ↗</a>`);
         return links;
     },

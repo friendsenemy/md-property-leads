@@ -288,10 +288,15 @@
             <button class="filter-btn active" data-status="all">All</button>
             <button class="filter-btn" data-status="new">New</button>
             <button class="filter-btn" data-status="contacted">Contacted</button>
+            <button class="filter-btn" data-status="verified" title="Someone checked the court docket or the Comptroller and the money is still there">Verified</button>
+            <button class="filter-btn" data-status="paid" title="Already collected — don't chase">Paid out</button>
             <button class="filter-btn" data-status="closed">Closed</button>
         </div>
         <label class="filter-btn" for="surplusRepeat" style="display:inline-flex; align-items:center; gap:8px; cursor:pointer" title="Only parcels sold at tax sale in more than one year">
             <input type="checkbox" id="surplusRepeat" style="accent-color:#ff453a; width:15px; height:15px"> Repeats only
+        </label>
+        <label class="filter-btn" for="surplusArchive" style="display:inline-flex; align-items:center; gap:8px; cursor:pointer" title="Add past foreclosure auction results (back to 2012) — surplus that may still be sitting in the court registry or with the Comptroller">
+            <input type="checkbox" id="surplusArchive" style="accent-color:#ffd60a; width:15px; height:15px"> Past auctions archive
         </label>
         <button class="btn btn-export" id="surplusExport"><span class="icon">⬇</span> Export CSV</button>
     </div>
@@ -402,6 +407,8 @@
                 <select id="leadStatusSelect">
                     <option value="new">New</option>
                     <option value="contacted">Contacted</option>
+                    <option value="verified">Verified — money still unclaimed</option>
+                    <option value="paid">Already paid out — dead</option>
                     <option value="closed">Closed</option>
                 </select>
                 <label for="noteAuthor">Your name</label>

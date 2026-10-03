@@ -206,6 +206,81 @@ def normalize_lot(l, kind):
     }
 
 
+# --- Tidewater Auctions (scheduled sales only; they publish no results) --------
+TIDEWATER_URL = "https://www.tidewaterauctions.com/upcoming-real-estate-auctions/"
+TIDEWATER_WEEKS = 3        # this week + the next two (the page offers a week dropdown)
+
+
+def tidewater_lots():
+    """Every scheduled sale Tidewater lists for the next few weeks, as SCHEDULED
+    lots. Cancelled rows (hdnCancelled=1) are dropped. The week dropdown is an
+    ASP.NET postback, so weeks 2+ are fetched by re-posting the form."""
+    out = []
+    sess = requests.Session()
+    html = sess.get(TIDEWATER_URL, headers=UA, timeout=60).text
+    out += _tidewater_parse(html)
+    for wk in range(1, TIDEWATER_WEEKS):
+        form = dict(re.findall(r'<input type="hidden" name="(__[A-Z]+)"[^>]*value="([^"]*)"', html))
+        if "__VIEWSTATE" not in form:
+            break
+        form.update({"ctl00$ContentPlaceHolder1$ddlWeeks": str(wk), "ctl00$ContentPlaceHolder1$ddlCounties": "all",
+                     "__EVENTTARGET": "ctl00$ContentPlaceHolder1$ddlWeeks", "__EVENTARGUMENT": ""})
+        try:
+            html = sess.post(TIDEWATER_URL, data=form, headers={**UA, "Referer": TIDEWATER_URL}, timeout=60).text
+        except requests.RequestException:
+            break
+        out += _tidewater_parse(html)
+    seen = set(); uniq = []
+    for l in out:
+        if l["lot_id"] in seen:
+            continue
+        seen.add(l["lot_id"]); uniq.append(l)
+    return uniq
+
+
+def _tidewater_parse(html):
+    lots = []
+    for b in html.split('<div class="us-block">')[1:]:
+        d = re.search(r'lblDate_\d+">(\d\d)/(\d\d)/(\d\d)<', b)
+        county = re.search(r'lblName_\d+">([^<]+)<', b)
+        if not d:
+            continue
+        sale_date = f"20{d.group(3)}-{d.group(1)}-{d.group(2)}"
+        for it in re.findall(r'<div class="us-sale-item">(.*?)<div class="us-sale-ad">', b, re.S):
+            if re.search(r'hdnCancelled_\d+" value="1"', it):
+                continue
+            addr = (re.search(r'lblAddressText_\d+">([^<]+)<', it)
+                    or re.search(r'maps\.google\.com/maps\?daddr=([^"]+)"', it))
+            dep = re.search(r'lblDeposit_\d+">\$?([\d,\.]+)<', it)
+            tm = re.search(r'lblTime_\d+">([^<]+)<', it)
+            client = re.search(r'lblClient_\d+">([^<]+)<', it)
+            if not addr:
+                continue
+            a = re.sub(r"^(HUD SALE:\s*)", "", addr.group(1).strip())
+            a = a.split(" - ALL DEPOSITS")[0].strip()
+            m = re.match(r"^(.*?),\s*([^,]+),\s*(MD|DC)\s*(\d{5})", a)
+            if not m or m.group(3) != "MD":
+                continue
+            street, city, _, zip5 = m.groups()
+            unit = None
+            um = re.search(r",?\s*(Unit|Apt|#)\s*([\w-]+)$", street, re.I)
+            if um:
+                unit = um.group(2); street = street[:um.start()].rstrip(", ")
+            cty = county.group(1).strip() if county else ""
+            lots.append({
+                "lot_id": f"tw-{sale_date}-{re.sub(r'[^A-Z0-9]', '', (street + zip5).upper())}",
+                "kind": "SCHEDULED", "status": "active",
+                "address": street, "unit": unit, "city": city.strip(), "zip": zip5,
+                "county_hint": cty, "lat": None, "lon": None,
+                "hammer": None, "deposit": _f(dep.group(1)) if dep else None,
+                "sale_date": sale_date,
+                "auction_title": f"{(tm.group(1).strip() if tm else '')} · {cty} · client {client.group(1).strip() if client else ''}".strip(" ·"),
+                "lawyer_code": client.group(1).strip() if client else None,
+                "source": "tidewaterauctions.com", "url": TIDEWATER_URL, "last_updated": None,
+            })
+    return lots
+
+
 # --- SDAT match -------------------------------------------------------------
 _SUFFIX = {"STREET": "ST", "ROAD": "RD", "AVENUE": "AVE", "DRIVE": "DR", "COURT": "CT", "LANE": "LN",
            "PLACE": "PL", "TERRACE": "TER", "CIRCLE": "CIR", "BOULEVARD": "BLVD", "WAY": "WAY",
@@ -293,11 +368,78 @@ def classify(lot, s, today):
     return tier, reasons, est, surplus, av, owner, purch_year, basis
 
 
-def build(index_path, today=None):
+_TRUSTEE = re.compile(r"\b(SUB(STITUTE)?\s+TRUSTEES?|TRUSTEES?|TR|TRS)\b")
+
+
+def title_state(lot, s):
+    """Has the trustee's deed already reached SDAT? If the parcel's last transfer
+    is AFTER the sale date, the owner on record is the auction BUYER, not the
+    person owed the surplus -- the former owner's name is then on the trustee's
+    deed (grantor = substitute trustees), not in SDAT."""
+    td = (s.get("transfer_date") or "").strip().replace(".", "-")
+    sd = lot.get("sale_date") or ""
+    if not sd or not re.match(r"^(19|20)\d\d-\d\d-\d\d", td):
+        return "UNKNOWN"
+    if td > sd:
+        return "BUYER_ON_TITLE" if _TRUSTEE.search(_norm(s.get("grantor1"))) or (date.fromisoformat(td) - date.fromisoformat(sd)).days < 400 else "RESOLD"
+    return "FORMER_OWNER_ON_TITLE"
+
+
+def _norm(v):
+    return " ".join((v or "").upper().split())
+
+
+def collection_window(sale_date, today):
+    """Where the money is right now, by age of the sale. Maryland mortgage
+    foreclosure: report of sale -> ~30-45 days -> ratification -> auditor's
+    account (another 1-4 months) -> surplus paid out of the court registry on
+    motion. Registry funds unclaimed ~3 years go to the Comptroller (CL 17-3xx),
+    where the owner can still claim them for free, forever."""
+    if not sale_date:
+        return None, None
+    days = (today - date.fromisoformat(sale_date)).days
+    if days < 120:
+        return "TOO_FRESH", "Sold under 4 months ago: not ratified or audited yet — nobody can have been paid. You are first."
+    if days < 1095:
+        return "COURT_REGISTRY", ("Audit likely done; surplus sits in the Circuit Court registry until someone files a motion. "
+                                  "Case Search docket shows an 'Order ... surplus' or 'disbursement' entry if it was paid.")
+    return "COMPTROLLER", ("Over 3 years: unclaimed registry funds have usually been turned over to the Comptroller. "
+                           "Search the former owner's name at claimitmd.gov — if it lists the Circuit Court as holder, "
+                           "it is definitely unclaimed. Finder fees there are capped by CL §17-325; the owner claims free.")
+
+
+ARCHIVE_PATH = os.path.join(OUT_DIR, "auction-archive.json")
+
+
+def backfill_pages(pages, delay=1.2):
+    """Walk Alex Cooper's sold-lots pages (100 per page, newest first; the server
+    renders ?page=N&limit=100 without JavaScript). Returns SOLD lots."""
+    import time
+    out = []
+    for n in range(1, pages + 1):
+        try:
+            html = fetch(f"{SOURCES['alexcooper_sold']}?page={n}&limit=100")
+        except Exception as e:  # noqa: BLE001
+            log.warning("backfill page %d: %s", n, e); break
+        got = [x for x in (normalize_lot(l, "SOLD") for l in embedded_lots(html)) if x and x.get("hammer")]
+        log.info("backfill page %d: %d sold foreclosure lots", n, len(got))
+        if not got:
+            break
+        out += got
+        time.sleep(delay)
+    return out
+
+
+def build(index_path, today=None, backfill=0):
     today = today or date.today()
     db = sqlite3.connect(index_path)
     db.execute("CREATE INDEX IF NOT EXISTS ix_zip ON parcels(zip)")
     lots = []
+    if backfill:
+        arch = backfill_pages(backfill)
+        for l in arch:
+            l["archive"] = True
+        lots += arch
     for key, url in SOURCES.items():
         try:
             html = fetch(url)
@@ -308,6 +450,12 @@ def build(index_path, today=None):
         got = [x for x in (normalize_lot(l, kind) for l in raw) if x]
         log.info("%s: %d lots embedded, %d foreclosure-shaped", key, len(raw), len(got))
         lots += got
+    try:
+        tw = tidewater_lots()
+        log.info("tidewater: %d scheduled sales (MD, not cancelled)", len(tw))
+        lots += tw
+    except Exception as e:  # noqa: BLE001
+        log.warning("tidewater: %s", e)
 
     seen = {}
     if os.path.exists(SEEN_PATH):
@@ -324,6 +472,21 @@ def build(index_path, today=None):
         if not s:
             unmatched += 1; continue
         tier, reasons, est, surplus, av, owner, purch_year, basis = classify(lot, s, today)
+        tstate = title_state(lot, s)
+        if tstate == "BUYER_ON_TITLE" and lot["kind"] == "SOLD":
+            # SDAT already shows the auction buyer. Their purchase year/price is
+            # the AUCTION, not a loan -- rebuild the estimate from the deposit only.
+            est4 = estimate_payoff(0, None, int(lot["sale_date"][:4]), lot.get("deposit"), av)
+            est, basis = (est4[:3], est4[3]) if est4 else (None, None)
+            if est and lot.get("hammer"):
+                lo, mid, hi = est; h = lot["hammer"]
+                surplus = (h - hi, h - mid, h - lo)
+                tier = "STRONG" if (h - hi >= STRONG_MIN_SURPLUS and h >= hi * STRONG_MIN_RATIO) else ("POSSIBLE" if h - mid >= POSSIBLE_MIN_SURPLUS else None)
+                reasons = [f"hammer {h:,.0f} vs est. payoff {mid:,.0f}–{hi:,.0f} ({basis})", "title already moved to the auction buyer — former owner is named on the trustee's deed"]
+            else:
+                tier, reasons = None, ["title moved to the buyer and no deposit signal to estimate the payoff"]
+            owner, purch_year = None, None
+        win, win_note = collection_window(lot.get("sale_date"), today) if lot["kind"] == "SOLD" else (None, None)
         first_seen = seen.get(lot["lot_id"], {}).get("first_seen") or datetime.now(timezone.utc).isoformat(timespec="seconds")
         seen[lot["lot_id"]] = {"first_seen": first_seen, "kind": lot["kind"], "tier": tier}
         if not tier:
@@ -333,11 +496,15 @@ def build(index_path, today=None):
             **lot,
             "id": f"auction:{lot['lot_id']}",
             "stage": "AUCTION_SOLD" if lot["kind"] == "SOLD" else "AUCTION_SCHEDULED",
+            "archive": bool(lot.get("archive")),
             "tier": tier, "why": "; ".join(reasons),
             "account": s["acct"], "county": s["county"],
             "sdat_address": s["address"], "sdat_city": s["city"],
-            "owner_of_record": owner, "owner2": s.get("owner2"),
-            "mail": mail, "absentee": bool(mail) and not mail.upper().startswith((s["address"] or "~").upper()[:8]),
+            "owner_of_record": owner, "owner2": s.get("owner2") if owner else None,
+            "title_state": tstate, "buyer_on_record": s.get("owner1") if tstate in ("BUYER_ON_TITLE", "RESOLD") else None,
+            "trustee_deed": (f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/") if tstate == "BUYER_ON_TITLE" else None),
+            "collection_window": win, "collection_note": win_note,
+            "mail": mail if owner else "", "absentee": bool(mail) and not mail.upper().startswith((s["address"] or "~").upper()[:8]),
             "occupancy": s.get("occupancy"), "land_use": s.get("land_use"), "dwelling_type": s.get("dwelling_type"),
             "assessed_value": av or None, "year_built": s.get("year_built"),
             "purchase_price": _f(s.get("sale_price")) or None, "purchase_year": purch_year,
@@ -352,11 +519,21 @@ def build(index_path, today=None):
 
     rows.sort(key=lambda r: ((r["tier"] != "STRONG"), -(r["surplus_est"][1] if r["surplus_est"] else 0)))
     os.makedirs(OUT_DIR, exist_ok=True)
+    live_ids = {r["lot_id"] for r in rows if not r["archive"]}
+    archive = [r for r in rows if r["archive"] and r["lot_id"] not in live_ids]
+    if backfill:
+        with open(ARCHIVE_PATH, "w", encoding="utf-8") as f:
+            json.dump({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                       "note": "One-time backfill of past foreclosure auction results (Alex Cooper, newest first). "
+                               "Surplus is ESTIMATED from the deposit; the former owner is named on the trustee's deed.",
+                       "pages": backfill, "rows": archive}, f, ensure_ascii=False, separators=(",", ":"))
+        log.info("archive: %d rows written", len(archive))
+    rows = [r for r in rows if not r["archive"]]
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                    "note": "Mortgage-foreclosure auction results matched to SDAT, with an ESTIMATED payoff from the "
                            "owner's own purchase. Only STRONG/POSSIBLE rows are kept. Estimates, not balances.",
-                   "sources": SOURCES, "counts": {"fetched": len(lots), "unmatched": unmatched, "below_bar": dropped,
+                   "sources": {**SOURCES, "tidewater_upcoming": TIDEWATER_URL}, "counts": {"fetched": len(lots), "unmatched": unmatched, "below_bar": dropped,
                                                   "kept": len(rows)},
                    "rows": rows}, f, ensure_ascii=False, separators=(",", ":"))
     with open(SEEN_PATH, "w", encoding="utf-8") as f:
@@ -370,9 +547,10 @@ def build(index_path, today=None):
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--index", default=config.INDEX_PATH)
+    ap.add_argument("--backfill", type=int, default=0, help="also walk N pages (100 sales each) of past results into the archive")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
-    build(a.index)
+    build(a.index, backfill=a.backfill)
 
 
 if __name__ == "__main__":
