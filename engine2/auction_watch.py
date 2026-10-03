@@ -58,6 +58,9 @@ SOURCES = {
     "alexcooper_sold": "https://realestate.alexcooper.com/sold-lots",
     "alexcooper_upcoming": "https://realestate.alexcooper.com/foreclosures",
 }
+DAILY_SOLD_PAGES = 3          # 100 results each, newest first: roughly the last 4-5 months
+KEEP_SOLD_DAYS = 180          # a sold lead stays on the live board this long (court-registry phase)
+ARCHIVE_AFTER_DAYS = 180      # older than this is "archive"
 
 # --- the estimate --------------------------------------------------------
 ASSUMED_LTV = 0.95            # typical purchase-money loan
@@ -466,15 +469,17 @@ def build(index_path, today=None, backfill=0):
             l["archive"] = True
         lots += arch
     for key, url in SOURCES.items():
-        try:
-            html = fetch(url)
-        except Exception as e:  # noqa: BLE001
-            log.warning("%s: %s", key, e); continue
         kind = "SOLD" if key.endswith("sold") else "SCHEDULED"
-        raw = embedded_lots(html)
-        got = [x for x in (normalize_lot(l, kind) for l in raw) if x]
-        log.info("%s: %d lots embedded, %d foreclosure-shaped", key, len(raw), len(got))
-        lots += got
+        urls = [f"{url}?page={n}&limit=100" for n in range(1, DAILY_SOLD_PAGES + 1)] if kind == "SOLD" else [url]
+        for u in urls:
+            try:
+                html = fetch(u)
+            except Exception as e:  # noqa: BLE001
+                log.warning("%s: %s", key, e); continue
+            raw = embedded_lots(html)
+            got = [x for x in (normalize_lot(l, kind) for l in raw) if x]
+            log.info("%s: %d lots embedded, %d foreclosure-shaped", u, len(raw), len(got))
+            lots += got
     try:
         tw = tidewater_lots()
         log.info("tidewater: %d scheduled sales (MD, not cancelled)", len(tw))
@@ -545,6 +550,30 @@ def build(index_path, today=None, backfill=0):
 
     rows.sort(key=lambda r: ((r["tier"] != "STRONG"), -(r["surplus_est"][1] if r["surplus_est"] else 0)))
     os.makedirs(OUT_DIR, exist_ok=True)
+    for r in rows:
+        age = (today - date.fromisoformat(r["sale_date"])).days if r.get("sale_date") else 0
+        r["archive"] = bool(r["stage"] == "AUCTION_SOLD" and age > ARCHIVE_AFTER_DAYS)
+    # carry forward: a sold lead found on an earlier day stays until it ages out,
+    # even after it has scrolled off the auctioneer's first pages
+    try:
+        with open(OUT_PATH, encoding="utf-8") as f:
+            prev = json.load(f).get("rows", [])
+    except (OSError, ValueError):
+        prev = []
+    have = {r["lot_id"] for r in rows}
+    for r in prev:
+        if r.get("stage") == "AUCTION_SOLD" and r.get("lot_id") not in have and r.get("sale_date"):
+            if (today - date.fromisoformat(r["sale_date"])).days <= KEEP_SOLD_DAYS:
+                r["is_new"] = False
+                rows.append(r); have.add(r["lot_id"])
+    # dedupe by lot (same lot can appear on two pages across a day boundary)
+    seen_ids = set(); dedup = []
+    for r in rows:
+        if r["lot_id"] in seen_ids:
+            continue
+        seen_ids.add(r["lot_id"]); dedup.append(r)
+    rows = dedup
+    rows.sort(key=lambda r: ((r["tier"] != "STRONG"), -(r["surplus_est"][1] if r["surplus_est"] else 0)))
     live_ids = {r["lot_id"] for r in rows if not r["archive"]}
     archive = [r for r in rows if r["archive"] and r["lot_id"] not in live_ids]
     if backfill:
