@@ -351,7 +351,7 @@ def sanity(lot, av):
 def classify(lot, s, today):
     av = _f(s["land_value"]) + _f(s["impr_value"])
     lu = (s.get("land_use") or "")
-    if lu and not lu.startswith(RESIDENTIAL_USE):
+    if lu and not (lu.startswith(RESIDENTIAL_USE) or lu.strip() in ("R", "TH", "RC", "M")):
         return None, [f"not residential ({lu.strip()})"], None, None, av, (s.get("owner1") or ""), None, None
     lot, bad = sanity(lot, av)
     if bad:
