@@ -329,8 +329,33 @@ def match_sdat(db, lot):
     return best
 
 
+RESIDENTIAL_USE = ("Residential", "Town House", "Residential Condominium", "Apartments")
+HAMMER_MAX_TO_AV = 3.0        # a house does not sell at auction for 3x its assessment -- that is a data error
+HAMMER_MIN_TO_AV = 0.15
+
+
+def sanity(lot, av):
+    """Older Alex Cooper rows store the price in cents, and a few are typos.
+    Rescale when /100 lands in a plausible band; otherwise flag the row."""
+    h = lot.get("hammer")
+    if not h or not av:
+        return lot, None
+    if h > HAMMER_MAX_TO_AV * av and HAMMER_MIN_TO_AV * av <= h / 100 <= HAMMER_MAX_TO_AV * av:
+        lot = {**lot, "hammer": round(h / 100, 2), "hammer_rescaled": True}
+        return lot, None
+    if h > HAMMER_MAX_TO_AV * av or h < HAMMER_MIN_TO_AV * av:
+        return lot, f"hammer {h:,.0f} vs assessed {av:,.0f} — implausible, data error"
+    return lot, None
+
+
 def classify(lot, s, today):
     av = _f(s["land_value"]) + _f(s["impr_value"])
+    lu = (s.get("land_use") or "")
+    if lu and not lu.startswith(RESIDENTIAL_USE):
+        return None, [f"not residential ({lu.strip()})"], None, None, av, (s.get("owner1") or ""), None, None
+    lot, bad = sanity(lot, av)
+    if bad:
+        return None, [bad], None, None, av, (s.get("owner1") or ""), None, None
     owner = (s.get("owner1") or s.get("owner2") or "").strip()
     ent = re.search(r"\b(LLC|L L C|INC|CORP|LTD|LP|LLP|TRUST|TRUSTEE|HOLDINGS?|PROPERTIES|ASSOC|BANK|CHURCH|PARTNERS)\b", owner.upper())
     purch_year = None
@@ -471,9 +496,10 @@ def build(index_path, today=None, backfill=0):
         s = match_sdat(db, lot)
         if not s:
             unmatched += 1; continue
+        lot, _bad = sanity(lot, _f(s["land_value"]) + _f(s["impr_value"]))
         tier, reasons, est, surplus, av, owner, purch_year, basis = classify(lot, s, today)
         tstate = title_state(lot, s)
-        if tstate == "BUYER_ON_TITLE" and lot["kind"] == "SOLD":
+        if tstate == "BUYER_ON_TITLE" and lot["kind"] == "SOLD" and not _bad and (s.get("land_use") or "Residential").startswith(RESIDENTIAL_USE):
             # SDAT already shows the auction buyer. Their purchase year/price is
             # the AUCTION, not a loan -- rebuild the estimate from the deposit only.
             est4 = estimate_payoff(0, None, int(lot["sale_date"][:4]), lot.get("deposit"), av)
