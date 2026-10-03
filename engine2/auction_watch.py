@@ -295,31 +295,60 @@ REO_OWNER = re.compile(r"\b(BANK|SAVINGS|MORTGAGE|MTG|LENDING|LOAN|FEDERAL NATIO
 DEED_SALE_LAG_DAYS = 75              # typical gap from auction day to the recorded trustee's deed
 
 
+PRO_TRUSTEE_MIN_DEEDS = 4            # a family trustee sells one house; a substitute trustee signs dozens
+PRO_TRUSTEE_MIN_PLACES = 3           # ...and in different zip codes
+TRUSTEE_WORD = re.compile(r"\b(TRUSTEES?|\(TR\)|TR|TRS|SUB(STITUTE)?\s*TR\w*)\b")
+TRUST_NOUN = re.compile(r"\b(TRUST|REV(OCABLE)?|LIVING|LVNG|FAMILY|FAM|MARITAL|RESIDUARY|IRREV(OCABLE)?|ESTATE|EST|CHURCH|FOUNDATION|REIT|BANK|COMPANY|CO|CORP|LLC|INC|CUSTODIAN|ETAL|ET AL)\b")
+
+
 def trustee_deeds(db, today):
-    """Every parcel whose latest deed came from substitute trustees in the
-    lookback window: a completed mortgage foreclosure, whoever ran the auction.
+    """Every parcel whose latest deed came from a professional (substitute)
+    trustee in the lookback window: a completed mortgage foreclosure, whoever
+    ran the auction. SDAT records these under the attorney's own name --
+    "RYE ROBERT L TRUSTEE" -- so a trustee is 'professional' when the same name
+    signs many deeds across many places. Family trustees sell one house.
+
     The consideration on the deed is the hammer price. The new owner tells us
     whether a third party outbid the lender (surplus possible) or the lender
-    took it back (REO -- almost never a surplus)."""
-    cutoff = (today.toordinal() - TRUSTEE_DEED_LOOKBACK_DAYS)
-    cutoff_s = date.fromordinal(cutoff).strftime("%Y.%m.%d")
+    took it back (REO -- a credit bid, no surplus)."""
+    cutoff_s = date.fromordinal(today.toordinal() - TRUSTEE_DEED_LOOKBACK_DAYS).strftime("%Y.%m.%d")
     cur = db.cursor()
     cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, mail_addr, mail_city, mail_zip, "
             "occupancy, land_use, land_value, impr_value, year_built, transfer_date, sale_price, grantor1, "
             "deed_liber, deed_folio, dwelling_type, transfer_date2, grantor2")
     names = [c.strip() for c in cols.split(",")]
-    where = " OR ".join("UPPER(grantor1) LIKE ?" for _ in TRUSTEE_GRANTOR)
-    q = f"SELECT {cols} FROM parcels WHERE transfer_date >= ? AND ({where})"
-    out = []
-    for r in cur.execute(q, (cutoff_s, *TRUSTEE_GRANTOR)):
+    q = (f"SELECT {cols} FROM parcels WHERE transfer_date >= ? AND ("
+         "UPPER(grantor1) LIKE '%TRUSTEE%' OR UPPER(grantor1) LIKE '% TR' OR UPPER(grantor1) LIKE '%(TR)%' "
+         "OR UPPER(grantor1) LIKE '% TRS%' OR UPPER(grantor1) LIKE '%SUB%TR%')")
+    cands = []
+    for r in cur.execute(q, (cutoff_s,)):
         d = dict(zip(names, r))
         g = _norm(d.get("grantor1"))
-        if NOT_A_FORECLOSURE.search(g):
+        if not TRUSTEE_WORD.search(g) or TRUST_NOUN.search(g):
             continue
         td = (d.get("transfer_date") or "").replace(".", "-")
         if not re.match(r"^(19|20)\d\d-\d\d-\d\d$", td):
             continue
-        out.append(d)
+        d["_tkey"] = re.sub(r"\b(TRUSTEES?|\(TR\)|TR|TRS|SUB(STITUTE)?\s*TR\w*|JR|SR|II|III)\b", "", g).strip()
+        d["_tkey"] = " ".join(d["_tkey"].split()[:2])          # surname + first name is enough to group
+        cands.append(d)
+    by = {}
+    for d in cands:
+        by.setdefault(d["_tkey"], []).append(d)
+    pro = {k: v for k, v in by.items()
+           if k and (len(v) >= PRO_TRUSTEE_MIN_DEEDS and len({x.get("zip") for x in v}) >= PRO_TRUSTEE_MIN_PLACES
+                     or any("SUB" in _norm(x.get("grantor1")) for x in v))}
+    diag = {"window_from": cutoff_s, "trustee_named_deeds": len(cands), "distinct_trustees": len(by),
+            "professional_trustees": sorted(((k, len(v)) for k, v in pro.items()), key=lambda kv: -kv[1]),
+            "rejected_as_family": sorted(((k, len(v)) for k, v in by.items() if k not in pro), key=lambda kv: -kv[1])[:60]}
+    os.makedirs(OUT_DIR, exist_ok=True)
+    with open(os.path.join(OUT_DIR, "trustee-diagnostics.json"), "w", encoding="utf-8") as f:
+        json.dump(diag, f, indent=1)
+    out = [d for v in pro.values() for d in v]
+    for d in out:
+        d.pop("_tkey", None)
+    log.info("trustee deeds: %d candidates, %d professional trustees, %d foreclosure deeds",
+             len(cands), len(pro), len(out))
     return out
 
 
