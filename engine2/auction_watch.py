@@ -284,6 +284,62 @@ def _tidewater_parse(html):
     return lots
 
 
+# --- SDAT trustee deeds: every completed foreclosure, whoever auctioned it -----
+TRUSTEE_DEED_LOOKBACK_DAYS = 270     # deed records 1-3 months after the sale
+TRUSTEE_GRANTOR = ("%SUB%TRUSTEE%", "%SUBSTITUTE TR%", "%TRUSTEES%", "%SUB TRS%", "%SUBST TR%")
+NOT_A_FORECLOSURE = re.compile(r"\b(FAMILY|LIVING|REV(OCABLE)?|IRREV(OCABLE)?|L/T|LIV TR|FAM TR|ESTATE OF|EST OF|CHURCH|FOUNDATION|BANKRUPTCY|CHAPTER 7|CH 7)\b")
+REO_OWNER = re.compile(r"\b(BANK|SAVINGS|MORTGAGE|MTG|LENDING|LOAN|FEDERAL NATIONAL|FANNIE|FREDDIE|FEDERAL HOME|HUD|SECRETARY OF HOUSING|"
+                       r"VETERANS AFFAIRS|CREDIT UNION|TRUSTEE|TRUST\b|WILMINGTON|DEUTSCHE|WELLS FARGO|NATIONSTAR|SHELLPOINT|BAYVIEW|"
+                       r"US BANK|U S BANK|NEWREZ|CARRINGTON|PENNYMAC|LAKEVIEW|FREEDOM MORTGAGE|ROCKET|MR COOPER|SELECT PORTFOLIO|REO\b|"
+                       r"ASSET|FUNDING|CAPITAL|FINANCIAL|SERVICING|HOLDINGS LLC|ACQUISITIONS?)\b")
+DEED_SALE_LAG_DAYS = 75              # typical gap from auction day to the recorded trustee's deed
+
+
+def trustee_deeds(db, today):
+    """Every parcel whose latest deed came from substitute trustees in the
+    lookback window: a completed mortgage foreclosure, whoever ran the auction.
+    The consideration on the deed is the hammer price. The new owner tells us
+    whether a third party outbid the lender (surplus possible) or the lender
+    took it back (REO -- almost never a surplus)."""
+    cutoff = (today.toordinal() - TRUSTEE_DEED_LOOKBACK_DAYS)
+    cutoff_s = date.fromordinal(cutoff).strftime("%Y.%m.%d")
+    cur = db.cursor()
+    cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, mail_addr, mail_city, mail_zip, "
+            "occupancy, land_use, land_value, impr_value, year_built, transfer_date, sale_price, grantor1, "
+            "deed_liber, deed_folio, dwelling_type, transfer_date2, grantor2")
+    names = [c.strip() for c in cols.split(",")]
+    where = " OR ".join("UPPER(grantor1) LIKE ?" for _ in TRUSTEE_GRANTOR)
+    q = f"SELECT {cols} FROM parcels WHERE transfer_date >= ? AND ({where})"
+    out = []
+    for r in cur.execute(q, (cutoff_s, *TRUSTEE_GRANTOR)):
+        d = dict(zip(names, r))
+        g = _norm(d.get("grantor1"))
+        if NOT_A_FORECLOSURE.search(g):
+            continue
+        td = (d.get("transfer_date") or "").replace(".", "-")
+        if not re.match(r"^(19|20)\d\d-\d\d-\d\d$", td):
+            continue
+        out.append(d)
+    return out
+
+
+def deed_lot(d):
+    """Shape a trustee-deed parcel like an auction lot so the same pipeline runs."""
+    td = (d.get("transfer_date") or "").replace(".", "-")
+    deed_dt = date.fromisoformat(td)
+    sale_dt = date.fromordinal(deed_dt.toordinal() - DEED_SALE_LAG_DAYS)
+    return {
+        "lot_id": f"deed-{d['acct']}-{td}", "kind": "SOLD", "status": "sold",
+        "address": d.get("address"), "unit": None, "city": d.get("city"), "zip": (d.get("zip") or "")[:5],
+        "county_hint": d.get("county"), "lat": d.get("lat"), "lon": d.get("lon"),
+        "hammer": _f(d.get("sale_price")) or None, "deposit": None,
+        "sale_date": sale_dt.isoformat(), "deed_date": td,
+        "auction_title": f"Trustee's deed recorded {td} · grantor {d.get('grantor1')}",
+        "lawyer_code": None, "source": "SDAT trustee deed", "url": "https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx",
+        "last_updated": None, "from_deed": True, "_sdat": d,
+    }
+
+
 # --- SDAT match -------------------------------------------------------------
 _SUFFIX = {"STREET": "ST", "ROAD": "RD", "AVENUE": "AVE", "DRIVE": "DR", "COURT": "CT", "LANE": "LN",
            "PLACE": "PL", "TERRACE": "TER", "CIRCLE": "CIR", "BOULEVARD": "BLVD", "WAY": "WAY",
@@ -487,6 +543,13 @@ def build(index_path, today=None, backfill=0):
     except Exception as e:  # noqa: BLE001
         log.warning("tidewater: %s", e)
 
+    try:
+        deeds = trustee_deeds(db, today)
+        log.info("sdat trustee deeds in the last %d days: %d", TRUSTEE_DEED_LOOKBACK_DAYS, len(deeds))
+        lots += [deed_lot(d) for d in deeds]
+    except Exception as e:  # noqa: BLE001
+        log.warning("trustee deeds: %s", e)
+
     seen = {}
     if os.path.exists(SEEN_PATH):
         with open(SEEN_PATH, encoding="utf-8") as f:
@@ -498,13 +561,39 @@ def build(index_path, today=None, backfill=0):
             continue
         if lot["kind"] == "SCHEDULED" and (lot.get("status") or "") not in ("active", "pre_sold", "upcoming", ""):
             continue                                       # cancelled / postponed
-        s = match_sdat(db, lot)
+        s = lot.pop("_sdat", None) or match_sdat(db, lot)
         if not s:
             unmatched += 1; continue
         lot, _bad = sanity(lot, _f(s["land_value"]) + _f(s["impr_value"]))
         tier, reasons, est, surplus, av, owner, purch_year, basis = classify(lot, s, today)
         tstate = title_state(lot, s)
-        if tstate == "BUYER_ON_TITLE" and lot["kind"] == "SOLD" and not _bad and (s.get("land_use") or "Residential").startswith(RESIDENTIAL_USE):
+        if lot.get("from_deed") and not _bad and (s.get("land_use") or "Residential").startswith(RESIDENTIAL_USE):
+            tstate = "BUYER_ON_TITLE"
+            buyer = _norm(s.get("owner1"))
+            h = lot.get("hammer") or 0
+            if REO_OWNER.search(buyer) or not h:
+                tier, reasons = None, ["lender took the property back (REO) — a credit bid, no surplus" if h else "no consideration on the deed"]
+            else:
+                # a third party outbid the lender. Without the loan amount we judge by how
+                # far the price ran: near assessment on a long-held home is where surplus lives.
+                ratio = h / av if av else 0
+                yrs = None
+                td2 = (s.get("transfer_date2") or "").strip()
+                if re.match(r"^(19|20)\d\d", td2):
+                    yrs = int(td2[:4])
+                owned_since = yrs
+                if ratio >= 0.85 and av >= MIN_ASSESSED and h >= 150000:
+                    tier = "POSSIBLE"
+                    reasons = [f"third party paid {h:,.0f} ({ratio:.0%} of assessed) — outbid the lender" + (f"; prior owner bought {owned_since}" if owned_since else "")]
+                    if owned_since and today.year - owned_since >= 12 and ratio >= 0.95:
+                        tier = "STRONG"; reasons.append("long-held with a price at full value — equity very likely")
+                elif ratio >= 0.6 and av >= MIN_ASSESSED:
+                    tier = "POSSIBLE"; reasons = [f"third party paid {h:,.0f} ({ratio:.0%} of assessed) — surplus depends on the loan balance"]
+                else:
+                    tier, reasons = None, [f"price {h:,.0f} is only {ratio:.0%} of assessed — unlikely to clear the loan"]
+            est, basis, surplus = None, "no loan data on a deed — see the trustee's deed and the court case", None
+            owner, purch_year = None, None
+        elif tstate == "BUYER_ON_TITLE" and lot["kind"] == "SOLD" and not _bad and (s.get("land_use") or "Residential").startswith(RESIDENTIAL_USE):
             # SDAT already shows the auction buyer. Their purchase year/price is
             # the AUCTION, not a loan -- rebuild the estimate from the deposit only.
             est4 = estimate_payoff(0, None, int(lot["sale_date"][:4]), lot.get("deposit"), av)
@@ -534,6 +623,8 @@ def build(index_path, today=None, backfill=0):
             "owner_of_record": owner, "owner2": s.get("owner2") if owner else None,
             "title_state": tstate, "buyer_on_record": s.get("owner1") if tstate in ("BUYER_ON_TITLE", "RESOLD") else None,
             "trustee_deed": (f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/") if tstate == "BUYER_ON_TITLE" else None),
+            "from_deed": bool(lot.get("from_deed")), "deed_date": lot.get("deed_date"), "sale_date_estimated": bool(lot.get("from_deed")),
+            "prior_owner_bought": (s.get("transfer_date2") or "")[:4] if lot.get("from_deed") else None,
             "collection_window": win, "collection_note": win_note,
             "mail": mail if owner else "", "absentee": bool(mail) and not mail.upper().startswith((s["address"] or "~").upper()[:8]),
             "occupancy": s.get("occupancy"), "land_use": s.get("land_use"), "dwelling_type": s.get("dwelling_type"),
