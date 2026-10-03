@@ -658,6 +658,9 @@ def build(index_path, today=None, backfill=0):
                 surplus = None
             owner, purch_year = None, lot.get("borrower_bought_year")
             lot["former_owner_from_deed"] = lot.get("borrower_name")
+            if tier:
+                reasons.append("SDAT codes this deed non-arms-length/foreclosure/auction — confirm it was a foreclosure "
+                               "(Case Search, the former owner's name) and not an estate or tax auction")
         elif tstate == "BUYER_ON_TITLE" and lot["kind"] == "SOLD" and not _bad and (s.get("land_use") or "Residential").startswith(RESIDENTIAL_USE):
             # SDAT already shows the auction buyer. Their purchase year/price is
             # the AUCTION, not a loan -- rebuild the estimate from the deposit only.
