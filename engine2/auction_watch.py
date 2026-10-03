@@ -311,7 +311,8 @@ TRUSTEE_WORD = re.compile(r"\b(TRUSTEES?|\(TR\)|TR|TRS|SUB(STITUTE)?\s*TR\w*)\b"
 TRUST_NOUN = re.compile(r"\b(TRUST|REV(OCABLE)?|LIVING|LVNG|FAMILY|FAM|MARITAL|RESIDUARY|IRREV(OCABLE)?|ESTATE|EST|CHURCH|FOUNDATION|REIT|BANK|COMPANY|CO|CORP|LLC|INC|CUSTODIAN|ETAL|ET AL)\b")
 
 
-FORECLOSURE_MAX_TO_AV = 1.0          # measured: confirmed foreclosures median 0.75x assessed, 90th pct 0.97x
+FORECLOSURE_MAX_TO_AV = 1.0          # measured: confirmed foreclosures median 0.75x assessed; 12.5% sell above 1.0 (2025+)
+FORECLOSURE_HARD_MAX_TO_AV = 1.3     # ...but only 1% above 1.3 -- past that it is an estate/owner auction
 FORECLOSURE_CODE = "(4)"             # SDAT how-conveyed: non-arms-length such as a foreclosure, gift or auction
 MIN_FORECLOSURE_PRICE = 40000        # gifts and family transfers are $0 or nominal; an auction is not
 
@@ -614,6 +615,19 @@ def build(index_path, today=None, backfill=0):
     except Exception as e:  # noqa: BLE001
         log.warning("trustee deeds: %s", e)
 
+    # addresses the auctioneers themselves listed as foreclosures: a deed row that
+    # matches one is a confirmed foreclosure, whatever its price
+    def akey(addr, z):
+        t = addr_tokens(addr)
+        return (t[0] if t else "", t[1] if len(t) > 1 else "", (z or "")[:5])
+    auction_keys = {akey(l["address"], l["zip"]) for l in lots if not l.get("from_deed") and l.get("address")}
+    try:
+        with open(ARCHIVE_PATH, encoding="utf-8") as f:
+            for r in json.load(f).get("rows", []):
+                auction_keys.add(akey(r.get("sdat_address") or r.get("address"), r.get("zip")))
+    except (OSError, ValueError):
+        pass
+
     seen = {}
     if os.path.exists(SEEN_PATH):
         with open(SEEN_PATH, encoding="utf-8") as f:
@@ -641,13 +655,13 @@ def build(index_path, today=None, backfill=0):
                                    mortgage=lot.get("borrower_mortgage"))
             est, basis = (est4[:3], est4[3]) if est4 else (None, None)
             ratio_av = (h / av) if av else 0
+            confirmed = akey(s.get("address"), s.get("zip")) in auction_keys
+            lot["confirmed_by_auctioneer"] = confirmed
+            demote = None
             if REO_OWNER.search(buyer):
                 tier, reasons, surplus = None, ["lender took the property back (REO) — a credit bid, no surplus"], None
-            elif ratio_av > FORECLOSURE_MAX_TO_AV:
-                # Confirmed foreclosures sell at a median 75% of assessment (90th pct 97%).
-                # Above assessment this is an estate, owner or tax auction wearing the same
-                # SDAT code -- a probate/buy lead maybe, but not a mortgage surplus.
-                tier, reasons, surplus = None, [f"sold at {ratio_av:.0%} of assessed — foreclosures sell below value; this looks like an estate or owner auction, not a foreclosure"], None
+            elif ratio_av > FORECLOSURE_HARD_MAX_TO_AV and not confirmed:
+                tier, reasons, surplus = None, [f"sold at {ratio_av:.0%} of assessed — only 1% of real foreclosures do; this is an estate or owner auction"], None
             elif est and h:
                 lo, mid, hi = est
                 surplus = (h - hi, h - mid, h - lo)
@@ -664,6 +678,14 @@ def build(index_path, today=None, backfill=0):
                 else:
                     tier, reasons = None, ["no recorded loan and price well under value"]
                 surplus = None
+            if tier and not REO_OWNER.search(buyer):
+                if confirmed:
+                    reasons.append("CONFIRMED foreclosure — this address was on an auctioneer's foreclosure list")
+                elif ratio_av > FORECLOSURE_MAX_TO_AV:
+                    # above the band but under the hard cap: real foreclosures do this 1 time in 8,
+                    # and when they do the surplus is big. Keep it, label it, sort it last.
+                    tier = "UNCONFIRMED"
+                    reasons.append(f"sold at {ratio_av:.0%} of assessed — above the usual foreclosure band, so this may be an estate or owner auction; Case Search decides")
             owner, purch_year = None, lot.get("borrower_bought_year")
             lot["former_owner_from_deed"] = lot.get("borrower_name")
             if tier:
@@ -704,7 +726,7 @@ def build(index_path, today=None, backfill=0):
             "title_state": tstate, "buyer_on_record": s.get("owner1") if tstate in ("BUYER_ON_TITLE", "RESOLD") else None,
             "trustee_deed": (f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/") if tstate == "BUYER_ON_TITLE" else None),
             "former_owner": lot.get("former_owner_from_deed") or (owner if tstate == "FORMER_OWNER_ON_TITLE" else None),
-            "from_deed": bool(lot.get("from_deed")), "deed_date": lot.get("deed_date"), "sale_date_estimated": bool(lot.get("from_deed")),
+            "from_deed": bool(lot.get("from_deed")), "confirmed_by_auctioneer": bool(lot.get("confirmed_by_auctioneer")), "deed_date": lot.get("deed_date"), "sale_date_estimated": bool(lot.get("from_deed")),
             "prior_owner_bought": lot.get("borrower_bought_year") if lot.get("from_deed") else None,
             "recorded_mortgage": lot.get("borrower_mortgage") if lot.get("from_deed") else (_f(s.get("mortgage1")) or None),
             "how_conveyed": s.get("how_conveyed1"),
@@ -722,7 +744,7 @@ def build(index_path, today=None, backfill=0):
             "is_new": first_seen[:10] == today.isoformat(),
         })
 
-    rows.sort(key=lambda r: ((r["tier"] != "STRONG"), -(r["surplus_est"][1] if r["surplus_est"] else 0)))
+    rows.sort(key=lambda r: ({"STRONG": 0, "POSSIBLE": 1}.get(r["tier"], 2), -(r["surplus_est"][1] if r["surplus_est"] else 0)))
     os.makedirs(OUT_DIR, exist_ok=True)
     for r in rows:
         age = (today - date.fromisoformat(r["sale_date"])).days if r.get("sale_date") else 0

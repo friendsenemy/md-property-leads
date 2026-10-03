@@ -140,6 +140,8 @@ const SurplusApp = {
         }));
         const rep = document.getElementById("surplusRepeat");
         if (rep) rep.addEventListener("change", (e) => { this.state.repeat = e.target.checked; this.state.page = 1; this.render(); });
+        const hu = document.getElementById("surplusHideUnconfirmed");
+        if (hu) hu.addEventListener("change", (e) => { this.state.hideUnconfirmed = e.target.checked; this.state.page = 1; this.render(); });
         const arc = document.getElementById("surplusArchive");
         if (arc) arc.addEventListener("change", async (e) => {
             this.state.archive = e.target.checked; this.state.page = 1;
@@ -175,6 +177,7 @@ const SurplusApp = {
             (!s.county || r.county === s.county) &&
             (!s.minSurplus || r._surplus >= s.minSurplus) &&
             (!s.repeat || r.repeat_sale) &&
+            (!s.hideUnconfirmed || r.tier !== "UNCONFIRMED") &&
             (s.status === "all" || this.statusOf(r) === s.status) &&
             (!s.search || r._blob.includes(s.search))
         );
@@ -212,6 +215,8 @@ const SurplusApp = {
                     <td><span class="stage ${m.cls}" title="${this.esc(m.blurb || "")}">${this.esc(m.label)}</span>
                         ${r.tier === "STRONG" ? '<span class="chip chip-good" title="Hammer (or value) beats the estimated payoff by 30%+ and the estimated surplus is $25k or more">strong</span>' : ""}
                         ${r.tier === "POSSIBLE" ? '<span class="chip" title="Estimated surplus $10k–25k, or the estimate rests on thin data">possible</span>' : ""}
+                        ${r.tier === "UNCONFIRMED" ? '<span class="chip" style="opacity:.7" title="Deed coded foreclosure/auction but sold above the usual foreclosure price band — 1 in 8 real foreclosures do this, and so do estate auctions. Case Search by the former owner\'s name settles it">unconfirmed</span>' : ""}
+                        ${r.confirmed_by_auctioneer ? '<span class="chip chip-good" title="This address appeared on an auctioneer\'s foreclosure list — a confirmed foreclosure">confirmed</span>' : ""}
                         ${r.is_new && !r.archive ? '<span class="chip chip-hard" title="First seen today">new</span>' : ""}
                         ${r.archive ? '<span class="chip" title="Past auction result from the archive — surplus may still be unclaimed">archive</span>' : ""}
                         ${r.collection_window === "COMPTROLLER" ? '<span class="chip" title="Over 3 years old — unclaimed registry funds have usually gone to the Comptroller; search claimitmd.gov">comptroller</span>' : ""}
@@ -358,7 +363,7 @@ const SurplusApp = {
         return `
             <div class="detail-section">
                 <h3>Stage</h3>
-                <div class="detail-row"><span class="label">Where it stands</span><span class="value" style="font-weight:600">${this.esc(m.label)} ${r.tier === "STRONG" ? '<span class="chip chip-good">strong</span>' : '<span class="chip">possible</span>'}</span></div>
+                <div class="detail-row"><span class="label">Where it stands</span><span class="value" style="font-weight:600">${this.esc(m.label)} ${r.tier === "STRONG" ? '<span class="chip chip-good">strong</span>' : (r.tier === "UNCONFIRMED" ? '<span class="chip" style="opacity:.7">unconfirmed</span>' : '<span class="chip">possible</span>')}${r.confirmed_by_auctioneer ? ' <span class="chip chip-good">confirmed foreclosure</span>' : ""}</span></div>
                 <div class="detail-row"><span class="label">Meaning</span><span class="value" style="font-size:0.82rem">${this.esc(m.blurb)}</span></div>
                 ${r.from_deed ? `<div class="detail-row"><span class="label">How SDAT coded it</span><span class="value" style="font-size:0.82rem">${this.esc(r.how_conveyed || "")} — this code also covers estate and tax auctions, so the Case Search check below is the confirmation.</span></div>
                 <div class="detail-row"><span class="label">Deed recorded</span><span class="value" style="font-weight:600">${this.esc(r.deed_date || "")} <span style="color:var(--text-dim); font-size:0.78rem">— sale date below is estimated from it (deeds record 1–3 months after the auction)</span></span></div>` : ""}
