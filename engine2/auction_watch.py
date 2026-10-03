@@ -658,8 +658,13 @@ def build(index_path, today=None, backfill=0):
             confirmed = akey(s.get("address"), s.get("zip")) in auction_keys
             lot["confirmed_by_auctioneer"] = confirmed
             demote = None
+            buyer_financed = _f(s.get("mortgage1")) > 0
             if REO_OWNER.search(buyer):
                 tier, reasons, surplus = None, ["lender took the property back (REO) — a credit bid, no surplus"], None
+            elif buyer_financed and not confirmed:
+                # measured: only 2% of confirmed foreclosure buyers record a purchase mortgage.
+                # A financed buyer bought from a person -- a private non-arms-length sale.
+                tier, reasons, surplus = None, [f"buyer financed the purchase (mortgage {_f(s.get('mortgage1')):,.0f} recorded with the deed) — foreclosure buyers pay cash; this was a private sale"], None
             elif ratio_av > FORECLOSURE_HARD_MAX_TO_AV and not confirmed:
                 tier, reasons, surplus = None, [f"sold at {ratio_av:.0%} of assessed — only 1% of real foreclosures do; this is an estate or owner auction"], None
             elif est and h:
@@ -681,7 +686,12 @@ def build(index_path, today=None, backfill=0):
             if tier and not REO_OWNER.search(buyer):
                 if confirmed:
                     reasons.append("CONFIRMED foreclosure — this address was on an auctioneer's foreclosure list")
-                elif ratio_av > FORECLOSURE_MAX_TO_AV:
+                elif tier == "STRONG":
+                    # deed-only evidence is never enough for 'strong': the SDAT code also covers
+                    # private discounted sales. Strong is reserved for auctioneer-listed sales.
+                    tier = "POSSIBLE"
+                    reasons.append("deed-only evidence — unverified until Case Search shows a Trustee vs. case")
+                if ratio_av > FORECLOSURE_MAX_TO_AV and not confirmed:
                     # above the band but under the hard cap: real foreclosures do this 1 time in 8,
                     # and when they do the surplus is big. Keep it, label it, sort it last.
                     tier = "UNCONFIRMED"
