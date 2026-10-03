@@ -34,7 +34,7 @@ jobs:
 
       - name: Compute cache key (ISO week)
         id: week
-        run: echo "key=sdat-index-$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+        run: echo "key=sdat-index-v2-$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
       - name: Restore SDAT index
         id: restore
         uses: actions/cache/restore@v4

@@ -53,6 +53,19 @@ STATIC_COLUMNS = {
     "grantor1":    "sales_segment_1_grantor_name_mdp_field_grntnam1_sdat_field_80",
     "transfer_date2": "sales_segment_2_transfer_date_yyyy_mm_dd_sdat_field_109",
     "grantor2":    "sales_segment_2_grantor_name_sdat_field_100",
+    # how a deed moved + the money behind it. "(4) non-arms-length ... foreclosure"
+    # is the statewide foreclosure marker; the mortgage fields are the ORIGINAL
+    # loan amounts, which is what a surplus estimate actually needs.
+    "how_conveyed1": "sales_segment_1_how_conveyed_ind_mdp_field_convey1_sdat_field_87",
+    "mortgage1":   "sales_segment_1_mortgage_mdp_field_mortgag1_sdat_field_92",
+    "how_conveyed2": "sales_segment_2_how_conveyed_ind_sdat_field_107",
+    "sale_price2": "sales_segment_2_consideration_sdat_field_110",
+    "mortgage2":   "sales_segment_2_mortgage_sdat_field_112",
+    "grantor3":    "sales_segment_3_grantor_name_sdat_field_120",
+    "how_conveyed3": "sales_segment_3_how_conveyed_ind_sdat_field_127",
+    "transfer_date3": "sales_segment_3_transfer_date_yyyy_mm_dd_sdat_field_129",
+    "sale_price3": "sales_segment_3_consideration_sdat_field_130",
+    "mortgage3":   "sales_segment_3_mortgage_sdat_field_132",
 }
 
 # Discovered by regex against the first record's keys.

@@ -99,7 +99,7 @@ DEPOSIT_MULTIPLE = 10         # trustees set the deposit near 10% of the debt / 
 DEPOSIT_MIN_SIGNAL = 15000    # a flat $10k deposit is a floor convention, not a signal
 
 
-def estimate_payoff(purchase_price, purchase_year, sale_year, deposit=None, assessed=0):
+def estimate_payoff(purchase_price, purchase_year, sale_year, deposit=None, assessed=0, mortgage=None):
     """(low, mid, high, basis) payoff estimate. Two independent clues:
        * the owner's own purchase price + year, amortised (fresh loans only)
        * the trustee's required deposit x10
@@ -107,6 +107,16 @@ def estimate_payoff(purchase_price, purchase_year, sale_year, deposit=None, asse
     a deposit signal the estimate widens up toward value. Returns None when there
     is nothing to go on."""
     model = None
+    if mortgage and mortgage >= 10000 and purchase_year:
+        # SDAT recorded the ORIGINAL loan on their purchase deed: amortise that.
+        yrs = max(sale_year - purchase_year, 0)
+        base = remaining_balance(mortgage, ASSUMED_RATE, yrs) * (1 + ARREARS_FACTOR)
+        dep = deposit * DEPOSIT_MULTIPLE if deposit and deposit >= DEPOSIT_MIN_SIGNAL else None
+        if yrs <= OLD_LOAN_YEARS:
+            hi = max(base * 1.15, dep or 0)
+            return (base * 0.9, max(base, dep or 0) if dep and dep > base * 1.3 else base, hi, "recorded mortgage")
+        # old loan: could be refinanced since. Recorded amount is a floor-ish anchor, not gospel.
+        return (base, max(base, dep or base, 0.4 * assessed), max(dep or 0, 0.85 * assessed, base), "recorded mortgage (old — may have refinanced)")
     if purchase_price and purchase_price >= 20000 and purchase_year:
         yrs = max(sale_year - purchase_year, 0)
         base = remaining_balance(purchase_price * ASSUMED_LTV, ASSUMED_RATE, yrs) * (1 + ARREARS_FACTOR)
@@ -301,55 +311,57 @@ TRUSTEE_WORD = re.compile(r"\b(TRUSTEES?|\(TR\)|TR|TRS|SUB(STITUTE)?\s*TR\w*)\b"
 TRUST_NOUN = re.compile(r"\b(TRUST|REV(OCABLE)?|LIVING|LVNG|FAMILY|FAM|MARITAL|RESIDUARY|IRREV(OCABLE)?|ESTATE|EST|CHURCH|FOUNDATION|REIT|BANK|COMPANY|CO|CORP|LLC|INC|CUSTODIAN|ETAL|ET AL)\b")
 
 
-def trustee_deeds(db, today):
-    """Every parcel whose latest deed came from a professional (substitute)
-    trustee in the lookback window: a completed mortgage foreclosure, whoever
-    ran the auction. SDAT records these under the attorney's own name --
-    "RYE ROBERT L TRUSTEE" -- so a trustee is 'professional' when the same name
-    signs many deeds across many places. Family trustees sell one house.
+FORECLOSURE_CODE = "(4)"             # SDAT how-conveyed: non-arms-length such as a foreclosure, gift or auction
+MIN_FORECLOSURE_PRICE = 40000        # gifts and family transfers are $0 or nominal; an auction is not
 
-    The consideration on the deed is the hammer price. The new owner tells us
-    whether a third party outbid the lender (surplus possible) or the lender
-    took it back (REO -- a credit bid, no surplus)."""
+
+def _surname(v):
+    toks = [t for t in re.findall(r"[A-Z]+", _norm(v)) if len(t) > 2]
+    return toks[0] if toks else ""
+
+
+def foreclosure_deeds(db, today):
+    """Every residential parcel whose deed in the lookback window is coded
+    '(4) non-arms-length such as a foreclosure, gift or auction' with real money
+    on it, from a person, to someone who is not family. Gifts are $0; estate and
+    family transfers share a surname; a foreclosure is a stranger paying a real
+    price on a non-arms-length deed. Works for every auctioneer and every county.
+
+    SDAT writes the foreclosed BORROWER as the grantor on these deeds, so the
+    former owner's name comes free. When the auction buyer has already flipped
+    it (segment 1 arms-length, segment 2 the (4) deed), we read segment 2."""
     cutoff_s = date.fromordinal(today.toordinal() - TRUSTEE_DEED_LOOKBACK_DAYS).strftime("%Y.%m.%d")
     cur = db.cursor()
     cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, mail_addr, mail_city, mail_zip, "
             "occupancy, land_use, land_value, impr_value, year_built, transfer_date, sale_price, grantor1, "
-            "deed_liber, deed_folio, dwelling_type, transfer_date2, grantor2")
+            "deed_liber, deed_folio, dwelling_type, transfer_date2, grantor2, how_conveyed1, mortgage1, "
+            "how_conveyed2, sale_price2, mortgage2, grantor3, how_conveyed3, transfer_date3, sale_price3, mortgage3")
     names = [c.strip() for c in cols.split(",")]
-    q = (f"SELECT {cols} FROM parcels WHERE transfer_date >= ? AND ("
-         "UPPER(grantor1) LIKE '%TRUSTEE%' OR UPPER(grantor1) LIKE '% TR' OR UPPER(grantor1) LIKE '%(TR)%' "
-         "OR UPPER(grantor1) LIKE '% TRS%' OR UPPER(grantor1) LIKE '%SUB%TR%')")
-    cands = []
+    q = (f"SELECT {cols} FROM parcels WHERE transfer_date >= ? AND how_conveyed1 LIKE '%(4)%' AND "
+         f"CAST(sale_price AS REAL) >= {MIN_FORECLOSURE_PRICE}")
+    out, skipped = [], {"family": 0, "entity_grantor": 0, "not_res": 0}
     for r in cur.execute(q, (cutoff_s,)):
         d = dict(zip(names, r))
-        g = _norm(d.get("grantor1"))
-        if not TRUSTEE_WORD.search(g) or TRUST_NOUN.search(g):
-            continue
-        td = (d.get("transfer_date") or "").replace(".", "-")
-        if not re.match(r"^(19|20)\d\d-\d\d-\d\d$", td):
-            continue
-        d["_tkey"] = re.sub(r"\b(TRUSTEES?|\(TR\)|TR|TRS|SUB(STITUTE)?\s*TR\w*|JR|SR|II|III)\b", "", g).strip()
-        d["_tkey"] = " ".join(d["_tkey"].split()[:2])          # surname + first name is enough to group
-        cands.append(d)
-    by = {}
-    for d in cands:
-        by.setdefault(d["_tkey"], []).append(d)
-    pro = {k: v for k, v in by.items()
-           if k and (len(v) >= PRO_TRUSTEE_MIN_DEEDS and len({x.get("zip") for x in v}) >= PRO_TRUSTEE_MIN_PLACES
-                     or any("SUB" in _norm(x.get("grantor1")) for x in v))}
-    diag = {"window_from": cutoff_s, "trustee_named_deeds": len(cands), "distinct_trustees": len(by),
-            "professional_trustees": sorted(((k, len(v)) for k, v in pro.items()), key=lambda kv: -kv[1]),
-            "rejected_as_family": sorted(((k, len(v)) for k, v in by.items() if k not in pro), key=lambda kv: -kv[1])[:60]}
+        g = _norm(d.get("grantor1")); o = _norm(d.get("owner1"))
+        lu = d.get("land_use") or ""
+        if lu and not (lu.startswith(RESIDENTIAL_USE) or lu.strip() in ("R", "TH", "RC", "M")):
+            skipped["not_res"] += 1; continue
+        if not g or re.search(r"\b(LLC|L L C|INC|CORP|LTD|LP|LLP|TRUST|TRUSTEES?|TR|TRS|BANK|MORTGAGE|ASSOCIATION|COUNTY|CITY OF|STATE OF|HOUSING|AUTHORITY|CHURCH)\b", g):
+            skipped["entity_grantor"] += 1; continue          # REO resale, trust, government: not the borrower's deed
+        if _surname(g) and _surname(g) == _surname(o):
+            skipped["family"] += 1; continue                   # gift or estate transfer within a family
+        d["_segment"] = 1
+        out.append(d)
+    log.info("foreclosure-coded deeds since %s: %d kept (skipped family %d, entity grantor %d, non-res %d)",
+             cutoff_s, len(out), skipped["family"], skipped["entity_grantor"], skipped["not_res"])
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(os.path.join(OUT_DIR, "trustee-diagnostics.json"), "w", encoding="utf-8") as f:
-        json.dump(diag, f, indent=1)
-    out = [d for v in pro.values() for d in v]
-    for d in out:
-        d.pop("_tkey", None)
-    log.info("trustee deeds: %d candidates, %d professional trustees, %d foreclosure deeds",
-             len(cands), len(pro), len(out))
+        json.dump({"window_from": cutoff_s, "kept": len(out), "skipped": skipped,
+                   "method": "how_conveyed = (4) + price >= 40k + person grantor + different surname"}, f, indent=1)
     return out
+
+
+trustee_deeds = foreclosure_deeds   # name kept for the call site
 
 
 def deed_lot(d):
@@ -366,6 +378,11 @@ def deed_lot(d):
         "auction_title": f"Trustee's deed recorded {td} · grantor {d.get('grantor1')}",
         "lawyer_code": None, "source": "SDAT trustee deed", "url": "https://sdat.dat.maryland.gov/RealProperty/Pages/default.aspx",
         "last_updated": None, "from_deed": True, "_sdat": d,
+        # the borrower's own purchase is sales segment 2 on this parcel
+        "borrower_bought_year": int(d["transfer_date2"][:4]) if re.match(r"^(19|20)\d\d", d.get("transfer_date2") or "") else None,
+        "borrower_price": _f(d.get("sale_price2")) or None,
+        "borrower_mortgage": _f(d.get("mortgage2")) or None,
+        "borrower_name": d.get("grantor1"),
     }
 
 
@@ -391,7 +408,8 @@ def match_sdat(db, lot):
     cur = db.cursor()
     cols = ("acct, county, address, city, zip, lat, lon, owner1, owner2, mail_addr, mail_city, mail_zip, "
             "occupancy, land_use, land_value, impr_value, year_built, transfer_date, sale_price, grantor1, "
-            "deed_liber, deed_folio, dwelling_type")
+            "deed_liber, deed_folio, dwelling_type, transfer_date2, grantor2, how_conveyed1, mortgage1, "
+            "how_conveyed2, sale_price2, mortgage2")
     rows = list(cur.execute(f"SELECT {cols} FROM parcels WHERE zip = ? AND address LIKE ?",
                             (lot["zip"], f"{num} {street}%")))
     if not rows and street:
@@ -451,7 +469,7 @@ def classify(lot, s, today):
     if re.match(r"^(19|20)\d\d", td):
         purch_year = int(td[:4])
     sale_year = int(lot["sale_date"][:4]) if lot.get("sale_date") else today.year
-    est4 = estimate_payoff(_f(s.get("sale_price")), purch_year, sale_year, lot.get("deposit"), av)
+    est4 = estimate_payoff(_f(s.get("sale_price")), purch_year, sale_year, lot.get("deposit"), av, mortgage=_f(s.get("mortgage1")))
     est, basis = (est4[:3], est4[3]) if est4 else (None, None)
     reasons = []
     tier = None
@@ -576,6 +594,7 @@ def build(index_path, today=None, backfill=0):
         # diagnostics: how SDAT actually spells the grantor on recent deeds, so the
         # trustee patterns can be tuned against reality rather than guesses
         cutoff_s = date.fromordinal(today.toordinal() - TRUSTEE_DEED_LOOKBACK_DAYS).strftime("%Y.%m.%d")
+        os.makedirs(OUT_DIR, exist_ok=True)
         samp = {}
         total_recent = 0
         for (g, n) in db.execute("SELECT UPPER(grantor1), COUNT(*) FROM parcels WHERE transfer_date >= ? "
@@ -615,28 +634,30 @@ def build(index_path, today=None, backfill=0):
             tstate = "BUYER_ON_TITLE"
             buyer = _norm(s.get("owner1"))
             h = lot.get("hammer") or 0
-            if REO_OWNER.search(buyer) or not h:
-                tier, reasons = None, ["lender took the property back (REO) — a credit bid, no surplus" if h else "no consideration on the deed"]
-            else:
-                # a third party outbid the lender. Without the loan amount we judge by how
-                # far the price ran: near assessment on a long-held home is where surplus lives.
-                ratio = h / av if av else 0
-                yrs = None
-                td2 = (s.get("transfer_date2") or "").strip()
-                if re.match(r"^(19|20)\d\d", td2):
-                    yrs = int(td2[:4])
-                owned_since = yrs
-                if ratio >= 0.85 and av >= MIN_ASSESSED and h >= 150000:
-                    tier = "POSSIBLE"
-                    reasons = [f"third party paid {h:,.0f} ({ratio:.0%} of assessed) — outbid the lender" + (f"; prior owner bought {owned_since}" if owned_since else "")]
-                    if owned_since and today.year - owned_since >= 12 and ratio >= 0.95:
-                        tier = "STRONG"; reasons.append("long-held with a price at full value — equity very likely")
-                elif ratio >= 0.6 and av >= MIN_ASSESSED:
-                    tier = "POSSIBLE"; reasons = [f"third party paid {h:,.0f} ({ratio:.0%} of assessed) — surplus depends on the loan balance"]
+            sale_year = int(lot["sale_date"][:4])
+            est4 = estimate_payoff(lot.get("borrower_price"), lot.get("borrower_bought_year"), sale_year, None, av,
+                                   mortgage=lot.get("borrower_mortgage"))
+            est, basis = (est4[:3], est4[3]) if est4 else (None, None)
+            if REO_OWNER.search(buyer):
+                tier, reasons, surplus = None, ["lender took the property back (REO) — a credit bid, no surplus"], None
+            elif est and h:
+                lo, mid, hi = est
+                surplus = (h - hi, h - mid, h - lo)
+                if h - hi >= STRONG_MIN_SURPLUS and h >= hi * STRONG_MIN_RATIO:
+                    tier = "STRONG"; reasons = [f"hammer {h:,.0f} vs est. payoff {mid:,.0f}–{hi:,.0f} ({basis})"]
+                elif h - mid >= POSSIBLE_MIN_SURPLUS:
+                    tier = "POSSIBLE"; reasons = [f"hammer {h:,.0f} vs est. payoff {mid:,.0f} ({basis}) — thin or uncertain margin"]
                 else:
-                    tier, reasons = None, [f"price {h:,.0f} is only {ratio:.0%} of assessed — unlikely to clear the loan"]
-            est, basis, surplus = None, "no loan data on a deed — see the trustee's deed and the court case", None
-            owner, purch_year = None, None
+                    tier, reasons = None, [f"hammer at or below estimated payoff ({basis})"]
+            else:
+                ratio = h / av if av else 0
+                if ratio >= 0.85 and av >= MIN_ASSESSED and h >= 150000:
+                    tier = "POSSIBLE"; reasons = [f"third party paid {h:,.0f} ({ratio:.0%} of assessed); no loan recorded to estimate against"]
+                else:
+                    tier, reasons = None, ["no recorded loan and price well under value"]
+                surplus = None
+            owner, purch_year = None, lot.get("borrower_bought_year")
+            lot["former_owner_from_deed"] = lot.get("borrower_name")
         elif tstate == "BUYER_ON_TITLE" and lot["kind"] == "SOLD" and not _bad and (s.get("land_use") or "Residential").startswith(RESIDENTIAL_USE):
             # SDAT already shows the auction buyer. Their purchase year/price is
             # the AUCTION, not a loan -- rebuild the estimate from the deposit only.
@@ -650,6 +671,9 @@ def build(index_path, today=None, backfill=0):
             else:
                 tier, reasons = None, ["title moved to the buyer and no deposit signal to estimate the payoff"]
             owner, purch_year = None, None
+            g = _norm(s.get("grantor1"))
+            if g and not REO_OWNER.search(g) and not re.search(r"\b(LLC|INC|CORP|LTD|LP|TRUSTEES?|TR|TRS|PROPERTIES|HOMES|INVESTMENTS?|GROUP|REALTY|SUB)\b", g):
+                lot["former_owner_from_deed"] = s.get("grantor1")
         win, win_note = collection_window(lot.get("sale_date"), today) if lot["kind"] == "SOLD" else (None, None)
         first_seen = seen.get(lot["lot_id"], {}).get("first_seen") or datetime.now(timezone.utc).isoformat(timespec="seconds")
         seen[lot["lot_id"]] = {"first_seen": first_seen, "kind": lot["kind"], "tier": tier}
@@ -667,8 +691,11 @@ def build(index_path, today=None, backfill=0):
             "owner_of_record": owner, "owner2": s.get("owner2") if owner else None,
             "title_state": tstate, "buyer_on_record": s.get("owner1") if tstate in ("BUYER_ON_TITLE", "RESOLD") else None,
             "trustee_deed": (f"{s.get('deed_liber') or ''}/{s.get('deed_folio') or ''}".strip("/") if tstate == "BUYER_ON_TITLE" else None),
+            "former_owner": lot.get("former_owner_from_deed") or (owner if tstate == "FORMER_OWNER_ON_TITLE" else None),
             "from_deed": bool(lot.get("from_deed")), "deed_date": lot.get("deed_date"), "sale_date_estimated": bool(lot.get("from_deed")),
-            "prior_owner_bought": (s.get("transfer_date2") or "")[:4] if lot.get("from_deed") else None,
+            "prior_owner_bought": lot.get("borrower_bought_year") if lot.get("from_deed") else None,
+            "recorded_mortgage": lot.get("borrower_mortgage") if lot.get("from_deed") else (_f(s.get("mortgage1")) or None),
+            "how_conveyed": s.get("how_conveyed1"),
             "collection_window": win, "collection_note": win_note,
             "mail": mail if owner else "", "absentee": bool(mail) and not mail.upper().startswith((s["address"] or "~").upper()[:8]),
             "occupancy": s.get("occupancy"), "land_use": s.get("land_use"), "dwelling_type": s.get("dwelling_type"),

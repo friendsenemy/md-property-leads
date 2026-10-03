@@ -75,7 +75,7 @@ const SurplusApp = {
         a.deed_rational = true;
         a.tax_sale_year = a.sale_date ? a.sale_date.slice(0, 4) : null;
         a.days_since_sale = a.sale_date ? Math.round((Date.now() - new Date(a.sale_date)) / 86400000) : 0;
-        a.former_owner = a.owner_of_record;
+        a.former_owner = a.former_owner || a.owner_of_record;
         a.conveyance_kind = "LENDER";
         a._blob = [a.address, a.city, a.county, a.owner_of_record, a.owner2, a.mail, a.account, "auction", a.tier]
             .filter(Boolean).join(" ").toLowerCase();
@@ -215,7 +215,7 @@ const SurplusApp = {
                         ${r.is_new && !r.archive ? '<span class="chip chip-hard" title="First seen today">new</span>' : ""}
                         ${r.archive ? '<span class="chip" title="Past auction result from the archive — surplus may still be unclaimed">archive</span>' : ""}
                         ${r.collection_window === "COMPTROLLER" ? '<span class="chip" title="Over 3 years old — unclaimed registry funds have usually gone to the Comptroller; search claimitmd.gov">comptroller</span>' : ""}
-                        ${r.from_deed ? '<span class="chip chip-good" title="Found from the substitute trustee\'s deed in SDAT — catches every auctioneer, with the price on the deed. Sale date is estimated (deed date minus ~75 days)">from deed</span>' : ""}
+                        ${r.from_deed ? '<span class="chip chip-good" title="Found from SDAT: a deed coded non-arms-length/foreclosure, real price, stranger buyer — catches every auctioneer. Sale date is estimated (deed date minus ~75 days)">from deed</span>' : ""}
                         ${r.title_state === "BUYER_ON_TITLE" && !r.from_deed ? '<span class="chip" title="SDAT already shows the auction buyer — the former owner is named on the trustee\'s deed">buyer on title</span>' : ""}
                         ${r.ambiguous_match ? '<span class="chip" title="More than one SDAT parcel matched this street address — check the account number">check match</span>' : ""}
                         ${r.deed_rational && r.stage !== "CONVEYED" && !r.tier ? '<span class="chip chip-good" title="Bid is at or below assessed value, so taking the deed is profitable — this case is likely to complete">deed likely</span>' : ""}
@@ -231,7 +231,8 @@ const SurplusApp = {
                         <div class="address"${r.no_situs ? ' style="color:var(--text-secondary); font-weight:400; font-size:0.8rem"' : ""}>${r.no_situs ? "no street address — " : ""}${this.esc(r.address || "N/A")}${r.city && !r.no_situs ? `, ${this.esc(r.city)}` : ""}</div>
                         <div class="meta" style="font-family:var(--font-mono)">${this.esc(r.account)}${r.year_built && String(r.year_built).replace(/0/g, "") ? ` · built ${this.esc(r.year_built)}` : ""}${r.no_situs && r.city ? ` · ${this.esc(r.city)}` : ""}</div>
                     </td>
-                    <td class="name-cell" style="font-family:var(--font-mono); font-size:0.8rem">${this.esc(r.owner_of_record || "—")}
+                    <td class="name-cell" style="font-family:var(--font-mono); font-size:0.8rem">${this.esc(r.owner_of_record || r.former_owner || "—")}
+                        ${!r.owner_of_record && r.former_owner ? '<div style="color:var(--text-dim); font-size:0.7rem">former owner · from the deed</div>' : ""}
                         ${r.owner_at_sale && r.owner_at_sale !== r.owner_of_record ? `<div style="color:var(--text-dim); font-size:0.7rem">at sale: ${this.esc(r.owner_at_sale)}</div>` : ""}
                         ${this.notesOf(r) ? '<span class="note-badge" title="Has notes">✎</span>' : ""}</td>
                     <td class="county-cell">${this.esc(r.county || "")}</td>
@@ -351,7 +352,7 @@ const SurplusApp = {
         const sold = r.stage === "AUCTION_SOLD";
         const pe = r.payoff_est, se = r.surplus_est;
         const rng = (t) => t ? `${this.money(t[0])} – ${this.money(t[2])}` : "—";
-        const links = this.findLinks(r, r.owner_of_record);
+        const links = this.findLinks(r, r.former_owner || r.owner_of_record);
         const occ = r.occupancy === "H" ? "Owner-occupied — they live (lived) here" : "Not owner-occupied — the mailing address is the lead";
         const letter = sold ? this.auctionLetter(r) : this.preAuctionLetter(r);
         return `
@@ -377,7 +378,8 @@ const SurplusApp = {
                 <h3>${sold ? "Former Owner — Who The Surplus Belongs To" : "Owner — Still Holds Title"}</h3>
                 ${r.title_state === "BUYER_ON_TITLE" || r.title_state === "RESOLD" ? `
                 <div class="detail-row"><span class="label">On record now</span><span class="value" style="font-family:var(--font-mono)">${this.esc(r.buyer_on_record || "")} <span class="chip">${r.title_state === "RESOLD" ? "later buyer" : "auction buyer"}</span></span></div>
-                <div class="detail-row"><span class="label">Former owner</span><span class="value" style="font-size:0.82rem">Not in SDAT any more. ${r.trustee_deed ? `The trustee's deed at <b style="font-family:var(--font-mono)">Liber/Folio ${this.esc(r.trustee_deed)}</b> (mdlandrec, free) recites the Deed of Trust and names the borrowers.` : "Read the trustee's deed on mdlandrec — it names the borrowers."} The Circuit Court foreclosure case names them as defendants and has the auditor's account.</span></div>` : `
+                ${r.former_owner ? `<div class="detail-row"><span class="label">Former owner</span><span class="value" style="font-family:var(--font-mono); font-weight:600; color:var(--yellow)">${this.esc(r.former_owner)} <span class="chip" title="SDAT records a foreclosure deed with the foreclosed borrower as grantor — this is the person owed the surplus">from the deed</span></span></div>`
+                : `<div class="detail-row"><span class="label">Former owner</span><span class="value" style="font-size:0.82rem">Not recoverable from SDAT here (the deed's grantor is an entity). ${r.trustee_deed ? `The deed at <b style="font-family:var(--font-mono)">Liber/Folio ${this.esc(r.trustee_deed)}</b> (mdlandrec, free) recites the Deed of Trust and names the borrowers.` : "Read the trustee's deed on mdlandrec — it names the borrowers."} The Circuit Court foreclosure case names them as defendants and has the auditor's account.</span></div>`}` : `
                 <div class="detail-row"><span class="label">Name</span><span class="value" style="font-family:var(--font-mono); font-weight:600; color:var(--yellow)">${this.esc(r.owner_of_record || "—")}${r.owner2 ? `<br>${this.esc(r.owner2)}` : ""}</span></div>`}
                 ${r.mail ? `<div class="detail-row"><span class="label">Mailing address</span><span class="value">${this.esc(r.mail)}${r.absentee ? ' <span class="chip">different from property</span>' : ""}</span></div>` : ""}
                 ${r.title_state === "BUYER_ON_TITLE" || r.title_state === "RESOLD" ? "" : `<div class="detail-row"><span class="label">They bought it</span><span class="value">${r.purchase_year ? `${this.esc(String(r.purchase_year))} for ${r.purchase_price ? this.money(r.purchase_price) : "an unrecorded price"}` : "no purchase on the deed (inherited or very old)"}${r.purchase_deed ? ` <span style="font-family:var(--font-mono); color:var(--text-dim)">(Liber/Folio ${this.esc(r.purchase_deed)})</span>` : ""}</span></div>`}
@@ -398,6 +400,7 @@ const SurplusApp = {
                 ${sold ? `<div class="detail-row"><span class="label">Hammer price</span><span class="value" style="font-family:var(--font-mono); font-weight:600">${this.money(r.hammer)}</span></div>` : ""}
                 ${r.deposit ? `<div class="detail-row"><span class="label">Deposit required</span><span class="value" style="font-family:var(--font-mono)">${this.money(r.deposit)}</span></div>` : ""}
                 ${r.from_deed && r.prior_owner_bought ? `<div class="detail-row"><span class="label">Prior owner bought</span><span class="value">${this.esc(r.prior_owner_bought)} <span style="color:var(--text-dim); font-size:0.78rem">— the longer ago, the more likely the loan was paid down</span></span></div>` : ""}
+                ${r.recorded_mortgage ? `<div class="detail-row"><span class="label">Recorded loan</span><span class="value" style="font-family:var(--font-mono)">${this.money(r.recorded_mortgage)} <span style="font-family:var(--font-sans); color:var(--text-dim); font-size:0.78rem">— original mortgage on ${r.prior_owner_bought || r.purchase_year ? "their " + this.esc(String(r.prior_owner_bought || r.purchase_year)) : "the"} purchase deed (SDAT)</span></span></div>` : ""}
                 <div class="detail-row"><span class="label">Est. loan payoff</span><span class="value" style="font-family:var(--font-mono)">${pe ? `${this.money(pe[1])} <span style="font-family:var(--font-sans); color:var(--text-dim); font-size:0.78rem">(range ${rng(pe)}${r.payoff_basis ? ` · from ${this.esc(r.payoff_basis)}` : ""})</span>` : "—"}</span></div>
                 <div class="detail-row"><span class="label">${sold ? "Est. surplus" : "Est. equity"}</span><span class="value" style="font-family:var(--font-mono); font-weight:700; color:var(--green)">${se ? `${this.money(se[1])} <span style="font-family:var(--font-sans); font-weight:400; color:var(--text-dim); font-size:0.78rem">(range ${rng(se)})</span>` : "—"}</span></div>
                 <p style="font-size:0.76rem; color:var(--text-dim); margin:8px 0 0">The payoff is modelled from their own purchase price and year (95% loan, 30-year amortization, plus ~12% arrears and costs) and from the trustee's deposit (firms set it near 10% of the debt). A purchase older than 15 years tells us little — the debt being foreclosed is a later refinance, HELOC or reverse mortgage. A refinance, HELOC, second mortgage, HOA lien or judgment comes off the top and we cannot see those. ${sold ? "The real number is the auditor's account in the Circuit Court case." : "Confirm with the owner."}</p>
@@ -410,7 +413,7 @@ const SurplusApp = {
                     : "<b>Buy lead with a clock on it.</b> The owner still holds title and has equity on paper. A sale that closes before the auction pays the lender off and leaves them with the equity instead of nothing; a signed contract can also persuade the trustee to postpone. Everything in PHIFA applies to a homeowner in default — written contract, right to cancel, no equity-stripping — so the offer has to be a real market-rate purchase, papered by a Maryland lawyer."}</p>
                 <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px">
                     <button class="btn btn-sm" data-copy="${this.esc(letter)}">${sold ? "Copy letter to former owner" : "Copy letter to owner"}</button>
-                    ${sold ? `<button class="btn btn-sm" data-copy="${this.esc(this.heirChecklist(r, r.owner_of_record))}">Copy heir-search checklist</button>` : ""}
+                    ${sold ? `<button class="btn btn-sm" data-copy="${this.esc(this.heirChecklist(r, r.former_owner || r.owner_of_record))}">Copy heir-search checklist</button>` : ""}
                 </div>
             </div>
             <div class="detail-section">
@@ -439,7 +442,7 @@ const SurplusApp = {
 
     auctionLetter(r) {
         const addr = `${r.address || ""}${r.city ? ", " + r.city : ""}${r.zip ? " " + r.zip : ""}`;
-        const p = this.personName(r.owner_of_record);
+        const p = this.personName(r.former_owner || r.owner_of_record);
         const amt = r.surplus_est ? `somewhere around ${this.money(r.surplus_est[1])}` : "a meaningful amount";
         return `${p ? p.full : "To the owner of " + addr},
 
