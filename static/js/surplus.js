@@ -256,7 +256,7 @@ const SurplusApp = {
     },
 
     open(id) {
-        const r = this.rows.find((x) => x.id === id);
+        const r = this.allRows().find((x) => x.id === id);
         if (!r) return;
         const m = STAGE_META[r.stage] || { label: r.stage, blurb: "" };
         const ev = this.events.find((e) => e.account === r.account);
@@ -378,7 +378,7 @@ const SurplusApp = {
                 <div class="detail-row"><span class="label">Former owner</span><span class="value" style="font-size:0.82rem">Not in SDAT any more. ${r.trustee_deed ? `The trustee's deed at <b style="font-family:var(--font-mono)">Liber/Folio ${this.esc(r.trustee_deed)}</b> (mdlandrec, free) recites the Deed of Trust and names the borrowers.` : "Read the trustee's deed on mdlandrec — it names the borrowers."} The Circuit Court foreclosure case names them as defendants and has the auditor's account.</span></div>` : `
                 <div class="detail-row"><span class="label">Name</span><span class="value" style="font-family:var(--font-mono); font-weight:600; color:var(--yellow)">${this.esc(r.owner_of_record || "—")}${r.owner2 ? `<br>${this.esc(r.owner2)}` : ""}</span></div>`}
                 ${r.mail ? `<div class="detail-row"><span class="label">Mailing address</span><span class="value">${this.esc(r.mail)}${r.absentee ? ' <span class="chip">different from property</span>' : ""}</span></div>` : ""}
-                <div class="detail-row"><span class="label">They bought it</span><span class="value">${r.purchase_year ? `${this.esc(String(r.purchase_year))} for ${r.purchase_price ? this.money(r.purchase_price) : "an unrecorded price"}` : "no purchase on the deed (inherited or very old)"}${r.purchase_deed ? ` <span style="font-family:var(--font-mono); color:var(--text-dim)">(Liber/Folio ${this.esc(r.purchase_deed)})</span>` : ""}</span></div>
+                ${r.title_state === "BUYER_ON_TITLE" || r.title_state === "RESOLD" ? "" : `<div class="detail-row"><span class="label">They bought it</span><span class="value">${r.purchase_year ? `${this.esc(String(r.purchase_year))} for ${r.purchase_price ? this.money(r.purchase_price) : "an unrecorded price"}` : "no purchase on the deed (inherited or very old)"}${r.purchase_deed ? ` <span style="font-family:var(--font-mono); color:var(--text-dim)">(Liber/Folio ${this.esc(r.purchase_deed)})</span>` : ""}</span></div>`}
                 <div class="detail-row"><span class="label">Find them</span><span class="value" style="display:flex; flex-wrap:wrap; gap:6px 14px; font-size:0.85rem">${links.join("")}</span></div>
             </div>
             ${sold ? `<div class="detail-section">
