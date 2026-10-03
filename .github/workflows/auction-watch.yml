@@ -55,6 +55,13 @@ jobs:
           path: .cache/sdat.sqlite
           key: ${{ steps.week.outputs.key }}
 
+      - name: List SDAT columns (diagnostic, cheap)
+        env:
+          MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
+          MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
+          MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
+        run: python -m engine2.build_index --list-columns || true
+
       - name: Watch auctions
         run: python -m engine2.auction_watch --index .cache/sdat.sqlite --backfill "${{ github.event.inputs.backfill_pages || '0' }}"
 
@@ -68,15 +75,16 @@ jobs:
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p /tmp/out && cp data/surplus/auctions.json data/surplus/auctions-seen.json /tmp/out/
-          cp data/surplus/auction-archive.json data/surplus/grantor-trustee-sample.json data/surplus/trustee-diagnostics.json /tmp/out/ 2>/dev/null || true
+          cp data/surplus/auction-archive.json data/surplus/grantor-trustee-sample.json data/surplus/trustee-diagnostics.json data/surplus/sdat-columns.json /tmp/out/ 2>/dev/null || true
           git fetch origin main
           git checkout -f -B main origin/main
           cp /tmp/out/auctions.json /tmp/out/auctions-seen.json data/surplus/
           [ -f /tmp/out/auction-archive.json ] && cp /tmp/out/auction-archive.json data/surplus/
           [ -f /tmp/out/grantor-trustee-sample.json ] && cp /tmp/out/grantor-trustee-sample.json data/surplus/
           [ -f /tmp/out/trustee-diagnostics.json ] && cp /tmp/out/trustee-diagnostics.json data/surplus/
+          [ -f /tmp/out/sdat-columns.json ] && cp /tmp/out/sdat-columns.json data/surplus/
           git add data/surplus/auctions.json data/surplus/auctions-seen.json
-          git add data/surplus/auction-archive.json data/surplus/grantor-trustee-sample.json data/surplus/trustee-diagnostics.json 2>/dev/null || true
+          git add data/surplus/auction-archive.json data/surplus/grantor-trustee-sample.json data/surplus/trustee-diagnostics.json data/surplus/sdat-columns.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(d['counts']['kept'])")
           S=$(python -c "import json;d=json.load(open('data/surplus/auctions.json'));print(sum(1 for r in d['rows'] if r['tier']=='STRONG'))")

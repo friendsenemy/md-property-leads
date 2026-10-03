@@ -187,5 +187,20 @@ if __name__ == "__main__":
     ap.add_argument("--dataset", default=config.DATASET_ID)
     ap.add_argument("--max-pages", type=int, default=None)
     ap.add_argument("--out", default=config.INDEX_PATH)
+    ap.add_argument("--list-columns", action="store_true", help="print every SDAT field name and exit (needs the Socrata login)")
     a = ap.parse_args()
+    if a.list_columns:
+        import json as _json
+        logging.basicConfig(level=logging.INFO)
+        sess = requests.Session()
+        url = f"{config.SOCRATA_BASE}/{a.dataset}.json"
+        r = sess.get(f"https://opendata.maryland.gov/api/views/{a.dataset}.json", auth=_auth(), params=_params({}), timeout=60)
+        keys = [c["fieldName"] for c in r.json().get("columns", [])] if r.status_code == 200 else sorted({k for rec in _get(url, {"$limit": 200}, sess) for k in rec})
+        sample = _get(url, {"$limit": 50, "$where": "sales_segment_1_transfer_date_yyyy_mm_dd_mdp_field_tradate_sdat_field_89 >= '2026.06.01'"}, sess)
+        os.makedirs("data/surplus", exist_ok=True)
+        with open("data/surplus/sdat-columns.json", "w", encoding="utf-8") as f:
+            _json.dump({"columns": keys, "sample_values": {k: sorted({str(rec.get(k)) for rec in sample if rec.get(k) is not None})[:12]
+                                                           for k in keys if any(w in k for w in ("conv", "transfer", "type", "grant", "sale", "deed", "mort"))}}, f, indent=1)
+        print(len(keys), "columns written to data/surplus/sdat-columns.json")
+        sys.exit(0)
     build(a.dataset, a.max_pages, a.out)
