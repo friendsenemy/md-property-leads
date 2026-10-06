@@ -2,7 +2,7 @@
 
 **Maryland Pre-Probate Lead Generator** — finds recently deceased Marylanders who owned real estate, before the estate hits probate court.
 
-**Live dashboard:** https://pagesofpurposellc.com/ppl-k7m2x9/  (private — passcode required)
+**Live dashboard:** https://pagesofpurposellc.com/md-property-leads/  (private — passcode required)
 
 ## How it works
 
