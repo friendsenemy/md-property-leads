@@ -74,6 +74,37 @@
     </style>
 </head>
 <body>
+<div id="gate" style="position:fixed; inset:0; z-index:99999; background:#07070c; display:flex; align-items:center; justify-content:center; font-family:system-ui,-apple-system,Segoe UI,sans-serif">
+    <form id="gateForm" style="width:min(380px,90vw); background:#111118; border:1px solid #2a2a36; border-radius:14px; padding:28px 26px; box-shadow:0 20px 60px rgba(0,0,0,.6)">
+        <div style="font-size:1.25rem; font-weight:700; color:#eaeaf2; margin-bottom:6px">Pages of Purpose</div>
+        <div style="font-size:0.9rem; color:#8e8e9a; margin-bottom:18px">Private tool. Enter the passcode.</div>
+        <input id="gateInput" type="password" autocomplete="current-password" autofocus style="width:100%; box-sizing:border-box; font-size:1.15rem; padding:12px 14px; border-radius:10px; border:1px solid #3a3a48; background:#0b0b12; color:#fff; outline:none">
+        <div id="gateMsg" style="min-height:20px; font-size:0.85rem; color:#ff6b61; margin:8px 0 10px"></div>
+        <button type="submit" style="width:100%; font-size:1.05rem; padding:12px; border-radius:10px; border:0; background:#00f0ff; color:#06060a; font-weight:700; cursor:pointer">Open</button>
+    </form>
+</div>
+<script>
+(function () {
+    const KEY = "mdpl:gate";
+    async function sha(s) { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join(""); }
+    function want() { return (window.MDPL && window.MDPL.GATE_SHA256) || ""; }
+    function open() { const g = document.getElementById("gate"); if (g) g.remove(); document.documentElement.style.overflow = ""; }
+    document.documentElement.style.overflow = "hidden";
+    window.addEventListener("DOMContentLoaded", async () => {
+        if (!want()) { open(); return; }                       // no passcode configured: open
+        let saved = ""; try { saved = localStorage.getItem(KEY) || ""; } catch (_) {}
+        if (saved && saved === want()) { open(); return; }
+        const form = document.getElementById("gateForm"), inp = document.getElementById("gateInput"), msg = document.getElementById("gateMsg");
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const h = await sha(inp.value.trim());
+            if (h === want()) { try { localStorage.setItem(KEY, h); } catch (_) {} open(); }
+            else { msg.textContent = "That's not it."; inp.select(); }
+        });
+    });
+})();
+</script>
+
 
 <div class="app-container">
 
@@ -89,12 +120,15 @@
             <button class="btn btn-export" id="exportBtn">
                 <span class="icon">⬇</span> Export Skip Trace
             </button>
-            <a class="btn btn-primary" id="scrapeBtn" href="https://github.com/friendsenemy/md-property-leads/actions/workflows/daily-scrape.yml" target="_blank" rel="noopener">
+            <a class="btn btn-primary" id="scrapeBtn" href="https://github.com/friendsenemy/ppl-k7m2x9/actions/workflows/daily-scrape.yml" target="_blank" rel="noopener">
                 <span class="icon">⚡</span> Run Scrape Now
             </a>
             <a class="btn" href="guide.html" target="_blank" rel="noopener" title="How the tool works, what each tab means, and what to say — with real examples" style="margin-left:6px">
                 <span class="icon">📖</span> How to Use
             </a>
+            <button class="btn" id="lockBtn" title="Lock this computer — the passcode will be needed again" style="margin-left:6px" onclick="try{localStorage.removeItem('mdpl:gate')}catch(e){};location.reload()">
+                <span class="icon">🔒</span> Lock
+            </button>
         </div>
     </header>
 

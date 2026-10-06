@@ -22,7 +22,7 @@ import requests
 log = logging.getLogger("alert")
 AUCTIONS = "data/surplus/auctions.json"
 CONFIG_JS = "static/js/config.js"
-DASH = "https://pagesofpurposellc.com/md-property-leads/#surplus"
+DASH = "https://pagesofpurposellc.com/ppl-k7m2x9/#surplus"
 
 
 def notes_url():

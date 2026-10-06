@@ -52,7 +52,7 @@ OUT_DIR = "data/surplus"
 OUT_PATH = os.path.join(OUT_DIR, "auctions.json")
 SEEN_PATH = os.path.join(OUT_DIR, "auctions-seen.json")
 
-UA = {"User-Agent": "Mozilla/5.0 (compatible; md-property-leads/1.0; +https://pagesofpurposellc.com/md-property-leads/)"}
+UA = {"User-Agent": "Mozilla/5.0 (compatible; md-property-leads/1.0; +https://pagesofpurposellc.com/)"}
 
 SOURCES = {
     "alexcooper_sold": "https://realestate.alexcooper.com/sold-lots",
