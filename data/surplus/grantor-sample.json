@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T17:10:42+00:00",
+ "generated_at": "2026-10-12T17:38:43+00:00",
  "top_matching_grantors": [
   [
    "(investor) TAX SALE HOLDINGS, LLC",
@@ -38,6 +38,14 @@
    3
   ],
   [
+   "(investor) TAX SALE HOLDINGS,LLC",
+   3
+  ],
+  [
+   "(investor) TAX LIEN 2000, LLC",
+   3
+  ],
+  [
    "SHON MCCOLLUM DIRECTOR OF FINANCE",
    3
   ],
@@ -46,19 +54,31 @@
    3
   ],
   [
-   "(investor) TAX SALE HOLDINGS,LLC",
-   3
-  ],
-  [
    "TREASURER OF FREDERICK COUNTY",
    3
   ],
   [
-   "(investor) TAX LIEN 2000, LLC",
-   3
+   "(investor) IRONCLAD TAX LIEN INVESTORS LLC",
+   2
   ],
   [
-   "(investor) IRONCLAD TAX LIEN INVESTORS LLC",
+   "(investor) TAX SALE 2000, LLC",
+   2
+  ],
+  [
+   "(investor) TAX SALE 1999, LLC",
+   2
+  ],
+  [
+   "(investor) UNITED TAX LIEN LLC",
+   2
+  ],
+  [
+   "(investor) RIFKIN TAX SALE, LLC",
+   2
+  ],
+  [
+   "(investor) TAX SALE INVESTORS, INC",
    2
   ],
   [
@@ -70,10 +90,6 @@
    2
   ],
   [
-   "(investor) TAX SALE 2000, LLC",
-   2
-  ],
-  [
    "MCCOLLUM SHON DIRECTOR OF FINANCE",
    2
   ],
@@ -82,15 +98,7 @@
    2
   ],
   [
-   "(investor) TAX SALE 1999, LLC",
-   2
-  ],
-  [
    "FREDERICK CO TREASURER",
-   2
-  ],
-  [
-   "(investor) UNITED TAX LIEN LLC",
    2
   ],
   [
@@ -114,14 +122,6 @@
    2
   ],
   [
-   "(investor) RIFKIN TAX SALE, LLC",
-   2
-  ],
-  [
-   "(investor) TAX SALE INVESTORS, INC",
-   2
-  ],
-  [
    "(investor) TAX LIEN HEDGE LLC",
    1
   ],
@@ -139,6 +139,38 @@
   ],
   [
    "(investor) TAX LIEN HEDGE LLC, THE",
+   1
+  ],
+  [
+   "(investor) TAX SALE 1999, LLC.",
+   1
+  ],
+  [
+   "(investor) TAX SALE HOLDLINGS, LLC",
+   1
+  ],
+  [
+   "(investor) TAX SALE INVESTORS 2005, LLC.",
+   1
+  ],
+  [
+   "(investor) TAX SALE INVESTORS 2005, LLC",
+   1
+  ],
+  [
+   "(investor) JM TAX SALE INVESTORS I, LLC",
+   1
+  ],
+  [
+   "(investor) BALTIMORE TAX LIEN PARTNERS MA",
+   1
+  ],
+  [
+   "(investor) TAX SALE INVESTORS,",
+   1
+  ],
+  [
+   "(investor) TAX LIEN 2000, LLC.",
    1
   ],
   [
@@ -162,19 +194,11 @@
    1
   ],
   [
-   "(investor) TAX SALE 1999, LLC.",
-   1
-  ],
-  [
    "MCCOLLUM SHON COLLECTOR OF TAXES",
    1
   ],
   [
    "ONDISH ANDREW DIRECTOR OF FINANCE",
-   1
-  ],
-  [
-   "(investor) TAX SALE HOLDLINGS, LLC",
    1
   ],
   [
@@ -198,14 +222,6 @@
    1
   ],
   [
-   "(investor) TAX SALE INVESTORS 2005, LLC.",
-   1
-  ],
-  [
-   "(investor) TAX SALE INVESTORS 2005, LLC",
-   1
-  ],
-  [
    "HARFORD CO TREASURER",
    1
   ],
@@ -223,22 +239,6 @@
   ],
   [
    "JOSEPH M BEACH DIRECTOR OF FINANCE",
-   1
-  ],
-  [
-   "(investor) JM TAX SALE INVESTORS I, LLC",
-   1
-  ],
-  [
-   "MONT COUNTY MD COLLECTOR OF TAXES",
-   1
-  ],
-  [
-   "TREASURER FOR ST MARYS COUNTY",
-   1
-  ],
-  [
-   "(investor) BALTIMORE TAX LIEN PARTNERS MA",
    1
   ]
  ]
