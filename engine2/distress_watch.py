@@ -63,7 +63,8 @@ OUT_DIR = "data/distress"
 OUT_PATH = os.path.join(OUT_DIR, "signals.json")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; md-property-leads/1.0)"}
 COOLING_DAYS = 30
-MAX_SIGNALS_PER_ACCOUNT = 12   # multi-unit buildings can carry hundreds of code cases; keep the newest                  # a fresh fire is shown, not marked ready
+MAX_SIGNALS_PER_ACCOUNT = 12
+MAX_TIES = 3                   # an exact address shared by more parcels than this (condo tower) is ambiguous, not a match   # multi-unit buildings can carry hundreds of code cases; keep the newest                  # a fresh fire is shown, not marked ready
 FIRE_LOOKBACK_DAYS = 730
 CODE_LOOKBACK_DAYS = 365
 PERMIT_LOOKBACK_DAYS = 365
@@ -394,7 +395,21 @@ def match(db, sig):
     cands.sort(key=lambda c: -len(want & set(addr_tokens(c["address"]))))
     best = cands[0]
     ties = [c for c in cands if len(want & set(addr_tokens(c["address"]))) == len(want & set(addr_tokens(best["address"])))]
+    if len(ties) > MAX_TIES:
+        # "1005 Chillum Rd" against a 74-unit condo with no unit given: don't smear one record over every unit
+        return [], "ambiguous"
     return (ties if len(ties) > 1 else [best]), ("exact" if len(ties) == 1 else "block")
+
+
+def match_by_account(db, sig):
+    """Prince George's registry rows carry the 7-digit county tax account; SDAT's
+    account is '17' + 2-digit district + that number."""
+    ref = re.sub(r"\D", "", str(sig.get("ref") or ""))
+    if not ref or sig.get("county") != "Prince George's":
+        return []
+    names = [c.strip() for c in COLS.split(",")]
+    rows = db.execute(f"SELECT {COLS} FROM parcels WHERE substr(acct, 5) = ? AND acct LIKE '17%'", (ref.zfill(7),)).fetchall()
+    return [dict(zip(names, r)) for r in rows]
 
 
 def build(index_path, today=None):
@@ -403,6 +418,7 @@ def build(index_path, today=None):
     db.execute("CREATE INDEX IF NOT EXISTS ix_zip ON parcels(zip)")
     db.execute("CREATE INDEX IF NOT EXISTS ix_county ON parcels(county)")
     ensure_addr_index(db)
+    db.execute("CREATE INDEX IF NOT EXISTS ix_acct_tail ON parcels(substr(acct, 5))")
     sigs = []
     counts = {}
     for name, fn in (("osfm", osfm_fires), ("baltimore_city", baltimore_city), ("montgomery", montgomery), ("prince_georges", prince_georges)):
@@ -420,12 +436,15 @@ def build(index_path, today=None):
         if s["kind"] == "FIRE" and not s.get("residential"):
             counts[s["_src"]]["non_residential"] = counts[s["_src"]].get("non_residential", 0) + 1
             continue
-        cands, prec = match(db, s)
+        cands = match_by_account(db, s)
+        prec = "exact" if cands else None
+        if not cands:
+            cands, prec = match(db, s)
         src = s.pop("_src")
         counts[src]["matched"] = counts[src].get("matched", 0) + (1 if cands else 0)
         if not cands:
             if len(unmatched) < 400:
-                unmatched.append({k: s.get(k) for k in ("kind", "source", "date", "county", "address", "detail", "url")})
+                unmatched.append({**{k: s.get(k) for k in ("kind", "source", "date", "county", "address", "detail", "url")}, "why": prec})
             continue
         for c in cands:
             rec = {**{k: v for k, v in s.items() if k not in ("city", "zip")}, "precision": prec, "matched_address": c["address"],
