@@ -322,6 +322,46 @@ def prince_georges():
 COLS = "acct, county, address, city, zip, owner1, land_value, impr_value, land_use"
 
 
+def ensure_addr_index(db):
+    """One pass over the parcels table -> addr_idx(acct, num, street, zip, county),
+    indexed. Turns each signal lookup from a LIKE scan over a whole county into an
+    index hit (Baltimore City alone sends ~13k signals against ~240k parcels)."""
+    have = db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='addr_idx'").fetchone()
+    if have and db.execute("SELECT COUNT(*) FROM addr_idx").fetchone()[0] > 0:
+        return
+    log.info("building address index …")
+    db.execute("DROP TABLE IF EXISTS addr_idx")
+    db.execute("CREATE TABLE addr_idx (acct TEXT, num INTEGER, street TEXT, zip TEXT, county TEXT)")
+    cur = db.execute("SELECT acct, address, zip, county FROM parcels")
+    batch = []
+    while True:
+        rows = cur.fetchmany(50000)
+        if not rows:
+            break
+        for acct, address, zp, county in rows:
+            t = addr_tokens(address)
+            if len(t) > 1 and t[0].isdigit():
+                batch.append((acct, int(t[0]), t[1], (zp or "")[:5], county))
+        if batch:
+            db.executemany("INSERT INTO addr_idx VALUES (?,?,?,?,?)", batch); batch = []
+    db.execute("CREATE INDEX ix_addr_zip ON addr_idx(zip, street, num)")
+    db.execute("CREATE INDEX ix_addr_county ON addr_idx(county, street, num)")
+    db.commit()
+    log.info("address index: %d rows", db.execute("SELECT COUNT(*) FROM addr_idx").fetchone()[0])
+
+
+def _parcels(db, accts):
+    if not accts:
+        return []
+    names = [c.strip() for c in COLS.split(",")]
+    out = []
+    for i in range(0, len(accts), 500):
+        chunk = accts[i:i + 500]
+        q = f"SELECT {COLS} FROM parcels WHERE acct IN ({','.join('?' * len(chunk))})"
+        out += [dict(zip(names, r)) for r in db.execute(q, chunk).fetchall()]
+    return out
+
+
 def match(db, sig):
     """Exact: house number + first street word, scoped by zip when we have one,
     else by county. Block: every parcel on that street with a number in the
@@ -341,17 +381,13 @@ def match(db, sig):
         return [], "none"
     if sig.get("precision") == "block":
         lo, hi = int(num), int(num) + 99
-        rows = cur.execute(f"SELECT {COLS} FROM parcels WHERE {scope} AND address LIKE ? ", (*args, f"% {street}%")).fetchall()
-        names = [c.strip() for c in COLS.split(",")]
-        cands = []
-        for r in rows:
-            d = dict(zip(names, r)); t = addr_tokens(d["address"])
-            if t and t[0].isdigit() and lo <= int(t[0]) <= hi and len(t) > 1 and t[1] == street:
-                cands.append(d)
+        accts = [r[0] for r in cur.execute(f"SELECT acct FROM addr_idx WHERE {scope} AND street = ? AND num BETWEEN ? AND ?",
+                                           (*args, street, lo, hi)).fetchall()]
+        cands = _parcels(db, accts)
         return cands[:40], ("block" if cands else "none")
-    rows = cur.execute(f"SELECT {COLS} FROM parcels WHERE {scope} AND address LIKE ?", (*args, f"{num} {street}%")).fetchall()
-    names = [c.strip() for c in COLS.split(",")]
-    cands = [dict(zip(names, r)) for r in rows]
+    accts = [r[0] for r in cur.execute(f"SELECT acct FROM addr_idx WHERE {scope} AND street = ? AND num = ?",
+                                       (*args, street, int(num))).fetchall()]
+    cands = _parcels(db, accts)
     if not cands:
         return [], "none"
     want = set(toks)
@@ -366,6 +402,7 @@ def build(index_path, today=None):
     db = sqlite3.connect(index_path)
     db.execute("CREATE INDEX IF NOT EXISTS ix_zip ON parcels(zip)")
     db.execute("CREATE INDEX IF NOT EXISTS ix_county ON parcels(county)")
+    ensure_addr_index(db)
     sigs = []
     counts = {}
     for name, fn in (("osfm", osfm_fires), ("baltimore_city", baltimore_city), ("montgomery", montgomery), ("prince_georges", prince_georges)):
