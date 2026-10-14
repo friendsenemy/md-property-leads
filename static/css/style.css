@@ -258,6 +258,8 @@ a:hover { text-decoration: underline; }
 .stat-card.green::after { background: var(--green); }
 .stat-card.pink::after { background: var(--pink); }
 .stat-card.yellow::after { background: var(--yellow); }
+.stat-card.red::after { background: var(--red); }
+.stat-card.red .stat-value { color: var(--red); }
 
 .stat-card .stat-label {
     font-size: 0.75rem;

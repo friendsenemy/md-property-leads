@@ -47,6 +47,7 @@
         .cls-E { color:var(--pink); border-color:rgba(255,55,95,0.4); }
         .cls-S { color:var(--cyan-dim); }
         .cls-D { color:#fff; background:rgba(255,55,95,0.35); border-color:var(--pink); }
+        .cls-X { color:#fff; background:rgba(255,149,0,0.4); border-color:#ff9500; }
         .chip { display:inline-block; font-size:0.68rem; padding:2px 6px; border-radius:10px; background:var(--bg-card); border:1px solid var(--border); color:var(--text-secondary); margin:1px 0; }
         .chip-strong { color:var(--pink); border-color:rgba(255,55,95,0.4); }
         .chip-hard { color:#fff; background:rgba(255,69,58,0.35); border-color:var(--red); font-weight:700; }
@@ -221,6 +222,11 @@
         <div class="stat-card cyan">
             <div class="stat-label">Jurisdictions Covered</div>
             <div class="stat-value" id="tstatCounties">0</div>
+        </div>
+        <div class="stat-card red">
+            <div class="stat-label">🔥 Distress Signals (fire / vacant / code)</div>
+            <div class="stat-value" id="tstatSignals">0</div>
+            <div class="stat-sub" id="tstatSignalsSub" style="font-size:0.72rem; color:var(--text-dim); margin-top:2px"></div>
         </div>
     </div>
 

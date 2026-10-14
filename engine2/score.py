@@ -101,6 +101,10 @@ def score(prop, flags, facts):
     }
 
 
+SIGNAL_FLAGS = {"FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER",
+                "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY", "CONDEMNED"}
+
+
 def title_class(flags, facts):
     """Classification. D-classes come from probate/death records; E from SDAT owner text; S from deed age."""
     if "MULTI_GENERATION_ESTATES" in flags:
@@ -132,6 +136,8 @@ def title_class(flags, facts):
     if "DECEASED_SOLE_OWNER_LOW" in flags:
         return "D1?", "Possible deceased owner (common name — low identity confidence)"
     y = facts.get("years_since_transfer") or 0
+    if y < 25 and not facts.get("no_recorded_transfer") and flags & SIGNAL_FLAGS:
+        return "X1", "Distress signal on the parcel (fire / vacant notice / code / receivership) — no title defect found yet"
     if facts.get("no_recorded_transfer"):
         return "S3", "No recorded transfer — ownership predates SDAT sales records"
     if y >= 40:

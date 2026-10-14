@@ -48,6 +48,10 @@ const TitleApp = {
         const est = ["E1", "E2", "E3", "E4", "E5", "D1", "D4", "D5"].reduce((n, k) => n + ((s.classes || {})[k] || 0), 0);
         document.getElementById("tstatEstate").textContent = est.toLocaleString();
         document.getElementById("tstatCounties").textContent = Object.keys(s.counties || {}).length;
+        const F = s.flags || {};
+        const sig = ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY"].reduce((n, k) => n + (F[k] || 0), 0);
+        const el = document.getElementById("tstatSignals");
+        if (el) { el.textContent = sig.toLocaleString(); document.getElementById("tstatSignalsSub").textContent = `${(F.FIRE || 0) + (F.FIRE_BLOCK || 0)} fire · ${F.VACANT_NOTICE || 0} vacant · ${F.STACKED_SIGNALS || 0} stacked`; }
     },
 
     async loadScope() {
@@ -69,7 +73,7 @@ const TitleApp = {
             _equity: p.estimated_equity != null ? parseFloat(p.estimated_equity) : null,
             _assessed: parseFloat(p.assessed_value) || 0,
             _years: p.years_since_transfer || 0,
-            _search: `${p.owner_name} ${p.owner_name_2} ${p.property_address} ${p.city} ${p.zip_code} ${p.county} ${r.title_class} ${(r.flags || []).join(" ")}`.toLowerCase(),
+            _search: `${p.owner_name} ${p.owner_name_2} ${p.property_address} ${p.city} ${p.zip_code} ${p.county} ${r.title_class} ${(r.flags || []).join(" ")} ${(p.signals || []).map((x) => `${x.kind} ${x.source} ${x.detail || ""}`).join(" ")}`.toLowerCase(),
         });
     },
 
@@ -251,6 +255,7 @@ const TitleApp = {
                 <h3>Estimated Equity</h3>
                 ${App.equityDetails(p)}
             </div>
+            ${this.signalsPanel(p)}
             <div class="detail-section">
                 <h3>Imagery</h3>
                 ${Aerial.panel(p, r.id)}
@@ -268,20 +273,41 @@ const TitleApp = {
         document.getElementById("modalOverlay").classList.add("active");
     },
 
+    signalsPanel(p) {
+        const sigs = p.signals || [];
+        if (!sigs.length) return "";
+        const icon = { FIRE: "🔥", VACANT_NOTICE: "🏚", RECEIVERSHIP: "🏛", CODE_VIOLATIONS: "⚠", CITY_WORK_ORDER: "🧹", DEMO_PERMIT: "🧱", FIRE_REPAIR_PERMIT: "🔥", FORECLOSURE_REGISTRY: "📋" };
+        const kinds = new Set(sigs.map((x) => x.kind));
+        const rows = sigs.map((x) => {
+            const prec = x.precision === "block" ? ` · <span style="color:var(--yellow)">block-level match (${x.candidates} parcels on that block — confirm address)</span>` : (x.candidates > 1 ? ` · <span style="color:var(--yellow)">${x.candidates} parcels share this address — confirm unit</span>` : "");
+            const cool = x.kind === "FIRE" && x.cooling ? ` · <span style="color:var(--text-dim)">${x.days_since}d ago — wait for the 30-day cooling window before contact</span>` : (x.kind === "FIRE" && x.days_since != null ? ` · ${x.days_since}d ago` : "");
+            const loss = x.loss ? ` · est. loss $${Number(x.loss).toLocaleString()}` : "";
+            return `<div class="detail-row" style="align-items:flex-start"><span class="label">${icon[x.kind] || "•"} ${this.esc((x.kind || "").replace(/_/g, " "))}</span>
+                <span class="value" style="font-size:0.82rem"><b>${this.esc(x.date || "undated")}</b> — ${this.esc(x.source)}${loss}${cool}${prec}
+                ${x.detail ? `<div style="color:var(--text-secondary); margin-top:2px">${this.esc(x.detail)}</div>` : ""}
+                ${x.address && x.address !== x.matched_address ? `<div style="color:var(--text-dim); font-size:0.75rem">reported as "${this.esc(x.address)}"</div>` : ""}
+                ${x.url ? `<a href="${this.esc(x.url)}" target="_blank" rel="noopener" style="font-size:0.75rem">source record ↗</a>` : ""}</span></div>`;
+        }).join("");
+        return `<div class="detail-section">
+            <h3>Distress Signals (${sigs.length}${kinds.size > 1 ? ` · ${kinds.size} kinds stacked` : ""})</h3>
+            <div style="font-size:0.75rem; color:var(--text-dim); margin-bottom:6px">Public agency records matched to this parcel by address. An old record does not mean the property is vacant or damaged today — verify before you say so to an owner.</div>
+            ${rows}</div>`;
+    },
+
     exportCSV() {
         const rows = this.sorted(this.filtered());
         if (!rows.length) { alert("Nothing to export with the current filters."); return; }
         const H = ["Priority", "Title Class", "Flags", "Owner on Record", "Owner 2", "Owner Type", "Address", "City", "Zip", "County", "Account #",
             "Property Type", "Assessed", "Land", "Improvement", "Year Built", "Sq Ft", "Occupancy", "Homestead", "Condition",
             "Last Transfer", "Sale Price", "Years Since Transfer", "Deed Liber", "Deed Folio", "Est. Equity", "Equity %", "Equity Confidence",
-            "Title Score", "Financial Score", "Distress Score", "Tax Sale Status", "Tax Sale Bid", "Lien Buyer", "Death Match Owner", "Death Date", "Age at Death", "Identity Confidence", "Estates", "Decedents", "Estate Status", "Personal Rep", "PR Address", "Heirs / Parties", "Lat", "Lon", "Status", "Notes"];
+            "Title Score", "Financial Score", "Distress Score", "Tax Sale Status", "Tax Sale Bid", "Lien Buyer", "Death Match Owner", "Death Date", "Age at Death", "Identity Confidence", "Estates", "Decedents", "Estate Status", "Personal Rep", "PR Address", "Heirs / Parties", "Signals", "Signal Dates", "Signal Sources", "Lat", "Lon", "Status", "Notes"];
         const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
         const lines = [H.join(",")];
         rows.forEach((r) => { const p = r.property; lines.push([
             r._priority, r.title_class, (r.flags || []).join("|"), p.owner_name, p.owner_name_2, p.owner_type, p.property_address, p.city, p.zip_code, p.county, `="${p.account_number || ""}"`,
             p.property_type, p.assessed_value, p.land_value, p.improvement_value, p.year_built, p.square_footage, p.occupancy_code, p.homestead_code, p.condition_code,
             p.transfer_date, p.sale_price, p.years_since_transfer, p.deed_liber, p.deed_folio, p.estimated_equity, p.equity_percent, p.equity_confidence,
-            r.scores.title_complexity, r.scores.financial, r.scores.distress, p.tax_sale ? p.tax_sale.status : "", p.tax_sale ? p.tax_sale.bid : "", p.tax_sale ? p.tax_sale.bidder : "", (p.death_matches || []).map((m) => m.owner).join("; "), (p.death_matches || []).map((m) => m.death_date).join("; "), (p.death_matches || []).map((m) => m.age_at_death).join("; "), (p.death_matches || []).map((m) => m.identity_confidence).join("; "), (p.probate_estates || []).map((x) => x.estate_number).join("; "), (p.probate_estates || []).map((x) => `${x.decedent} d.${x.date_of_death}`).join("; "), (p.probate_estates || []).map((x) => x.status).join("; "), (p.probate_estates || []).flatMap((x) => (x.personal_reps || []).map((y) => y.name)).join("; "), (p.probate_estates || []).flatMap((x) => (x.personal_reps || []).map((y) => y.address)).join("; "), (p.probate_estates || []).flatMap((x) => (x.interested_persons || []).filter((y) => y.role !== "PERSONAL_REP").map((y) => `${y.name} (${y.role})`)).join("; "), p.lat, p.lon, this.statusOf(r), this.notesOf(r),
+            r.scores.title_complexity, r.scores.financial, r.scores.distress, p.tax_sale ? p.tax_sale.status : "", p.tax_sale ? p.tax_sale.bid : "", p.tax_sale ? p.tax_sale.bidder : "", (p.death_matches || []).map((m) => m.owner).join("; "), (p.death_matches || []).map((m) => m.death_date).join("; "), (p.death_matches || []).map((m) => m.age_at_death).join("; "), (p.death_matches || []).map((m) => m.identity_confidence).join("; "), (p.probate_estates || []).map((x) => x.estate_number).join("; "), (p.probate_estates || []).map((x) => `${x.decedent} d.${x.date_of_death}`).join("; "), (p.probate_estates || []).map((x) => x.status).join("; "), (p.probate_estates || []).flatMap((x) => (x.personal_reps || []).map((y) => y.name)).join("; "), (p.probate_estates || []).flatMap((x) => (x.personal_reps || []).map((y) => y.address)).join("; "), (p.probate_estates || []).flatMap((x) => (x.interested_persons || []).filter((y) => y.role !== "PERSONAL_REP").map((y) => `${y.name} (${y.role})`)).join("; "), (p.signals || []).map((x) => x.kind).join("; "), (p.signals || []).map((x) => x.date || "").join("; "), (p.signals || []).map((x) => x.url || x.source).join("; "), p.lat, p.lon, this.statusOf(r), this.notesOf(r),
         ].map(q).join(",")); });
         const blob = new Blob([lines.join("\r\n")], { type: "text/csv;charset=utf-8;" });
         const a = document.createElement("a");
@@ -296,9 +322,10 @@ const TitleApp = {
         const nice = { ESTATE_IN_NAME: "Estate", HEIRS_IN_NAME: "Heirs", DECEASED_IN_NAME: "Deceased", PERSONAL_REP: "Pers. Rep", LIFE_ESTATE: "Life Estate",
             CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", CONSERVATOR: "Conservator/POA", TRUSTEE: "Trustee",
             NO_RECORDED_TRANSFER: "No Deed on Record", PROBATE_CLOSED_STILL_TITLED: "ESTATE CLOSED, STILL TITLED", MULTI_GENERATION_ESTATES: "OWNER + HEIR BOTH DIED", FOREIGN_PROBATE: "Foreign Probate", PROBATE_OPEN_STALE: "ESTATE OPEN (stale)", PROBATE_OPEN: "Estate Open", PROBATE_NONE_FOUND: "NO ESTATE FOUND", DECEASED_SOLE_OWNER_HIGH: "OWNER DECEASED (high)", DECEASED_SOLE_OWNER_MEDIUM: "Owner Deceased (med)", DECEASED_SOLE_OWNER_LOW: "Owner Deceased? (low)", ALL_OWNERS_DECEASED: "ALL OWNERS DECEASED", CO_OWNER_DECEASED: "Co-owner Deceased", TAX_SALE_SOLD: "TAX LIEN SOLD", TAX_SALE_STRUCK: "TAX SALE: UNSOLD", TAX_SALE_LISTED: "TAX SALE LISTED", TAX_SALE_REPEAT: "REPEAT TAX SALE", TAX_SALE_HISTORY: "Past Tax Sale", RETURNED_MAIL: "Returned Mail", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
+            FIRE: "🔥 FIRE", FIRE_BLOCK: "🔥 Fire (block)", FIRE_COOLING: "cooling <30d", VACANT_NOTICE: "🏚 VACANT NOTICE", RECEIVERSHIP: "🏛 RECEIVERSHIP", CODE_VIOLATIONS: "⚠ CODE CASE", CITY_WORK_ORDER: "🧹 CITY WORK ORDER", DEMO_PERMIT: "🧱 DEMO PERMIT", FIRE_REPAIR_PERMIT: "🔥 Fire Repair Permit", FORECLOSURE_REGISTRY: "📋 FORECLOSED (registry)", STACKED_SIGNALS: "⚡ STACKED",
             ABSENTEE: "Absentee", NO_HOMESTEAD: "No Homestead", VACANT_LAND: "Vacant Lot", OLD_STRUCTURE: "Pre-1950", POOR_CONDITION: "Poor Cond.", BELOW_AVG_CONDITION: "Below-Avg Cond.", MAIL_MISMATCH: "Mail ≠ Site" };
         const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "CONSERVATOR", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"]);
-        const hard = new Set(["MULTI_GENERATION_ESTATES", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"]);
+        const hard = new Set(["MULTI_GENERATION_ESTATES", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS", "FIRE", "RECEIVERSHIP", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY", "STACKED_SIGNALS", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"]);
         return (flags || []).map((f) => `<span class="chip ${strong.has(f) ? "chip-strong" : hard.has(f) ? "chip-hard" : ""}">${nice[f] || f}</span>`).join(" ");
     },
     fmtDT(s) { const d = new Date(s); return isNaN(d) ? (s || "") : d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); },

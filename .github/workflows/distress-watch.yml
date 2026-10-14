@@ -1,0 +1,70 @@
+name: Distress Watch (fire / vacant / code signals)
+
+# Once a day: pull the State Fire Marshal releases, Baltimore City vacant-building
+# notices / receivership / work orders, Montgomery code cases + demo permits, and
+# the Prince George's Foreclosed Property Registry; match every record to an SDAT
+# parcel and write data/distress/signals.json. The Title Scan reads that file and
+# turns it into flags/points, so this runs ahead of it (title-scan is Mondays).
+
+on:
+  schedule:
+    - cron: '41 9 * * *'      # 5:41 AM ET daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: distress-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install requests==2.31.0
+
+      - name: Compute cache key (ISO week)
+        id: week
+        run: echo "key=sdat-index-v2-$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+      - name: Restore SDAT index
+        id: restore
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+      - name: Build SDAT index (only if this week's cache is missing)
+        if: steps.restore.outputs.cache-hit != 'true'
+        env:
+          MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
+          MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
+          MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
+        run: python -m engine2.build_index
+      - name: Save SDAT index
+        if: steps.restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+
+      - name: Collect and match signals
+        run: python -m engine2.distress_watch --index .cache/sdat.sqlite
+
+      - name: Commit results
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp data/distress/signals.json /tmp/out/
+          git fetch origin main
+          git checkout -f -B main origin/main
+          cp /tmp/out/signals.json data/distress/
+          git add data/distress/signals.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          N=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(d['accounts'])")
+          K=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(', '.join(f'{k} {v}' for k,v in d['kinds'].items()))")
+          git commit -m "Distress watch: ${N} parcels with signals (${K})"
+          git push origin main

@@ -17,6 +17,7 @@ INDEX_PATH = f"{CACHE_DIR}/sdat.sqlite"
 # ── Output ──────────────────────────────────────────────────────────────────
 OUTPUT_DIR = "data/title"
 PER_COUNTY_LIMIT = 400        # rows kept per county shard
+SIGNAL_ONLY_PER_COUNTY = 1200 # extra rows per county that have only a distress signal (vacant notice / fire / code) and no title defect
 STATEWIDE_TOP_LIMIT = 1000    # rows in top.json
 MIN_PRIORITY_TO_KEEP = 35     # below this a row is not written anywhere
 
@@ -75,9 +76,18 @@ DISTRESS_HARD_POINTS = {
     "TAX_SALE_LISTED": 25,        # advertised for sale; outcome not published yet
     "TAX_SALE_REPEAT": 35,        # on the list in more than one year
     "TAX_SALE_HISTORY": 8,        # sold at tax sale in a past year, no current listing (likely redeemed/void)
-    "VACANT_NOTICE": 40,          # official vacant-building notice (Baltimore City) — adapter pending
-    "CONDEMNED": 45,              # unsafe / condemned — adapter pending
-    "CODE_VIOLATIONS": 25,        # open code-enforcement violations — adapter pending
+    # Distress signals from engine2/distress_watch.py (data/distress/signals.json)
+    "FIRE": 45,                   # MD State Fire Marshal residential fire release, matched to the parcel
+    "FIRE_BLOCK": 20,             # fire release gave only "the 7400 block of" — several parcels possible
+    "VACANT_NOTICE": 40,          # Baltimore City open Vacant Building Notice
+    "RECEIVERSHIP": 40,           # Baltimore City receivership petition filed (city forcing a sale)
+    "CONDEMNED": 45,              # unsafe / condemned (reserved)
+    "CODE_VIOLATIONS": 25,        # open housing-code case (Montgomery)
+    "CITY_WORK_ORDER": 30,        # Baltimore City open work order (board-up / clean / stabilize)
+    "DEMO_PERMIT": 25,            # demolition / raze permit issued
+    "FIRE_REPAIR_PERMIT": 15,     # permit whose case name says fire repair
+    "FORECLOSURE_REGISTRY": 35,   # Prince George's Foreclosed Property Registry (lender took it back)
+    "STACKED_SIGNALS": 10,        # two or more different signal kinds on the same parcel
     "RETURNED_MAIL": 20,          # your own mail came back — set via lead status
 }
 DISTRESS_SOFT_POINTS = {
@@ -163,5 +173,10 @@ PRESETS = [
     {"id": "deceased_taxsale","label": "Deceased Owner + Tax Sale",   "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale",       "label": "Tax Sale + Title Signal",      "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale_estate","label": "Tax Sale + Estate on Title",   "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "CONSERVATOR"]},
+    {"id": "signals",        "label": "🔥 Distress Signal (fire / vacant / code)", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY"]},
+    {"id": "fire",           "label": "🔥 Fire-Damaged (Fire Marshal release)", "any_flags": ["FIRE", "FIRE_BLOCK"]},
+    {"id": "signal_estate",  "label": "Distress Signal + Estate / Deceased Owner", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"]},
+    {"id": "signal_taxsale", "label": "Distress Signal + Tax Sale",      "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
+    {"id": "stacked",        "label": "Stacked: 2+ Signal Kinds",       "any_flags": ["STACKED_SIGNALS"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},
 ]

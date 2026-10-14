@@ -122,6 +122,41 @@ def load_probate():
     return recs
 
 
+DISTRESS_PATH = os.path.join(config.TAXSALE_DIR, "signals.json")
+
+
+def load_distress():
+    """account -> [signal records] written by engine2.distress_watch (fires, vacant
+    notices, receivership, code cases, demo permits, foreclosure registry)."""
+    try:
+        data = json.load(open(DISTRESS_PATH, encoding="utf-8"))
+    except (OSError, ValueError):
+        log.info("distress signals: none (%s missing)", DISTRESS_PATH)
+        return {}
+    by = data.get("by_account") or {}
+    log.info("distress signals: %d parcels, %d signals (generated %s)", len(by),
+             sum(len(v) for v in by.values()), data.get("generated_at"))
+    return by
+
+
+def apply_distress(prop, flags, distress):
+    sigs = distress.get(prop["account_number"] or "")
+    if not sigs:
+        return
+    for s in sigs:
+        kind = s.get("kind")
+        if kind == "FIRE":
+            flags.add("FIRE" if s.get("precision") == "exact" else "FIRE_BLOCK")
+            if s.get("cooling"):
+                flags.add("FIRE_COOLING")
+        elif kind in config.DISTRESS_HARD_POINTS:
+            flags.add(kind)
+    kinds = {s.get("kind") for s in sigs}
+    if len(kinds) >= 2:
+        flags.add("STACKED_SIGNALS")
+    prop["signals"] = sigs
+
+
 PROBATE_FLAG = {"D3": "PROBATE_CLOSED_STILL_TITLED", "D2-S": "PROBATE_OPEN_STALE",
                 "D2": "PROBATE_OPEN", "D1": "PROBATE_NONE_FOUND"}
 KEEP = ("estate_number", "county", "status", "type", "decedent", "date_of_death", "date_opened",
@@ -176,6 +211,7 @@ def apply_taxsale(prop, flags, taxsale, suffix16):
 def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
     taxsale, suffix16 = load_taxsale()
     probate = load_probate()
+    distress = load_distress()
     deaths = DeathIndex()
     try:
         deaths.load()
@@ -191,6 +227,7 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
 
     per_county = defaultdict(list)     # county_slug -> heap of (priority, seq, record)
     per_county_verified = defaultdict(list)  # rows with a verified distress record: never capped
+    per_county_signal = defaultdict(list)    # signal-only rows (no title/tax-sale/probate record): capped separately
     statewide = []
     people = defaultdict(list)
     flag_counts, class_counts, county_counts = Counter(), Counter(), Counter()
@@ -209,12 +246,13 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             scanned += 1
             acct = r["acct"] or ""
             in_taxsale = acct in taxsale or (acct.startswith("16") and acct[-8:] in suffix16)
-            res = analyze(dict(r), force=in_taxsale or acct in probate, deaths=deaths)
+            res = analyze(dict(r), force=in_taxsale or acct in probate or acct in distress, deaths=deaths)
             if not res:
                 continue
             prop, flags, facts = res
             apply_taxsale(prop, flags, taxsale, suffix16)
             apply_probate(prop, flags, probate)
+            apply_distress(prop, flags, distress)
             s = score(prop, flags, facts)
             verified = s.get("distress_verified", False) or bool(prop.get("probate"))
             if s["priority"] < config.MIN_PRIORITY_TO_KEEP and not verified:
@@ -240,7 +278,15 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             for o in prop["owners"]:
                 people[o["person_key"]].append(prop["account_number"])
             item = (s["priority"], seq, rec)
-            if verified:
+            signal_only = code == "X1" and not prop.get("tax_sale") and not prop.get("probate")
+            if signal_only:
+                # Baltimore City alone has ~11k open vacant notices; keep the best-scoring ones per county
+                h = per_county_signal[cs]
+                if len(h) < config.SIGNAL_ONLY_PER_COUNTY:
+                    heapq.heappush(h, item)
+                else:
+                    heapq.heappushpop(h, item)
+            elif verified:
                 # verified-distress rows (tax sale etc.) bypass the per-county cap
                 per_county_verified[cs].append(item)
             else:
@@ -267,8 +313,8 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
         return rows
 
     counties = {}
-    for cs in set(per_county) | set(per_county_verified):
-        rows = finalize(list(per_county.get(cs, [])) + per_county_verified.get(cs, []))
+    for cs in set(per_county) | set(per_county_verified) | set(per_county_signal):
+        rows = finalize(list(per_county.get(cs, [])) + per_county_verified.get(cs, []) + list(per_county_signal.get(cs, [])))
         counties[cs] = {"county": rows[0]["property"]["county"] if rows else cs, "count": len(rows),
                         "total_candidates": county_counts[rows[0]["property"]["county"]] if rows else 0}
         _dump(f"{config.OUTPUT_DIR}/{cs}.json", {"generated_at": _now(), "county": counties[cs]["county"], "rows": rows})
