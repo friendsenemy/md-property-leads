@@ -9,7 +9,12 @@ name: Distress Watch (fire / vacant / code signals)
 on:
   schedule:
     - cron: '41 9 * * *'      # 5:41 AM ET daily
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      full_charles:
+        description: 'Walk every month of Charles County code cases back to 2020 (default: last 60 days)'
+        default: 'false'
+        required: false
 
 permissions:
   contents: write
@@ -51,6 +56,15 @@ jobs:
           path: .cache/sdat.sqlite
           key: ${{ steps.week.outputs.key }}
 
+      - name: Charles County code cases (Civic Access public search, 1 req/sec)
+        run: |
+          # last 60 days daily; every month back to 2020 on Sundays so old cases' status changes get picked up
+          if [ "$(date -u +%u)" = "7" ] || [ "${{ github.event.inputs.full_charles }}" = "true" ]; then
+            python -m engine2.charles_code --full
+          else
+            python -m engine2.charles_code
+          fi
+
       - name: Collect and match signals
         run: python -m engine2.distress_watch --index .cache/sdat.sqlite
 
@@ -58,11 +72,11 @@ jobs:
         run: |
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p /tmp/out && cp data/distress/signals.json /tmp/out/
+          mkdir -p /tmp/out && cp data/distress/signals.json data/distress/charles-code.json /tmp/out/
           git fetch origin main
           git checkout -f -B main origin/main
-          cp /tmp/out/signals.json data/distress/
-          git add data/distress/signals.json
+          cp /tmp/out/signals.json /tmp/out/charles-code.json data/distress/
+          git add data/distress/signals.json data/distress/charles-code.json
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(d['accounts'])")
           K=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(', '.join(f'{k} {v}' for k,v in d['kinds'].items()))")

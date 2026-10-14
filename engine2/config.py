@@ -87,6 +87,9 @@ DISTRESS_HARD_POINTS = {
     "DEMO_PERMIT": 25,            # demolition / raze permit issued
     "FIRE_REPAIR_PERMIT": 15,     # permit whose case name says fire repair
     "FORECLOSURE_REGISTRY": 35,   # Prince George's Foreclosed Property Registry (lender took it back)
+    "NUISANCE_CASE": 20,          # open nuisance case (Charles: trash, overgrowth, junk vehicles, unsafe conditions)
+    "ZONING_CASE": 10,            # open zoning case (Charles)
+    "REPEAT_CODE_CASES": 20,      # three or more code cases at one parcel since 2020
     "STACKED_SIGNALS": 10,        # two or more different signal kinds on the same parcel
     "RETURNED_MAIL": 20,          # your own mail came back — set via lead status
 }
@@ -98,6 +101,7 @@ DISTRESS_SOFT_POINTS = {
     "POOR_CONDITION": 15,
     "BELOW_AVG_CONDITION": 8,
     "MAIL_MISMATCH": 8,
+    "NEGLECT_PROFILE": 15,        # SDAT says poor / below-average condition AND the owner lives elsewhere
 }
 DISTRESS_SOFT_CAP = 30
 DISTRESS_POINTS = {**DISTRESS_HARD_POINTS, **DISTRESS_SOFT_POINTS}   # kept for anything that iterates all flags
@@ -173,10 +177,12 @@ PRESETS = [
     {"id": "deceased_taxsale","label": "Deceased Owner + Tax Sale",   "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale",       "label": "Tax Sale + Title Signal",      "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale_estate","label": "Tax Sale + Estate on Title",   "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "CONSERVATOR"]},
-    {"id": "signals",        "label": "🔥 Distress Signal (fire / vacant / code)", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY"]},
+    {"id": "signals",        "label": "🔥 Distress Signal (fire / vacant / code)", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY"]},
     {"id": "fire",           "label": "🔥 Fire-Damaged (Fire Marshal release)", "any_flags": ["FIRE", "FIRE_BLOCK"]},
     {"id": "signal_estate",  "label": "Distress Signal + Estate / Deceased Owner", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"]},
     {"id": "signal_taxsale", "label": "Distress Signal + Tax Sale",      "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "stacked",        "label": "Stacked: 2+ Signal Kinds",       "any_flags": ["STACKED_SIGNALS"]},
+    {"id": "charles_code",   "label": "Charles Co. Code / Nuisance Case", "any_flags": ["CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES"]},
+    {"id": "neglect",        "label": "Neglect Profile (poor condition + absentee)", "any_flags": ["NEGLECT_PROFILE"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},
 ]

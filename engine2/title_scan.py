@@ -140,6 +140,8 @@ def load_distress():
 
 
 def apply_distress(prop, flags, distress):
+    if flags & {"POOR_CONDITION", "BELOW_AVG_CONDITION"} and "ABSENTEE" in flags:
+        flags.add("NEGLECT_PROFILE")
     sigs = distress.get(prop["account_number"] or "")
     if not sigs:
         return

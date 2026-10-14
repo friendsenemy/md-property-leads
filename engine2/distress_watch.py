@@ -56,6 +56,7 @@ import requests
 
 from . import config
 from .auction_watch import addr_tokens
+from . import charles_code
 
 log = logging.getLogger("distress_watch")
 
@@ -405,10 +406,16 @@ def match_by_account(db, sig):
     """Prince George's registry rows carry the 7-digit county tax account; SDAT's
     account is '17' + 2-digit district + that number."""
     ref = re.sub(r"\D", "", str(sig.get("ref") or ""))
-    if not ref or sig.get("county") != "Prince George's":
+    if not ref:
         return []
     names = [c.strip() for c in COLS.split(",")]
-    rows = db.execute(f"SELECT {COLS} FROM parcels WHERE substr(acct, 5) = ? AND acct LIKE '17%'", (ref.zfill(7),)).fetchall()
+    if sig.get("county") == "Prince George's":
+        rows = db.execute(f"SELECT {COLS} FROM parcels WHERE substr(acct, 5) = ? AND acct LIKE '17%'", (ref.zfill(7),)).fetchall()
+    elif sig.get("county") == "Charles":
+        # Civic Access "MainParcel" is the SDAT account itself (09 + 8 digits)
+        rows = db.execute(f"SELECT {COLS} FROM parcels WHERE acct = ?", (ref,)).fetchall()
+    else:
+        return []
     return [dict(zip(names, r)) for r in rows]
 
 
@@ -421,7 +428,8 @@ def build(index_path, today=None):
     db.execute("CREATE INDEX IF NOT EXISTS ix_acct_tail ON parcels(substr(acct, 5))")
     sigs = []
     counts = {}
-    for name, fn in (("osfm", osfm_fires), ("baltimore_city", baltimore_city), ("montgomery", montgomery), ("prince_georges", prince_georges)):
+    for name, fn in (("osfm", osfm_fires), ("baltimore_city", baltimore_city), ("montgomery", montgomery), ("prince_georges", prince_georges),
+                     ("charles_code", charles_code.signals)):
         try:
             got = fn()
         except Exception as e:  # noqa: BLE001
