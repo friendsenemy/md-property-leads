@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T17:38:43+00:00",
+ "generated_at": "2026-10-14T20:48:01+00:00",
  "events": [
   {
    "account": "020100009119107",
@@ -5936,6 +5936,86 @@
    "est_surplus": 481226.83,
    "deed_recorded": false,
    "notice_due_by": null
+  },
+  {
+   "account": "17121327972",
+   "county": "Prince George's",
+   "address": "1506 STIRLING CT",
+   "detected": "2026-10-14T20:48:01+00:00",
+   "owner_before": "JBONILLA LLC",
+   "owner_after": "JBONILLA LLC",
+   "transfer_date": "2026.09.02",
+   "deed": "52370/0284",
+   "sale_year": 2024,
+   "bid": 177885.16,
+   "taxes_owed": 1987.3,
+   "est_surplus": 175897.86,
+   "deed_recorded": true,
+   "notice_due_by": "2026-12-01"
+  },
+  {
+   "account": "17113374543",
+   "county": "Prince George's",
+   "address": null,
+   "detected": "2026-10-14T20:48:01+00:00",
+   "owner_before": "SJ AND FAMILY HOMES LLC",
+   "owner_after": "SJ AND FAMILY HOMES LLC",
+   "transfer_date": "2026.08.24",
+   "deed": "52344/0315",
+   "sale_year": 2024,
+   "bid": 8856.96,
+   "taxes_owed": 624.09,
+   "est_surplus": 8232.87,
+   "deed_recorded": true,
+   "notice_due_by": "2026-11-22"
+  },
+  {
+   "account": "17062802783",
+   "county": "Prince George's",
+   "address": "7001 FLAG HARBOR DR",
+   "detected": "2026-10-14T20:48:01+00:00",
+   "owner_before": "MD PRIME REALTY CO",
+   "owner_after": "MD PRIME REALTY CO",
+   "transfer_date": "2026.08.31",
+   "deed": "52360/0523",
+   "sale_year": 2024,
+   "bid": 198573.0,
+   "taxes_owed": 4558.74,
+   "est_surplus": 194014.26,
+   "deed_recorded": true,
+   "notice_due_by": "2026-11-29"
+  },
+  {
+   "account": "17151787753",
+   "county": "Prince George's",
+   "address": "9400 OLD MARLBORO PIKE",
+   "detected": "2026-10-14T20:48:01+00:00",
+   "owner_before": "DUKE COLLEGE PARK LLC",
+   "owner_after": "DUKE COLLEGE PARK LLC",
+   "transfer_date": "2026.08.04",
+   "deed": "52300/0001",
+   "sale_year": 2024,
+   "bid": 91744.0,
+   "taxes_owed": 1591.2,
+   "est_surplus": 90152.8,
+   "deed_recorded": true,
+   "notice_due_by": "2026-11-02"
+  },
+  {
+   "account": "0803085058",
+   "county": "Cecil",
+   "address": "875 E PULASKI HWY",
+   "detected": "2026-10-14T20:48:01+00:00",
+   "owner_before": "ETM PARTNERS LLC",
+   "owner_after": "ETM PARTNERS LLC",
+   "transfer_date": "2026.09.16",
+   "deed": "05843/0160",
+   "sale_year": 2026,
+   "bid": 334221.16,
+   "taxes_owed": 1212.89,
+   "est_surplus": 333008.27,
+   "deed_recorded": true,
+   "notice_due_by": "2026-12-15"
   }
  ]
 }
