@@ -124,6 +124,9 @@ def main():
             q["city"] = city
         r = requests.get(f"{API}/addresses/v3/address", params=q, headers=hdr, timeout=30)
         now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        if r.status_code == 403:
+            log.warning("USPS refused access (since 8/1/2026 the Addresses API needs a paid license): %s", r.text[:400])
+            break
         if r.status_code == 429:
             log.warning("USPS hourly quota reached; stopping, the rest go next run.")
             break
