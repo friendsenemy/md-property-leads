@@ -58,7 +58,11 @@ const Aerial = {
     },
 
     /** Google Earth web, 3-D tilt over the parcel. */
-    earthUrl(lat, lon) { return `https://earth.google.com/web/@${lat},${lon},0a,250d,35y,0h,45t,0r`; },
+    earthUrl(lat, lon, p) {
+        // /search/<address>/@... makes Earth drop its pin and open the place card on the subject property
+        const q = p ? encodeURIComponent(this.addrText(p)).replace(/%20/g, "+") : `${lat},${lon}`;
+        return `https://earth.google.com/web/search/${q}/@${lat},${lon},0a,250d,35y,0h,45t,0r`;
+    },
     /** Street address text used for listing-site lookups. */
     addrText(p) {
         const a = p.property_address || p.address || "", c = p.city || "", z = p.zip_code || p.zip || "";
@@ -91,7 +95,7 @@ const Aerial = {
                 <a href="${this.streetViewUrl(lat, lon)}" target="_blank" rel="noopener">Street View ↗</a>
                 <a href="${this.satelliteUrl(lat, lon)}" target="_blank" rel="noopener">Google Satellite ↗</a>
                 <a href="${this.mapsUrl(lat, lon)}" target="_blank" rel="noopener">Google Maps ↗</a>
-                <a href="${this.earthUrl(lat, lon)}" target="_blank" rel="noopener">Google Earth ↗</a>
+                <a href="${this.earthUrl(lat, lon, p)}" target="_blank" rel="noopener">Google Earth ↗</a>
                 <a href="${this.mapillaryUrl(lat, lon)}" target="_blank" rel="noopener">Mapillary ↗</a>
                 <a href="${this.zillowUrl(p)}" target="_blank" rel="noopener">Zillow ↗</a>
                 <a href="${this.redfinUrl(p)}" target="_blank" rel="noopener">Redfin ↗</a>
