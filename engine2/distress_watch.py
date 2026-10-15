@@ -56,7 +56,7 @@ import requests
 
 from . import config
 from .auction_watch import addr_tokens
-from . import charles_code
+from . import accela_code, charles_code
 
 log = logging.getLogger("distress_watch")
 
@@ -429,7 +429,7 @@ def build(index_path, today=None):
     sigs = []
     counts = {}
     for name, fn in (("osfm", osfm_fires), ("baltimore_city", baltimore_city), ("montgomery", montgomery), ("prince_georges", prince_georges),
-                     ("charles_code", charles_code.signals)):
+                     ("charles_code", charles_code.signals), ("accela_code", accela_code.signals)):
         try:
             got = fn()
         except Exception as e:  # noqa: BLE001

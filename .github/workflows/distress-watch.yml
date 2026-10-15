@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       full_charles:
-        description: 'Walk every month of Charles County code cases back to 2020 (default: last 60 days)'
+        description: 'Full historical walk of the Charles (2020+) and Accela (2023+) code-case portals instead of the recent window'
         default: 'false'
         required: false
 
@@ -26,7 +26,7 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -65,6 +65,15 @@ jobs:
             python -m engine2.charles_code
           fi
 
+      - name: Baltimore County / Anne Arundel / Washington code cases (Accela public search, 1 req/sec)
+        run: |
+          # last 45 days daily; every month back to 2023 on the first Sunday of the month or on dispatch
+          if { [ "$(date -u +%u)" = "7" ] && [ "$(date -u +%d)" -le 7 ]; } || [ "${{ github.event.inputs.full_charles }}" = "true" ]; then
+            python -m engine2.accela_code --full
+          else
+            python -m engine2.accela_code
+          fi
+
       - name: Collect and match signals
         run: python -m engine2.distress_watch --index .cache/sdat.sqlite
 
@@ -72,11 +81,11 @@ jobs:
         run: |
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p /tmp/out && cp data/distress/signals.json data/distress/charles-code.json /tmp/out/
+          mkdir -p /tmp/out && cp data/distress/signals.json data/distress/charles-code.json data/distress/accela-code.json /tmp/out/
           git fetch origin main
           git checkout -f -B main origin/main
-          cp /tmp/out/signals.json /tmp/out/charles-code.json data/distress/
-          git add data/distress/signals.json data/distress/charles-code.json
+          cp /tmp/out/signals.json /tmp/out/charles-code.json /tmp/out/accela-code.json data/distress/
+          git add data/distress/signals.json data/distress/charles-code.json data/distress/accela-code.json
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(d['accounts'])")
           K=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(', '.join(f'{k} {v}' for k,v in d['kinds'].items()))")
