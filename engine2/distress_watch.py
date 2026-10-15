@@ -324,6 +324,13 @@ def prince_georges():
 COLS = "acct, county, address, city, zip, owner1, land_value, impr_value, land_use"
 
 
+def _num(v):
+    try:
+        return float(v or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def ensure_addr_index(db):
     """One pass over the parcels table -> addr_idx(acct, num, street, zip, county),
     indexed. Turns each signal lookup from a LIKE scan over a whole county into an
@@ -457,7 +464,7 @@ def build(index_path, today=None):
             continue
         if s.get("needs_improvements"):
             # zero water on a bare lot is just a meter stub, not a vacant house
-            cands = [c for c in cands if (c.get("impr_value") or 0) > 0]
+            cands = [c for c in cands if _num(c.get("impr_value")) > 0]
             if not cands:
                 counts[src]["bare_lot"] = counts[src].get("bare_lot", 0) + 1
                 continue

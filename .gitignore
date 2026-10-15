@@ -16,3 +16,4 @@ build/
 # Engine 2 local index (rebuilt weekly in Actions)
 .cache/
 *.sqlite
+data/distress/last-error.txt
