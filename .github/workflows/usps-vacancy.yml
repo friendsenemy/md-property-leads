@@ -9,6 +9,16 @@ on:
   schedule:
     - cron: '17 9 * * *'   # daily 5:17 AM EDT; exits in seconds when nothing is due
   workflow_dispatch:
+    inputs:
+      max:
+        description: 'Max lookups this run'
+        default: '50'
+      min_score:
+        description: 'Only leads with vacancy score at least this'
+        default: '60'
+      counties:
+        description: 'County files, comma-separated'
+        default: 'charles,calvert,st-mary-s,prince-george-s,anne-arundel'
 
 permissions:
   contents: write
@@ -31,6 +41,11 @@ jobs:
         env:
           USPS_CLIENT_ID: ${{ secrets.USPS_CLIENT_ID }}
           USPS_CLIENT_SECRET: ${{ secrets.USPS_CLIENT_SECRET }}
+          SMARTY_AUTH_ID: ${{ secrets.SMARTY_AUTH_ID }}
+          SMARTY_AUTH_TOKEN: ${{ secrets.SMARTY_AUTH_TOKEN }}
+          USPS_MAX_PER_RUN: ${{ github.event.inputs.max || '50' }}
+          USPS_MIN_SCORE: ${{ github.event.inputs.min_score || '60' }}
+          USPS_COUNTIES: ${{ github.event.inputs.counties || 'charles,calvert,st-mary-s,prince-george-s,anne-arundel' }}
         run: python -m engine2.usps_vacancy
       - name: Commit results
         run: |

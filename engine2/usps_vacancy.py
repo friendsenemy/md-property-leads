@@ -96,6 +96,42 @@ def candidates(done):
     return out
 
 
+def smarty_run(todo, done, auth_id, auth_token, limit):
+    """Same USPS carrier vacant flag (dpv_vacant), via Smarty's US Street API.
+    Free trial: 1,000 lookups, no card. Batches of up to 100 per request."""
+    batch = todo[:limit]
+    n = 0
+    for i in range(0, len(batch), 100):
+        chunk = batch[i:i + 100]
+        body = [{"input_id": lid, "street": addr, "city": city, "state": "MD", "zipcode": zip5, "candidates": 1}
+                for _, _, lid, addr, city, zip5 in chunk]
+        r = requests.post("https://us-street.api.smarty.com/street-address",
+                          params={"auth-id": auth_id, "auth-token": auth_token},
+                          json=body, timeout=60)
+        if r.status_code in (401, 402, 403, 429):
+            log.warning("Smarty stopped us (%s): %s", r.status_code, r.text[:300])
+            break
+        r.raise_for_status()
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        hits = {}
+        for c in r.json():
+            hits.setdefault(c.get("input_id") or chunk[c["input_index"]][2], c)
+        for _, _, lid, addr, city, zip5 in chunk:
+            c = hits.get(lid)
+            if not c:
+                done[lid] = {"checked": now, "found": False, "address": addr, "source": "smarty"}
+                continue
+            a = c.get("analysis") or {}
+            m = c.get("metadata") or {}
+            done[lid] = {"checked": now, "found": True, "address": addr, "source": "smarty",
+                         "vacant": a.get("dpv_vacant") or None, "dpv": a.get("dpv_match_code"),
+                         "no_stat": a.get("dpv_no_stat"), "active": a.get("active"),
+                         "rdi": m.get("rdi"),
+                         "usps_address": f'{c.get("delivery_line_1", "")}, {c.get("last_line", "")}'}
+        n += len(chunk)
+    return n
+
+
 def token(cid, secret):
     r = requests.post(f"{API}/oauth2/v3/token", timeout=30, json={
         "client_id": cid, "client_secret": secret, "grant_type": "client_credentials"})
@@ -106,8 +142,9 @@ def token(cid, secret):
 def main():
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     cid, secret = os.environ.get("USPS_CLIENT_ID"), os.environ.get("USPS_CLIENT_SECRET")
-    if not cid or not secret:
-        log.info("USPS_CLIENT_ID / USPS_CLIENT_SECRET not set; skipping.")
+    sid, stok = os.environ.get("SMARTY_AUTH_ID"), os.environ.get("SMARTY_AUTH_TOKEN")
+    if not (sid and stok) and not (cid and secret):
+        log.info("No SMARTY_AUTH_ID/TOKEN or USPS_CLIENT_ID/SECRET set; skipping.")
         return 0
     done = {}
     if os.path.exists(OUT_PATH):
@@ -115,6 +152,10 @@ def main():
     todo = candidates(done)
     log.info("%d leads due for a USPS check; doing up to %d", len(todo), MAX_PER_RUN)
     if not todo:
+        return 0
+    if sid and stok:
+        n = smarty_run(todo, done, sid, stok, MAX_PER_RUN)
+        save(done, n)
         return 0
     hdr = {"Authorization": f"Bearer {token(cid, secret)}", "Accept": "application/json"}
     n = 0
@@ -146,13 +187,17 @@ def main():
             continue
         n += 1
         time.sleep(1.2)
+    save(done, n)
+    return 0
+
+
+def save(done, n):
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     vac = sum(1 for v in done.values() if v.get("vacant") == "Y")
     json.dump({"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                "checked": len(done), "vacant": vac, "results": done},
               open(OUT_PATH, "w"), indent=1, sort_keys=True)
     log.info("checked %d this run; %d of %d on file flagged vacant by USPS", n, vac, len(done))
-    return 0
 
 
 if __name__ == "__main__":
