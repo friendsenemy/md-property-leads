@@ -113,6 +113,18 @@ DISTRESS_POINTS = {**DISTRESS_HARD_POINTS, **DISTRESS_SOFT_POINTS}   # kept for 
 # scores nothing.
 TAXSALE_DIR = "data/distress"
 PROBATE_DIR = "data/probate"
+# Register of Wills Estate Search: automated lookups are allowed ONLY under the
+# written permission dated 2026-10-15 (docs/register-of-wills-permission-2026-10-15.md).
+# These limits are the ones promised in the request. Do not raise them without
+# new written permission.
+ROW_PERMISSION_DATE = "2026-10-15"
+ROW_MAX_PEOPLE_PER_RUN = 30        # "a few dozen queries per day"
+ROW_MAX_REQUESTS_PER_RUN = 90      # hard stop on all HTTP requests (search + detail pages)
+ROW_DELAY_SECONDS = 6.0            # pause between requests
+ROW_RECHECK_OPEN_DAYS = 30         # open estates re-checked at most every 30 days; one search per person otherwise
+ROW_USER_AGENT = ("PagesOfPurpose-EstateLookup/1.0 (+mrdustinray@gmail.com; "
+                  "authorized by MD Register of Wills 2026-10-15)")
+ROW_PRIORITY_COUNTIES = ["charles", "calvert", "st-mary-s", "prince-george-s", "anne-arundel"]
 # Owners we confirmed alive by hand (signed a recorded document after the death-index date).
 # {account: {"names": ["FIRST M LAST", ...] or ["*"], "evidence": "..."}}
 ALIVE_OVERRIDES_PATH = "data/overrides/alive.json"

@@ -9,8 +9,8 @@ Writes data/probate/<account>.json for each account; the weekly title scan
 joins these and reclassifies the property (D2 open, D2-S stale open, D3 closed
 but still titled to the decedent).
 
-This is deliberately manual: the Register of Wills terms prohibit automated
-commercial use without written permission (request pending, docs/).
+For hand lookups. Automated lookups (written permission granted 2026-10-15)
+run in engine2.probate_lookup, which writes the same format.
 """
 
 import argparse

@@ -1,0 +1,47 @@
+name: Register of Wills Lookup
+
+# Looks up Register of Wills estates for owners the death index says died.
+# Runs ONLY under the written permission from the Register of Wills dated
+# 2026-10-15 (docs/register-of-wills-permission-2026-10-15.md). Limits live in
+# engine2/config.py (ROW_*): max 30 people and 90 requests a run, 6 s between
+# requests, one search per person, open estates re-checked every 30 days.
+# Off-peak: once a day at 2:41 AM Eastern (EDT).
+
+on:
+  schedule:
+    - cron: '41 6 * * *'
+  workflow_dispatch:
+    inputs:
+      max_people:
+        description: 'People to look up this run (capped at 30)'
+        default: '30'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: probate-lookup
+  cancel-in-progress: false
+
+jobs:
+  lookup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests==2.31.0
+      - name: Look up estates
+        env:
+          ROW_MAX_PEOPLE: ${{ github.event.inputs.max_people || '30' }}
+        run: python -m engine2.probate_lookup
+      - name: Commit results
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/probate
+          git diff --cached --quiet && { echo "No changes."; exit 0; }
+          git commit -m "Register of Wills lookups $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done

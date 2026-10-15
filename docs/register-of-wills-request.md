@@ -1,6 +1,6 @@
 # Request for written permission — Register of Wills Estate Search / Legal Notices
 
-**Status:** emailed 2026-10-15 to stmarysrow@registers.maryland.gov from mrdustinray@gmail.com, combined with a Public Information Act request for a statewide list of estates opened/closed since 2025-01-01 (monthly going forward). Mailed copy not yet sent. Until written permission arrives, estate lookups stay manual (probate-import workflow).
+**Status:** emailed 2026-10-15 to stmarysrow@registers.maryland.gov from mrdustinray@gmail.com, combined with a Public Information Act request for a statewide list of estates opened/closed since 2025-01-01 (monthly going forward). Mailed copy not yet sent. **Permission APPROVED 2026-10-15** (PIA extract denied): see `docs/register-of-wills-permission-2026-10-15.md`. Automated lookups run under those limits via `engine2/probate_lookup.py`.
 
 Send from your business email. Two copies:
 
