@@ -103,7 +103,7 @@ def score(prop, flags, facts):
 
 SIGNAL_FLAGS = {"FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER",
                 "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY", "CONDEMNED",
-                "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES"}
+                "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "ZERO_WATER_USAGE"}
 
 
 def title_class(flags, facts):

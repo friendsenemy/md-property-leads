@@ -58,7 +58,7 @@ const TitleApp = {
         document.getElementById("tstatEstate").textContent = est.toLocaleString();
         document.getElementById("tstatCounties").textContent = Object.keys(s.counties || {}).length;
         const F = s.flags || {};
-        const sig = ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY"].reduce((n, k) => n + (F[k] || 0), 0);
+        const sig = ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY", "ZERO_WATER_USAGE"].reduce((n, k) => n + (F[k] || 0), 0);
         const el = document.getElementById("tstatSignals");
         if (el) { el.textContent = sig.toLocaleString(); document.getElementById("tstatSignalsSub").textContent = `${(F.FIRE || 0) + (F.FIRE_BLOCK || 0)} fire · ${F.VACANT_NOTICE || 0} vacant · ${F.STACKED_SIGNALS || 0} stacked`; }
     },
@@ -292,7 +292,7 @@ const TitleApp = {
     signalsPanel(p) {
         const sigs = p.signals || [];
         if (!sigs.length) return "";
-        const icon = { FIRE: "🔥", VACANT_NOTICE: "🏚", RECEIVERSHIP: "🏛", CODE_VIOLATIONS: "⚠", NUISANCE_CASE: "⚠", ZONING_CASE: "📐", REPEAT_CODE_CASES: "⚠", CITY_WORK_ORDER: "🧹", DEMO_PERMIT: "🧱", FIRE_REPAIR_PERMIT: "🔥", FORECLOSURE_REGISTRY: "📋" };
+        const icon = { FIRE: "🔥", VACANT_NOTICE: "🏚", RECEIVERSHIP: "🏛", CODE_VIOLATIONS: "⚠", NUISANCE_CASE: "⚠", ZONING_CASE: "📐", ZERO_WATER_USAGE: "💧", REPEAT_CODE_CASES: "⚠", CITY_WORK_ORDER: "🧹", DEMO_PERMIT: "🧱", FIRE_REPAIR_PERMIT: "🔥", FORECLOSURE_REGISTRY: "📋" };
         const kinds = new Set(sigs.map((x) => x.kind));
         const rows = sigs.map((x) => {
             const prec = x.precision === "block" ? ` · <span style="color:var(--yellow)">block-level match (${x.candidates} parcels on that block — confirm address)</span>` : (x.candidates > 1 ? ` · <span style="color:var(--yellow)">${x.candidates} parcels share this address — confirm unit</span>` : "");
@@ -388,10 +388,10 @@ const TitleApp = {
         const nice = { ESTATE_IN_NAME: "Estate", HEIRS_IN_NAME: "Heirs", DECEASED_IN_NAME: "Deceased", PERSONAL_REP: "Pers. Rep", LIFE_ESTATE: "Life Estate",
             CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", CONSERVATOR: "Conservator/POA", TRUSTEE: "Trustee",
             NO_RECORDED_TRANSFER: "No Deed on Record", PROBATE_CLOSED_STILL_TITLED: "ESTATE CLOSED, STILL TITLED", MULTI_GENERATION_ESTATES: "OWNER + HEIR BOTH DIED", FOREIGN_PROBATE: "Foreign Probate", PROBATE_OPEN_STALE: "ESTATE OPEN (stale)", PROBATE_OPEN: "Estate Open", PROBATE_NONE_FOUND: "NO ESTATE FOUND", DECEASED_SOLE_OWNER_HIGH: "OWNER DECEASED (high)", DECEASED_SOLE_OWNER_MEDIUM: "Owner Deceased (med)", DECEASED_SOLE_OWNER_LOW: "Owner Deceased? (low)", ALL_OWNERS_DECEASED: "ALL OWNERS DECEASED", CO_OWNER_DECEASED: "Co-owner Deceased", TAX_SALE_SOLD: "TAX LIEN SOLD", TAX_SALE_STRUCK: "TAX SALE: UNSOLD", TAX_SALE_LISTED: "TAX SALE LISTED", TAX_SALE_REPEAT: "REPEAT TAX SALE", TAX_SALE_HISTORY: "Past Tax Sale", RETURNED_MAIL: "Returned Mail", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
-            FIRE: "🔥 FIRE", FIRE_BLOCK: "🔥 Fire (block)", FIRE_COOLING: "cooling <30d", VACANT_NOTICE: "🏚 VACANT NOTICE", RECEIVERSHIP: "🏛 RECEIVERSHIP", CODE_VIOLATIONS: "⚠ CODE CASE", CITY_WORK_ORDER: "🧹 CITY WORK ORDER", DEMO_PERMIT: "🧱 DEMO PERMIT", FIRE_REPAIR_PERMIT: "🔥 Fire Repair Permit", FORECLOSURE_REGISTRY: "📋 FORECLOSED (registry)", STACKED_SIGNALS: "⚡ STACKED", NUISANCE_CASE: "⚠ NUISANCE CASE", ZONING_CASE: "Zoning Case", REPEAT_CODE_CASES: "⚠ REPEAT CODE CASES", NEGLECT_PROFILE: "🏚 Neglect Profile",
+            FIRE: "🔥 FIRE", FIRE_BLOCK: "🔥 Fire (block)", FIRE_COOLING: "cooling <30d", VACANT_NOTICE: "🏚 VACANT NOTICE", RECEIVERSHIP: "🏛 RECEIVERSHIP", CODE_VIOLATIONS: "⚠ CODE CASE", CITY_WORK_ORDER: "🧹 CITY WORK ORDER", DEMO_PERMIT: "🧱 DEMO PERMIT", FIRE_REPAIR_PERMIT: "🔥 Fire Repair Permit", FORECLOSURE_REGISTRY: "📋 FORECLOSED (registry)", STACKED_SIGNALS: "⚡ STACKED", NUISANCE_CASE: "⚠ NUISANCE CASE", ZERO_WATER_USAGE: "💧 ZERO WATER", ZONING_CASE: "Zoning Case", REPEAT_CODE_CASES: "⚠ REPEAT CODE CASES", NEGLECT_PROFILE: "🏚 Neglect Profile",
             ABSENTEE: "Absentee", NO_HOMESTEAD: "No Homestead", VACANT_LAND: "Vacant Lot", OLD_STRUCTURE: "Pre-1950", POOR_CONDITION: "Poor Cond.", BELOW_AVG_CONDITION: "Below-Avg Cond.", MAIL_MISMATCH: "Mail ≠ Site" };
         const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "CONSERVATOR", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"]);
-        const hard = new Set(["MULTI_GENERATION_ESTATES", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS", "FIRE", "RECEIVERSHIP", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY", "STACKED_SIGNALS", "NUISANCE_CASE", "REPEAT_CODE_CASES", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"]);
+        const hard = new Set(["MULTI_GENERATION_ESTATES", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS", "FIRE", "RECEIVERSHIP", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY", "STACKED_SIGNALS", "NUISANCE_CASE", "REPEAT_CODE_CASES", "ZERO_WATER_USAGE", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"]);
         return (flags || []).map((f) => `<span class="chip ${strong.has(f) ? "chip-strong" : hard.has(f) ? "chip-hard" : ""}">${nice[f] || f}</span>`).join(" ");
     },
     fmtDT(s) { const d = new Date(s); return isNaN(d) ? (s || "") : d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); },

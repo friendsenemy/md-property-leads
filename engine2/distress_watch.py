@@ -56,7 +56,7 @@ import requests
 
 from . import config
 from .auction_watch import addr_tokens
-from . import accela_code, charles_code
+from . import accela_code, charles_code, water_usage
 
 log = logging.getLogger("distress_watch")
 
@@ -429,7 +429,8 @@ def build(index_path, today=None):
     sigs = []
     counts = {}
     for name, fn in (("osfm", osfm_fires), ("baltimore_city", baltimore_city), ("montgomery", montgomery), ("prince_georges", prince_georges),
-                     ("charles_code", charles_code.signals), ("accela_code", accela_code.signals)):
+                     ("charles_code", charles_code.signals), ("accela_code", accela_code.signals),
+                     ("water_usage", water_usage.signals)):
         try:
             got = fn()
         except Exception as e:  # noqa: BLE001
@@ -454,8 +455,14 @@ def build(index_path, today=None):
             if len(unmatched) < 400:
                 unmatched.append({**{k: s.get(k) for k in ("kind", "source", "date", "county", "address", "detail", "url")}, "why": prec})
             continue
+        if s.get("needs_improvements"):
+            # zero water on a bare lot is just a meter stub, not a vacant house
+            cands = [c for c in cands if (c.get("impr_value") or 0) > 0]
+            if not cands:
+                counts[src]["bare_lot"] = counts[src].get("bare_lot", 0) + 1
+                continue
         for c in cands:
-            rec = {**{k: v for k, v in s.items() if k not in ("city", "zip")}, "precision": prec, "matched_address": c["address"],
+            rec = {**{k: v for k, v in s.items() if k not in ("city", "zip", "needs_improvements")}, "precision": prec, "matched_address": c["address"],
                    "candidates": len(cands)}
             if s["kind"] == "FIRE" and s.get("date"):
                 age = (today - date.fromisoformat(s["date"])).days
