@@ -494,7 +494,14 @@ def main(argv=None):
     ap.add_argument("--index", default=config.INDEX_PATH)
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
-    build(a.index)
+    try:
+        build(a.index)
+    except Exception:  # noqa: BLE001
+        import traceback
+        os.makedirs(OUT_DIR, exist_ok=True)
+        with open(os.path.join(OUT_DIR, "last-error.txt"), "w", encoding="utf-8") as f:
+            f.write(datetime.now(timezone.utc).isoformat(timespec="seconds") + "\n" + traceback.format_exc())
+        raise
 
 
 if __name__ == "__main__":

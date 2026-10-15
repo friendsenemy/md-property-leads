@@ -79,6 +79,8 @@ jobs:
           fi
 
       - name: Collect and match signals
+        id: match
+        continue-on-error: true
         run: python -m engine2.distress_watch --index .cache/sdat.sqlite
 
       - name: Commit results
@@ -86,12 +88,18 @@ jobs:
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p /tmp/out && cp data/distress/signals.json data/distress/charles-code.json data/distress/accela-code.json /tmp/out/
+          cp data/distress/last-error.txt /tmp/out/ 2>/dev/null || true
           git fetch origin main
           git checkout -f -B main origin/main
           cp /tmp/out/signals.json /tmp/out/charles-code.json /tmp/out/accela-code.json data/distress/
+          [ -f /tmp/out/last-error.txt ] && cp /tmp/out/last-error.txt data/distress/
           git add data/distress/signals.json data/distress/charles-code.json data/distress/accela-code.json
+          git add data/distress/last-error.txt 2>/dev/null || true
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(d['accounts'])")
           K=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(', '.join(f'{k} {v}' for k,v in d['kinds'].items()))")
           git commit -m "Distress watch: ${N} parcels with signals (${K})"
           git push origin main
+      - name: Fail if matching failed
+        if: steps.match.outcome == 'failure'
+        run: cat data/distress/last-error.txt; exit 1
