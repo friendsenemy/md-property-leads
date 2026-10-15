@@ -1,5 +1,7 @@
 # Request for written permission — Register of Wills Estate Search / Legal Notices
 
+**Status:** emailed 2026-10-15 to stmarysrow@registers.maryland.gov from mrdustinray@gmail.com, combined with a Public Information Act request for a statewide list of estates opened/closed since 2025-01-01 (monthly going forward). Mailed copy not yet sent. Until written permission arrives, estate lookups stay manual (probate-import workflow).
+
 Send from your business email. Two copies:
 
 1. **Email** to your local Register at **stmarysrow@registers.maryland.gov** (St. Mary's County; 301-475-5566), subject line below. Ask them to forward it to whoever administers the statewide website if that is not them. The site's own "Contact Web Manager" link (footer of registers.maryland.gov) is the second address to CC.
