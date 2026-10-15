@@ -22,8 +22,9 @@ const SharedNotes = {
             this.latest = {}; this.history = {};
             for (const row of rows) {
                 if (!row.id) continue;
-                (this.history[row.id] = this.history[row.id] || []).push(row);
-                if (!this.latest[row.id]) this.latest[row.id] = row;
+                const k = this.key(row.id);
+                (this.history[k] = this.history[k] || []).push(row);
+                if (!this.latest[k]) this.latest[k] = row;
             }
             this.loaded = true; this.error = null;
         } catch (e) {
@@ -33,13 +34,18 @@ const SharedNotes = {
         this.paintSync();
     },
 
-    get(id) { return this.latest[id] || null; },
+    // Google Sheets turns "0908071578" into the number 908071578, so ids are matched
+    // with leading zeros stripped. Every Charles/Calvert/etc. account number starts with 0.
+    key(id) { return String(id == null ? "" : id).trim().replace(/^0+(?=\d)/, ""); },
+
+    get(id) { return this.latest[this.key(id)] || null; },
 
     /* Called by every tab's Save. Appends to the sheet and updates the in-memory view. */
     async save(tab, id, status, notes, label) {
         const row = { ts: new Date().toISOString(), author: this.author() || "unknown", tab, id, label: label || "", status, notes };
-        this.latest[id] = row;
-        (this.history[id] = this.history[id] || []).unshift(row);
+        const k = this.key(id);
+        this.latest[k] = row;
+        (this.history[k] = this.history[k] || []).unshift(row);
         if (!this.enabled()) return true;
         try {
             // text/plain keeps the request "simple" so Apps Script needs no CORS preflight
@@ -60,7 +66,7 @@ const SharedNotes = {
         if (who && !who.value) who.value = this.author();
         const hist = document.getElementById("noteHistory");
         if (hist) {
-            const rows = (this.history[id] || []).filter((r) => (r.notes || "").trim() || r.status);
+            const rows = (this.history[this.key(id)] || []).filter((r) => (r.notes || "").trim() || r.status);
             hist.innerHTML = rows.length
                 ? rows.slice(0, 12).map((r) => `<div class="note"><div class="who">${this.esc(r.author || "?")} · ${this.esc(this.fmt(r.ts))} · ${this.esc((r.status || "").toUpperCase())}</div>${this.esc(r.notes || "")}</div>`).join("")
                 : "";
