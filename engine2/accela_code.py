@@ -35,7 +35,7 @@ OUT_DIR = "data/distress"
 OUT_PATH = os.path.join(OUT_DIR, "accela-code.json")
 SLEEP = 1.0
 RECENT_DAYS = int(os.environ.get("ACCELA_RECENT_DAYS", "45"))
-HISTORY_START = date(2023, 1, 1)
+HISTORY_START = date(2025, 1, 1)
 MAX_PAGES_PER_WINDOW = 400       # 4,000 records; windows are a month, so this is a safety stop
 
 SITES = {
@@ -200,7 +200,11 @@ def sweep(full=False, only=None):
             continue
         seen = new = changed = 0
         failed = False
+        walked = set(data["sites"].get(key, {}).get("walked", []))
         for frm, to in _windows(full):
+            wkey = f"{frm}:{to}"
+            if full and wkey in walked and to < date.today() - timedelta(days=RECENT_DAYS):
+                continue   # historical month already captured by an earlier (possibly interrupted) full walk
             try:
                 rows = search(site, frm, to)
             except Exception as e:  # noqa: BLE001
@@ -230,9 +234,15 @@ def sweep(full=False, only=None):
                         if v not in (None, ""):
                             old[f] = v
                 cases[k]["last_seen"] = now
+            if full:
+                walked.add(wkey)
+                data["sites"].setdefault(key, {})["walked"] = sorted(walked)
+                os.makedirs(OUT_DIR, exist_ok=True)
+                with open(OUT_PATH, "w", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
             time.sleep(SLEEP)
         mine = [c for c in cases.values() if c["site"] == key]
-        data["sites"][key] = {"county": site["county"], "last_run": now, "failed": failed, "seen": seen, "new": new,
+        data["sites"][key] = {"county": site["county"], "last_run": now, "failed": failed, "seen": seen, "new": new, "walked": sorted(walked),
                               "status_changed": changed, "kept": len(mine), "open": sum(1 for c in mine if is_open(c["status"])),
                               "by_type": _count(mine, "type"), "by_status": _count(mine, "status")}
         log.info("%s: kept %d (new %d, changed %d, open %d)", key, len(mine), new, changed, data["sites"][key]["open"])

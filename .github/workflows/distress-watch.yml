@@ -57,6 +57,8 @@ jobs:
           key: ${{ steps.week.outputs.key }}
 
       - name: Charles County code cases (Civic Access public search, 1 req/sec)
+        timeout-minutes: 40
+        continue-on-error: true
         run: |
           # last 60 days daily; every month back to 2020 on Sundays so old cases' status changes get picked up
           if [ "$(date -u +%u)" = "7" ] || [ "${{ github.event.inputs.full_charles }}" = "true" ]; then
@@ -65,7 +67,9 @@ jobs:
             python -m engine2.charles_code
           fi
 
-      - name: Baltimore County / Anne Arundel / Washington code cases (Accela public search, 1 req/sec)
+      - name: Baltimore County / Anne Arundel code cases (Accela public search, 1 req/sec)
+        timeout-minutes: 200
+        continue-on-error: true
         run: |
           # last 45 days daily; every month back to 2023 on the first Sunday of the month or on dispatch
           if { [ "$(date -u +%u)" = "7" ] && [ "$(date -u +%d)" -le 7 ]; } || [ "${{ github.event.inputs.full_charles }}" = "true" ]; then
