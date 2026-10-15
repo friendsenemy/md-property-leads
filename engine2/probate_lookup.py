@@ -214,7 +214,10 @@ def candidates():
                 if not o.get("last_name"):
                     continue
                 o["record_middle"] = m.get("record_middle") or ""
-                rank = (order.get(slug, 99), 0 if m.get("identity_confidence") == "HIGH" else 1,
+                # best leads first: Ray's counties, then houses nobody claims as home, then identity, then score
+                not_home = "Residential" in (p.get("property_type") or "") and not (p.get("homestead_code") or "").strip()
+                rank = (order.get(slug, 99), 0 if not_home else 1,
+                        0 if m.get("identity_confidence") == "HIGH" else 1,
                         -((r.get("scores") or {}).get("priority") or 0))
                 key = f"{name}|{dod}"
                 cur = people.setdefault(key, {"name": name, "owner": o, "dod": dod, "accounts": [], "rank": rank})
