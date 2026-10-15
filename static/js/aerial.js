@@ -57,6 +57,19 @@ const Aerial = {
                 <div class="tile-attrib">Esri, Maxar, Earthstar Geographics</div></div>`;
     },
 
+    /** Google Earth web, 3-D tilt over the parcel. */
+    earthUrl(lat, lon) { return `https://earth.google.com/web/@${lat},${lon},0a,250d,35y,0h,45t,0r`; },
+    /** Street address text used for listing-site lookups. */
+    addrText(p) {
+        const a = p.property_address || p.address || "", c = p.city || "", z = p.zip_code || p.zip || "";
+        return `${a}, ${c}, MD ${z}`.replace(/\s+/g, " ").replace(/, ,/g, ",").trim();
+    },
+    zillowUrl(p) {
+        const slug = this.addrText(p).replace(/[^A-Za-z0-9 ]/g, "").trim().replace(/\s+/g, "-");
+        return `https://www.zillow.com/homes/${encodeURIComponent(slug)}_rb/`;
+    },
+    redfinUrl(p) { return `https://www.redfin.com/search#query=${encodeURIComponent(this.addrText(p))}`; },
+
     /** HTML for a property's imagery block. */
     panel(p, id) {
         const lat = parseFloat(p.lat), lon = parseFloat(p.lon);
@@ -78,7 +91,10 @@ const Aerial = {
                 <a href="${this.streetViewUrl(lat, lon)}" target="_blank" rel="noopener">Street View ↗</a>
                 <a href="${this.satelliteUrl(lat, lon)}" target="_blank" rel="noopener">Google Satellite ↗</a>
                 <a href="${this.mapsUrl(lat, lon)}" target="_blank" rel="noopener">Google Maps ↗</a>
+                <a href="${this.earthUrl(lat, lon)}" target="_blank" rel="noopener">Google Earth ↗</a>
                 <a href="${this.mapillaryUrl(lat, lon)}" target="_blank" rel="noopener">Mapillary ↗</a>
+                <a href="${this.zillowUrl(p)}" target="_blank" rel="noopener">Zillow ↗</a>
+                <a href="${this.redfinUrl(p)}" target="_blank" rel="noopener">Redfin ↗</a>
                 <a href="${this.sdatUrl()}" target="_blank" rel="noopener">SDAT ↗</a>
                 <span class="aerial-coords">${lat.toFixed(5)}, ${lon.toFixed(5)}</span>
             </div>
