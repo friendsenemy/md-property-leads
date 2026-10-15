@@ -371,6 +371,7 @@ const TitleApp = {
         else if (home) add(-10, "SDAT lists it as owner-occupied");
         const u = (this.usps || {})[r.id];
         if (u && u.found && u.vacant === "Y") add(40, `USPS: carrier flags it VACANT (checked ${String(u.checked).slice(0, 10)})`);
+        else if (u && u.found && u.no_stat === "Y") add(10, `USPS: "no-stat" — carrier isn't delivering here (could be long-vacant, or mail goes to a PO box) (checked ${String(u.checked).slice(0, 10)})`);
         else if (u && u.found && u.vacant === "N" && u.dpv === "Y") add(-15, `USPS: mail is being delivered (checked ${String(u.checked).slice(0, 10)})`);
         else if (u && !u.found) why.push(`USPS: address not found in their system (checked ${String(u.checked).slice(0, 10)})`);
         const score = Math.max(0, Math.min(100, s));
