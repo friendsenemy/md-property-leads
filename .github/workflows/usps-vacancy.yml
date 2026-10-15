@@ -1,0 +1,47 @@
+name: USPS Vacancy Check
+
+# Asks USPS whether each "Likely vacant" lead in Ray's counties is flagged
+# vacant by the mail carrier. Max 50 lookups a run, each address re-checked
+# every 60 days. Does nothing until the USPS_CLIENT_ID / USPS_CLIENT_SECRET
+# repo secrets exist.
+
+on:
+  schedule:
+    - cron: '17 9 * * *'   # daily 5:17 AM EDT; exits in seconds when nothing is due
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: usps-vacancy
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests==2.31.0
+      - name: Check addresses with USPS
+        env:
+          USPS_CLIENT_ID: ${{ secrets.USPS_CLIENT_ID }}
+          USPS_CLIENT_SECRET: ${{ secrets.USPS_CLIENT_SECRET }}
+        run: python -m engine2.usps_vacancy
+      - name: Commit results
+        run: |
+          [ -f data/usps/vacancy.json ] || { echo "Nothing to commit."; exit 0; }
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          cp data/usps/vacancy.json /tmp/vacancy.json
+          git fetch origin main
+          git checkout -f -B main origin/main
+          mkdir -p data/usps && cp /tmp/vacancy.json data/usps/vacancy.json
+          git add data/usps/vacancy.json
+          git diff --cached --quiet && { echo "No changes."; exit 0; }
+          git commit -m "USPS vacancy check: $(python -c "import json;d=json.load(open('data/usps/vacancy.json'));print(d['vacant'],'vacant of',d['checked'])")"
+          git push origin main

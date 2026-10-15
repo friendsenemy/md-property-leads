@@ -7,13 +7,22 @@ const TitleApp = {
     summary: null,
     rows: [],
     local: {},
+    usps: {},
     state: { scope: "top", preset: "", search: "", minPriority: 0, status: "all", vacantOnly: false, sort: "priority", dir: -1, page: 1, perPage: 25 },
 
     async init() {
         this.loadLocal();
         this.bindEvents();
         await this.loadSummary();
+        await this.loadUsps();
         await this.loadScope();
+    },
+
+    async loadUsps() {
+        try {
+            const r = await fetch(`data/usps/vacancy.json?t=${Date.now()}`, { cache: "no-store" });
+            if (r.ok) this.usps = (await r.json()).results || {};
+        } catch { this.usps = {}; }
     },
 
     async loadSummary() {
@@ -360,13 +369,17 @@ const TitleApp = {
         else if (f.has("BELOW_AVG_CONDITION")) add(4, "Below-average condition");
         if (home && hs) add(-35, "Owner claims it as home (homestead credit on file)");
         else if (home) add(-10, "SDAT lists it as owner-occupied");
+        const u = (this.usps || {})[r.id];
+        if (u && u.found && u.vacant === "Y") add(40, `USPS: carrier flags it VACANT (checked ${String(u.checked).slice(0, 10)})`);
+        else if (u && u.found && u.vacant === "N" && u.dpv === "Y") add(-15, `USPS: mail is being delivered (checked ${String(u.checked).slice(0, 10)})`);
+        else if (u && !u.found) why.push(`USPS: address not found in their system (checked ${String(u.checked).slice(0, 10)})`);
         const score = Math.max(0, Math.min(100, s));
         const tier = score >= 60 ? "high" : score >= 35 ? "mid" : "low";
-        return { score, tier, label: tier === "high" ? "Likely vacant" : tier === "mid" ? "Possibly vacant" : "Likely occupied", reasons: why };
+        return { score, tier, usps: u && u.vacant === "Y", label: tier === "high" ? "Likely vacant" : tier === "mid" ? "Possibly vacant" : "Likely occupied", reasons: why };
     },
     vacBadge(v) {
         if (v.score == null) return `<span class="vac vac-${v.tier}" title="${this.esc(v.reasons.join("; "))}">${this.esc(v.label)}</span>`;
-        return `<span class="vac vac-${v.tier}" title="${this.esc(v.label + ": " + v.reasons.join("; "))}">${v.score}</span>`;
+        return `<span class="vac vac-${v.tier}" title="${this.esc(v.label + ": " + v.reasons.join("; "))}">${v.score}${v.usps ? ' <b class="vac-usps">USPS</b>' : ""}</span>`;
     },
 
     tier(n) { return n >= 70 ? "high" : n >= 50 ? "mid" : "low"; },

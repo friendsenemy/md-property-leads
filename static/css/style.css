@@ -874,3 +874,5 @@ a:hover { text-decoration: underline; }
 .vac-na, .vac-lot { color:var(--text-dim); font-family:inherit; font-weight:500; font-size:0.75rem; }
 .vac-filter { display:inline-flex; align-items:center; gap:6px; font-size:0.95rem; color:var(--text-secondary); cursor:pointer; white-space:nowrap; }
 .vac-filter input { width:18px; height:18px; accent-color:var(--red); }
+
+.vac-usps { font-size: 0.62rem; letter-spacing: 0.03em; margin-left: 2px; padding: 0 3px; border-radius: 3px; background: rgba(0,0,0,0.18); }
