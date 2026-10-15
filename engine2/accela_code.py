@@ -271,23 +271,26 @@ def signals(data=None):
         if not is_open(c.get("status")):
             continue
         text = f"{c.get('type')} {c.get('description')}"
-        if STRUCTURE_RE.search(text):
-            kind = "CODE_VIOLATIONS"
-        elif NUISANCE_RE.search(text):
-            kind = "NUISANCE_CASE"
-        elif re.search(r"building|property maintenance|housing|unsafe|rental", c.get("type") or "", re.I):
+        ctype = c.get("type") or ""
+        if re.search(r"vacant", ctype, re.I):
+            kind = "VACANT_NOTICE"                      # Baltimore County "Vacant Property Inventory"
+        elif re.search(r"zoning", ctype, re.I):
+            kind = "ZONING_CASE"
+        elif STRUCTURE_RE.search(text) or re.search(r"building|plumbing|electrical|property maintenance|housing|unsafe|rental", ctype, re.I):
             kind = "CODE_VIOLATIONS"
         else:
             kind = "NUISANCE_CASE"
+        cited = bool(re.search(r"citation|correction notice|in violation|hearing", c.get("status") or "", re.I))
         n = len(per[(c["site"], (c.get("street") or "").upper(), c.get("zip"))])
         out.append({
             "kind": kind, "source": SITES[c["site"]]["source"], "url": c.get("url"),
             "date": c.get("opened"), "county": c["county"], "address": c.get("street"), "precision": "exact",
             "city": c.get("city"), "zip": c.get("zip"),
             "detail": f"{c['case_number']} · {c.get('type')} · {c.get('status')}"
+                      + (" · INSPECTOR CONFIRMED" if cited else (" · complaint, not yet inspected" if re.search(r"complaint", ctype, re.I) else ""))
                       + (f" · {c['description'][:220]}" if c.get("description") else "")
                       + (f" · {n} cases at this address" if n > 1 else ""),
-            "residential": True,
+            "residential": True, "escalated": cited,
         })
     for key, lst in per.items():
         if len(lst) >= 3:
