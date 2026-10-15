@@ -4,15 +4,9 @@ ID, TOK = os.environ["SMARTY_AUTH_ID"], os.environ["SMARTY_AUTH_TOKEN"]
 auth = {"auth-id": ID, "auth-token": TOK}
 for street, city, z in [("9217 MIMOSA DR", "LA PLATA", "20646"), ("1127 HAMLIN RD", "WALDORF", "20601")]:
     print("=" * 70, "\n", street, city)
-    r = requests.get("https://us-street.api.smarty.com/street-address",
-                     params={**auth, "street": street, "city": city, "state": "MD", "zipcode": z, "candidates": 1}, timeout=30)
-    c = (r.json() or [{}])[0] if r.ok else {}
-    key = c.get("smarty_key") or (c.get("metadata") or {}).get("smarty_key")
-    print("street", r.status_code, "smarty_key", key)
-    if not key:
-        print(r.text[:300]); continue
+    addr = {"street": street, "city": city, "state": "MD", "zipcode": z}
     for path, extra in [("property/principal", {}), ("property/financial", {})]:
-        e = requests.get(f"https://us-enrichment.api.smarty.com/lookup/{key}/{path}", params={**auth, **extra}, timeout=30)
+        e = requests.get(f"https://us-enrichment.api.smarty.com/lookup/search/{path}", params={**auth, **addr, **extra}, timeout=30)
         print("--", path, e.status_code)
         if not e.ok:
             print(e.text[:300]); continue
