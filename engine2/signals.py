@@ -53,7 +53,7 @@ def is_residential(land_use):
     return lu.startswith("R") or any(h in lu for h in RESIDENTIAL_HINTS)
 
 
-def analyze(row, today=None, force=False, deaths=None):
+def analyze(row, today=None, force=False, deaths=None, alive=None):
     """
     row: dict with the aliases from build_index.ALL_ALIASES.
     Returns (property_dict, flags:set, facts:dict) or None if ineligible.
@@ -89,6 +89,8 @@ def analyze(row, today=None, force=False, deaths=None):
     if deaths is not None and owners:
         cc = (row.get("county_code") or "").zfill(2)
         for o in owners:
+            if alive and ("*" in alive or (o.get("normalized_name") if isinstance(o, dict) else str(o)) in alive):
+                continue   # confirmed alive by a recorded document signed after the death-index date
             m = deaths.match(o, cc, transfer_year=ty, no_recorded_transfer=no_recorded_transfer)
             if m:
                 death_matches.append(m)

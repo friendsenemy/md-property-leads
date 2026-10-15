@@ -104,6 +104,16 @@ def load_taxsale():
     return merged, suffix16
 
 
+def load_alive():
+    try:
+        raw = json.load(open(config.ALIVE_OVERRIDES_PATH, encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    out = {k: set(v.get("names") or ["*"]) for k, v in raw.items() if not k.startswith("_")}
+    log.info("alive overrides: %d parcels", len(out))
+    return out
+
+
 def load_probate():
     """account -> [estate records]; a parcel can carry several (multi-generation)."""
     recs = {}
@@ -153,7 +163,12 @@ def apply_distress(prop, flags, distress):
                 flags.add("FIRE_COOLING")
         elif kind in config.DISTRESS_HARD_POINTS:
             flags.add(kind)
-    kinds = {s.get("kind") for s in sigs}
+    if "ZERO_WATER_USAGE" in flags and (prop.get("homestead_code") or "").strip():
+        # Owner claims it as home and uses no MetCom water: almost always a private
+        # well on a sewer-only account. Keep the signal visible but score it low.
+        flags.discard("ZERO_WATER_USAGE")
+        flags.add("ZERO_WATER_HOMESTEAD")
+    kinds = {s.get("kind") for s in sigs if not (s.get("kind") == "ZERO_WATER_USAGE" and "ZERO_WATER_HOMESTEAD" in flags)}
     if len(kinds) >= 2:
         flags.add("STACKED_SIGNALS")
     prop["signals"] = sigs
@@ -213,6 +228,7 @@ def apply_taxsale(prop, flags, taxsale, suffix16):
 def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
     taxsale, suffix16 = load_taxsale()
     probate = load_probate()
+    alive = load_alive()
     distress = load_distress()
     deaths = DeathIndex()
     try:
@@ -248,7 +264,7 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             scanned += 1
             acct = r["acct"] or ""
             in_taxsale = acct in taxsale or (acct.startswith("16") and acct[-8:] in suffix16)
-            res = analyze(dict(r), force=in_taxsale or acct in probate or acct in distress, deaths=deaths)
+            res = analyze(dict(r), force=in_taxsale or acct in probate or acct in distress, deaths=deaths, alive=alive.get(acct))
             if not res:
                 continue
             prop, flags, facts = res

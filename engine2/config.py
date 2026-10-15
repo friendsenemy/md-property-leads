@@ -103,6 +103,7 @@ DISTRESS_SOFT_POINTS = {
     "BELOW_AVG_CONDITION": 8,
     "MAIL_MISMATCH": 8,
     "NEGLECT_PROFILE": 15,        # SDAT says poor / below-average condition AND the owner lives elsewhere
+    "ZERO_WATER_HOMESTEAD": 5,    # zero water but the owner claims it as home: usually a private well (sewer-only account), not a vacancy
 }
 DISTRESS_SOFT_CAP = 30
 DISTRESS_POINTS = {**DISTRESS_HARD_POINTS, **DISTRESS_SOFT_POINTS}   # kept for anything that iterates all flags
@@ -112,6 +113,9 @@ DISTRESS_POINTS = {**DISTRESS_HARD_POINTS, **DISTRESS_SOFT_POINTS}   # kept for 
 # scores nothing.
 TAXSALE_DIR = "data/distress"
 PROBATE_DIR = "data/probate"
+# Owners we confirmed alive by hand (signed a recorded document after the death-index date).
+# {account: {"names": ["FIRST M LAST", ...] or ["*"], "evidence": "..."}}
+ALIVE_OVERRIDES_PATH = "data/overrides/alive.json"
 OLD_STRUCTURE_YEAR = 1950
 # CAMA dwelling grade/condition labels as SDAT stores them, e.g. "Low (1)",
 # "Economy (2)", "Below Average (3)", "Average (4)". summary.json carries the
@@ -185,7 +189,7 @@ PRESETS = [
     {"id": "stacked",        "label": "Stacked: 2+ Signal Kinds",       "any_flags": ["STACKED_SIGNALS"]},
     {"id": "charles_code",   "label": "Charles Co. Code / Nuisance Case", "any_flags": ["CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES"]},
     {"id": "neglect",        "label": "Neglect Profile (poor condition + absentee)", "any_flags": ["NEGLECT_PROFILE"]},
-    {"id": "zero_water",     "label": "💧 Zero Water Usage (utility export)", "any_flags": ["ZERO_WATER_USAGE"]},
-    {"id": "zero_water_estate", "label": "Zero Water + Estate / Deceased / Tax Sale", "any_flags": ["ZERO_WATER_USAGE"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
+    {"id": "zero_water",     "label": "💧 Zero Water Usage (utility export)", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD"]},
+    {"id": "zero_water_estate", "label": "Zero Water + Estate / Deceased / Tax Sale", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},
 ]
