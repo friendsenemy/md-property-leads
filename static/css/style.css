@@ -865,3 +865,12 @@ a:hover { text-decoration: underline; }
 
 /* small action buttons inside the lead modal (copy letter, copy checklist) */
 .btn-sm { font-size: 0.85rem; padding: 7px 12px; }
+
+/* Vacancy likelihood badge (Title tab) */
+.vac { display:inline-block; min-width:2.4em; padding:2px 8px; border-radius:999px; font-family:var(--font-mono); font-size:0.85rem; font-weight:700; text-align:center; }
+.vac-high { background:rgba(255,69,58,0.18); color:var(--red); border:1px solid rgba(255,69,58,0.45); }
+.vac-mid  { background:rgba(255,214,10,0.14); color:var(--yellow); border:1px solid rgba(255,214,10,0.4); }
+.vac-low  { background:rgba(48,209,88,0.12); color:var(--green); border:1px solid rgba(48,209,88,0.35); }
+.vac-na, .vac-lot { color:var(--text-dim); font-family:inherit; font-weight:500; font-size:0.75rem; }
+.vac-filter { display:inline-flex; align-items:center; gap:6px; font-size:0.95rem; color:var(--text-secondary); cursor:pointer; white-space:nowrap; }
+.vac-filter input { width:18px; height:18px; accent-color:var(--red); }

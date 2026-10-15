@@ -248,6 +248,7 @@
             <button class="filter-btn" data-status="contacted">Contacted</button>
             <button class="filter-btn" data-status="closed">Closed</button>
         </div>
+        <label class="vac-filter" title="Show only leads scoring 60+ on the vacancy likelihood"><input type="checkbox" id="titleVacantOnly"> Likely vacant only</label>
         <button class="btn btn-export" id="titleExport"><span class="icon">⬇</span> Export CSV</button>
     </div>
     <div class="presets" id="titlePresets"></div>
@@ -258,6 +259,7 @@
             <thead>
                 <tr>
                     <th data-sort="priority">Priority <span class="sort-arrow">↕</span></th>
+                    <th data-sort="vacancy" title="Likelihood the house is vacant, from public records">Vacant? <span class="sort-arrow">↕</span></th>
                     <th>Property</th>
                     <th data-sort="owner">Owner on Record <span class="sort-arrow">↕</span></th>
                     <th data-sort="cls">Class / Signals <span class="sort-arrow">↕</span></th>

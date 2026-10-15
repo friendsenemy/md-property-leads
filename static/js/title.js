@@ -7,7 +7,7 @@ const TitleApp = {
     summary: null,
     rows: [],
     local: {},
-    state: { scope: "top", preset: "", search: "", minPriority: 0, status: "all", sort: "priority", dir: -1, page: 1, perPage: 25 },
+    state: { scope: "top", preset: "", search: "", minPriority: 0, status: "all", vacantOnly: false, sort: "priority", dir: -1, page: 1, perPage: 25 },
 
     async init() {
         this.loadLocal();
@@ -70,6 +70,7 @@ const TitleApp = {
         const p = r.property || {};
         return Object.assign(r, {
             _priority: r.scores.priority,
+            _vac: this.vacancy(r),
             _equity: p.estimated_equity != null ? parseFloat(p.estimated_equity) : null,
             _assessed: parseFloat(p.assessed_value) || 0,
             _years: p.years_since_transfer || 0,
@@ -108,6 +109,8 @@ const TitleApp = {
         document.getElementById("titlePrev").addEventListener("click", () => { if (this.state.page > 1) { this.state.page--; this.render(); } });
         document.getElementById("titleNext").addEventListener("click", () => { this.state.page++; this.render(); });
         document.getElementById("titleExport").addEventListener("click", () => this.exportCSV());
+        const vo = document.getElementById("titleVacantOnly");
+        if (vo) vo.addEventListener("change", (e) => { this.state.vacantOnly = e.target.checked; this.state.page = 1; this.render(); });
     },
 
     presetMatch(r, preset) {
@@ -128,6 +131,7 @@ const TitleApp = {
         const s = this.state;
         return this.rows.filter((r) =>
             r._priority >= s.minPriority &&
+            (!s.vacantOnly || r._vac.tier === "high") &&
             this.presetMatch(r, s.preset) &&
             (s.status === "all" || this.statusOf(r) === s.status) &&
             (!s.search || r._search.includes(s.search)));
@@ -136,7 +140,7 @@ const TitleApp = {
     sorted(rows) {
         const k = this.state.sort, d = this.state.dir;
         const val = (r) => ({
-            priority: r._priority, title: r.scores.title_complexity, equity: r._equity ?? -1, assessed: r._assessed,
+            priority: r._priority, vacancy: r._vac.score ?? -1, title: r.scores.title_complexity, equity: r._equity ?? -1, assessed: r._assessed,
             years: r._years, county: r.property.county || "", owner: r.property.owner_name || "", cls: r.title_class,
         })[k];
         return rows.slice().sort((a, b) => { const x = val(a), y = val(b); return (x > y ? 1 : x < y ? -1 : 0) * d; });
@@ -159,6 +163,7 @@ const TitleApp = {
                 const p = r.property, st = this.statusOf(r);
                 return `<tr data-id="${this.esc(r.id)}">
                     <td><span class="prio prio-${this.tier(r._priority)}">${r._priority}</span></td>
+                    <td>${this.vacBadge(r._vac)}</td>
                     <td class="property-cell">
                         <div class="address">${this.esc(p.property_address || "N/A")}${p.city ? `, ${this.esc(p.city)}` : ""}</div>
                         <div class="meta">${this.esc(p.property_type || "")}${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? ` • owner on +${r.other_parcels_same_owner.length} parcels` : ""}</div>
@@ -214,7 +219,9 @@ const TitleApp = {
                     <div><div class="score-label">Title Complexity</div><div class="score-val">${sc.title_complexity}</div>${list(sc.reasons.title)}</div>
                     <div><div class="score-label">Financial</div><div class="score-val">${sc.financial}</div>${list(sc.reasons.financial)}</div>
                     <div><div class="score-label">Distress</div><div class="score-val">${sc.distress}</div>${list(sc.reasons.distress)}</div>
+                    <div><div class="score-label">Likely Vacant</div><div class="score-val">${this.vacBadge(r._vac)} <span style="font-size:0.8rem; color:var(--text-secondary)">${this.esc(r._vac.label)}</span></div>${list(r._vac.reasons)}</div>
                 </div>
+                <div class="aerial-note" style="margin-top:6px">Vacancy is a likelihood built from public records (homestead credit, owner-occupancy code, where tax bills go, deaths, tax sales, code cases). Confirm with Street View history, a drive-by or a skip trace before telling anyone a house is empty.</div>
                 <div style="margin-top:8px">${this.flagChips(r.flags)}</div>
                 <div class="aerial-note" style="margin-top:10px">Deaths 1973–2014 checked automatically. Probate: look the decedent up on the Register of Wills estate search, copy the page, and use Actions → “Import Probate Record” to attach it here.</div>
             </div>
@@ -297,14 +304,14 @@ const TitleApp = {
     exportCSV() {
         const rows = this.sorted(this.filtered());
         if (!rows.length) { alert("Nothing to export with the current filters."); return; }
-        const H = ["Priority", "Title Class", "Flags", "Owner on Record", "Owner 2", "Owner Type", "Address", "City", "Zip", "County", "Account #",
+        const H = ["Priority", "Vacancy Score", "Vacancy", "Title Class", "Flags", "Owner on Record", "Owner 2", "Owner Type", "Address", "City", "Zip", "County", "Account #",
             "Property Type", "Assessed", "Land", "Improvement", "Year Built", "Sq Ft", "Occupancy", "Homestead", "Condition",
             "Last Transfer", "Sale Price", "Years Since Transfer", "Deed Liber", "Deed Folio", "Est. Equity", "Equity %", "Equity Confidence",
             "Title Score", "Financial Score", "Distress Score", "Tax Sale Status", "Tax Sale Bid", "Lien Buyer", "Death Match Owner", "Death Date", "Age at Death", "Identity Confidence", "Estates", "Decedents", "Estate Status", "Personal Rep", "PR Address", "Heirs / Parties", "Signals", "Signal Dates", "Signal Sources", "Lat", "Lon", "Status", "Notes"];
         const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
         const lines = [H.join(",")];
         rows.forEach((r) => { const p = r.property; lines.push([
-            r._priority, r.title_class, (r.flags || []).join("|"), p.owner_name, p.owner_name_2, p.owner_type, p.property_address, p.city, p.zip_code, p.county, `="${p.account_number || ""}"`,
+            r._priority, r._vac.score ?? "", r._vac.label, r.title_class, (r.flags || []).join("|"), p.owner_name, p.owner_name_2, p.owner_type, p.property_address, p.city, p.zip_code, p.county, `="${p.account_number || ""}"`,
             p.property_type, p.assessed_value, p.land_value, p.improvement_value, p.year_built, p.square_footage, p.occupancy_code, p.homestead_code, p.condition_code,
             p.transfer_date, p.sale_price, p.years_since_transfer, p.deed_liber, p.deed_folio, p.estimated_equity, p.equity_percent, p.equity_confidence,
             r.scores.title_complexity, r.scores.financial, r.scores.distress, p.tax_sale ? p.tax_sale.status : "", p.tax_sale ? p.tax_sale.bid : "", p.tax_sale ? p.tax_sale.bidder : "", (p.death_matches || []).map((m) => m.owner).join("; "), (p.death_matches || []).map((m) => m.death_date).join("; "), (p.death_matches || []).map((m) => m.age_at_death).join("; "), (p.death_matches || []).map((m) => m.identity_confidence).join("; "), (p.probate_estates || []).map((x) => x.estate_number).join("; "), (p.probate_estates || []).map((x) => `${x.decedent} d.${x.date_of_death}`).join("; "), (p.probate_estates || []).map((x) => x.status).join("; "), (p.probate_estates || []).flatMap((x) => (x.personal_reps || []).map((y) => y.name)).join("; "), (p.probate_estates || []).flatMap((x) => (x.personal_reps || []).map((y) => y.address)).join("; "), (p.probate_estates || []).flatMap((x) => (x.interested_persons || []).filter((y) => y.role !== "PERSONAL_REP").map((y) => `${y.name} (${y.role})`)).join("; "), (p.signals || []).map((x) => x.kind).join("; "), (p.signals || []).map((x) => x.date || "").join("; "), (p.signals || []).map((x) => x.url || x.source).join("; "), p.lat, p.lon, this.statusOf(r), this.notesOf(r),
@@ -315,6 +322,51 @@ const TitleApp = {
         a.download = `md-title-leads-${this.state.scope}-${new Date().toISOString().slice(0, 10)}.csv`;
         document.body.appendChild(a); a.click(); a.remove();
         setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    },
+
+    // ─── Vacancy likelihood ───
+    // Combines public-record signals already on each lead. No outside data, no cost.
+    // It is a likelihood, not proof: confirm with a drive-by, Street View history or a skip trace.
+    vacancy(r) {
+        const p = r.property || {}, f = new Set(r.flags || []);
+        const res = /^R|RESIDENTIAL|TOWN ?HOUSE|CONDO|APARTMENT|DWELLING/i.test(p.property_type || "");
+        if (f.has("VACANT_LAND")) return { score: null, tier: "lot", label: "Vacant lot", reasons: ["No building to occupy"] };
+        if (!res) return { score: null, tier: "na", label: "n/a", reasons: ["Not residential, so occupancy codes don't apply"] };
+        let s = 0; const why = [];
+        const add = (pts, txt) => { s += pts; why.push(`${txt} (${pts > 0 ? "+" : ""}${pts})`); };
+        if (f.has("VACANT_NOTICE")) add(60, "City vacant-building notice on record");
+        if (f.has("CONDEMNED")) add(50, "Condemned");
+        if (f.has("RETURNED_MAIL")) add(30, "Mail returned undeliverable");
+        if (f.has("FIRE")) add(25, "Fire at the property");
+        if (f.has("CITY_WORK_ORDER")) add(15, "City had to clean or board it");
+        if (f.has("NUISANCE_CASE")) add(12, "Nuisance case (grass, trash, open structure)");
+        if (f.has("REPEAT_CODE_CASES")) add(10, "Repeat code cases");
+        else if (f.has("CODE_VIOLATIONS")) add(6, "Code case");
+        const dead = f.has("ALL_OWNERS_DECEASED") || f.has("DECEASED_SOLE_OWNER_HIGH") || f.has("DECEASED_SOLE_OWNER_MEDIUM");
+        if (dead) {
+            add(25, "Every owner on title is deceased");
+            const ysd = Math.max(0, ...(p.death_matches || []).filter((m) => m.identity_confidence !== "LOW").map((m) => m.years_since_death || 0));
+            if (ysd >= 3) add(10, `${ysd} years since death with no transfer`);
+        }
+        if (f.has("PROBATE_CLOSED_STILL_TITLED") || f.has("PROBATE_NONE_FOUND")) add(5, "No one has taken title through an estate");
+        const home = (p.occupancy_code || "").toUpperCase() === "H", hs = !!(p.homestead_code || "").trim();
+        if (f.has("NO_HOMESTEAD")) add(15, "No one claims it as a primary home (no homestead credit)");
+        if (!home) add(10, "SDAT: not owner-occupied");
+        if (f.has("MAIL_MISMATCH")) add(10, "Tax bills mailed somewhere else");
+        else if (f.has("CARE_OF")) add(5, "Tax bills sent in care of someone");
+        if (f.has("TAX_SALE_SOLD") || f.has("TAX_SALE_STRUCK")) add(10, "Taxes unpaid (tax sale)");
+        if (f.has("TAX_SALE_REPEAT")) add(5, "Repeat tax sale");
+        if (f.has("POOR_CONDITION")) add(8, "Poor condition");
+        else if (f.has("BELOW_AVG_CONDITION")) add(4, "Below-average condition");
+        if (home && hs) add(-35, "Owner claims it as home (homestead credit on file)");
+        else if (home) add(-10, "SDAT lists it as owner-occupied");
+        const score = Math.max(0, Math.min(100, s));
+        const tier = score >= 60 ? "high" : score >= 35 ? "mid" : "low";
+        return { score, tier, label: tier === "high" ? "Likely vacant" : tier === "mid" ? "Possibly vacant" : "Likely occupied", reasons: why };
+    },
+    vacBadge(v) {
+        if (v.score == null) return `<span class="vac vac-${v.tier}" title="${this.esc(v.reasons.join("; "))}">${this.esc(v.label)}</span>`;
+        return `<span class="vac vac-${v.tier}" title="${this.esc(v.label + ": " + v.reasons.join("; "))}">${v.score}</span>`;
     },
 
     tier(n) { return n >= 70 ? "high" : n >= 50 ? "mid" : "low"; },
