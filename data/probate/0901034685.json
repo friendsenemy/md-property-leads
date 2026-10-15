@@ -1,0 +1,119 @@
+{
+ "account": "0901034685",
+ "estates": [
+  {
+   "estate_number": "51393",
+   "status": "CLOSED",
+   "type": "NP",
+   "date_opened": "12/31/1997",
+   "date_closed": "",
+   "decedent": "GLORIA ANN SAVOY",
+   "date_of_death": "8/14/1997",
+   "date_of_filing": "12/31/1997",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "12/31/1997",
+     "n": 1,
+     "code": "1244",
+     "desc": "REGISTER OF WILLS MEMO",
+     "pages": 2
+    },
+    {
+     "filed": "12/31/1997",
+     "n": 2,
+     "code": "1244",
+     "desc": "QUESTIONNAIRE",
+     "pages": 1
+    },
+    {
+     "filed": "12/31/1997",
+     "n": 3,
+     "code": "1244",
+     "desc": "INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "03/04/1998",
+     "n": 4,
+     "code": "1244",
+     "desc": "ORDERED (030298): ORDER TO SC ISSUED FOR ADD REQ -41098",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/1998",
+     "n": 5,
+     "code": "1244",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/1998",
+     "n": 6,
+     "code": "1244",
+     "desc": "ORDER TO SC (041098): ISSUE CONTEMPT",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/1998",
+     "n": 7,
+     "code": "1244",
+     "desc": "ORDERED (041798): ORDER TO SC ISSUED FOR CONTEMPT -60598",
+     "pages": 1
+    },
+    {
+     "filed": "06/05/1998",
+     "n": 8,
+     "code": "1244",
+     "desc": "CONTEMPT (060598): CONT TO (061998)",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/1998",
+     "n": 9,
+     "code": "1244",
+     "desc": "CONTEMPT (061998): ISSUE WRIT  - $500.00 BOND",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/1998",
+     "n": 10,
+     "code": "1244",
+     "desc": "DOCUMENTION FOR INFORMATION REPORT",
+     "pages": 6
+    },
+    {
+     "filed": "10/14/1998",
+     "n": 11,
+     "code": "1244",
+     "desc": "ROW MEMORANDUM",
+     "pages": 3
+    },
+    {
+     "filed": "01/25/2005",
+     "n": 12,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 5
+    }
+   ],
+   "last_docket_activity": "2005-01-25",
+   "interested_persons": [],
+   "death_to_probate_days": 139,
+   "probate_age_days": 10515,
+   "days_since_last_docket": 7933,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1909147395",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1909147395",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GLORIA A SAVOY"
+  }
+ ]
+}

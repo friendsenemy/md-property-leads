@@ -1,0 +1,128 @@
+{
+ "account": "0903007936",
+ "estates": [
+  {
+   "estate_number": "19744",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "01/16/2015",
+   "date_closed": "05/11/2015",
+   "decedent": "JANE FRANCES HANCOCK",
+   "date_of_death": "3/18/2002",
+   "date_of_filing": "01/16/2015",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MABEL ELIZABETH HANCOCK",
+     "address": "3707 SOUTHGATE  CT, TEMPLE HILLS, MD 20748"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/16/2015",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/21/2015",
+     "n": 6,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR STATUS OF SAFE DEPOSIT BOX",
+     "pages": 2
+    },
+    {
+     "filed": "02/11/2015",
+     "n": 7,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2015",
+     "n": 8,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2015",
+     "n": 9,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/30/2015",
+     "n": 10,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "05/11/2015",
+     "n": 11,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM COMPTROLLER",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2015-05-11",
+   "interested_persons": [
+    {
+     "name": "MABEL ELIZABETH HANCOCK",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "COMPTROLLER",
+     "role": "CORRESPONDENT",
+     "source": "docket 11"
+    }
+   ],
+   "death_to_probate_days": 4687,
+   "probate_age_days": 115,
+   "days_since_last_docket": 4175,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1908681926",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1908681926",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JANE F HANCOCK"
+  }
+ ]
+}

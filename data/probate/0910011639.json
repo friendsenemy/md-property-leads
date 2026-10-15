@@ -1,0 +1,333 @@
+{
+ "account": "0910011639",
+ "estates": [
+  {
+   "estate_number": "19902",
+   "status": "ARCHIVED",
+   "type": "RE",
+   "date_opened": "04/13/2015",
+   "date_closed": "08/10/2017",
+   "decedent": "JUDITH HARDESTY REPASS",
+   "date_of_death": "12/8/2014",
+   "date_of_filing": "04/13/2015",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "KURT W. WOLFGANG [P.O. BOX 1830, LEONARDTOWN, MD 20650]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "SANDRA E. BURCH",
+     "address": "4903 SUDLEYS CHOICE LANE, HARWOOD, MD 20776"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/13/2015",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED OCTOBER 26,",
+     "pages": 2013
+    },
+    {
+     "filed": "04/13/2015",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "04/13/2015",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2015",
+     "n": 4,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2015",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "04/13/2015",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "04/13/2015",
+     "n": 7,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/2015",
+     "n": 8,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 2
+    },
+    {
+     "filed": "04/20/2015",
+     "n": 9,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - RUSSELL HARDESTY",
+     "pages": 2
+    },
+    {
+     "filed": "04/22/2015",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/15/2015",
+     "n": 11,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2015",
+     "n": 12,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE INVENTORY AND INFORMATION REPORT HEARING SCHEDULED FOR 18 AUGUST 2015 @ 1:30 PM",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2015",
+     "n": 13,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/17/2015",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 17
+    },
+    {
+     "filed": "08/14/2015",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/14/2015",
+     "n": 16,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2016",
+     "n": 17,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE FOR FAILURE TO FILE ACCOUNT HEARING SCHEDULED FOR 16 FEBRUARY 2016 @ 1:30 PM",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2016",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2016",
+     "n": 19,
+     "code": "1383",
+     "desc": "FIRST  ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "04/15/2016",
+     "n": 20,
+     "code": "1244",
+     "desc": "CHARGE SHEET GIVEN TO MR. WOLFGANG, ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2016",
+     "n": 21,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2016",
+     "n": 22,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2016",
+     "n": 23,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/04/2016",
+     "n": 24,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2016",
+     "n": 25,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  FOR FAILURE TO FILE THE ACCOUNT HEARING SCHEDULED FOR 13 DECEMBER 2016 @ 1:40 PM",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2016",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/05/2016",
+     "n": 27,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "12/20/2016",
+     "n": 28,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/20/2016",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/22/2017",
+     "n": 30,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT- THIRD",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2017",
+     "n": 31,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE THIRD ACCOUNT HEARING SCHEDULED FOR 25 JULY 2017 @ 1:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2017",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2017",
+     "n": 34,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2017",
+     "n": 35,
+     "code": "1284",
+     "desc": "ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2017",
+     "n": 36,
+     "code": "1385",
+     "desc": "THIRD AND FINAL ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "07/25/2017",
+     "n": 37,
+     "code": "1331",
+     "desc": "REMOVAL OF ATTORNEY FOR THE ESTATE BY PR",
+     "pages": 2
+    },
+    {
+     "filed": "07/25/2017",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/08/2017",
+     "n": 39,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/08/2017",
+     "n": 40,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/11/2017",
+     "n": 41,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR KURT W. WOLFGANG RESENT TO NEW ADRESS",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/2025",
+     "n": 42,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-09-25",
+   "interested_persons": [
+    {
+     "name": "SANDRA E. BURCH",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 126,
+   "probate_age_days": 850,
+   "days_since_last_docket": 385,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1908673373",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1908673373",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "JUDITH H REPASS"
+  }
+ ]
+}

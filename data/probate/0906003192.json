@@ -1,0 +1,137 @@
+{
+ "account": "0906003192",
+ "estates": [
+  {
+   "estate_number": "17169",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "08/16/2010",
+   "date_closed": "02/02/2011",
+   "decedent": "CLINTON GERALD BALL",
+   "date_of_death": "5/6/2010",
+   "date_of_filing": "07/21/2010",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "MICHELE R HARRIS [303 CHARLES STREET #101, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DORIS  BALL",
+     "address": "227 BARKSDALE AVENUE, WALDORF, MD 20602"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/21/2010",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2010",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2010",
+     "n": 3,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2010",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2010",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS - WRONG NOTICE FILED (BUT NOTICE NOT NECESSARY IN THIS ESTATE, AT THIS POINT)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2010",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2010",
+     "n": 7,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 4
+    },
+    {
+     "filed": "08/16/2010",
+     "n": 8,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE, TIFFANY M. BROWN",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2010",
+     "n": 9,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE - GLORY A. BALL",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2010",
+     "n": 10,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2010",
+     "n": 11,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/04/2010",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 11/04/2010 BY TOYOTA MOTOR CREDIT CORP FOR $2,670.08",
+     "pages": 6
+    },
+    {
+     "filed": "01/27/2011",
+     "n": 13,
+     "code": "1244",
+     "desc": "CHARGE SHEET SENT TO ATTORNEY REQUESTING PAYMENT WITHIN 14 DAYS OR SHOWCAUSE WILL BE SET",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2011-01-27",
+   "interested_persons": [
+    {
+     "name": "DORIS BALL",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 102,
+   "probate_age_days": 170,
+   "days_since_last_docket": 5740,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1908666163",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1908666163",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CLINTON G BALL"
+  }
+ ]
+}
