@@ -60,8 +60,9 @@ const Aerial = {
     /** Google Earth web, 3-D tilt over the parcel. */
     earthUrl(lat, lon, p) {
         // /search/<address>/@... makes Earth drop its pin and open the place card on the subject property
+        // no @camera part: with one, Earth only flies there and skips the search (no pin, no card)
         const q = p ? encodeURIComponent(this.addrText(p)).replace(/%20/g, "+") : `${lat},${lon}`;
-        return `https://earth.google.com/web/search/${q}/@${lat},${lon},0a,250d,35y,0h,45t,0r`;
+        return `https://earth.google.com/web/search/${q}`;
     },
     /** Street address text used for listing-site lookups. */
     addrText(p) {
