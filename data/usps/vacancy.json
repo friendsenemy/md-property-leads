@@ -1,6 +1,6 @@
 {
- "checked": 976,
- "generated_at": "2026-10-15T14:13:42+00:00",
+ "checked": 977,
+ "generated_at": "2026-10-16T14:01:20+00:00",
  "results": {
   "020100003818150": {
    "active": "Y",
@@ -11191,6 +11191,12 @@
    "source": "smarty",
    "usps_address": "49575 Cedar Ln, Dameron MD 20628-3103",
    "vacant": "N"
+  },
+  "1902044218": {
+   "address": "18096 RIVER RD",
+   "checked": "2026-10-16T14:01:20+00:00",
+   "found": false,
+   "source": "smarty"
   },
   "1904008502": {
    "address": "36032 BAY DR",
