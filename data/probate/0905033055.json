@@ -1,0 +1,137 @@
+{
+ "account": "0905033055",
+ "estates": [
+  {
+   "estate_number": "89037",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "12/01/2011",
+   "date_closed": "04/10/2012",
+   "decedent": "ELMER JOSEPH HILL",
+   "date_of_death": "1/23/2006",
+   "date_of_filing": "12/01/2011",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "THOMAS F MUDD [11520 MAGNOLIA COURT, ISSUE, MD 20645]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "RUTH THERESA EDELEN",
+     "address": "12005 CUCKOLDS CREEK RD, NEWBURG, MD 20664"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/01/2011",
+     "n": 1,
+     "code": "1103",
+     "desc": "JUDICIAL SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 20
+    },
+    {
+     "filed": "12/01/2011",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/01/2011",
+     "n": 3,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/01/2011",
+     "n": 4,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- ADDITIONAL REQUIREMENT",
+     "pages": 1
+    },
+    {
+     "filed": "01/08/2012",
+     "n": 5,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2012",
+     "n": 6,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 2
+    },
+    {
+     "filed": "01/23/2012",
+     "n": 7,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 4
+    },
+    {
+     "filed": "02/07/2012",
+     "n": 8,
+     "code": "2004",
+     "desc": "CERTIFICATE OF PUBLICATION - NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/29/2012",
+     "n": 9,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - JUDICIAL PROBATE- MR MUDD  WILL BE FILING LINE WITHDRAWING JOSEPH H EDELEN , PETITION AS CO-PETITIONER; RUTH THERESA EDELEN APPOINTED PR OF A SMALL ESTATE, ROW TO PREPARE ORDER, 1/10 PORTION OF REAL ESTATE COURT FINDS IS NON PROBATE PROPERTY",
+     "pages": 1
+    },
+    {
+     "filed": "03/29/2012",
+     "n": 10,
+     "code": "1401",
+     "desc": "JUDICIAL SMALL ESTATE ORDER DATED 03/29/2012 , APPOINTING RUTH THERESA EDELEN AS PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2012",
+     "n": 11,
+     "code": "1254",
+     "desc": "LINE TO WITHDRAW PETITION",
+     "pages": 2
+    },
+    {
+     "filed": "04/12/2012",
+     "n": 12,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE PR APPOINTED IN THESE PROCEEDING BE AND SHE HEREBY IS AUTHORIZED TO CONVEY THE UNDIVIDED INTERESTED OF THE DECEDENT IN THE PROPERTY DESCRIBED IN SCH B OF THE PETITION HEREIN TO RUTH THERESA EDELEN AND JOSEPH H EDELEN",
+     "pages": 1
+    },
+    {
+     "filed": "04/16/2012",
+     "n": 13,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2012-04-16",
+   "interested_persons": [
+    {
+     "name": "RUTH THERESA EDELEN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 2138,
+   "probate_age_days": 131,
+   "days_since_last_docket": 5295,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1909158247",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1909158247",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ELMER J HILL"
+  }
+ ]
+}

@@ -1,6 +1,15 @@
 {
  "permission": "2026-10-15",
  "searched": {
+  "AGNES GROSS|2010-05-17": {
+   "accounts": [
+    "0908055696"
+   ],
+   "checked": "2026-10-15",
+   "dod": "2010-05-17",
+   "results": 7,
+   "status": "NONE FOUND"
+  },
   "ALMA M KING|2005-10-16": {
    "accounts": [
     "0906169473"
@@ -28,6 +37,15 @@
    "checked": "2026-10-15",
    "dod": "2013-05-31",
    "results": 0,
+   "status": "NONE FOUND"
+  },
+  "CAROL A RICHARDSON|2014-08-25": {
+   "accounts": [
+    "0906239250"
+   ],
+   "checked": "2026-10-15",
+   "dod": "2014-08-25",
+   "results": 9,
    "status": "NONE FOUND"
   },
   "CAROLYN A GRAVES|2002-11-29": {
@@ -80,6 +98,15 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "CYNTHIA A MARSHALL|2003-03-29": {
+   "accounts": [
+    "0906043852"
+   ],
+   "checked": "2026-10-15",
+   "dod": "2003-03-29",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "DERRICK T DOZIER SR|1999-02-03": {
    "accounts": [
     "0906135005"
@@ -101,6 +128,38 @@
    "checked": "2026-10-15",
    "dod": "2001-07-10",
    "results": 0,
+   "status": "NONE FOUND"
+  },
+  "EARL T GROSS|1999-12-20": {
+   "accounts": [
+    "0908055696"
+   ],
+   "checked": "2026-10-15",
+   "dod": "1999-12-20",
+   "results": 7,
+   "status": "NONE FOUND"
+  },
+  "ELMER J HILL|2006-01-23": {
+   "accounts": [
+    "0905033055"
+   ],
+   "checked": "2026-10-15",
+   "county": "Prince George's",
+   "dod": "2006-01-23",
+   "estate_number": "89037",
+   "record_ids": [
+    "1909158247"
+   ],
+   "results": 4,
+   "status": "CLOSED"
+  },
+  "GEORGE R SAVOY III|2000-09-13": {
+   "accounts": [
+    "0901044753"
+   ],
+   "checked": "2026-10-15",
+   "dod": "2000-09-13",
+   "results": 4,
    "status": "NONE FOUND"
   },
   "GERALD S HANCOCK|2005-09-19": {
@@ -171,6 +230,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "JENNIFER L JOHNSON|2009-07-08": {
+   "accounts": [
+    "0906158897"
+   ],
+   "checked": "2026-10-15",
+   "county": "Howard",
+   "dod": "2009-07-08",
+   "estate_number": "20983",
+   "record_ids": [
+    "1908819700"
+   ],
+   "results": 5,
+   "status": "CLOSED"
+  },
   "JOSEPH A DIACHENKO|2005-10-25": {
    "accounts": [
     "0906034896"
@@ -193,6 +266,20 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "JOSEPH L GREENFIELD|1989-12-02": {
+   "accounts": [
+    "0908017387"
+   ],
+   "checked": "2026-10-15",
+   "county": "Charles",
+   "dod": "1989-12-02",
+   "estate_number": "20181",
+   "record_ids": [
+    "1908685912"
+   ],
+   "results": 7,
+   "status": "ARCHIVED"
   },
   "JOYCE A HART|2010-05-29": {
    "accounts": [
@@ -226,12 +313,67 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "MARIA E BUTLER|2010-02-26": {
+   "accounts": [
+    "0906238564"
+   ],
+   "checked": "2026-10-15",
+   "county": "Prince George's",
+   "dod": "2010-02-26",
+   "estate_number": "84496",
+   "record_ids": [
+    "1909162321"
+   ],
+   "results": 2,
+   "status": "CLOSED"
+  },
+  "MARY D ELLINGER|2011-07-15": {
+   "accounts": [
+    "0902001632"
+   ],
+   "checked": "2026-10-15",
+   "county": "Baltimore",
+   "dod": "2011-07-15",
+   "estate_number": "164426",
+   "record_ids": [
+    "1908514213"
+   ],
+   "results": 4,
+   "status": "CLOSED"
+  },
+  "MARY ELLEN GREENFIELD|1988-05-24": {
+   "accounts": [
+    "0908017387"
+   ],
+   "checked": "2026-10-15",
+   "dod": "1988-05-24",
+   "results": 3,
+   "status": "NONE FOUND"
+  },
+  "MICHAEL D PROCTOR|1991-02-12": {
+   "accounts": [
+    "0906107907"
+   ],
+   "checked": "2026-10-15",
+   "dod": "1991-02-12",
+   "results": 7,
+   "status": "NONE FOUND"
+  },
   "NELLIE F COLEMAN|2007-04-22": {
    "accounts": [
     "0905028299"
    ],
    "checked": "2026-10-15",
    "dod": "2007-04-22",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
+  "PATRICIA A DOZIER|2011-03-26": {
+   "accounts": [
+    "0906135005"
+   ],
+   "checked": "2026-10-15",
+   "dod": "2011-03-26",
    "results": 0,
    "status": "NONE FOUND"
   },
@@ -266,6 +408,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "RALLIE BROWN JR|2000-06-15": {
+   "accounts": [
+    "0910002478"
+   ],
+   "checked": "2026-10-15",
+   "county": "Charles",
+   "dod": "2000-06-15",
+   "estate_number": "14787",
+   "record_ids": [
+    "1908676147"
+   ],
+   "results": 2,
+   "status": "CLOSED"
+  },
   "RUPERT E MOBBS|2011-10-24": {
    "accounts": [
     "0906086217"
@@ -286,6 +442,15 @@
    ],
    "checked": "2026-10-15",
    "dod": "2013-01-15",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
+  "SAVANNAH M DEVORE|2004-02-02": {
+   "accounts": [
+    "0910007194"
+   ],
+   "checked": "2026-10-15",
+   "dod": "2004-02-02",
    "results": 0,
    "status": "NONE FOUND"
   },
@@ -351,6 +516,29 @@
    ],
    "results": 4,
    "status": "CLOSED"
+  },
+  "WALLACE F DANIELSON JR|2013-01-04": {
+   "accounts": [
+    "0910015847"
+   ],
+   "checked": "2026-10-15",
+   "county": "Charles",
+   "dod": "2013-01-04",
+   "estate_number": "18803",
+   "record_ids": [
+    "1908678719"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "YVONNE E BYRD|2010-11-28": {
+   "accounts": [
+    "0906169031"
+   ],
+   "checked": "2026-10-15",
+   "dod": "2010-11-28",
+   "results": 1,
+   "status": "NONE FOUND"
   }
  },
  "updated": "2026-10-15"

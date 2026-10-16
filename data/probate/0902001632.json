@@ -1,0 +1,249 @@
+{
+ "account": "0902001632",
+ "estates": [
+  {
+   "estate_number": "164426",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "07/21/2011",
+   "date_closed": "11/08/2012",
+   "decedent": "MARY DENISE ELLINGER",
+   "date_of_death": "7/15/2011",
+   "date_of_filing": "07/21/2011",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "DAVID N PESSIN [901 DULANEY VALLEY ROAD, SUITE 500, TOWSON, MD 21204]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CHARLES F. ELLINGER III",
+     "address": "42891 SPRING MORNING CT, BROADLANDS, VA 20148"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/21/2011",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED - 8/16/2001",
+     "pages": 15
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 2,
+     "code": "1425",
+     "desc": "PURPORTED CODICIL DATED - 4/21/2005",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 5
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 4,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 5,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 6,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 7,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 8,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 9,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE -",
+     "pages": 3
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 10,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS - TOWSON TIMES",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 11,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 12,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/22/2011",
+     "n": 13,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 1
+    },
+    {
+     "filed": "08/15/2011",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE) - TOWSON TIMES",
+     "pages": 1
+    },
+    {
+     "filed": "09/21/2011",
+     "n": 15,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2011",
+     "n": 16,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/19/2011",
+     "n": 17,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 17
+    },
+    {
+     "filed": "03/20/2012",
+     "n": 18,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN",
+     "pages": 1
+    },
+    {
+     "filed": "03/22/2012",
+     "n": 19,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/2012",
+     "n": 20,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING ACCOUNT GRANTED TO 05/21/2012",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2012",
+     "n": 21,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2012",
+     "n": 22,
+     "code": "1383",
+     "desc": "FIRST INTERIM ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "04/26/2012",
+     "n": 23,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT DATED 04/25/2012",
+     "pages": 1
+    },
+    {
+     "filed": "09/26/2012",
+     "n": 24,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/04/2012",
+     "n": 25,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "10/25/2012",
+     "n": 26,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING ACCOUNT GRANTED TO 11/26/2012",
+     "pages": 1
+    },
+    {
+     "filed": "11/07/2012",
+     "n": 27,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "11/07/2012",
+     "n": 28,
+     "code": "1385",
+     "desc": "SECOND FINAL ACCOUNT",
+     "pages": 8
+    },
+    {
+     "filed": "11/08/2012",
+     "n": 29,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED 11/07/2012)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-11-08",
+   "interested_persons": [
+    {
+     "name": "CHARLES F. ELLINGER III",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 6,
+   "probate_age_days": 476,
+   "days_since_last_docket": 5089,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1908514213",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1908514213",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARY D ELLINGER"
+  }
+ ]
+}

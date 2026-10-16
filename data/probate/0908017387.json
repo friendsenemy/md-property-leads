@@ -1,0 +1,234 @@
+{
+ "account": "0908017387",
+ "estates": [
+  {
+   "estate_number": "20181",
+   "status": "ARCHIVED",
+   "type": "RE",
+   "date_opened": "09/17/2015",
+   "date_closed": "08/22/2017",
+   "decedent": "JOSEPH LEO GREENFIELD",
+   "date_of_death": "12/2/1989",
+   "date_of_filing": "09/15/2015",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "SUE A GREER [PO BOX 1616, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JOSEPH E. GREENFIELD",
+     "address": "5295 HOLLY ST, INDIAN HEAD, MD 20640"
+    },
+    {
+     "name": "MARY E. GREENFIELD",
+     "address": "2900 CAPRI DRIVE, FORT WASHINGTON, MD 20744"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/15/2015",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 2,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 4,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS (NOT USED)",
+     "pages": 1
+    },
+    {
+     "filed": "10/28/2015",
+     "n": 5,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "01/12/2016",
+     "n": 6,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "09/16/2016",
+     "n": 7,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "09/16/2016",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "10/12/2016",
+     "n": 9,
+     "code": "1112",
+     "desc": "AMENDED REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "11/06/2016",
+     "n": 10,
+     "code": "1254",
+     "desc": "LINE TO AMEND LIST OF INTERESTED PERSONS",
+     "pages": 4
+    },
+    {
+     "filed": "11/14/2016",
+     "n": 11,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "11/14/2016",
+     "n": 12,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2016",
+     "n": 13,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "12/15/2016",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "12/15/2016",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/12/2016",
+     "n": 16,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 17,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2017",
+     "n": 18,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE ACCOUNT HEARING SCHEDULED FOR 18 JULY 2017 @ 1:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2017",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2017",
+     "n": 20,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ADMINISTRATION ACCOUNT/ NEED MARY GREENFIELD, PR - SIGNATURE",
+     "pages": 2
+    },
+    {
+     "filed": "08/02/2017",
+     "n": 21,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ADMINISTRATION ACCOUNT ORIGINAL SIGNATURE OF CO-PR",
+     "pages": 3
+    },
+    {
+     "filed": "08/22/2017",
+     "n": 22,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED  AUGUST 2, 2017)",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2017",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "11/06/2025",
+     "n": 24,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-11-06",
+   "interested_persons": [
+    {
+     "name": "JOSEPH E. GREENFIELD",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "MARY E. GREENFIELD",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 9420,
+   "probate_age_days": 705,
+   "days_since_last_docket": 343,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1908685912",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1908685912",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "JOSEPH L GREENFIELD"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "MARY ELLEN GREENFIELD",
+   "decedent_searched": "MARY ELLEN GREENFIELD",
+   "date_of_death": "1988-05-24",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}
