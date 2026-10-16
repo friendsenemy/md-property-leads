@@ -1,0 +1,312 @@
+{
+ "account": "0905009456",
+ "estates": [
+  {
+   "estate_number": "19424",
+   "status": "OPEN",
+   "type": "RE",
+   "date_opened": "06/30/2014",
+   "date_closed": "",
+   "decedent": "THOMAS GERARD BENEDICT",
+   "date_of_death": "5/7/2014",
+   "date_of_filing": "09/10/2024",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "BRIAN  GORMLEY [7910 WOODMONT AVE, STE 600, BETHESDA, MD 20814-3064]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "VIRGINIA LEE BENEDICT",
+     "address": "9920 CLIFFTON DR, NEWBURG, MD 20664-2247"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/30/2014",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "06/30/2014",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2014",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2014",
+     "n": 4,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 7
+    },
+    {
+     "filed": "06/30/2014",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/30/2014",
+     "n": 6,
+     "code": "1244",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "07/31/2014",
+     "n": 7,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 07/29/2014 BY FIA CARD SERVICES NA FOR $6,615.07",
+     "pages": 3
+    },
+    {
+     "filed": "08/18/2014",
+     "n": 8,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 08/18/2014 BY ASCENSIONPOINT RECOVERY SERVICES, LLC FOR $1,302.45",
+     "pages": 7
+    },
+    {
+     "filed": "06/30/2015",
+     "n": 9,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2015",
+     "n": 10,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/09/2024",
+     "n": 11,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED  10/14/1974",
+     "pages": 3
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 12,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 13,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 14,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 15,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 16,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 17,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 18,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 19,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "09/10/2024",
+     "n": 20,
+     "code": "1244",
+     "desc": "ARCHIVE REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2024",
+     "n": 21,
+     "code": "1244",
+     "desc": "ARCHIVES FILE RETURN",
+     "pages": 1
+    },
+    {
+     "filed": "09/26/2024",
+     "n": 22,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/26/2024",
+     "n": 23,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/07/2024",
+     "n": 24,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/04/2024",
+     "n": 25,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "05/12/2025",
+     "n": 26,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT/ 1ST +PROBATE FEE DUE",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2025",
+     "n": 27,
+     "code": "1383",
+     "desc": "AFFIDAVIT IN LIEU OF FIRST ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "05/27/2025",
+     "n": 28,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AFFIDAVIT IN LIEU OF FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2025",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2025",
+     "n": 30,
+     "code": "1254",
+     "desc": "LINE TO ENTER AND STRIKE COUNSEL",
+     "pages": 1
+    },
+    {
+     "filed": "10/28/2025",
+     "n": 31,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT/ 2ND",
+     "pages": 1
+    },
+    {
+     "filed": "11/17/2025",
+     "n": 32,
+     "code": "1383",
+     "desc": "AFFIDAVIT IN LIEU OF 2ND ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "11/25/2025",
+     "n": 33,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AFFIDAVIT IN LIEU OF SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/25/2025",
+     "n": 34,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2026",
+     "n": 35,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT, THIRD",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2026",
+     "n": 36,
+     "code": "1390",
+     "desc": "AFFIDAVIT IN LIEU OF THIRD ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "09/01/2026",
+     "n": 37,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AFFIDAVIT IN LIEU OF THIRD INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/01/2026",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2026-09-01",
+   "interested_persons": [
+    {
+     "name": "VIRGINIA LEE BENEDICT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 54,
+   "probate_age_days": 4491,
+   "days_since_last_docket": 45,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1909183226",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1909183226",
+   "title_class": "D2-S",
+   "title_class_label": "Estate open and stale",
+   "decedent_searched": "THOMAS G BENEDICT"
+  }
+ ]
+}

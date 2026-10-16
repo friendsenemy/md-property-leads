@@ -1,0 +1,1407 @@
+{
+ "account": "0907019688",
+ "estates": [
+  {
+   "estate_number": "15671",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "08/29/2007",
+   "date_closed": "03/07/2012",
+   "decedent": "GEORGE LEMUEL PIGFORD",
+   "date_of_death": "8/21/2007",
+   "date_of_filing": "08/29/2007",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "TWO  (2) ATTORNEYS FOR ESTATE [SEE FILE LOG]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ANDREA SHANTEE KING",
+     "address": "PO BOX 864, LANHAM, MD 20703"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/29/2007",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE JUDICIAL",
+     "pages": 2
+    },
+    {
+     "filed": "08/29/2007",
+     "n": 2,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2007",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2007",
+     "n": 4,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/30/2007",
+     "n": 5,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 2
+    },
+    {
+     "filed": "08/31/2007",
+     "n": 6,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - JUDICIAL -CHARLES E MCCLAIN SR",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2007",
+     "n": 7,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - JUDICIAL - ANDREA S KING",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2007",
+     "n": 8,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2007",
+     "n": 9,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL CHARLES E MCCLAIN, SR.",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2007",
+     "n": 10,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS TYRONE THOMPSON",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2007",
+     "n": 11,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2007",
+     "n": 12,
+     "code": "1244",
+     "desc": "ADDRESS FOR TYRONE THOMPSON ON LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2007",
+     "n": 13,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED VIA FAX",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2007",
+     "n": 14,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "09/13/2007",
+     "n": 15,
+     "code": "1244",
+     "desc": "RETURNED CERTIFIED MAIL FOR TYRONE THOMPSON - UNABLE TO FORWARD NOT KNOWN",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2007",
+     "n": 16,
+     "code": "1244",
+     "desc": "RESENT RETURNED MAIL FOR TYRONE THOMPSON REG. MAIL",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2007",
+     "n": 17,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - LORON DORDON",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2007",
+     "n": 18,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2007",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2007",
+     "n": 20,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (JUDICIAL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/2007",
+     "n": 21,
+     "code": "1244",
+     "desc": "UNCLAIMED CERTIFIED MAIL FOR ANDREA KING",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/2007",
+     "n": 22,
+     "code": "1244",
+     "desc": "SIGN IN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "09/28/2007",
+     "n": 23,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 12 - SIDE A",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2007",
+     "n": 24,
+     "code": "1284",
+     "desc": "ORDER OF COURT NO DECISION WILL BE MADE UNTIL A DNA TEST IS COMPLETED",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2007",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2007",
+     "n": 26,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPOINTING CHARLES MCCLAIN SPECIAL ADMINISTRATOR",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2007",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2007",
+     "n": 28,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION - ONE LETTER MAILED TO CHARLES MCCLAIN",
+     "pages": 1
+    },
+    {
+     "filed": "10/09/2007",
+     "n": 29,
+     "code": "1244",
+     "desc": "RETURNED CERTIFIED MAIL FOR LARON GORDON",
+     "pages": 1
+    },
+    {
+     "filed": "10/31/2007",
+     "n": 30,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR LARON GORDON-NEED NEW ADDRESS",
+     "pages": 2
+    },
+    {
+     "filed": "12/20/2007",
+     "n": 31,
+     "code": "1254",
+     "desc": "LINE TO ENTER BIRTH CERTIFICATE OF LARON GORDON",
+     "pages": 3
+    },
+    {
+     "filed": "01/08/2008",
+     "n": 32,
+     "code": "1332",
+     "desc": "LETTER FROM JUDGES TO SPECIAL ADMINISTATOR REGARDING DNA TESTING",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2008",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/30/2008",
+     "n": 34,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED - CHARLES MCCLAIN",
+     "pages": 8
+    },
+    {
+     "filed": "01/30/2008",
+     "n": 35,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "01/30/2008",
+     "n": 36,
+     "code": "1244",
+     "desc": "INCORRECT INVENTORY",
+     "pages": 40
+    },
+    {
+     "filed": "02/08/2008",
+     "n": 37,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE DHMH $808.88",
+     "pages": 2
+    },
+    {
+     "filed": "02/12/2008",
+     "n": 38,
+     "code": "1279",
+     "desc": "MOTION FOR RECONSIDERATION",
+     "pages": 4
+    },
+    {
+     "filed": "02/12/2008",
+     "n": 39,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "02/13/2008",
+     "n": 40,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING MOTION FOR RECONSIDERATION",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2008",
+     "n": 41,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR MARCH 18, 2008 AT 10 AM REGARDING DETERMINING THE RELATION OF ANDREA KING TO DECEDENT",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2008",
+     "n": 42,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/20/2008",
+     "n": 43,
+     "code": "1300",
+     "desc": "REQUEST FOR  EXTENSION TO FILE AMENDED INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "02/21/2008",
+     "n": 44,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO FILE AMENDED INVENTORY DUE MARCH 21,",
+     "pages": 2008
+    },
+    {
+     "filed": "02/21/2008",
+     "n": 45,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "02/27/2008",
+     "n": 46,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 8
+    },
+    {
+     "filed": "03/07/2008",
+     "n": 47,
+     "code": "1244",
+     "desc": "AFFIDAVIT OF SERVICE - SUBPOENA LEFT WITH SHAWNIE WINSLOW",
+     "pages": 2
+    },
+    {
+     "filed": "03/07/2008",
+     "n": 48,
+     "code": "1244",
+     "desc": "AFFIDAVIT OF SERVICE - SUBPOENA LEFT WITH BRENDA JACKSON",
+     "pages": 2
+    },
+    {
+     "filed": "03/07/2008",
+     "n": 49,
+     "code": "1244",
+     "desc": "AFFIDAVIT OF SERVICE - SUBPOENA FOR JENAIR BUTTS LEFT WITH UNIDENTIFIED MALE",
+     "pages": 2
+    },
+    {
+     "filed": "03/07/2008",
+     "n": 50,
+     "code": "1244",
+     "desc": "AFFIDAVIT OF SERVICE - SUBPOENA FOR KIM ANDERSON  WAS LEFT WITH UNIDENTIFIED MALE",
+     "pages": 2
+    },
+    {
+     "filed": "03/18/2008",
+     "n": 51,
+     "code": "1244",
+     "desc": "HEARING SIGN IN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2008",
+     "n": 52,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 4-2008 SIDE A/B",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2008",
+     "n": 53,
+     "code": "1333",
+     "desc": "EXHIBITS",
+     "pages": 2
+    },
+    {
+     "filed": "03/18/2008",
+     "n": 54,
+     "code": "1284",
+     "desc": "ORDER OF COURT ISSUED FINDING THAT ANDREA S. KING IS THE NATURAL DAUGHTER OF DECEDENT/APPOINTING A. KING PR UPON THE FILING A BOND IN THE AMOUNT OF $18,000.00",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2008",
+     "n": 55,
+     "code": "1259",
+     "desc": "SUBPEONA/SUMMONS SERVED",
+     "pages": 2
+    },
+    {
+     "filed": "03/21/2008",
+     "n": 56,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2008",
+     "n": 57,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 3
+    },
+    {
+     "filed": "03/31/2008",
+     "n": 58,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM BARBARA PIGFORD DUDLEY (SISTER) - NO ADDRESS GIVEN FOR HER AND UNSIGNED",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2008",
+     "n": 59,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2008",
+     "n": 60,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "04/03/2008",
+     "n": 61,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2008",
+     "n": 62,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2008",
+     "n": 63,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION-2",
+     "pages": 1
+    },
+    {
+     "filed": "04/04/2008",
+     "n": 64,
+     "code": "1122",
+     "desc": "AMENDED INVENTORY",
+     "pages": 12
+    },
+    {
+     "filed": "04/15/2008",
+     "n": 65,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM PERSONAL REP",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2008",
+     "n": 66,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2008",
+     "n": 67,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2008",
+     "n": 68,
+     "code": "1253",
+     "desc": "PETITION TO FOR SPECIAL ADMINISTRATOR FEES AND EXP.",
+     "pages": 8
+    },
+    {
+     "filed": "04/14/2008",
+     "n": 69,
+     "code": "1122",
+     "desc": "SECOND AMENDED INVENTORY",
+     "pages": 12
+    },
+    {
+     "filed": "04/23/2008",
+     "n": 70,
+     "code": "1382",
+     "desc": "THIRD INVENTORY AMENDED",
+     "pages": 15
+    },
+    {
+     "filed": "04/23/2008",
+     "n": 71,
+     "code": "1300",
+     "desc": "REQUEST FOR COURT TO DESIGNATE SOLE HEIR",
+     "pages": 5
+    },
+    {
+     "filed": "04/29/2008",
+     "n": 72,
+     "code": "1284",
+     "desc": "ORDER OF COURT DENYING SPECIAL ADMINISTRATOR FEES UNTIL FINAL ACCT IS FILED",
+     "pages": 1
+    },
+    {
+     "filed": "05/01/2008",
+     "n": 73,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2008",
+     "n": 74,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2008",
+     "n": 75,
+     "code": "1244",
+     "desc": "LINE",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2008",
+     "n": 76,
+     "code": "1122",
+     "desc": "FOURTH AMENDED INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "05/05/2008",
+     "n": 77,
+     "code": "1244",
+     "desc": "FIRST ACCOUNT - NO VERIFICATION PAGE",
+     "pages": 2
+    },
+    {
+     "filed": "05/13/2008",
+     "n": 78,
+     "code": "1284",
+     "desc": "ORDER OF COURT DENYING THE REQUEST TO DESIGNATE SOLE HEIR",
+     "pages": 1
+    },
+    {
+     "filed": "05/13/2008",
+     "n": 79,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/13/2008",
+     "n": 80,
+     "code": "1332",
+     "desc": "FIRST AND FINAL ACCOUNT OF SPECIAL ADMINSTRATOR",
+     "pages": 2
+    },
+    {
+     "filed": "05/30/2008",
+     "n": 81,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2008",
+     "n": 82,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM JENNIFER R. WILLIAMS, PARALEGAL",
+     "pages": 1
+    },
+    {
+     "filed": "06/05/2008",
+     "n": 83,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM ATTY MCCLAIN'S OFFICE",
+     "pages": 4
+    },
+    {
+     "filed": "06/09/2008",
+     "n": 84,
+     "code": "1244",
+     "desc": "EXEMPLIFIED COPY OF ESTATE FILINGS",
+     "pages": 1
+    },
+    {
+     "filed": "06/06/2008",
+     "n": 85,
+     "code": "1244",
+     "desc": "AMENDED FIRST AND FINAL ACCOUNT OF SPECIAL ADMINISTRATOR",
+     "pages": 2
+    },
+    {
+     "filed": "06/06/2008",
+     "n": 86,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "06/09/2008",
+     "n": 87,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2008",
+     "n": 88,
+     "code": "1244",
+     "desc": "LINE",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2008",
+     "n": 89,
+     "code": "1295",
+     "desc": "EXCEPTIONS AND APPEAL FOR ALLOWANCE",
+     "pages": 10
+    },
+    {
+     "filed": "06/30/2008",
+     "n": 90,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE FILED BY SOUTHERN MARYLAND OIL, INC. - $ 213.21",
+     "pages": 5
+    },
+    {
+     "filed": "07/24/2008",
+     "n": 91,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE FOR FAILURE TO TO FILE ITEMIZED STATEMENT FOR INCOME/RENT LISTED ON THE ACCOUNT HEARING SCHEDULED FOR 12 AUGUST 2008 @ 1:50 PM",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2008",
+     "n": 92,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2008",
+     "n": 93,
+     "code": "1244",
+     "desc": "SUPPLEMENT TO AMENDED FIRST AND FINAL ACCOUNT OF SPECIAL ADMINSTRATOR",
+     "pages": 6
+    },
+    {
+     "filed": "08/07/2008",
+     "n": 94,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 7
+    },
+    {
+     "filed": "08/14/2008",
+     "n": 95,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "08/25/2008",
+     "n": 96,
+     "code": "1244",
+     "desc": "SECOND SUPPLEMENT TO AMENDED FIRST AND FINAL ACCOUNT OF SPECIAL ADMINISTRATOR",
+     "pages": 24
+    },
+    {
+     "filed": "09/23/2008",
+     "n": 97,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST AND FINAL ACCOUNT UNDER SPECIAL ADM.",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2008",
+     "n": 98,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2008",
+     "n": 99,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 12
+    },
+    {
+     "filed": "10/02/2008",
+     "n": 100,
+     "code": "1244",
+     "desc": "WITHDRAWAL OF APPEARANCE (CHARLES E MCCLAIN, SR)",
+     "pages": 1
+    },
+    {
+     "filed": "10/09/2008",
+     "n": 101,
+     "code": "1200",
+     "desc": "ENTRY OF APPEARANCE (DOUGLAS R TAYLOR)",
+     "pages": 2
+    },
+    {
+     "filed": "10/14/2008",
+     "n": 102,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING ATTY FEES",
+     "pages": 1
+    },
+    {
+     "filed": "10/15/2008",
+     "n": 103,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/04/2008",
+     "n": 104,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR  FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 105,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  FOR FAILURE TO FILE FIRST ACCOUNT HEARING SCHEDULED FOR 17 FEBRUARY 2009 @ 1:30 PM",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 106,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2009",
+     "n": 107,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED- DOUGLAS TAYLOR",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2009",
+     "n": 108,
+     "code": "1244",
+     "desc": "HEARING SIGN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2009",
+     "n": 109,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 2-2009 SIDE B",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2009",
+     "n": 110,
+     "code": "1244",
+     "desc": "COPY OF FIRST ACCOUNT FILED BY DOUGLAS R. TAYLOR AT SHOWCAUSE",
+     "pages": 43
+    },
+    {
+     "filed": "02/17/2009",
+     "n": 111,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2009",
+     "n": 112,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 60
+    },
+    {
+     "filed": "03/17/2009",
+     "n": 113,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR APRIL 14, 2009 AT 10:00 A.M. REGARDING QUESTIONS ON EXPENSES SHOWN ON FIRST ACCT.",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2009",
+     "n": 114,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2009",
+     "n": 115,
+     "code": "1244",
+     "desc": "RETURN MAIL FOR KIM DIXON",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/2009",
+     "n": 116,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW - DOUGLAS TAYLOR, ATTY",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/2009",
+     "n": 117,
+     "code": "1244",
+     "desc": "RETURN MAIL FOR KIM DIXON - RESENT AGAIN",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2009",
+     "n": 118,
+     "code": "1284",
+     "desc": "ORDER OF COURT MUST AMENDED FIRST ACCOUNT BY MAY 14,",
+     "pages": 2009
+    },
+    {
+     "filed": "04/14/2009",
+     "n": 119,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2009",
+     "n": 120,
+     "code": "1244",
+     "desc": "HEARING SIGN IN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2009",
+     "n": 121,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 4-2009 SIDE B",
+     "pages": 1
+    },
+    {
+     "filed": "05/15/2009",
+     "n": 122,
+     "code": "1254",
+     "desc": "LINE TO WITHDRAW AND ATTORNEY AND ENTER  APPEARANCE OF TIMOTHY O'BRIEN",
+     "pages": 2
+    },
+    {
+     "filed": "05/15/2009",
+     "n": 123,
+     "code": "1231",
+     "desc": "PETITION FOR EXTENSION OF TIME FOR FILING AMENDED FIRST ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "05/19/2009",
+     "n": 124,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING EXTENSION TO FILE AMENDED FIRST ACCT.",
+     "pages": 1
+    },
+    {
+     "filed": "05/19/2009",
+     "n": 125,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/20/2009",
+     "n": 126,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 05/18/2009 BY SOUTHERN MD HOSPITAL FOR $108,252.89",
+     "pages": 3
+    },
+    {
+     "filed": "07/06/2009",
+     "n": 127,
+     "code": "1244",
+     "desc": "AMENDED FIRST ACCOUNT - NEEDS CORRECTIONS",
+     "pages": 16
+    },
+    {
+     "filed": "07/06/2009",
+     "n": 128,
+     "code": "1331",
+     "desc": "LINE FOR CHANGE OF ADDRESS OF PR",
+     "pages": 2
+    },
+    {
+     "filed": "07/06/2009",
+     "n": 129,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 4
+    },
+    {
+     "filed": "08/06/2009",
+     "n": 130,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 2
+    },
+    {
+     "filed": "08/24/2009",
+     "n": 131,
+     "code": "1383",
+     "desc": "RESTATED AMENDED ACCOUNT",
+     "pages": 15
+    },
+    {
+     "filed": "09/10/2009",
+     "n": 132,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR KIM DIXON",
+     "pages": 1
+    },
+    {
+     "filed": "10/20/2009",
+     "n": 133,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING RESTATED AMENDED FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/21/2009",
+     "n": 134,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/22/2010",
+     "n": 135,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR  SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2010",
+     "n": 136,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED-FAX REQUESTING A 30 DAY EXTENSION TO FILE THE SECOND ACCT.",
+     "pages": 2
+    },
+    {
+     "filed": "04/26/2010",
+     "n": 137,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING SECOND ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/28/2010",
+     "n": 138,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO  FOR FILING SECOND ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2010",
+     "n": 139,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE SECOND ADMINISTRATION ACCOUNT HEARING SCHEDULED FOR 15 JUNE 2010 @ 1:20 PM",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2010",
+     "n": 140,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/2010",
+     "n": 141,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/2010",
+     "n": 142,
+     "code": "1244",
+     "desc": "SECOND ACCOUNT",
+     "pages": 14
+    },
+    {
+     "filed": "06/10/2010",
+     "n": 143,
+     "code": "1254",
+     "desc": "LINE ENTERING APPEARANCE OF REED SPELLMAN",
+     "pages": 2
+    },
+    {
+     "filed": "06/15/2010",
+     "n": 144,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/15/2010",
+     "n": 145,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 146,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 147,
+     "code": "1110",
+     "desc": "NOTICE OF FILING THIRD AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 148,
+     "code": "1244",
+     "desc": "THIRD AND FINAL ADMINISTRATION ACCOUNT INCORRECT",
+     "pages": 12
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 149,
+     "code": "1110",
+     "desc": "NOTICE OF PETITION FOR ALLOWNACE OF ATTORNEYS FEES",
+     "pages": 1
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 150,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 15
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 151,
+     "code": "1244",
+     "desc": "COPY OF NOTICE OF DISALLOWANCE ACEI/SO MD HOSPITAL",
+     "pages": 1
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 152,
+     "code": "1244",
+     "desc": "COPY OF NOTICE OF DISALLOWANCE SMO",
+     "pages": 1
+    },
+    {
+     "filed": "10/04/2010",
+     "n": 153,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/04/2010",
+     "n": 154,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE SMO",
+     "pages": 1
+    },
+    {
+     "filed": "10/04/2010",
+     "n": 155,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE ACEI/SMH",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2010",
+     "n": 156,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 2
+    },
+    {
+     "filed": "01/21/2011",
+     "n": 157,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE CORRECTED THIRD AND FINAL ADMINISTRATION ACCOUNT HEARING SCHEDULED FOR 8 FEBRUARY 2011 @ 1:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2011",
+     "n": 158,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2011",
+     "n": 159,
+     "code": "1244",
+     "desc": "DOCUMENTATION FOR REAL ESTATE LISTED ON AMENDED INVENTORY FILED 6 JULY",
+     "pages": 2009
+    },
+    {
+     "filed": "02/15/2011",
+     "n": 160,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 3/8/2011",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2011",
+     "n": 161,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/08/2011",
+     "n": 162,
+     "code": "1284",
+     "desc": "ORDER OF COURT REGARDING HEARING HELD ON 3/8/2011",
+     "pages": 1
+    },
+    {
+     "filed": "03/10/2011",
+     "n": 164,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/08/2011",
+     "n": 165,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS.27-2011 SIDE B",
+     "pages": 1
+    },
+    {
+     "filed": "04/15/2011",
+     "n": 166,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR AMENDED THIRD AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2011",
+     "n": 167,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE FOR FAILURE TO FILE CORRECTED THIRD AND FINAL ADMINISTRATION ACCOUNT HEARING SCHEDULED FOR 31 MAY 2011 @ 1:20 PM",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2011",
+     "n": 168,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/31/2011",
+     "n": 169,
+     "code": "1244",
+     "desc": "FINAL ACCOUNT WAITING FOR ADDITIONAL INFO",
+     "pages": 14
+    },
+    {
+     "filed": "06/07/2011",
+     "n": 170,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING 30 DAY EXTENSION TO FILE FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/08/2011",
+     "n": 171,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/31/2011",
+     "n": 173,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 35 A",
+     "pages": 1
+    },
+    {
+     "filed": "07/05/2011",
+     "n": 174,
+     "code": "1244",
+     "desc": "DOCUMENTATION ON LOAN FAXED BY MR SPELLMAN",
+     "pages": 5
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 175,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/2011",
+     "n": 176,
+     "code": "1270",
+     "desc": "HEARING SCHEDULED FOR 26 AUGUST 2011 TO DISCUSS AUDITING QUESTIONS ON FINAL ACCOUNT AND FINAL DISTRIBUTION",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/2011",
+     "n": 177,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/12/2011",
+     "n": 178,
+     "code": "1244",
+     "desc": "AMENDED THIRD AND FINAL ADMINISTRATION ACCOUNT - SAME ACCOUNT AS FILED IN MAY?",
+     "pages": 14
+    },
+    {
+     "filed": "08/12/2011",
+     "n": 179,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS AMENDED",
+     "pages": 1
+    },
+    {
+     "filed": "08/12/2011",
+     "n": 180,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2011",
+     "n": 182,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2011",
+     "n": 183,
+     "code": "1385",
+     "desc": "SECOND AMENDED THIRD AND FINAL ADMINSTRATION ACCOUNT",
+     "pages": 15
+    },
+    {
+     "filed": "10/18/2011",
+     "n": 184,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/24/2011",
+     "n": 185,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM-DHMH",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/2011",
+     "n": 186,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/2011",
+     "n": 187,
+     "code": "1244",
+     "desc": "DISTRIBUTION AGREEMENT AND RELEASE - ANDREA S. KING",
+     "pages": 3
+    },
+    {
+     "filed": "11/18/2011",
+     "n": 188,
+     "code": "1244",
+     "desc": "DISTRIBUTION AGREEMENT AND RELEASE - SHIRNELLE DIXON",
+     "pages": 3
+    },
+    {
+     "filed": "11/18/2011",
+     "n": 189,
+     "code": "1244",
+     "desc": "DISTRIBUTION AGREEMENT AND RELEASE - SHIRNEKA DIXON",
+     "pages": 3
+    },
+    {
+     "filed": "11/18/2011",
+     "n": 190,
+     "code": "1244",
+     "desc": "DISTRIBUTION AGREEMENT AND RELEASE - NIKITA DIXON",
+     "pages": 3
+    },
+    {
+     "filed": "11/18/2011",
+     "n": 191,
+     "code": "1244",
+     "desc": "DISTRIBUTION AGREEMENT AND RELEASE - KENT L SMITH JR",
+     "pages": 3
+    },
+    {
+     "filed": "12/14/2011",
+     "n": 192,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM DHMH IS ACCEPTING 800.00 AS PAYMENT IN FULL",
+     "pages": 2
+    },
+    {
+     "filed": "02/22/2012",
+     "n": 193,
+     "code": "1223",
+     "desc": "TOTAL SATISFACTION OF CLAIM FROM DHMH",
+     "pages": 2
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 194,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 195,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING ATTY FEES",
+     "pages": 2
+    },
+    {
+     "filed": "03/07/2012",
+     "n": 196,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-03-07",
+   "interested_persons": [
+    {
+     "name": "ANDREA SHANTEE KING",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "PERSONAL REP",
+     "role": "CORRESPONDENT",
+     "source": "docket 65"
+    },
+    {
+     "name": "ATTY MCCLAIN'S OFFICE",
+     "role": "CORRESPONDENT",
+     "source": "docket 83"
+    }
+   ],
+   "death_to_probate_days": 8,
+   "probate_age_days": 1652,
+   "days_since_last_docket": 5336,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1909176931",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1909176931",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GEORGE L PIGFORD"
+  }
+ ]
+}

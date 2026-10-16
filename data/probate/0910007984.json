@@ -1,0 +1,67 @@
+{
+ "account": "0910007984",
+ "estates": [
+  {
+   "estate_number": "26188",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "11/16/2023",
+   "date_closed": "11/16/2023",
+   "decedent": "CATHERINE A HUFFMAN",
+   "date_of_death": "2/4/2008",
+   "date_of_filing": "11/16/2023",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "11/16/2023",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED FEBRUARY 09,",
+     "pages": 1989
+    },
+    {
+     "filed": "11/16/2023",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "11/16/2023",
+     "n": 3,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2023-11-16",
+   "interested_persons": [],
+   "death_to_probate_days": 5764,
+   "probate_age_days": 0,
+   "days_since_last_docket": 1065,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1909178028",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1909178028",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CATHERINE A HUFFMAN"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "LUTHER R HUFFMAN",
+   "decedent_searched": "LUTHER R HUFFMAN",
+   "date_of_death": "2011-12-31",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}
