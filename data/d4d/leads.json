@@ -31,14 +31,17 @@
    "lon": -76.79850153174236,
    "sdat_url": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=09&SearchType=ACCT&District=08&AccountNumber=054495",
    "spotted": "2026-10-17",
-   "verdict": "hot",
-   "headline": "Pre-foreclosure plus an open county nuisance case. A 2003 mortgage has been in default since about 2013; the foreclosure was stopped by bankruptcy and dropped in 2016, and the loan has since been sold to a new servicer. Carolyn Hudson owns it alone after a 2013 divorce.",
+   "verdict": "cold",
+   "headline": "OCCUPIED: skip trace shows Carolyn Hudson (66) still living here with sons Tyler (31) and Brandon (29), current as of 10/06/2026. Distress is real (mortgage in default since ~2013, foreclosure dropped 2016, loan with SLS, open county nuisance case), but it's not a vacant house. On hold under the no-occupied-homes rule.",
    "owners": [
-    "CAROLYN L. HUDSON (sole owner since the 2014 quitclaim from ex-husband John W. Hudson). Alive or dead: no Maryland obituary found (the Carolyn L. Hudson who died 3/28/2024 was from Greenville/Easley SC, a different woman). Phones: need the skip trace"
+    "CAROLYN LEIGH (McDANIEL) HUDSON, 66, sole owner since the 2014 quitclaim from ex-husband John W. Hudson. ALIVE: skip trace shows her at 14750 Burnt Store Rd 2002 to 10/06/2026. Phones: (301) 274-4746 and (301) 843-2249 (residential, connected), plus (321) 895-5426 and (407) 891-7936, which are her parents' St. Cloud FL lines. Emails: flyingpositive@gmail.com, jhchthbh@cs.com. Skip trace shows 1 bankruptcy (matches the 2014 filing)",
+    "JOHN W. HUDSON, 63, ex-husband, still on the 2003 loan but not on title. The skip trace flags 'Deceased' on one John W. Hudson result, but his main record shows PO Box 463, Hughesville and live phones (301) 803-8220 / 803-8219. There's no Charles estate for him (the only Charles Hudson John estate is John Hurley Hudson, 1973) and no obituary found. Treat as UNVERIFIED; it doesn't affect title either way",
+    "Household: sons Tyler James Hudson, 31 ((301) 535-9041), and Brandon Matthew Hudson, 29, both listed at the property"
    ],
    "vesting": "Sole owner. John W. Hudson quitclaimed his interest to Carolyn on 1/31/2014 after their divorce, but he is STILL a borrower on the 2003 deed of trust.",
    "deed": "SLH 8470/261, quitclaim deed dated and recorded 1/31/2014, John W. Hudson to Carolyn L. Hudson (no transfer tax). Original purchase: 3591/365 (6/13/2002).",
    "findings": [
+    "SKIP TRACE 10/17/2026: Carolyn has lived at the property since 2002, with the record current through 10/06/2026, and both adult sons are listed there. That conflicts with the vacant/overgrown look from the road, so a drive-by is needed to settle it.",
     "CODE ENFORCEMENT: Charles County nuisance case NV-250237, opened 11/18/2025, status 'In Progress' (from the tool's distress feed). The county is already on her about the property's condition.",
     "OPEN MORTGAGE: deed of trust 4177/414 dated 6/25/2003, $203,920 from Charter One Mortgage (30-year loan, matures 7/1/2033), borrowers John W. & Carolyn L. Hudson. No release on record.",
     "FORECLOSURE HISTORY: 08-C-13-002303 (substitute trustee Carrie M. Ward v. John W. Hudson et al), filed 8/22/2013. Mediation failed 12/2013, a bankruptcy was filed 2/25/2014, and the trustees dismissed the case without prejudice 9/15/2016. They can refile.",
@@ -47,20 +50,22 @@
     "SDAT: 1993 two-story with basement, 2,080 sf, on 3.1 acres (Lot 6, Sec 1, Old Blandford Estates), zoned AC. Assessed $462,300 ($150.5K land / $311.8K impr). Coded owner-occupied; no active homestead credit."
    ],
    "next_steps": [
-    "Skip-trace Carolyn L. Hudson (and John W. Hudson as co-borrower) for phones and confirmation she is alive",
-    "Confirm whether she still lives there (owner-occupied code). If she does, this is a pre-foreclosure help conversation, not a vacant buy",
-    "Pull the nuisance case NV-250237 on Charles County Civic Access for the violation details",
-    "Watch Case Search for a new foreclosure filing on 14750 Burnt Store Rd",
-    "Angle: solve the county nuisance case plus the mortgage default in one closing; she walks away clean. Short sale with SLS if she owes more than it's worth"
+    "Drive-by: lights, cars, trash cans, mail. The skip trace says she lives there with her sons",
+    "If occupied: pass under the no-occupied-homes rule, or approach only as pre-foreclosure help if Ray chooses to",
+    "If actually vacant: call Carolyn at (301) 274-4746 / (301) 843-2249. Angle: clear the county nuisance case and the SLS loan in one closing",
+    "Watch Case Search for a new foreclosure filing; if SLS refiles, she may want out",
+    "Optional: pull nuisance case NV-250237 on Charles County Civic Access"
    ],
    "sources": [
     "MD Land Records (Charles): SLH 8470/261 quitclaim; 4177/414 DOT; assignments 12793/39 and 12986/340",
     "Case Search: 08-C-13-002303 (foreclosure), 08-C-13-002810 (divorce)",
     "Charles County Code Enforcement case NV-250237 (tool distress feed)",
-    "MD parcel layer (SDAT data)"
+    "MD parcel layer (SDAT data)",
+    "Skip trace (Ray, 10/17/2026)",
+    "Register of Wills, Charles: no John W. Hudson estate (only #4582 John Hurley Hudson, d. 1973)"
    ],
    "id": "0908054495",
-   "updated": "2026-10-17T18:36:23+00:00"
+   "updated": "2026-10-17T18:50:35+00:00"
   },
   {
    "account": "0502011816",
@@ -246,5 +251,5 @@
    "updated": "2026-10-17T18:23:25+00:00"
   }
  ],
- "generated_at": "2026-10-17T18:36:23+00:00"
+ "generated_at": "2026-10-17T18:50:35+00:00"
 }
