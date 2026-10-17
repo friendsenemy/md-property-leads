@@ -8,7 +8,7 @@
 const MyLeadsApp = {
     state: { search: "", status: "active", when: "all", page: 1, perPage: 30 },
     STATUS: {
-        pursuing: "Working it", hot: "Hot", new: "New", contacted: "Contacted", followup: "Follow up",
+        pursuing: "Working it", working: "Working it", hot: "Hot", new: "New", contacted: "Contacted", followup: "Follow up",
         verified: "Verified", paid: "Paid out / dead", dead: "Dead / pass", closed: "Closed",
     },
     DONE: ["dead", "paid", "closed"],
