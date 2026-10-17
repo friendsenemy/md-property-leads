@@ -33,6 +33,26 @@
         .status-badge.warm { background: rgba(255, 159, 10, 0.1); color: #ff9f0a; border: 1px solid rgba(255, 159, 10, 0.3); }
         .status-badge.watch { background: rgba(100, 210, 255, 0.08); color: #64d2ff; border: 1px solid rgba(100, 210, 255, 0.25); }
         .status-badge.cold { background: rgba(90, 90, 106, 0.1); color: var(--text-secondary); border: 1px solid rgba(90, 90, 106, 0.3); }
+        .note-history .note.nc { white-space: normal; font-size: 0.92rem; padding: 10px 14px 12px; }
+        .nc-head { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid var(--border); }
+        .nc-date { font-family: var(--font-mono); font-size:0.8rem; color: var(--cyan); font-weight:600; }
+        .nc-who { font-size:0.78rem; color: var(--text-secondary); }
+        .nc-st { font-size:0.62rem !important; padding:2px 7px !important; animation:none !important; }
+        .nc-tab { font-size:0.72rem; color: var(--text-dim); margin-left:auto; }
+        .nc-body .nl { margin: 0 0 6px; line-height:1.5; }
+        .nc-body .nl-b { padding-left: 18px; position: relative; }
+        .nc-body .nl-b::before { content:"•"; position:absolute; left:5px; color: var(--text-dim); }
+        .nc-body .nl-b .nb { font-family: var(--font-mono); font-size:0.78rem; color: var(--text-dim); margin-right:6px; }
+        .nc-body .nl-b:has(.nb)::before { content:""; }
+        .nc-body .nk { font-weight:700; color: var(--yellow); letter-spacing:0.2px; }
+        .nc-body a { color: var(--cyan); text-decoration: none; border-bottom: 1px dotted var(--cyan); }
+        .nc-fold { max-height: 9.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
+        .nc-fold.open { max-height: none; -webkit-mask-image: none; mask-image: none; }
+        .nc-more { background:none; border:0; color: var(--cyan); font-size:0.8rem; cursor:pointer; padding:4px 0 0; }
+        .nc-mini { opacity: 0.75; padding: 6px 14px !important; }
+        .nc-mini .nc-head { border-bottom:0; margin-bottom:2px; padding-bottom:0; }
+        .nc-mini-t { font-size:0.82rem; color: var(--text-secondary); font-style: italic; }
+        .nc-fu { display:inline-block; margin-bottom:6px; font-size:0.82rem; font-weight:600; color: var(--yellow); }
         .ml-form { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
         .ml-form label { display:flex; flex-direction:column; gap:4px; font-size:0.78rem; color:var(--text-secondary); }
         .ml-form input { background:var(--bg-secondary, #111); border:1px solid var(--border); color:var(--text-primary, #eee); padding:8px; border-radius:6px; font-size:0.9rem; }

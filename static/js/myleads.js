@@ -43,7 +43,8 @@ const MyLeadsApp = {
     leads() {
         return Object.entries(SharedNotes.history).map(([k, rows]) => {
             const latest = rows[0];
-            const labelRow = rows.find((r) => (r.label || "").trim()) || latest;
+            // prefer a label that carries an address (has a digit) over a generic one like "Guy estate"
+            const labelRow = rows.find((r) => /\d/.test(r.label || "") && /[a-z]{3}/i.test(r.label || "")) || rows.find((r) => (r.label || "").trim()) || latest;
             const noteRow = rows.find((r) => (r.notes || "").trim() && !/^(Added to My Leads|Status changed to )/.test(r.notes.trim())) || latest;
             return {
                 key: k, rows, latest, status: latest.status || "new", tab: latest.tab || "",
@@ -143,9 +144,7 @@ const MyLeadsApp = {
                 ${canOpen ? `<div style="margin-top:10px"><button class="btn btn-primary" id="mlOpenCard">Open the full research card →</button></div>` : ""}
             </div>
             <div class="detail-section"><h3>Everything we've noted (${l.rows.length}, newest first)</h3>
-                ${l.rows.map((r) => `<div class="note" style="margin-bottom:10px; padding:8px 10px; border-left:2px solid var(--border)">
-                    <div class="who" style="font-size:0.75rem; color:var(--text-dim)">${this.esc(r.author || "?")} · ${this.esc(SharedNotes.fmt(r.ts))} · ${this.esc((this.STATUS[r.status] || r.status || "").toUpperCase())} · ${this.esc(this.TAB_NAME[r.tab] || r.tab || "")}</div>
-                    <div style="white-space:pre-wrap; font-size:0.86rem; line-height:1.45">${this.esc(r.notes || "")}</div></div>`).join("")}
+                <div class="note-history">${l.rows.map((r) => SharedNotes.noteCard(r, this.TAB_NAME[r.tab] || r.tab || "")).join("")}</div>
             </div>`;
         const btn = document.getElementById("mlOpenCard");
         if (btn) btn.onclick = () => this.openCard(l);
