@@ -486,10 +486,10 @@
 
 <div id="view-myleads" style="display:none">
     <div class="stats-grid">
-        <div class="stat-card yellow"><div class="stat-label">Open Leads</div><div class="stat-value" id="mlstatTotal">0</div></div>
-        <div class="stat-card pink"><div class="stat-label">Hot / Working It</div><div class="stat-value" id="mlstatHot">0</div></div>
-        <div class="stat-card cyan"><div class="stat-label">Touched This Week</div><div class="stat-value" id="mlstatWeek">0</div></div>
-        <div class="stat-card purple"><div class="stat-label">Going Cold (7+ days)</div><div class="stat-value" id="mlstatStale">0</div></div>
+        <div class="stat-card yellow"><div class="stat-label">In My Leads</div><div class="stat-value" id="mlstatTotal">0</div></div>
+        <div class="stat-card pink"><div class="stat-label">Follow-ups Due Today / Overdue</div><div class="stat-value" id="mlstatHot">0</div></div>
+        <div class="stat-card cyan"><div class="stat-label">Follow-ups Coming Up</div><div class="stat-value" id="mlstatWeek">0</div></div>
+        <div class="stat-card purple"><div class="stat-label">No Follow-up, Quiet 7+ Days</div><div class="stat-value" id="mlstatStale">0</div></div>
     </div>
     <div class="controls">
         <div class="search-box">
@@ -497,9 +497,12 @@
             <input type="text" id="mlSearch" placeholder="Search address, owner, name, phone, anything in the notes…">
         </div>
         <select id="mlStatus">
-            <option value="active">Open leads (not dead/closed)</option>
-            <option value="stale">Going cold (no touch in 7+ days)</option>
-            <option value="all">Everything</option>
+            <option value="mine">My Leads</option>
+            <option value="due">Follow-ups due today / overdue</option>
+            <option value="upcoming">All follow-ups (by date)</option>
+            <option value="stale">My Leads quiet 7+ days, no follow-up</option>
+            <option value="notmine">Noted but NOT in My Leads (browse to add)</option>
+            <option value="all">Everything with a note</option>
             <option value="pursuing">Working it</option>
             <option value="hot">Hot</option>
             <option value="contacted">Contacted</option>
@@ -518,16 +521,16 @@
         <button class="btn" id="mlRefresh" title="Reload the shared notes">↻ Refresh</button>
         <span id="mlSync" style="font-size:0.8rem; color:var(--text-dim)"></span>
     </div>
-    <div class="run-info" style="text-align:left; margin:6px 0 10px;">Every property anyone saved a note on, from any tab, newest activity first. Click one to see every note and add the next one. To put a lead here, press <b>+ Add to My Leads</b> on its card, or <b>+ Add a lead</b> for something that isn't in the tool.</div>
+    <div class="run-info" style="text-align:left; margin:6px 0 10px;">Only the leads you chose to work. Put one here with <b>+ Add to My Leads</b> or <b>📅 Set follow-up</b> on its card, or <b>+ Add a lead</b> for something not in the tool. Saving a note does not add it. Follow-ups due show first. Marking a lead Dead/Closed or pressing <b>Remove</b> takes it off. Use "Noted but NOT in My Leads" to find past research you might want to add.</div>
     <div class="leads-container">
         <table class="leads-table" id="mlTable">
-            <thead><tr><th>Last Touch</th><th>Property</th><th>Status</th><th>Latest Note</th><th>Notes</th></tr></thead>
+            <thead><tr><th>Last Touch</th><th>Property</th><th>Status</th><th>Follow Up</th><th>Latest Note</th><th>Notes</th></tr></thead>
             <tbody id="mlBody"></tbody>
         </table>
         <div class="empty-state" id="mlEmpty" style="display:none;">
             <div class="icon">★</div>
             <h3>No leads match</h3>
-            <p>Try "Everything", or add one with + Add a lead.</p>
+            <p>Nothing added yet. Open a lead card and press + Add to My Leads or 📅 Set follow-up, or switch the filter to "Noted but NOT in My Leads".</p>
         </div>
         <div class="pagination">
             <span id="mlPageInfo">No leads</span>
@@ -569,7 +572,12 @@
             </div>
             <textarea id="leadNotes" placeholder="Add a note. Everyone using the dashboard sees it."></textarea>
             <div class="note-row" style="justify-content:flex-end">
-                <button class="btn" id="pinLeadBtn" style="display:none; margin-right:auto; color:var(--yellow); border-color:var(--yellow)">+ Add to My Leads</button>
+                <span id="mlActions" style="display:none; margin-right:auto; gap:8px; align-items:center; flex-wrap:wrap">
+                    <button class="btn" id="pinLeadBtn" style="color:var(--yellow); border-color:var(--yellow)">+ Add to My Leads</button>
+                    <button class="btn" id="unpinLeadBtn" style="color:var(--text-dim)">Remove from My Leads</button>
+                    <label style="font-size:0.78rem; color:var(--text-secondary)">Follow up on <input type="date" id="fuDate" style="background:transparent; color:inherit; border:1px solid var(--border); border-radius:6px; padding:5px"></label>
+                    <button class="btn" id="fuBtn" style="color:var(--cyan); border-color:var(--cyan)">📅 Set follow-up</button>
+                </span>
                 <button class="btn btn-primary" id="saveLeadBtn">Save</button>
             </div>
         </div>

@@ -6,12 +6,13 @@
      3. the "+ Add a lead" form here, for anything not in the tool (VA house, a tip, a referral).
    Nothing new is stored: it all reads/writes the same sheet SharedNotes already uses. */
 const MyLeadsApp = {
-    state: { search: "", status: "active", when: "all", page: 1, perPage: 30 },
+    state: { search: "", status: "mine", when: "all", page: 1, perPage: 30 },
     STATUS: {
         pursuing: "Working it", working: "Working it", hot: "Hot", new: "New", contacted: "Contacted", followup: "Follow up",
         verified: "Verified", paid: "Paid out / dead", dead: "Dead / pass", closed: "Closed",
     },
     DONE: ["dead", "paid", "closed"],
+    ADDED: "Added to My Leads", REMOVED: "Removed from My Leads",
     TAB_NAME: { title: "Title Leads", d4d: "Driving for Dollars", surplus: "Surplus", vested: "Failed Foreclosure", myleads: "Added by hand", obits: "Death Leads" },
     COUNTY: { "01": "allegany", "02": "anne-arundel", "03": "baltimore-city", "04": "baltimore-county", "05": "calvert", "06": "caroline",
         "07": "carroll", "08": "cecil", "09": "charles", "10": "dorchester", "11": "frederick", "12": "garrett", "13": "harford",
@@ -33,6 +34,9 @@ const MyLeadsApp = {
         document.getElementById("mlRefresh").addEventListener("click", async () => { await SharedNotes.load(); this.render(); });
         document.getElementById("mlAddBtn").addEventListener("click", () => this.openAdd());
         document.addEventListener("mdpl:notes-loaded", () => this.render());
+        // re-draw whenever you come back to this tab (adds made on other tabs show right away)
+        const tab = document.querySelector('.view-tab[data-view="myleads"]');
+        if (tab) tab.addEventListener("click", () => this.render());
         this.render();
     },
 
@@ -46,9 +50,33 @@ const MyLeadsApp = {
                 tabs: [...new Set(rows.map((r) => r.tab).filter(Boolean))],
                 label: (labelRow.label || "").trim() || k, lastNote: (noteRow.notes || "").trim(),
                 ts: latest.ts, who: latest.author || "",
+                inList: this.membership(rows), followUp: latest.status === "followup" ? this.fuDate(rows) : "",
                 blob: rows.map((r) => `${r.label} ${r.notes} ${r.id}`).join(" ").toLowerCase(),
             };
         }).sort((a, b) => String(b.ts).localeCompare(String(a.ts)));
+    },
+
+    /* In My Leads only if someone put it there: the newest add/remove event decides.
+       Add = "+ Add to My Leads", a follow-up date, status "Working it", or the add-a-lead form.
+       Remove = "Remove from My Leads", or marking it Dead / Closed. Plain notes don't count. */
+    membership(rows) {
+        for (const r of rows) {
+            const n = (r.notes || "").trim(), st = r.status || "";
+            if (n.startsWith(this.REMOVED) || this.DONE.includes(st)) return false;
+            if (n.startsWith(this.ADDED) || /^FOLLOW UP: /.test(n) || r.tab === "myleads" || ["pursuing", "working", "followup"].includes(st)) return true;
+        }
+        return false;
+    },
+    fuDate(rows) {
+        for (const r of rows) { const m = /^FOLLOW UP: (\d{4}-\d{2}-\d{2})/.exec((r.notes || "").trim()); if (m) return m[1]; }
+        return "";
+    },
+    today() { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); },
+    fuLabel(d) {
+        if (!d) return "";
+        const t = this.today(), dt = new Date(d + "T12:00:00");
+        const nice = dt.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+        return d < t ? `OVERDUE · ${nice}` : d === t ? `TODAY` : nice;
     },
 
     render() {
@@ -56,29 +84,37 @@ const MyLeadsApp = {
         const all = this.leads(), now = Date.now();
         const age = (l) => (now - new Date(l.ts).getTime()) / 864e5;
         const done = (l) => this.DONE.includes(l.status);
-        document.getElementById("mlstatTotal").textContent = all.filter((l) => !done(l)).length;
-        document.getElementById("mlstatHot").textContent = all.filter((l) => l.status === "hot" || l.status === "pursuing").length;
-        document.getElementById("mlstatWeek").textContent = all.filter((l) => age(l) <= 7).length;
-        document.getElementById("mlstatStale").textContent = all.filter((l) => !done(l) && age(l) > 7).length;
+        const mine = all.filter((l) => l.inList), t = this.today();
+        document.getElementById("mlstatTotal").textContent = mine.length;
+        document.getElementById("mlstatHot").textContent = mine.filter((l) => l.followUp && l.followUp <= t).length;
+        document.getElementById("mlstatWeek").textContent = mine.filter((l) => l.followUp && l.followUp > t).length;
+        document.getElementById("mlstatStale").textContent = mine.filter((l) => !l.followUp && age(l) > 7).length;
 
         const s = this.state, maxAge = { today: 1, week: 7, month: 30 }[s.when];
-        const rows = all.filter((l) => {
-            if (s.status === "active" && done(l)) return false;
-            if (s.status === "stale" && (done(l) || age(l) <= 7)) return false;
-            if (!["all", "active", "stale"].includes(s.status) && l.status !== s.status) return false;
+        let rows = all.filter((l) => {
+            if (s.status === "mine" && !l.inList) return false;
+            if (s.status === "due" && !(l.inList && l.followUp && l.followUp <= t)) return false;
+            if (s.status === "upcoming" && !(l.inList && l.followUp)) return false;
+            if (s.status === "stale" && !(l.inList && !l.followUp && age(l) > 7)) return false;
+            if (s.status === "notmine" && l.inList) return false;
+            if (!["all", "mine", "due", "upcoming", "stale", "notmine"].includes(s.status) && l.status !== s.status) return false;
             if (maxAge && age(l) > maxAge) return false;
             return !s.search || s.search.split(/\s+/).every((w) => l.blob.includes(w));
         });
+        // follow-ups first (overdue, today, soonest), then everything else by last touch
+        if (s.status !== "notmine" && s.status !== "all") rows = rows.slice().sort((a, b) => (a.followUp || "9999").localeCompare(b.followUp || "9999") || String(b.ts).localeCompare(String(a.ts)));
         const pages = Math.max(1, Math.ceil(rows.length / s.perPage));
         if (s.page > pages) s.page = pages;
         const start = (s.page - 1) * s.perPage, page = rows.slice(start, start + s.perPage);
         document.getElementById("mlEmpty").style.display = page.length ? "none" : "block";
+        const tTop = this.today();
         const body = document.getElementById("mlBody");
         body.innerHTML = page.map((l) => `<tr data-k="${this.esc(l.key)}">
             <td class="date-cell" title="${this.esc(SharedNotes.fmt(l.ts))}">${this.esc(this.ago(l.ts))}<div class="meta">${this.esc(l.who)}</div></td>
             <td class="property-cell"><div class="address">${this.esc(l.label)}</div>
                 <div class="meta">${this.esc(l.tabs.map((t) => this.TAB_NAME[t] || t).join(" · "))}</div></td>
-            <td><span class="status-badge ${this.esc(l.status)}">${this.esc((this.STATUS[l.status] || l.status).toUpperCase())}</span></td>
+            <td><span class="status-badge ${this.esc(l.status)}">${this.esc((this.STATUS[l.status] || l.status).toUpperCase())}</span>${l.inList ? "" : '<div class="meta" style="margin-top:4px">not in My Leads</div>'}</td>
+            <td style="font-family:var(--font-mono); font-size:0.78rem; white-space:nowrap; color:${l.followUp && l.followUp <= tTop ? "var(--red, #ff453a)" : "var(--yellow)"}">${this.esc(this.fuLabel(l.followUp))}</td>
             <td style="font-size:0.8rem; color:var(--text-secondary); max-width:520px">${this.esc(l.lastNote.slice(0, 220))}${l.lastNote.length > 220 ? "…" : ""}</td>
             <td style="text-align:center; font-family:var(--font-mono)">${l.rows.length}</td>
         </tr>`).join("");
@@ -99,6 +135,7 @@ const MyLeadsApp = {
                 <h3>My Leads · <span class="status-badge ${this.esc(l.status)}">${this.esc((this.STATUS[l.status] || l.status).toUpperCase())}</span></h3>
                 <div class="detail-row"><span class="label">Property</span><span class="value" style="font-weight:600">${this.esc(l.label)}</span></div>
                 <div class="detail-row"><span class="label">ID</span><span class="value" style="font-family:var(--font-mono)">${this.esc(l.rows[0].id)}</span></div>
+                <div class="detail-row"><span class="label">In My Leads</span><span class="value">${l.inList ? "Yes" : "No"}${l.followUp ? ` · follow up <b>${this.esc(this.fuLabel(l.followUp))}</b>` : ""}</span></div>
                 <div class="detail-row"><span class="label">Found in</span><span class="value">${this.esc(l.tabs.map((t) => this.TAB_NAME[t] || t).join(" · "))}</span></div>
                 <div class="detail-row"><span class="label">Last touched</span><span class="value">${this.esc(SharedNotes.fmt(l.ts))} (${this.esc(this.ago(l.ts))}) by ${this.esc(l.who)}</span></div>
                 ${canOpen ? `<div style="margin-top:10px"><button class="btn btn-primary" id="mlOpenCard">Open the full research card →</button></div>` : ""}
@@ -115,7 +152,7 @@ const MyLeadsApp = {
         sel.value = l.status; if (sel.value !== l.status) sel.value = "new";
         notes.value = ""; notes.placeholder = "Add a new note (what happened, what's next). Change the status above if it moved.";
         SharedNotes.paintSync();
-        this.setPin(null);
+        this.setPin(l.rows[0].id, l);
         document.getElementById("saveLeadBtn").onclick = async () => {
             const text = notes.value.trim();
             if (!text && sel.value === l.status) { App.closeModal(); return; }
@@ -167,6 +204,7 @@ const MyLeadsApp = {
                     <label>Account / parcel # (if you have it)<input id="mlfId" placeholder="0501051601 or Fairfax 0793 03 0001"></label>
                     <label>Owner(s)<input id="mlfOwner" placeholder="Brintzenhofe trust / Selario heirs"></label>
                     <label>Where it came from<input id="mlfSrc" placeholder="Neighbor tip, driving, referral, Zillow…"></label>
+                    <label>Follow up on (optional)<input type="date" id="mlfFu"></label>
                 </div>
             </div>`;
         document.getElementById("noteHistory").innerHTML = "";
@@ -179,8 +217,9 @@ const MyLeadsApp = {
             if (!addr) { document.getElementById("mlfAddr").focus(); return; }
             const id = v("mlfId") || ("ML-" + addr.toUpperCase().replace(/[^A-Z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40));
             const label = addr + (v("mlfOwner") ? ` (${v("mlfOwner")})` : "");
-            const text = [v("mlfSrc") ? `Source: ${v("mlfSrc")}` : "", notes.value.trim()].filter(Boolean).join("\n") || "Added to My Leads";
-            await SharedNotes.save("myleads", id, sel.value, text, label);
+            const fu = v("mlfFu");
+            const text = [fu ? `FOLLOW UP: ${fu}` : this.ADDED, v("mlfSrc") ? `Source: ${v("mlfSrc")}` : "", notes.value.trim()].filter(Boolean).join("\n");
+            await SharedNotes.save("myleads", id, fu ? "followup" : sel.value, text, label);
             App.closeModal(); this.render();
         };
         document.getElementById("modalOverlay").classList.add("active");
@@ -189,21 +228,29 @@ const MyLeadsApp = {
     /* The "+ Add to My Leads" button in every card's footer. Shown only for cards that use
        the shared notes (SharedNotes.footer sets the current id); it marks the lead
        "pursuing" through that tab's own Save, so tab, id and label stay exactly right. */
-    setPin(id) {
-        const b = document.getElementById("pinLeadBtn");
-        if (!b) return;
-        b.style.display = id ? "" : "none";
+    setPin(id, lead) {
+        const box = document.getElementById("mlActions");
+        if (!box) return;
+        box.style.display = id ? "inline-flex" : "none";
         if (!id) return;
-        const cur = SharedNotes.get(id);
-        b.textContent = cur && cur.status === "pursuing" ? "✓ In My Leads" : "+ Add to My Leads";
-        b.onclick = () => {
-            const sel = document.getElementById("leadStatusSelect"), notes = document.getElementById("leadNotes");
-            sel.value = "pursuing";
-            // the box is pre-filled with the last note; don't re-save that as a duplicate
-            const prev = ((SharedNotes.get(id) || {}).notes || "").trim();
-            if (!notes.value.trim() || notes.value.trim() === prev) notes.value = "Added to My Leads";
+        const k = SharedNotes.key(id), rows = SharedNotes.history[k] || [];
+        const inList = this.membership(rows), fu = (rows[0] || {}).status === "followup" ? this.fuDate(rows) : "";
+        const add = document.getElementById("pinLeadBtn"), rem = document.getElementById("unpinLeadBtn");
+        const date = document.getElementById("fuDate"), fuBtn = document.getElementById("fuBtn");
+        add.style.display = inList ? "none" : ""; rem.style.display = inList ? "" : "none";
+        date.value = fu || ""; date.min = this.today();
+        const sel = () => document.getElementById("leadStatusSelect"), notes = () => document.getElementById("leadNotes");
+        // the note box is pre-filled with the last note on most cards; only keep it if it was edited
+        const typed = () => { const v = notes().value.trim(), prev = ((SharedNotes.get(id) || {}).notes || "").trim(); return v && v !== prev ? v : ""; };
+        const go = (status, first) => {
+            const t = typed();
+            if (status) sel().value = status;
+            notes().value = t ? `${first}\n${t}` : first;
             document.getElementById("saveLeadBtn").click();
         };
+        add.onclick = () => go(null, this.ADDED);
+        rem.onclick = () => go(null, this.REMOVED);
+        fuBtn.onclick = () => { if (!date.value) { date.focus(); date.showPicker && date.showPicker(); return; } go("followup", `FOLLOW UP: ${date.value}`); };
     },
 
     ago(ts) {
