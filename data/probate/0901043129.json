@@ -1,0 +1,208 @@
+{
+ "account": "0901043129",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "",
+   "type": "",
+   "date_opened": "",
+   "date_closed": "",
+   "decedent": "",
+   "date_of_death": "",
+   "date_of_filing": "",
+   "will": "",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [],
+   "last_docket_activity": "",
+   "interested_persons": [],
+   "death_to_probate_days": null,
+   "probate_age_days": null,
+   "days_since_last_docket": null,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910839317",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910839317",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status ''",
+   "decedent_searched": "PAMELA A LEE"
+  },
+  {
+   "estate_number": "14823",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "12/12/2005",
+   "date_closed": "03/21/2006",
+   "decedent": "SUE REGINA TICE LEE",
+   "date_of_death": "12/7/2005",
+   "date_of_filing": "12/12/2005",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "PAMELA A LEE",
+     "address": "103 THRUSH COURT, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/12/2005",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED MARCH 20, 1987 FILED FOR RECORD ONLY - NOT PROBATED",
+     "pages": 4
+    },
+    {
+     "filed": "12/12/2005",
+     "n": 2,
+     "code": "1303",
+     "desc": "QUESTIONNAIRE",
+     "pages": 2
+    },
+    {
+     "filed": "12/12/2005",
+     "n": 3,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 4,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 5,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 7,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 9,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 10,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE -",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 11,
+     "code": "1336",
+     "desc": "RECEIPTS-SMALL ESTATE FEE PAID #17500",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2006",
+     "n": 12,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2006",
+     "n": 13,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2006",
+     "n": 14,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2006",
+     "n": 15,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE -",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2006",
+     "n": 16,
+     "code": "1336",
+     "desc": "RECEIPTS-SMALL ESTATE FEE PAID #17922",
+     "pages": 1
+    },
+    {
+     "filed": "05/15/2006",
+     "n": 17,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/15/2006",
+     "n": 18,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/15/2006",
+     "n": 19,
+     "code": "1336",
+     "desc": "RECEIPTS #18222",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2006-05-15",
+   "interested_persons": [
+    {
+     "name": "PAMELA A LEE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 5,
+   "probate_age_days": 99,
+   "days_since_last_docket": 7460,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910117744",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910117744",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "SUE T LEE"
+  }
+ ]
+}

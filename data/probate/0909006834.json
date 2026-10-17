@@ -1,0 +1,56 @@
+{
+ "account": "0909006834",
+ "estates": [
+  {
+   "estate_number": "8904",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "10/15/1991",
+   "date_closed": "",
+   "decedent": "JUDITH AUSTIN PIERCE",
+   "date_of_death": "10/4/1991",
+   "date_of_filing": "10/15/1991",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "10/15/1991",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JULY 23,",
+     "pages": 1982
+    },
+    {
+     "filed": "04/24/1992",
+     "n": 2,
+     "code": "1100",
+     "desc": "CERTIFICATE OF LEGAL HEIR (MVA FORM ISSUED) WITH ATTACHMENT",
+     "pages": 3
+    },
+    {
+     "filed": "10/15/1991",
+     "n": 3,
+     "code": "1336",
+     "desc": "RECEIPTS",
+     "pages": 4
+    }
+   ],
+   "last_docket_activity": "1992-04-24",
+   "interested_persons": [],
+   "death_to_probate_days": 11,
+   "probate_age_days": 12786,
+   "days_since_last_docket": 12594,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910138958",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910138958",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JUDITH A PIERCE"
+  }
+ ]
+}

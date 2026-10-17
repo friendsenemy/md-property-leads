@@ -1,0 +1,298 @@
+{
+ "account": "0906114164",
+ "estates": [
+  {
+   "estate_number": "67928",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "05/14/2004",
+   "date_closed": "07/21/2005",
+   "decedent": "THOMAS EUGENE EARNEST",
+   "date_of_death": "5/25/2003",
+   "date_of_filing": "05/14/2004",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "CARROLL  DRAKE [5208 FLOUNDER COURT W, WALDORF, MD 20603]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "THOMAS EUGENE EARNEST JR",
+     "address": "6235 KERRICK DRIVE, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/14/2004",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 1/30/03",
+     "pages": 8
+    },
+    {
+     "filed": "05/14/2004",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "05/14/2004",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "05/14/2004",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/14/2004",
+     "n": 5,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- INCOMPLETE FILING",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2004",
+     "n": 6,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2004",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2004",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2004",
+     "n": 9,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "07/02/2004",
+     "n": 10,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/07/2004",
+     "n": 11,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2004",
+     "n": 12,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 2
+    },
+    {
+     "filed": "08/03/2004",
+     "n": 13,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2004",
+     "n": 14,
+     "code": "1379",
+     "desc": "PUBLISHED NOTICE RECEIVED FOR MAILING BY REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/07/2004",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/07/2004",
+     "n": 16,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 23
+    },
+    {
+     "filed": "09/08/2004",
+     "n": 17,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2004",
+     "n": 18,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ADD'L REQUIREMENTS   HEARING SCHEDULED FOR 11/19/04",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2004",
+     "n": 19,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/20/2004",
+     "n": 20,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/31/2005",
+     "n": 21,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2005",
+     "n": 22,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 26
+    },
+    {
+     "filed": "02/14/2005",
+     "n": 23,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "03/07/2005",
+     "n": 24,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "03/31/2005",
+     "n": 25,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "04/08/2005",
+     "n": 26,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "04/28/2005",
+     "n": 27,
+     "code": "1384",
+     "desc": "AMENDED  FIRST AND FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "04/28/2005",
+     "n": 28,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 5
+    },
+    {
+     "filed": "04/28/2005",
+     "n": 29,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "04/29/2005",
+     "n": 30,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2005",
+     "n": 31,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ADD'L REQUIREMENTS   HEARING SCHEDULED FOR 07/19/2005",
+     "pages": 1
+    },
+    {
+     "filed": "05/31/2005",
+     "n": 32,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM-OP",
+     "pages": 1
+    },
+    {
+     "filed": "07/05/2005",
+     "n": 33,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2005",
+     "n": 34,
+     "code": "1384",
+     "desc": "SECOND AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "07/21/2005",
+     "n": 35,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING  2ND AMENDED 1ST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2005",
+     "n": 36,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    }
+   ],
+   "last_docket_activity": "2005-07-25",
+   "interested_persons": [
+    {
+     "name": "THOMAS EUGENE EARNEST JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 355,
+   "probate_age_days": 433,
+   "days_since_last_docket": 7754,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910567698",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910567698",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "THOMAS E EARNEST JR"
+  }
+ ]
+}

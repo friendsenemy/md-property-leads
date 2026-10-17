@@ -1,0 +1,158 @@
+{
+ "account": "0906223141",
+ "estates": [
+  {
+   "estate_number": "71793",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "10/05/2005",
+   "date_closed": "04/19/2006",
+   "decedent": "RENEE  WHITE",
+   "date_of_death": "10/6/1994",
+   "date_of_filing": "10/05/2005",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "THOMAS J SCHETELICH [100 S CHARLES ST, SUITE 1401, BALTIMORE, MD 21201]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CHARLES  WHITE",
+     "address": "1246 SNUG HARBOR ROAD, HERTFORD, NC 27944"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "10/05/2005",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 6
+    },
+    {
+     "filed": "10/05/2005",
+     "n": 2,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2005",
+     "n": 3,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2005",
+     "n": 4,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2005",
+     "n": 5,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2005",
+     "n": 6,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2005",
+     "n": 7,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2005",
+     "n": 8,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2005",
+     "n": 9,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/26/2006",
+     "n": 10,
+     "code": "1300",
+     "desc": "REQUEST FOR LETTER OF ADMINISTRATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "04/19/2006",
+     "n": 11,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "04/19/2006",
+     "n": 12,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- INCOMPLETE FILING",
+     "pages": 1
+    },
+    {
+     "filed": "04/26/2006",
+     "n": 13,
+     "code": "1310",
+     "desc": "COURT COSTS/FEES REFUND FORM",
+     "pages": 4
+    },
+    {
+     "filed": "02/04/2026",
+     "n": 14,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "02/04/2026",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "02/04/2026",
+     "n": 16,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2026-02-04",
+   "interested_persons": [
+    {
+     "name": "CHARLES WHITE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 4017,
+   "probate_age_days": 196,
+   "days_since_last_docket": 255,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910642884",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910642884",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "RENEE M WHITE"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "account": "0901025953",
+ "estates": [
+  {
+   "estate_number": "19621",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/03/2014",
+   "date_closed": "11/06/2014",
+   "decedent": "ALTON JAMES BOWIE III",
+   "date_of_death": "8/2/2014",
+   "date_of_filing": "11/03/2014",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "SUSAN M BOWIE",
+     "address": "8235 JACKSONTOWN RD, NANJEMOY, MD 20662"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/03/2014",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "11/03/2014",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/03/2014",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/03/2014",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/03/2014",
+     "n": 5,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "11/03/2014",
+     "n": 6,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2014-11-03",
+   "interested_persons": [
+    {
+     "name": "SUSAN M BOWIE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 93,
+   "probate_age_days": 3,
+   "days_since_last_docket": 4366,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910138611",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910138611",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ALTON J BOWIE"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "JOYCE M BOWIE",
+   "decedent_searched": "JOYCE M BOWIE",
+   "date_of_death": "2013-09-28",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}

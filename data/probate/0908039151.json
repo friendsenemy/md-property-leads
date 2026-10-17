@@ -11,6 +11,17 @@
    "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
    "imported_at": "2026-10-15",
    "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "DOROTHY L FIELDS",
+   "decedent_searched": "DOROTHY L FIELDS",
+   "date_of_death": "2006-05-14",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
   }
  ]
 }
