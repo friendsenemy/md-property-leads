@@ -1,6 +1,6 @@
 {
- "checked": 977,
- "generated_at": "2026-10-16T14:01:20+00:00",
+ "checked": 980,
+ "generated_at": "2026-10-17T13:01:28+00:00",
  "results": {
   "020100003818150": {
    "active": "Y",
@@ -114,6 +114,18 @@
    "rdi": "Residential",
    "source": "smarty",
    "usps_address": "1007 Dulaney Ln, Annapolis MD 21403-4208",
+   "vacant": "N"
+  },
+  "020200208148000": {
+   "active": "Y",
+   "address": "1358 HOLLYWOOD AVE",
+   "checked": "2026-10-17T13:01:28+00:00",
+   "dpv": "Y",
+   "found": true,
+   "no_stat": "Y",
+   "rdi": "Residential",
+   "source": "smarty",
+   "usps_address": "1358 Hollywood Ave, Annapolis MD 21403-4904",
    "vacant": "N"
   },
   "020204712472100": {
@@ -282,6 +294,18 @@
    "rdi": "Residential",
    "source": "smarty",
    "usps_address": "527 Johnsontown Rd, Pasadena MD 21122-7405",
+   "vacant": "N"
+  },
+  "020300026492290": {
+   "active": "Y",
+   "address": "4374A MOUNTAIN RD",
+   "checked": "2026-10-17T13:01:28+00:00",
+   "dpv": "Y",
+   "found": true,
+   "no_stat": "N",
+   "rdi": "Residential",
+   "source": "smarty",
+   "usps_address": "4374A Mountain Rd, Pasadena MD 21122-4520",
    "vacant": "N"
   },
   "020318522017808": {
@@ -540,6 +564,18 @@
    "rdi": "Residential",
    "source": "smarty",
    "usps_address": "214 Bolivar Ave, Baltimore MD 21225-3220",
+   "vacant": "N"
+  },
+  "020574711377150": {
+   "active": "Y",
+   "address": "407 CLEVELAND RD",
+   "checked": "2026-10-17T13:01:28+00:00",
+   "dpv": "Y",
+   "found": true,
+   "no_stat": "N",
+   "rdi": "Residential",
+   "source": "smarty",
+   "usps_address": "407 Cleveland Rd, Linthicum Heights MD 21090-2801",
    "vacant": "N"
   },
   "020600000081655": {
