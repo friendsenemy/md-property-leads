@@ -179,10 +179,34 @@ ESTATE_MARKERS = (" ESTATE", " EST OF", " EST ", " ESTATE OF", "ESTATE OF ", " H
                   " PERSONAL REP", " P/R", " PR OF", " DECEASED", " DEC'D", " DECD", " EXECUTOR",
                   " EXECUTRIX", " ADMINISTRATOR", " ADMINISTRATRIX")
 
+# ── Problem stack: distinct KINDS of trouble on one parcel ──────────────────
+# Each group counts once no matter how many of its flags fire, so a lead with a
+# dead owner + tax sale + code case + poor condition = 4 problems. Out-of-state
+# owner is the multiplier, not a problem itself.
+PROBLEM_GROUPS = {
+    "Owner deceased":        ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "DECEASED_IN_NAME"],
+    "Estate / heirs":        ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND", "MULTI_GENERATION_ESTATES", "FOREIGN_PROBATE"],
+    "Tax sale":              ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT"],
+    "Code / nuisance":       ["CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER"],
+    "Vacant":                ["VACANT_NOTICE", "ZERO_WATER_USAGE", "RETURNED_MAIL", "VACANT_LAND"],
+    "Fire / damage":         ["FIRE", "FIRE_BLOCK", "FIRE_REPAIR_PERMIT", "DEMO_PERMIT", "CONDEMNED"],
+    "Poor condition":        ["POOR_CONDITION", "BELOW_AVG_CONDITION", "NEGLECT_PROFILE"],
+    "Foreclosure / receivership": ["FORECLOSURE_REGISTRY", "RECEIVERSHIP"],
+    "Messy title":           ["ET_AL", "MULTIPLE_INDIVIDUALS", "CONSERVATOR", "NO_RECORDED_TRANSFER", "SURVIVING"],
+}
+
+
+def problem_stack(flags):
+    return [g for g, fs in PROBLEM_GROUPS.items() if any(f in flags for f in fs)]
+
+
 # ── Presets shown in the dashboard (name → filter spec) ─────────────────────
 PRESETS = [
-    {"id": "out_of_state",   "label": "🌎 Out of State Owner", "any_flags": ["OUT_OF_STATE"]},
-    {"id": "out_of_state_stacked", "label": "🌎 Out of State + Deceased / Estate / Tax Sale", "any_flags": ["OUT_OF_STATE"], "any_flags2": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
+    {"id": "out_of_state",   "label": "🌎 Out of State Owner", "any_flags": ["OUT_OF_STATE"], "sort": "problems"},
+    {"id": "out_of_state_1", "label": "🌎 Out of State + Any Problem", "any_flags": ["OUT_OF_STATE"], "min_problems": 1, "sort": "problems"},
+    {"id": "out_of_state_2", "label": "🌎 Out of State + 2 or More Problems", "any_flags": ["OUT_OF_STATE"], "min_problems": 2, "sort": "problems"},
+    {"id": "out_of_state_3", "label": "🌎 Out of State + 3 or More Problems", "any_flags": ["OUT_OF_STATE"], "min_problems": 3, "sort": "problems"},
+    {"id": "stack_3",        "label": "Problem Stack: 3+ problem types (any owner)", "min_problems": 3, "sort": "problems"},
     {"id": "estate_named",   "label": "Estate / Heirs in Owner Name", "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP"]},
     {"id": "life_estate",    "label": "Life Estate (heirs pre-named)", "any_flags": ["LIFE_ESTATE"]},
     {"id": "poor_condition", "label": "Poor / Below-Avg Condition",   "any_flags": ["POOR_CONDITION", "BELOW_AVG_CONDITION"]},

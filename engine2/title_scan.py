@@ -271,6 +271,8 @@ def scan(index_path=config.INDEX_PATH, limit=None, backfill=True):
             apply_taxsale(prop, flags, taxsale, suffix16)
             apply_probate(prop, flags, probate)
             apply_distress(prop, flags, distress)
+            prop["problem_stack"] = config.problem_stack(flags)
+            prop["problem_count"] = len(prop["problem_stack"])
             s = score(prop, flags, facts)
             verified = s.get("distress_verified", False) or bool(prop.get("probate"))
             if s["priority"] < config.MIN_PRIORITY_TO_KEEP and not verified:

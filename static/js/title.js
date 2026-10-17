@@ -47,7 +47,10 @@ const TitleApp = {
             (this.summary.presets || []).map((p) => `<button class="filter-btn" data-preset="${p.id}">${this.esc(p.label)}</button>`).join("");
         presets.querySelectorAll(".filter-btn").forEach((b) => b.addEventListener("click", () => {
             presets.querySelectorAll(".filter-btn").forEach((x) => x.classList.remove("active"));
-            b.classList.add("active"); this.state.preset = b.dataset.preset; this.state.page = 1; this.render();
+            b.classList.add("active"); this.state.preset = b.dataset.preset; this.state.page = 1;
+            const spec = (this.summary.presets || []).find((p) => p.id === b.dataset.preset);
+            if (spec && spec.sort) { this.state.sort = spec.sort; this.state.dir = -1; }
+            this.render();
         }));
         const s = this.summary;
         document.getElementById("titleRunInfo").innerHTML =
@@ -132,7 +135,8 @@ const TitleApp = {
         if (spec.any_flags2 && !spec.any_flags2.some((f) => flags.has(f))) return false;
         if (spec.min_years_since_transfer && r._years < spec.min_years_since_transfer) return false;
         if (spec.min_equity && !(r._equity >= spec.min_equity)) return false;
-        if (spec.min_years_since_death && !((r.property.death_matches || []).some((m) => m.years_since_death >= spec.min_years_since_death && m.identity_confidence !== "LOW"))) return false;
+        if (spec.min_problems && !((r.property.problem_count || 0) >= spec.min_problems)) return false;
+        if (spec.min_years_since_death &&!((r.property.death_matches || []).some((m) => m.years_since_death >= spec.min_years_since_death && m.identity_confidence !== "LOW"))) return false;
         return true;
     },
 
@@ -151,6 +155,7 @@ const TitleApp = {
         const val = (r) => ({
             priority: r._priority, vacancy: r._vac.score ?? -1, title: r.scores.title_complexity, equity: r._equity ?? -1, assessed: r._assessed,
             years: r._years, county: r.property.county || "", owner: r.property.owner_name || "", cls: r.title_class,
+            problems: (r.property.problem_count || 0) * 1000 + r._priority,
         })[k];
         return rows.slice().sort((a, b) => { const x = val(a), y = val(b); return (x > y ? 1 : x < y ? -1 : 0) * d; });
     },
@@ -221,6 +226,10 @@ const TitleApp = {
                 ${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? `<div class="detail-row"><span class="label">Same owner also on</span><span class="value" style="font-family:var(--font-mono); font-size:0.8rem">${r.other_parcels_same_owner.map(this.esc).join(", ")}</span></div>` : ""}
                 ${p.mailing_address ? `<div class="detail-row"><span class="label">Mailing</span><span class="value">${this.esc([p.mailing_address, p.mailing_city, p.mailing_zip].filter(Boolean).join(", "))}${p.mailing_state && p.mailing_state !== "MD" ? ` <span class="chip chip-hard">🌎 OUT OF STATE${p.mailing_state.length === 2 && p.mailing_state !== "??" ? " (" + this.esc(p.mailing_state) + ")" : ""}</span>` : ""}</span></div>` : ""}
             </div>
+            ${(p.problem_stack || []).length ? `<div class="detail-section">
+                <h3>Problem Stack — ${p.problem_count} problem type${p.problem_count === 1 ? "" : "s"}${p.mailing_state && p.mailing_state !== "MD" ? " · 🌎 owner out of state" : ""}</h3>
+                <div>${p.problem_stack.map((g) => `<span class="chip chip-hard">${this.esc(g)}</span>`).join(" ")}</div>
+            </div>` : ""}
             <div class="detail-section">
                 <h3>Title Signals — ${r.title_class}: ${this.esc(r.title_class_label)}</h3>
                 <div class="score-grid">
