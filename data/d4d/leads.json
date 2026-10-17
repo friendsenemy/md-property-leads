@@ -32,34 +32,35 @@
    "sdat_url": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=05&SearchType=ACCT&District=02&AccountNumber=011816",
    "spotted": "2026-10-17",
    "verdict": "warm",
-   "headline": "Inherited house (mom died 2012). Heir likely lives in Glen Burnie and is under financial strain. Two owners on the deed.",
+   "headline": "Inherited family house (Rose Hooper died 2012). Daughter Sherri likely still lives there; co-owner is her cousin Wayne. Confirm occupancy before any approach.",
    "owners": [
-    "SHERRI HOOPER-TORRICELLI (Rose's daughter, the estate's personal representative)",
-    "H. WAYNE BUCKMASTER (Rose's Buckmaster family). Alive or dead: NOT YET CONFIRMED"
+    "SHERRI HOOPER-TORRICELLI, 63 (Rose's daughter, the estate's personal representative). Phones (410) 535-0954 (old family landline), (410) 535-1220. Email tortor@hotmail.com",
+    "HOWARD WAYNE BUCKMASTER, 72 (born 4/1954; Rose's nephew = Sherri's first cousin). ALIVE: lives at 5180 Sandy Point Rd, Prince Frederick since 1993. Phones (410) 535-0955 mobile, (641) 660-5072 mobile, (410) 535-3843"
    ],
-   "vesting": "Joint tenants with right of survivorship: if one dies, the other owns it all",
+   "vesting": "Joint tenants with right of survivorship: both must sign to sell; if one dies, the other owns it all",
    "deed": "KPS 4308/321, personal representative's deed dated 10/28/2013, recorded 11/19/2013, no consideration. From the Estate of Rose Marie Hooper (Calvert estate #11763)",
    "findings": [
-    "SDAT and Landglide show only Sherri. Either the owner name is cut off, or Wayne has died and dropped off by survivorship. VERIFY.",
-    "Rose Marie (Buckmaster) Hooper, 8/22/1931 to 3/18/2012, buried Asbury Methodist, Prince Frederick. Husband John Wesley Hooper (1928-1993).",
-    "Sherri is likely Sherri Lynn Hooper, DOB 12/1962, of Glen Burnie: collection judgments 2005-2023, a 2015 residential foreclosure (C-02-CV-15-002850) and a 2020 eviction for unpaid rent (D-072-LT-20-002277). Confirm with the skip trace.",
+    "Both owners are alive (skip trace 10/17/2026). SDAT lists only Sherri; Wayne is still on the deed, so he must sign too.",
+    "Rose Marie (Buckmaster) Hooper, 8/22/1931 to 3/18/2012, buried Asbury Methodist, Prince Frederick. Husband John Wesley Hooper (1928-1993). Rose's brother James O. 'Man' Buckmaster (1932-2016) was Wayne's father.",
+    "OCCUPANCY: the skip trace has Sherri at 5000 Sixes from 1995 to now, on the family landline; she also used 3006 Abington Manor Dr, Huntingtown (Torricelli family, 2008-2018). SDAT codes it owner-occupied. She may be living in the overgrown house. Confirm before approaching.",
+    "CORRECTION: an earlier note tied her to Sherri Lynn Hooper of Glen Burnie (collection judgments, 2015 foreclosure, 2020 eviction). The skip trace does NOT support that (no Glen Burnie history, 0 judgments). Treat it as a different person.",
     "No mortgage or deed of trust recorded since 2013.",
-    "SDAT still codes it owner-occupied, but the homestead credit is not active. Satellite shows the house fully under tree canopy; Ray saw it overgrown."
+    "Satellite shows the house fully under tree canopy; Ray saw it overgrown, possibly condemned-looking."
    ],
    "next_steps": [
-    "Skip-trace Sherri Hooper-Torricelli and H. Wayne Buckmaster (phones; confirm whether Wayne is alive)",
+    "Confirm occupancy: second drive-by (car, lights, mail, trash, path to door), or ask Calvert code enforcement / Health Dept whether it is posted or condemned",
     "Check Calvert tax status / 2026 tax-sale list",
-    "Letter and call to Sherri"
+    "If vacant or Sherri wants out: soft call or letter to Sherri first, then Wayne (both must sign)"
    ],
    "sources": [
     "MD Land Records (Calvert) KPS 4308/321",
     "Find a Grave 87429702 (Rose Marie Buckmaster Hooper)",
-    "Case Search: Hooper, Sherri L; Buckmaster, Wayne",
+    "Skip trace 10/17/2026 (Howard Wayne Buckmaster, Sherri Hooper Torricelli)",
     "MD parcel layer (SDAT data)"
    ],
    "id": "0502011816",
-   "updated": "2026-10-17T17:58:48+00:00"
+   "updated": "2026-10-17T18:09:22+00:00"
   }
  ],
- "generated_at": "2026-10-17T17:58:48+00:00"
+ "generated_at": "2026-10-17T18:09:22+00:00"
 }
