@@ -1,6 +1,68 @@
 {
  "rows": [
   {
+   "account": "0908054495",
+   "county": "Charles",
+   "property_address": "14750 BURNT STORE RD",
+   "city": "HUGHESVILLE",
+   "zip_code": "20637",
+   "owner_mailing": "14750 BURNT STORE RD, HUGHESVILLE MD 20637",
+   "map": "0036",
+   "grid": "0019",
+   "parcel": "0351",
+   "lot": "6",
+   "subdivision": "8640",
+   "legal": "IMPSLOT 6 SEC 1 OLD BLANDFORD EST SUB",
+   "zoning": "AC",
+   "land_use": "Residential",
+   "acres": 3.1,
+   "year_built": "1993",
+   "sqft": 2080,
+   "style": "2 Story With Basement",
+   "land_value": 150500,
+   "impr_value": 311800,
+   "assessed_value": 462300,
+   "deed_ref": "8470/261",
+   "last_transfer": "2014-01-31",
+   "last_price": 0,
+   "owner_occupied_code": "H",
+   "homestead_qualified": "",
+   "lat": 38.531142797740785,
+   "lon": -76.79850153174236,
+   "sdat_url": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=09&SearchType=ACCT&District=08&AccountNumber=054495",
+   "spotted": "2026-10-17",
+   "verdict": "hot",
+   "headline": "Pre-foreclosure plus an open county nuisance case. A 2003 mortgage has been in default since about 2013; the foreclosure was stopped by bankruptcy and dropped in 2016, and the loan has since been sold to a new servicer. Carolyn Hudson owns it alone after a 2013 divorce.",
+   "owners": [
+    "CAROLYN L. HUDSON (sole owner since the 2014 quitclaim from ex-husband John W. Hudson). Alive or dead: no Maryland obituary found (the Carolyn L. Hudson who died 3/28/2024 was from Greenville/Easley SC, a different woman). Phones: need the skip trace"
+   ],
+   "vesting": "Sole owner. John W. Hudson quitclaimed his interest to Carolyn on 1/31/2014 after their divorce, but he is STILL a borrower on the 2003 deed of trust.",
+   "deed": "SLH 8470/261, quitclaim deed dated and recorded 1/31/2014, John W. Hudson to Carolyn L. Hudson (no transfer tax). Original purchase: 3591/365 (6/13/2002).",
+   "findings": [
+    "CODE ENFORCEMENT: Charles County nuisance case NV-250237, opened 11/18/2025, status 'In Progress' (from the tool's distress feed). The county is already on her about the property's condition.",
+    "OPEN MORTGAGE: deed of trust 4177/414 dated 6/25/2003, $203,920 from Charter One Mortgage (30-year loan, matures 7/1/2033), borrowers John W. & Carolyn L. Hudson. No release on record.",
+    "FORECLOSURE HISTORY: 08-C-13-002303 (substitute trustee Carrie M. Ward v. John W. Hudson et al), filed 8/22/2013. Mediation failed 12/2013, a bankruptcy was filed 2/25/2014, and the trustees dismissed the case without prejudice 9/15/2016. They can refile.",
+    "LOAN SOLD: assignments recorded 12/7/2022 (12793/39) and 7/10/2023 (12986/340): Rushmore Loan Management to Specialized Loan Servicing (SLS), effective 4/1/2023. Rushmore and SLS typically service defaulted or re-performing loans. Treat as possible serious arrears; a payoff or arrears figure decides the equity.",
+    "DIVORCE: Carolyn Hudson v. John Hudson, 08-C-13-002810 (filed 10/17/2013). Older collection judgments: Midland/Citibank 2011-2014.",
+    "SDAT: 1993 two-story with basement, 2,080 sf, on 3.1 acres (Lot 6, Sec 1, Old Blandford Estates), zoned AC. Assessed $462,300 ($150.5K land / $311.8K impr). Coded owner-occupied; no active homestead credit."
+   ],
+   "next_steps": [
+    "Skip-trace Carolyn L. Hudson (and John W. Hudson as co-borrower) for phones and confirmation she is alive",
+    "Confirm whether she still lives there (owner-occupied code). If she does, this is a pre-foreclosure help conversation, not a vacant buy",
+    "Pull the nuisance case NV-250237 on Charles County Civic Access for the violation details",
+    "Watch Case Search for a new foreclosure filing on 14750 Burnt Store Rd",
+    "Angle: solve the county nuisance case plus the mortgage default in one closing; she walks away clean. Short sale with SLS if she owes more than it's worth"
+   ],
+   "sources": [
+    "MD Land Records (Charles): SLH 8470/261 quitclaim; 4177/414 DOT; assignments 12793/39 and 12986/340",
+    "Case Search: 08-C-13-002303 (foreclosure), 08-C-13-002810 (divorce)",
+    "Charles County Code Enforcement case NV-250237 (tool distress feed)",
+    "MD parcel layer (SDAT data)"
+   ],
+   "id": "0908054495",
+   "updated": "2026-10-17T18:36:23+00:00"
+  },
+  {
    "account": "0502011816",
    "county": "Calvert",
    "property_address": "5000 SIXES RD",
@@ -184,5 +246,5 @@
    "updated": "2026-10-17T18:23:25+00:00"
   }
  ],
- "generated_at": "2026-10-17T18:31:07+00:00"
+ "generated_at": "2026-10-17T18:36:23+00:00"
 }
