@@ -49,7 +49,9 @@ const MyLeadsApp = {
                 key: k, rows, latest, status: latest.status || "new", tab: latest.tab || "",
                 tabs: [...new Set(rows.map((r) => r.tab).filter(Boolean))],
                 label: (labelRow.label || "").trim() || k, lastNote: (noteRow.notes || "").trim(),
-                ts: latest.ts, who: latest.author || "",
+                // "last touch" = last real note, not the add/remove bookkeeping rows
+                ts: (rows.find((r) => !/^(Added to My Leads|Removed from My Leads)/.test((r.notes || "").trim())) || latest).ts,
+                who: (rows.find((r) => !/^(Added to My Leads|Removed from My Leads)/.test((r.notes || "").trim())) || latest).author || "",
                 inList: this.membership(rows), followUp: latest.status === "followup" ? this.fuDate(rows) : "",
                 blob: rows.map((r) => `${r.label} ${r.notes} ${r.id}`).join(" ").toLowerCase(),
             };
