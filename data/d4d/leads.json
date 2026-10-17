@@ -63,6 +63,65 @@
    "updated": "2026-10-17T18:09:22+00:00"
   },
   {
+   "account": "0502011131",
+   "county": "Calvert",
+   "property_address": "1994 JOE HARRIS RD",
+   "city": "PRINCE FREDERICK",
+   "zip_code": "20678",
+   "owner_mailing": "6318 MCKENDREE RD, DUNKIRK MD 20754",
+   "map": "0027",
+   "grid": "0017",
+   "parcel": "0417",
+   "lot": "1",
+   "subdivision": "",
+   "legal": "IMPSLT 1 OVERTON HAWKINS PROP",
+   "zoning": "RUR",
+   "land_use": "Residential",
+   "acres": 3.03,
+   "year_built": "1950",
+   "sqft": 1410,
+   "style": "1.5 Story With Basement",
+   "land_value": 110500,
+   "impr_value": 78200,
+   "assessed_value": 188700,
+   "deed_ref": "6335/229",
+   "last_transfer": "2022-08-30",
+   "last_price": 185000,
+   "owner_occupied_code": "N",
+   "homestead_qualified": "",
+   "lat": 38.5028524414009,
+   "lon": -76.57350879577565,
+   "sdat_url": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=05&SearchType=ACCT&District=02&AccountNumber=011131",
+   "spotted": "2026-10-17",
+   "verdict": "warm",
+   "headline": "HUD house the Kalbs bought for $185K cash in 2022, then let sit. Clean title, no mortgage, owners alive. A stalled project, not an estate. Their son lives across the street.",
+   "owners": [
+    "JOSEPHINE A. KALB and BERNARD G. KALB JR. (husband and wife, likely in their 70s-80s; mailing 6318 McKendree Rd, Dunkirk). On Calvert records together since 1973. Phones: get from the skip trace"
+   ],
+   "vesting": "Deed names 'Josephine Kalb and Bernard Kalb' with no tenancy stated; as husband and wife that is presumed tenancy by the entirety in Maryland. Both sign.",
+   "deed": "KPS 6335/229, recorded 8/30/2022. GOVERNMENT AGENCY TRANSFER from the U.S. Secretary of Housing & Urban Development (HUD case 241-953819) to Josephine Kalb and Bernard Kalb for $185,000",
+   "findings": [
+    "Bought from HUD (an FHA-foreclosed house) in August 2022. No deed of trust recorded after, so it was a CASH purchase: free and clear.",
+    "SDAT: not owner-occupied, no homestead. 1950 1.5-story with basement, 1,410 sf, on 3.03 acres (Lot 1, Overton Hawkins property), zoned RUR. Assessed $188,700 ($110.5K land / $78.2K impr), roughly what they paid.",
+    "Family: Bernard G. Kalb (Sr.), 1920-2009, of Millersville, obituary (Stallings FH) names 'his son Bernie G Kalb Jr. of Dunkirk, MD'. Bernard G. Kalb III and Lori C. Kalb (Jr.'s son and wife, ages about 51/49) live at 1955 Sixes Rd, right across the road. Bernard III: (410) 271-3782, (301) 855-6217; Lori: (410) 271-2202, (240) 470-2391.",
+    "No obituary or Find a Grave record for Josephine A. or Bernard G. Kalb Jr.; treat as alive until the skip trace says otherwise.",
+    "Read: four years after buying it, still overgrown and empty. Likely a fix-up or family-use plan that stalled. Retired owners paying taxes on a house nobody uses are often open to a clean exit at about what they paid."
+   ],
+   "next_steps": [
+    "Skip-trace Josephine A. Kalb and Bernard G. Kalb Jr. (6318 McKendree Rd, Dunkirk) for phones and ages",
+    "Call Josephine/Bernard Jr. directly; the son across the street (Bernard III) is the backup contact",
+    "Angle: 'You picked it up from HUD a few years back. If the project isn't happening, I'll take it as-is and you get your money back out.' Expect them to anchor near $185K."
+   ],
+   "sources": [
+    "MD Land Records (Calvert) KPS 6335/229; name index KALB",
+    "Obituary: Bernard G. Kalb (1920-2009), Stallings Funeral Home",
+    "Skip trace for 1910 Sixes Rd (neighbors Bernard & Lori Kalb at 1955 Sixes Rd)",
+    "MD parcel layer (SDAT data)"
+   ],
+   "id": "0502011131",
+   "updated": "2026-10-17T18:31:07+00:00"
+  },
+  {
    "account": "0501015486",
    "county": "Calvert",
    "property_address": "1910 SIXES RD",
@@ -125,5 +184,5 @@
    "updated": "2026-10-17T18:23:25+00:00"
   }
  ],
- "generated_at": "2026-10-17T18:23:25+00:00"
+ "generated_at": "2026-10-17T18:31:07+00:00"
 }
