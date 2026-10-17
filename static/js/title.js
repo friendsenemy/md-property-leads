@@ -219,7 +219,7 @@ const TitleApp = {
                 <div class="detail-row"><span class="label">On Record</span><span class="value" style="font-family:var(--font-mono)">${this.esc(p.owner_name)}${p.owner_name_2 ? `<br>${this.esc(p.owner_name_2)}` : ""}</span></div>
                 <div class="detail-row"><span class="label">Type</span><span class="value">${this.esc(p.owner_type)}${owners ? ` — ${owners}` : ""}</span></div>
                 ${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? `<div class="detail-row"><span class="label">Same owner also on</span><span class="value" style="font-family:var(--font-mono); font-size:0.8rem">${r.other_parcels_same_owner.map(this.esc).join(", ")}</span></div>` : ""}
-                ${p.mailing_address ? `<div class="detail-row"><span class="label">Mailing</span><span class="value">${this.esc(p.mailing_address)}</span></div>` : ""}
+                ${p.mailing_address ? `<div class="detail-row"><span class="label">Mailing</span><span class="value">${this.esc([p.mailing_address, p.mailing_city, p.mailing_zip].filter(Boolean).join(", "))}${p.mailing_state && p.mailing_state !== "MD" ? ` <span class="chip chip-hard">🌎 OUT OF STATE${p.mailing_state.length === 2 && p.mailing_state !== "??" ? " (" + this.esc(p.mailing_state) + ")" : ""}</span>` : ""}</span></div>` : ""}
             </div>
             <div class="detail-section">
                 <h3>Title Signals — ${r.title_class}: ${this.esc(r.title_class_label)}</h3>
@@ -363,7 +363,8 @@ const TitleApp = {
         const home = (p.occupancy_code || "").toUpperCase() === "H", hs = !!(p.homestead_code || "").trim();
         if (f.has("NO_HOMESTEAD")) add(15, "No one claims it as a primary home (no homestead credit)");
         if (!home) add(10, "SDAT: not owner-occupied");
-        if (f.has("MAIL_MISMATCH")) add(10, "Tax bills mailed somewhere else");
+        if (f.has("OUT_OF_STATE")) add(15, `Tax bills mailed out of state${p.mailing_state && p.mailing_state.length === 2 && p.mailing_state !== "??" ? " (" + p.mailing_state + ")" : ""}`);
+        else if (f.has("MAIL_MISMATCH")) add(10, "Tax bills mailed somewhere else");
         else if (f.has("CARE_OF")) add(5, "Tax bills sent in care of someone");
         if (f.has("TAX_SALE_SOLD") || f.has("TAX_SALE_STRUCK")) add(10, "Taxes unpaid (tax sale)");
         if (f.has("TAX_SALE_REPEAT")) add(5, "Repeat tax sale");
@@ -391,9 +392,9 @@ const TitleApp = {
             CARE_OF: "C/O", ET_AL: "Et Al", SURVIVING: "Surviving", CONSERVATOR: "Conservator/POA", TRUSTEE: "Trustee",
             NO_RECORDED_TRANSFER: "No Deed on Record", PROBATE_CLOSED_STILL_TITLED: "ESTATE CLOSED, STILL TITLED", MULTI_GENERATION_ESTATES: "OWNER + HEIR BOTH DIED", FOREIGN_PROBATE: "Foreign Probate", PROBATE_OPEN_STALE: "ESTATE OPEN (stale)", PROBATE_OPEN: "Estate Open", PROBATE_NONE_FOUND: "NO ESTATE FOUND", DECEASED_SOLE_OWNER_HIGH: "OWNER DECEASED (high)", DECEASED_SOLE_OWNER_MEDIUM: "Owner Deceased (med)", DECEASED_SOLE_OWNER_LOW: "Owner Deceased? (low)", ALL_OWNERS_DECEASED: "ALL OWNERS DECEASED", CO_OWNER_DECEASED: "Co-owner Deceased", TAX_SALE_SOLD: "TAX LIEN SOLD", TAX_SALE_STRUCK: "TAX SALE: UNSOLD", TAX_SALE_LISTED: "TAX SALE LISTED", TAX_SALE_REPEAT: "REPEAT TAX SALE", TAX_SALE_HISTORY: "Past Tax Sale", RETURNED_MAIL: "Returned Mail", MULTIPLE_INDIVIDUALS: "Co-owners", STALE_OWNERSHIP: "Stale",
             FIRE: "🔥 FIRE", FIRE_BLOCK: "🔥 Fire (block)", FIRE_COOLING: "cooling <30d", VACANT_NOTICE: "🏚 VACANT NOTICE", RECEIVERSHIP: "🏛 RECEIVERSHIP", CODE_VIOLATIONS: "⚠ CODE CASE", CITY_WORK_ORDER: "🧹 CITY WORK ORDER", DEMO_PERMIT: "🧱 DEMO PERMIT", FIRE_REPAIR_PERMIT: "🔥 Fire Repair Permit", FORECLOSURE_REGISTRY: "📋 FORECLOSED (registry)", STACKED_SIGNALS: "⚡ STACKED", NUISANCE_CASE: "⚠ NUISANCE CASE", ZERO_WATER_USAGE: "💧 ZERO WATER", ZERO_WATER_HOMESTEAD: "💧 Zero water (homestead - likely well)", ZONING_CASE: "Zoning Case", REPEAT_CODE_CASES: "⚠ REPEAT CODE CASES", NEGLECT_PROFILE: "🏚 Neglect Profile",
-            ABSENTEE: "Absentee", NO_HOMESTEAD: "No Homestead", VACANT_LAND: "Vacant Lot", OLD_STRUCTURE: "Pre-1950", POOR_CONDITION: "Poor Cond.", BELOW_AVG_CONDITION: "Below-Avg Cond.", MAIL_MISMATCH: "Mail ≠ Site" };
+            ABSENTEE: "Absentee", NO_HOMESTEAD: "No Homestead", VACANT_LAND: "Vacant Lot", OLD_STRUCTURE: "Pre-1950", POOR_CONDITION: "Poor Cond.", BELOW_AVG_CONDITION: "Below-Avg Cond.", MAIL_MISMATCH: "Mail ≠ Site", OUT_OF_STATE: "🌎 OUT OF STATE" };
         const strong = new Set(["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "CONSERVATOR", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"]);
-        const hard = new Set(["MULTI_GENERATION_ESTATES", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS", "FIRE", "RECEIVERSHIP", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY", "STACKED_SIGNALS", "NUISANCE_CASE", "REPEAT_CODE_CASES", "ZERO_WATER_USAGE", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND"]);
+        const hard = new Set(["MULTI_GENERATION_ESTATES", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT", "RETURNED_MAIL", "VACANT_NOTICE", "CONDEMNED", "CODE_VIOLATIONS", "FIRE", "RECEIVERSHIP", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY", "STACKED_SIGNALS", "NUISANCE_CASE", "REPEAT_CODE_CASES", "ZERO_WATER_USAGE", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND", "OUT_OF_STATE"]);
         return (flags || []).map((f) => `<span class="chip ${strong.has(f) ? "chip-strong" : hard.has(f) ? "chip-hard" : ""}">${nice[f] || f}</span>`).join(" ");
     },
     fmtDT(s) { const d = new Date(s); return isNaN(d) ? (s || "") : d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); },

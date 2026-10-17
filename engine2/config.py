@@ -93,6 +93,7 @@ DISTRESS_HARD_POINTS = {
     "REPEAT_CODE_CASES": 20,      # three or more code cases at one parcel since 2020
     "STACKED_SIGNALS": 10,        # two or more different signal kinds on the same parcel
     "RETURNED_MAIL": 20,          # your own mail came back — set via lead status
+    "OUT_OF_STATE": 20,           # tax bill mailed outside Maryland: decision-maker lives far away
 }
 DISTRESS_SOFT_POINTS = {
     "ABSENTEE": 10,
@@ -180,6 +181,8 @@ ESTATE_MARKERS = (" ESTATE", " EST OF", " EST ", " ESTATE OF", "ESTATE OF ", " H
 
 # ── Presets shown in the dashboard (name → filter spec) ─────────────────────
 PRESETS = [
+    {"id": "out_of_state",   "label": "🌎 Out of State Owner", "any_flags": ["OUT_OF_STATE"]},
+    {"id": "out_of_state_stacked", "label": "🌎 Out of State + Deceased / Estate / Tax Sale", "any_flags": ["OUT_OF_STATE"], "any_flags2": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "estate_named",   "label": "Estate / Heirs in Owner Name", "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP"]},
     {"id": "life_estate",    "label": "Life Estate (heirs pre-named)", "any_flags": ["LIFE_ESTATE"]},
     {"id": "poor_condition", "label": "Poor / Below-Avg Condition",   "any_flags": ["POOR_CONDITION", "BELOW_AVG_CONDITION"]},

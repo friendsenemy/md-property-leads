@@ -12,6 +12,46 @@ from property_lookup import estimate_equity, COUNTY_NAMES
 
 RESIDENTIAL_HINTS = ("RESIDENTIAL", "TOWN HOUSE", "TOWNHOUSE", "CONDO", "APARTMENT", "DWELLING")
 
+# First three ZIP digits -> state, for owner mailing addresses. Maryland is
+# 206-219; any other valid ZIP means the tax bill goes out of state. Ranges
+# cover the states owners most often live in; an unmapped non-Maryland ZIP
+# still counts as out of state (state shown as "??").
+_ZIP3_STATES = [
+    (10, 27, "MA"), (28, 29, "RI"), (30, 38, "NH"), (39, 49, "ME"), (50, 59, "VT"), (60, 69, "CT"),
+    (70, 89, "NJ"), (100, 149, "NY"), (150, 196, "PA"), (197, 199, "DE"), (200, 200, "DC"),
+    (201, 201, "VA"), (202, 205, "DC"), (206, 219, "MD"), (220, 246, "VA"), (247, 268, "WV"),
+    (270, 289, "NC"), (290, 299, "SC"), (300, 319, "GA"), (320, 349, "FL"), (350, 369, "AL"),
+    (370, 385, "TN"), (386, 397, "MS"), (398, 399, "GA"), (400, 427, "KY"), (430, 459, "OH"),
+    (460, 479, "IN"), (480, 499, "MI"), (600, 629, "IL"), (700, 714, "LA"), (750, 799, "TX"),
+    (800, 816, "CO"), (850, 865, "AZ"), (889, 898, "NV"), (900, 961, "CA"), (967, 968, "HI"),
+    (970, 979, "OR"), (980, 994, "WA"), (995, 999, "AK"),
+]
+_STATE_CODES = {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA",
+                "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM",
+                "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA",
+                "WV", "WI", "WY", "PR"}
+_FOREIGN = re.compile(r"\b(CANADA|ENGLAND|UNITED KINGDOM|GERMANY|JAPAN|KOREA|ITALY|FRANCE|MEXICO|PHILIPPINES|"
+                      r"NIGERIA|GHANA|INDIA|CHINA|AUSTRALIA|IRELAND|SPAIN|ISRAEL|BRAZIL|JAMAICA)\b")
+
+
+def mailing_state(mail_city, mail_zip):
+    """Owner's mailing state from SDAT mail city + ZIP: a 2-letter code, '??' for an
+    unmapped non-Maryland ZIP, 'FOREIGN' for a non-US address, '' when unknown."""
+    city = (mail_city or "").strip().upper()
+    if city and _FOREIGN.search(city):
+        return "FOREIGN"
+    z = re.sub(r"\D", "", mail_zip or "")
+    if len(z) >= 5 and z[:5] != "00000":         # a real ZIP is the most reliable signal
+        z3 = int(z[:3])
+        for lo, hi, st in _ZIP3_STATES:
+            if lo <= z3 <= hi:
+                return st
+        return "??"
+    parts = city.split()
+    if parts and parts[-1] in _STATE_CODES:      # SDAT appends the state for out-of-state owners ("CHANTILLY VA")
+        return parts[-1]
+    return ""
+
 
 def _num(v):
     try:
@@ -136,6 +176,9 @@ def analyze(row, today=None, force=False, deaths=None, alive=None):
         flags.add("MAIL_MISMATCH")
     if cond and cond in config.BELOW_AVERAGE_CONDITION_CODES:
         flags.add("BELOW_AVG_CONDITION")
+    mail_st = mailing_state(row.get("mail_city"), row.get("mail_zip"))
+    if mail_st and mail_st != "MD":
+        flags.add("OUT_OF_STATE")
 
     prop = {
         "account_number": row.get("acct"),
@@ -169,6 +212,9 @@ def analyze(row, today=None, force=False, deaths=None, alive=None):
         "prior_transfer_date": row.get("transfer_date2") or "",
         "prior_grantor": row.get("grantor2") or "",
         "mailing_address": row.get("mail_addr") or "",
+        "mailing_city": (row.get("mail_city") or "").strip(),
+        "mailing_zip": (row.get("mail_zip") or "").strip(),
+        "mailing_state": mail_st,
         "years_since_transfer": years_since_transfer,
     }
     prop.update(estimate_equity(prop))
