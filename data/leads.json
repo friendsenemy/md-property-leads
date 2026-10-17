@@ -41,7 +41,12 @@
      "known_liens": 0,
      "estimated_equity": 667966,
      "equity_percent": 81.6,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.175272",
+     "lon": "-77.297056",
+     "deed_liber": "26268",
+     "deed_folio": "0312",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -86,7 +91,12 @@
      "known_liens": 0,
      "estimated_equity": 182969,
      "equity_percent": 63.3,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.2982",
+     "lon": "-76.733938",
+     "deed_liber": "25933",
+     "deed_folio": "0213",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GORSUCH DONALD L SR",
@@ -112,7 +122,12 @@
      "known_liens": 0,
      "estimated_equity": 108221,
      "equity_percent": 53.8,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.225183",
+     "lon": "-76.176163",
+     "deed_liber": "01367",
+     "deed_folio": "0279",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GORSUCH DONALD L SR",
@@ -138,7 +153,12 @@
      "known_liens": 0,
      "estimated_equity": -41194,
      "equity_percent": -79.9,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.225046",
+     "lon": "-76.175728",
+     "deed_liber": "01367",
+     "deed_folio": "0279",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "GORSUCH DONALD L SR",
@@ -164,7 +184,12 @@
      "known_liens": 0,
      "estimated_equity": -76054,
      "equity_percent": -455.5,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.225467",
+     "lon": "-76.175726",
+     "deed_liber": "01367",
+     "deed_folio": "0279",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -209,7 +234,12 @@
      "known_liens": 0,
      "estimated_equity": 457275,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.242155",
+     "lon": "-76.547936",
+     "deed_liber": "00534",
+     "deed_folio": "0431",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -254,7 +284,12 @@
      "known_liens": 0,
      "estimated_equity": 110145,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.190632",
+     "lon": "-75.689581",
+     "deed_liber": "00629",
+     "deed_folio": "0285",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -299,7 +334,12 @@
      "known_liens": 0,
      "estimated_equity": 23625,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.310272",
+     "lon": "-76.596213",
+     "deed_liber": "03095",
+     "deed_folio": "0153",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -325,7 +365,12 @@
      "known_liens": 0,
      "estimated_equity": 48300,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.312711",
+     "lon": "-76.602458",
+     "deed_liber": "00712",
+     "deed_folio": "0199",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -351,7 +396,12 @@
      "known_liens": 0,
      "estimated_equity": 84105,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.307183",
+     "lon": "-76.661589",
+     "deed_liber": "09073",
+     "deed_folio": "0083",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -377,7 +427,12 @@
      "known_liens": 0,
      "estimated_equity": 200970,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.318591",
+     "lon": "-76.548068",
+     "deed_liber": "27559",
+     "deed_folio": "0380",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -403,7 +458,12 @@
      "known_liens": 0,
      "estimated_equity": 144460,
      "equity_percent": 96.5,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.315554",
+     "lon": "-76.571429",
+     "deed_liber": "07220",
+     "deed_folio": "0257",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -429,7 +489,12 @@
      "known_liens": 0,
      "estimated_equity": 148785,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.338548",
+     "lon": "-76.6963",
+     "deed_liber": "07595",
+     "deed_folio": "0518",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -455,7 +520,12 @@
      "known_liens": 0,
      "estimated_equity": 168885,
      "equity_percent": 63.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.456441",
+     "lon": "-76.662289",
+     "deed_liber": "37202",
+     "deed_folio": "0401",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -481,7 +551,12 @@
      "known_liens": 0,
      "estimated_equity": 494025,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.230819",
+     "lon": "-76.710333",
+     "deed_liber": "51562",
+     "deed_folio": "0131",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -507,7 +582,12 @@
      "known_liens": 0,
      "estimated_equity": 386195,
      "equity_percent": 93.8,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.190369",
+     "lon": "-77.179732",
+     "deed_liber": "17263",
+     "deed_folio": "0297",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -533,7 +613,12 @@
      "known_liens": 0,
      "estimated_equity": 515297,
      "equity_percent": 47.6,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.026239",
+     "lon": "-77.084521",
+     "deed_liber": "61547",
+     "deed_folio": "0312",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA",
@@ -559,7 +644,12 @@
      "known_liens": 0,
      "estimated_equity": 236250,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.311984",
+     "lon": "-75.212027",
+     "deed_liber": "04908",
+     "deed_folio": "0062",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA J",
@@ -585,7 +675,12 @@
      "known_liens": 0,
      "estimated_equity": 162728,
      "equity_percent": 87.2,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.337977",
+     "lon": "-76.599027",
+     "deed_liber": "19051",
+     "deed_folio": "360",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "JONES BARBARA J",
@@ -611,7 +706,12 @@
      "known_liens": 0,
      "estimated_equity": 166222,
      "equity_percent": 91.5,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.358297",
+     "lon": "-76.710422",
+     "deed_liber": "00549",
+     "deed_folio": "0054",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -656,7 +756,12 @@
      "known_liens": null,
      "estimated_equity": null,
      "equity_percent": null,
-     "equity_confidence": "unknown"
+     "equity_confidence": "unknown",
+     "lat": "38.842564",
+     "lon": "-76.603286",
+     "deed_liber": "06438",
+     "deed_folio": "0034",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -682,7 +787,12 @@
      "known_liens": null,
      "estimated_equity": null,
      "equity_percent": null,
-     "equity_confidence": "unknown"
+     "equity_confidence": "unknown",
+     "lat": "38.843237",
+     "lon": "-76.605584",
+     "deed_liber": "06438",
+     "deed_folio": "0034",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -708,7 +818,12 @@
      "known_liens": null,
      "estimated_equity": null,
      "equity_percent": null,
-     "equity_confidence": "unknown"
+     "equity_confidence": "unknown",
+     "lat": "38.843105",
+     "lon": "-76.604692",
+     "deed_liber": "06438",
+     "deed_folio": "0034",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -734,7 +849,12 @@
      "known_liens": 0,
      "estimated_equity": 18465,
      "equity_percent": 25.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.311397",
+     "lon": "-76.654753",
+     "deed_liber": "11157",
+     "deed_folio": "0220",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -760,7 +880,12 @@
      "known_liens": 0,
      "estimated_equity": 178080,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.333192",
+     "lon": "-76.668957",
+     "deed_liber": "05796",
+     "deed_folio": "0358",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -786,7 +911,12 @@
      "known_liens": 0,
      "estimated_equity": 87150,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.671359",
+     "lon": "-76.600004",
+     "deed_liber": "01009",
+     "deed_folio": "0329",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -812,7 +942,12 @@
      "known_liens": 0,
      "estimated_equity": 125363,
      "equity_percent": 53.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.580401",
+     "lon": "-77.006023",
+     "deed_liber": "08138",
+     "deed_folio": "0295",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -838,7 +973,12 @@
      "known_liens": 0,
      "estimated_equity": 465377,
      "equity_percent": 63.7,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.098075",
+     "lon": "-76.959976",
+     "deed_liber": "31550",
+     "deed_folio": "0745",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BROWN BARBARA",
@@ -864,7 +1004,12 @@
      "known_liens": 0,
      "estimated_equity": 670740,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.979576",
+     "lon": "-76.997176",
+     "deed_liber": "07880",
+     "deed_folio": "0783",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -909,7 +1054,12 @@
      "known_liens": 0,
      "estimated_equity": 341538,
      "equity_percent": 92.5,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.002271",
+     "lon": "-76.305649",
+     "deed_liber": "00712",
+     "deed_folio": "0429",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -954,7 +1104,12 @@
      "known_liens": 0,
      "estimated_equity": 187903,
      "equity_percent": 91.8,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.005081",
+     "lon": "-76.973196",
+     "deed_liber": "14179",
+     "deed_folio": "0276",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -999,7 +1154,12 @@
      "known_liens": 0,
      "estimated_equity": 505785,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.305958",
+     "lon": "-76.632685",
+     "deed_liber": "04811",
+     "deed_folio": "0400",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "ERSKINE JOHN WAYNE TRUSTEE",
@@ -1025,7 +1185,12 @@
      "known_liens": 0,
      "estimated_equity": 452760,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.306252",
+     "lon": "-76.633347",
+     "deed_liber": "04811",
+     "deed_folio": "0400",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -1070,7 +1235,12 @@
      "known_liens": 0,
      "estimated_equity": -76053,
      "equity_percent": -965.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.192294",
+     "lon": "-75.55618",
+     "deed_liber": "07230",
+     "deed_folio": "0372",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "RICHARDSON ROGER &",
@@ -1096,7 +1266,12 @@
      "known_liens": 0,
      "estimated_equity": -80253,
      "equity_percent": -2183.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.188321",
+     "lon": "-75.545178",
+     "deed_liber": "07230",
+     "deed_folio": "0372",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "RICHARDSON ROGER & LILLIAN FAY P R",
@@ -1122,7 +1297,12 @@
      "known_liens": 0,
      "estimated_equity": -463812,
      "equity_percent": -582.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.173967",
+     "lon": "-75.462701",
+     "deed_liber": "07404",
+     "deed_folio": "0230",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "RICHARDSON ROGER & LILLIAN FAY P R",
@@ -1148,7 +1328,12 @@
      "known_liens": 0,
      "estimated_equity": -508122,
      "equity_percent": -1440.3,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.181572",
+     "lon": "-75.450834",
+     "deed_liber": "07404",
+     "deed_folio": "0230",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -1193,7 +1378,12 @@
      "known_liens": 0,
      "estimated_equity": 467301,
      "equity_percent": 88.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.145207",
+     "lon": "-76.559435",
+     "deed_liber": "24995",
+     "deed_folio": "0149",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -1238,7 +1428,12 @@
      "known_liens": 0,
      "estimated_equity": 73339,
      "equity_percent": 31.0,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.107546",
+     "lon": "-77.072122",
+     "deed_liber": "70387",
+     "deed_folio": "0395",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -1283,7 +1478,12 @@
      "known_liens": 0,
      "estimated_equity": 313845,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.142309",
+     "lon": "-76.610599",
+     "deed_liber": "03585",
+     "deed_folio": "0773",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1309,7 +1509,12 @@
      "known_liens": 0,
      "estimated_equity": 556290,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.082123",
+     "lon": "-76.575089",
+     "deed_liber": "26231",
+     "deed_folio": "0334",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1335,7 +1540,12 @@
      "known_liens": 0,
      "estimated_equity": 11264,
      "equity_percent": 57.7,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.051928",
+     "lon": "-76.732328",
+     "deed_liber": "18201",
+     "deed_folio": "0655",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1361,7 +1571,12 @@
      "known_liens": 0,
      "estimated_equity": 213646,
      "equity_percent": 34.7,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.207892",
+     "lon": "-76.647277",
+     "deed_liber": "37718",
+     "deed_folio": "0139",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1387,7 +1602,12 @@
      "known_liens": 0,
      "estimated_equity": 414645,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.52077",
+     "lon": "-76.64295",
+     "deed_liber": "37420",
+     "deed_folio": "0471",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1413,7 +1633,12 @@
      "known_liens": 0,
      "estimated_equity": 119410,
      "equity_percent": 76.0,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.312519",
+     "lon": "-76.511672",
+     "deed_liber": "36749",
+     "deed_folio": "0443",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1439,7 +1664,12 @@
      "known_liens": 0,
      "estimated_equity": -31418,
      "equity_percent": -9.9,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.221866",
+     "lon": "-76.43677",
+     "deed_liber": "51082",
+     "deed_folio": "0115",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1465,7 +1695,12 @@
      "known_liens": 0,
      "estimated_equity": 267499,
      "equity_percent": 61.3,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.709105",
+     "lon": "-76.560023",
+     "deed_liber": "02754",
+     "deed_folio": "0693",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1491,7 +1726,12 @@
      "known_liens": 0,
      "estimated_equity": 158174,
      "equity_percent": 37.0,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.576274",
+     "lon": "-76.896408",
+     "deed_liber": "10460",
+     "deed_folio": "0495",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1517,7 +1757,12 @@
      "known_liens": 0,
      "estimated_equity": 867300,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.3861",
+     "lon": "-77.14725",
+     "deed_liber": "11013",
+     "deed_folio": "0331",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1543,7 +1788,12 @@
      "known_liens": 0,
      "estimated_equity": 53792,
      "equity_percent": 9.1,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.442032",
+     "lon": "-77.523856",
+     "deed_liber": "17825",
+     "deed_folio": "0296",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL",
@@ -1569,7 +1819,12 @@
      "known_liens": 0,
      "estimated_equity": 152570,
      "equity_percent": 46.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.539496",
+     "lon": "-76.315458",
+     "deed_liber": "13464",
+     "deed_folio": "0318",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MURPHY MICHAEL &",
@@ -1595,7 +1850,12 @@
      "known_liens": 0,
      "estimated_equity": 155161,
      "equity_percent": 38.2,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.413122",
+     "lon": "-75.060051",
+     "deed_liber": "07504",
+     "deed_folio": "0248",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -1640,7 +1900,12 @@
      "known_liens": 0,
      "estimated_equity": 202757,
      "equity_percent": 40.7,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.979562",
+     "lon": "-76.281827",
+     "deed_liber": "03441",
+     "deed_folio": "0288",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -1685,7 +1950,12 @@
      "known_liens": 0,
      "estimated_equity": 524895,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.046728",
+     "lon": "-77.064931",
+     "deed_liber": "03546",
+     "deed_folio": "0314",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -1730,7 +2000,12 @@
      "known_liens": 0,
      "estimated_equity": 1372225,
      "equity_percent": 96.6,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.104576",
+     "lon": "-77.108233",
+     "deed_liber": "16071",
+     "deed_folio": "0476",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -1775,7 +2050,12 @@
      "known_liens": 0,
      "estimated_equity": -3739,
      "equity_percent": -14.2,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.309683",
+     "lon": "-76.583471",
+     "deed_liber": "10548",
+     "deed_folio": "0125",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "KELLY THOMAS",
@@ -1801,7 +2081,12 @@
      "known_liens": 0,
      "estimated_equity": 9683,
      "equity_percent": 70.9,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.297653",
+     "lon": "-76.638222",
+     "deed_liber": "06782",
+     "deed_folio": "0508",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "KELLY THOMAS",
@@ -1827,7 +2112,12 @@
      "known_liens": 0,
      "estimated_equity": 257716,
      "equity_percent": 53.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.34397",
+     "lon": "-76.628098",
+     "deed_liber": "10850",
+     "deed_folio": "0242",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "KELLY THOMAS",
@@ -1853,7 +2143,12 @@
      "known_liens": 0,
      "estimated_equity": 252401,
      "equity_percent": 56.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.55108",
+     "lon": "-76.992221",
+     "deed_liber": "09950",
+     "deed_folio": "0477",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "KELLY THOMAS",
@@ -1879,7 +2174,12 @@
      "known_liens": 0,
      "estimated_equity": 189313,
      "equity_percent": 53.9,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.552361",
+     "lon": "-76.251937",
+     "deed_liber": "07251",
+     "deed_folio": "0614",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "KELLY THOMAS",
@@ -1905,7 +2205,12 @@
      "known_liens": 0,
      "estimated_equity": 341253,
      "equity_percent": 52.4,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.511004",
+     "lon": "-76.324103",
+     "deed_liber": "12593",
+     "deed_folio": "0429",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "KELLY THOMAS & NICOLE",
@@ -1931,7 +2236,12 @@
      "known_liens": 0,
      "estimated_equity": 157215,
      "equity_percent": 62.2,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.712385",
+     "lon": "-77.341596",
+     "deed_liber": "05468",
+     "deed_folio": "0283",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "KELLY THOMAS & NICOLE",
@@ -1957,7 +2267,12 @@
      "known_liens": 0,
      "estimated_equity": -90900,
      "equity_percent": -1967.5,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.712675",
+     "lon": "-77.341973",
+     "deed_liber": "05468",
+     "deed_folio": "0283",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -2002,7 +2317,12 @@
      "known_liens": 0,
      "estimated_equity": 222977,
      "equity_percent": 76.9,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.319529",
+     "lon": "-76.650137",
+     "deed_liber": "17448",
+     "deed_folio": "008",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "HARRELL KIMBERLY",
@@ -2028,7 +2348,12 @@
      "known_liens": 0,
      "estimated_equity": 173425,
      "equity_percent": 48.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.333039",
+     "lon": "-76.696927",
+     "deed_liber": "20032",
+     "deed_folio": "116",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "HARRELL KIMBERLY",
@@ -2054,7 +2379,12 @@
      "known_liens": 0,
      "estimated_equity": 189916,
      "equity_percent": 49.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.538001",
+     "lon": "-76.296242",
+     "deed_liber": "13220",
+     "deed_folio": "0160",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2099,7 +2429,12 @@
      "known_liens": 0,
      "estimated_equity": 196798,
      "equity_percent": 25.3,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.035763",
+     "lon": "-76.732499",
+     "deed_liber": "38147",
+     "deed_folio": "0488",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "NEWMAN WILLIAM T",
@@ -2125,7 +2460,12 @@
      "known_liens": 0,
      "estimated_equity": 1265682,
      "equity_percent": 85.4,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.465588",
+     "lon": "-79.306564",
+     "deed_liber": "01689",
+     "deed_folio": "0182",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "NEWMAN WILLIAM T",
@@ -2151,7 +2491,12 @@
      "known_liens": 0,
      "estimated_equity": 101535,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.251944",
+     "lon": "-75.998129",
+     "deed_liber": "00203",
+     "deed_folio": "0037",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -2196,7 +2541,12 @@
      "known_liens": 0,
      "estimated_equity": 28169,
      "equity_percent": 58.3,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.30377",
+     "lon": "-76.645745",
+     "deed_liber": "07708",
+     "deed_folio": "0316",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MOORE DEBORAH",
@@ -2222,7 +2572,12 @@
      "known_liens": 0,
      "estimated_equity": 110444,
      "equity_percent": 57.6,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.332651",
+     "lon": "-76.672894",
+     "deed_liber": "12876",
+     "deed_folio": "0446",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2267,7 +2622,12 @@
      "known_liens": 0,
      "estimated_equity": 27161,
      "equity_percent": 44.4,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.357247",
+     "lon": "-75.73828",
+     "deed_liber": "02882",
+     "deed_folio": "0343",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MOORE BEVERLY A",
@@ -2293,7 +2653,12 @@
      "known_liens": 0,
      "estimated_equity": 89460,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.348555",
+     "lon": "-76.68615",
+     "deed_liber": "03647",
+     "deed_folio": "0537",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MOORE BEVERLY BRITTEN TRUSTEE",
@@ -2319,7 +2684,12 @@
      "known_liens": 0,
      "estimated_equity": 307786,
      "equity_percent": 42.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.381838",
+     "lon": "-76.696254",
+     "deed_liber": "42497",
+     "deed_folio": "0506",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MOORE BEVERLY DENISE",
@@ -2345,7 +2715,12 @@
      "known_liens": 0,
      "estimated_equity": 38745,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.216545",
+     "lon": "-75.930307",
+     "deed_liber": "00617",
+     "deed_folio": "0419",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MOORE BEVERLY T",
@@ -2371,7 +2746,12 @@
      "known_liens": 0,
      "estimated_equity": 340849,
      "equity_percent": 97.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.145602",
+     "lon": "-77.18596",
+     "deed_liber": "15800",
+     "deed_folio": "0501",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2416,7 +2796,12 @@
      "known_liens": 0,
      "estimated_equity": 393750,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.843463",
+     "lon": "-76.83865",
+     "deed_liber": "51314",
+     "deed_folio": "0585",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAVES YOLANDA R",
@@ -2442,7 +2827,12 @@
      "known_liens": 0,
      "estimated_equity": 366012,
      "equity_percent": 98.4,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.073147",
+     "lon": "-76.95071",
+     "deed_liber": "15014",
+     "deed_folio": "0063",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2487,7 +2877,12 @@
      "known_liens": 0,
      "estimated_equity": 325910,
      "equity_percent": 94.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.565484",
+     "lon": "-76.372557",
+     "deed_liber": "02957",
+     "deed_folio": "0217",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2532,7 +2927,12 @@
      "known_liens": 0,
      "estimated_equity": 287787,
      "equity_percent": 77.9,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.354914",
+     "lon": "-76.796464",
+     "deed_liber": "20417",
+     "deed_folio": "0530",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BALL DAVID",
@@ -2558,7 +2958,12 @@
      "known_liens": 0,
      "estimated_equity": 243488,
      "equity_percent": 82.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.62962",
+     "lon": "-76.518697",
+     "deed_liber": "03580",
+     "deed_folio": "0001",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BALL DAVID",
@@ -2584,7 +2989,12 @@
      "known_liens": 0,
      "estimated_equity": 223375,
      "equity_percent": 58.6,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.407584",
+     "lon": "-77.439834",
+     "deed_liber": "12881",
+     "deed_folio": "0172",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BALL DAVID",
@@ -2610,7 +3020,12 @@
      "known_liens": 0,
      "estimated_equity": 103995,
      "equity_percent": 19.7,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.133465",
+     "lon": "-76.842589",
+     "deed_liber": "21891",
+     "deed_folio": "0202",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BALL DAVID C",
@@ -2636,7 +3051,12 @@
      "known_liens": 0,
      "estimated_equity": 359870,
      "equity_percent": 58.7,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.599339",
+     "lon": "-76.299933",
+     "deed_liber": "10471",
+     "deed_folio": "0477",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BALL DAVID ETAL",
@@ -2662,7 +3082,12 @@
      "known_liens": 0,
      "estimated_equity": 299644,
      "equity_percent": 80.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.706788",
+     "lon": "-76.620849",
+     "deed_liber": "03805",
+     "deed_folio": "0164",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -2707,7 +3132,12 @@
      "known_liens": 0,
      "estimated_equity": 236250,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.480725",
+     "lon": "-76.333421",
+     "deed_liber": "15904",
+     "deed_folio": "0474",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2752,7 +3182,12 @@
      "known_liens": 0,
      "estimated_equity": 38905,
      "equity_percent": 16.6,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.006514",
+     "lon": "-75.771333",
+     "deed_liber": "01721",
+     "deed_folio": "0210",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "COLLINS WAYNE",
@@ -2778,7 +3213,12 @@
      "known_liens": 0,
      "estimated_equity": 13634,
      "equity_percent": 31.9,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.007277",
+     "lon": "-75.770593",
+     "deed_liber": "01647",
+     "deed_folio": "0042",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "COLLINS WAYNE",
@@ -2804,7 +3244,12 @@
      "known_liens": 0,
      "estimated_equity": 13091,
      "equity_percent": 26.1,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "38.180924",
+     "lon": "-75.694388",
+     "deed_liber": "01201",
+     "deed_folio": "0253",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "COLLINS WAYNE P ETAL",
@@ -2830,7 +3275,12 @@
      "known_liens": 0,
      "estimated_equity": 359940,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.477891",
+     "lon": "-76.288831",
+     "deed_liber": "13730",
+     "deed_folio": "0320",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2875,7 +3325,12 @@
      "known_liens": 0,
      "estimated_equity": 8295,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.307187",
+     "lon": "-77.419149",
+     "deed_liber": "01225",
+     "deed_folio": "0539",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MULLER MARK D & LAURA L",
@@ -2901,7 +3356,12 @@
      "known_liens": 0,
      "estimated_equity": 469560,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.307567",
+     "lon": "-77.418946",
+     "deed_liber": "01021",
+     "deed_folio": "0338",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -2946,7 +3406,12 @@
      "known_liens": 0,
      "estimated_equity": 268492,
      "equity_percent": 69.4,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.211396",
+     "lon": "-76.787311",
+     "deed_liber": "09089",
+     "deed_folio": "0459",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "SIMPSON JOSEPH A & VALERIE L P",
@@ -2972,7 +3437,12 @@
      "known_liens": 0,
      "estimated_equity": 518595,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.56093",
+     "lon": "-76.779785",
+     "deed_liber": "00450",
+     "deed_folio": "0266",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "SIMPSON JOSEPH III",
@@ -2998,7 +3468,12 @@
      "known_liens": 0,
      "estimated_equity": 12075,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.650312",
+     "lon": "-78.756737",
+     "deed_liber": "03099",
+     "deed_folio": "0437",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "SIMPSON JOSEPH JR",
@@ -3024,7 +3499,12 @@
      "known_liens": 0,
      "estimated_equity": 575085,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.956974",
+     "lon": "-76.775275",
+     "deed_liber": "51905",
+     "deed_folio": "0130",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3069,7 +3549,12 @@
      "known_liens": 0,
      "estimated_equity": 336210,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.299486",
+     "lon": "-76.635109",
+     "deed_liber": "00143",
+     "deed_folio": "0266",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3114,7 +3599,12 @@
      "known_liens": null,
      "estimated_equity": null,
      "equity_percent": null,
-     "equity_confidence": "unknown"
+     "equity_confidence": "unknown",
+     "lat": "38.344065",
+     "lon": "-75.099043",
+     "deed_liber": "01753",
+     "deed_folio": "0246",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "DRAPER WILLIAM O JR & MARY L",
@@ -3140,7 +3630,12 @@
      "known_liens": 0,
      "estimated_equity": 271365,
      "equity_percent": 92.1,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.348972",
+     "lon": "-75.533984",
+     "deed_liber": "01677",
+     "deed_folio": "0214",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3185,7 +3680,12 @@
      "known_liens": 0,
      "estimated_equity": 381885,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.362779",
+     "lon": "-76.426292",
+     "deed_liber": "04016",
+     "deed_folio": "0372",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MCKENZIE RICHARD",
@@ -3211,7 +3711,12 @@
      "known_liens": 0,
      "estimated_equity": -7204,
      "equity_percent": -4.7,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.580657",
+     "lon": "-79.233494",
+     "deed_liber": "02389",
+     "deed_folio": "0051",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "MCKENZIE RICHARD III",
@@ -3237,7 +3742,12 @@
      "known_liens": 0,
      "estimated_equity": 191855,
      "equity_percent": 62.3,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.483362",
+     "lon": "-79.397459",
+     "deed_liber": "01876",
+     "deed_folio": "0486",
+     "occupancy_code": "D"
     }
    ]
   },
@@ -3282,7 +3792,12 @@
      "known_liens": 0,
      "estimated_equity": 216659,
      "equity_percent": 61.3,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.59814",
+     "lon": "-77.725505",
+     "deed_liber": "05817",
+     "deed_folio": "0303",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "NORRIS LINDA S CHANNELL",
@@ -3308,7 +3823,12 @@
      "known_liens": 0,
      "estimated_equity": 577022,
      "equity_percent": 98.9,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.72259",
+     "lon": "-76.675025",
+     "deed_liber": "01322",
+     "deed_folio": "0434",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3353,7 +3873,12 @@
      "known_liens": 0,
      "estimated_equity": 238783,
      "equity_percent": 61.3,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.424536",
+     "lon": "-75.062768",
+     "deed_liber": "05134",
+     "deed_folio": "0015",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "RILL BRIAN &",
@@ -3379,7 +3904,12 @@
      "known_liens": 0,
      "estimated_equity": 8686,
      "equity_percent": 55.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.424341",
+     "lon": "-75.062236",
+     "deed_liber": "05134",
+     "deed_folio": "0015",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "RILL BRIAN LEROY",
@@ -3405,7 +3935,12 @@
      "known_liens": 0,
      "estimated_equity": 417060,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.654885",
+     "lon": "-76.856135",
+     "deed_liber": "02896",
+     "deed_folio": "0492",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -3450,7 +3985,12 @@
      "known_liens": 0,
      "estimated_equity": 143550,
      "equity_percent": 89.1,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.329643",
+     "lon": "-76.605178",
+     "deed_liber": "05322",
+     "deed_folio": "0086",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -3495,7 +4035,12 @@
      "known_liens": 0,
      "estimated_equity": 10185,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.3079",
+     "lon": "-76.592536",
+     "deed_liber": "05204",
+     "deed_folio": "0075",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "JONES RUTH THELMA",
@@ -3521,7 +4066,12 @@
      "known_liens": 0,
      "estimated_equity": 199920,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.715579",
+     "lon": "-75.938818",
+     "deed_liber": "01633",
+     "deed_folio": "0151",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3566,7 +4116,12 @@
      "known_liens": 0,
      "estimated_equity": 740880,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.967176",
+     "lon": "-76.937293",
+     "deed_liber": "50584",
+     "deed_folio": "0392",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "SULLIVAN JAMES",
@@ -3592,7 +4147,12 @@
      "known_liens": 0,
      "estimated_equity": 27429,
      "equity_percent": 8.2,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "38.331481",
+     "lon": "-75.21413",
+     "deed_liber": "08719",
+     "deed_folio": "0091",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "SULLIVAN JAMES JR",
@@ -3618,7 +4178,12 @@
      "known_liens": 0,
      "estimated_equity": -10573,
      "equity_percent": -2.7,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.459995",
+     "lon": "-75.887672",
+     "deed_liber": "05615",
+     "deed_folio": "0337",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "SULLIVAN JAMES L",
@@ -3644,7 +4209,12 @@
      "known_liens": 0,
      "estimated_equity": 391650,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.151657",
+     "lon": "-76.477326",
+     "deed_liber": "03312",
+     "deed_folio": "0110",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "SULLIVAN JAMES L II",
@@ -3670,7 +4240,12 @@
      "known_liens": 0,
      "estimated_equity": 347077,
      "equity_percent": 40.3,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.146659",
+     "lon": "-76.554775",
+     "deed_liber": "35766",
+     "deed_folio": "0303",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "SULLIVAN JAMES L II &",
@@ -3696,7 +4271,12 @@
      "known_liens": 0,
      "estimated_equity": 206569,
      "equity_percent": 67.0,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.426709",
+     "lon": "-75.059918",
+     "deed_liber": "06405",
+     "deed_folio": "0134",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "SULLIVAN JAMES L II &",
@@ -3722,7 +4302,12 @@
      "known_liens": 0,
      "estimated_equity": 7023,
      "equity_percent": 44.6,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "38.427654",
+     "lon": "-75.06001",
+     "deed_liber": "06405",
+     "deed_folio": "0134",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -3767,7 +4352,12 @@
      "known_liens": 0,
      "estimated_equity": 192675,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.356863",
+     "lon": "-76.647486",
+     "deed_liber": "29214",
+     "deed_folio": "0494",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MCADORY VICKI (LIFE)",
@@ -3793,7 +4383,12 @@
      "known_liens": 0,
      "estimated_equity": 204540,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.330145",
+     "lon": "-76.697815",
+     "deed_liber": "29212",
+     "deed_folio": "0437",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3838,7 +4433,12 @@
      "known_liens": 0,
      "estimated_equity": 527730,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.406252",
+     "lon": "-76.616428",
+     "deed_liber": "08183",
+     "deed_folio": "0773",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3883,7 +4483,12 @@
      "known_liens": 0,
      "estimated_equity": 399324,
      "equity_percent": 54.0,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.18258",
+     "lon": "-76.564427",
+     "deed_liber": "28869",
+     "deed_folio": "0366",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3928,7 +4533,12 @@
      "known_liens": 0,
      "estimated_equity": 752850,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.148376",
+     "lon": "-77.052488",
+     "deed_liber": "31041",
+     "deed_folio": "0733",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -3973,7 +4583,12 @@
      "known_liens": 0,
      "estimated_equity": 2415,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.473641",
+     "lon": "-76.524262",
+     "deed_liber": "47831",
+     "deed_folio": "0373",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "OPDAHL DARRAH M",
@@ -3999,7 +4614,12 @@
      "known_liens": 0,
      "estimated_equity": 1260,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.47165",
+     "lon": "-76.526559",
+     "deed_liber": "47831",
+     "deed_folio": "0373",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "OPDAHL DARRAH M",
@@ -4025,7 +4645,12 @@
      "known_liens": 0,
      "estimated_equity": 644910,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.472075",
+     "lon": "-76.524958",
+     "deed_liber": "47831",
+     "deed_folio": "0373",
+     "occupancy_code": "D"
     }
    ]
   },
@@ -4070,7 +4695,12 @@
      "known_liens": 0,
      "estimated_equity": 109143,
      "equity_percent": 50.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.335266",
+     "lon": "-76.700199",
+     "deed_liber": "19497",
+     "deed_folio": "144",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "HARRIS WESLEY",
@@ -4096,7 +4726,12 @@
      "known_liens": 0,
      "estimated_equity": 195439,
      "equity_percent": 63.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.356197",
+     "lon": "-76.737419",
+     "deed_liber": "38739",
+     "deed_folio": "0223",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "HARRIS WESLEY",
@@ -4122,7 +4757,12 @@
      "known_liens": 0,
      "estimated_equity": 75966,
      "equity_percent": 21.9,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.349141",
+     "lon": "-76.721202",
+     "deed_liber": "50281",
+     "deed_folio": "0367",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "HARRIS WESLEY",
@@ -4148,7 +4788,12 @@
      "known_liens": 0,
      "estimated_equity": 215112,
      "equity_percent": 30.5,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "38.989843",
+     "lon": "-76.797292",
+     "deed_liber": "47200",
+     "deed_folio": "0364",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4193,7 +4838,12 @@
      "known_liens": 0,
      "estimated_equity": 158941,
      "equity_percent": 73.3,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.422234",
+     "lon": "-75.679777",
+     "deed_liber": "02172",
+     "deed_folio": "0598",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4238,7 +4888,12 @@
      "known_liens": 0,
      "estimated_equity": 137383,
      "equity_percent": 25.8,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.067745",
+     "lon": "-76.590541",
+     "deed_liber": "41837",
+     "deed_folio": "0446",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "HOWARD MICHAEL",
@@ -4264,7 +4919,12 @@
      "known_liens": 0,
      "estimated_equity": 91216,
      "equity_percent": 51.8,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.298584",
+     "lon": "-76.450428",
+     "deed_liber": "40635",
+     "deed_folio": "0079",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "HOWARD MICHAEL",
@@ -4290,7 +4950,12 @@
      "known_liens": 0,
      "estimated_equity": 594241,
      "equity_percent": 70.7,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.20067",
+     "lon": "-76.887604",
+     "deed_liber": "13161",
+     "deed_folio": "0499",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "HOWARD MICHAEL L TRUSTEE",
@@ -4316,7 +4981,12 @@
      "known_liens": 0,
      "estimated_equity": 502845,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.995969",
+     "lon": "-76.52196",
+     "deed_liber": "40972",
+     "deed_folio": "0042",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -4361,7 +5031,12 @@
      "known_liens": 0,
      "estimated_equity": -44709,
      "equity_percent": -54.6,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "38.345581",
+     "lon": "-75.562032",
+     "deed_liber": "05682",
+     "deed_folio": "0001",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4406,7 +5081,12 @@
      "known_liens": 0,
      "estimated_equity": 116678,
      "equity_percent": 26.8,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.587031",
+     "lon": "-76.66436",
+     "deed_liber": "50245",
+     "deed_folio": "0054",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "COLLINS KEVIN M",
@@ -4432,7 +5112,12 @@
      "known_liens": 0,
      "estimated_equity": 410203,
      "equity_percent": 77.8,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.825135",
+     "lon": "-76.673404",
+     "deed_liber": "14205",
+     "deed_folio": "0380",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "COLLINS KEVIN M",
@@ -4458,7 +5143,12 @@
      "known_liens": 0,
      "estimated_equity": 379260,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.567775",
+     "lon": "-77.693143",
+     "deed_liber": "07752",
+     "deed_folio": "0281",
+     "occupancy_code": "D"
     },
     {
      "owner_name": "COLLINS KEVIN M &",
@@ -4484,7 +5174,12 @@
      "known_liens": 0,
      "estimated_equity": 571039,
      "equity_percent": 69.6,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.3428",
+     "lon": "-77.203239",
+     "deed_liber": "07821",
+     "deed_folio": "0430",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4529,7 +5224,12 @@
      "known_liens": 0,
      "estimated_equity": 188160,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.321022",
+     "lon": "-76.478141",
+     "deed_liber": "09030",
+     "deed_folio": "0184",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4574,7 +5274,12 @@
      "known_liens": 0,
      "estimated_equity": 322770,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.648266",
+     "lon": "-76.90317",
+     "deed_liber": "00642",
+     "deed_folio": "0087",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4619,7 +5324,12 @@
      "known_liens": 0,
      "estimated_equity": 518094,
      "equity_percent": 33.7,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.061147",
+     "lon": "-77.159375",
+     "deed_liber": "65326",
+     "deed_folio": "0077",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -4664,7 +5374,12 @@
      "known_liens": 0,
      "estimated_equity": 100159,
      "equity_percent": 59.0,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.325982",
+     "lon": "-76.57233",
+     "deed_liber": "10606",
+     "deed_folio": "0357",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT",
@@ -4690,7 +5405,12 @@
      "known_liens": 0,
      "estimated_equity": 55407,
      "equity_percent": 25.0,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.318",
+     "lon": "-76.558054",
+     "deed_liber": "27097",
+     "deed_folio": "0361",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT",
@@ -4716,7 +5436,12 @@
      "known_liens": 0,
      "estimated_equity": 415590,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.368647",
+     "lon": "-76.613406",
+     "deed_liber": "06500",
+     "deed_folio": "0027",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT",
@@ -4742,7 +5467,12 @@
      "known_liens": 0,
      "estimated_equity": 206354,
      "equity_percent": 72.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.394674",
+     "lon": "-76.538624",
+     "deed_liber": "20881",
+     "deed_folio": "0629",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT",
@@ -4768,7 +5498,12 @@
      "known_liens": 0,
      "estimated_equity": 178993,
      "equity_percent": 25.4,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.378094",
+     "lon": "-76.602479",
+     "deed_liber": "45006",
+     "deed_folio": "0019",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT & LAURA",
@@ -4794,7 +5529,12 @@
      "known_liens": 0,
      "estimated_equity": 335038,
      "equity_percent": 66.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.086347",
+     "lon": "-77.137295",
+     "deed_liber": "39971",
+     "deed_folio": "0139",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT L",
@@ -4820,7 +5560,12 @@
      "known_liens": 0,
      "estimated_equity": 415800,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.133339",
+     "lon": "-76.605639",
+     "deed_liber": "04010",
+     "deed_folio": "0503",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT L",
@@ -4846,7 +5591,12 @@
      "known_liens": 0,
      "estimated_equity": 241580,
      "equity_percent": 80.1,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.558511",
+     "lon": "-76.120789",
+     "deed_liber": "04580",
+     "deed_folio": "0323",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "GRAY ROBERT L &",
@@ -4872,7 +5622,12 @@
      "known_liens": 0,
      "estimated_equity": 168178,
      "equity_percent": 74.6,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.592568",
+     "lon": "-77.40741",
+     "deed_liber": "08664",
+     "deed_folio": "0001",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -4917,7 +5672,12 @@
      "known_liens": 0,
      "estimated_equity": 241094,
      "equity_percent": 67.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.152246",
+     "lon": "-76.52929",
+     "deed_liber": "24907",
+     "deed_folio": "0155",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "BROWN BRIAN C",
@@ -4943,7 +5703,12 @@
      "known_liens": 0,
      "estimated_equity": 11394,
      "equity_percent": 30.7,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.071088",
+     "lon": "-76.518607",
+     "deed_liber": "41148",
+     "deed_folio": "0398",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "BROWN BRIAN C",
@@ -4969,7 +5734,12 @@
      "known_liens": 0,
      "estimated_equity": 324660,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.195943",
+     "lon": "-76.651903",
+     "deed_liber": "06351",
+     "deed_folio": "0507",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5014,7 +5784,12 @@
      "known_liens": 0,
      "estimated_equity": 192780,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.51772",
+     "lon": "-76.159729",
+     "deed_liber": "01831",
+     "deed_folio": "0095",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY",
@@ -5040,7 +5815,12 @@
      "known_liens": 0,
      "estimated_equity": 90210,
      "equity_percent": 33.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.510276",
+     "lon": "-76.179347",
+     "deed_liber": "14595",
+     "deed_folio": "0449",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY",
@@ -5066,7 +5846,12 @@
      "known_liens": 0,
      "estimated_equity": 17955,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.34243",
+     "lon": "-75.856169",
+     "deed_liber": "00117",
+     "deed_folio": "0574",
+     "occupancy_code": "N"
     },
     {
      "owner_name": "WRIGHT ANTHONY CRAIG TRUSTEE",
@@ -5092,7 +5877,12 @@
      "known_liens": 0,
      "estimated_equity": 571095,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.114362",
+     "lon": "-76.661293",
+     "deed_liber": "42171",
+     "deed_folio": "0400",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY D",
@@ -5118,7 +5908,12 @@
      "known_liens": 0,
      "estimated_equity": 193600,
      "equity_percent": 28.4,
-     "equity_confidence": "high"
+     "equity_confidence": "high",
+     "lat": "39.319267",
+     "lon": "-76.670814",
+     "deed_liber": "26159",
+     "deed_folio": "0161",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY E",
@@ -5144,7 +5939,12 @@
      "known_liens": 0,
      "estimated_equity": 185325,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.365359",
+     "lon": "-76.707897",
+     "deed_liber": "05068",
+     "deed_folio": "0346",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY J",
@@ -5170,7 +5970,12 @@
      "known_liens": 0,
      "estimated_equity": 258405,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.38371",
+     "lon": "-76.546348",
+     "deed_liber": "08519",
+     "deed_folio": "0565",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY J",
@@ -5196,7 +6001,12 @@
      "known_liens": 0,
      "estimated_equity": 479220,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.4664",
+     "lon": "-76.746415",
+     "deed_liber": "00375",
+     "deed_folio": "0003",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY L",
@@ -5222,7 +6032,12 @@
      "known_liens": 0,
      "estimated_equity": 214809,
      "equity_percent": 62.0,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.083263",
+     "lon": "-76.688091",
+     "deed_liber": "24122",
+     "deed_folio": "0261",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "WRIGHT ANTHONY MARQUIS",
@@ -5248,7 +6063,12 @@
      "known_liens": 0,
      "estimated_equity": 150398,
      "equity_percent": 64.2,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.358933",
+     "lon": "-76.510474",
+     "deed_liber": "30680",
+     "deed_folio": "0187",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5293,7 +6113,12 @@
      "known_liens": 0,
      "estimated_equity": 280035,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.273061",
+     "lon": "-76.719958",
+     "deed_liber": "47171",
+     "deed_folio": "0144",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "ROBINSON MARGARET P",
@@ -5319,7 +6144,12 @@
      "known_liens": 0,
      "estimated_equity": 163726,
      "equity_percent": 75.8,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.379237",
+     "lon": "-76.56552",
+     "deed_liber": "21469",
+     "deed_folio": "0669",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5364,7 +6194,12 @@
      "known_liens": 0,
      "estimated_equity": 152880,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.34112",
+     "lon": "-76.6763",
+     "deed_liber": "02724",
+     "deed_folio": "0243",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5409,7 +6244,12 @@
      "known_liens": 0,
      "estimated_equity": 402675,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.276866",
+     "lon": "-76.616834",
+     "deed_liber": "17278",
+     "deed_folio": "312",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "THOMAS BETTY A.",
@@ -5435,7 +6275,12 @@
      "known_liens": 0,
      "estimated_equity": 115500,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.325572",
+     "lon": "-76.586275",
+     "deed_liber": "10207",
+     "deed_folio": "0613",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5480,7 +6325,12 @@
      "known_liens": 0,
      "estimated_equity": 210168,
      "equity_percent": 95.5,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.660773",
+     "lon": "-78.802291",
+     "deed_liber": "02095",
+     "deed_folio": "0498",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MYERS KIMBERLY",
@@ -5506,7 +6356,12 @@
      "known_liens": 0,
      "estimated_equity": 141075,
      "equity_percent": 52.2,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.380677",
+     "lon": "-76.461367",
+     "deed_liber": "38516",
+     "deed_folio": "0500",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MYERS KIMBERLY A",
@@ -5532,7 +6387,12 @@
      "known_liens": 0,
      "estimated_equity": 292092,
      "equity_percent": 59.1,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.252311",
+     "lon": "-76.49739",
+     "deed_liber": "32801",
+     "deed_folio": "0448",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "MYERS KIMBERLY ANN",
@@ -5603,7 +6463,12 @@
      "known_liens": 0,
      "estimated_equity": 400155,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.137362",
+     "lon": "-76.578258",
+     "deed_liber": "04858",
+     "deed_folio": "0720",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5648,7 +6513,12 @@
      "known_liens": 0,
      "estimated_equity": 329490,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.031587",
+     "lon": "-76.477132",
+     "deed_liber": "19772",
+     "deed_folio": "0555",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5693,7 +6563,12 @@
      "known_liens": 0,
      "estimated_equity": 448039,
      "equity_percent": 98.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.799565",
+     "lon": "-75.941832",
+     "deed_liber": "00972",
+     "deed_folio": "0799",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5738,7 +6613,12 @@
      "known_liens": 0,
      "estimated_equity": 1312500,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.991609",
+     "lon": "-77.154118",
+     "deed_liber": "69328",
+     "deed_folio": "0050",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5783,7 +6663,12 @@
      "known_liens": 0,
      "estimated_equity": 997395,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.018867",
+     "lon": "-77.137031",
+     "deed_liber": "12099",
+     "deed_folio": "0463",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5828,7 +6713,12 @@
      "known_liens": 0,
      "estimated_equity": 342510,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "38.484602",
+     "lon": "-76.693564",
+     "deed_liber": "03415",
+     "deed_folio": "0290",
+     "occupancy_code": "H"
     }
    ]
   },
@@ -5873,7 +6763,12 @@
      "known_liens": 0,
      "estimated_equity": 199253,
      "equity_percent": 43.9,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.040401",
+     "lon": "-76.456076",
+     "deed_liber": "32930",
+     "deed_folio": "0066",
+     "occupancy_code": "H"
     },
     {
      "owner_name": "DAVIS MADISON J",
@@ -5899,7 +6794,12 @@
      "known_liens": 0,
      "estimated_equity": 141259,
      "equity_percent": 47.4,
-     "equity_confidence": "medium"
+     "equity_confidence": "medium",
+     "lat": "39.315805",
+     "lon": "-77.636557",
+     "deed_liber": "13656",
+     "deed_folio": "0402",
+     "occupancy_code": "N"
     }
    ]
   },
@@ -5944,7 +6844,12 @@
      "known_liens": 0,
      "estimated_equity": 278460,
      "equity_percent": 100.0,
-     "equity_confidence": "low"
+     "equity_confidence": "low",
+     "lat": "39.550417",
+     "lon": "-76.376642",
+     "deed_liber": "00823",
+     "deed_folio": "0443",
+     "occupancy_code": "H"
     }
    ]
   },
