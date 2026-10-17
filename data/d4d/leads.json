@@ -1,0 +1,65 @@
+{
+ "rows": [
+  {
+   "account": "0502011816",
+   "county": "Calvert",
+   "property_address": "5000 SIXES RD",
+   "city": "PRINCE FREDERICK",
+   "zip_code": "20678",
+   "owner_mailing": "5000 SIXES RD, PRINCE FREDERICK MD 20678",
+   "map": "0026",
+   "grid": "0024",
+   "parcel": "0135",
+   "lot": "",
+   "subdivision": "",
+   "legal": "IMPS24,829 SF S/S SIXES RD BOWENS",
+   "zoning": "RUR",
+   "land_use": "Residential",
+   "acres": 0.57,
+   "year_built": "1969",
+   "sqft": 1110,
+   "style": "1 Story With Basement",
+   "land_value": 138800,
+   "impr_value": 145400,
+   "assessed_value": 284200,
+   "deed_ref": "4308/321",
+   "last_transfer": "2013-11-19",
+   "last_price": 0,
+   "owner_occupied_code": "H",
+   "homestead_qualified": "",
+   "lat": 38.49598185129927,
+   "lon": -76.62677756441396,
+   "sdat_url": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=05&SearchType=ACCT&District=02&AccountNumber=011816",
+   "spotted": "2026-10-17",
+   "verdict": "warm",
+   "headline": "Inherited house (mom died 2012). Heir likely lives in Glen Burnie and is under financial strain. Two owners on the deed.",
+   "owners": [
+    "SHERRI HOOPER-TORRICELLI (Rose's daughter, the estate's personal representative)",
+    "H. WAYNE BUCKMASTER (Rose's Buckmaster family). Alive or dead: NOT YET CONFIRMED"
+   ],
+   "vesting": "Joint tenants with right of survivorship: if one dies, the other owns it all",
+   "deed": "KPS 4308/321, personal representative's deed dated 10/28/2013, recorded 11/19/2013, no consideration. From the Estate of Rose Marie Hooper (Calvert estate #11763)",
+   "findings": [
+    "SDAT and Landglide show only Sherri. Either the owner name is cut off, or Wayne has died and dropped off by survivorship. VERIFY.",
+    "Rose Marie (Buckmaster) Hooper, 8/22/1931 to 3/18/2012, buried Asbury Methodist, Prince Frederick. Husband John Wesley Hooper (1928-1993).",
+    "Sherri is likely Sherri Lynn Hooper, DOB 12/1962, of Glen Burnie: collection judgments 2005-2023, a 2015 residential foreclosure (C-02-CV-15-002850) and a 2020 eviction for unpaid rent (D-072-LT-20-002277). Confirm with the skip trace.",
+    "No mortgage or deed of trust recorded since 2013.",
+    "SDAT still codes it owner-occupied, but the homestead credit is not active. Satellite shows the house fully under tree canopy; Ray saw it overgrown."
+   ],
+   "next_steps": [
+    "Skip-trace Sherri Hooper-Torricelli and H. Wayne Buckmaster (phones; confirm whether Wayne is alive)",
+    "Check Calvert tax status / 2026 tax-sale list",
+    "Letter and call to Sherri"
+   ],
+   "sources": [
+    "MD Land Records (Calvert) KPS 4308/321",
+    "Find a Grave 87429702 (Rose Marie Buckmaster Hooper)",
+    "Case Search: Hooper, Sherri L; Buckmaster, Wayne",
+    "MD parcel layer (SDAT data)"
+   ],
+   "id": "0502011816",
+   "updated": "2026-10-17T17:58:48+00:00"
+  }
+ ],
+ "generated_at": "2026-10-17T17:58:48+00:00"
+}

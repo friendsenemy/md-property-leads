@@ -140,6 +140,7 @@
         <button class="view-tab active" data-view="obits">Recent Death Leads</button>
         <button class="view-tab" data-view="title">Title Leads <span class="view-tab-sub">statewide · property-first</span></button>
         <button class="view-tab" data-view="surplus">Surplus Funds Leads <span class="view-tab-sub">tax-sale outcomes</span></button>
+        <button class="view-tab" data-view="d4d">Driving for Dollars <span class="view-tab-sub">spotted on the road</span></button>
         <button class="view-tab" data-view="vested">Failed Foreclosures <span class="view-tab-sub">§14-847 · county took title</span></button>
         <a class="view-tab" id="tabGuideLink" href="guide.html#start" target="_blank" rel="noopener" style="margin-left:auto; text-decoration:none; color:var(--text-dim)" title="Open the field guide for this tab">? what does this tab mean</a>
     </div>
@@ -439,6 +440,38 @@
     </div>
 </div><!-- /view-vested -->
 
+<div id="view-d4d" style="display:none">
+    <div class="stats-grid">
+        <div class="stat-card yellow"><div class="stat-label">Properties Spotted</div><div class="stat-value" id="dstatTotal">0</div></div>
+        <div class="stat-card pink"><div class="stat-label">Hot / Warm After Research</div><div class="stat-value" id="dstatHot">0</div></div>
+    </div>
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="d4dSearch" placeholder="Search address, owner, county, account…">
+        </div>
+    </div>
+    <div class="run-info" style="text-align:left; margin:6px 0 10px;">Properties you flagged while driving, each with the deed, owners, findings and next steps from the deep dive. Notes here are the same shared notes everyone sees.</div>
+    <div class="leads-container">
+        <table class="leads-table" id="d4dTable">
+            <thead><tr><th>Spotted</th><th>Property</th><th>Owners</th><th>Bottom Line</th><th>Assessed</th><th>Verdict</th><th>Status</th></tr></thead>
+            <tbody id="d4dBody"></tbody>
+        </table>
+        <div class="empty-state" id="d4dEmpty" style="display:none;">
+            <div class="icon">🚗</div>
+            <h3>Nothing here yet</h3>
+            <p>Send Claude a Landglide screenshot of a property you drove past; the researched card lands here.</p>
+        </div>
+        <div class="pagination">
+            <span id="d4dPageInfo">No properties</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="d4dPrev">← Prev</button>
+                <button class="page-btn" id="d4dNext">Next →</button>
+            </div>
+        </div>
+    </div>
+</div><!-- /view-d4d -->
+
 </div>
 
 <div class="modal-overlay" id="modalOverlay">
@@ -478,11 +511,12 @@
 <script src="static/js/title.js"></script>
 <script src="static/js/surplus.js"></script>
 <script src="static/js/vested.js"></script>
+<script src="static/js/d4d.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const VIEWS = ["obits", "title", "surplus", "vested"];
+    const VIEWS = ["obits", "title", "surplus", "vested", "d4d"];
     const started = {};
-    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init() };
+    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), d4d: () => D4DApp.init() };
     document.querySelectorAll(".view-tab").forEach((tab) => tab.addEventListener("click", () => {
         document.querySelectorAll(".view-tab").forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");
