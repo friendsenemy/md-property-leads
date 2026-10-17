@@ -26,6 +26,16 @@
         .view-tabs { display:flex; gap:6px; margin: 0 0 18px; border-bottom:1px solid var(--border); }
         .view-tab { background:none; border:none; color:var(--text-secondary); padding:10px 16px; font-family:var(--font-mono); font-size:0.85rem; cursor:pointer; border-bottom:2px solid transparent; }
         .view-tab.active { color:var(--cyan); border-bottom-color:var(--cyan); }
+        .status-badge.pursuing { background: rgba(255, 214, 10, 0.12); color: var(--yellow); border: 1px solid rgba(255, 214, 10, 0.35); }
+        .status-badge.followup { background: rgba(0, 240, 255, 0.08); color: var(--cyan); border: 1px dashed rgba(0, 240, 255, 0.4); }
+        .status-badge.dead { background: rgba(90, 90, 106, 0.1); color: var(--text-dim); border: 1px solid rgba(90, 90, 106, 0.2); text-decoration: line-through; }
+        .status-badge.warm { background: rgba(255, 159, 10, 0.1); color: #ff9f0a; border: 1px solid rgba(255, 159, 10, 0.3); }
+        .status-badge.watch { background: rgba(100, 210, 255, 0.08); color: #64d2ff; border: 1px solid rgba(100, 210, 255, 0.25); }
+        .status-badge.cold { background: rgba(90, 90, 106, 0.1); color: var(--text-secondary); border: 1px solid rgba(90, 90, 106, 0.3); }
+        .ml-form { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+        .ml-form label { display:flex; flex-direction:column; gap:4px; font-size:0.78rem; color:var(--text-secondary); }
+        .ml-form input { background:var(--bg-secondary, #111); border:1px solid var(--border); color:var(--text-primary, #eee); padding:8px; border-radius:6px; font-size:0.9rem; }
+        @media (max-width: 640px) { .ml-form { grid-template-columns: 1fr; } }
         .view-tab-sub { font-size:0.7rem; color:var(--text-dim); margin-left:6px; }
         /* surplus stage pills */
         .stage { display:inline-block; padding:3px 9px; border-radius:999px; font-family:var(--font-mono); font-size:0.7rem; font-weight:600; white-space:nowrap; border:1px solid transparent; }
@@ -137,6 +147,7 @@
     </header>
 
     <div class="view-tabs">
+        <button class="view-tab" data-view="myleads" style="color:var(--yellow)">★ My Leads <span class="view-tab-sub">everything we're working</span></button>
         <button class="view-tab active" data-view="obits">Recent Death Leads</button>
         <button class="view-tab" data-view="title">Title Leads <span class="view-tab-sub">statewide · property-first</span></button>
         <button class="view-tab" data-view="surplus">Surplus Funds Leads <span class="view-tab-sub">tax-sale outcomes</span></button>
@@ -472,6 +483,61 @@
     </div>
 </div><!-- /view-d4d -->
 
+<div id="view-myleads" style="display:none">
+    <div class="stats-grid">
+        <div class="stat-card yellow"><div class="stat-label">Open Leads</div><div class="stat-value" id="mlstatTotal">0</div></div>
+        <div class="stat-card pink"><div class="stat-label">Hot / Working It</div><div class="stat-value" id="mlstatHot">0</div></div>
+        <div class="stat-card cyan"><div class="stat-label">Touched This Week</div><div class="stat-value" id="mlstatWeek">0</div></div>
+        <div class="stat-card purple"><div class="stat-label">Going Cold (7+ days)</div><div class="stat-value" id="mlstatStale">0</div></div>
+    </div>
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="mlSearch" placeholder="Search address, owner, name, phone, anything in the notes…">
+        </div>
+        <select id="mlStatus">
+            <option value="active">Open leads (not dead/closed)</option>
+            <option value="stale">Going cold (no touch in 7+ days)</option>
+            <option value="all">Everything</option>
+            <option value="pursuing">Working it</option>
+            <option value="hot">Hot</option>
+            <option value="contacted">Contacted</option>
+            <option value="followup">Follow up</option>
+            <option value="new">New</option>
+            <option value="dead">Dead / pass</option>
+            <option value="closed">Closed</option>
+        </select>
+        <select id="mlWhen">
+            <option value="all">Any time</option>
+            <option value="today">Last 24 hours</option>
+            <option value="week">Last 7 days</option>
+            <option value="month">Last 30 days</option>
+        </select>
+        <button class="btn btn-primary" id="mlAddBtn">+ Add a lead</button>
+        <button class="btn" id="mlRefresh" title="Reload the shared notes">↻ Refresh</button>
+        <span id="mlSync" style="font-size:0.8rem; color:var(--text-dim)"></span>
+    </div>
+    <div class="run-info" style="text-align:left; margin:6px 0 10px;">Every property anyone saved a note on, from any tab, newest activity first. Click one to see every note and add the next one. To put a lead here, press <b>+ Add to My Leads</b> on its card, or <b>+ Add a lead</b> for something that isn't in the tool.</div>
+    <div class="leads-container">
+        <table class="leads-table" id="mlTable">
+            <thead><tr><th>Last Touch</th><th>Property</th><th>Status</th><th>Latest Note</th><th>Notes</th></tr></thead>
+            <tbody id="mlBody"></tbody>
+        </table>
+        <div class="empty-state" id="mlEmpty" style="display:none;">
+            <div class="icon">★</div>
+            <h3>No leads match</h3>
+            <p>Try "Everything", or add one with + Add a lead.</p>
+        </div>
+        <div class="pagination">
+            <span id="mlPageInfo">No leads</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="mlPrev">← Prev</button>
+                <button class="page-btn" id="mlNext">Next →</button>
+            </div>
+        </div>
+    </div>
+</div><!-- /view-myleads -->
+
 </div>
 
 <div class="modal-overlay" id="modalOverlay">
@@ -487,7 +553,11 @@
                 <label for="leadStatusSelect">Status</label>
                 <select id="leadStatusSelect">
                     <option value="new">New</option>
+                    <option value="pursuing">Working it (My Leads)</option>
+                    <option value="hot">Hot</option>
                     <option value="contacted">Contacted</option>
+                    <option value="followup">Follow up</option>
+                    <option value="dead">Dead / pass</option>
                     <option value="verified">Verified — money still unclaimed</option>
                     <option value="paid">Already paid out — dead</option>
                     <option value="closed">Closed</option>
@@ -498,6 +568,7 @@
             </div>
             <textarea id="leadNotes" placeholder="Add a note. Everyone using the dashboard sees it."></textarea>
             <div class="note-row" style="justify-content:flex-end">
+                <button class="btn" id="pinLeadBtn" style="display:none; margin-right:auto; color:var(--yellow); border-color:var(--yellow)">+ Add to My Leads</button>
                 <button class="btn btn-primary" id="saveLeadBtn">Save</button>
             </div>
         </div>
@@ -512,11 +583,12 @@
 <script src="static/js/surplus.js"></script>
 <script src="static/js/vested.js"></script>
 <script src="static/js/d4d.js"></script>
+<script src="static/js/myleads.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const VIEWS = ["obits", "title", "surplus", "vested", "d4d"];
+    const VIEWS = ["obits", "title", "surplus", "vested", "d4d", "myleads"];
     const started = {};
-    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), d4d: () => D4DApp.init() };
+    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), d4d: () => D4DApp.init(), myleads: () => MyLeadsApp.init() };
     document.querySelectorAll(".view-tab").forEach((tab) => tab.addEventListener("click", () => {
         document.querySelectorAll(".view-tab").forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");
