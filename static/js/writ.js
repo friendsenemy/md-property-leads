@@ -534,6 +534,7 @@ const WritApp = {
                 ${step("Writ issued", r.writ_issued)}
                 ${step("Levy (posted on property)", r.levy)}
                 ${step("Sale advertised for", r.sale_date ? r.sale_date + (r.sale_time ? " " + r.sale_time : "") : "")}
+                <div class="detail-row"><span class="label">Set sale date (from your alert)</span><span class="value"><input type="date" id="writSaleDate" value="${this.esc((r.sale_date || "").slice(0, 10))}"> <button type="button" class="btn" id="writSaleSave" style="padding:2px 8px">Save date</button></span></div>
                 ${step("Earliest lawful sale", r._sale ? r._sale.toLocaleDateString("en-US") + (r._days != null ? (r._days >= 0 ? `  (in ${r._days} days)` : `  (${-r._days} days ago)`) : "") : "")}
                 ${step("Sold / report of sale", r.sold)}
                 ${step("Ratified", r.ratified)}
@@ -568,6 +569,15 @@ const WritApp = {
                 <span style="font-size:0.75rem; color:var(--text-dim); margin-left:8px">Removes it for everyone. Paste the case again to bring it back.</span></div>
             ${(r.docket || []).length ? `<div class="detail-section"><h3>Key Docket Entries</h3>${r.docket.map((x) => `<div class="detail-row"><span class="label" style="font-family:var(--font-mono)">${this.esc(x.date)}</span><span class="value" style="font-size:0.8rem">${this.esc(x.name)}${x.comment ? ` — <span style="color:var(--text-dim)">${this.esc(x.comment.slice(0, 120))}</span>` : ""}</span></div>`).join("")}</div>` : ""}`;
         document.getElementById("writRemoveBtn").onclick = () => this.remove(r.id);
+        document.getElementById("writSaleSave").onclick = () => {
+            const v = document.getElementById("writSaleDate").value || "";
+            const c = Object.assign({}, this.local[r.case.toUpperCase()] || {}, r);
+            Object.keys(c).filter((k) => k.startsWith("_") || k === "id").forEach((k) => delete c[k]);
+            c.sale_date = v; c.updated = new Date().toISOString();
+            this.local[c.case.toUpperCase()] = c; this.saveLocal();
+            SharedNotes.saveWrit && SharedNotes.saveWrit("writ:" + c.case.toUpperCase() + "#writ", JSON.stringify(c), c.caption || c.case);
+            this.merge(); this.render(); this.open(r.id);
+        };
         const sel = document.getElementById("leadStatusSelect"), notes = document.getElementById("leadNotes");
         sel.value = this.statusOf(r); notes.value = this.notesOf(r);
         SharedNotes.footer(r.id);
