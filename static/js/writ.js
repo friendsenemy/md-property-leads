@@ -426,6 +426,7 @@ const WritApp = {
         const left = t.list.filter((x) => !done[x.case] && !inTool.has(x.case.toUpperCase())).length;
         const PRI = { A: "🔥 Open first", B: "Check", C: "Later" };
         el.innerHTML = `<details open style="margin:10px 0"><summary><b>Cases to open</b> — from ${this.esc(t.file)} (${t.total} cases → ${t.list.length} worth a look, <b>${left}</b> left)
+            <button class="btn btn-primary" id="writTriageOpen5" style="margin-left:8px; padding:2px 8px" title="Opens the next 5 unchecked cases in new tabs and ticks them">Open next 5 ↗</button>
             <button class="btn" id="writTriageClear" style="margin-left:8px; padding:2px 8px">Clear list</button></summary>
             <div style="font-size:0.78rem; color:var(--text-secondary); margin:4px 0">Click a case number to open it in Case Search (new tab) → Ctrl+A, Ctrl+C → paste it in the box above. The tick box is just your own “done” mark.</div>
             <table class="leads-table" style="font-size:0.8rem"><thead><tr><th></th><th>Priority</th><th>Filed</th><th>Case</th><th>Status</th><th>Debtor (caption)</th><th>Why</th></tr></thead><tbody>
@@ -436,6 +437,16 @@ const WritApp = {
             </tbody></table></details>`;
         el.querySelectorAll("button[data-copy]").forEach((b) => b.addEventListener("click", async () => { try { await navigator.clipboard.writeText(b.dataset.copy); const o = b.textContent; b.textContent = "✓"; setTimeout(() => { b.textContent = o; }, 1200); } catch {} }));
         el.querySelectorAll("input[data-c]").forEach((cb) => cb.addEventListener("change", () => { done[cb.dataset.c] = cb.checked || undefined; try { localStorage.setItem(this.TRIAGE_DONE_KEY, JSON.stringify(done)); } catch {} this.paintTriage(); }));
+        const o5 = document.getElementById("writTriageOpen5");
+        if (o5) o5.addEventListener("click", (e) => {
+            e.preventDefault();
+            const next = t.list.filter((x) => !done[x.case] && !inTool.has(x.case.toUpperCase())).slice(0, 5);
+            let blocked = 0;
+            next.forEach((x) => { const w = window.open("https://casesearch.courts.state.md.us/casesearch/case-detail-page?caseId=" + encodeURIComponent(x.case.replace(/-/g, "")), "_blank"); if (w) done[x.case] = true; else blocked++; });
+            try { localStorage.setItem(this.TRIAGE_DONE_KEY, JSON.stringify(done)); } catch {}
+            this.paintTriage();
+            if (blocked) alert(`Chrome blocked ${blocked} of the tabs. Click the pop-up icon at the right end of the address bar → "Always allow pop-ups from this site" → then click "Open next 5" again.`);
+        });
         const clr = document.getElementById("writTriageClear");
         if (clr) clr.addEventListener("click", (e) => { e.preventDefault(); try { localStorage.removeItem(this.TRIAGE_KEY); } catch {} this.paintTriage(); });
     },
