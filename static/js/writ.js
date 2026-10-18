@@ -420,7 +420,7 @@ const WritApp = {
             const f = (r.plaintiff_firm || r.plaintiff_atty || "").trim(); if (!f) return;
             const k = f.toUpperCase().replace(/[.,]/g, "").replace(/\s+/g, " ");
             const x = by[k] || (by[k] = { firm: f, attys: new Set(), hoas: new Set(), cases: 0, writs: 0 });
-            if (r.plaintiff_atty) x.attys.add(r.plaintiff_atty); if (r.plaintiff) x.hoas.add(r.plaintiff);
+            if (r.plaintiff_atty) x.attys.add(r.plaintiff_atty); if (r.plaintiff) { const hk = r.plaintiff.toUpperCase().replace(/[^A-Z0-9 ]/g, "").replace(/\b(INC|LLC|THE)\b/g, "").replace(/\s+/g, " ").trim(); if (!x.hoaKeys) x.hoaKeys = {}; if (!x.hoaKeys[hk]) { x.hoaKeys[hk] = 1; x.hoas.add(r.plaintiff.replace(/[,.]+$/, "")); } }
             x.cases++; if (r.writ_req || r.writ_issued) x.writs++;
         });
         const list = Object.values(by).sort((a, b) => b.writs - a.writs || b.cases - a.cases);
