@@ -876,3 +876,45 @@ a:hover { text-decoration: underline; }
 .vac-filter input { width:18px; height:18px; accent-color:var(--red); }
 
 .vac-usps { font-size: 0.62rem; letter-spacing: 0.03em; margin-left: 2px; padding: 0 3px; border-radius: 3px; background: rgba(0,0,0,0.18); }
+
+/* ── Deal worksheet: PETITO note, Owners & Liens, Deal Calculator (static/js/worksheet.js) ── */
+.ws-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.ws-btn { font-size: 0.85rem; padding: 7px 12px; color: var(--cyan); border-color: var(--cyan-dim); }
+.ws-sum { font-size: 0.78rem; color: var(--text-secondary); font-family: var(--font-mono); }
+.ws-overlay { z-index: 1100; }
+.ws-modal { max-width: 860px; }
+.ws-tabs { display: flex; gap: 6px; padding: 12px 24px 0; flex-wrap: wrap; }
+.ws-tabs button { background: transparent; border: 1px solid var(--border); color: var(--text-secondary); border-radius: 999px; padding: 6px 14px; cursor: pointer; font-size: 0.85rem; }
+.ws-tabs button.active { border-color: var(--cyan); color: var(--cyan); background: var(--cyan-subtle); }
+.ws-help { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.45; }
+.ws-card { position: relative; border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 36px 12px 12px; margin-bottom: 10px; background: var(--bg-card); }
+.ws-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.ws-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.4px; }
+.ws-grid label small { text-transform: none; letter-spacing: 0; color: var(--text-dim); font-size: 0.7rem; }
+.ws-grid .ws-wide { grid-column: 1 / -1; }
+.ws-grid input, .ws-grid select { background: var(--bg-primary); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 7px 8px; font-size: 0.88rem; font-family: var(--font); text-transform: none; letter-spacing: 0; width: 100%; box-sizing: border-box; }
+.ws-grid input:focus, .ws-grid select:focus { outline: none; border-color: var(--cyan-dim); }
+.ws-grid .ws-num { font-family: var(--font-mono); }
+.ws-del { position: absolute; top: 8px; right: 8px; background: none; border: none; color: var(--text-dim); cursor: pointer; font-size: 1rem; }
+.ws-del:hover { color: var(--red); }
+.ws-actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 12px; }
+.ws-empty { color: var(--text-dim); font-size: 0.85rem; padding: 8px 0; }
+.ws-totals { font-size: 0.82rem; color: var(--text-secondary); font-family: var(--font-mono); }
+.ws-bad { color: var(--red); }
+.ws-warn { color: var(--orange); }
+.ws-out { margin-top: 16px; border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; background: var(--bg-card); }
+.ws-out > div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; font-size: 0.88rem; color: var(--text-secondary); }
+.ws-out b { color: var(--text-primary); font-family: var(--font-mono); font-weight: 600; }
+.ws-out .ws-line { border-top: 1px solid var(--border); margin-top: 4px; padding-top: 8px; }
+.ws-out .ws-big b { color: var(--green); font-size: 1.1rem; }
+.ws-flag { margin-top: 8px; font-size: 0.84rem; padding: 8px 10px; border-radius: 6px; }
+.ws-flag.ws-bad { background: rgba(255, 69, 58, 0.1); border: 1px solid rgba(255, 69, 58, 0.35); }
+.ws-flag.ws-warn { background: rgba(255, 159, 10, 0.08); border: 1px solid rgba(255, 159, 10, 0.3); color: var(--text-primary); }
+.ws-h4 { margin: 18px 0 8px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--cyan-dim); }
+.ws-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+.ws-table th, .ws-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.ws-table th { color: var(--text-secondary); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+.ws-table td:nth-child(n+2) { font-family: var(--font-mono); }
+.ws-table .meta { font-size: 0.72rem; color: var(--text-dim); font-family: var(--font); }
+.ws-note { margin-top: 10px; font-size: 0.8rem; color: var(--text-secondary); }
+@media (max-width: 600px) { .ws-grid { grid-template-columns: 1fr 1fr; } .ws-table { font-size: 0.75rem; } }

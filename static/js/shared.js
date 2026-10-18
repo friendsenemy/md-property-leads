@@ -7,6 +7,7 @@ const SharedNotes = {
     url: (window.MDPL && window.MDPL.SHARED_NOTES_URL) || "",
     latest: {},      // id -> {status, notes, author, ts, tab, label}
     history: {},     // id -> [rows newest first]
+    worksheets: {},  // "<id>#ws" -> newest worksheet row (deal worksheet JSON; kept out of history/My Leads)
     loaded: false,
     enabled() { return !!this.url; },
 
@@ -19,9 +20,14 @@ const SharedNotes = {
             const r = await fetch(`${this.url}?t=${Date.now()}`, { cache: "no-store" });
             const j = await r.json();
             const rows = (j.rows || []).slice().sort((a, b) => String(b.ts).localeCompare(String(a.ts)));
-            this.latest = {}; this.history = {};
+            this.latest = {}; this.history = {}; this.worksheets = {};
             for (const row of rows) {
                 if (!row.id) continue;
+                if (/#ws$/.test(String(row.id))) {   // deal worksheets live in their own store
+                    const wk = this.key(String(row.id).replace(/#ws$/, "")) + "#ws";
+                    if (!this.worksheets[wk]) this.worksheets[wk] = row;
+                    continue;
+                }
                 const k = this.key(row.id);
                 (this.history[k] = this.history[k] || []).push(row);
                 if (!this.latest[k]) this.latest[k] = row;
@@ -58,6 +64,20 @@ const SharedNotes = {
             this.error = String(e); this.paintSync();
             return false;
         }
+    },
+
+    /* Deal worksheet (static/js/worksheet.js): one JSON row per save under "<id>#ws".
+       Never touches latest/history, so it can't change a lead's status or show in My Leads. */
+    async saveWorksheet(wsId, json, label) {
+        const row = { ts: new Date().toISOString(), author: this.author() || "unknown", tab: "worksheet", id: wsId, label: label || "", status: "", notes: json };
+        this.worksheets[wsId] = row;
+        if (!this.enabled()) return false;
+        try {
+            const r = await fetch(this.url, { method: "POST", body: JSON.stringify(row) });
+            const j = await r.json().catch(() => ({}));
+            if (j && j.ok === false) throw new Error(j.error || "save rejected");
+            return true;
+        } catch (e) { this.error = String(e); return false; }
     },
 
     /* The modal footer: who-you-are box, note history, sync state. Called by each tab's open(). */
