@@ -427,14 +427,14 @@ const WritApp = {
         const PRI = { A: "🔥 Open first", B: "Check", C: "Later" };
         el.innerHTML = `<details open style="margin:10px 0"><summary><b>Cases to open</b> — from ${this.esc(t.file)} (${t.total} cases → ${t.list.length} worth a look, <b>${left}</b> left)
             <button class="btn" id="writTriageClear" style="margin-left:8px; padding:2px 8px">Clear list</button></summary>
-            <div style="font-size:0.78rem; color:var(--text-secondary); margin:4px 0">Click a case number to copy it → Case Search → search by case number → select-all, copy, paste the page above. Tick it once you've checked it.</div>
+            <div style="font-size:0.78rem; color:var(--text-secondary); margin:4px 0">Click a case number to open it in Case Search (new tab) → Ctrl+A, Ctrl+C → paste it in the box above. The tick box is just your own “done” mark.</div>
             <table class="leads-table" style="font-size:0.8rem"><thead><tr><th></th><th>Priority</th><th>Filed</th><th>Case</th><th>Status</th><th>Debtor (caption)</th><th>Why</th></tr></thead><tbody>
             ${t.list.map((x) => { const isDone = done[x.case] || inTool.has(x.case.toUpperCase());
                 return `<tr style="${isDone ? "opacity:.45" : ""}"><td><input type="checkbox" data-c="${this.esc(x.case)}" ${isDone ? "checked" : ""} ${inTool.has(x.case.toUpperCase()) ? "disabled title='Already pasted into the tool'" : ""}></td>
-                <td>${PRI[x.pri]}</td><td>${this.esc(x.filed)}</td><td><button type="button" class="filter-btn" data-copy="${this.esc(x.case)}">${this.esc(x.case)}</button></td>
+                <td>${PRI[x.pri]}</td><td>${this.esc(x.filed)}</td><td><a class="filter-btn" style="text-decoration:none" target="_blank" rel="noopener" title="Open this case in Case Search (new tab)" href="https://casesearch.courts.state.md.us/casesearch/case-detail-page?caseId=${encodeURIComponent(x.case.replace(/-/g, ""))}">${this.esc(x.case)} ↗</a> <button type="button" class="filter-btn" data-copy="${this.esc(x.case)}" title="Copy case number">⧉</button></td>
                 <td>${this.esc(x.status)}</td><td>${this.esc((x.caption.split(/\s+vs?\.?\s+/i)[1] || x.caption))}</td><td>${this.esc(x.why)}</td></tr>`; }).join("")}
             </tbody></table></details>`;
-        el.querySelectorAll("button[data-copy]").forEach((b) => b.addEventListener("click", async () => { try { await navigator.clipboard.writeText(b.dataset.copy); const o = b.textContent; b.textContent = "✓ copied"; setTimeout(() => { b.textContent = o; }, 1200); } catch {} }));
+        el.querySelectorAll("button[data-copy]").forEach((b) => b.addEventListener("click", async () => { try { await navigator.clipboard.writeText(b.dataset.copy); const o = b.textContent; b.textContent = "✓"; setTimeout(() => { b.textContent = o; }, 1200); } catch {} }));
         el.querySelectorAll("input[data-c]").forEach((cb) => cb.addEventListener("change", () => { done[cb.dataset.c] = cb.checked || undefined; try { localStorage.setItem(this.TRIAGE_DONE_KEY, JSON.stringify(done)); } catch {} this.paintTriage(); }));
         const clr = document.getElementById("writTriageClear");
         if (clr) clr.addEventListener("click", (e) => { e.preventDefault(); try { localStorage.removeItem(this.TRIAGE_KEY); } catch {} this.paintTriage(); });
