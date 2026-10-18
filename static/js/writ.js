@@ -59,6 +59,7 @@ const WritApp = {
         this.paintSearchList();
         this.render();
         this.paintTriage();
+        this.paintFirms();
     },
     _hook: document.addEventListener("mdpl:notes-loaded", () => { try { if (WritApp.started) { WritApp.merge(); WritApp.render(); } } catch {} }),
 
@@ -173,7 +174,7 @@ const WritApp = {
             this.local[merged.case.toUpperCase()] = merged; n++;
             SharedNotes.saveWrit && SharedNotes.saveWrit("writ:" + merged.case.toUpperCase() + "#writ", JSON.stringify(merged), merged.caption || merged.case);
         }
-        this.saveLocal(); this.merge(); this.render(); this.paintTriage();
+        this.saveLocal(); this.merge(); this.render(); this.paintTriage(); this.paintFirms();
         msg.textContent = `Added/updated ${n} case${n === 1 ? "" : "s"}. Results lists only show the case — open the ones with a judgment and paste their detail page to see writ / levy / sale dates.`;
         ta.value = "";
     },
@@ -392,6 +393,23 @@ const WritApp = {
             return { case: c.case, caption: c.caption, type: c.type, status: c.status, filed: c.filed && !isNaN(c.filed) ? c.filed.toISOString().slice(0, 10) : "", surname: sn, lien, pri, why };
         }).sort((a, b) => a.pri.localeCompare(b.pri) || (b.filed || "").localeCompare(a.filed || ""));
         return { total: all.length, list, liens };
+    },
+    /* Collection firms: which law firm files for which HOA, and how many of their cases reached a writ. */
+    paintFirms() {
+        const el = document.getElementById("writFirms"); if (!el) return;
+        const by = {};
+        this.rows.forEach((r) => {
+            const f = (r.plaintiff_firm || r.plaintiff_atty || "").trim(); if (!f) return;
+            const k = f.toUpperCase().replace(/[.,]/g, "").replace(/\s+/g, " ");
+            const x = by[k] || (by[k] = { firm: f, attys: new Set(), hoas: new Set(), cases: 0, writs: 0 });
+            if (r.plaintiff_atty) x.attys.add(r.plaintiff_atty); if (r.plaintiff) x.hoas.add(r.plaintiff);
+            x.cases++; if (r.writ_req || r.writ_issued) x.writs++;
+        });
+        const list = Object.values(by).sort((a, b) => b.writs - a.writs || b.cases - a.cases);
+        el.innerHTML = list.length ? `<details style="margin:10px 0"><summary><b>Collection firms</b> — ${list.length} firm${list.length === 1 ? "" : "s"} seen in pasted cases (a firm that requests writs for one HOA usually does it for its others)</summary>
+            <table class="leads-table" style="font-size:0.8rem"><thead><tr><th>Firm</th><th>Attorney(s)</th><th>HOAs / creditors</th><th>Cases</th><th>With a writ</th></tr></thead><tbody>
+            ${list.map((x) => `<tr><td>${this.esc(x.firm)}</td><td>${this.esc([...x.attys].join(", "))}</td><td>${this.esc([...x.hoas].join("; "))}</td><td>${x.cases}</td><td>${x.writs}</td></tr>`).join("")}
+            </tbody></table></details>` : "";
     },
     paintTriage() {
         const el = document.getElementById("writTriage"); if (!el) return;
