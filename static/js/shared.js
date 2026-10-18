@@ -8,6 +8,7 @@ const SharedNotes = {
     latest: {},      // id -> {status, notes, author, ts, tab, label}
     history: {},     // id -> [rows newest first]
     worksheets: {},  // "<id>#ws" -> newest worksheet row (deal worksheet JSON; kept out of history/My Leads)
+    writs: {},       // "writ:<case>#writ" -> newest pasted court case (Writ Watch JSON; kept out of history/My Leads)
     loaded: false,
     enabled() { return !!this.url; },
 
@@ -20,12 +21,16 @@ const SharedNotes = {
             const r = await fetch(`${this.url}?t=${Date.now()}`, { cache: "no-store" });
             const j = await r.json();
             const rows = (j.rows || []).slice().sort((a, b) => String(b.ts).localeCompare(String(a.ts)));
-            this.latest = {}; this.history = {}; this.worksheets = {};
+            this.latest = {}; this.history = {}; this.worksheets = {}; this.writs = {};
             for (const row of rows) {
                 if (!row.id) continue;
                 if (/#ws$/.test(String(row.id))) {   // deal worksheets live in their own store
                     const wk = this.key(String(row.id).replace(/#ws$/, "")) + "#ws";
                     if (!this.worksheets[wk]) this.worksheets[wk] = row;
+                    continue;
+                }
+                if (/#writ$/.test(String(row.id))) {   // Writ Watch case data lives in its own store
+                    if (!this.writs[row.id]) this.writs[row.id] = row;
                     continue;
                 }
                 const k = this.key(row.id);
@@ -71,6 +76,19 @@ const SharedNotes = {
     async saveWorksheet(wsId, json, label) {
         const row = { ts: new Date().toISOString(), author: this.author() || "unknown", tab: "worksheet", id: wsId, label: label || "", status: "", notes: json };
         this.worksheets[wsId] = row;
+        if (!this.enabled()) return false;
+        try {
+            const r = await fetch(this.url, { method: "POST", body: JSON.stringify(row) });
+            const j = await r.json().catch(() => ({}));
+            if (j && j.ok === false) throw new Error(j.error || "save rejected");
+            return true;
+        } catch (e) { this.error = String(e); return false; }
+    },
+
+    /* Writ Watch (static/js/writ.js): one JSON row per pasted court case under "writ:<case>#writ". */
+    async saveWrit(id, json, label) {
+        const row = { ts: new Date().toISOString(), author: this.author() || "unknown", tab: "writ-case", id, label: label || "", status: "", notes: json };
+        this.writs[id] = row;
         if (!this.enabled()) return false;
         try {
             const r = await fetch(this.url, { method: "POST", body: JSON.stringify(row) });

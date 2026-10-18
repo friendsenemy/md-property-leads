@@ -173,6 +173,7 @@
         <button class="view-tab" data-view="title">Title Leads <span class="view-tab-sub">statewide · property-first</span></button>
         <button class="view-tab" data-view="surplus">Surplus Funds Leads <span class="view-tab-sub">tax-sale outcomes</span></button>
         <button class="view-tab" data-view="d4d">Driving for Dollars <span class="view-tab-sub">spotted on the road</span></button>
+        <button class="view-tab" data-view="writ">⚖ Writ Watch <span class="view-tab-sub">sheriff's sales · judgment levies</span></button>
         <button class="view-tab" data-view="vested">Failed Foreclosures <span class="view-tab-sub">§14-847 · county took title</span></button>
         <a class="view-tab" id="tabGuideLink" href="guide.html#start" target="_blank" rel="noopener" style="margin-left:auto; text-decoration:none; color:var(--text-dim)" title="Open the field guide for this tab">? what does this tab mean</a>
     </div>
@@ -414,6 +415,58 @@
     </div>
 </div><!-- /view-surplus -->
 
+<div id="view-writ" style="display:none">
+    <div class="stats-grid">
+        <div class="stat-card yellow"><div class="stat-label">Writs Live (requested → levied)</div><div class="stat-value" id="wstatLive">0</div></div>
+        <div class="stat-card purple"><div class="stat-label">Earliest Sale ≤ 45 Days</div><div class="stat-value" id="wstatSoon">0</div></div>
+        <div class="stat-card green"><div class="stat-label">Est. Equity Behind Live Writs</div><div class="stat-value" id="wstatEquity">$0</div></div>
+    </div>
+    <details class="ws-paste" style="margin:0 0 12px" open>
+        <summary><b>How this works</b> — judgment → lien → writ → levy → sheriff's sale (the Baltimore XV play)</summary>
+        <div style="font-size:0.82rem; line-height:1.55; padding:8px 4px">
+            A creditor (usually an HOA or condo) with a money judgment records a Notice of Lien in circuit court, asks the clerk for a
+            <b>writ of execution</b>, and the sheriff <b>levies</b> by posting it on the property. The sheriff can't sell until <b>30 days after the levy</b>
+            and <b>20 days after the newspaper notice</b> (Rule 3-644). The buyer gets the owner's interest <b>subject to the mortgage and prior liens</b>;
+            the court then has to ratify the sale (Rule 14-305) — a giveaway price on a home with real equity can be set aside (Baltimore XV v. Newsteps' Choice, 2026).<br>
+            <b>Your weekly 10 minutes:</b> in Case Search → Party Name Search → <b>Business</b>, search the names below, open every Contract case with a judgment,
+            select-all on the case page, copy, and paste it here. Results lists work too (they just won't show writ dates until you paste the case page).
+            Searching <b>Baltimore XV Properties</b> each week shows every sale they just bid on.
+            Montgomery County's online sheriff-sale list is scanned automatically every weekday.
+        </div>
+        <div id="writSearchList" class="presets" style="margin:6px 0"></div>
+        <div style="display:flex; gap:6px; margin:6px 0 10px"><input type="text" id="writNewSearch" placeholder="Add an HOA / creditor name to your search list…" style="flex:1"><button class="btn" id="writAddSearch">Add</button></div>
+        <textarea id="writPaste" rows="5" style="width:100%; font-family:var(--font-mono); font-size:0.75rem" placeholder="Paste a Case Search results page or one or more case-detail pages here…"></textarea>
+        <div style="display:flex; gap:10px; align-items:center; margin-top:6px"><button class="btn btn-primary" id="writPasteGo">Read pasted cases</button><span id="writPasteMsg" style="font-size:0.8rem; color:var(--text-secondary)"></span></div>
+    </details>
+    <div class="controls">
+        <div class="search-box"><span class="search-icon">🔍</span><input type="text" id="writSearch" placeholder="Search case, HOA, owner, address…"></div>
+        <div class="county-filter"><select id="writStage">
+            <option value="">All stages</option><option value="writ_req">Writ requested</option><option value="writ">Writ issued</option>
+            <option value="levied">Levied</option><option value="listed">Sale advertised</option><option value="sold">Sold — awaiting ratification</option>
+            <option value="lien">Lien recorded</option><option value="judgment">Judgment only</option><option value="ratified">Ratified</option><option value="satisfied">Paid / satisfied</option>
+        </select></div>
+        <button class="btn btn-export" id="writExport"><span class="icon">⬇</span> Export CSV</button>
+    </div>
+    <div class="run-info" id="writRunInfo" style="text-align:left; margin:6px 0 10px;"></div>
+    <div class="leads-container">
+        <table class="leads-table" id="writTable">
+            <thead><tr>
+                <th data-sort="stage">Stage <span class="sort-arrow">↕</span></th>
+                <th data-sort="sale">Earliest Sale <span class="sort-arrow">↕</span></th>
+                <th>Property</th><th>Creditor / Case</th><th>Owner (debtor)</th>
+                <th data-sort="value">Assessed <span class="sort-arrow">↕</span></th>
+                <th data-sort="equity">Est. Equity <span class="sort-arrow">↕</span></th>
+                <th>Status</th>
+            </tr></thead>
+            <tbody id="writBody"></tbody>
+        </table>
+        <div class="empty-state" id="writEmpty" style="display:none;">
+            <div class="icon">⚖️</div><h3>No cases yet</h3>
+            <p>Paste Case Search pages above. Montgomery County sales appear here automatically when the sheriff lists them.</p>
+        </div>
+    </div>
+</div><!-- /view-writ -->
+
 <div id="view-vested" style="display:none">
     <div class="stats-grid">
         <div class="stat-card yellow">
@@ -611,14 +664,15 @@
 <script src="static/js/title.js"></script>
 <script src="static/js/surplus.js"></script>
 <script src="static/js/vested.js"></script>
+<script src="static/js/writ.js?v=1"></script>
 <script src="static/js/d4d.js"></script>
 <script src="static/js/myleads.js"></script>
 <script src="static/js/worksheet.js?v=1"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const VIEWS = ["obits", "title", "surplus", "vested", "d4d", "myleads"];
+    const VIEWS = ["obits", "title", "surplus", "writ", "vested", "d4d", "myleads"];
     const started = {};
-    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), d4d: () => D4DApp.init(), myleads: () => MyLeadsApp.init() };
+    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), writ: () => WritApp.init(), d4d: () => D4DApp.init(), myleads: () => MyLeadsApp.init() };
     document.querySelectorAll(".view-tab").forEach((tab) => tab.addEventListener("click", () => {
         document.querySelectorAll(".view-tab").forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");

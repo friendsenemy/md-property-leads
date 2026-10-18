@@ -1,0 +1,48 @@
+name: Writ Watch (sheriff's sales)
+
+# Weekday mornings. Maryland law requires a real-property sheriff's sale to be advertised at
+# least 20 days ahead and held no sooner than 30 days after the levy, and Montgomery County
+# deletes each online listing the business day after the sale — so one scan per weekday catches
+# every listing with 2.5+ weeks to spare, and refreshes the property facts on pasted cases.
+# Runs on GitHub's free minutes (no Claude credits).
+
+on:
+  schedule:
+    - cron: '47 11 * * 1-5'      # 7:47 AM ET, Mon–Fri
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: writ-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install requests==2.31.0 pypdf==4.2.0
+
+      - name: Scan
+        env:
+          SHARED_NOTES_URL: https://script.google.com/macros/s/AKfycbzpEwPb5I4hEjA5YhtzfpcJSVRlhDJvQv5kAeV24KDJ9X9K5mA7QHkq1HJ-tYa_d2igUw/exec
+        run: python -m engine2.writ_watch
+
+      - name: Commit results
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          cp data/writ/watch.json /tmp/watch.json
+          git fetch origin main
+          git checkout -f -B main origin/main
+          mkdir -p data/writ && cp /tmp/watch.json data/writ/watch.json
+          git add data/writ/watch.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          N=$(python -c "import json;d=json.load(open('data/writ/watch.json'));print(len(d['rows']))")
+          git commit -m "Writ watch: ${N} cases"
+          git push origin main
