@@ -80,6 +80,10 @@ const WritApp = {
 
     decorate(c) {
         c.id = "writ:" + c.case.toUpperCase();
+        if (c.levy && Array.isArray(c.docket)) {
+            const p = c.docket.find((x) => /Return of Service - Posted/i.test(x.name || "") && /wexc|posted/i.test(x.comment || "") && this.d(x.date) >= this.d(c.writ_issued || "01/01/1900"));
+            const pd = p && this.postedDate(p.comment); if (pd) c.levy = pd;
+        }
         const st = this.stageOf(c);
         c._stage = st; c._stageRank = (this.STAGES.find((s) => s[0] === st) || [0, 0, -1])[2];
         c._sale = this.earliestSale(c);
@@ -104,7 +108,16 @@ const WritApp = {
         if (c.lien) return "lien";
         return "judgment";
     },
-    d(s) { if (!s) return null; const m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(s); const dt = m ? new Date(+m[3], +m[1] - 1, +m[2], 12) : new Date(s.length === 10 ? s + "T12:00:00" : s); return isNaN(dt) ? null : dt; },
+    /* Date the sheriff actually posted the writ, from the return comment: "WEXC Posted 02282026",
+       "WEXC/POSTED/ 08.05.2026.", "WEXC posted 6/14/24". The docket's own date is just when the return was filed. */
+    postedDate(comment) {
+        const t = String(comment || ""); if (!/posted|wexc/i.test(t)) return "";
+        let m = /(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{2,4})/.exec(t) || /\b(\d{2})(\d{2})(\d{4})\b/.exec(t);
+        if (!m) return "";
+        const y = m[3].length === 2 ? "20" + m[3] : m[3];
+        return `${m[1].padStart(2, "0")}/${m[2].padStart(2, "0")}/${y}`;
+    },
+        d(s) { if (!s) return null; const m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(s); const dt = m ? new Date(+m[3], +m[1] - 1, +m[2], 12) : new Date(s.length === 10 ? s + "T12:00:00" : s); return isNaN(dt) ? null : dt; },
     plus(dt, days) { return dt ? new Date(dt.getTime() + days * 864e5) : null; },
     /* Earliest lawful sale: 30 days after the levy (Rule 3-644(a)); if only the writ has issued, the levy is
        still pending, so the floor is writ + 30 days (in practice months later). An advertised date wins. */
@@ -259,8 +272,7 @@ const WritApp = {
             const wi = this.d(c.writ_issued);
             const posted = dk.find((x) => this.d(x.date) >= wi && /WEXC|Posted|Levy|Schedule of Levy/i.test(x.name + " " + x.comment));
             if (posted) {
-                const m = /(?:Posted|WEXC)\D*(\d{2})(\d{2})(\d{4})/i.exec(posted.comment || "");
-                c.levy = m ? `${m[1]}/${m[2]}/${m[3]}` : posted.date;
+                c.levy = this.postedDate(posted.comment) || posted.date;
             } else {
                 const nextGarn = dk.find((x) => this.d(x.date) >= wi && /Garnishment/i.test(x.name));
                 const served = dk.find((x) => this.d(x.date) >= wi && /Return of Service - Served|SV-SERVED/i.test(x.name + " " + x.comment)
