@@ -142,6 +142,9 @@ def montgomery():
     return rows, {"checked": now(), "count": len(rows)}
 
 
+removed = set()   # cases Ray removed in the tab (tombstone rows in the sheet)
+
+
 def pasted():
     """Cases Ray pasted in the tab, from the shared notes sheet (newest row per case)."""
     if not NOTES_URL:
@@ -155,6 +158,7 @@ def pasted():
         return []
     rows.sort(key=lambda x: str(x.get("ts", "")), reverse=True)
     seen, out = set(), []
+    removed.clear()
     for row in rows:
         rid = str(row.get("id", ""))
         if not rid.endswith("#writ") or rid in seen:
@@ -165,6 +169,9 @@ def pasted():
         except Exception:  # noqa: BLE001
             continue
         if not c.get("case"):
+            continue
+        if c.get("removed"):
+            removed.add(c["case"].upper())
             continue
         if c.get("address") and not c.get("satisfied"):
             p = parcel(c["address"], c.get("county") or "")
@@ -200,7 +207,12 @@ def main():
                     by[c] = r
             except ValueError:
                 pass
+    for c in list(by):
+        if c.upper() in removed:
+            by.pop(c)
     for r in mc_rows + ps:
+        if r["case"].upper() in removed:
+            continue
         r.setdefault("first_seen", (prev.get(r["case"]) or {}).get("first_seen") or now())
         by[r["case"]] = r
     out = {"generated_at": now(), "sources": {"montgomery": mc_meta, "pasted": {"count": len(ps)}},

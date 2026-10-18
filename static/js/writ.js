@@ -73,7 +73,7 @@ const WritApp = {
         Object.values(this.local).forEach((c) => put(c, "pasted"));
         const ws = (SharedNotes.writs || {});
         Object.values(ws).forEach((row) => { try { put(JSON.parse(row.notes), "pasted"); } catch {} });
-        this.rows = Object.values(by).map((c) => this.decorate(c));
+        this.rows = Object.values(by).filter((c) => !c.removed).map((c) => this.decorate(c));
     },
 
     decorate(c) {
@@ -166,6 +166,7 @@ const WritApp = {
             const merged = Object.assign({}, prev, c);
             delete merged._src; Object.keys(merged).filter((k) => k.startsWith("_") || k === "id").forEach((k) => delete merged[k]);
             if (!merged.prop && (merged.address || merged.acct)) { try { merged.prop = await this.lookup(merged); } catch {} }
+            delete merged.removed; delete merged.removed_at;
             merged.updated = new Date().toISOString();
             this.local[merged.case.toUpperCase()] = merged; n++;
             SharedNotes.saveWrit && SharedNotes.saveWrit("writ:" + merged.case.toUpperCase() + "#writ", JSON.stringify(merged), merged.caption || merged.case);
@@ -305,6 +306,18 @@ const WritApp = {
             use: p.DESCLU, built: p.YEARBLT, sdat: p.SDATWEBADR, matches: (j.features || []).length };
     },
 
+    /* Remove a case from the watch (for everyone): saves a "removed" marker so the shared sheet,
+       this browser and the daily scan all skip it. Pasting the case again brings it back. */
+    remove(id) {
+        const r = this.rows.find((x) => x.id === id); if (!r) return;
+        if (!confirm(`Remove ${r.case} (${r.defendant || r.caption || ""}) from Writ Watch?`)) return;
+        const k = r.case.toUpperCase();
+        const stub = { case: k, removed: true, removed_at: new Date().toISOString() };
+        this.local[k] = stub; this.saveLocal();
+        SharedNotes.saveWrit && SharedNotes.saveWrit("writ:" + k + "#writ", JSON.stringify(stub), "removed " + k);
+        App.closeModal(); this.merge(); this.render();
+    },
+
     /* ---------- table ---------- */
     filtered() {
         const s = this.state;
@@ -406,7 +419,10 @@ const WritApp = {
                 ${row("Links", `<a href="${maps}" target="_blank" rel="noopener">Map ↗</a>${p.sdat ? ` · <a href="${this.esc(p.sdat)}" target="_blank" rel="noopener">SDAT ↗</a>` : ""}`)}
             </div>
             ${flags.length ? `<div class="detail-section"><h3>Watch Out</h3>${flags.map((f) => `<div class="detail-row" style="display:block; font-size:0.82rem">⚠ ${this.esc(f)}</div>`).join("")}</div>` : ""}
+            <div class="detail-section"><button type="button" class="btn" id="writRemoveBtn" style="color:var(--red); border-color:var(--red)">🗑 Remove from Writ Watch</button>
+                <span style="font-size:0.75rem; color:var(--text-dim); margin-left:8px">Removes it for everyone. Paste the case again to bring it back.</span></div>
             ${(r.docket || []).length ? `<div class="detail-section"><h3>Key Docket Entries</h3>${r.docket.map((x) => `<div class="detail-row"><span class="label" style="font-family:var(--font-mono)">${this.esc(x.date)}</span><span class="value" style="font-size:0.8rem">${this.esc(x.name)}${x.comment ? ` — <span style="color:var(--text-dim)">${this.esc(x.comment.slice(0, 120))}</span>` : ""}</span></div>`).join("")}</div>` : ""}`;
+        document.getElementById("writRemoveBtn").onclick = () => this.remove(r.id);
         const sel = document.getElementById("leadStatusSelect"), notes = document.getElementById("leadNotes");
         sel.value = this.statusOf(r); notes.value = this.notesOf(r);
         SharedNotes.footer(r.id);
