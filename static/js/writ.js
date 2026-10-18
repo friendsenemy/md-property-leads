@@ -135,6 +135,12 @@ const WritApp = {
         }));
         $("writPasteGo").addEventListener("click", () => this.importPaste());
         $("writFile").addEventListener("change", (e) => { this.importFile(e.target.files[0]); e.target.value = ""; });
+        // drag-and-drop a Case Search export anywhere on the Writ Watch tab
+        const zone = $("view-writ"), ta = $("writPaste");
+        const hasFile = (e) => e.dataTransfer && [...(e.dataTransfer.types || [])].includes("Files");
+        ["dragenter", "dragover"].forEach((ev) => zone.addEventListener(ev, (e) => { if (!hasFile(e)) return; e.preventDefault(); ta.classList.add("writ-drop"); }));
+        ["dragleave", "dragend"].forEach((ev) => zone.addEventListener(ev, (e) => { if (e.target === zone || e.target === ta) ta.classList.remove("writ-drop"); }));
+        zone.addEventListener("drop", (e) => { if (!hasFile(e)) return; e.preventDefault(); ta.classList.remove("writ-drop"); const f = e.dataTransfer.files[0]; if (f) this.importFile(f); });
         $("writExport").addEventListener("click", () => this.exportCSV());
         $("writAddSearch").addEventListener("click", () => {
             const v = $("writNewSearch").value.trim(); if (!v) return;

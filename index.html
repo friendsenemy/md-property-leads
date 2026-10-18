@@ -415,6 +415,7 @@
     </div>
 </div><!-- /view-surplus -->
 
+<style>#writPaste.writ-drop{outline:3px dashed #22d3ee; outline-offset:2px; background:rgba(34,211,238,.08)}</style>
 <div id="view-writ" style="display:none">
     <div class="stats-grid">
         <div class="stat-card yellow"><div class="stat-label">Writs Live (requested → levied)</div><div class="stat-value" id="wstatLive">0</div></div>
@@ -435,7 +436,7 @@
         </div>
         <div id="writSearchList" class="presets" style="margin:6px 0"></div>
         <div style="display:flex; gap:6px; margin:6px 0 10px"><input type="text" id="writNewSearch" placeholder="Add an HOA / creditor name to your search list…" style="flex:1"><button class="btn" id="writAddSearch">Add</button></div>
-        <textarea id="writPaste" rows="5" style="width:100%; font-family:var(--font-mono); font-size:0.75rem" placeholder="Paste a Case Search results page or one or more case-detail pages here…"></textarea>
+        <textarea id="writPaste" rows="5" style="width:100%; font-family:var(--font-mono); font-size:0.75rem" placeholder="Paste a case page here — or drag &amp; drop a Case Search export file (Excel / CSV / JSON) anywhere on this tab…"></textarea>
         <div style="display:flex; gap:10px; align-items:center; margin-top:6px"><button class="btn btn-primary" id="writPasteGo">Read pasted cases</button><label class="btn" style="cursor:pointer" title="Case Search → Export Options → CSV, Excel or JSON">📂 Import Case Search export (CSV / Excel / JSON)<input type="file" id="writFile" accept=".csv,.xlsx,.xls,.json,.txt" style="display:none"></label><span id="writPasteMsg" style="font-size:0.8rem; color:var(--text-secondary)"></span></div>
         <div id="writTriage"></div>
         <div id="writFirms"></div>
@@ -666,7 +667,7 @@
 <script src="static/js/title.js"></script>
 <script src="static/js/surplus.js"></script>
 <script src="static/js/vested.js"></script>
-<script src="static/js/writ.js?v=5"></script>
+<script src="static/js/writ.js?v=6"></script>
 <script src="static/js/d4d.js"></script>
 <script src="static/js/myleads.js"></script>
 <script src="static/js/worksheet.js?v=1"></script>
