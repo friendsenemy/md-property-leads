@@ -1,0 +1,247 @@
+{
+ "account": "0903013464",
+ "estates": [
+  {
+   "estate_number": "12070",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "05/04/2000",
+   "date_closed": "03/05/2003",
+   "decedent": "KAREN JOYCE DAVIS",
+   "date_of_death": "3/17/2000",
+   "date_of_filing": "03/29/2000",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "CHARLES G. BYRD JR. [2518 MARYLAND AVENUE, BALTIMORE, MD 21218]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JONES",
+     "address": "104 PELICAN GARTH, FORT WASHINGTON, MD 20744"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/29/2000",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOVEMBER 30,",
+     "pages": 1999
+    },
+    {
+     "filed": "04/17/2000",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "04/17/2000",
+     "n": 3,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2000",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2000",
+     "n": 5,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED - FROM CHARLES G. BYRD, JR., ATTORNEY AT LAW",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2000",
+     "n": 6,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS - COPY OF RECEIPT (WILL FILING FEE) - COPY OF WILL - COPY OF LETTER FROM ATTORNEY TO CYNTHIA  L. (DAVIS) JONES",
+     "pages": 5
+    },
+    {
+     "filed": "05/04/2000",
+     "n": 7,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/04/2000",
+     "n": 8,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE/COPY DELIVERED TO PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2000",
+     "n": 9,
+     "code": "1336",
+     "desc": "RECEIPTS - #7354 - PAID - SMALL ESTATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2000",
+     "n": 10,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE  (3)",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2000",
+     "n": 11,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - KEVIN O. DAVIS",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2000",
+     "n": 12,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - IRVIN T. HAWKINS",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2000",
+     "n": 13,
+     "code": "1407",
+     "desc": "REGISTER OR WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/08/2000",
+     "n": 14,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - IRVIN T. HAWKINS",
+     "pages": 1
+    },
+    {
+     "filed": "05/19/2000",
+     "n": 15,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/07/2000",
+     "n": 16,
+     "code": "1336",
+     "desc": "RECEIPTS #7553  CERTIFIED MAILINGS",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2000",
+     "n": 17,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - FILED BY THORNTON FUNERAL HOME, P.A.AND IRVIN TREMAYNE HAWKINS - FEE PAID - RECEIPT #7634",
+     "pages": 5
+    },
+    {
+     "filed": "09/11/2000",
+     "n": 18,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - KEVIN O. DAVIS",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2002",
+     "n": 19,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INFORMATION REPORT & SMALL ESTATE CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2003",
+     "n": 20,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE INFORMATION REPORT A SMALL ESTATE CERTIFICATE OF COMPLIA   HEARING SCHEDULED FOR 3/4/03",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2003",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "01/28/2003",
+     "n": 22,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL -  CYNTHIA LORRAINE (DAVIS) JONES",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2003",
+     "n": 23,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FAX RECEIVED ALSTON & BYRD, ATTORNEYS AT LAW",
+     "pages": 9
+    },
+    {
+     "filed": "03/03/2003",
+     "n": 24,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "03/04/2003",
+     "n": 25,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM CHARLES G. BYRD",
+     "pages": 1
+    },
+    {
+     "filed": "03/04/2003",
+     "n": 26,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/04/2003",
+     "n": 27,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "03/04/2003",
+     "n": 28,
+     "code": "1403",
+     "desc": "SMALL ESTATE CERTIFICATE OF COMPLIANCE (FINAL)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2003-03-04",
+   "interested_persons": [
+    {
+     "name": "JONES",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "CHARLES G. BYRD",
+     "role": "CORRESPONDENT",
+     "source": "docket 25"
+    }
+   ],
+   "death_to_probate_days": 48,
+   "probate_age_days": 1035,
+   "days_since_last_docket": 8629,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910135858",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910135858",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "KAREN J DAVIS"
+  }
+ ]
+}

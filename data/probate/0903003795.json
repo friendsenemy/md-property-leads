@@ -1,0 +1,27 @@
+{
+ "account": "0903003795",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "FRANK B BRAUN",
+   "decedent_searched": "FRANK B BRAUN",
+   "date_of_death": "1978-12-17",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "MILDRED G BRAUN",
+   "decedent_searched": "MILDRED G BRAUN",
+   "date_of_death": "1983-05-22",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}

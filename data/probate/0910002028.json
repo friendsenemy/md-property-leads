@@ -1,0 +1,125 @@
+{
+ "account": "0910002028",
+ "estates": [
+  {
+   "estate_number": "13963",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/09/2004",
+   "date_closed": "03/16/2004",
+   "decedent": "NELLIE GERTRUDE GRAY CARTER",
+   "date_of_death": "12/28/2003",
+   "date_of_filing": "03/09/2004",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "AMY COLETTE CARTER GRAY",
+     "address": "12241 WENDY LANE, WALDORF, MD 20601"
+    },
+    {
+     "name": "RUTH C SWANN",
+     "address": "4972 PRESTON LANE, POMFRET, MD 20675"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/09/2004",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 3,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE - FUNERAL BILL",
+     "pages": 2
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 4,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE - MD & FED  TAX RETURN",
+     "pages": 6
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 7,
+     "code": "1336",
+     "desc": "RECEIPT#13985 FOR SMALL ESTATE FEE PAID BY COLETTE GRAY",
+     "pages": 1
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 8,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/09/2004",
+     "n": 9,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE -",
+     "pages": 3
+    },
+    {
+     "filed": "03/16/2004",
+     "n": 10,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2004-03-16",
+   "interested_persons": [
+    {
+     "name": "AMY COLETTE CARTER GRAY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "RUTH C SWANN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 72,
+   "probate_age_days": 7,
+   "days_since_last_docket": 8251,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910122329",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910122329",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "NELLIE G CARTER"
+  }
+ ]
+}

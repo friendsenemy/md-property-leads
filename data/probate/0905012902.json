@@ -1,0 +1,195 @@
+{
+ "account": "0905012902",
+ "estates": [
+  {
+   "estate_number": "W62689",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "08/19/2009",
+   "date_closed": "05/24/2010",
+   "decedent": "MARIE MARGIE LANCASTER",
+   "date_of_death": "5/16/2009",
+   "date_of_filing": "08/19/2009",
+   "will": "NO WILL",
+   "aliases": "MARGIE MARIE LANCASTER",
+   "attorney": "JAMES S DYSON [2037 KINGSHOUSE ROAD, SILVER SPRING, MD 20905]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LINDA  LANCASTER",
+     "address": "2129 EDGEWARE STREET, SILVER SPRING, MD 20905"
+    },
+    {
+     "name": "MARGIE  LANCASTER",
+     "address": "2129 EDGEWARE STREET, SILVER SPRING, MD 20905"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/19/2009",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 5
+    },
+    {
+     "filed": "08/19/2009",
+     "n": 2,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "08/19/2009",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (2  )",
+     "pages": 2
+    },
+    {
+     "filed": "08/19/2009",
+     "n": 4,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS' MEMORANDUM - INCOMPLETE FILING - NO PERSONAL REPRESENTATIVE APPOINTED",
+     "pages": 1
+    },
+    {
+     "filed": "08/25/2009",
+     "n": 5,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "09/02/2009",
+     "n": 6,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "09/02/2009",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "09/02/2009",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/02/2009",
+     "n": 9,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 2
+    },
+    {
+     "filed": "09/02/2009",
+     "n": 10,
+     "code": "1380",
+     "desc": "NOTICES NOT REQUIRED (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "09/16/2009",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/10/2009",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 11/10/2009 BY DISCOVER BANK FOR $5,553.29",
+     "pages": 4
+    },
+    {
+     "filed": "11/23/2009",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "12/02/2009",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "12/30/2009",
+     "n": 15,
+     "code": "1356",
+     "desc": "NON-PROBATE INHERITANCE TAX ADVICE: NO INHERITANCE TAX DUE",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2010",
+     "n": 16,
+     "code": "1390",
+     "desc": "AFFIDAVIT OF NO ASSETS IN LIEU OF FINAL ACCOUNT (FILED 2/16/10)",
+     "pages": 3
+    },
+    {
+     "filed": "03/19/2010",
+     "n": 17,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE - DISCOVER BANK",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2010",
+     "n": 18,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING AFFIDAVIT IN LIEU OF  INTERIM ACCOUNT DATED 5/21/10  ( JUDGE RUBIN  )",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2010",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "12/02/2010",
+     "n": 20,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INTERIM ACCOUNT",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2010-12-02",
+   "interested_persons": [
+    {
+     "name": "LINDA LANCASTER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "MARGIE LANCASTER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 95,
+   "probate_age_days": 278,
+   "days_since_last_docket": 5799,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910442041",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910442041",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARIE LANCASTER"
+  }
+ ]
+}

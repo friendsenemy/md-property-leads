@@ -11,6 +11,194 @@
    "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
    "imported_at": "2026-10-16",
    "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "19696",
+   "status": "ARCHIVED",
+   "type": "MA",
+   "date_opened": "12/19/2014",
+   "date_closed": "08/22/2019",
+   "decedent": "CHARLES JAMES MUSE SR",
+   "date_of_death": "11/22/2014",
+   "date_of_filing": "12/17/2014",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "STEVEN W JACOBSON [775N, 4500 MONTGOMERY AVE, BETHESDA, MD 20814]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "STEPHEN ALAN MUSE",
+     "address": "4105 STANFORD ST., CHEVY CHASE, MD 20815"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/17/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JANUARY 03, 1991 (NOT PROBATED)",
+     "pages": 4
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED MARCH 11,",
+     "pages": 2006
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 5,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 3
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 9,
+     "code": "1141",
+     "desc": "ELECTION OF PERSONAL REPRESENTATIVE FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 10,
+     "code": "1142",
+     "desc": "CONSENT TO ELECTION FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 11,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/06/2015",
+     "n": 12,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "02/10/2015",
+     "n": 13,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)- MA",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2015",
+     "n": 14,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- JOHN C MUSE",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 15,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- CHARLES J MUSE",
+     "pages": 1
+    },
+    {
+     "filed": "06/12/2015",
+     "n": 16,
+     "code": "1244",
+     "desc": "FINAL REPORT UNDER MODIFIED ADMINISTRATION INCORRECT",
+     "pages": 9
+    },
+    {
+     "filed": "06/22/2015",
+     "n": 17,
+     "code": "1143",
+     "desc": "AMENDED FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 6
+    },
+    {
+     "filed": "08/19/2019",
+     "n": 18,
+     "code": "1143",
+     "desc": "SUPPLEMENTAL FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 6
+    },
+    {
+     "filed": "08/22/2019",
+     "n": 19,
+     "code": "1436",
+     "desc": "REGISTER OF WILLS NOTICE OF REVIEW OF FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2019",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2025",
+     "n": 21,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-09-10",
+   "interested_persons": [
+    {
+     "name": "STEPHEN ALAN MUSE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 27,
+   "probate_age_days": 1707,
+   "days_since_last_docket": 403,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910128688",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910128688",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "CHARLES J MUSE"
   }
  ]
 }

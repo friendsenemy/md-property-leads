@@ -1,0 +1,690 @@
+{
+ "account": "0907007892",
+ "estates": [
+  {
+   "estate_number": "62449",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "05/06/2002",
+   "date_closed": "06/13/2018",
+   "decedent": "CECIL  CARROLL",
+   "date_of_death": "9/27/2001",
+   "date_of_filing": "05/06/2002",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CECIL  CARROLL JR",
+     "address": "12100 BLAKETON STREET, UPPER MARLBORO, MD 20774"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/06/2002",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 5
+    },
+    {
+     "filed": "05/06/2002",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2002",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2002",
+     "n": 4,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE FOUR ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2002",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/19/2013",
+     "n": 6,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 4
+    },
+    {
+     "filed": "08/19/2013",
+     "n": 7,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "08/19/2013",
+     "n": 8,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/19/2013",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "08/19/2013",
+     "n": 10,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "08/19/2013",
+     "n": 11,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "09/13/2013",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/2013",
+     "n": 13,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/21/2013",
+     "n": 14,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2013",
+     "n": 15,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "11/21/2013",
+     "n": 16,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "04/21/2014",
+     "n": 17,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2014",
+     "n": 18,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT   HEARING SCHEDULED FOR 07/02/2014",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2014",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "07/02/2014",
+     "n": 20,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 3
+    },
+    {
+     "filed": "07/02/2014",
+     "n": 21,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE ACCOUNT- PR TO SIT WITH AUDITOR MATTER CONTINUED TO 07/30/2014",
+     "pages": 1
+    },
+    {
+     "filed": "07/02/2014",
+     "n": 22,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR  07/30/2014",
+     "pages": 2
+    },
+    {
+     "filed": "07/07/2014",
+     "n": 23,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2014",
+     "n": 24,
+     "code": "1286",
+     "desc": "RESPONSE TO INVENTORY MEMO",
+     "pages": 3
+    },
+    {
+     "filed": "07/29/2014",
+     "n": 25,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "07/30/2014",
+     "n": 26,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 2
+    },
+    {
+     "filed": "09/02/2014",
+     "n": 27,
+     "code": "1286",
+     "desc": "RESPONSE TO AUDIT REQUEST",
+     "pages": 5
+    },
+    {
+     "filed": "09/03/2014",
+     "n": 28,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 3
+    },
+    {
+     "filed": "10/14/2014",
+     "n": 29,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST-SECOND NOTICE",
+     "pages": 2
+    },
+    {
+     "filed": "10/27/2014",
+     "n": 30,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "11/04/2014",
+     "n": 31,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "11/04/2014",
+     "n": 32,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 1ST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/06/2014",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/06/2015",
+     "n": 34,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "05/04/2015",
+     "n": 35,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 3
+    },
+    {
+     "filed": "05/06/2015",
+     "n": 36,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/14/2015",
+     "n": 37,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT  HEARING SCHEDULED FOR JUNE 17,",
+     "pages": 2015
+    },
+    {
+     "filed": "05/15/2015",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "06/04/2015",
+     "n": 39,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/05/2015",
+     "n": 40,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/17/2015",
+     "n": 41,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "06/17/2015",
+     "n": 42,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE ACCOUNT- ISSUE CONTEMPT",
+     "pages": 1
+    },
+    {
+     "filed": "06/23/2015",
+     "n": 43,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2015",
+     "n": 44,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2015",
+     "n": 45,
+     "code": "1244",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2015",
+     "n": 46,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2015",
+     "n": 47,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2015",
+     "n": 48,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 2ND ACCOUNT * THE ORDER DATED 07/15/2015 IS HEREBY VACATED DUE TO A CLERICAL ERROR",
+     "pages": 1
+    },
+    {
+     "filed": "07/23/2015",
+     "n": 49,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/16/2016",
+     "n": 50,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2016",
+     "n": 51,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT  HEARING SCHEDULED FOR MAY 3,",
+     "pages": 2016
+    },
+    {
+     "filed": "04/04/2016",
+     "n": 52,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/13/2016",
+     "n": 53,
+     "code": "1383",
+     "desc": "THIRD  ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "04/19/2016",
+     "n": 54,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/18/2016",
+     "n": 55,
+     "code": "1384",
+     "desc": "AMENDED THIRD ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "05/25/2016",
+     "n": 56,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "05/25/2016",
+     "n": 57,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AMENDED THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/26/2016",
+     "n": 58,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "10/26/2016",
+     "n": 59,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2016",
+     "n": 60,
+     "code": "1382",
+     "desc": "INVENTORY - DUPLICATE",
+     "pages": 3
+    },
+    {
+     "filed": "11/21/2016",
+     "n": 61,
+     "code": "1383",
+     "desc": "FOURTH  ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "12/03/2016",
+     "n": 62,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2017",
+     "n": 63,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2017",
+     "n": 64,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "01/12/2017",
+     "n": 65,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR STATUS OF REAL PROPERTY  HEARING SCHEDULED FOR 3/14/17",
+     "pages": 1
+    },
+    {
+     "filed": "01/17/2017",
+     "n": 66,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/14/2017",
+     "n": 67,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR MAY 2,",
+     "pages": 2017
+    },
+    {
+     "filed": "05/02/2017",
+     "n": 68,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE/STATUS OF SALE OF REAL PROEPRTY- MATTER CONT TO 9/5/17; PR TO PROVIDE LISTING AGREEMNT; ACCOUNT ORDER SIGNED IN OPEN COURT",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2017",
+     "n": 69,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2017",
+     "n": 70,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 9/5/17",
+     "pages": 2
+    },
+    {
+     "filed": "05/04/2017",
+     "n": 71,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "09/05/2017",
+     "n": 72,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE/STATUS OF SALE OF REAL PROPERTY- MATTER CONT TO 10/31/17",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2017",
+     "n": 73,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 10/31/17",
+     "pages": 2
+    },
+    {
+     "filed": "10/31/2017",
+     "n": 74,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -SHOW CAUSE/STATUS OF SALE OF REAL PROPERTY-CASE CALLED; NO ONE APPEARED. ISSUE CONTEMPT.",
+     "pages": 1
+    },
+    {
+     "filed": "11/01/2017",
+     "n": 75,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "11/07/2017",
+     "n": 76,
+     "code": "1266",
+     "desc": "MEMORANDUM OF THE COURT",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2017",
+     "n": 77,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT AND/OR REMOVAL",
+     "pages": 1
+    },
+    {
+     "filed": "12/08/2017",
+     "n": 78,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "01/10/2018",
+     "n": 79,
+     "code": "1293",
+     "desc": "RESPONSE TO SHOW CAUSE",
+     "pages": 10
+    },
+    {
+     "filed": "01/10/2018",
+     "n": 80,
+     "code": "1293",
+     "desc": "RESPONSE TO SHOW CAUSE (DUPLICATE)",
+     "pages": 10
+    },
+    {
+     "filed": "01/11/2018",
+     "n": 81,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2018",
+     "n": 82,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -CONTEMPT/STATUS OF REAL PROPERTY-PR T OSEEK COUNSEL. MATTER CONTINUED TO APRIL 17, 2018. NOTICE TO BE SENT. IF COUNSEL PROVIDES A STATUS BEFORE APRIL 17, 2018, HEARING CAN BE REMOVED.",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2018",
+     "n": 83,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR APRIL 17,2018",
+     "pages": 2
+    },
+    {
+     "filed": "02/05/2018",
+     "n": 84,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2018",
+     "n": 85,
+     "code": "1289",
+     "desc": "ASSIGNMENT OF INTEREST IN REAL PROPERTY",
+     "pages": 13
+    },
+    {
+     "filed": "04/17/2018",
+     "n": 86,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -CONTEMPT/STATUS OF REAL PROPERTY-P R TO SIT WITH AUDITOR. CONTEMPT SATISFIED.",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2018",
+     "n": 87,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "04/17/2018",
+     "n": 88,
+     "code": "1337",
+     "desc": "FACSIMILE RECEIVED WITH COPY OF ASSIGNMENTS",
+     "pages": 11
+    },
+    {
+     "filed": "04/17/2018",
+     "n": 89,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "05/30/2018",
+     "n": 90,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "05/30/2018",
+     "n": 91,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIFTH AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/07/2018",
+     "n": 92,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2018-06-07",
+   "interested_persons": [
+    {
+     "name": "CECIL CARROLL JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 221,
+   "probate_age_days": 5882,
+   "days_since_last_docket": 3055,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910662233",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910662233",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CECIL A CARROLL"
+  }
+ ]
+}
