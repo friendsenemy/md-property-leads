@@ -207,6 +207,9 @@ PRESETS = [
     {"id": "out_of_state_2", "label": "🌎 Out of State + 2 or More Problems", "any_flags": ["OUT_OF_STATE"], "min_problems": 2, "sort": "problems"},
     {"id": "out_of_state_3", "label": "🌎 Out of State + 3 or More Problems", "any_flags": ["OUT_OF_STATE"], "min_problems": 3, "sort": "problems"},
     {"id": "stack_3",        "label": "Problem Stack: 3+ problem types (any owner)", "min_problems": 3, "sort": "problems"},
+    # Lien-buy play (Logan/Ellis): old liens on non-homestead, absentee parcels with real equity are
+    # worth buying from the holder; check each one's owners on Case Search (judgments) and Land Records.
+    {"id": "lien_buy",       "label": "💰 Lien-Buy Candidates (no homestead, absentee, $100K+ equity, dead owner / tax sale / out of state)", "flags": ["NO_HOMESTEAD", "ABSENTEE"], "min_equity": 100000, "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "ESTATE_IN_NAME", "HEIRS_IN_NAME", "OUT_OF_STATE", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT"], "sort": "equity"},
     {"id": "estate_named",   "label": "Estate / Heirs in Owner Name", "any_flags": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP"]},
     {"id": "life_estate",    "label": "Life Estate (heirs pre-named)", "any_flags": ["LIFE_ESTATE"]},
     {"id": "poor_condition", "label": "Poor / Below-Avg Condition",   "any_flags": ["POOR_CONDITION", "BELOW_AVG_CONDITION"]},

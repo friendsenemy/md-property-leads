@@ -200,7 +200,7 @@ const Worksheet = {
         body.querySelectorAll("[data-add]").forEach((b) => b.onclick = () => {
             this.read();
             if (b.dataset.add === "owner") d.owners.push({ name: "", relation: "", share: "", life: "Alive", contact: "", stage: "Not contacted", price: "", note: "" });
-            else d.liens.push({ type: "Judgment", holder: "", ref: "", amount: "", attaches: "Property", status: "Open", payoff: "", note: "" });
+            else d.liens.push({ type: "Judgment", holder: "", ref: "", amount: "", date: "", rate: "10", attaches: "Property", status: "Open", payoff: "", note: "" });
             this.render();
         });
         body.querySelectorAll("[data-del]").forEach((b) => b.onclick = () => {
@@ -215,8 +215,17 @@ const Worksheet = {
         });
         // live recompute on the calculator
         if (this.section === "calc") body.querySelectorAll("input,select").forEach((el) => el.addEventListener("input", () => { this.read(); this.paintCalc(); }));
-        if (this.section !== "calc") body.querySelectorAll("input,select").forEach((el) => el.addEventListener("change", () => { this.read(); this.paintTotals(); }));
+        if (this.section !== "calc") body.querySelectorAll("input,select").forEach((el) => el.addEventListener("change", () => { this.read(); this.paintTotals(); if (this.section === "liens") this.paintBuy(); }));
+        const go = document.getElementById("wsPasteGo");
+        if (go) go.onclick = () => {
+            this.read();
+            const n = this.importCaseSearch(document.getElementById("wsPasteCS").value);
+            this.pasteOpen = true; this.render(); this.pasteOpen = false;
+            const msg = document.getElementById("wsPasteMsg");
+            if (msg) msg.textContent = n.added ? `Added ${n.added} case${n.added === 1 ? "" : "s"} (skipped ${n.skipped} that aren't money claims or are already listed). Open each case: was a judgment entered? amount? renewed? satisfied? same person?` : `Nothing added — ${n.skipped} row${n.skipped === 1 ? "" : "s"} were criminal/traffic/family/plaintiff cases or already listed.`;
+        };
         if (this.section === "calc") this.paintCalc(); else this.paintTotals();
+        if (this.section === "liens") this.paintBuy();
     },
 
     /* read every field in the open section back into this.data */
@@ -260,13 +269,20 @@ const Worksheet = {
                 <label>Holder ${this.inp(`liens:${i}:holder`, l.holder, "Capital One, county, HUD…")}</label>
                 <label>Book/page or case # ${this.inp(`liens:${i}:ref`, l.ref, "EWS 1234/56 · C-08-CV-24-000123")}</label>
                 <label>Amount of record $ ${this.inp(`liens:${i}:amount`, l.amount, "", "ws-num")}</label>
+                <label>Date entered / recorded ${this.inp(`liens:${i}:date`, l.date, "2014-06-30")}</label>
+                <label>Interest % / yr ${this.inp(`liens:${i}:rate`, l.rate, "10 (MD judgment rate)", "ws-num")}</label>
                 <label>Attaches to ${this.inp(`liens:${i}:attaches`, l.attaches, "Property, or one heir's share")}</label>
                 <label>Status ${this.sel(`liens:${i}:status`, this.LIEN_STATUS, l.status)}</label>
                 <label>Est. payoff $ ${this.inp(`liens:${i}:payoff`, l.payoff, "what it will really cost", "ws-num")}</label>
                 <label class="ws-wide">Note ${this.inp(`liens:${i}:note`, l.note, "renewed? right person? SOL? release demand sent? settle %…")}</label>
             </div>
+            <div class="ws-buy" data-buy="${i}"></div>
             <button type="button" class="ws-del" data-del="liens:${i}" title="Remove this lien">✕</button></div>`).join("");
         return `<div class="ws-help">Lien stack: treat every lien as a claim, not a fact. Check: right person? still enforceable (MD judgments 12 yrs, renewable)? released under a misspelled name? attaches to the property or only one owner's share? Run judgments on the decedent <b>and</b> every heir. Taxes go in the calculator, not here — unless it's a separate municipal or water bill.</div>
+            <details class="ws-paste"${this.pasteOpen ? " open" : ""}><summary>📥 Paste Case Search results (search each owner and heir by name, select the results table, copy, paste here)</summary>
+                <textarea id="wsPasteCS" placeholder="Case Number  Name  Party Type  Court  Case Type  Case Status  Filing Date  Case Caption …"></textarea>
+                <button type="button" class="btn" id="wsPasteGo">Add cases as liens</button> <span class="ws-totals" id="wsPasteMsg"></span>
+            </details>
             ${rows || '<div class="ws-empty">No liens yet.</div>'}
             <div class="ws-actions"><button type="button" class="btn" data-add="lien">+ Add lien / cloud</button></div>
             <div class="ws-totals" id="wsTotals"></div>`;
@@ -370,6 +386,85 @@ const Worksheet = {
             <table class="ws-table"><thead><tr><th>Owner</th><th>Share</th><th>Share of retail</th><th>Max offer</th><th>Staged plan</th></tr></thead><tbody>${ownerRows}</tbody></table>
             <div class="ws-note">These are ceilings, not opening numbers. Quote each heir a NET number by share (never one flat price to everyone), keep room for heirs you haven't found yet, and answer value questions honestly.</div>` : '<div class="ws-note">Add owners on the Owners tab to get an offer for each share.</div>'}
             ${holdTxt}`;
+    },
+
+    /* ---------- Lien-buy play (Logan / Ellis): buy an old lien on a non-homestead property at a
+       discount, record the assignment, send an honest demand, then collect at a sale/refi/estate
+       or enforce (judgment: writ of execution + sheriff's sale; DOT: foreclosure). ---------- */
+    accrued(l) {
+        const amt = this.n(l.amount), rate = this.n(l.rate), dt = l.date ? new Date(/^\d{4}-\d{2}-\d{2}$/.test(l.date) ? l.date + "T12:00:00" : l.date) : null;
+        if (!amt || !dt || isNaN(dt)) return null;
+        const yrs = Math.max(0, (Date.now() - dt.getTime()) / 31557600000);
+        return { yrs, bal: amt * (1 + (rate || 0) / 100 * yrs), dt };   // simple interest (MD post-judgment interest is simple, verify)
+    },
+    paintBuy() {
+        const d = this.data, f = this.facts(this.id), m = this.math(d);
+        const ownersN = d.owners.length || ((f.owner || "").split(/\s*\/\s*|\s+&\s+|\s+AND\s+/i).filter(Boolean).length);
+        const spouses = /&|\bAND\b|\bET UX\b|\bH\/W\b|\bHUSBAND|\bWIFE/i.test(f.owner || "") || /entiret/i.test(f.vesting || "");
+        document.querySelectorAll("#wsBody [data-buy]").forEach((el) => {
+            const i = +el.dataset.buy, l = d.liens[i];
+            if (!l || !["Judgment", "Mortgage / deed of trust", "HOA / condo", "Mechanic's lien", "Other"].includes(l.type)) { el.innerHTML = ""; return; }
+            const a = this.accrued(l);
+            const warn = [], good = [];
+            if (f.occupied) warn.push("Owner-occupied per SDAT — skip (homestead protections, PHIFA, and Ray's no-occupied rule).");
+            else good.push("No homestead / not owner-occupied per SDAT.");
+            if (l.type === "Judgment" && spouses) warn.push("Looks like spouses on title. If they hold as tenants by the entirety and the judgment is against only one spouse, it can't be enforced against this property.");
+            if (l.type === "Judgment" && ownersN > 1) warn.push("More than one owner: a judgment attaches only to the debtor's own share.");
+            if (["Released", "Settled", "Not ours (wrong person)"].includes(l.status)) warn.push(`Status is "${l.status}" — nothing to buy.`);
+            let expTxt = "";
+            if (a && l.type === "Judgment") {
+                const exp = new Date(a.dt); exp.setFullYear(exp.getFullYear() + 12);
+                const left = (exp - Date.now()) / 31557600000;
+                expTxt = left > 0 ? `12-yr lien runs to ${exp.toLocaleDateString("en-US")} (${left.toFixed(1)} yrs left) unless renewed` : `PAST 12 years (${exp.toLocaleDateString("en-US")}) — worthless unless it was renewed (check the docket)`;
+                if (left <= 0) warn.push("Judgment may be expired — confirm renewal before paying anything.");
+                else if (left < 1.5) warn.push("Judgment expires soon — the holder may sell cheap, but you'd need to renew or enforce fast.");
+            }
+            // equity behind this lien: value minus taxes minus liens recorded earlier (lower index = senior, as listed)
+            const senior = d.liens.slice(0, i).filter((x) => this.LIVE_LIEN.includes(x.status)).reduce((s2, x) => s2 + (this.n(x.payoff) || this.n(x.amount) || 0), 0);
+            const val = m.value || f.assessed || 0;
+            const cover = val - (m.taxes || f.taxFace || 0) - senior;
+            const bal = a ? a.bal : this.n(l.amount);
+            if (bal && val) { if (cover >= bal) good.push(`Equity covers it: ${this.money(cover)} behind it vs ${this.money(bal)} owed.`); else warn.push(`Equity behind it (${this.money(cover)}) is less than the ${this.money(bal)} owed — only partly secured.`); }
+            const lo = bal ? bal * 0.05 : 0, hi = bal ? bal * (a && a.yrs > 7 ? 0.15 : 0.3) : 0;
+            el.innerHTML = bal ? `<div class="ws-buy-h">💰 Lien-buy check</div>
+                <div class="ws-buy-row">${a ? `${this.money(this.n(l.amount))} from ${a.dt.toLocaleDateString("en-US")}${/\bfiled \d/.test(l.note || "") ? " (Case Search filing date — swap in the judgment date)" : ""} at ${this.n(l.rate) || 0}%/yr → <b>~${this.money(a.bal)} owed now</b> (${a.yrs.toFixed(1)} yrs)` : `<b>${this.money(bal)}</b> of record — add the date and rate to see what's owed now`}${expTxt ? ` · ${expTxt}` : ""}</div>
+                <div class="ws-buy-row">Opening offer to the holder: ~${this.money(lo)}–${this.money(hi)} (old, non-paying claims trade at ~5–30¢; ~10¢ on judgments 8+ yrs old)</div>
+                ${good.map((t) => `<div class="ws-buy-ok">✓ ${this.esc(t)}</div>`).join("")}${warn.map((t) => `<div class="ws-buy-bad">⚠ ${this.esc(t)}</div>`).join("")}` : "";
+        });
+    },
+
+    /* Parse a pasted Maryland Judiciary Case Search results table into lien rows. */
+    importCaseSearch(text) {
+        const lines = String(text || "").split(/\r?\n/).map((x) => x.trim()).filter(Boolean);
+        const caseRe = /^(?:[A-Z]-\d{2,3}-[A-Z]{2}-\d{2}-\d{5,7}|\d{2}-\d{2}-\d{6,7}-\d{4}|[A-Z0-9]{2,6}\d{5,}[A-Z0-9-]*)$/;
+        const blocks = [];
+        for (const ln of lines) { if (caseRe.test(ln)) blocks.push([ln]); else if (blocks.length) blocks[blocks.length - 1].push(ln); }
+        let added = 0, skipped = 0;
+        const have = new Set(this.data.liens.map((l) => (l.ref || "").trim()));
+        for (const b of blocks) {
+            const ci = b.findIndex((x) => /Court$/.test(x));
+            if (ci < 2) { skipped++; continue; }
+            const num = b[0], name = b[1], party = b[ci - 1], court = b[ci], type = b[ci + 1] || "", status = b[ci + 2] || "";
+            const filed = b.slice(ci + 3).find((x) => /^\d{1,2}\/\d{1,2}\/\d{4}$/.test(x)) || "";
+            const caption = b[b.length - 1] || "";
+            const T = type.toLowerCase();
+            const isDef = /defendant|respondent/i.test(party);
+            if (have.has(num) || !isDef || /criminal|traffic|citation|custody|divorce|protective|peace order|domestic|support enforcement|adoption|guardianship|name change|expungement/.test(T)) { skipped++; continue; }
+            let ltype = "Judgment";
+            if (/redemption|tax sale/.test(T)) ltype = "County taxes";
+            else if (/foreclos/.test(T)) ltype = "Mortgage / deed of trust";
+            else if (/mechanic/.test(T)) ltype = "Mechanic's lien";
+            else if (/lien/.test(T)) ltype = "Other";
+            const plaintiff = (caption.split(/\s+vs\.?\s+/i)[0] || "").trim();
+            const iso = filed ? (() => { const [mm, dd, yy] = filed.split("/"); return `${yy}-${mm.padStart(2, "0")}-${dd.padStart(2, "0")}`; })() : "";
+            this.data.liens.push({
+                type: ltype, holder: plaintiff, ref: num, amount: "", date: iso, rate: ltype === "Judgment" ? "10" : "",
+                attaches: `${name} (debtor) — property only if it's this owner`, status: /closed/i.test(status) && ltype !== "Judgment" ? "Released" : "Open", payoff: "",
+                note: `${court} · ${type} · ${status} · filed ${filed}. ${ltype === "County taxes" ? "Tax-sale certificate holder foreclosing the right of redemption — check the redemption amount." : "Open the case: judgment entered? date + amount? renewed? satisfied? Same person (DOB/middle name)?"}`,
+            });
+            have.add(num); added++;
+        }
+        return { added, skipped };
     },
 
     ownerStats(d) {
