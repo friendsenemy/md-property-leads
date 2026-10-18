@@ -61,7 +61,7 @@ const WritApp = {
         this.paintTriage();
         this.paintFirms();
     },
-    _hook: document.addEventListener("mdpl:notes-loaded", () => { try { if (WritApp.started) { WritApp.merge(); WritApp.render(); } } catch {} }),
+    _hook: document.addEventListener("mdpl:notes-loaded", () => { try { if (WritApp.started) { WritApp.merge(); WritApp.render(); WritApp.paintFirms(); WritApp.paintTriage(); } } catch {} }),
 
     loadLocal() { try { this.local = JSON.parse(localStorage.getItem(WRIT_LS_KEY) || "{}"); } catch { this.local = {}; } },
     saveLocal() { try { localStorage.setItem(WRIT_LS_KEY, JSON.stringify(this.local)); } catch {} },
@@ -424,7 +424,7 @@ const WritApp = {
             x.cases++; if (r.writ_req || r.writ_issued) x.writs++;
         });
         const list = Object.values(by).sort((a, b) => b.writs - a.writs || b.cases - a.cases);
-        el.innerHTML = list.length ? `<details style="margin:10px 0"><summary><b>Collection firms</b> — ${list.length} firm${list.length === 1 ? "" : "s"} seen in pasted cases (a firm that requests writs for one HOA usually does it for its others)</summary>
+        el.innerHTML = list.length ? `<details open style="margin:10px 0; padding:8px 10px; border:1px solid #a78bfa; border-radius:8px"><summary style="cursor:pointer">⚖ <b>Collection firms</b> — ${list.length} firm${list.length === 1 ? "" : "s"} seen in pasted cases (a firm that requests writs for one HOA usually does it for its others)</summary>
             <table class="leads-table" style="font-size:0.8rem"><thead><tr><th>Firm</th><th>Attorney(s)</th><th>HOAs / creditors</th><th>Cases</th><th>With a writ</th></tr></thead><tbody>
             ${list.map((x) => `<tr><td>${this.esc(x.firm)}</td><td>${this.esc([...x.attys].join(", "))}</td><td>${this.esc([...x.hoas].join("; "))}</td><td>${x.cases}</td><td>${x.writs}</td></tr>`).join("")}
             </tbody></table></details>` : "";
