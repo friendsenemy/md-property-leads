@@ -242,13 +242,32 @@ const WritApp = {
         c.lien = first(/Lien of Judgment Recorded|LIEN OF JUDGMENT|Notice of Lien/i);
         c.writ_req = first(/Request for Writ of Execution/i);
         c.writ_issued = first(/Writ of Execution Issued|Writ in Execution/i);
-        if (c.writ_issued) c.levy = first(/Return of Service - Served|SV-SERVED|Levy|Schedule of Levy/i, c.writ_issued);
+        if (c.writ_issued) {
+            // The levy is the sheriff POSTING the writ of execution ("WEXC Posted mmddyyyy"). A later
+            // "Return of Service - Served" usually belongs to a garnishment writ, so only use it when
+            // no garnishment was requested in between.
+            const wi = this.d(c.writ_issued);
+            const posted = dk.find((x) => this.d(x.date) >= wi && /WEXC|Posted|Levy|Schedule of Levy/i.test(x.name + " " + x.comment));
+            if (posted) {
+                const m = /(?:Posted|WEXC)\D*(\d{2})(\d{2})(\d{4})/i.exec(posted.comment || "");
+                c.levy = m ? `${m[1]}/${m[2]}/${m[3]}` : posted.date;
+            } else {
+                const nextGarn = dk.find((x) => this.d(x.date) >= wi && /Garnishment/i.test(x.name));
+                const served = dk.find((x) => this.d(x.date) >= wi && /Return of Service - Served|SV-SERVED/i.test(x.name + " " + x.comment)
+                    && (!nextGarn || this.d(x.date) < this.d(nextGarn.date)));
+                if (served) c.levy = served.date;
+            }
+            const garnAfter = dk.filter((x) => this.d(x.date) > wi && /Garnishment/i.test(x.name));
+            if (garnAfter.length) c.garnish_after_writ = garnAfter[garnAfter.length - 1].date;
+            const dismissGarn = dk.find((x) => this.d(x.date) > wi && /Dismiss Garnishment|Release.*Levy|Levy Released|Release of Property/i.test(x.name + " " + x.comment));
+            if (dismissGarn) c.release_or_dismiss = dismissGarn.date + " — " + dismissGarn.name;
+        }
         c.sold = first(/Report of Sale|Affidavit - Purchaser|Purchaser'?s Affidavit|Sheriff'?s Sale (Report|Held)/i);
         c.ratified = first(/Order.*Ratif|Ratification.*(Order|Granted)|Sale Ratified/i);
         c.satisfied = first(/Satisfaction of Judgment Entered|Notice of Satisfaction|Judgment Satisfied/i);
         c.bankruptcy = first(/Bankruptcy|Automatic Stay|Suggestion of Bankruptcy/i);
         c.exceptions = first(/Exception/i);
-        c.garnish_tries = dk.filter((x) => /Garnishment/i.test(x.name)).length;
+        c.garnish_tries = dk.filter((x) => /Garnishment/i.test(x.name) && (!c.writ_req || this.d(x.date) < this.d(c.writ_req))).length;
         c.service_issues = dk.filter((x) => /NON-?EST|NOT SERVED|EVAD|Alternative Service|Alternate Service/i.test(x.name + " " + x.comment)).length;
         c.docket = dk.filter((x) => /Writ|Lien|Levy|Satisf|Sale|Ratif|Exception|Bankrupt|Affidavit Judgment|Judgment Entered|Garnish|Motion to Strike|Appeal/i.test(x.name + " " + x.comment) || (c.writ_issued && /Return of Service/i.test(x.name) && this.d(x.date) >= this.d(c.writ_issued))).slice(-18);
         return c;
@@ -342,6 +361,12 @@ const WritApp = {
         if (r.bankruptcy) flags.push(`Bankruptcy entry on the docket (${r.bankruptcy}) — the automatic stay stops the sale. Check PACER.`);
         if (r.from === "case detail" && !r.lien && r.county !== "BACI") flags.push("No 'Lien of Judgment Recorded in Circuit Court' entry found — without it the clerk can't issue a writ against land (Rule 3-641(a)). Check the circuit-court JG case.");
         if (r.garnish_tries) flags.push(`The creditor tried ${r.garnish_tries} garnishment(s) first — real collection effort, so the house is likely next.`);
+        if (r.levy && !r.sold && !r.satisfied && !r.sale_date) {
+            const age = Math.round((Date.now() - this.d(r.levy)) / 864e5);
+            if (age > 120) flags.push(`Levy is ${age} days old with no sale — past the 120 days after which the court may release it on the owner's motion (Rule 3-643(c)). The creditor may have stopped pushing; check for a settlement or a new levy before spending time.`);
+        }
+        if (r.garnish_after_writ) flags.push(`The creditor went back to garnishment after the writ (${r.garnish_after_writ}) — a sign they're collecting another way instead of selling.`);
+        if (r.release_or_dismiss) flags.push(`Later entry: ${r.release_or_dismiss}. Often means a payment deal or payoff — watch for a Satisfaction.`);
         if (r.service_issues) flags.push("Service problems in the docket (non-est / evading). Pull the file: a judgment entered without proper service can unwind the sale (Douglas v. Highbridge).");
         document.getElementById("modalBody").innerHTML = `
             <div class="detail-section"><h3>Where This Sits</h3>
