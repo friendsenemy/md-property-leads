@@ -422,22 +422,34 @@
         <div class="stat-card purple"><div class="stat-label">Earliest Sale ≤ 45 Days</div><div class="stat-value" id="wstatSoon">0</div></div>
         <div class="stat-card green"><div class="stat-label">Est. Equity Behind Live Writs</div><div class="stat-value" id="wstatEquity">$0</div></div>
     </div>
-    <details class="ws-paste" style="margin:0 0 12px" open>
-        <summary><b>How this works</b> — judgment → lien → writ → levy → sheriff's sale (the Baltimore XV play)</summary>
+    <div class="ws-paste" style="margin:0 0 12px">
+        <div style="font-size:0.85rem; line-height:1.55; margin-bottom:6px">
+            <b>Daily routine:</b> read your <b>MDDC Smart Search</b> alert (“writ of execution”) → open the cases you like in Case Search →
+            Ctrl+A, Ctrl+C on each case page → paste below (stack as many as you want) → <b>Read pasted cases</b>.
+            The tool reads the docket and sale date, looks up the property and equity, and flags paid-off, bankrupt or contested cases.
+            Montgomery County's sheriff-sale list is scanned automatically every weekday.
+        </div>
+        <textarea id="writPaste" rows="5" style="width:100%; font-family:var(--font-mono); font-size:0.75rem" placeholder="Paste one or more Case Search case pages here…"></textarea>
+        <div style="display:flex; gap:10px; align-items:center; margin-top:6px"><button class="btn btn-primary" id="writPasteGo">Read pasted cases</button><span id="writPasteMsg" style="font-size:0.8rem; color:var(--text-secondary)"></span></div>
+    </div>
+    <details style="margin:0 0 8px">
+        <summary style="cursor:pointer"><b>How the sheriff's-sale play works</b> — judgment → lien → writ → levy → sale → ratification</summary>
         <div style="font-size:0.82rem; line-height:1.55; padding:8px 4px">
             A creditor (usually an HOA or condo) with a money judgment records a Notice of Lien in circuit court, asks the clerk for a
             <b>writ of execution</b>, and the sheriff <b>levies</b> by posting it on the property. The sheriff can't sell until <b>30 days after the levy</b>
             and <b>20 days after the newspaper notice</b> (Rule 3-644). The buyer gets the owner's interest <b>subject to the mortgage and prior liens</b>;
-            the court then has to ratify the sale (Rule 14-305) — a giveaway price on a home with real equity can be set aside (Baltimore XV v. Newsteps' Choice, 2026).<br>
-            <b>Your weekly 10 minutes:</b> in Case Search → Party Name Search → <b>Business</b>, search the names below, open every Contract case with a judgment,
-            select-all on the case page, copy, and paste it here. Results lists work too (they just won't show writ dates until you paste the case page).
-            Searching <b>Baltimore XV Properties</b> each week shows every sale they just bid on.
-            Montgomery County's online sheriff-sale list is scanned automatically every weekday.
+            the court then has to ratify the sale (Rule 14-305) — a giveaway price on a home with real equity can be set aside (Baltimore XV v. Newsteps' Choice, 2026).
+        </div>
+    </details>
+    <details style="margin:0 0 12px">
+        <summary style="cursor:pointer"><b>🔎 Dig for early leads</b> <span style="color:var(--text-secondary); font-size:0.8rem">(optional — find writs before a sale is advertised)</span></summary>
+        <div style="font-size:0.82rem; line-height:1.55; padding:8px 4px">
+            Case Search → Party Name Search → <b>Business</b> → search an HOA name (click a name to copy it) → <b>Export → Excel</b> → drop the file anywhere on this tab.
+            You get a ranked “Cases to open” list; open them and paste the case pages above. Searching <b>Baltimore XV Properties</b> shows every sale they just bid on.
         </div>
         <div id="writSearchList" class="presets" style="margin:6px 0"></div>
-        <div style="display:flex; gap:6px; margin:6px 0 10px"><input type="text" id="writNewSearch" placeholder="Add an HOA / creditor name to your search list…" style="flex:1"><button class="btn" id="writAddSearch">Add</button></div>
-        <textarea id="writPaste" rows="5" style="width:100%; font-family:var(--font-mono); font-size:0.75rem" placeholder="Paste a case page here — or drag &amp; drop a Case Search export file (Excel / CSV / JSON) anywhere on this tab…"></textarea>
-        <div style="display:flex; gap:10px; align-items:center; margin-top:6px"><button class="btn btn-primary" id="writPasteGo">Read pasted cases</button><label class="btn" style="cursor:pointer" title="Case Search → Export Options → CSV, Excel or JSON">📂 Import Case Search export (CSV / Excel / JSON)<input type="file" id="writFile" accept=".csv,.xlsx,.xls,.json,.txt" style="display:none"></label><span id="writPasteMsg" style="font-size:0.8rem; color:var(--text-secondary)"></span></div>
+        <div style="display:flex; gap:6px; margin:6px 0 10px"><input type="text" id="writNewSearch" placeholder="Add an HOA / creditor name to your search list…" style="flex:1"><button class="btn" id="writAddSearch">Add</button>
+            <label class="btn" style="cursor:pointer" title="Case Search → Export Options → CSV, Excel or JSON">📂 Import Case Search export<input type="file" id="writFile" accept=".csv,.xlsx,.xls,.json,.txt" style="display:none"></label></div>
         <div id="writFirms"></div>
         <div id="writTriage"></div>
     </details>
@@ -465,7 +477,7 @@
         </table>
         <div class="empty-state" id="writEmpty" style="display:none;">
             <div class="icon">⚖️</div><h3>No cases yet</h3>
-            <p>Paste Case Search pages above. Montgomery County sales appear here automatically when the sheriff lists them.</p>
+            <p>Paste case pages from your Smart Search alerts above. Montgomery County sales appear here automatically when the sheriff lists them.</p>
         </div>
     </div>
 </div><!-- /view-writ -->
@@ -667,7 +679,7 @@
 <script src="static/js/title.js"></script>
 <script src="static/js/surplus.js"></script>
 <script src="static/js/vested.js"></script>
-<script src="static/js/writ.js?v=11"></script>
+<script src="static/js/writ.js?v=12"></script>
 <script src="static/js/d4d.js"></script>
 <script src="static/js/myleads.js"></script>
 <script src="static/js/worksheet.js?v=1"></script>
