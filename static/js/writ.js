@@ -58,6 +58,7 @@ const WritApp = {
         this.merge();
         this.paintSearchList();
         this.render();
+        this.paintTriage();
     },
     _hook: document.addEventListener("mdpl:notes-loaded", () => { try { if (WritApp.started) { WritApp.merge(); WritApp.render(); } } catch {} }),
 
@@ -132,6 +133,7 @@ const WritApp = {
             const k = th.dataset.sort; this.state.dir = this.state.sort === k ? -this.state.dir : (k === "sale" ? 1 : -1); this.state.sort = k; this.render();
         }));
         $("writPasteGo").addEventListener("click", () => this.importPaste());
+        $("writFile").addEventListener("change", (e) => { this.importFile(e.target.files[0]); e.target.value = ""; });
         $("writExport").addEventListener("click", () => this.exportCSV());
         $("writAddSearch").addEventListener("click", () => {
             const v = $("writNewSearch").value.trim(); if (!v) return;
@@ -171,7 +173,7 @@ const WritApp = {
             this.local[merged.case.toUpperCase()] = merged; n++;
             SharedNotes.saveWrit && SharedNotes.saveWrit("writ:" + merged.case.toUpperCase() + "#writ", JSON.stringify(merged), merged.caption || merged.case);
         }
-        this.saveLocal(); this.merge(); this.render();
+        this.saveLocal(); this.merge(); this.render(); this.paintTriage();
         msg.textContent = `Added/updated ${n} case${n === 1 ? "" : "s"}. Results lists only show the case — open the ones with a judgment and paste their detail page to see writ / levy / sale dates.`;
         ta.value = "";
     },
@@ -316,6 +318,102 @@ const WritApp = {
         this.local[k] = stub; this.saveLocal();
         SharedNotes.saveWrit && SharedNotes.saveWrit("writ:" + k + "#writ", JSON.stringify(stub), "removed " + k);
         App.closeModal(); this.merge(); this.render();
+    },
+
+    /* ---------- Case Search export triage (CSV / Excel / JSON) ----------
+       An export is the results list only — no docket entries — so it can't show writs. What it CAN do is
+       cut a 400-case HOA list down to the handful worth opening: judgment cases still alive (filed within
+       ~12 years, Open / Open-Judgment), ranked higher when the same debtor also has an open
+       "Judgment - District Court Lien" (lien on the house = a writ on the house is possible). */
+    TRIAGE_KEY: "md_writ_triage_v1", TRIAGE_DONE_KEY: "md_writ_triage_done_v1",
+    async importFile(file) {
+        const msg = document.getElementById("writPasteMsg");
+        if (!file) return;
+        msg.textContent = `Reading ${file.name}…`;
+        let recs = [];
+        try {
+            const ext = (file.name.split(".").pop() || "").toLowerCase();
+            if (ext === "json") {
+                const j = JSON.parse(await file.text());
+                const findArr = (o) => Array.isArray(o) ? o : (o && typeof o === "object" ? Object.values(o).map(findArr).find((a) => a && a.length) : null);
+                recs = findArr(j) || [];
+            } else if (ext === "csv" || ext === "txt") {
+                recs = this.csvRecords(await file.text());
+            } else {
+                if (!window.XLSX) await new Promise((ok, bad) => { const sc = document.createElement("script"); sc.src = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"; sc.onload = ok; sc.onerror = bad; document.head.appendChild(sc); });
+                const wb = XLSX.read(await file.arrayBuffer(), { type: "array", cellDates: true });
+                recs = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { defval: "" });
+            }
+        } catch (e) { msg.textContent = "Couldn't read that file: " + e.message; return; }
+        const t = this.triage(recs);
+        if (!t.list.length && !recs.length) { msg.textContent = "No rows found in that file."; return; }
+        try { localStorage.setItem(this.TRIAGE_KEY, JSON.stringify({ file: file.name, at: new Date().toISOString(), total: t.total, list: t.list, liens: t.liens })); } catch {}
+        msg.textContent = `${file.name}: ${t.total} cases → ${t.list.length} worth opening (${t.list.filter((x) => x.pri === "A").length} top priority).`;
+        this.paintTriage();
+    },
+    csvRecords(text) {
+        const rows = []; let row = [], f = "", q = false;
+        for (let i = 0; i < text.length; i++) {
+            const ch = text[i];
+            if (q) { if (ch === '"' && text[i + 1] === '"') { f += '"'; i++; } else if (ch === '"') q = false; else f += ch; }
+            else if (ch === '"') q = true; else if (ch === ",") { row.push(f); f = ""; }
+            else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(f); rows.push(row); row = []; f = ""; }
+            else f += ch;
+        }
+        if (f || row.length) { row.push(f); rows.push(row); }
+        const H = rows.shift() || [];
+        return rows.filter((r) => r.some((x) => x)).map((r) => Object.fromEntries(H.map((h, i) => [h, r[i] || ""])));
+    },
+    surname(caption) {
+        let d = String(caption || "").split(/\s+vs?\.?\s+/i).slice(1).join(" ").replace(/\bet\.?\s*al\.?/i, "").trim();
+        if (!d) return "";
+        if (d.includes(",")) d = d.split(",")[0]; else { const w = d.split(/\s+/); d = w[w.length - 1]; }
+        return d.replace(/[^A-Za-z'\-]/g, "").toUpperCase();
+    },
+    triage(recs) {
+        const norm = (o) => { const n = {}; Object.keys(o || {}).forEach((k) => { n[k.toLowerCase().replace(/[^a-z]/g, "")] = o[k]; }); return n; };
+        const toDate = (v) => { if (v instanceof Date) return v; if (typeof v === "number") return new Date(Math.round((v - 25569) * 864e5)); return this.d(String(v || "").trim().split(/[ T]/)[0]) || (v ? new Date(v) : null); };
+        const by = {};
+        recs.map(norm).forEach((r) => {
+            const cn = String(r.casenumber || r.case || "").trim(); if (!cn) return;
+            const x = by[cn] || (by[cn] = { case: cn, caption: r.casecaption || r.casetitle || "", type: r.casetype || "", status: r.casestatus || "", court: r.court || "", filed: toDate(r.filingdate || r.filedate), plaintiff: false });
+            if (/plaintiff/i.test(r.partytype || "")) x.plaintiff = true;
+        });
+        const all = Object.values(by), now = Date.now(), yrs = (d) => d && !isNaN(d) ? (now - d.getTime()) / 3.156e10 : 99;
+        const liens = all.filter((c) => /District Court Lien/i.test(c.type) && !/closed/i.test(c.status) && yrs(c.filed) < 12.5).map((c) => ({ case: c.case, surname: this.surname(c.caption), filed: c.filed && c.filed.toISOString().slice(0, 10) }));
+        const lienBy = {}; liens.forEach((l) => { if (l.surname) (lienBy[l.surname] = lienBy[l.surname] || []).push(l.case); });
+        const list = all.filter((c) => c.plaintiff && /contract|confessed/i.test(c.type) && /open|reopen/i.test(c.status) && yrs(c.filed) < 12.5).map((c) => {
+            const sn = this.surname(c.caption), lien = lienBy[sn] || [], age = yrs(c.filed);
+            let pri = "B", why = "Old-system case still open — may hold a live judgment";
+            if (/judgment/i.test(c.status)) { pri = "A"; why = "Judgment entered"; }
+            else if (age < 0.5) { pri = "C"; why = "Suit filed recently — no judgment yet; re-check in a few months"; }
+            else if (/^D-/i.test(c.case)) why = "New-system case still open — check for judgment / writ";
+            if (lien.length) { pri = pri === "C" ? "B" : "A"; why += ` · same last name has an open circuit-court lien (${lien.join(", ")}) — confirm it is the same person`; }
+            return { case: c.case, caption: c.caption, type: c.type, status: c.status, filed: c.filed && !isNaN(c.filed) ? c.filed.toISOString().slice(0, 10) : "", surname: sn, lien, pri, why };
+        }).sort((a, b) => a.pri.localeCompare(b.pri) || (b.filed || "").localeCompare(a.filed || ""));
+        return { total: all.length, list, liens };
+    },
+    paintTriage() {
+        const el = document.getElementById("writTriage"); if (!el) return;
+        let t = null, done = {};
+        try { t = JSON.parse(localStorage.getItem(this.TRIAGE_KEY) || "null"); done = JSON.parse(localStorage.getItem(this.TRIAGE_DONE_KEY) || "{}"); } catch {}
+        if (!t || !t.list) { el.innerHTML = ""; return; }
+        const inTool = new Set(this.rows.map((r) => r.case.toUpperCase()));
+        const left = t.list.filter((x) => !done[x.case] && !inTool.has(x.case.toUpperCase())).length;
+        const PRI = { A: "🔥 Open first", B: "Check", C: "Later" };
+        el.innerHTML = `<details open style="margin:10px 0"><summary><b>Cases to open</b> — from ${this.esc(t.file)} (${t.total} cases → ${t.list.length} worth a look, <b>${left}</b> left)
+            <button class="btn" id="writTriageClear" style="margin-left:8px; padding:2px 8px">Clear list</button></summary>
+            <div style="font-size:0.78rem; color:var(--text-secondary); margin:4px 0">Click a case number to copy it → Case Search → search by case number → select-all, copy, paste the page above. Tick it once you've checked it.</div>
+            <table class="leads-table" style="font-size:0.8rem"><thead><tr><th></th><th>Priority</th><th>Filed</th><th>Case</th><th>Status</th><th>Debtor (caption)</th><th>Why</th></tr></thead><tbody>
+            ${t.list.map((x) => { const isDone = done[x.case] || inTool.has(x.case.toUpperCase());
+                return `<tr style="${isDone ? "opacity:.45" : ""}"><td><input type="checkbox" data-c="${this.esc(x.case)}" ${isDone ? "checked" : ""} ${inTool.has(x.case.toUpperCase()) ? "disabled title='Already pasted into the tool'" : ""}></td>
+                <td>${PRI[x.pri]}</td><td>${this.esc(x.filed)}</td><td><button type="button" class="filter-btn" data-copy="${this.esc(x.case)}">${this.esc(x.case)}</button></td>
+                <td>${this.esc(x.status)}</td><td>${this.esc((x.caption.split(/\s+vs?\.?\s+/i)[1] || x.caption))}</td><td>${this.esc(x.why)}</td></tr>`; }).join("")}
+            </tbody></table></details>`;
+        el.querySelectorAll("button[data-copy]").forEach((b) => b.addEventListener("click", async () => { try { await navigator.clipboard.writeText(b.dataset.copy); const o = b.textContent; b.textContent = "✓ copied"; setTimeout(() => { b.textContent = o; }, 1200); } catch {} }));
+        el.querySelectorAll("input[data-c]").forEach((cb) => cb.addEventListener("change", () => { done[cb.dataset.c] = cb.checked || undefined; try { localStorage.setItem(this.TRIAGE_DONE_KEY, JSON.stringify(done)); } catch {} this.paintTriage(); }));
+        const clr = document.getElementById("writTriageClear");
+        if (clr) clr.addEventListener("click", (e) => { e.preventDefault(); try { localStorage.removeItem(this.TRIAGE_KEY); } catch {} this.paintTriage(); });
     },
 
     /* ---------- table ---------- */
