@@ -275,6 +275,114 @@ def load_title_flags():
     return out
 
 
+# ── Distress stack (filters on the Dirt Deals tab) ──────────────────────────
+# Each kept parcel gets r["distress"] (codes) and r["distress_detail"] (one readable
+# line per code) from the same files the other tabs use: Title Scan (dead owner /
+# estate), the county tax-sale lists, and distress_watch's signals (code cases,
+# foreclosure registry, vacant notices, zero water use). Not scored — shown and
+# filterable, so the land score stays a development score.
+
+DISTRESS_LABEL = {
+    "DEATH": "Owner died / estate", "TAX_SALE": "Tax sale", "STRUCK": "Unsold tax lien (county holds it)",
+    "CODE": "Code / nuisance case", "FORECLOSURE": "Foreclosure registry", "VACANT": "Vacant / no water use",
+}
+_DEATH_WORDS = ("DECEASED", "ESTATE", "HEIRS", "PROBATE")
+_SIGNAL_MAP = {
+    "CODE_VIOLATIONS": "CODE", "REPEAT_CODE_CASES": "CODE", "NUISANCE_CASE": "CODE", "RECEIVERSHIP": "CODE",
+    "DEMO_PERMIT": "CODE", "FORECLOSURE_REGISTRY": "FORECLOSURE",
+    "VACANT_NOTICE": "VACANT", "ZERO_WATER_USAGE": "VACANT",
+}
+TAX_SALE_SINCE = 2024   # older certificates are almost always redeemed or foreclosed by now
+
+
+def _k(a):
+    return str(a or "").strip().lstrip("0")
+
+
+def load_distress_sources():
+    tax = defaultdict(list)
+    for f in sorted(glob.glob("data/distress/taxsale-20*.json")):
+        try:
+            recs = json.load(open(f, encoding="utf-8")).get("records") or {}
+        except (OSError, ValueError):
+            continue
+        for a, r in recs.items():
+            if (r.get("year") or 0) >= TAX_SALE_SINCE:
+                tax[_k(a)].append(r)
+    sig = {}
+    try:
+        for a, v in json.load(open("data/distress/signals.json", encoding="utf-8")).get("by_account", {}).items():
+            sig[_k(a)] = [s for s in v if s.get("precision") != "block"]   # block-level fires are never a confirmed match
+    except (OSError, ValueError):
+        pass
+    title = {}
+    for f in glob.glob("data/title/*.json"):
+        if os.path.basename(f) in ("summary.json", "people.json"):
+            continue
+        try:
+            d = json.load(open(f, encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for r in d.get("rows", []) if isinstance(d, dict) else []:
+            a = (r.get("property") or {}).get("account_number") or r.get("id")
+            if a:
+                title.setdefault(_k(a), r)
+    log.info("distress sources: %d tax-sale parcels, %d signal parcels, %d title rows", len(tax), len(sig), len(title))
+    return tax, sig, title
+
+
+def attach_distress(rows, sources=None):
+    tax, sig, title = sources or load_distress_sources()
+    for r in rows:
+        a, codes, detail = _k(r.get("account")), [], {}
+        t = title.get(a)
+        flags = set(r.get("title_flags") or []) | set((t or {}).get("flags") or [])
+        death = sorted(f for f in flags if any(w in f for w in _DEATH_WORDS) or f == "LIFE_ESTATE")
+        cls = (t or {}).get("title_class") or ""
+        if death or cls[:1] in ("D", "E", "H"):
+            codes.append("DEATH")
+            lbl = (t or {}).get("title_class_label") or ", ".join(death)
+            detail["DEATH"] = f"{cls + ' · ' if cls else ''}{lbl}" + (" — verify (common name)" if cls.endswith("?") else "")
+        trs = sorted(tax.get(a, []), key=lambda x: x.get("year") or 0)
+        if trs:
+            def line(x):
+                s = f"{x.get('year')} {str(x.get('status') or '').replace('_', ' ').lower()}"
+                if x.get("face"):
+                    s += f" · taxes ${float(x['face']):,.0f}"
+                if x.get("bid") and x.get("status") == "SOLD":
+                    s += f" · bid ${float(x['bid']):,.0f}" + (f" ({x['bidder']})" if x.get("bidder") else "")
+                return s
+            unsold = [x for x in trs if x.get("status") in ("STRUCK", "LISTED_NOT_SOLD")]
+            other = [x for x in trs if x not in unsold]
+            if other:
+                codes.append("TAX_SALE"); detail["TAX_SALE"] = "; ".join(line(x) for x in other)
+            if unsold:
+                codes.append("STRUCK"); detail["STRUCK"] = "; ".join(line(x) for x in unsold)
+        kinds = defaultdict(set)
+        for s in sig.get(a, []):
+            c = _SIGNAL_MAP.get(s.get("kind"))
+            if c:
+                kinds[c].add(f"{s.get('kind', '').replace('_', ' ').lower()}{' ' + s['date'] if s.get('date') else ''} ({s.get('source', '')})")
+        for c in ("CODE", "FORECLOSURE", "VACANT"):
+            if kinds.get(c):
+                codes.append(c); detail[c] = "; ".join(sorted(kinds[c])[:4])
+        r["distress"] = codes
+        r["distress_detail"] = [f"{DISTRESS_LABEL[c]}: {detail[c]}" for c in codes]
+    return rows
+
+
+def refresh_distress():
+    """Re-attach the distress stack to the existing candidates.json (daily, after distress_watch)."""
+    d = json.load(open(OUT, encoding="utf-8"))
+    attach_distress(d.get("rows", []))
+    d["distress_at"] = _now()
+    d["by_distress"] = dict(Counter(c for r in d.get("rows", []) for c in r.get("distress", [])))
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(d, f, separators=(",", ":"))
+    log.info("distress refreshed: %s", d["by_distress"])
+    return d
+
+
 # ── Scoring ─────────────────────────────────────────────────────────────────
 
 def tier_group(t):
@@ -495,12 +603,14 @@ def run(public=False, county=None):
         rs.sort(key=lambda r: (-r["score"], -r["acres"]))
         rows.extend(rs[:L["PER_COUNTY_LIMIT"]])
     rows.sort(key=lambda r: (-r["score"], -r["acres"]))
+    attach_distress(rows)
 
     out = {
         "generated_at": _now(), "dataset": "licensed" if licensed else "public",
         "min_acres": L["MIN_ACRES"], "scanned": len(parcels), "qualified": len(kept), "rows_written": len(rows),
         "dropped": dict(dropped), "by_county": dict(Counter(r["county"] for r in rows)),
         "by_tier": dict(Counter(r["tier_group"] or "none" for r in rows)),
+        "distress_at": _now(), "by_distress": dict(Counter(c for r in rows for c in r.get("distress", []))),
         "rows": rows,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -515,9 +625,13 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--public", action="store_true", help="use the public SDAT dataset (no owner names)")
     ap.add_argument("--county", help="SDAT county code, e.g. 08 for Charles")
+    ap.add_argument("--distress-only", action="store_true", help="only re-attach the distress stack to the existing candidates.json")
     a = ap.parse_args()
     try:
-        run(a.public, a.county)
+        if a.distress_only:
+            refresh_distress()
+        else:
+            run(a.public, a.county)
     except Exception as e:   # noqa: BLE001 — surface the reason in the workflow log and keep yesterday's file
         log.exception("land watch failed: %s", e)
         sys.exit(1)

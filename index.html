@@ -488,6 +488,7 @@
         <div class="stat-card green"><div class="stat-label">Parcels With Development Potential</div><div class="stat-value" id="lstatTotal">0</div></div>
         <div class="stat-card cyan"><div class="stat-label">Tier II · Sewer Planned</div><div class="stat-value" id="lstatTier2">0</div></div>
         <div class="stat-card yellow"><div class="stat-label">With a Seller Signal</div><div class="stat-value" id="lstatSeller">0</div></div>
+        <div class="stat-card red"><div class="stat-label">With a Distress Stack</div><div class="stat-value" id="lstatDistress">0</div><div class="stat-sub" id="lstatDistressSub" style="font-size:0.72rem; color:var(--text-dim); margin-top:2px"></div></div>
         <div class="stat-card purple"><div class="stat-label">Total Acres</div><div class="stat-value" id="lstatAcres">0</div></div>
     </div>
     <div class="controls">
@@ -512,6 +513,19 @@
                 <option value="25">25+ acres</option>
                 <option value="50">50+ acres</option>
                 <option value="100">100+ acres</option>
+            </select>
+        </div>
+        <div class="county-filter">
+            <select id="landDistress" title="Distress stacks: dead owner / estate, tax sale, code cases, foreclosure, vacant">
+                <option value="">All distress</option>
+                <option value="ANY">Any distress stack</option>
+                <option value="MULTI">2+ stacked</option>
+                <option value="DEATH">Owner died / estate</option>
+                <option value="TAX_SALE">Tax sale (2024+)</option>
+                <option value="STRUCK">Unsold tax lien (county holds it)</option>
+                <option value="CODE">Code / nuisance case</option>
+                <option value="FORECLOSURE">Foreclosure registry</option>
+                <option value="VACANT">Vacant / no water use</option>
             </select>
         </div>
         <label style="font-size:0.78rem; color:var(--text-secondary); display:flex; align-items:center; gap:4px"><input type="checkbox" id="landSeller"> Seller signal</label>

@@ -7,7 +7,7 @@
    uses, so notes on a parcel follow it across tabs. */
 const LandApp = {
     rows: [], meta: {},
-    state: { search: "", county: "", tier: "", minAcres: 0, seller: false, water: false, hideRezone: false,
+    state: { search: "", county: "", tier: "", minAcres: 0, seller: false, water: false, hideRezone: false, distress: "",
              sort: "score", dir: -1, page: 1, perPage: 25 },
 
     TIER_LABEL: { "1": "Tier I · sewer", "2": "Tier II · sewer planned", "3": "Tier III · septic", "": "No tier map" },
@@ -17,6 +17,10 @@ const LandApp = {
         RECENT_REZONING: "Recently rezoned", NEEDS_REZONING: "Needs rezoning", RECENT_SALE: "Recently sold", ZONING_MISMATCH: "Zoning maps disagree",
     },
     SELLER_TAGS: ["LONG_HELD", "OUT_OF_STATE", "MESSY_TITLE"],
+    DISTRESS_LABEL: {
+        DEATH: "Owner died / estate", TAX_SALE: "Tax sale", STRUCK: "Unsold tax lien",
+        CODE: "Code case", FORECLOSURE: "Foreclosure", VACANT: "Vacant / no water",
+    },
 
     async init() {
         this.bindEvents();
@@ -35,6 +39,7 @@ const LandApp = {
     decorate(r) {
         r.id = r.account;
         r._seller = r.tags.some((t) => this.SELLER_TAGS.includes(t));
+        r.distress = r.distress || []; r.distress_detail = r.distress_detail || [];
         r._lookup = this.lookupId(r);
         r._blob = [r.address, r.city, r.county, r.owner, r.owner2, r.account, r.zoning, r.gen_zone, r.tier, r._lookup, r.legal]
             .filter(Boolean).join(" ").toLowerCase();
@@ -63,6 +68,11 @@ const LandApp = {
         document.getElementById("lstatTotal").textContent = rs.length.toLocaleString();
         document.getElementById("lstatTier2").textContent = rs.filter((r) => r.tier_group === "2").length.toLocaleString();
         document.getElementById("lstatSeller").textContent = rs.filter((r) => r._seller).length.toLocaleString();
+        const dz = rs.filter((r) => r.distress.length);
+        document.getElementById("lstatDistress").textContent = dz.length.toLocaleString();
+        const cnt = {}; dz.forEach((r) => r.distress.forEach((c) => { cnt[c] = (cnt[c] || 0) + 1; }));
+        document.getElementById("lstatDistressSub").textContent = Object.entries(cnt).sort((a, b) => b[1] - a[1])
+            .map(([c, n]) => `${n} ${this.DISTRESS_LABEL[c] || c}`).join(" · ");
         document.getElementById("lstatAcres").textContent = Math.round(rs.reduce((n, r) => n + (r.acres || 0), 0)).toLocaleString();
         const m = this.meta, info = document.getElementById("landRunInfo");
         info.innerHTML = rs.length
@@ -83,6 +93,7 @@ const LandApp = {
         on("landTier", (el) => { this.state.tier = el.value; });
         on("landAcres", (el) => { this.state.minAcres = Number(el.value) || 0; });
         on("landSeller", (el) => { this.state.seller = el.checked; });
+        on("landDistress", (el) => { this.state.distress = el.value; });
         on("landWater", (el) => { this.state.water = el.checked; });
         on("landHideRezone", (el) => { this.state.hideRezone = el.checked; });
         document.querySelectorAll("#landTable th[data-sort]").forEach((th) => th.addEventListener("click", () => {
@@ -102,6 +113,7 @@ const LandApp = {
             && (!s.tier || (s.tier === "none" ? !r.tier_group : r.tier_group === s.tier))
             && (r.acres || 0) >= s.minAcres
             && (!s.seller || r._seller)
+            && (!s.distress || (s.distress === "ANY" ? r.distress.length > 0 : s.distress === "MULTI" ? r.distress.length >= 2 : r.distress.includes(s.distress)))
             && (!s.water || r.tags.includes("WATERFRONT"))
             && (!s.hideRezone || !r.tags.includes("NEEDS_REZONING"))
             && (!s.search || r._blob.includes(s.search)));
@@ -120,7 +132,8 @@ const LandApp = {
     scoreColor(n) { return n >= 85 ? "var(--green)" : n >= 70 ? "var(--cyan)" : n >= 55 ? "var(--yellow)" : "var(--text-secondary)"; },
 
     chips(r) {
-        return r.tags.map((t) => {
+        const dz = r.distress.map((c) => `<span style="display:inline-block; font-size:0.66rem; padding:1px 6px; margin:2px 3px 0 0; border:1px solid var(--red); background:rgba(255,80,80,0.12); color:var(--red); border-radius:10px; font-weight:600">⚠ ${this.esc(this.DISTRESS_LABEL[c] || c)}</span>`).join("");
+        return dz + r.tags.map((t) => {
             const warn = ["NEEDS_REZONING", "RECENT_SALE", "ZONING_MISMATCH"].includes(t), sell = this.SELLER_TAGS.includes(t);
             const c = warn ? "var(--red)" : sell ? "var(--yellow)" : t === "WATERFRONT" ? "var(--cyan)" : "var(--text-dim)";
             return `<span style="display:inline-block; font-size:0.66rem; padding:1px 6px; margin:2px 3px 0 0; border:1px solid ${c}; color:${c}; border-radius:10px">${this.esc(this.TAG_LABEL[t] || t)}</span>`;
@@ -191,6 +204,11 @@ const LandApp = {
                     <b style="color:var(--yellow)">Check before you call</b>
                     <ul style="margin:4px 0 0 18px">${r.cautions.map((x) => `<li>${this.esc(x)}</li>`).join("")}</ul></div>` : ""}
             </div>
+            ${r.distress.length ? `<div class="detail-section">
+                <h3 style="color:var(--red)">Distress Stack <span style="font-size:0.75rem; color:var(--text-dim); font-weight:400">· ${r.distress.length} signal${r.distress.length > 1 ? "s" : ""}</span></h3>
+                <ul style="margin:6px 0 0 18px; font-size:0.84rem; line-height:1.6">${r.distress_detail.map((x) => `<li>${this.esc(x)}</li>`).join("")}</ul>
+                <div style="margin-top:6px; font-size:0.76rem; color:var(--text-dim)">Death matches come from a death index — confirm with an obituary and the Register of Wills before calling. Tax-sale rows: check Case Search for a foreclosure or redemption first.</div>
+            </div>` : ""}
             <div class="detail-section">
                 <h3>Look It Up</h3>
                 ${this.row("Address", `${this.esc(r.address || "(no street address)")}${r.city ? `, ${this.esc(r.city)}` : ""} ${this.esc(r.zip || "")}`, "font-weight:600")}
@@ -252,13 +270,13 @@ const LandApp = {
         const H = ["Score", "Dev Score", "Account #", "Tax Map", "Grid", "Parcel", "Lot", "Address", "City", "Zip", "County",
             "Acres", "Tier", "Zoning Code", "Zoning Category", "Sewer", "Water", "Rough Homes", "New Homes Nearby", "Builders Nearby",
             "Owner", "Owner 2", "Mailing", "Mail State", "Last Transfer", "Sale Price", "Land Value", "Building Value",
-            "Tags", "Cautions", "Lat", "Lon", "Status", "Notes"];
+            "Distress", "Tags", "Cautions", "Lat", "Lon", "Status", "Notes"];
         const q = (v) => { const s = String(v == null ? "" : v); return /^=".*"$/.test(s) ? s : `"${s.replace(/"/g, '""')}"`; };
         const lines = [H.join(",")];
         rows.forEach((r) => lines.push([r.score, r.dev_score, `="${r.account}"`, r.tax_map, r.grid, r.parcel, r.lot, r.address, r.city, r.zip, r.county,
             r.acres, r.tier, r.zoning, r.gen_zone, r.sewer, r.water, r.rough_lots, r.new_homes_nearby, (r.builders_nearby || []).join("; "),
             r.owner, r.owner2, r.mail, r.mail_state, r.transfer_date, r.sale_price, r.land_value, r.impr_value,
-            r.tags.map((t) => this.TAG_LABEL[t] || t).join("; "), r.cautions.join(" | "), r.lat, r.lon, this.statusOf(r), this.notesOf(r)].map(q).join(",")));
+            r.distress_detail.join(" | "), r.tags.map((t) => this.TAG_LABEL[t] || t).join("; "), r.cautions.join(" | "), r.lat, r.lon, this.statusOf(r), this.notesOf(r)].map(q).join(",")));
         const blob = new Blob([lines.join("\r\n")], { type: "text/csv;charset=utf-8;" });
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);

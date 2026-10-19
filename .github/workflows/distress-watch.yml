@@ -95,6 +95,10 @@ jobs:
           [ -f /tmp/out/last-error.txt ] && cp /tmp/out/last-error.txt data/distress/
           git add data/distress/signals.json data/distress/charles-code.json data/distress/accela-code.json
           git add data/distress/last-error.txt 2>/dev/null || true
+          # Dirt Deals: re-attach the distress stack (tax sale / dead owner / code / foreclosure / vacant)
+          if [ -f data/land/candidates.json ]; then
+            python -m engine2.land_watch --distress-only && git add data/land/candidates.json || echo "Dirt Deals distress refresh skipped"
+          fi
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(d['accounts'])")
           K=$(python -c "import json;d=json.load(open('data/distress/signals.json'));print(', '.join(f'{k} {v}' for k,v in d['kinds'].items()))")
