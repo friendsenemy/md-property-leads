@@ -1,6 +1,6 @@
 {
- "checked": 980,
- "generated_at": "2026-10-17T13:01:28+00:00",
+ "checked": 981,
+ "generated_at": "2026-10-19T16:31:20+00:00",
  "results": {
   "020100003818150": {
    "active": "Y",
@@ -9498,6 +9498,18 @@
    "rdi": "Residential",
    "source": "smarty",
    "usps_address": "5101 Monticello Ct, Waldorf MD 20601-3029",
+   "vacant": "N"
+  },
+  "0908042918": {
+   "active": "Y",
+   "address": "14560 OAKS RD",
+   "checked": "2026-10-19T16:31:20+00:00",
+   "dpv": "Y",
+   "found": true,
+   "no_stat": "N",
+   "rdi": "Residential",
+   "source": "smarty",
+   "usps_address": "14560 Oaks Rd, Charlotte Hall MD 20622-3315",
    "vacant": "N"
   },
   "0908046646": {
