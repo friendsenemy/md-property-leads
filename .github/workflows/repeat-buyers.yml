@@ -1,0 +1,51 @@
+name: Repeat Buyers (statewide cheap-buy and flip scan)
+
+# Every Maryland transfer since 2022 from the licensed SDAT feed (owner + mailing address),
+# keeping buys far under assessed value and quick flips, so we can see which investors are
+# running repeatable plays. Monthly is plenty; also runs when the trigger file changes.
+
+on:
+  schedule:
+    - cron: '17 11 3 * *'      # 3rd of each month
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['data/players/RUN']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repeat-buyers
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install requests==2.31.0
+
+      - name: Scan statewide transfers
+        env:
+          MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
+          MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
+          MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
+        run: python -m engine2.repeat_buyers
+
+      - name: Commit results
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp data/players/sales.json.gz data/players/summary.json /tmp/out/
+          git fetch origin main
+          git checkout -f -B main origin/main
+          mkdir -p data/players && cp /tmp/out/* data/players/
+          git add data/players/sales.json.gz data/players/summary.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          N=$(python -c "import json;d=json.load(open('data/players/summary.json'));print(d['kept'], 'of', d['scanned'], d['dataset'])")
+          git commit -m "Repeat buyers scan: ${N}"
+          git push origin main
