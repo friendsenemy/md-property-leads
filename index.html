@@ -175,6 +175,7 @@
         <button class="view-tab" data-view="d4d">Driving for Dollars <span class="view-tab-sub">spotted on the road</span></button>
         <button class="view-tab" data-view="writ">⚖ Writ Watch <span class="view-tab-sub">sheriff's sales · judgment levies</span></button>
         <button class="view-tab" data-view="vested">Failed Foreclosures <span class="view-tab-sub">§14-847 · county took title</span></button>
+        <button class="view-tab" data-view="land">🌱 Dirt Deals <span class="view-tab-sub">land a builder would want</span></button>
         <a class="view-tab" id="tabGuideLink" href="guide.html#start" target="_blank" rel="noopener" style="margin-left:auto; text-decoration:none; color:var(--text-dim)" title="Open the field guide for this tab">? what does this tab mean</a>
     </div>
 
@@ -482,6 +483,75 @@
     </div>
 </div><!-- /view-writ -->
 
+<div id="view-land" style="display:none">
+    <div class="stats-grid">
+        <div class="stat-card green"><div class="stat-label">Parcels With Development Potential</div><div class="stat-value" id="lstatTotal">0</div></div>
+        <div class="stat-card cyan"><div class="stat-label">Tier II · Sewer Planned</div><div class="stat-value" id="lstatTier2">0</div></div>
+        <div class="stat-card yellow"><div class="stat-label">With a Seller Signal</div><div class="stat-value" id="lstatSeller">0</div></div>
+        <div class="stat-card purple"><div class="stat-label">Total Acres</div><div class="stat-value" id="lstatAcres">0</div></div>
+    </div>
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="landSearch" placeholder="Search address, owner, tax map, zoning, account…">
+        </div>
+        <div class="county-filter"><select id="landCounty"><option value="">All counties</option></select></div>
+        <div class="county-filter">
+            <select id="landTier">
+                <option value="">All growth tiers</option>
+                <option value="2">Tier II — sewer planned</option>
+                <option value="1">Tier I — sewer now</option>
+                <option value="none">No tier map (sewer per SDAT)</option>
+                <option value="3">Tier III — septic</option>
+            </select>
+        </div>
+        <div class="county-filter">
+            <select id="landAcres">
+                <option value="0">Any size (5+ ac)</option>
+                <option value="10">10+ acres</option>
+                <option value="25">25+ acres</option>
+                <option value="50">50+ acres</option>
+                <option value="100">100+ acres</option>
+            </select>
+        </div>
+        <label style="font-size:0.78rem; color:var(--text-secondary); display:flex; align-items:center; gap:4px"><input type="checkbox" id="landSeller"> Seller signal</label>
+        <label style="font-size:0.78rem; color:var(--text-secondary); display:flex; align-items:center; gap:4px"><input type="checkbox" id="landWater"> Waterfront</label>
+        <label style="font-size:0.78rem; color:var(--text-secondary); display:flex; align-items:center; gap:4px"><input type="checkbox" id="landHideRezone"> Hide needs-rezoning</label>
+        <button class="btn btn-export" id="landExport"><span class="icon">⬇</span> Export CSV</button>
+    </div>
+    <div class="run-info" id="landRunInfo" style="text-align:left; margin:6px 0 10px;"></div>
+    <div class="leads-container">
+        <table class="leads-table" id="landTable">
+            <thead>
+                <tr>
+                    <th data-sort="score">Score <span class="sort-arrow">↕</span></th>
+                    <th>Property</th>
+                    <th>Owner</th>
+                    <th data-sort="county">County <span class="sort-arrow">↕</span></th>
+                    <th data-sort="acres">Acres <span class="sort-arrow">↕</span></th>
+                    <th>Growth / Zoning</th>
+                    <th data-sort="lots">Rough Homes <span class="sort-arrow">↕</span></th>
+                    <th data-sort="homes">Builder Activity <span class="sort-arrow">↕</span></th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="landBody"></tbody>
+        </table>
+        <div class="empty-state" id="landEmpty" style="display:none;">
+            <div class="icon">🌱</div>
+            <h3 id="landEmptyTitle">No land scored yet</h3>
+            <p id="landEmptyText">Run the “Dirt Deals” workflow on GitHub (it also runs itself every Tuesday). It scores every 5+ acre parcel in Maryland against the state's sewer growth tiers and zoning.</p>
+        </div>
+        <div class="pagination">
+            <span id="landPageInfo">No parcels</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="landPrev">← Prev</button>
+                <button class="page-btn" id="landNext">Next →</button>
+            </div>
+        </div>
+    </div>
+</div><!-- /view-land -->
+
 <div id="view-vested" style="display:none">
     <div class="stats-grid">
         <div class="stat-card yellow">
@@ -679,15 +749,16 @@
 <script src="static/js/title.js"></script>
 <script src="static/js/surplus.js"></script>
 <script src="static/js/vested.js"></script>
+<script src="static/js/land.js?v=1"></script>
 <script src="static/js/writ.js?v=13"></script>
 <script src="static/js/d4d.js"></script>
 <script src="static/js/myleads.js"></script>
 <script src="static/js/worksheet.js?v=1"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const VIEWS = ["obits", "title", "surplus", "writ", "vested", "d4d", "myleads"];
+    const VIEWS = ["obits", "title", "surplus", "writ", "vested", "land", "d4d", "myleads"];
     const started = {};
-    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), writ: () => WritApp.init(), d4d: () => D4DApp.init(), myleads: () => MyLeadsApp.init() };
+    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), land: () => LandApp.init(), writ: () => WritApp.init(), d4d: () => D4DApp.init(), myleads: () => MyLeadsApp.init() };
     document.querySelectorAll(".view-tab").forEach((tab) => tab.addEventListener("click", () => {
         document.querySelectorAll(".view-tab").forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");

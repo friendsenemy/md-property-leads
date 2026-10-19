@@ -13,7 +13,7 @@ const MyLeadsApp = {
     },
     DONE: ["dead", "paid", "closed"],
     ADDED: "Added to My Leads", REMOVED: "Removed from My Leads",
-    TAB_NAME: { title: "Title Leads", d4d: "Driving for Dollars", surplus: "Surplus", vested: "Failed Foreclosure", myleads: "Added by hand", obits: "Death Leads" },
+    TAB_NAME: { title: "Title Leads", d4d: "Driving for Dollars", surplus: "Surplus", vested: "Failed Foreclosure", land: "Dirt Deals", myleads: "Added by hand", obits: "Death Leads" },
     COUNTY: { "01": "allegany", "02": "anne-arundel", "03": "baltimore-city", "04": "baltimore-county", "05": "calvert", "06": "caroline",
         "07": "carroll", "08": "cecil", "09": "charles", "10": "dorchester", "11": "frederick", "12": "garrett", "13": "harford",
         "14": "howard", "15": "kent", "16": "montgomery", "17": "prince-george-s", "18": "queen-anne-s", "19": "st-mary-s",
@@ -132,7 +132,7 @@ const MyLeadsApp = {
     open(k) {
         const l = this.leads().find((x) => x.key === k);
         if (!l) return;
-        const canOpen = l.tabs.some((t) => ["title", "d4d", "surplus", "vested"].includes(t));
+        const canOpen = l.tabs.some((t) => ["title", "d4d", "surplus", "vested", "land"].includes(t));
         document.getElementById("modalBody").innerHTML = `
             <div class="detail-section">
                 <h3>My Leads · <span class="status-badge ${this.esc(l.status)}">${this.esc((this.STATUS[l.status] || l.status).toUpperCase())}</span></h3>
@@ -166,7 +166,7 @@ const MyLeadsApp = {
     /* Jump to the tab the lead came from and open its full card there. */
     async openCard(l) {
         App.closeModal();
-        const t = ["d4d", "title", "surplus", "vested"].find((x) => l.tabs.includes(x));
+        const t = ["d4d", "title", "land", "surplus", "vested"].find((x) => l.tabs.includes(x));
         document.querySelector(`.view-tab[data-view="${t}"]`).click();
         const wait = async (fn) => { for (let i = 0; i < 80 && !fn(); i++) await new Promise((r) => setTimeout(r, 150)); return fn(); };
         const match = (rows) => (rows || []).find((x) => SharedNotes.key(x.id) === l.key);
@@ -188,6 +188,10 @@ const MyLeadsApp = {
                 }
             }
             if (r) TitleApp.open(r.id); else alert("That lead isn't in the Title Leads data anymore (it may have dropped off). Its notes are all still in My Leads.");
+        } else if (t === "land") {
+            await wait(() => LandApp.rows.length);
+            const r = match(LandApp.rows);
+            if (r) LandApp.open(r.id); else alert("That parcel isn't in the Dirt Deals data anymore (it may have dropped off). Its notes are all still in My Leads.");
         } else {
             const box = document.getElementById(t === "surplus" ? "surplusSearch" : "vestedSearch");
             await wait(() => box);

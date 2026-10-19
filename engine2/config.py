@@ -235,3 +235,57 @@ PRESETS = [
     {"id": "zero_water_estate", "label": "Zero Water + Estate / Deceased / Tax Sale", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},
 ]
+
+
+# ── Dirt Deals (engine2/land_watch.py) — raw land with development potential ─
+# Cody Bjugan's LDP play: off-market acreage a homebuilder would want once it is
+# approved for houses. Points are additive and capped at 100.
+_LAND_BUILDERS = [
+    "NVR INC", "RYAN HOMES", "NV HOMES", "LENNAR", "D R HORTON", "DR HORTON", "TOLL BROTHERS", "TOLL MD",
+    "TOLL LAND", "PULTE", "RICHMOND AMERICAN", "STANLEY MARTIN", "DAN RYAN", "KB HOME", "VAN METRE",
+    "WINCHESTER HOMES", "BEAZER", "DRB GROUP", "CARUSO HOMES", "CRAFTMARK", "LGI HOMES", "SCHELL BROTHERS",
+    "MARRICK", "WILLIAMSBURG HOMES", "BALLENGER", "BRIGHTVIEW", "CHRISTOPHER COMPANIES", "MI HOMES",
+    "M I HOMES", "MERITAGE", "HOVNANIAN", "CENTEX", "MARONDA", "STANLEY PARTNERS", "ELM STREET DEVELOPMENT",
+]
+LAND = {
+    "MIN_ACRES": 5,                 # smallest parcel worth a builder's time
+    "PER_COUNTY_LIMIT": 250,        # rows kept per county
+    "MIN_SCORE": 45,                # below this a parcel is not written
+    "RADIUS_MILES": 1.5,            # "new homes nearby" radius
+    "NEW_HOME_YEARS": 4,            # homes built in the last N years count as builder activity
+    "BUILDER_RADIUS_MILES": 3.0,
+    "BUILDER_YEARS": 3,
+    "BUILDER_POINTS": 10,
+    "LONG_HELD_YEARS": 25,
+    "REZONED_YEARS": 6,
+    "RECENT_SALE_YEARS": 3,         # sold this recently = a developer may already have it
+    # legal descriptions that mean "not a buildable parcel"
+    "SKIP_LEGAL": ("OPEN SPACE", "OPEN SP", "OUTLOT", "OUT LOT", "STORMWATER", "STORM WATER", " SWM", "FOREST CONSERVATION",
+                   "FOREST RETENTION", "COMMON AREA", "COMMON ELEMENT", "RECREATION AREA", "BUFFER", "CEMETERY", "RIGHT OF WAY"),
+    # Septic Growth Tier group -> points. Tier II (sewer planned) beats Tier I:
+    # growth is coming and today's price is still a septic price.
+    "TIER_POINTS": {"1": 30, "2": 35, "3": 5, "sewer_no_tier": 25, "none": 5},
+    "TIER_RURAL_ZONED_POINTS": 12,  # Tier I/II on the map but zoned rural / very-low density
+    # MDP generalized zoning (substring match, first hit wins — order matters)
+    "ZONE_POINTS": [("RURAL LOW", 0), ("RURAL MEDIUM", 4), ("RURAL HIGH", 8), ("VERY LOW", 5),
+                    ("LOW DENSITY", 15), ("MEDIUM DENSITY", 25), ("HIGH DENSITY", 25), ("MIXED USE", 22),
+                    ("COMMERCIAL", 5), ("INDUSTRIAL", 0)],
+    # rough gross homes per acre by generalized zone, for the "rough yield" column
+    "DENSITY": [("RURAL LOW", 0.05), ("RURAL MEDIUM", 0.2), ("RURAL HIGH", 0.5), ("VERY LOW", 0.5),
+                ("LOW DENSITY", 1.5), ("MEDIUM DENSITY", 4), ("HIGH DENSITY", 6), ("MIXED USE", 5),
+                ("COMMERCIAL", 0), ("INDUSTRIAL", 0)],
+    # SDAT county zoning codes that usually mean rural / agricultural / conservation
+    "RURAL_ZONE_CODES": __import__("re").compile(r"^(A|AG|AC|AR|AP|ARR|RC|RR|RCD|WCD|RCA|RA|RPD|R-?A|OS|FC|RCO|AGR|RUR|RURAL|CON)\b"),
+    "SEPTIC_MAX_DENSITY": 0.5,      # Tier III: about one septic lot per 2 acres at best
+    "NET_DEVELOPABLE": 0.7,         # roads, stormwater, setbacks
+    "SIZE_POINTS": [(100, 12), (25, 15), (10, 10), (5, 5)],
+    "NEW_HOME_POINTS": [(50, 15), (15, 10), (5, 5)],
+    "BUILDERS": _LAND_BUILDERS,
+    "BUILDER_LABELS": {"NVR INC": "NVR (Ryan Homes)", "NV HOMES": "NVR (NVHomes)", "D R HORTON": "D.R. Horton",
+                       "DR HORTON": "D.R. Horton", "TOLL MD": "Toll Brothers", "TOLL LAND": "Toll Brothers",
+                       "M I HOMES": "M/I Homes", "MI HOMES": "M/I Homes"},
+    # owners whose land is not for sale to us: builders/developers already on it, government, churches etc.
+    "SKIP_OWNERS": tuple(" " + b for b in _LAND_BUILDERS) + GOVERNMENT_MARKERS + NONPROFIT_MARKERS
+                   + (" DEVELOPMENT", " BUILDERS", " HOMES INC", " HOMES LLC", " COMMUNITIES", " LAND CONSERVANCY",
+                      " CONSERVATION", "NATURE CONSERVANCY"),
+}

@@ -1,0 +1,51 @@
+name: Dirt Deals (land with development potential)
+
+# Once a week: every 5+ acre residential / agricultural parcel in Maryland, laid over
+# the state's Septic Growth Tier map and MDP Generalized Zoning, scored for how badly a
+# homebuilder would want it once it's approved — plus new homes and builder purchases
+# nearby, and the seller signals the Title Scan already found (dead owner, estate, out
+# of state, long-held). Land moves slowly, so weekly is plenty. Runs Tuesday so it picks
+# up Monday's Title Scan. Free: GitHub minutes + public state data, no Claude credits.
+
+on:
+  schedule:
+    - cron: '23 10 * * 2'      # 6:23 AM ET Tuesdays
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: land-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install requests==2.31.0 shapely==2.0.6
+
+      - name: Score land statewide
+        env:
+          MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
+          MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
+          MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
+        run: python -m engine2.land_watch
+
+      - name: Commit results
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp data/land/candidates.json /tmp/out/
+          git fetch origin main
+          git checkout -f -B main origin/main
+          mkdir -p data/land && cp /tmp/out/candidates.json data/land/
+          git add data/land/candidates.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          N=$(python -c "import json;d=json.load(open('data/land/candidates.json'));print(d['rows_written'])")
+          git commit -m "Dirt Deals: ${N} land parcels with development potential"
+          git push origin main
