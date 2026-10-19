@@ -123,6 +123,17 @@
    "title_class": "D3",
    "title_class_label": "Estate closed — property still titled to decedent",
    "decedent_searched": "JANE F HANCOCK"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "CURTIS S HANCOCK",
+   "decedent_searched": "CURTIS S HANCOCK",
+   "date_of_death": "2004-07-09",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
   }
  ]
 }

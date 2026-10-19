@@ -1,0 +1,214 @@
+{
+ "account": "0908034516",
+ "estates": [
+  {
+   "estate_number": "81220",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/03/2009",
+   "date_closed": "11/17/2009",
+   "decedent": "VECELIA H RASCOE",
+   "date_of_death": "3/21/2008",
+   "date_of_filing": "03/03/2009",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MICHAELA  RASCOE",
+     "address": "1902 MICHAEL ROAD, WALDORF, MD 20601"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/03/2009",
+     "n": 1,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 2,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 3,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 6,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 7,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/26/2009",
+     "n": 8,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/04/2009",
+     "n": 9,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/04/2009",
+     "n": 10,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "07/01/2009",
+     "n": 11,
+     "code": "1300",
+     "desc": "REQUEST FOR SHOW CAUSE",
+     "pages": 1
+    },
+    {
+     "filed": "07/08/2009",
+     "n": 12,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2009",
+     "n": 13,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR BOND RENEWAL PREMIUM  HEARING SCHEDULED FOR SEPTEMBER 10,",
+     "pages": 2009
+    },
+    {
+     "filed": "07/28/2009",
+     "n": 14,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR INVENTORY AND INFORMATION  HEARING SCHEDULED FOR SEPTEMBER 30,2009",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2009",
+     "n": 15,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2009",
+     "n": 16,
+     "code": "1331",
+     "desc": "PAYMENT OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2009",
+     "n": 17,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -SHOW CAUSE/INVENTORY & INFORMATION REPORT-CASE CALLED-ISSUE CONTEMPT.",
+     "pages": 1
+    },
+    {
+     "filed": "10/08/2009",
+     "n": 18,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT",
+     "pages": 1
+    },
+    {
+     "filed": "10/22/2009",
+     "n": 19,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/03/2009",
+     "n": 20,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "11/05/2009",
+     "n": 21,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 7
+    },
+    {
+     "filed": "11/16/2009",
+     "n": 22,
+     "code": "1385",
+     "desc": "1ST & FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "11/17/2009",
+     "n": 23,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 1ST & FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/19/2009",
+     "n": 24,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2009-11-19",
+   "interested_persons": [
+    {
+     "name": "MICHAELA RASCOE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 347,
+   "probate_age_days": 259,
+   "days_since_last_docket": 6178,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910551058",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910551058",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "VECELIA RASCOE"
+  }
+ ]
+}

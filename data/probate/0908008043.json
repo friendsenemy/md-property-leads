@@ -1,0 +1,375 @@
+{
+ "account": "0908008043",
+ "estates": [
+  {
+   "estate_number": "13167",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "07/09/2002",
+   "date_closed": "11/20/2003",
+   "decedent": "GEORGE S. MORELAND SR.",
+   "date_of_death": "3/25/2002",
+   "date_of_filing": "07/09/2002",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "GEORGE S MORELAND JR",
+     "address": "14721 THUNDER ALLEY PLACE, WALDORF, MD 20601"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/09/2002",
+     "n": 1,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM PATRICK R. HUDSON, ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2002",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED FEBRUARY 22, 2002 FILED",
+     "pages": 4
+    },
+    {
+     "filed": "08/01/2002",
+     "n": 3,
+     "code": "1300",
+     "desc": "REQUEST FOR ORIGINAL LAST WILL AND TESTAMENT OF GEORGE S. MORELAND, SR. TO BE TRANSFERRED TO HAMPSHIRE COUNTY, WEST VIRGINIA",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2003",
+     "n": 4,
+     "code": "1336",
+     "desc": "RECEIPTS #11859 COPIES",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2003",
+     "n": 5,
+     "code": "1244",
+     "desc": "PERSONAL PROPERTY APPRAISAL",
+     "pages": 4
+    },
+    {
+     "filed": "01/14/2003",
+     "n": 6,
+     "code": "1244",
+     "desc": "REAL ESTATE APPRAISAL",
+     "pages": 8
+    },
+    {
+     "filed": "01/29/2003",
+     "n": 7,
+     "code": "1336",
+     "desc": "RECEIPT # 11973 COST FOR COPY",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2003",
+     "n": 8,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/2003",
+     "n": 9,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2003",
+     "n": 10,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/2003",
+     "n": 11,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2003",
+     "n": 12,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "03/17/2003",
+     "n": 13,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2003",
+     "n": 14,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2003",
+     "n": 15,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS AMEMDED",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2003",
+     "n": 16,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS BETTY ANN E MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2003",
+     "n": 17,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS KENNETH E MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2003",
+     "n": 18,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS MELISSA ROSE MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2003",
+     "n": 19,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS REGINA MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2003",
+     "n": 20,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 2
+    },
+    {
+     "filed": "03/19/2003",
+     "n": 21,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2003",
+     "n": 22,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL BETTY ANNE MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2003",
+     "n": 23,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL MELISSA ROSE MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/2003",
+     "n": 24,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL REGINA MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "04/04/2003",
+     "n": 25,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL KENNETH MORELAND",
+     "pages": 1
+    },
+    {
+     "filed": "04/11/2003",
+     "n": 26,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/16/2003",
+     "n": 27,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "06/17/2003",
+     "n": 28,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO COMPLETE INVENTORY & INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/17/2003",
+     "n": 29,
+     "code": "1284",
+     "desc": "ORDER OF COURT TO GRANT 30-DAY EXTENSION TO FILE INVENTORY & INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "06/18/2003",
+     "n": 30,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS - SCB ORDER FOR 30 DAY EXTENSION TO FILE INVENTORY & INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2003",
+     "n": 31,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2003",
+     "n": 32,
+     "code": "1122",
+     "desc": "INVENTORY SUMMARY",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2003",
+     "n": 33,
+     "code": "1123",
+     "desc": "INVENTORY SUPPORTING SCHEDULE A",
+     "pages": 9
+    },
+    {
+     "filed": "07/21/2003",
+     "n": 34,
+     "code": "1123",
+     "desc": "INVENTORY SUPPORTING SCHEDULE C",
+     "pages": 5
+    },
+    {
+     "filed": "07/21/2003",
+     "n": 35,
+     "code": "1331",
+     "desc": "REQUEST BY PR FOR EXEMPLIFIED WILL",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2003",
+     "n": 36,
+     "code": "1244",
+     "desc": "EXEMPLIFIED WILL -",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2003",
+     "n": 37,
+     "code": "1336",
+     "desc": "RECEIPT #12813 FOR EXEMPLIFIED WILL PAID BY CARL, KEATON & FRAZER, PLLC",
+     "pages": 1
+    },
+    {
+     "filed": "11/04/2003",
+     "n": 38,
+     "code": "1122",
+     "desc": "AMENDED INVENTORY",
+     "pages": 17
+    },
+    {
+     "filed": "11/10/2003",
+     "n": 39,
+     "code": "1336",
+     "desc": "RECEIPTS #13402",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2003",
+     "n": 40,
+     "code": "1245",
+     "desc": "PETITION FOR PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2003",
+     "n": 41,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "11/12/2003",
+     "n": 42,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW - REQUEST FOR ADDITIONAL COURT COSTS",
+     "pages": 2
+    },
+    {
+     "filed": "11/12/2003",
+     "n": 43,
+     "code": "1336",
+     "desc": "RECEIPT #13430",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/2003",
+     "n": 44,
+     "code": "1284",
+     "desc": "ORDER OF COURTAPPROVING PR COMMISSION",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/2003",
+     "n": 45,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED11/12/03",
+     "pages": 1
+    },
+    {
+     "filed": "11/20/2003",
+     "n": 46,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/04/2006",
+     "n": 47,
+     "code": "1336",
+     "desc": "RECEIPT#18175 COST FOR COPIES",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2006-05-04",
+   "interested_persons": [
+    {
+     "name": "GEORGE S MORELAND JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 106,
+   "probate_age_days": 499,
+   "days_since_last_docket": 7473,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910135318",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910135318",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GEORGE S MORELAND JR"
+  }
+ ]
+}

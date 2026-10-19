@@ -1,0 +1,333 @@
+{
+ "account": "0905002257",
+ "estates": [
+  {
+   "estate_number": "17456",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "07/14/2011",
+   "date_closed": "07/03/2013",
+   "decedent": "GORDON AUGUSTINE O'NEILL JR",
+   "date_of_death": "9/6/2009",
+   "date_of_filing": "02/07/2011",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "BRIDGET  O'NEILL",
+     "address": "P O BOX 159, NEWBURG, MD 20664"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/07/2011",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 3/15/2004",
+     "pages": 18
+    },
+    {
+     "filed": "02/07/2011",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "02/07/2011",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/07/2011",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/07/2011",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/07/2011",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "02/07/2011",
+     "n": 7,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 7
+    },
+    {
+     "filed": "02/07/2011",
+     "n": 8,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE) AMENDED",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 9,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 10,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 11,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 12,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 13,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 15,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 16,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2011",
+     "n": 17,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - JOSEPH O'NEILL",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2011",
+     "n": 18,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - EILEEN EARLY",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2011",
+     "n": 19,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - SARAH CATHERINE BAILEY",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2011",
+     "n": 20,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/21/2011",
+     "n": 21,
+     "code": "1244",
+     "desc": "UNCLAIMED CERTIFIED MAIL - MOLLY ONEILL",
+     "pages": 1
+    },
+    {
+     "filed": "09/21/2011",
+     "n": 22,
+     "code": "1244",
+     "desc": "UNCLAIMED CERTIFIED MAIL - GORDON A O'NEILL III",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2011",
+     "n": 23,
+     "code": "1246",
+     "desc": "RETURNED MAIL UNABLE TO FORWARD - PETER ONEILL",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2012",
+     "n": 24,
+     "code": "1382",
+     "desc": "INVENTORY SUPPLEMENTAL WITH DOCUMENTATION",
+     "pages": 5
+    },
+    {
+     "filed": "03/15/2012",
+     "n": 25,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/16/2012",
+     "n": 26,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "04/12/2012",
+     "n": 27,
+     "code": "1244",
+     "desc": "FIRST ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "04/24/2012",
+     "n": 28,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 10
+    },
+    {
+     "filed": "05/07/2012",
+     "n": 29,
+     "code": "1244",
+     "desc": "CORRECTED ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "06/12/2012",
+     "n": 30,
+     "code": "1383",
+     "desc": "CORRECTED FIRST ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "07/03/2012",
+     "n": 31,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING CORRECTED FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/03/2012",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/04/2012",
+     "n": 33,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2013",
+     "n": 34,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE SECOND ACCOUNT HEARING SCHEDULED FOR 29 JANUARY 2013 @ 1: 40PM",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2013",
+     "n": 35,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2013",
+     "n": 36,
+     "code": "1383",
+     "desc": "SECOND INTERIM ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "01/29/2013",
+     "n": 37,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/30/2013",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/25/2013",
+     "n": 39,
+     "code": "1385",
+     "desc": "THIRD AND FINAL ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "07/02/2013",
+     "n": 40,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED JUNE 25, 2013)",
+     "pages": 1
+    },
+    {
+     "filed": "07/03/2013",
+     "n": 41,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2013-07-03",
+   "interested_persons": [
+    {
+     "name": "BRIDGET O'NEILL",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 676,
+   "probate_age_days": 720,
+   "days_since_last_docket": 4856,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910132525",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910132525",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GORDON A O'NEILL"
+  }
+ ]
+}

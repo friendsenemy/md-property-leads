@@ -1,0 +1,1169 @@
+{
+ "account": "0907084730",
+ "estates": [
+  {
+   "estate_number": "16353",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "01/29/2009",
+   "date_closed": "07/14/2016",
+   "decedent": "MARGARET MARY MULVEY",
+   "date_of_death": "12/3/2008",
+   "date_of_filing": "01/29/2009",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "KURT W. WOLFGANG [P.O. BOX 1830, LEONARDTOWN, MD 20650]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "KAREN  LIDDLE",
+     "address": "6670 INDIAN HEAD HWY, INDIAN HEAD, MD 20640"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/29/2009",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 2,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 3,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 5,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 7,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION",
+     "pages": 5
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 2
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 11,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 12,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "02/09/2009",
+     "n": 13,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED FEBRUARY 25, 1991 FILED FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 14,
+     "code": "1284",
+     "desc": "ORDER OF COURT RESCINDING ADMINISTRATIVE PROBATE ORDER DATED JANUARY 29, 2009/ADMITTING WILL DATED FEBRUARY 25, 1991 TO PROBATE ETC.",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2009",
+     "n": 15,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2009",
+     "n": 16,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE FILED BY DAWN RYE",
+     "pages": 6
+    },
+    {
+     "filed": "02/12/2009",
+     "n": 17,
+     "code": "1244",
+     "desc": "LTRS OF ADM. RETURNED - VOIDED",
+     "pages": 5
+    },
+    {
+     "filed": "02/17/2009",
+     "n": 18,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION -",
+     "pages": 5
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 19,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2009",
+     "n": 20,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "04/21/2009",
+     "n": 21,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 04/20/2009 BY CITIBANK - SEARS FOR $223.11",
+     "pages": 5
+    },
+    {
+     "filed": "04/21/2009",
+     "n": 22,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 04/20/2009 BY DISCOVER FINANCIAL SERVICES FOR $498.51",
+     "pages": 5
+    },
+    {
+     "filed": "04/21/2009",
+     "n": 23,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 04/21/2009 BY CITIBANK - SEARS ROEBUCK & CO FOR $277.36",
+     "pages": 5
+    },
+    {
+     "filed": "04/27/2009",
+     "n": 24,
+     "code": "1231",
+     "desc": "PETITION FOR EXTENSION OF TIME FOR FILING INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "04/28/2009",
+     "n": 25,
+     "code": "1254",
+     "desc": "LINE ENTERING APPEARANCE FOR ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "05/05/2009",
+     "n": 26,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING AN EXTENSION OF TIME TO FILE THE INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2009",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "07/07/2009",
+     "n": 28,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/07/2009",
+     "n": 29,
+     "code": "1122",
+     "desc": "INVENTORY NEEDS CORRECTIONS",
+     "pages": 7
+    },
+    {
+     "filed": "07/13/2009",
+     "n": 30,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 7
+    },
+    {
+     "filed": "07/13/2009",
+     "n": 31,
+     "code": "1254",
+     "desc": "LINE  REGARDING REAL PROPERTY",
+     "pages": 4
+    },
+    {
+     "filed": "08/28/2009",
+     "n": 32,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM CIRCUIT COURT CHARLES CO., MD",
+     "pages": 5
+    },
+    {
+     "filed": "09/29/2009",
+     "n": 33,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/09/2009",
+     "n": 34,
+     "code": "1244",
+     "desc": "COPY OF NOTICE OF SERVICE FOR CIRCUIT COURT PROCEEDINGS",
+     "pages": 7
+    },
+    {
+     "filed": "10/15/2009",
+     "n": 35,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/15/2009",
+     "n": 36,
+     "code": "1244",
+     "desc": "FIRST ADMINISTRATION ACCOUNT  CORRECTIONS NEEDED",
+     "pages": 4
+    },
+    {
+     "filed": "10/15/2009",
+     "n": 37,
+     "code": "1244",
+     "desc": "DOCUMENTATION REGARDING SETTLEMENT PAPERS OF PROPERTY SIGNED BY MARGARET MULVEY AND COPIES OF MISC CLAIMS PREVIOUSLY FILED IN THE ESTATE",
+     "pages": 39
+    },
+    {
+     "filed": "11/02/2009",
+     "n": 38,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "11/04/2009",
+     "n": 39,
+     "code": "1244",
+     "desc": "AMENDED FIRST ACCOUNTING STILL INCORRECT WAITING FOR CORRECTIONS",
+     "pages": 13
+    },
+    {
+     "filed": "11/10/2009",
+     "n": 40,
+     "code": "1383",
+     "desc": "SECOND AMENDED FIRST ADMINISTRATION ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "12/29/2009",
+     "n": 41,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND AMENDED FIRST  INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/29/2009",
+     "n": 42,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/01/2010",
+     "n": 43,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2010",
+     "n": 44,
+     "code": "1244",
+     "desc": "SECOND ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "07/22/2010",
+     "n": 45,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "08/06/2010",
+     "n": 46,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE AMENDED INVENTORY AND AMENDED SECOND ACCOUNT HEARING SCHEDULED FOR 24 AUGUST 2010 @ 2:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "08/06/2010",
+     "n": 47,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/24/2010",
+     "n": 48,
+     "code": "1244",
+     "desc": "HEARING SIGN IN SHEET/HEARING NOS. 17-10 SIDE A",
+     "pages": 2
+    },
+    {
+     "filed": "09/02/2010",
+     "n": 49,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE AMENDED INVENTORY AND AMENDED SECOND ACCT. HEARING SCHEDULED FOR SEPTEMBER 21, 2010 @ 2 PM",
+     "pages": 1
+    },
+    {
+     "filed": "09/02/2010",
+     "n": 50,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/21/2010",
+     "n": 52,
+     "code": "1333",
+     "desc": "EXHIBITS",
+     "pages": 1
+    },
+    {
+     "filed": "09/21/2010",
+     "n": 53,
+     "code": "1244",
+     "desc": "HEARING TAPE INFORMATION",
+     "pages": 1
+    },
+    {
+     "filed": "09/28/2010",
+     "n": 54,
+     "code": "1284",
+     "desc": "ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2010",
+     "n": 55,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/05/2010",
+     "n": 56,
+     "code": "1122",
+     "desc": "AMENDED INVENTORY INCORRECT",
+     "pages": 8
+    },
+    {
+     "filed": "10/05/2010",
+     "n": 57,
+     "code": "1244",
+     "desc": "SECOND AMENDED SECOND ACCOUNT INCORRECT",
+     "pages": 3
+    },
+    {
+     "filed": "10/12/2010",
+     "n": 58,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 2
+    },
+    {
+     "filed": "11/29/2010",
+     "n": 59,
+     "code": "1122",
+     "desc": "INVENTORY CORRECTED",
+     "pages": 9
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 60,
+     "code": "1383",
+     "desc": "AMENDED FIRST ACCOUNTING",
+     "pages": 39
+    },
+    {
+     "filed": "12/08/2010",
+     "n": 61,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 12/07/2010 BY DAWN RYE FOR $2,010.00",
+     "pages": 3
+    },
+    {
+     "filed": "12/21/2010",
+     "n": 62,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVINGAMENDED FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/21/2010",
+     "n": 63,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/23/2011",
+     "n": 64,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 65,
+     "code": "1383",
+     "desc": "SECOND ADMINISTRATION ACCOUNT INCORRECT",
+     "pages": 2
+    },
+    {
+     "filed": "06/23/2011",
+     "n": 66,
+     "code": "1383",
+     "desc": "AMENDED SECOND ADMINISTRATION ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "06/28/2011",
+     "n": 67,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AMENDED SECOND INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2011",
+     "n": 68,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2011",
+     "n": 69,
+     "code": "1253",
+     "desc": "PETITION  FOR HEARING",
+     "pages": 2
+    },
+    {
+     "filed": "06/30/2011",
+     "n": 70,
+     "code": "1270",
+     "desc": "HEARING SCHEDULED FOR JULY 19, 2011 @1:20 PM",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2011",
+     "n": 72,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 35-11 SIDE A",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2011",
+     "n": 73,
+     "code": "1333",
+     "desc": "EXHIBITS",
+     "pages": 7
+    },
+    {
+     "filed": "07/26/2011",
+     "n": 74,
+     "code": "1284",
+     "desc": "ORDER OF COURT  REGARDING HEARING HELD ON JULY 19,",
+     "pages": 2011
+    },
+    {
+     "filed": "07/26/2011",
+     "n": 75,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/30/2011",
+     "n": 76,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE STATUS REPORT PER ORDER DATED 7/19/11 HEARING SCHEDULED FOR",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2011",
+     "n": 77,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2011",
+     "n": 78,
+     "code": "1244",
+     "desc": "STATUS REPORT",
+     "pages": 4
+    },
+    {
+     "filed": "11/28/2011",
+     "n": 79,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/28/2011",
+     "n": 80,
+     "code": "1244",
+     "desc": "THIRD ADMINISTRATION ACCOUNT COURT ORDERED THIRD ACCOUNT TO BE AMENDED 3/13/12",
+     "pages": 2
+    },
+    {
+     "filed": "01/10/2012",
+     "n": 81,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2012",
+     "n": 82,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2012",
+     "n": 83,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM DAWN RYE",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2012",
+     "n": 84,
+     "code": "1252",
+     "desc": "REQUEST FOR HEARING",
+     "pages": 3
+    },
+    {
+     "filed": "01/25/2012",
+     "n": 85,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 2/28/2012",
+     "pages": 1
+    },
+    {
+     "filed": "01/25/2012",
+     "n": 86,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2012",
+     "n": 87,
+     "code": "1244",
+     "desc": "MOTION TO CONTINUE",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2012",
+     "n": 88,
+     "code": "1284",
+     "desc": "ORDER OF COURT CONTINUING HEARING TO 3/13/2012",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2012",
+     "n": 89,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/14/2012",
+     "n": 91,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TIME 11:10",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2012",
+     "n": 92,
+     "code": "1284",
+     "desc": "ORDER OF COURT  REGARDING HEARING HELD ON 3/13/2012",
+     "pages": 1
+    },
+    {
+     "filed": "03/14/2012",
+     "n": 93,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2012",
+     "n": 94,
+     "code": "1333",
+     "desc": "EXHIBITS RESPONDENTS",
+     "pages": 1
+    },
+    {
+     "filed": "06/11/2012",
+     "n": 95,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2012",
+     "n": 96,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE AMENDED THIRD ADMINISTRATION ACCOUNT PER COURT ORDER DATED 3/13/2012 HEARING SCHEDULED FOR 24 JULY 2012 @ 1: 10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2012",
+     "n": 97,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/03/2012",
+     "n": 98,
+     "code": "1382",
+     "desc": "INVENTORY SUPPLEMENTAL",
+     "pages": 17
+    },
+    {
+     "filed": "07/03/2012",
+     "n": 99,
+     "code": "1383",
+     "desc": "AMENDED THIRD ADMINISTRATION ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "07/03/2012",
+     "n": 100,
+     "code": "1383",
+     "desc": "FOURTH ADMINSITRATION ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "07/24/2012",
+     "n": 101,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  AMENDED THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2012",
+     "n": 102,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2012",
+     "n": 103,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2012",
+     "n": 104,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/17/2013",
+     "n": 105,
+     "code": "1244",
+     "desc": "FIFTH ADMINISTRATION ACCOUNT INCORRECT",
+     "pages": 2
+    },
+    {
+     "filed": "01/18/2013",
+     "n": 106,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "01/30/2013",
+     "n": 107,
+     "code": "1383",
+     "desc": "FIFTH INTERIM ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 108,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  AMENDED FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 109,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/11/2013",
+     "n": 110,
+     "code": "1284",
+     "desc": "ORDER OF COURT  REGARDING ORDER DATED 3/13/2012",
+     "pages": 1
+    },
+    {
+     "filed": "06/11/2013",
+     "n": 111,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/12/2013",
+     "n": 112,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR DOCUMENTAION REGARDING ORDER DATED 3/12/12",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2013",
+     "n": 113,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR DISCOVER, CITIBANK SEARS - DCM SERVICES RESENT",
+     "pages": 3
+    },
+    {
+     "filed": "07/08/2013",
+     "n": 114,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SIXTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2013",
+     "n": 115,
+     "code": "1244",
+     "desc": "DOCUMENTATION REGARDING ORDER DATED 3-12-2012",
+     "pages": 5
+    },
+    {
+     "filed": "07/17/2013",
+     "n": 116,
+     "code": "1244",
+     "desc": "LETTER TO MR WOLFGANG FROM COURT",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2013",
+     "n": 117,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM ATTORNEY, WOLFGANG",
+     "pages": 3
+    },
+    {
+     "filed": "07/30/2013",
+     "n": 118,
+     "code": "1383",
+     "desc": "SIXTH INTERIM ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/06/2013",
+     "n": 119,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  SIXTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/06/2013",
+     "n": 120,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2014",
+     "n": 121,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SEVENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/04/2014",
+     "n": 122,
+     "code": "1383",
+     "desc": "SEVENTH INTERIM ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/11/2014",
+     "n": 123,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING SIXTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2014",
+     "n": 124,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2014",
+     "n": 125,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR EIGHTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2014",
+     "n": 126,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE EIGHTH ACCOUNT HEARING SCHEDULED FOR 9 DECEMBER 2014 @ 1:20 PM",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2014",
+     "n": 127,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/01/2014",
+     "n": 128,
+     "code": "1383",
+     "desc": "EIGHTH INTERIM ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "12/15/2014",
+     "n": 129,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "12/16/2014",
+     "n": 130,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING EIGHTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/16/2014",
+     "n": 131,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2015",
+     "n": 132,
+     "code": "1252",
+     "desc": "REQUEST FOR HEARING",
+     "pages": 14
+    },
+    {
+     "filed": "01/09/2015",
+     "n": 133,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR JANUARY 27, 2015 AT 11:00 AM REGARDING THE OBJECTION TO THE SALE OF ESTATE REAL PROPERTY AT TAX SALE",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2015",
+     "n": 134,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/27/2015",
+     "n": 136,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - 11:07-11:22.38",
+     "pages": 1
+    },
+    {
+     "filed": "05/18/2015",
+     "n": 137,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR  9TH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/23/2015",
+     "n": 138,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM LAW OFFICE OF KIRK WOLFGANG",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2015",
+     "n": 139,
+     "code": "1383",
+     "desc": "NINTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "07/07/2015",
+     "n": 140,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING NINTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/07/2015",
+     "n": 141,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/08/2015",
+     "n": 142,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR TENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2016",
+     "n": 143,
+     "code": "1385",
+     "desc": "TENTH AND FINAL ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "02/09/2016",
+     "n": 144,
+     "code": "1276",
+     "desc": "OBJECTION TO 10TH AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "02/23/2016",
+     "n": 145,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING TENTH AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/23/2016",
+     "n": 146,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/29/2016",
+     "n": 147,
+     "code": "1300",
+     "desc": "REQUEST FOR HEARING FILED BY DAWN RYE",
+     "pages": 2
+    },
+    {
+     "filed": "03/08/2016",
+     "n": 148,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 3/29/2016",
+     "pages": 1
+    },
+    {
+     "filed": "03/08/2016",
+     "n": 149,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2016",
+     "n": 150,
+     "code": "1385",
+     "desc": "AMENDED TENTH AND FINAL ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "03/24/2016",
+     "n": 151,
+     "code": "1286",
+     "desc": "ANSWER/RESPONSE TO EXCEPTIONS TO FINAL ACCOUNT FILED BY DAWN RYE",
+     "pages": 12
+    },
+    {
+     "filed": "03/29/2016",
+     "n": 153,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - 11:14 AM TO 11:32.18 AM",
+     "pages": 1
+    },
+    {
+     "filed": "04/01/2016",
+     "n": 154,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE RESCHEDULED FOR APRIL 5, 2016 @ 1:50 PM",
+     "pages": 1
+    },
+    {
+     "filed": "04/01/2016",
+     "n": 155,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/2016",
+     "n": 157,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/2016",
+     "n": 158,
+     "code": "1333",
+     "desc": "EXHIBITS BY RESPONDENT",
+     "pages": 1
+    },
+    {
+     "filed": "04/19/2016",
+     "n": 159,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING A 30 DAY EXTENSION TO PROVIDE THE ESTATE BANK STATEMENTS",
+     "pages": 1
+    },
+    {
+     "filed": "04/19/2016",
+     "n": 160,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/01/2016",
+     "n": 161,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO  HEARING SCHEDULED FOR JUNE 21, 2016 @ 1:40 PM FOR FAILURE TO PRODUCE BANK STATEMENTS AS ORDERED APRIL 19,",
+     "pages": 2016
+    },
+    {
+     "filed": "06/01/2016",
+     "n": 162,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/10/2016",
+     "n": 163,
+     "code": "1244",
+     "desc": "BANK STATEMENTS FOR THE ESTATE AS ORDERED BY THE COURT",
+     "pages": 59
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 164,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING AMENDED TENTH FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 165,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2016-07-12",
+   "interested_persons": [
+    {
+     "name": "KAREN LIDDLE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "DAWN RYE",
+     "role": "CORRESPONDENT",
+     "source": "docket 83"
+    },
+    {
+     "name": "LAW OFFICE OF KIRK WOLFGANG",
+     "role": "CORRESPONDENT",
+     "source": "docket 138"
+    }
+   ],
+   "death_to_probate_days": 57,
+   "probate_age_days": 2723,
+   "days_since_last_docket": 3751,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910127281",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910127281",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARGARET MULVEY"
+  }
+ ]
+}
