@@ -1,13 +1,4207 @@
 {
- "generated_at": "2026-10-18T16:21:50+00:00",
+ "generated_at": "2026-10-19T17:49:27+00:00",
  "sources": {
   "montgomery": {
-   "checked": "2026-10-18T16:19:52+00:00",
+   "checked": "2026-10-19T17:47:18+00:00",
    "count": 0
   },
   "pasted": {
-   "count": 0
+   "count": 42
   }
  },
- "rows": []
+ "rows": [
+  {
+   "case": "05-02-0006814-2018",
+   "from": "case detail",
+   "caption": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC. vs GILMORE, LARRY",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract",
+   "case_status": "Open",
+   "filed": "03/06/2018",
+   "plaintiff": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC.",
+   "defendant": "GILMORE, LARRY",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "38 HAPPY HILL ROAD",
+   "city": "STAMFORD",
+   "zip": "06903",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "2026.08",
+   "judgment_date": "06/21/2018",
+   "lien": "06/29/2018",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 5,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "03/27/2020",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5DS ; I;08312020;GRP;001;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "06/11/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "06/19/2020",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5G5 ; I;09222020;GRP;002;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "07/13/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "08/31/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "09/22/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "09/22/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "10/02/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "10/02/2020",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5DS ; I;10072020;GRP;003;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "10/07/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "10/14/2020",
+     "name": "Motion",
+     "comment": "001 ; MOTN ; 5BW ; ; ; ;AGP;TO DISMISS PROPERTY GARNISHME;001;05"
+    },
+    {
+     "date": "10/28/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "01/13/2021",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5JS ; I;04302021;GRP;005;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "03/02/2021",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5KM ; I;05272021;GRP;006;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "05/04/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "05/17/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "06/01/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "06/09/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T16:26:18.935Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0010571-2020",
+   "from": "case detail",
+   "caption": "LONDON WOODS COMMUNITY HOA, INC. C/O vs GRAY, DEBRA E",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract",
+   "case_status": "Open",
+   "filed": "04/02/2020",
+   "plaintiff": "LONDON WOODS COMMUNITY HOA, INC. C/O",
+   "defendant": "GRAY, DEBRA E",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "5414 INGLEBORO COURT",
+   "city": "CAPITOL HEIGHTS",
+   "zip": "20743",
+   "plaintiff_atty": "Bennett, Leonard C",
+   "plaintiff_firm": "5010 Sunnyside Avenue Suite 201",
+   "judgment_amt": "4721.20",
+   "judgment_date": "07/19/2022",
+   "lien": "09/20/2022",
+   "writ_req": "06/11/2024",
+   "writ_issued": "06/12/2024",
+   "levy": "07/12/2024",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "07/19/2022",
+     "name": "Consent Judgment Entered",
+     "comment": "001 ; CSNT ; 5C1 ; CONSENT JUDGMENT ENTERED"
+    },
+    {
+     "date": "07/19/2022",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF JUDGMENT ENTERED - (ATP)-J1"
+    },
+    {
+     "date": "08/30/2022",
+     "name": "Circuit Lien Recording Fee",
+     "comment": "001 ; CCLN ; 5CT ; CIRCUIT COURT LIEN RECORDING FEE ; ;REQ BY ATP"
+    },
+    {
+     "date": "09/20/2022",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "001 ; CLOJ ; 5CT ; CC LIEN WAS SENT TO PRINCE GEORGE'S COUNTY"
+    },
+    {
+     "date": "09/20/2022",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "001 ; LIEN ; 5CT ; 16;00NONE;00NONE;LIEN OF JUDGMENT RECORDED IN CIRC. CRT"
+    },
+    {
+     "date": "09/20/2022",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF LIEN RECORDATION (ATP)-S3"
+    },
+    {
+     "date": "06/11/2024",
+     "name": "Request for Writ of Execution",
+     "comment": "Request to file Writ of Execution London Woods v. Debra gray"
+    },
+    {
+     "date": "06/12/2024",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "07/30/2024",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC posted 7/12/24"
+    },
+    {
+     "date": "01/30/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "02/04/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    }
+   ],
+   "prop": {
+    "acct": "17182029528",
+    "address": "5414 INGLEBORO CT",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "H",
+    "value": 277400,
+    "tradate": "20070810",
+    "price": null,
+    "deed": "28386/0218",
+    "jurs": "PRIN",
+    "mail": "5414 INGLEBORO CT, CAPITOL HEIGHTS",
+    "use": "Town House",
+    "built": "1991",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2029528",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:22.574Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0016101-2020",
+   "from": "case detail",
+   "caption": "BROAD CREEK HOLLOW ASSOCIATION INC vs ADAMS, LESLIE",
+   "court": "",
+   "case_type": "Contract",
+   "case_status": "Open / Judgment",
+   "filed": "07/13/2020",
+   "plaintiff": "BROAD CREEK HOLLOW ASSOCIATION INC",
+   "defendant": "ADAMS, LESLIE",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "802 PENNINO COURT",
+   "city": "ACCOKEEK",
+   "zip": "20607",
+   "plaintiff_atty": "MENGISTEAB, WINTA",
+   "plaintiff_firm": "REES BROOME, PC",
+   "judgment_amt": "4748.61",
+   "judgment_date": "04/19/2023",
+   "lien": "04/23/2026",
+   "writ_req": "05/01/2026",
+   "writ_issued": "05/04/2026",
+   "levy": "06/12/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 2,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "12/13/2021",
+     "name": "Affidavit Judgment Denied",
+     "comment": ""
+    },
+    {
+     "date": "12/14/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF AFFIDAVIT JUDGMENT NOT ENTERED (ATP)-R2"
+    },
+    {
+     "date": "11/28/2023",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Request for Writ of Garnishment of Property Other than Wages"
+    },
+    {
+     "date": "12/13/2023",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "Navy Federal Credit Union"
+    },
+    {
+     "date": "12/13/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Garnishment"
+    },
+    {
+     "date": "04/23/2026",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Request to File Notice of Lien"
+    },
+    {
+     "date": "04/23/2026",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "04/24/2026",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-26-005641"
+    },
+    {
+     "date": "05/01/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Request for Writ of Execution"
+    },
+    {
+     "date": "05/04/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "07/07/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/POSTED/06.12.2026."
+    }
+   ],
+   "prop": {
+    "acct": "17053632924",
+    "address": "802 PENNINO CT",
+    "city": "ACCOKEEK",
+    "zip": "20607",
+    "ooi": "H",
+    "value": 609900,
+    "tradate": "20181022",
+    "price": 443990,
+    "deed": "41432/0062",
+    "jurs": "PRIN",
+    "mail": "802 PENNINO CT, ACCOKEEK",
+    "use": "Residential",
+    "built": "2018",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=05&AccountNumber=3632924",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:21.883Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0016352-2020",
+   "from": "case detail",
+   "caption": "LONDON WOODS COMMUNITY ASSOCIATION INC vs SCOTT, ASHLEY",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract",
+   "case_status": "Open",
+   "filed": "07/17/2020",
+   "plaintiff": "LONDON WOODS COMMUNITY ASSOCIATION INC",
+   "defendant": "SCOTT, ASHLEY",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "5930 APPLEGARTH PLACE",
+   "city": "CAPITOL HEIGHTS",
+   "zip": "20743",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "2870.85",
+   "judgment_date": "08/12/2022",
+   "lien": "09/20/2022",
+   "writ_req": "06/11/2024",
+   "writ_issued": "06/12/2024",
+   "levy": "07/01/2024",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "08/04/2022",
+     "name": "Affidavit Judgment Entered",
+     "comment": "001 ; AFDV ; 5N5 ; AFFIDAVIT JUDGMENT ENTERED"
+    },
+    {
+     "date": "08/12/2022",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF AFFIDAVIT JUDGMENT ENTERED (ATP)-R1"
+    },
+    {
+     "date": "08/30/2022",
+     "name": "Circuit Lien Recording Fee",
+     "comment": "001 ; CCLN ; 5CT ; CIRCUIT COURT LIEN RECORDING FEE ; ;REQ BY ATP"
+    },
+    {
+     "date": "09/20/2022",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "001 ; CLOJ ; 5CT ; CC LIEN WAS SENT TO PRINCE GEORGE'S COUNTY"
+    },
+    {
+     "date": "09/20/2022",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "001 ; LIEN ; 5CT ; 16;00NONE;00NONE;LIEN OF JUDGMENT RECORDED IN CIRC. CRT"
+    },
+    {
+     "date": "09/20/2022",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF LIEN RECORDATION (ATP)-S3"
+    },
+    {
+     "date": "06/11/2024",
+     "name": "Request for Writ of Execution",
+     "comment": "Request to file Writ of Execution London Woods v. Ashley Scott"
+    },
+    {
+     "date": "06/12/2024",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "07/26/2024",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC posted 7/1/24"
+    },
+    {
+     "date": "04/02/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "writ of execution"
+    },
+    {
+     "date": "04/06/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/01/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/ POSTED/ 05.18.26."
+    }
+   ],
+   "prop": {
+    "acct": "17182025237",
+    "address": "5930 APPLEGARTH PL",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "N",
+    "value": 271100,
+    "tradate": "20190118",
+    "price": 231000,
+    "deed": "41730/0468",
+    "jurs": "PRIN",
+    "mail": "5930 APPLEGARTH PL, CAPITOL HEIGHTS",
+    "use": "Town House",
+    "built": "1982",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2025237",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:20.754Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0017154-2020",
+   "from": "case detail",
+   "caption": "PLEASANT PROSPECT HOMEOWNERS ASSOCN INC vs JOHNSON, VALEEKA",
+   "court": "District Court For Charles County - Civil",
+   "case_type": "Contract",
+   "case_status": "Open",
+   "filed": "07/22/2020",
+   "plaintiff": "PLEASANT PROSPECT HOMEOWNERS ASSOCN INC",
+   "defendant": "JOHNSON, VALEEKA",
+   "hoa": true,
+   "county": "CHAR",
+   "address": "3115 Courtside Road",
+   "city": "BOWIE",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "15421.28",
+   "judgment_date": "06/23/2022",
+   "lien": "07/06/2023",
+   "writ_req": "04/10/2024",
+   "writ_issued": "04/12/2024",
+   "levy": "05/02/2024",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 5,
+   "service_issues": 2,
+   "docket": [
+    {
+     "date": "02/09/2023",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "HUD Federal Credit Union"
+    },
+    {
+     "date": "06/01/2023",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "bank garnishment"
+    },
+    {
+     "date": "06/20/2023",
+     "name": "Motion / Request / Line to Withdraw Filing",
+     "comment": "Line to withdraw Garnishments for both HUD Federal Credit Union and Bank of America"
+    },
+    {
+     "date": "06/21/2023",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "BANK OF AMERICA"
+    },
+    {
+     "date": "07/06/2023",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "notice of lien"
+    },
+    {
+     "date": "07/06/2023",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC CC"
+    },
+    {
+     "date": "07/17/2023",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona"
+    },
+    {
+     "date": "07/17/2023",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "BANKOF AMERICA"
+    },
+    {
+     "date": "07/18/2023",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-23-006335"
+    },
+    {
+     "date": "04/10/2024",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "04/12/2024",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "05/06/2024",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC posted 5/2/24"
+    },
+    {
+     "date": "06/20/2025",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "06/25/2025",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "07/24/2025",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC Posted 07/14/25"
+    },
+    {
+     "date": "02/26/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/02/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "05/12/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/ POSTED/ 04.29.26 Amended 9/25/26 SCHEDULE, APPRAISAL, AND RETURN OF LEVIED PROPERTY"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T19:35:23.876Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0019325-2015",
+   "from": "case detail",
+   "caption": "KETTERING CONDOMINUM AKA KETTERING vs IRVING, MELISSA",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract",
+   "case_status": "Open",
+   "filed": "08/11/2015",
+   "plaintiff": "KETTERING CONDOMINUM AKA KETTERING",
+   "defendant": "IRVING, MELISSA",
+   "hoa": false,
+   "county": "PRIN",
+   "address": "114 OLD ENTERPRISE ROAD",
+   "city": "UPPER MARLBORO",
+   "zip": "20774",
+   "plaintiff_atty": "CAMERON, JUSTIN GREGORY",
+   "plaintiff_firm": "CAMERON MERICLE PA",
+   "judgment_amt": "10451.01",
+   "judgment_date": "10/12/2017",
+   "lien": "12/08/2017",
+   "writ_req": "05/08/2025",
+   "writ_issued": "05/14/2025",
+   "levy": "06/18/2025",
+   "garnish_after_writ": "03/24/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 4,
+   "service_issues": 14,
+   "docket": [
+    {
+     "date": "04/03/2018",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "05/15/2018",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "01/24/2024",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Property Garnishment"
+    },
+    {
+     "date": "11/12/2024",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "CAPITAL ONE, N.A."
+    },
+    {
+     "date": "11/15/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "GARNISHMENT"
+    },
+    {
+     "date": "05/08/2025",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "05/14/2025",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "07/08/2025",
+     "name": "Return of Service - Posted",
+     "comment": "Wexc/Posted-06.18.25"
+    },
+    {
+     "date": "08/20/2025",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "09/03/2025",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "10/16/2025",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC Posted 09/25/25 AMENDED 9/28/26"
+    },
+    {
+     "date": "02/18/2026",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "03/24/2026",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "03/24/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "GARNISHMENT"
+    },
+    {
+     "date": "04/28/2026",
+     "name": "Return of Service - Served",
+     "comment": "Service by cert mail."
+    },
+    {
+     "date": "04/30/2026",
+     "name": "Confession of Assets",
+     "comment": "Garnishee's Confession of Assets"
+    },
+    {
+     "date": "07/08/2026",
+     "name": "Distress/Order of Levy - Additional Filing Fee",
+     "comment": "Motion to Extend Levy"
+    },
+    {
+     "date": "07/08/2026",
+     "name": "Supporting Exhibit",
+     "comment": "Writ"
+    }
+   ],
+   "prop": {
+    "acct": "17070712901",
+    "address": "114 OLD ENTERPRISE RD",
+    "city": "UPPER MARLBORO",
+    "zip": "20774",
+    "ooi": "H",
+    "value": 281000,
+    "tradate": "20100312",
+    "price": 107000,
+    "deed": "31505/0117",
+    "jurs": "PRIN",
+    "mail": "UNIT 118, UPPER MARLBORO",
+    "use": "Residential Condominium",
+    "built": "1970",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0712901",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:19.042Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0026651-2016",
+   "from": "case detail",
+   "caption": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC. vs EZELL, TAMAL W.",
+   "court": "",
+   "case_type": "Contract",
+   "case_status": "Open",
+   "filed": "10/03/2016",
+   "plaintiff": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC.",
+   "defendant": "EZELL, TAMAL W",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "7536 ARDWICK ARDMORE ROAD",
+   "city": "HYATTSVILLE",
+   "zip": "20784",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "3695.17",
+   "judgment_date": "06/07/2018",
+   "lien": "06/19/2018",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "09/26/2018",
+   "exceptions": "",
+   "garnish_tries": 2,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "06/04/2018",
+     "name": "Affidavit Judgment Entered",
+     "comment": "001 ; AFDV ; 5PK ; AFFIDAVIT JUDGMENT ENTERED"
+    },
+    {
+     "date": "06/07/2018",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF AFFIDAVIT JUDGMENT ENTERED (DEF)-R1"
+    },
+    {
+     "date": "06/18/2018",
+     "name": "Circuit Lien Recording Fee",
+     "comment": "001 ; CCLN ; 5TM ; CIRCUIT COURT LIEN RECORDING FEE ; ;REQ BY ATP"
+    },
+    {
+     "date": "06/19/2018",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "001 ; CLOJ ; 5TM ; CC LIEN WAS SENT TO PRINCE GEORGE'S COUNTY"
+    },
+    {
+     "date": "06/19/2018",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "001 ; LIEN ; 5E3 ; 16;002018;008 ;LIEN OF JUDGMENT RECORDED IN CIRC. CRT"
+    },
+    {
+     "date": "09/26/2018",
+     "name": "Notice of Bankruptcy Entered",
+     "comment": "001 ; BANK ; 5DH ; 18-22291"
+    },
+    {
+     "date": "09/27/2018",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF BANKRUPTCY FILED (DEF)-S2"
+    },
+    {
+     "date": "10/29/2018",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF LIEN RECORDATION (ATP)-S3"
+    },
+    {
+     "date": "10/07/2020",
+     "name": "Bankruptcy Removed",
+     "comment": "001 ; BNKR ; 5N9 ; 0BB"
+    },
+    {
+     "date": "10/14/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF BANKRUPTCY REMOVED (ATP)-M1"
+    },
+    {
+     "date": "01/25/2023",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "02/16/2023",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Request to file Notice of Lien"
+    },
+    {
+     "date": "02/16/2023",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC Circuit Court"
+    },
+    {
+     "date": "03/03/2023",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "WELLS FARGO"
+    },
+    {
+     "date": "03/17/2023",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "Prince George"
+    }
+   ],
+   "prop": {
+    "acct": "17202238699",
+    "address": "7536 ARDWICK ARDMORE RD",
+    "city": "HYATTSVILLE",
+    "zip": "20784",
+    "ooi": "H",
+    "value": 383200,
+    "tradate": "19941229",
+    "price": 109900,
+    "deed": "09958/0485",
+    "jurs": "PRIN",
+    "mail": "7536 ARDWICK ARDMORE RD, HYATTSVILLE",
+    "use": "Residential",
+    "built": "1987",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=20&AccountNumber=2238699",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:26:20.081Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0026657-2016",
+   "from": "case detail",
+   "caption": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC. vs BLOUNT, TYA D.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract",
+   "case_status": "Open",
+   "filed": "10/03/2016",
+   "plaintiff": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC.",
+   "defendant": "BLOUNT, TYA D",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "7903 ORION CIRCLE",
+   "city": "LAUREL",
+   "zip": "20724",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "2863.97",
+   "judgment_date": "01/09/2017",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 7,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "06/11/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "08/31/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "09/16/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "10/05/2020",
+     "name": "Motion",
+     "comment": "001 ; MOTN ; 5BW ; G;11052020;CLK;AGP;TO DISMISS PROPERTY GARNISHME;001;05"
+    },
+    {
+     "date": "11/02/2020",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5G5 ; I;11172020;GRP;003;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "11/17/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "12/03/2020",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "01/13/2021",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5JS ; I;04302021;GRP;004;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "03/02/2021",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5KM ; I;05272021;GRP;005;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "05/04/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "05/17/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "06/01/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "06/08/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "09/28/2021",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "001 ; WRGP ; 5ML ; I;09292021;GRP;006;WRIT OF GARNISHMENT OF PROPERTY ;ATP"
+    },
+    {
+     "date": "09/29/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF GARNISHM. OF PROP. ISSUE (ATP)-U4"
+    },
+    {
+     "date": "10/14/2021",
+     "name": "Notice",
+     "comment": "001 ; NOTC ; NOTICE OF WRIT OF PROPERTY GARNISHMENT (DEF)-U2"
+    },
+    {
+     "date": "08/29/2023",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "bank garnishment"
+    },
+    {
+     "date": "09/25/2023",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "NAVY FEDERAL CREDIT UNION"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T16:26:19.506Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "05-02-0036985-2019",
+   "from": "case detail",
+   "caption": "HIGHBRIDGE COMMUNITY ASSOCIATION INC vs BOLDEN, JAY E et al",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract",
+   "case_status": "Open / Judgment",
+   "filed": "12/06/2019",
+   "plaintiff": "HIGHBRIDGE COMMUNITY ASSOCIATION INC",
+   "defendant": "BOLDEN, JAY E",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "5303 ARTHURIAN LANE",
+   "city": "MISSOURI CITY",
+   "zip": "77459",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "3972.82",
+   "judgment_date": "12/17/2024",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 4,
+   "docket": [
+    {
+     "date": "05/10/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Summons"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T16:26:18.393Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "C-08-JG-24-001813",
+   "from": "case detail",
+   "caption": "",
+   "court": "District Court For Howard County - Civil",
+   "case_type": "",
+   "case_status": "",
+   "filed": "",
+   "plaintiff": "",
+   "defendant": "",
+   "hoa": false,
+   "county": "HOWA",
+   "judgment_amt": "",
+   "judgment_date": "",
+   "lien": "",
+   "writ_req": "06/03/2026",
+   "writ_issued": "06/05/2026",
+   "levy": "06/23/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 11,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "11/15/2024",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "11/15/2024",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "11/26/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "11/26/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "12/01/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "CAPITAL ONE"
+    },
+    {
+     "date": "12/01/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "CAPITAL ONE-WILLIAMSON"
+    },
+    {
+     "date": "02/24/2026",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "02/24/2026",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "02/25/2026",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "02/25/2026",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "03/27/2026",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "03/27/2026",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A."
+    },
+    {
+     "date": "06/03/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "06/03/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "06/05/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/05/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/23/2026",
+     "name": "Return of Service - Served",
+     "comment": "LEVIED"
+    },
+    {
+     "date": "06/23/2026",
+     "name": "Return of Service - Served",
+     "comment": "LEVIED"
+    }
+   ],
+   "updated": "2026-10-18T19:35:24.468Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "C-13-JG-25-001927",
+   "from": "case detail",
+   "caption": "",
+   "court": "",
+   "case_type": "",
+   "case_status": "",
+   "filed": "",
+   "plaintiff": "",
+   "defendant": "",
+   "hoa": false,
+   "county": "",
+   "judgment_amt": "",
+   "judgment_date": "",
+   "lien": "",
+   "writ_req": "03/30/2026",
+   "writ_issued": "03/31/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "03/30/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ"
+    },
+    {
+     "date": "03/31/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/17/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ"
+    },
+    {
+     "date": "06/25/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    }
+   ],
+   "updated": "2026-10-18T19:35:25.017Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "C-16-CV-25-004663",
+   "from": "case detail",
+   "caption": "Addison Woods Homeowner's Association, Inc. vs. Jo Bell",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Debt",
+   "case_status": "Appealed",
+   "filed": "08/19/2025",
+   "plaintiff": "Addison Woods Homeowner's Association, Inc.",
+   "defendant": "Bell, Jo Antoinette",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "1074 Karen Boulevard",
+   "city": "Capitol Heights",
+   "zip": "20743",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "2904.00",
+   "judgment_date": "11/10/2025",
+   "lien": "",
+   "writ_req": "12/12/2025",
+   "writ_issued": "12/12/2025",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 2,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "11/10/2025",
+     "name": "Judgment",
+     "comment": "Judge Pearson 11/7/2025 Judgment entered in favor of the plaintiff, Addison Woods Homeowners Association Inc and against the defendant Jo Antionette Bell, in the sum of ($2,904.00) dollars. Costs are assessed against defendant Jo Antionette Bell."
+    },
+    {
+     "date": "11/10/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Notice."
+    },
+    {
+     "date": "11/25/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Order - Vacate"
+    },
+    {
+     "date": "11/26/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment (Garnishee: Bank of America)"
+    },
+    {
+     "date": "11/26/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "11/26/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Garnishment of Property (Bank of America)"
+    },
+    {
+     "date": "12/03/2025",
+     "name": "Civil Information Report - Appeal to ACM",
+     "comment": "Civil Appeal Information Report"
+    },
+    {
+     "date": "12/03/2025",
+     "name": "Deficient Filing",
+     "comment": "Notice of Appeal"
+    },
+    {
+     "date": "12/04/2025",
+     "name": "Notice of Deficiency - Rule 20-203(d)",
+     "comment": "no signature and date at the bottom of the notice of appeal is missing"
+    },
+    {
+     "date": "12/04/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Deficiency Notice"
+    },
+    {
+     "date": "12/04/2025",
+     "name": "Notice of Appeal to ACM",
+     "comment": "Defendant Jo Bell Notice of Appeal (fees paid)"
+    },
+    {
+     "date": "12/04/2025",
+     "name": "Notice Issued",
+     "comment": "Receipt of Notice of Appeal sent to all parties"
+    },
+    {
+     "date": "12/04/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Receipt of Notice of Appeal sent to all Parties"
+    },
+    {
+     "date": "12/12/2025",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "12/12/2025",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "12/19/2025",
+     "name": "Order Received from Appellate Court of Maryland",
+     "comment": "No. 2140, September Term 2025 ACM-REG-2140-2025 Circuit Court No. C-16-CV-25-004663 It appears from the record that the above-captioned appeal was improperly noted to this Court from a judgment ofthe Circuit Court for Prince George's County exercising appellate jurisdiction to review a decision of the District Court of Maryland. Accordingly, it is this 19th day of December 2025, by the Appellate Court of Maryland, on its own initiative, ORDERED that the above-captioned appeal is transferred to the Supreme Court of Maryland. Md. Code Ann., Cts & Jud. Proc. 12-302(a), Md. Rule 8-132(a)."
+    },
+    {
+     "date": "12/26/2025",
+     "name": "Acknowledgement of Petition for Writ of Certiorari",
+     "comment": "PETITION DOCKETING RECEIPT Jo Antoinette Bell v. Addison Woods Homeowner's Association, Inc. Petition No. 419, September Term, 2025 File date: December 19, 2025 I acknowledge that I received a petition for writ of certiorari on December 19, 2025. The petition has been docketed as shown above."
+    },
+    {
+     "date": "03/23/2026",
+     "name": "Acknowledgement of Petition for Writ of Certiorari",
+     "comment": "NOTICE OF ORDER Jo Antoinette Bell v. Addison Woods Homeowner's Association, Inc. Petition No. 419, September Term, 2025 On March 23, 2026, the Court entered an order denying the petition in this Court."
+    }
+   ],
+   "prop": {
+    "acct": "17182019735",
+    "address": "1074 KAREN BLVD",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "N",
+    "value": 304300,
+    "tradate": "20220803",
+    "price": 300000,
+    "deed": "48005/0306",
+    "jurs": "PRIN",
+    "mail": "1074 KAREN BLVD, CAPITOL HEIGHTS",
+    "use": "Town House",
+    "built": "1991",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2019735",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:20.376Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "C-16-JG-23-001889",
+   "from": "case detail",
+   "caption": "",
+   "court": "",
+   "case_type": "",
+   "case_status": "",
+   "filed": "",
+   "plaintiff": "",
+   "defendant": "",
+   "hoa": false,
+   "county": "",
+   "judgment_amt": "",
+   "judgment_date": "",
+   "lien": "",
+   "writ_req": "04/24/2024",
+   "writ_issued": "04/25/2024",
+   "levy": "06/27/2024",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 3,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "02/01/2024",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "02/07/2024",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "TRUIST BANK"
+    },
+    {
+     "date": "03/06/2024",
+     "name": "Answer of Garnishee",
+     "comment": "TRUIST PLEA OF NULLA BONA"
+    },
+    {
+     "date": "03/06/2024",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "TRUIST BANK"
+    },
+    {
+     "date": "04/24/2024",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "04/25/2024",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/27/2024",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC posted 6/14/24"
+    }
+   ],
+   "updated": "2026-10-18T16:26:20.081Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "CAL22-18224",
+   "from": "case detail",
+   "caption": "Arborview Homeowners Association Inc vs. Patricia Ricks",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Injunction",
+   "case_status": "Closed",
+   "filed": "06/14/2022",
+   "plaintiff": "Arborview Homeowners Association Inc",
+   "defendant": "Ricks, Patricia H",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "10742 Willow Oaks Drive",
+   "city": "Mitchellville",
+   "zip": "20721",
+   "plaintiff_atty": "TSIKERDANOS, JOHN ERNEST",
+   "plaintiff_firm": "Nagle & Zaller, P.C.",
+   "judgment_amt": "33225.00",
+   "judgment_date": "09/13/2024",
+   "lien": "",
+   "writ_req": "02/27/2026",
+   "writ_issued": "03/02/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 3,
+   "service_issues": 4,
+   "docket": [
+    {
+     "date": "09/16/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Judgment"
+    },
+    {
+     "date": "09/16/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Notice of Recorded Judgment"
+    },
+    {
+     "date": "09/03/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Garnishment of Property"
+    },
+    {
+     "date": "09/04/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "09/04/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Garnishment"
+    },
+    {
+     "date": "09/19/2025",
+     "name": "Return of Service - Served",
+     "comment": "GARNISHMENT SERVED ON BANK OF AMERICA"
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A. (Tasked to Judge Pearson)"
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Order - Motion/Request/Petition Granted",
+     "comment": "Order dated 10/7/2025, signed by Judge Pearson; It is hereby ORDERED that judgment be entered in favor of Garnishee, Bank of America, N.A. and the writ of garnishment be and hereby is dismissed on this 7th of October 2025. cc; all parties"
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Order"
+    },
+    {
+     "date": "02/27/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/02/2026",
+     "name": "Writ of Execution Issued",
+     "comment": "PLACED IN THE SHERIFF'S PICKUP BIN ON 3/5/26"
+    },
+    {
+     "date": "03/03/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Execution-copy of writ for record."
+    },
+    {
+     "date": "10/06/2026",
+     "name": "Motion",
+     "comment": "Motion to Waive Deposit at Sheriff Sale {Task for Judge Pearson}"
+    },
+    {
+     "date": "10/06/2026",
+     "name": "Affidavit",
+     "comment": "Affidavit - Motion to Waive Deposit at Sheriff Sale"
+    },
+    {
+     "date": "10/06/2026",
+     "name": "Certificate of Service",
+     "comment": "Certificate of Service - Motion to Waive Deposit at Sheriff Sale"
+    },
+    {
+     "date": "10/14/2026",
+     "name": "Order - Motion/Request/Petition Granted",
+     "comment": "Order dated 10/13/2026, signed by Judge Pearson; ORDERED that the Motion be, and the same hereby is GRANTED; and it is further ORDERED that the Plaintiff shall not have to pay the sheriff sale Deposit in order to bid at the sale; and it is further; ORDERED that the Plaintiff may bid at the sale without registering prior to the sale. cc; all parties"
+    },
+    {
+     "date": "10/14/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Order - Waive Deposit"
+    }
+   ],
+   "prop": {
+    "acct": "17131516301",
+    "address": "10742 WILLOW OAKS DR",
+    "city": "BOWIE",
+    "zip": "20721",
+    "ooi": "N",
+    "value": 609400,
+    "tradate": "19911211",
+    "price": 210000,
+    "deed": "08144/0171",
+    "jurs": "PRIN",
+    "mail": "10742 WILLOW OAKS DR, BOWIE",
+    "use": "Residential",
+    "built": "1990",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=1516301",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:21.447Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-042-CV-24-007890",
+   "from": "case detail",
+   "caption": "Lancaster Townhomes Association, Inc. vs. Nasshon Williamson et al.",
+   "court": "",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "02/15/2024",
+   "plaintiff": "Lancaster Townhomes Association, Inc.",
+   "defendant": "Phifer, Naysia M",
+   "hoa": true,
+   "county": "",
+   "address": "100 Montgomery Street",
+   "city": "HIGHLAND PARK",
+   "zip": "08904",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "3814.82",
+   "judgment_date": "05/16/2024",
+   "lien": "07/29/2024",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "02/15/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Summons"
+    },
+    {
+     "date": "02/15/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Summons"
+    },
+    {
+     "date": "07/29/2024",
+     "name": "Deficient Filing",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "07/29/2024",
+     "name": "Deficient Filing",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "08/02/2024",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": ""
+    },
+    {
+     "date": "08/02/2024",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "Sent to: Charles"
+    },
+    {
+     "date": "08/05/2024",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "Charles County"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T19:35:24.467Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-23-010633",
+   "from": "case detail",
+   "caption": "London Woods Community Association, Inc c/o Potomac Valley Management vs. Seandra Broxton",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "02/08/2023",
+   "plaintiff": "London Woods Community Association, Inc c/o Potomac Valley Management",
+   "defendant": "Broxton, Seandra L.",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "5620 Malvern Way",
+   "city": "Capitol Heights",
+   "zip": "20743",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "1857.12",
+   "judgment_date": "06/29/2023",
+   "lien": "05/14/2024",
+   "writ_req": "06/11/2024",
+   "writ_issued": "06/12/2024",
+   "levy": "07/12/2024",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "03/04/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Summons"
+    },
+    {
+     "date": "05/12/2023",
+     "name": "Affidavit Judgment Denied",
+     "comment": "Reason for Denial:Claim amount differs from supporting documentation"
+    },
+    {
+     "date": "05/14/2024",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Request for Notice of Lien London woods v Seandra Broxton"
+    },
+    {
+     "date": "05/15/2024",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "05/30/2024",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-24-007377"
+    },
+    {
+     "date": "06/11/2024",
+     "name": "Request for Writ of Execution",
+     "comment": "Request to file Writ of Execution London Woods v. Seandra Broxton"
+    },
+    {
+     "date": "06/12/2024",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "08/01/2024",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC posted 7/12/24"
+    },
+    {
+     "date": "01/30/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "02/04/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "04/13/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC.POSTED/ 03.31.26. Amended SCHEDULE, APPRAISAL, AND RETURN OF LEVIED PROPERTY 9/24/26"
+    }
+   ],
+   "prop": {
+    "acct": "17182030153",
+    "address": "5620 MALVERN WAY",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "H",
+    "value": 319400,
+    "tradate": "20190701",
+    "price": 220000,
+    "deed": "42277/0453",
+    "jurs": "PRIN",
+    "mail": "5620 MALVERN WAY, CAPITOL HEIGHTS",
+    "use": "Town House",
+    "built": "1992",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2030153",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:21.975Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-23-020967",
+   "from": "case detail",
+   "caption": "London Woods Community Association, Inc. vs. Deforest Bland, Sr.",
+   "court": "Circuit Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "06/08/2023",
+   "plaintiff": "London Woods Community Association, Inc.",
+   "defendant": "Bland, Deforest Sr",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "1203 Adeline Way",
+   "city": "Capitol Heights",
+   "zip": "20743",
+   "plaintiff_atty": "Bennett, Sheryl",
+   "plaintiff_firm": "Bennett & Bennett Law Group",
+   "judgment_amt": "4174.31",
+   "judgment_date": "07/11/2024",
+   "lien": "07/30/2024",
+   "writ_req": "02/25/2026",
+   "writ_issued": "03/02/2026",
+   "levy": "09/24/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "06/12/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "09/22/2023",
+     "name": "Affidavit Judgment Denied",
+     "comment": "Reason for Denial: Denied at this time. Insufficient supporting documents as to statement of account and payment history."
+    },
+    {
+     "date": "07/30/2024",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Request to file notice of lien London Woods vs Deforest Bland"
+    },
+    {
+     "date": "07/31/2024",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "08/01/2024",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-24-011018"
+    },
+    {
+     "date": "02/25/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/02/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "05/05/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC Posted 04292026 Amended SCHEDULE, APPRAISAL, AND RETURN OF LEVIED PROPERTY 9/24/26"
+    }
+   ],
+   "prop": {
+    "acct": "17182024875",
+    "address": "1203 ADELINE WAY",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "H",
+    "value": 281500,
+    "tradate": "20051116",
+    "price": null,
+    "deed": "",
+    "jurs": "PRIN",
+    "mail": "1203 ADELINE WAY, CAPITOL HEIGHTS",
+    "use": "Town House",
+    "built": "1987",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2024875",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:20.896Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-23-021129",
+   "from": "case detail",
+   "caption": "London Woods Community Inc. vs. Adedotun Ijiola",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "06/12/2023",
+   "plaintiff": "London Woods Community Inc.",
+   "defendant": "Ijiola, Adedotun",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "5413 Ingleboro Ct",
+   "city": "Largo",
+   "zip": "20743",
+   "plaintiff_atty": "Bennett, Leonard C",
+   "plaintiff_firm": "5010 Sunnyside Avenue Suite 201",
+   "judgment_amt": "3142.93",
+   "judgment_date": "01/25/2024",
+   "lien": "06/11/2024",
+   "writ_req": "08/08/2024",
+   "writ_issued": "08/09/2024",
+   "levy": "10/09/2024",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "06/13/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "10/13/2023",
+     "name": "Affidavit Judgment Denied",
+     "comment": "Reason for Denial: Insufficient details to support judgment. Supporting documents have different amount than claim amount. Set this matter for trial."
+    },
+    {
+     "date": "06/10/2024",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Request for judgment lien"
+    },
+    {
+     "date": "06/11/2024",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "06/18/2024",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-24-008827"
+    },
+    {
+     "date": "08/08/2024",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution LW v Ayodeji Oladotun"
+    },
+    {
+     "date": "08/08/2024",
+     "name": "Request for Service - Certified Mail, SDAT or MIA",
+     "comment": "Writ of Execution LW v Ayodeji Oladotun"
+    },
+    {
+     "date": "08/09/2024",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "08/09/2024",
+     "name": "Request for Judgment - Garnishment",
+     "comment": "Request for Trial Garnishment London Woods v Adedotun Ijiola"
+    },
+    {
+     "date": "08/09/2024",
+     "name": "Request for Judgment - Garnishment",
+     "comment": "Request for Trial Garnishment London Woods v Adedotun Ijiola"
+    },
+    {
+     "date": "10/22/2024",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC , 10.09.24"
+    },
+    {
+     "date": "12/06/2024",
+     "name": "Order - Motion/Request/Petition Denied",
+     "comment": "NPA PLAINTIFF'S MOTION FOR TRIAL GARNISHEE DENIED"
+    },
+    {
+     "date": "04/02/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "writ of execution"
+    },
+    {
+     "date": "04/06/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/01/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/POSTED/05.18.26. AMEDNED FIBER & FOLIO 9/28/26"
+    }
+   ],
+   "prop": {
+    "acct": "17182029619",
+    "address": "5413 INGLEBORO CT",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "H",
+    "value": 301900,
+    "tradate": "20161014",
+    "price": 152000,
+    "deed": "38614/0601",
+    "jurs": "PRIN",
+    "mail": "5413 INGLEBORO CT, CAPITOL HEIGHTS",
+    "use": "Town House",
+    "built": "1991",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2029619",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:16.914Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-23-023918",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Estate of Jonathan D. Cole et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "07/11/2023",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Estate of Jonathan D. Cole",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6308 Gilbrator Court",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "1892.75",
+   "judgment_date": "05/10/2024",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 2,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "07/13/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "07/13/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "07/13/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "07/29/2024",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "07/31/2024",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "Truist Bank"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T16:26:17.779Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-23-029831",
+   "from": "case detail",
+   "caption": "Perrywood Community Association, Inc. vs. Lisa Beasley",
+   "court": "Circuit Court For Prince Georges County - Civil",
+   "case_type": "Contract - Large Claims",
+   "case_status": "Open / Judgment",
+   "filed": "09/14/2023",
+   "plaintiff": "Perrywood Community Association, Inc.",
+   "defendant": "Beasley, Lisa Renee",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "15017 Green Wing Terrace",
+   "city": "Upper Marlboro",
+   "zip": "20774",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "1941.83",
+   "judgment_date": "12/04/2023",
+   "lien": "06/28/2024",
+   "writ_req": "01/06/2026",
+   "writ_issued": "01/14/2026",
+   "levy": "09/24/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 2,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "09/21/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Summons"
+    },
+    {
+     "date": "06/28/2024",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "07/02/2024",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "07/03/2024",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-24-009568"
+    },
+    {
+     "date": "07/19/2024",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "07/22/2024",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "Capital One Bank, N.A."
+    },
+    {
+     "date": "01/06/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "01/14/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "03/10/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC Posted 02242026 Ameded SCHEDULE, APPRAISAL, AND RETURN OF LEVIED PROPERTY 9/24/26"
+    }
+   ],
+   "prop": {
+    "acct": "17032830016",
+    "address": "15017 GREEN WING TER",
+    "city": "UPPER MARLBORO",
+    "zip": "20774",
+    "ooi": "H",
+    "value": 393400,
+    "tradate": "20170815",
+    "price": 300000,
+    "deed": "39894/0225",
+    "jurs": "PRIN",
+    "mail": "15017 GREEN WING TER, UPPER MARLBORO",
+    "use": "Town House",
+    "built": "1997",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=03&AccountNumber=2830016",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:19.826Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-23-033020",
+   "from": "case detail",
+   "caption": "Arbory Condominium Association, Inc. vs. Pedro Montero et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Large Claims",
+   "case_status": "Open / Judgment",
+   "filed": "10/16/2023",
+   "plaintiff": "Arbory Condominium Association, Inc.",
+   "defendant": "Soler, Yoanny Garrido",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "7568 South Arbory Lane, Unit 390",
+   "city": "Laurel",
+   "zip": "20707",
+   "plaintiff_atty": "Zaller, Craig B ESQ",
+   "plaintiff_firm": "Nagle & Zaller, P.C.",
+   "judgment_amt": "11413.61",
+   "judgment_date": "03/06/2024",
+   "lien": "04/27/2024",
+   "writ_req": "04/20/2026",
+   "writ_issued": "04/20/2026",
+   "levy": "05/27/2026",
+   "garnish_after_writ": "05/22/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 10,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "08/26/2024",
+     "name": "Answer of Garnishee",
+     "comment": ""
+    },
+    {
+     "date": "11/17/2024",
+     "name": "Request for Writ of Garnishment - Wages",
+     "comment": "Garnishment of Wages"
+    },
+    {
+     "date": "11/17/2024",
+     "name": "Request for Service - Certified Mail, SDAT or MIA",
+     "comment": "Garnishment-Service"
+    },
+    {
+     "date": "12/02/2024",
+     "name": "Writ of Garnishment of Wages Issued",
+     "comment": ""
+    },
+    {
+     "date": "12/11/2024",
+     "name": "Answer of Garnishee - Not Employed",
+     "comment": ""
+    },
+    {
+     "date": "05/21/2025",
+     "name": "Request for Writ of Garnishment - Wages",
+     "comment": "Garnishment of Wages"
+    },
+    {
+     "date": "05/29/2025",
+     "name": "Writ of Garnishment of Wages Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/13/2025",
+     "name": "Answer of Garnishee - Not Employed",
+     "comment": ""
+    },
+    {
+     "date": "03/06/2026",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Garnishment of Property"
+    },
+    {
+     "date": "03/06/2026",
+     "name": "Request for Service - Certified Mail, SDAT or MIA",
+     "comment": "Garnishment Service"
+    },
+    {
+     "date": "04/03/2026",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "Wells Fargo Bank, National Association"
+    },
+    {
+     "date": "04/20/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "04/20/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "04/21/2026",
+     "name": "Return of Service - Served",
+     "comment": "Service via Cert Mail."
+    },
+    {
+     "date": "05/06/2026",
+     "name": "Answer of Garnishee",
+     "comment": "WF ANSWER OF GARNISHEE AMENDED ANSWER"
+    },
+    {
+     "date": "05/22/2026",
+     "name": "Request for Judgment - Garnishment",
+     "comment": "Request for Judgment Garnishment"
+    },
+    {
+     "date": "06/02/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/POSTED/5.27.26"
+    },
+    {
+     "date": "10/05/2026",
+     "name": "Motion",
+     "comment": "Motion to Waive Deposit at Sheriff Sale"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T19:35:23.161Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-23-037382",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Tamal Ezell",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "11/27/2023",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Ezell, Tamal W",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "7536 Ardwick Ardmore Road",
+   "city": "Hyattsville",
+   "zip": "20784",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "5206.45",
+   "judgment_date": "10/30/2024",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 2,
+   "docket": [
+    {
+     "date": "12/11/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "12/11/2023",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "06/13/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "summons"
+    },
+    {
+     "date": "06/14/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "summons"
+    }
+   ],
+   "prop": {
+    "acct": "17202238699",
+    "address": "7536 ARDWICK ARDMORE RD",
+    "city": "HYATTSVILLE",
+    "zip": "20784",
+    "ooi": "H",
+    "value": 383200,
+    "tradate": "19941229",
+    "price": 109900,
+    "deed": "09958/0485",
+    "jurs": "PRIN",
+    "mail": "7536 ARDWICK ARDMORE RD, HYATTSVILLE",
+    "use": "Residential",
+    "built": "1987",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=20&AccountNumber=2238699",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:26:17.221Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-015287",
+   "from": "case detail",
+   "caption": "London Woods Community Association, INC. vs. Rosa Griffin",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "03/14/2024",
+   "plaintiff": "London Woods Community Association, INC.",
+   "defendant": "Griffin, Rosa",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "5736 Gladstone Way",
+   "city": "Capitol Heights",
+   "zip": "20743",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "4164.31",
+   "judgment_date": "12/23/2024",
+   "lien": "01/23/2025",
+   "writ_req": "04/02/2026",
+   "writ_issued": "04/06/2026",
+   "levy": "05/18/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "03/15/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "08/13/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS-RENEWAL"
+    },
+    {
+     "date": "08/13/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS-RENEWAL"
+    },
+    {
+     "date": "01/23/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Request Notice of Lien LW v Rosa Griffin"
+    },
+    {
+     "date": "01/23/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "01/29/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-001467"
+    },
+    {
+     "date": "04/02/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "04/06/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/01/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/ POSTED/ 05.18.26. AMEDNED FIBER & FOLIO 9/28/26"
+    }
+   ],
+   "prop": {
+    "acct": "17182028603",
+    "address": "5736 GLADSTONE WAY",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "H",
+    "value": 280000,
+    "tradate": "20081107",
+    "price": 164000,
+    "deed": "30135/0114",
+    "jurs": "PRIN",
+    "mail": "5736 GLADSTONE WAY, CAPITOL HEIGHTS",
+    "use": "Town House",
+    "built": "1990",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2028603",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:19.674Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-022102",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Barbara Redden",
+   "court": "",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "05/07/2024",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Redden, Barbara",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6418 Gwinnett Lane",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "1180.79",
+   "judgment_date": "10/16/2024",
+   "lien": "01/17/2025",
+   "writ_req": "01/29/2026",
+   "writ_issued": "06/08/2026",
+   "levy": "09/01/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 10,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "12/30/2024",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "01/09/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "CAPITAL ONE BANK , N.A."
+    },
+    {
+     "date": "01/17/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "01/21/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "01/23/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-000779"
+    },
+    {
+     "date": "03/27/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "04/02/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "05/02/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "05/02/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Bank of America, N.A."
+    },
+    {
+     "date": "07/29/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "08/07/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "TRUIST BANK"
+    },
+    {
+     "date": "11/28/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "12/11/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "BANK OF AMERICA"
+    },
+    {
+     "date": "01/08/2026",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "01/08/2026",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A."
+    },
+    {
+     "date": "01/29/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "06/08/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "09/01/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/POSTED/ 08.05.2026."
+    }
+   ],
+   "prop": {
+    "acct": "17141638790",
+    "address": "6418 GWINNETT LN",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 623000,
+    "tradate": "20021230",
+    "price": 329990,
+    "deed": "16624/0012",
+    "jurs": "PRIN",
+    "mail": "6418 GWINNETT LN, BOWIE",
+    "use": "Residential",
+    "built": "1992",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638790",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:24:21.158Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-022143",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc, vs. Miuscuita Harding et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "05/07/2024",
+   "plaintiff": "Highbridge Community Association, Inc,",
+   "defendant": "Harding, Miuscuita",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6314 Gwinnett Lane",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "3660.06",
+   "judgment_date": "04/03/2025",
+   "lien": "12/15/2025",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 10,
+   "service_issues": 3,
+   "docket": [
+    {
+     "date": "01/03/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "summons"
+    },
+    {
+     "date": "01/03/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "summons"
+    },
+    {
+     "date": "03/17/2025",
+     "name": "Affidavit Judgment Denied",
+     "comment": "Reason for Denial: Military Affidavit - Insufficient (Stale)"
+    },
+    {
+     "date": "07/02/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "07/02/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "07/03/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "BANK OF AMERICA"
+    },
+    {
+     "date": "07/03/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "BANK OF AMERICA"
+    },
+    {
+     "date": "07/31/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "07/31/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A."
+    },
+    {
+     "date": "07/31/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "07/31/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A."
+    },
+    {
+     "date": "11/25/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "11/25/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment-ROBERT HARDING"
+    },
+    {
+     "date": "12/11/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "NFCU"
+    },
+    {
+     "date": "12/11/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "NFCU"
+    },
+    {
+     "date": "12/15/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "12/16/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "12/16/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-033339"
+    }
+   ],
+   "prop": {
+    "acct": "17141638394",
+    "address": "6314 GWINNETT LN",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 452100,
+    "tradate": "20230622",
+    "price": 460000,
+    "deed": "48929/0515",
+    "jurs": "PRIN",
+    "mail": "6314 GWINNETT LN, BOWIE",
+    "use": "Town House",
+    "built": "1993",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638394",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:24:20.582Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-026205",
+   "from": "case detail",
+   "caption": "Perrywood Community Association, Inc. vs. Larry Brown et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "06/07/2024",
+   "plaintiff": "Perrywood Community Association, Inc.",
+   "defendant": "Brown, Pamela L",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "903 Andean Goose Way",
+   "city": "Upper Marlboro",
+   "zip": "20774",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "2829.27",
+   "judgment_date": "08/01/2024",
+   "lien": "06/04/2025",
+   "writ_req": "12/22/2025",
+   "writ_issued": "01/02/2026",
+   "levy": "09/24/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 6,
+   "service_issues": 2,
+   "docket": [
+    {
+     "date": "06/10/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "06/10/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "05/27/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "05/27/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "06/04/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "06/04/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "06/05/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "06/11/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-021078"
+    },
+    {
+     "date": "06/17/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "BANK OF AMERICA"
+    },
+    {
+     "date": "06/17/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "BANK OF AMERICA"
+    },
+    {
+     "date": "07/14/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "07/14/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A."
+    },
+    {
+     "date": "07/14/2025",
+     "name": "Answer of Garnishee",
+     "comment": "BOA Plea"
+    },
+    {
+     "date": "07/14/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "BOA Motion for Dismissal"
+    },
+    {
+     "date": "12/22/2025",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "01/02/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "03/10/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC Posted 02242026 Amended SCHEDULE, APPRAISAL, AND RETURN OF LEVIED PROPERTY 9/24/26"
+    }
+   ],
+   "prop": {
+    "acct": "17033311800",
+    "address": "903 ANDEAN GOOSE WAY",
+    "city": "UPPER MARLBORO",
+    "zip": "20774",
+    "ooi": "H",
+    "value": 661200,
+    "tradate": "20030618",
+    "price": 315598,
+    "deed": "17577/0124",
+    "jurs": "PRIN",
+    "mail": "903 ANDEAN GOOSE WAY, UPPER MARLBORO",
+    "use": "Residential",
+    "built": "2002",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=03&AccountNumber=3311800",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:19.268Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-029525",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Terrance Burke",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "07/03/2024",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Burke, Terrance R",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "14038 Gullivers Trail",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "678.95",
+   "judgment_date": "10/03/2024",
+   "lien": "04/24/2025",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 6,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "07/08/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "01/03/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "01/14/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "Capital One Bank, N.A."
+    },
+    {
+     "date": "02/26/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "03/05/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "04/24/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "04/29/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "04/30/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-018331"
+    },
+    {
+     "date": "11/04/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "11/12/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "PNC BANK"
+    }
+   ],
+   "prop": {
+    "acct": "17141636737",
+    "address": "14038 GULLIVERS TRL",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 467100,
+    "tradate": "20040304",
+    "price": 229000,
+    "deed": "19026/0415",
+    "jurs": "PRIN",
+    "mail": "14038 GULLIVERS TRL, BOWIE",
+    "use": "Exempt",
+    "built": "1990",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1636737",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:24:20.013Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-030038",
+   "from": "case detail",
+   "caption": "LONDON WOODS COMMUNITY ASSOCIATION, INC. vs. Sherkia Hayes",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "07/08/2024",
+   "plaintiff": "LONDON WOODS COMMUNITY ASSOCIATION, INC.",
+   "defendant": "Hayes, Sherkia",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "1010 Fairford Way",
+   "city": "Capitol Heights",
+   "zip": "20743",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "3146.48",
+   "judgment_date": "10/03/2024",
+   "lien": "10/14/2024",
+   "writ_req": "04/02/2026",
+   "writ_issued": "04/06/2026",
+   "levy": "05/18/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "07/10/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "07/10/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "10/14/2024",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Request for notice of Lien London Woods v Sherkia Hayes"
+    },
+    {
+     "date": "10/15/2024",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "10/18/2024",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-24-013755"
+    },
+    {
+     "date": "04/02/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "04/06/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/01/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/ POSTED/ 05.18.26. AMEDNED FIBER & FOLIO 9/28/26"
+    }
+   ],
+   "prop": {
+    "acct": "17182026557",
+    "address": "1010 FAIRFORD WAY",
+    "city": "CAPITOL HEIGHTS",
+    "zip": "20743",
+    "ooi": "N",
+    "value": 243500,
+    "tradate": "20060109",
+    "price": 179000,
+    "deed": "23953/0064",
+    "jurs": "PRIN",
+    "mail": "SHERIKIA SMITH, WALDORF",
+    "use": "Town House",
+    "built": "1980",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2026557",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:20.211Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-045717",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Walter Ndi et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "11/01/2024",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Ndi, Walter C",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6307 Gilbralter Court",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "1682.72",
+   "judgment_date": "03/06/2025",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 4,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "11/06/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "11/06/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "03/18/2025",
+     "name": "Motion / Request - To Enter Consent Judgment",
+     "comment": "Request to Strike Affidavit Judgment and Enter Judgment by Consent"
+    },
+    {
+     "date": "04/22/2026",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "04/22/2026",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "05/04/2026",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "WELLS FARGO"
+    },
+    {
+     "date": "05/04/2026",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "WELLS FARGO"
+    }
+   ],
+   "prop": {
+    "acct": "17141637404",
+    "address": "6307 GILBRALTER CT",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 698800,
+    "tradate": "20151023",
+    "price": 392600,
+    "deed": "37521/0463",
+    "jurs": "PRIN",
+    "mail": "6307 GILBRALTER CT, BOWIE",
+    "use": "Residential",
+    "built": "1990",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1637404",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:24:18.851Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-045774",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Dorte Engel",
+   "court": "",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "11/01/2024",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Engel, Dorte",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "12304 Stafford Lane",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "2041.96",
+   "judgment_date": "05/09/2025",
+   "lien": "07/29/2025",
+   "writ_req": "12/17/2025",
+   "writ_issued": "12/17/2025",
+   "levy": "01/15/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 3,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "11/06/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "07/29/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "07/30/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "08/04/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-025300"
+    },
+    {
+     "date": "09/24/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "10/01/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "BANK OF AMERICA"
+    },
+    {
+     "date": "11/03/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "11/03/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A."
+    },
+    {
+     "date": "12/17/2025",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "12/17/2025",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "02/10/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC POSTED 01152026"
+    }
+   ],
+   "prop": {
+    "acct": "17070693739",
+    "address": "12304 STAFFORD LN",
+    "city": "BOWIE",
+    "zip": "20715",
+    "ooi": "H",
+    "value": 489200,
+    "tradate": "20160621",
+    "price": null,
+    "deed": "38306/0491",
+    "jurs": "PRIN",
+    "mail": "12304 STAFFORD LN, BOWIE",
+    "use": "Residential",
+    "built": "1962",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0693739",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:22:06.202Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-045800",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. William Clark et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "11/01/2024",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Clark, William",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6422 Gwinnett Lane",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "2486.39",
+   "judgment_date": "02/07/2025",
+   "lien": "05/19/2025",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "04/22/2026",
+   "exceptions": "",
+   "garnish_tries": 3,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "11/06/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "summons"
+    },
+    {
+     "date": "11/06/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "summons"
+    },
+    {
+     "date": "05/19/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "05/21/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "05/22/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-019900"
+    },
+    {
+     "date": "06/04/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Bank Garnishment"
+    },
+    {
+     "date": "06/23/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": "CHASE BANK"
+    },
+    {
+     "date": "07/29/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona"
+    },
+    {
+     "date": "07/29/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Writ of Garnishment"
+    },
+    {
+     "date": "04/22/2026",
+     "name": "Notice of Bankruptcy Entered",
+     "comment": "Chapter 13 26-12969"
+    }
+   ],
+   "prop": {
+    "acct": "17141638816",
+    "address": "6422 GWINNETT LN",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 561400,
+    "tradate": "19910613",
+    "price": 204500,
+    "deed": "07975/0751",
+    "jurs": "PRIN",
+    "mail": "6422 GWINNETT LN, BOWIE",
+    "use": "Residential",
+    "built": "1992",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638816",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:24:19.427Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-24-048727",
+   "from": "case detail",
+   "caption": "Kettering by the Park II Condominium, Inc. vs. Lisa Smith et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Large Claims",
+   "case_status": "Open / Judgment",
+   "filed": "11/22/2024",
+   "plaintiff": "Kettering by the Park II Condominium, Inc.",
+   "defendant": "Smith, Lisa J.",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "130 FIRETHRON COURT, UNIT 15-3",
+   "city": "UPPER MARLBORO",
+   "zip": "20707",
+   "plaintiff_atty": "Zaller, Craig B ESQ",
+   "plaintiff_firm": "Nagle & Zaller, P.C.",
+   "judgment_amt": "16951.39",
+   "judgment_date": "07/30/2025",
+   "lien": "09/11/2025",
+   "writ_req": "03/12/2026",
+   "writ_issued": "03/25/2026",
+   "levy": "05/22/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 5,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "11/27/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "11/27/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "03/21/2025",
+     "name": "Affidavit Judgment Denied",
+     "comment": "Reason for Denial: Insufficient service; service at address not listed on complaint; please provde skip or other supporting documentation. Reissue"
+    },
+    {
+     "date": "09/11/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "09/11/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Garnishment of Property"
+    },
+    {
+     "date": "09/11/2025",
+     "name": "Request for Service - Certified Mail, SDAT or MIA",
+     "comment": "Garnishment Service"
+    },
+    {
+     "date": "09/16/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "09/17/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-028913"
+    },
+    {
+     "date": "09/22/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "11/07/2025",
+     "name": "Request for Judgment - Garnishment",
+     "comment": "Request for Judgment Garnishment"
+    },
+    {
+     "date": "12/11/2025",
+     "name": "Request for Judgment - Garnishment",
+     "comment": "Request for Judgment-Garnishment"
+    },
+    {
+     "date": "01/15/2026",
+     "name": "Request for Judgment - Garnishment",
+     "comment": "For Lisa J. Smith"
+    },
+    {
+     "date": "03/12/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/25/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/02/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/POSTED/5.22.26. AMEDNED FIBER & FOLIO 9/28/26"
+    },
+    {
+     "date": "10/12/2026",
+     "name": "Motion",
+     "comment": "Motion to Waive Deposit at Sheriff Sale"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T17:18:18.438Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-25-021044",
+   "from": "case detail",
+   "caption": "Pleasant Prospect Home Owner's Association, Inc. T/A Woodmore vs. Jeannine Clark",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "04/16/2025",
+   "plaintiff": "Pleasant Prospect Home Owner's Association, Inc. T/A Woodmore",
+   "defendant": "Clark, Jeannine A",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "11946 Saint Francis Way",
+   "city": "Bowie",
+   "zip": "20721",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "3243.88",
+   "judgment_date": "07/10/2025",
+   "lien": "08/12/2025",
+   "writ_req": "02/26/2026",
+   "writ_issued": "03/02/2026",
+   "levy": "04/29/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "04/17/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "08/12/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "08/19/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "08/20/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-027009"
+    },
+    {
+     "date": "02/26/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/02/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "05/12/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/ POSTED/ 04.29.26"
+    }
+   ],
+   "prop": {
+    "acct": "17070730606",
+    "address": "11946 SAINT FRANCIS WAY",
+    "city": "BOWIE",
+    "zip": "20721",
+    "ooi": "H",
+    "value": 590100,
+    "tradate": "19971014",
+    "price": 387030,
+    "deed": "11714/0067",
+    "jurs": "PRIN",
+    "mail": "11946 SAINT FRANCIS WAY, BOWIE",
+    "use": "Town House",
+    "built": "1997",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0730606",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:16.361Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-25-024089",
+   "from": "case detail",
+   "caption": "Olde Towne Village Condominium vs. Michael Robinson",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "05/06/2025",
+   "plaintiff": "Olde Towne Village Condominium",
+   "defendant": "Robinson, Michael",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "1765 South Addison Road",
+   "city": "District Heights",
+   "zip": "20747",
+   "plaintiff_atty": "CAMERON, JUSTIN GREGORY",
+   "plaintiff_firm": "CAMERON MERICLE PA",
+   "judgment_amt": "8936.00",
+   "judgment_date": "07/30/2025",
+   "lien": "09/11/2025",
+   "writ_req": "02/13/2026",
+   "writ_issued": "02/25/2026",
+   "levy": "05/05/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "05/08/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "09/08/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Judgment Lien"
+    },
+    {
+     "date": "09/11/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "pgc-cc"
+    },
+    {
+     "date": "09/17/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-25-028714"
+    },
+    {
+     "date": "02/13/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "02/25/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "05/05/2026",
+     "name": "Return of Service - Posted",
+     "comment": "Service by sheriff(s). Amended 9/25/26 SCHEDULE, APPRAISAL, AND RETURN OF LEVIED PROPERTY"
+    }
+   ],
+   "prop": null,
+   "updated": "2026-10-18T19:35:18.716Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-25-031875",
+   "from": "case detail",
+   "caption": "Huntley Square Condominium vs. Audrey Stephens",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Large Claims",
+   "case_status": "Closed",
+   "filed": "06/26/2025",
+   "plaintiff": "Huntley Square Condominium",
+   "defendant": "Stephens, Audrey",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "3335 Huntley Square Drive",
+   "city": "Temple Hills",
+   "zip": "20748",
+   "plaintiff_atty": "Zaller, Craig B ESQ",
+   "plaintiff_firm": "Nagle & Zaller, P.C.",
+   "judgment_amt": "21092.06",
+   "judgment_date": "12/15/2025",
+   "lien": "01/30/2026",
+   "writ_req": "03/05/2026",
+   "writ_issued": "03/10/2026",
+   "levy": "05/09/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "08/21/2026",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "06/27/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "01/30/2026",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "02/02/2026",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "02/09/2026",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-26-001684"
+    },
+    {
+     "date": "03/05/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/10/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "05/15/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/POSTED/05.09.26. AMENDED LIBER & FOLIO 9/25/26"
+    },
+    {
+     "date": "08/21/2026",
+     "name": "Notice of Satisfaction (No Fee)",
+     "comment": "Notice of Satisfaction"
+    },
+    {
+     "date": "08/21/2026",
+     "name": "Satisfaction of Lien Sent to Circuit Court",
+     "comment": ""
+    },
+    {
+     "date": "08/21/2026",
+     "name": "Satisfaction of Judgment Entered",
+     "comment": ""
+    }
+   ],
+   "prop": {
+    "acct": "17121272723",
+    "address": "3335 HUNTLEY SQUARE DR",
+    "city": "TEMPLE HILLS",
+    "zip": "20748",
+    "ooi": "N",
+    "value": 110000,
+    "tradate": "20211013",
+    "price": null,
+    "deed": "46328/0395",
+    "jurs": "PRIN",
+    "mail": "15202 DOVEHEART LN, BOWIE",
+    "use": "Residential Condominium",
+    "built": "1973",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=12&AccountNumber=1272723",
+    "matches": 8
+   },
+   "updated": "2026-10-18T17:18:17.457Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-25-033679",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Amilka Wurie",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "07/10/2025",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Wurie, Amilka",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "5911 Grenfell Loop",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "1264.20",
+   "judgment_date": "12/01/2025",
+   "lien": "01/16/2026",
+   "writ_req": "04/28/2026",
+   "writ_issued": "04/29/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 1,
+   "docket": [
+    {
+     "date": "07/14/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Summons"
+    },
+    {
+     "date": "01/16/2026",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "01/20/2026",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "01/20/2026",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-26-000943"
+    },
+    {
+     "date": "04/28/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "04/29/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "09/14/2026",
+     "name": "Return of Service - Not Served",
+     "comment": ""
+    }
+   ],
+   "prop": {
+    "acct": "17141635358",
+    "address": "5911 GRENFELL LOOP",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 471300,
+    "tradate": "20240716",
+    "price": 480000,
+    "deed": "49980/0092",
+    "jurs": "PRIN",
+    "mail": "5911 GRENFELL LOOP, BOWIE",
+    "use": "Town House",
+    "built": "1995",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1635358",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:22:05.626Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-25-042360",
+   "from": "case detail",
+   "caption": "Chaney's Choice Homeowners Association, Inc. vs. Gabriel Omole",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "09/04/2025",
+   "plaintiff": "Chaney's Choice Homeowners Association, Inc.",
+   "defendant": "Omole, Gabriel Ayodele",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "7509 Hill Burne Drive",
+   "city": "HYATTSVILLE",
+   "zip": "20785",
+   "plaintiff_atty": "Zaller, Craig B ESQ",
+   "plaintiff_firm": "Nagle & Zaller, P.C.",
+   "judgment_amt": "3705.69",
+   "judgment_date": "12/15/2025",
+   "lien": "01/27/2026",
+   "writ_req": "03/23/2026",
+   "writ_issued": "03/26/2026",
+   "levy": "05/21/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "09/05/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "01/27/2026",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Notice of Lien"
+    },
+    {
+     "date": "01/29/2026",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "PGC-CC"
+    },
+    {
+     "date": "02/02/2026",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "C-16-JG-26-001270"
+    },
+    {
+     "date": "03/23/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/26/2026",
+     "name": "Writ of Execution Issued",
+     "comment": ""
+    },
+    {
+     "date": "06/02/2026",
+     "name": "Return of Service - Posted",
+     "comment": "WEXC/POSTED/05.21.26."
+    },
+    {
+     "date": "10/15/2026",
+     "name": "Motion",
+     "comment": "Motion to Waive Deposit at Sheriff Sale"
+    }
+   ],
+   "prop": {
+    "acct": "17132945046",
+    "address": "7509 HILL BURNE DR",
+    "city": "HYATTSVILLE",
+    "zip": "20785",
+    "ooi": "H",
+    "value": 341300,
+    "tradate": "20110317",
+    "price": 205000,
+    "deed": "32514/0540",
+    "jurs": "PRIN",
+    "mail": "7509 HILL BURNE DR, HYATTSVILLE",
+    "use": "Town House",
+    "built": "1998",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=2945046",
+    "matches": 1
+   },
+   "updated": "2026-10-18T17:18:21.314Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-25-044031",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Barbara Redden",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open / Judgment",
+   "filed": "09/16/2025",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Redden, Barbara",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6418 Gwinnett Lane",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "1373.93",
+   "judgment_date": "02/13/2026",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "09/17/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "02/05/2026",
+     "name": "Consent Judgment Entered",
+     "comment": ""
+    }
+   ],
+   "prop": {
+    "acct": "17141638790",
+    "address": "6418 GWINNETT LN",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 623000,
+    "tradate": "20021230",
+    "price": 329990,
+    "deed": "16624/0012",
+    "jurs": "PRIN",
+    "mail": "6418 GWINNETT LN, BOWIE",
+    "use": "Residential",
+    "built": "1992",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638790",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:22:05.057Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-26-014059",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Terrance Burke",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open",
+   "filed": "02/19/2026",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Burke, Terrance R",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "14038 Gullivers Trail",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "",
+   "judgment_date": "",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 1,
+   "docket": [
+    {
+     "date": "02/24/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    }
+   ],
+   "prop": {
+    "acct": "17141636737",
+    "address": "14038 GULLIVERS TRL",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 467100,
+    "tradate": "20040304",
+    "price": 229000,
+    "deed": "19026/0415",
+    "jurs": "PRIN",
+    "mail": "14038 GULLIVERS TRL, BOWIE",
+    "use": "Exempt",
+    "built": "1990",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1636737",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:27:28.505Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-26-020860",
+   "from": "case detail",
+   "caption": "Highbridge Community Association, Inc. vs. Robert Caldwell, Jr. et al.",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open",
+   "filed": "04/07/2026",
+   "plaintiff": "Highbridge Community Association, Inc.",
+   "defendant": "Gabriel, Marlis",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6418 Grendel Place",
+   "city": "Bowie",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "",
+   "judgment_date": "",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 2,
+   "docket": [
+    {
+     "date": "04/10/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "04/10/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "07/28/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    },
+    {
+     "date": "07/28/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    }
+   ],
+   "prop": {
+    "acct": "17141637743",
+    "address": "6418 GRENDEL PL",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "H",
+    "value": 587200,
+    "tradate": "20160512",
+    "price": null,
+    "deed": "38179/0038",
+    "jurs": "PRIN",
+    "mail": "6418 GRENDEL PL, BOWIE",
+    "use": "Residential",
+    "built": "1993",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1637743",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:27:29.079Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-05-CV-26-040225",
+   "from": "case detail",
+   "caption": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC. vs. MAMADOUBA KABA",
+   "court": "",
+   "case_type": "Contract - Small Claims",
+   "case_status": "Open",
+   "filed": "08/20/2026",
+   "plaintiff": "HIGHBRIDGE COMMUNITY ASSOCIATION, INC.",
+   "defendant": "KABA, MAMADOUBA",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "6103 GOTHIC LANE",
+   "city": "BOWIE",
+   "zip": "20720",
+   "plaintiff_atty": "Alexandrides, Gregory ESQ",
+   "plaintiff_firm": "The Law Office of Gregory Alexandrides LLC",
+   "judgment_amt": "",
+   "judgment_date": "",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "08/28/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "WRIT OF SUMMONS"
+    }
+   ],
+   "prop": {
+    "acct": "17141635895",
+    "address": "6103 GOTHIC LN",
+    "city": "BOWIE",
+    "zip": "20720",
+    "ooi": "N",
+    "value": 466800,
+    "tradate": "20070730",
+    "price": 415000,
+    "deed": "28320/0182",
+    "jurs": "PRIN",
+    "mail": "6103 GOTHIC LN, BOWIE",
+    "use": "Town House",
+    "built": "1990",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1635895",
+    "matches": 1
+   },
+   "updated": "2026-10-18T16:27:29.629Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  },
+  {
+   "case": "D-101-CV-24-012322",
+   "from": "case detail",
+   "caption": "The Oaks at Waters Edge Condominium 1, Inc. vs. Adetoyese Rufai",
+   "court": "",
+   "case_type": "Contract - Large Claims",
+   "case_status": "Open / Judgment",
+   "filed": "10/09/2024",
+   "plaintiff": "The Oaks at Waters Edge Condominium 1, Inc.",
+   "defendant": "Rufai, Adetoyese T.",
+   "hoa": true,
+   "county": "",
+   "address": "7593 Cherrybark Oak Lane #258",
+   "city": "Elkridge",
+   "zip": "21075",
+   "plaintiff_atty": "CAMERON, JUSTIN GREGORY",
+   "plaintiff_firm": "CAMERON MERICLE PA",
+   "judgment_amt": "11634.40",
+   "judgment_date": "01/27/2025",
+   "lien": "04/08/2025",
+   "writ_req": "",
+   "writ_issued": "",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 0,
+   "service_issues": 0,
+   "docket": [
+    {
+     "date": "10/09/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "SUMMONS"
+    },
+    {
+     "date": "04/04/2025",
+     "name": "Request for Notice of Judgment/Lien",
+     "comment": "Judgment Lien"
+    },
+    {
+     "date": "04/08/2025",
+     "name": "Lien of Judgment Sent to Circuit Court",
+     "comment": "HOWARD COUNTY CIRCUIT COURT"
+    },
+    {
+     "date": "04/09/2025",
+     "name": "Lien Of Judgment Recorded in Circuit Court",
+     "comment": "Howard County"
+    }
+   ],
+   "prop": {
+    "acct": "1401319426",
+    "address": "7593 CHERRYBARK OAK LN",
+    "city": "ELKRIDGE",
+    "zip": "21075",
+    "ooi": "N",
+    "value": 402900,
+    "tradate": "20211008",
+    "price": 375000,
+    "deed": "20991/0470",
+    "jurs": "HOWA",
+    "mail": "7593 CHERRYBARK OAK LN, ELKRIDGE",
+    "use": "Town House",
+    "built": "2009",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=14&SearchType=ACCT&District=01&AccountNumber=319426",
+    "matches": 1
+   },
+   "updated": "2026-10-18T19:35:25.016Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00"
+  }
+ ]
 }
