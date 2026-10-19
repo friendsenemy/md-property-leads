@@ -1,0 +1,11 @@
+{
+ "generated_at": "2026-10-19T21:35:33.177000+00:00",
+ "dataset": "licensed",
+ "since": "2022.01.01",
+ "scanned": 630138,
+ "kept": 63529,
+ "owner_fields": [
+  "owner1",
+  "mail_addr"
+ ]
+}
