@@ -419,6 +419,7 @@
 <style>#writPaste.writ-drop{outline:3px dashed #22d3ee; outline-offset:2px; background:rgba(34,211,238,.08)}</style>
 <div id="view-writ" style="display:none">
     <div class="stats-grid">
+        <div class="stat-card red"><div class="stat-label">🎯 Top Tier — writ live, not advertised, free &amp; clear</div><div class="stat-value" id="wstatTop">0</div><div class="stat-sub" style="font-size:0.72rem; color:var(--text-dim); margin-top:2px">Reach these owners before the newspaper ad brings everyone else</div></div>
         <div class="stat-card yellow"><div class="stat-label">Writs Live (requested → levied)</div><div class="stat-value" id="wstatLive">0</div></div>
         <div class="stat-card purple"><div class="stat-label">Earliest Sale ≤ 45 Days</div><div class="stat-value" id="wstatSoon">0</div></div>
         <div class="stat-card green"><div class="stat-label">Est. Equity Behind Live Writs</div><div class="stat-value" id="wstatEquity">$0</div></div>
@@ -457,7 +458,7 @@
     <div class="controls">
         <div class="search-box"><span class="search-icon">🔍</span><input type="text" id="writSearch" placeholder="Search case, HOA, owner, address…"></div>
         <div class="county-filter"><select id="writStage">
-            <option value="">All stages</option><option value="writ_req">Writ requested</option><option value="writ">Writ issued</option>
+            <option value="">All stages</option><option value="top">🎯 Top tier (early + free &amp; clear)</option><option value="writ_req">Writ requested</option><option value="writ">Writ issued</option>
             <option value="levied">Levied</option><option value="listed">Sale advertised</option><option value="sold">Sold — awaiting ratification</option>
             <option value="lien">Lien recorded</option><option value="judgment">Judgment only</option><option value="ratified">Ratified</option><option value="satisfied">Paid / satisfied</option>
         </select></div>

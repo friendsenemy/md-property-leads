@@ -92,8 +92,27 @@ const WritApp = {
         c._value = Number(p.value || 0);
         c._mort = this.estMortgage(p.price, p.tradate);
         c._equity = c._value ? Math.max(0, c._value - c._mort) : null;
+        this.tier(c);
         c._blob = [c.case, c.caption, c.plaintiff, c.defendant, c.address, c.city, p.address, p.acct, c.county].filter(Boolean).join(" ").toLowerCase();
         return c;
+    },
+
+    /* Top tier = the quiet window: writ requested / issued / levied, no sale advertised yet (no newspaper ad, so
+       no flood of other buyers), and the house looks free & clear. "Free & clear" comes from your notes when you
+       have checked Land Records ("free and clear", "no mortgage", "released"); otherwise from the estimate
+       (last purchase paid off / no loan modeled). A note saying an open deed of trust exists knocks it out. */
+    tier(c) {
+        const notes = this.notesOf ? (this.notesOf(c) || "") : "";
+        const saysClear = /free\s*(and|&)\s*clear|no (open )?(mortgage|deed of trust)|released in \d{4}|dot released|mortgage released/i.test(notes);
+        const saysLoan = /unreleased|open (mortgage|deed of trust|dot)|not free and clear|has a mortgage/i.test(notes);
+        const est = c._value > 0 && c._mort <= c._value * 0.1;
+        c._freeClear = saysLoan ? false : (saysClear || est);
+        c._fcSource = saysLoan ? "notes say a loan is open" : saysClear ? "verified in your notes" : est ? "estimated (no loan left on the last purchase)" : "";
+        const lv = c.levy ? this.d(c.levy) : null, wi = c.writ_issued ? this.d(c.writ_issued) : null;
+        const stale = (lv && (Date.now() - lv) / 864e5 > 180) || (!lv && wi && (Date.now() - wi) / 864e5 > 365);   // creditor stopped pushing
+        const early = c._stageRank >= 3 && c._stageRank <= 5 && c._stage !== "listed" && !c.sale_date && !c.satisfied && !c.bankruptcy && !stale;
+        c._top = early && c._freeClear;
+        c._early = early;
     },
 
     stageOf(c) {
@@ -466,13 +485,16 @@ const WritApp = {
     /* ---------- table ---------- */
     filtered() {
         const s = this.state;
-        return this.rows.filter((r) => (!s.stage || r._stage === s.stage) && (!s.search || r._blob.includes(s.search)));
+        return this.rows.filter((r) => (!s.stage || (s.stage === "top" ? r._top : r._stage === s.stage)) && (!s.search || r._blob.includes(s.search)));
     },
     render() {
         const rows = this.filtered().slice();
         const k = this.state.sort, d = this.state.dir;
+        rows.forEach((r) => this.tier(r));   // notes may have loaded after decorate
         const val = (r) => ({ sale: r._sale ? r._sale.getTime() : (r._stageRank >= 6 ? 9e15 : 8e15 - r._stageRank * 1e12), stage: r._stageRank, equity: r._equity || 0, value: r._value, county: r.county || "" }[k]);
-        rows.sort((a, b) => { const x = val(a), y = val(b); return (x > y ? 1 : x < y ? -1 : 0) * d; });
+        rows.sort((a, b) => { if (a._top !== b._top) return a._top ? -1 : 1; const x = val(a), y = val(b); return (x > y ? 1 : x < y ? -1 : 0) * d; });
+        this.rows.forEach((r) => this.tier(r));
+        document.getElementById("wstatTop").textContent = this.rows.filter((r) => r._top).length;
         const live = this.rows.filter((r) => r._stageRank >= 3 && r._stageRank <= 5);
         document.getElementById("wstatLive").textContent = live.length;
         document.getElementById("wstatSoon").textContent = this.rows.filter((r) => r._days != null && r._days >= 0 && r._days <= 45).length;
@@ -488,7 +510,7 @@ const WritApp = {
             const p = r.prop || {};
             const status = this.statusOf(r);
             return `<tr data-id="${this.esc(r.id)}">
-                <td><span class="status-badge ${r._stageRank >= 3 && r._stageRank <= 5 ? "pursuing" : r._stage === "satisfied" ? "dead" : "new"}">${this.esc(st[1])}</span></td>
+                <td><span class="status-badge ${r._stageRank >= 3 && r._stageRank <= 5 ? "pursuing" : r._stage === "satisfied" ? "dead" : "new"}">${this.esc(st[1])}</span>${r._top ? `<div style="margin-top:3px"><span class="status-badge hot" title="Writ live, no sale advertised yet, ${this.esc(r._fcSource)}">🎯 TOP TIER</span></div>` : r._early ? '<div style="margin-top:3px; font-size:0.66rem; color:var(--text-dim)">early · check mortgage</div>' : ""}</td>
                 <td style="font-family:var(--font-mono); font-size:0.78rem">${r._sale ? this.esc(r._sale.toLocaleDateString("en-US")) + "<br>" + days : "—"}</td>
                 <td class="property-cell"><div class="address">${this.esc(p.address || r.address || "address unknown")}${p.city || r.city ? ", " + this.esc(p.city || r.city) : ""}</div>
                     <div class="meta" style="font-family:var(--font-mono)">${this.esc(p.acct || "")} ${p.ooi === "H" ? '<span style="color:var(--red)">owner-occupied</span>' : p.ooi ? '<span style="color:var(--green)">not owner-occ.</span>' : ""}</div></td>
@@ -527,6 +549,10 @@ const WritApp = {
         if (r.release_or_dismiss) flags.push(`Later entry: ${r.release_or_dismiss}. Often means a payment deal or payoff — watch for a Satisfaction.`);
         if (r.service_issues) flags.push("Service problems in the docket (non-est / evading). Pull the file: a judgment entered without proper service can unwind the sale (Douglas v. Highbridge).");
         document.getElementById("modalBody").innerHTML = `
+            ${r._top ? `<div class="detail-section" style="border:1px solid var(--red); border-radius:var(--radius); padding:10px 12px">
+                <h3 style="color:var(--red)">🎯 Top Tier — the quiet window</h3>
+                <div style="font-size:0.84rem; line-height:1.55">The writ is live but no sale is advertised yet, so the owner isn't getting flooded by other buyers. The house looks free &amp; clear (${this.esc(r._fcSource)}).
+                <b>Play:</b> reach the owner now with a fair cash offer that pays the ${r.judgment_amt ? "$" + Number(r.judgment_amt).toLocaleString() + " " : ""}judgment at closing so they keep their equity. ${r._fcSource.startsWith("estimated") ? "Confirm in Land Records there's no open deed of trust, then add “free and clear” to your notes." : ""}</div></div>` : r._early ? `<div class="detail-section" style="border:1px solid var(--yellow); border-radius:var(--radius); padding:10px 12px; font-size:0.82rem">Early window (no sale advertised yet). ${r._freeClear === false && r._fcSource ? "Your notes say a loan is open, so the equity is smaller." : "Check Land Records for an open deed of trust; if there is none, add “free and clear” to your notes and this becomes 🎯 Top Tier."}</div>` : ""}
             <div class="detail-section"><h3>Where This Sits</h3>
                 ${step("Judgment", (r.judgment_date || "") + (r.judgment_amt ? "  ·  $" + Number(r.judgment_amt).toLocaleString() : ""))}
                 ${step("Lien recorded in circuit ct", r.lien)}

@@ -34,17 +34,19 @@ jobs:
           MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
           MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
           MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
-        run: python -m engine2.repeat_buyers
+        run: |
+          python -m engine2.repeat_buyers
+          python -m engine2.servicer_owned
 
       - name: Commit results
         run: |
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p /tmp/out && cp data/players/sales.json.gz data/players/summary.json /tmp/out/
+          mkdir -p /tmp/out && cp data/players/sales.json.gz data/players/summary.json data/players/servicer_owned.json /tmp/out/
           git fetch origin main
           git checkout -f -B main origin/main
           mkdir -p data/players && cp /tmp/out/* data/players/
-          git add data/players/sales.json.gz data/players/summary.json
+          git add data/players/sales.json.gz data/players/summary.json data/players/servicer_owned.json
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/players/summary.json'));print(d['kept'], 'of', d['scanned'], d['dataset'])")
           git commit -m "Repeat buyers scan: ${N}"
