@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-17T14:13:18+00:00",
- "window_from": "2026.01.20",
- "recent_transfers": 40270,
+ "generated_at": "2026-10-19T17:28:52+00:00",
+ "window_from": "2026.01.22",
+ "recent_transfers": 40011,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -56,11 +56,11 @@
    14
   ],
   [
-   "CASCADE FUNDING MORTGAGE TRUST",
-   13
+   "SULLIVAN BRENDAN V JR TRUSTEE",
+   12
   ],
   [
-   "SULLIVAN BRENDAN V JR TRUSTEE",
+   "CASCADE FUNDING MORTGAGE TRUST",
    12
   ],
   [
@@ -85,7 +85,7 @@
   ],
   [
    "U.S. BANK NATIONAL ASSOCIATION",
-   10
+   9
   ],
   [
    "EQUITY TRUST COMPANY CUSTODIAN",
@@ -160,10 +160,6 @@
    6
   ],
   [
-   "UPWARD AMERICA SOUTHEAST REIT TRS",
-   5
-  ],
-  [
    "U.S BANK TRUST NATIONAL",
    5
   ],
@@ -173,10 +169,6 @@
   ],
   [
    "MICHAEL A MORELLI RESIDUARY TRUST",
-   5
-  ],
-  [
-   "M & T BANK",
    5
   ],
   [
@@ -200,11 +192,11 @@
    5
   ],
   [
-   "WELLS FARGO BANK N A",
+   "WELLS FARGO BANK",
    4
   ],
   [
-   "WELLS FARGO BANK",
+   "UPWARD AMERICA SOUTHEAST REIT TRS",
    4
   ],
   [
@@ -245,6 +237,10 @@
   ],
   [
    "MADAN MEHERJI K LIVING TRUST",
+   4
+  ],
+  [
+   "M & T BANK",
    4
   ],
   [
@@ -313,10 +309,6 @@
   ],
   [
    "WELLS FARGO BANK NA",
-   3
-  ],
-  [
-   "WALTER PRZYBYL SR FAMILY LIVING TR",
    3
   ],
   [
@@ -468,10 +460,6 @@
    3
   ],
   [
-   "INVESTORS FINANCIAL TRUST LLC",
-   3
-  ],
-  [
    "HSBC BANK USA",
    3
   ],
@@ -521,10 +509,6 @@
   ],
   [
    "DEUTSCHE BANK NATIONAL TRUST",
-   3
-  ],
-  [
-   "COHEN LINDA L TR",
    3
   ],
   [
@@ -601,6 +585,22 @@
   ],
   [
    "WILMINGTON TRUST N.A.",
+   2
+  ],
+  [
+   "WILCOXON JAMES W TRUSTEE",
+   2
+  ],
+  [
+   "WILBER PAUL D CO-TRUSTEE",
+   2
+  ],
+  [
+   "WENDY NADINE JOE TRUST",
+   2
+  ],
+  [
+   "WELLS FARGO BANK N A",
    2
   ]
  ]
