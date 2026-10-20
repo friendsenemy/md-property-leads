@@ -1,0 +1,256 @@
+{
+ "account": "0909005919",
+ "estates": [
+  {
+   "estate_number": "92768",
+   "status": "ARCHIVED",
+   "type": "RE",
+   "date_opened": "07/24/2017",
+   "date_closed": "11/01/2018",
+   "decedent": "THELMA  SEWELL",
+   "date_of_death": "12/21/2013",
+   "date_of_filing": "08/10/2017",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "EDGAR F SEWELL",
+     "address": "2713 RUSCOMBE LN, BALTIMORE, MD 21215"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/24/2017",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED OCTOBER 07,",
+     "pages": 2009
+    },
+    {
+     "filed": "07/24/2017",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 4,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE WITH ATTACHMENT",
+     "pages": 4
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 5,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 6,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 7,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 3
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 8,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS - AUGUST 26,",
+     "pages": 2017
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 9,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 10,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 11,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2017",
+     "n": 12,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "09/14/2017",
+     "n": 13,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/26/2017",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2017",
+     "n": 15,
+     "code": "1228",
+     "desc": "(FAX) LETTER FOR EXTENSION OF TIME FOR FILING INVENTORY (GHK)",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2017",
+     "n": 16,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO JANUARY 12, 2018 FOR FILING INVENTORY (GHK)",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2017",
+     "n": 17,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING INVENTORY (GHK)",
+     "pages": 1
+    },
+    {
+     "filed": "12/20/2017",
+     "n": 18,
+     "code": "1122",
+     "desc": "INVENTORY (LCR)",
+     "pages": 17
+    },
+    {
+     "filed": "03/14/2018",
+     "n": 19,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT (DSC)",
+     "pages": 5
+    },
+    {
+     "filed": "03/15/2018",
+     "n": 20,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST ACCOUNT (DSC)",
+     "pages": 1
+    },
+    {
+     "filed": "03/15/2018",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS (DSC)",
+     "pages": 4
+    },
+    {
+     "filed": "05/02/2018",
+     "n": 22,
+     "code": "1104",
+     "desc": "SUPPLEMENTAL LIST OF INTERESTED PERSONS (DSC)",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2018",
+     "n": 23,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/20/2018",
+     "n": 24,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING SECOND ACCOUNT (BMF)",
+     "pages": 1
+    },
+    {
+     "filed": "08/20/2018",
+     "n": 25,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO NOVEMBER 14, 2018 FOR FILING SECOND ACCOUNT (BMF)",
+     "pages": 1
+    },
+    {
+     "filed": "11/01/2018",
+     "n": 26,
+     "code": "1245",
+     "desc": "PETITION FOR PERSONAL REPRESENTATIVE'S COMMISSION (DSC)",
+     "pages": 3
+    },
+    {
+     "filed": "11/01/2018",
+     "n": 27,
+     "code": "1385",
+     "desc": "SECOND AND FINAL ACCOUNT (DSC)",
+     "pages": 8
+    },
+    {
+     "filed": "11/01/2018",
+     "n": 28,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR COMMISSIONS (DSC)",
+     "pages": 1
+    },
+    {
+     "filed": "11/01/2018",
+     "n": 29,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SECOND AND FINAL ACCOUNT (DSC)",
+     "pages": 1
+    },
+    {
+     "filed": "11/01/2018",
+     "n": 30,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS (DSC)",
+     "pages": 7
+    },
+    {
+     "filed": "10/22/2019",
+     "n": 31,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2019-10-22",
+   "interested_persons": [
+    {
+     "name": "EDGAR F SEWELL",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 1311,
+   "probate_age_days": 465,
+   "days_since_last_docket": 2555,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910309976",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910309976",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "THELMA E SEWELL"
+  }
+ ]
+}

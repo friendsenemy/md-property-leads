@@ -1,0 +1,571 @@
+{
+ "account": "0908021473",
+ "estates": [
+  {
+   "estate_number": "17536",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/17/2011",
+   "date_closed": "12/19/2012",
+   "decedent": "MATILDA  DUCKETT",
+   "date_of_death": "1/11/2011",
+   "date_of_filing": "03/17/2011",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JOANN J. DUCKETT",
+     "address": "15169 REGINA AVE., BRANDYWINE, MD 20613"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/17/2011",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 3,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 4,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 3
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 6,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - DENISE DUCKETT",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 7,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - JOHN DUCKETT",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 8,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/2011",
+     "n": 9,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2011",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 11,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - NY-KIA CAUTHEN",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 12,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - SOPHIA THOMAS",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 13,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - KEYOLNAD CAUTHEN",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 14,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - MONA DUCKETT",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 15,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL -  ROSE DUCKETT",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 16,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - KRYSTAL TOYE",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 17,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - JOHN DUCKETT",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 18,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - EDWINA CLARK",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 19,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - TRACY DUCKETT",
+     "pages": 1
+    },
+    {
+     "filed": "03/22/2011",
+     "n": 20,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - EDWARD CLARK",
+     "pages": 1
+    },
+    {
+     "filed": "03/29/2011",
+     "n": 21,
+     "code": "1276",
+     "desc": "OBJECTION TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/29/2011",
+     "n": 22,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/30/2011",
+     "n": 23,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - TINA FORD",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/2011",
+     "n": 24,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 4/19/2011 REGARDING OBJECTION TO APPOINTMENT",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/2011",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/12/2011",
+     "n": 26,
+     "code": "1244",
+     "desc": "RETURN MAIL FOR JOHN DUCKETT - RESENT",
+     "pages": 1
+    },
+    {
+     "filed": "04/19/2011",
+     "n": 28,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 30 A",
+     "pages": 1
+    },
+    {
+     "filed": "04/19/2011",
+     "n": 29,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS AMENDED",
+     "pages": 2
+    },
+    {
+     "filed": "04/18/2011",
+     "n": 30,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/19/2011",
+     "n": 31,
+     "code": "1284",
+     "desc": "ORDER OF COURT REGARDING HEARING HELD ON 4/19/2011",
+     "pages": 1
+    },
+    {
+     "filed": "04/21/2011",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/25/2011",
+     "n": 33,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR JOHN DUCKETT SR",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2011",
+     "n": 34,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR JOHN F. DUCKETT, SR",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2011",
+     "n": 35,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR TINA FORD",
+     "pages": 1
+    },
+    {
+     "filed": "05/10/2011",
+     "n": 36,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 05/09/2011 BY METROSTYLE/WORLD FINANCIAL NETWORK FOR $224.70",
+     "pages": 6
+    },
+    {
+     "filed": "05/12/2011",
+     "n": 37,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR DEYOLANDA CAUTHEN",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2011",
+     "n": 38,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR EDWAR CLARK",
+     "pages": 1
+    },
+    {
+     "filed": "05/18/2011",
+     "n": 39,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "05/20/2011",
+     "n": 40,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 05/20/2011 BY MARYLAND - DEPT.OF BUDGET & MANAGEMENT FOR $8,771.49",
+     "pages": 7
+    },
+    {
+     "filed": "06/16/2011",
+     "n": 41,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/16/2011",
+     "n": 42,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 10
+    },
+    {
+     "filed": "08/29/2011",
+     "n": 43,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2011",
+     "n": 44,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "11/17/2011",
+     "n": 45,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/07/2011",
+     "n": 46,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "12/07/2011",
+     "n": 47,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO  FOR FILING ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "12/07/2011",
+     "n": 48,
+     "code": "1244",
+     "desc": "DOCUMENTATION FOR VICTIM FOR CREDIT FRAUD - SEE CLAIM DOCKET",
+     "pages": 40
+    },
+    {
+     "filed": "12/12/2011",
+     "n": 49,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2011",
+     "n": 50,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR MONA DUCKETT - RESENT TO NEW ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2011",
+     "n": 51,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR NY-KIA CAUTHEN - RESENT TO NEW ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "01/17/2012",
+     "n": 52,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO COMPLETE ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "01/17/2012",
+     "n": 53,
+     "code": "1284",
+     "desc": "ORDER OF COURT  GRANTING 30 DAY EXTENSION",
+     "pages": 1
+    },
+    {
+     "filed": "01/18/2012",
+     "n": 54,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/17/2012",
+     "n": 55,
+     "code": "1383",
+     "desc": "FIRST  ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/17/2012",
+     "n": 56,
+     "code": "1244",
+     "desc": "MVA NOTICE STATING THAT CASE AGAINST DECEDENT IS CLOSED",
+     "pages": 2
+    },
+    {
+     "filed": "02/22/2012",
+     "n": 57,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM-MD DEPT OF BUDGET & MANAGEMENT",
+     "pages": 1
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 58,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 59,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/07/2012",
+     "n": 60,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2012",
+     "n": 61,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO COMPLETE OR CORRECT FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2012",
+     "n": 62,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO  FOR FILING FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2012",
+     "n": 63,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/12/2012",
+     "n": 64,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE FIFTH ACCOUNT HEARING SCHEDULED FOR 13 NOVEMBER 2012 @ 1: 40 PM",
+     "pages": 1
+    },
+    {
+     "filed": "10/12/2012",
+     "n": 65,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2012",
+     "n": 66,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM  METROSTYLE",
+     "pages": 2
+    },
+    {
+     "filed": "11/28/2012",
+     "n": 67,
+     "code": "1244",
+     "desc": "PAID FUNERAL BILL",
+     "pages": 1
+    },
+    {
+     "filed": "11/30/2012",
+     "n": 68,
+     "code": "1385",
+     "desc": "SECOND AND FINAL ACCOUNT",
+     "pages": 13
+    },
+    {
+     "filed": "12/07/2012",
+     "n": 69,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE CURRENT ADDRESS FOR JOHN F DUCKETT SR TO FINALIZE ESTATE HEARING SCHEDULED FOR 12/18/2012",
+     "pages": 1
+    },
+    {
+     "filed": "12/07/2012",
+     "n": 70,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/18/2012",
+     "n": 71,
+     "code": "1244",
+     "desc": "CHANGE OF ADDRESS FOR JOHN FRANCIS DUCKETT JR.",
+     "pages": 1
+    },
+    {
+     "filed": "12/18/2012",
+     "n": 72,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SECOND AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/19/2012",
+     "n": 73,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "12/27/2012",
+     "n": 74,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR KRYSTAL TOYE. RESENT TO NEW ADDRESS PER POSTMASTER",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2012",
+     "n": 75,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR DENNIS DUCKETT RESENT TO NEW ADDRESS PER POSTMASTER",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/2017",
+     "n": 76,
+     "code": "1244",
+     "desc": "DOCUMENT REQUEST FORM",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2017-04-06",
+   "interested_persons": [
+    {
+     "name": "JOANN J. DUCKETT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 65,
+   "probate_age_days": 643,
+   "days_since_last_docket": 3484,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910672169",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910672169",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MATILDA DUCKETT"
+  }
+ ]
+}

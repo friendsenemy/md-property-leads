@@ -1,0 +1,165 @@
+{
+ "account": "0906087973",
+ "estates": [
+  {
+   "estate_number": "18869",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "07/19/2013",
+   "date_closed": "02/24/2014",
+   "decedent": "PHILLIP JOHN MICHELITCH",
+   "date_of_death": "2/3/2013",
+   "date_of_filing": "07/19/2013",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MARIA  MICHELITCH",
+     "address": "PO BOX 1482, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/19/2013",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 24 DECEMBER",
+     "pages": 2012
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 5,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 6,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 6
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 7,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 8,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 9,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 2
+    },
+    {
+     "filed": "07/22/2013",
+     "n": 10,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2013",
+     "n": 11,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL CASSANDRA ST PIERRE",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2013",
+     "n": 12,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL JOHN MICHELITCH",
+     "pages": 1
+    },
+    {
+     "filed": "08/06/2013",
+     "n": 13,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2013",
+     "n": 14,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW RE INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/2013",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/20/2013",
+     "n": 16,
+     "code": "1302",
+     "desc": "DOCUMENTATION FOR CREDIT UNION ACCT AND IF RETIREMENT HAS THE SPOUSE AS THE BENEFICARY",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2014",
+     "n": 17,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)/DOCUMENTATION",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2014-03-24",
+   "interested_persons": [
+    {
+     "name": "MARIA MICHELITCH",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 166,
+   "probate_age_days": 220,
+   "days_since_last_docket": 4593,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910658060",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910658060",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "PHILLIP J MICHELITCH"
+  }
+ ]
+}

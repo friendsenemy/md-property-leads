@@ -1,0 +1,214 @@
+{
+ "account": "0909027637",
+ "estates": [
+  {
+   "estate_number": "90876",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "06/29/2012",
+   "date_closed": "06/27/2013",
+   "decedent": "THEODORE JUNIOR RIDDICK",
+   "date_of_death": "6/8/2012",
+   "date_of_filing": "06/29/2012",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "THEODORE  RIDDICK JR",
+     "address": "4865 YOUNG ROAD, WALDORF, MD 20601"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/29/2012",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 5
+    },
+    {
+     "filed": "06/29/2012",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2012",
+     "n": 3,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2012",
+     "n": 4,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2012",
+     "n": 5,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2012",
+     "n": 6,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "08/30/2012",
+     "n": 7,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "09/28/2012",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/28/2012",
+     "n": 9,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "10/02/2012",
+     "n": 10,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2012",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2012",
+     "n": 12,
+     "code": "1249",
+     "desc": "PETITION TO ACCEPT VALUATION IN LIEU OF FORMAL APPRAISAL",
+     "pages": 1
+    },
+    {
+     "filed": "10/12/2012",
+     "n": 13,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "10/22/2012",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/02/2012",
+     "n": 15,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/27/2013",
+     "n": 16,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "04/09/2013",
+     "n": 17,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT   HEARING SCHEDULED FOR 06/27/2013",
+     "pages": 1
+    },
+    {
+     "filed": "04/12/2013",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "05/30/2013",
+     "n": 19,
+     "code": "1124",
+     "desc": "AMENDED INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/30/2013",
+     "n": 20,
+     "code": "1382",
+     "desc": "AMENDED INVENTORY",
+     "pages": 8
+    },
+    {
+     "filed": "06/14/2013",
+     "n": 21,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "06/14/2013",
+     "n": 22,
+     "code": "1385",
+     "desc": "1ST & FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2013",
+     "n": 23,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING  1ST AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/02/2013",
+     "n": 24,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2013-07-02",
+   "interested_persons": [
+    {
+     "name": "THEODORE RIDDICK JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 21,
+   "probate_age_days": 363,
+   "days_since_last_docket": 4858,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911094307",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911094307",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "THEODORE RIDDICK"
+  }
+ ]
+}

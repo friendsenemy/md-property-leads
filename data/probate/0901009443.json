@@ -1,0 +1,153 @@
+{
+ "account": "0901009443",
+ "estates": [
+  {
+   "estate_number": "16981",
+   "status": "ARCHIVED",
+   "type": "SE",
+   "date_opened": "01/16/2015",
+   "date_closed": "08/12/2015",
+   "decedent": "BARBARA J. CAMPBELL",
+   "date_of_death": "12/27/2014",
+   "date_of_filing": "01/16/2015",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LAURIE A. GARRISON",
+     "address": "21403 ARTHUR LANE, CALIFORNIA, MD 20619"
+    },
+    {
+     "name": "KIMBERLY D. WATHEN",
+     "address": "24347 MT. PLEASANT ROAD, HOLLYWOOD, MD 20636"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/16/2015",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 8
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 5,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 6,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "01/26/2015",
+     "n": 7,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2015",
+     "n": 8,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "06/29/2015",
+     "n": 9,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 06/29/2015 BY MARYLAND DEPT. OF HEALTH AND MENTAL HYGIENE FOR $210,630.85",
+     "pages": 2
+    },
+    {
+     "filed": "08/07/2015",
+     "n": 10,
+     "code": "1385",
+     "desc": "SMALL ESTATE ACCOUNT FOR INSOLVENT ESTATE",
+     "pages": 13
+    },
+    {
+     "filed": "08/11/2015",
+     "n": 11,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING THE SMALL ESTATE ACCOUNT FOR AN INSOLVENT ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/11/2015",
+     "n": 12,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS ORDER OF COURT APPROVING THE SMALL ESTATE ACCOUNT FOR AN INSOLVENT ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 13,
+     "code": "1223",
+     "desc": "PARTIAL SATISFACTION OF CLAIM FROM DHMH",
+     "pages": 1
+    },
+    {
+     "filed": "12/21/2016",
+     "n": 14,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2016-12-21",
+   "interested_persons": [
+    {
+     "name": "LAURIE A. GARRISON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "KIMBERLY D. WATHEN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 20,
+   "probate_age_days": 208,
+   "days_since_last_docket": 3590,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911223250",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911223250",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "BARBARA J CAMPBELL"
+  }
+ ]
+}

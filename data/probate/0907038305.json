@@ -1,0 +1,354 @@
+{
+ "account": "0907038305",
+ "estates": [
+  {
+   "estate_number": "16866",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/02/2010",
+   "date_closed": "09/20/2011",
+   "decedent": "GLADYS WOOSTER PARCOVER",
+   "date_of_death": "1/14/2010",
+   "date_of_filing": "02/02/2010",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "ROBERT H. MORELAND [P.O. BOX 778, CHARLOTTE HALL, MD 20622]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CHARLES L KLINE",
+     "address": "P.O. BOX 346, BRYANS ROAD, MD 20616"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/02/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 3/23/2006",
+     "pages": 4
+    },
+    {
+     "filed": "02/02/2010",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 4,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 7,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 8,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2010",
+     "n": 10,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "02/16/2010",
+     "n": 11,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION -",
+     "pages": 6
+    },
+    {
+     "filed": "02/16/2010",
+     "n": 12,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-SANDY WETZEL",
+     "pages": 1
+    },
+    {
+     "filed": "02/16/2010",
+     "n": 13,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-LAURIE VAN PATTEN",
+     "pages": 1
+    },
+    {
+     "filed": "02/16/2010",
+     "n": 14,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-LAURIE WYNNE DIPOLA",
+     "pages": 1
+    },
+    {
+     "filed": "02/16/2010",
+     "n": 15,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-STACY MICHELLE WILSON",
+     "pages": 1
+    },
+    {
+     "filed": "02/16/2010",
+     "n": 16,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/15/2010",
+     "n": 17,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/02/2010",
+     "n": 18,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-LAURIE W. DIPOLA",
+     "pages": 2
+    },
+    {
+     "filed": "04/02/2010",
+     "n": 19,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-STACY MICHELLE WILSON",
+     "pages": 1
+    },
+    {
+     "filed": "04/02/2010",
+     "n": 20,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-SANDY WETZEL",
+     "pages": 1
+    },
+    {
+     "filed": "04/02/2010",
+     "n": 21,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-LAURIE VAN PATTEN",
+     "pages": 1
+    },
+    {
+     "filed": "04/08/2010",
+     "n": 22,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "04/07/2010",
+     "n": 23,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 21
+    },
+    {
+     "filed": "10/01/2010",
+     "n": 24,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN",
+     "pages": 1
+    },
+    {
+     "filed": "10/13/2010",
+     "n": 25,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/2010",
+     "n": 26,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "11/30/2010",
+     "n": 27,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/30/2010",
+     "n": 28,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2011",
+     "n": 29,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/06/2011",
+     "n": 30,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE SECOND ADMINISTRATION ACCOUNT HEARING SCHEDULED FOR 21 JUNE 2011 @ 1:50 PM RESCHEDULED",
+     "pages": 1
+    },
+    {
+     "filed": "06/06/2011",
+     "n": 31,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/17/2011",
+     "n": 32,
+     "code": "1261",
+     "desc": "CORRECTED ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE ACCOUNT HEARING SCHEDULED FOR 12 JULY 2011 @ 1:00 PM",
+     "pages": 1
+    },
+    {
+     "filed": "06/17/2011",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/01/2011",
+     "n": 34,
+     "code": "1383",
+     "desc": "SECOND  ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "07/05/2011",
+     "n": 35,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/06/2011",
+     "n": 36,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2011",
+     "n": 37,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN (AMENDED)",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 38,
+     "code": "1244",
+     "desc": "THIRD AND FINAL ACCOUNT - NEEDS CORRECTING",
+     "pages": 4
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 39,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 4
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 40,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "08/25/2011",
+     "n": 41,
+     "code": "1385",
+     "desc": "AMENDED THIRD AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "09/20/2011",
+     "n": 42,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2011",
+     "n": 43,
+     "code": "1284",
+     "desc": "ORDER OF COURT  APPROVING COUNSEL FEES_",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2011",
+     "n": 44,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2011-09-20",
+   "interested_persons": [
+    {
+     "name": "CHARLES L KLINE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 19,
+   "probate_age_days": 595,
+   "days_since_last_docket": 5509,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1910659033",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1910659033",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GLADYS PARCOVER"
+  }
+ ]
+}
