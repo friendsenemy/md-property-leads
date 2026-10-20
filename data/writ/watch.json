@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-19T17:49:27+00:00",
+ "generated_at": "2026-10-20T15:52:17+00:00",
  "sources": {
   "montgomery": {
-   "checked": "2026-10-19T17:47:18+00:00",
+   "checked": "2026-10-20T15:51:23+00:00",
    "count": 0
   },
   "pasted": {
@@ -10,6 +10,149 @@
   }
  },
  "rows": [
+  {
+   "case": "CAL22-18224",
+   "from": "case detail",
+   "caption": "Arborview Homeowners Association Inc vs. Patricia Ricks",
+   "court": "District Court For Prince Georges County - Civil",
+   "case_type": "Injunction",
+   "case_status": "Closed",
+   "filed": "06/14/2022",
+   "plaintiff": "Arborview Homeowners Association Inc",
+   "defendant": "Ricks, Patricia H",
+   "hoa": true,
+   "county": "PRIN",
+   "address": "10742 Willow Oaks Drive",
+   "city": "Mitchellville",
+   "zip": "20721",
+   "plaintiff_atty": "TSIKERDANOS, JOHN ERNEST",
+   "plaintiff_firm": "Nagle & Zaller, P.C.",
+   "judgment_amt": "33225.00",
+   "judgment_date": "09/13/2024",
+   "lien": "",
+   "writ_req": "02/27/2026",
+   "writ_issued": "03/02/2026",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 3,
+   "service_issues": 4,
+   "docket": [
+    {
+     "date": "09/16/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Judgment"
+    },
+    {
+     "date": "09/16/2024",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Notice of Recorded Judgment"
+    },
+    {
+     "date": "09/03/2025",
+     "name": "Request for Writ of Garnishment - Property",
+     "comment": "Garnishment of Property"
+    },
+    {
+     "date": "09/04/2025",
+     "name": "Writ of Garnishment of Property Issued",
+     "comment": ""
+    },
+    {
+     "date": "09/04/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Garnishment"
+    },
+    {
+     "date": "09/19/2025",
+     "name": "Return of Service - Served",
+     "comment": "GARNISHMENT SERVED ON BANK OF AMERICA"
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Answer of Garnishee",
+     "comment": "Plea of Nulla Bona of Bank of America, N.A."
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Motion - Dismiss Garnishment of Property/Assets",
+     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A. (Tasked to Judge Pearson)"
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Order - Motion/Request/Petition Granted",
+     "comment": "Order dated 10/7/2025, signed by Judge Pearson; It is hereby ORDERED that judgment be entered in favor of Garnishee, Bank of America, N.A. and the writ of garnishment be and hereby is dismissed on this 7th of October 2025. cc; all parties"
+    },
+    {
+     "date": "10/07/2025",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Order"
+    },
+    {
+     "date": "02/27/2026",
+     "name": "Request for Writ of Execution",
+     "comment": "Writ of Execution"
+    },
+    {
+     "date": "03/02/2026",
+     "name": "Writ of Execution Issued",
+     "comment": "PLACED IN THE SHERIFF'S PICKUP BIN ON 3/5/26"
+    },
+    {
+     "date": "03/03/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Writ of Execution-copy of writ for record."
+    },
+    {
+     "date": "10/06/2026",
+     "name": "Motion",
+     "comment": "Motion to Waive Deposit at Sheriff Sale {Task for Judge Pearson}"
+    },
+    {
+     "date": "10/06/2026",
+     "name": "Affidavit",
+     "comment": "Affidavit - Motion to Waive Deposit at Sheriff Sale"
+    },
+    {
+     "date": "10/06/2026",
+     "name": "Certificate of Service",
+     "comment": "Certificate of Service - Motion to Waive Deposit at Sheriff Sale"
+    },
+    {
+     "date": "10/14/2026",
+     "name": "Order - Motion/Request/Petition Granted",
+     "comment": "Order dated 10/13/2026, signed by Judge Pearson; ORDERED that the Motion be, and the same hereby is GRANTED; and it is further ORDERED that the Plaintiff shall not have to pay the sheriff sale Deposit in order to bid at the sale; and it is further; ORDERED that the Plaintiff may bid at the sale without registering prior to the sale. cc; all parties"
+    },
+    {
+     "date": "10/14/2026",
+     "name": "Writ/Summons/Pleading - Electronic Service",
+     "comment": "Order - Waive Deposit"
+    }
+   ],
+   "prop": {
+    "acct": "17131516301",
+    "address": "10742 WILLOW OAKS DR",
+    "city": "BOWIE",
+    "zip": "20721",
+    "ooi": "N",
+    "value": 609400,
+    "tradate": "19911211",
+    "price": 210000,
+    "deed": "08144/0171",
+    "jurs": "PRIN",
+    "mail": "10742 WILLOW OAKS DR, BOWIE",
+    "use": "Residential",
+    "built": "1990",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=1516301",
+    "matches": 1
+   },
+   "updated": "2026-10-20T15:23:30.253Z",
+   "source": "pasted",
+   "first_seen": "2026-10-19T17:49:27+00:00",
+   "sale_date": "2026-11-05"
+  },
   {
    "case": "05-02-0006814-2018",
    "from": "case detail",
@@ -1406,148 +1549,6 @@
     }
    ],
    "updated": "2026-10-18T16:26:20.081Z",
-   "source": "pasted",
-   "first_seen": "2026-10-19T17:49:27+00:00"
-  },
-  {
-   "case": "CAL22-18224",
-   "from": "case detail",
-   "caption": "Arborview Homeowners Association Inc vs. Patricia Ricks",
-   "court": "District Court For Prince Georges County - Civil",
-   "case_type": "Injunction",
-   "case_status": "Closed",
-   "filed": "06/14/2022",
-   "plaintiff": "Arborview Homeowners Association Inc",
-   "defendant": "Ricks, Patricia H",
-   "hoa": true,
-   "county": "PRIN",
-   "address": "10742 Willow Oaks Drive",
-   "city": "Mitchellville",
-   "zip": "20721",
-   "plaintiff_atty": "TSIKERDANOS, JOHN ERNEST",
-   "plaintiff_firm": "Nagle & Zaller, P.C.",
-   "judgment_amt": "33225.00",
-   "judgment_date": "09/13/2024",
-   "lien": "",
-   "writ_req": "02/27/2026",
-   "writ_issued": "03/02/2026",
-   "sold": "",
-   "ratified": "",
-   "satisfied": "",
-   "bankruptcy": "",
-   "exceptions": "",
-   "garnish_tries": 3,
-   "service_issues": 4,
-   "docket": [
-    {
-     "date": "09/16/2024",
-     "name": "Writ/Summons/Pleading - Electronic Service",
-     "comment": "Judgment"
-    },
-    {
-     "date": "09/16/2024",
-     "name": "Writ/Summons/Pleading - Electronic Service",
-     "comment": "Notice of Recorded Judgment"
-    },
-    {
-     "date": "09/03/2025",
-     "name": "Request for Writ of Garnishment - Property",
-     "comment": "Garnishment of Property"
-    },
-    {
-     "date": "09/04/2025",
-     "name": "Writ of Garnishment of Property Issued",
-     "comment": ""
-    },
-    {
-     "date": "09/04/2025",
-     "name": "Writ/Summons/Pleading - Electronic Service",
-     "comment": "Writ of Garnishment"
-    },
-    {
-     "date": "09/19/2025",
-     "name": "Return of Service - Served",
-     "comment": "GARNISHMENT SERVED ON BANK OF AMERICA"
-    },
-    {
-     "date": "10/07/2025",
-     "name": "Answer of Garnishee",
-     "comment": "Plea of Nulla Bona of Bank of America, N.A."
-    },
-    {
-     "date": "10/07/2025",
-     "name": "Motion - Dismiss Garnishment of Property/Assets",
-     "comment": "Motion for Judgment and Dismissal of Bank of America, N.A. (Tasked to Judge Pearson)"
-    },
-    {
-     "date": "10/07/2025",
-     "name": "Order - Motion/Request/Petition Granted",
-     "comment": "Order dated 10/7/2025, signed by Judge Pearson; It is hereby ORDERED that judgment be entered in favor of Garnishee, Bank of America, N.A. and the writ of garnishment be and hereby is dismissed on this 7th of October 2025. cc; all parties"
-    },
-    {
-     "date": "10/07/2025",
-     "name": "Writ/Summons/Pleading - Electronic Service",
-     "comment": "Order"
-    },
-    {
-     "date": "02/27/2026",
-     "name": "Request for Writ of Execution",
-     "comment": "Writ of Execution"
-    },
-    {
-     "date": "03/02/2026",
-     "name": "Writ of Execution Issued",
-     "comment": "PLACED IN THE SHERIFF'S PICKUP BIN ON 3/5/26"
-    },
-    {
-     "date": "03/03/2026",
-     "name": "Writ/Summons/Pleading - Electronic Service",
-     "comment": "Writ of Execution-copy of writ for record."
-    },
-    {
-     "date": "10/06/2026",
-     "name": "Motion",
-     "comment": "Motion to Waive Deposit at Sheriff Sale {Task for Judge Pearson}"
-    },
-    {
-     "date": "10/06/2026",
-     "name": "Affidavit",
-     "comment": "Affidavit - Motion to Waive Deposit at Sheriff Sale"
-    },
-    {
-     "date": "10/06/2026",
-     "name": "Certificate of Service",
-     "comment": "Certificate of Service - Motion to Waive Deposit at Sheriff Sale"
-    },
-    {
-     "date": "10/14/2026",
-     "name": "Order - Motion/Request/Petition Granted",
-     "comment": "Order dated 10/13/2026, signed by Judge Pearson; ORDERED that the Motion be, and the same hereby is GRANTED; and it is further ORDERED that the Plaintiff shall not have to pay the sheriff sale Deposit in order to bid at the sale; and it is further; ORDERED that the Plaintiff may bid at the sale without registering prior to the sale. cc; all parties"
-    },
-    {
-     "date": "10/14/2026",
-     "name": "Writ/Summons/Pleading - Electronic Service",
-     "comment": "Order - Waive Deposit"
-    }
-   ],
-   "prop": {
-    "acct": "17131516301",
-    "address": "10742 WILLOW OAKS DR",
-    "city": "BOWIE",
-    "zip": "20721",
-    "ooi": "N",
-    "value": 609400,
-    "tradate": "19911211",
-    "price": 210000,
-    "deed": "08144/0171",
-    "jurs": "PRIN",
-    "mail": "10742 WILLOW OAKS DR, BOWIE",
-    "use": "Residential",
-    "built": "1990",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=1516301",
-    "matches": 1
-   },
-   "updated": "2026-10-18T19:35:21.447Z",
    "source": "pasted",
    "first_seen": "2026-10-19T17:49:27+00:00"
   },
