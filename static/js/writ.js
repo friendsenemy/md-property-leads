@@ -104,7 +104,7 @@ const WritApp = {
     tier(c) {
         const notes = this.notesOf ? (this.notesOf(c) || "") : "";
         const saysClear = /free\s*(and|&)\s*clear|no (open )?(mortgage|deed of trust)|released in \d{4}|dot released|mortgage released/i.test(notes);
-        const saysLoan = /unreleased|open (mortgage|deed of trust|dot)|not free and clear|has a mortgage/i.test(notes);
+        const saysLoan = /unreleased|open (mortgage|deed of trust|dot)|not free\s*(and|&)\s*clear|has a mortgage|^MORTGAGE: \$/im.test(notes);
         const est = c._value > 0 && c._mort <= c._value * 0.1;
         c._freeClear = saysLoan ? false : (saysClear || est);
         c._fcSource = saysLoan ? "notes say a loan is open" : saysClear ? "verified in your notes" : est ? "estimated (no loan left on the last purchase)" : "";
