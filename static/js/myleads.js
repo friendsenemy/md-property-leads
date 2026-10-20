@@ -212,7 +212,7 @@ const MyLeadsApp = {
                     <label>Follow up on (optional)<input type="date" id="mlfFu"></label>
                 </div>
             </div>`;
-        document.getElementById("noteHistory").innerHTML = "";
+        document.getElementById("noteHistory").innerHTML = ""; SharedNotes.openId = null;
         const sel = document.getElementById("leadStatusSelect"), notes = document.getElementById("leadNotes");
         sel.value = "pursuing"; notes.value = ""; notes.placeholder = "What makes it worth pursuing, who to contact, next step.";
         SharedNotes.paintSync(); this.setPin(null);

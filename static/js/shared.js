@@ -15,12 +15,15 @@ const SharedNotes = {
     author() { try { return localStorage.getItem("mdpl_author") || ""; } catch { return ""; } },
     setAuthor(v) { try { localStorage.setItem("mdpl_author", (v || "").trim()); } catch {} },
 
-    async load() {
-        if (!this.enabled()) { this.loaded = true; return; }
+    async load(quiet) {
+        if (!this.enabled()) { this.loaded = true; return false; }
         try {
             const r = await fetch(`${this.url}?t=${Date.now()}`, { cache: "no-store" });
             const j = await r.json();
             const rows = (j.rows || []).slice().sort((a, b) => String(b.ts).localeCompare(String(a.ts)));
+            const sig = rows.length + "|" + (rows[0] ? rows[0].ts : "");
+            if (quiet && sig === this.sig && !this.error) return false;   // nothing new since last check
+            this.sig = sig;
             this.latest = {}; this.history = {}; this.worksheets = {}; this.writs = {};
             for (const row of rows) {
                 if (!row.id) continue;
@@ -43,6 +46,26 @@ const SharedNotes = {
         }
         document.dispatchEvent(new CustomEvent("mdpl:notes-loaded"));
         this.paintSync();
+        return true;
+    },
+
+    /* Pull notes others saved since this page opened (the sheet was only read once at page load,
+       so a tab left open all day never saw a partner's new notes). Runs when a card opens, when
+       the browser tab comes back into focus, and every 2 minutes while the tab is visible. */
+    async refresh() {
+        if (this._busy) return; this._busy = true;
+        try {
+            const changed = await this.load(true);
+            const ov = document.getElementById("modalOverlay");
+            if (changed && this.openId != null && ov && ov.classList.contains("active")) this.paintHistory(this.openId);
+        } finally { this._busy = false; }
+    },
+
+    paintHistory(id) {
+        const hist = document.getElementById("noteHistory");
+        if (!hist) return;
+        const rows = (this.history[this.key(id)] || []).filter((r) => (r.notes || "").trim() || r.status);
+        hist.innerHTML = rows.length ? rows.slice(0, 12).map((r) => this.noteCard(r)).join("") : "";
     },
 
     // Google Sheets turns "0908071578" into the number 908071578, so ids are matched
@@ -102,14 +125,10 @@ const SharedNotes = {
     footer(id) {
         const who = document.getElementById("noteAuthor");
         if (who && !who.value) who.value = this.author();
-        const hist = document.getElementById("noteHistory");
-        if (hist) {
-            const rows = (this.history[this.key(id)] || []).filter((r) => (r.notes || "").trim() || r.status);
-            hist.innerHTML = rows.length
-                ? rows.slice(0, 12).map((r) => this.noteCard(r)).join("")
-                : "";
-        }
+        this.openId = id;
+        this.paintHistory(id);
         this.paintSync();
+        this.refresh();   // check the sheet for newer notes on this lead
     },
 
     paintSync(msg) {
@@ -180,4 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const who = document.getElementById("noteAuthor");
     if (who) who.addEventListener("change", (e) => SharedNotes.setAuthor(e.target.value));
     SharedNotes.load();
+    setInterval(() => { if (document.visibilityState === "visible") SharedNotes.refresh(); }, 120000);
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") SharedNotes.refresh(); });
+    window.addEventListener("focus", () => SharedNotes.refresh());
 });
