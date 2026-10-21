@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-20T15:52:17+00:00",
+ "generated_at": "2026-10-21T16:08:36+00:00",
  "sources": {
   "montgomery": {
-   "checked": "2026-10-20T15:51:23+00:00",
+   "checked": "2026-10-21T16:07:38+00:00",
    "count": 0
   },
   "pasted": {
-   "count": 42
+   "count": 43
   }
  },
  "rows": [
@@ -152,6 +152,60 @@
    "source": "pasted",
    "first_seen": "2026-10-19T17:49:27+00:00",
    "sale_date": "2026-11-05"
+  },
+  {
+   "case": "02-03-0000726-2012",
+   "from": "case detail",
+   "caption": "River Heights Capital (assignee) vs. Dana South",
+   "court": "Circuit Court for Wicomico County - Civil",
+   "case_type": "Judgment (credit card)",
+   "case_status": "Open / Judgment",
+   "filed": "",
+   "plaintiff": "River Heights Capital (assignee)",
+   "defendant": "South, Dana",
+   "hoa": false,
+   "county": "WICO",
+   "address": "33254 Old Ocean City Rd",
+   "city": "Parsonsburg",
+   "zip": "21849",
+   "plaintiff_atty": "Canter, Ronald S",
+   "plaintiff_firm": "Law Offices of Ronald S. Canter, LLC",
+   "judgment_amt": "10343",
+   "judgment_date": "",
+   "lien": "",
+   "writ_req": "",
+   "writ_issued": "",
+   "levy": "",
+   "sale_date": "2026-11-09",
+   "sale_time": "1:00pm, Wicomico courthouse steps, Salisbury",
+   "sold": "",
+   "ratified": "",
+   "satisfied": "",
+   "bankruptcy": "",
+   "exceptions": "",
+   "garnish_tries": 1,
+   "service_issues": 6,
+   "docket": [],
+   "prop": {
+    "acct": "2304007476",
+    "address": "33254 OLD OCEAN CITY RD",
+    "city": "PARSONSBURG",
+    "zip": "21849",
+    "ooi": "N",
+    "value": 91500,
+    "tradate": "20110922",
+    "price": null,
+    "deed": "03354/0081",
+    "jurs": "WICO",
+    "mail": "4644 AIRPORT RD, SALISBURY",
+    "use": "Residential",
+    "built": "1930",
+    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=23&SearchType=ACCT&District=04&AccountNumber=007476",
+    "matches": 1
+   },
+   "updated": "2026-10-20T17:42:55.927100+00:00",
+   "source": "pasted",
+   "first_seen": "2026-10-21T16:08:36+00:00"
   },
   {
    "case": "05-02-0006814-2018",
