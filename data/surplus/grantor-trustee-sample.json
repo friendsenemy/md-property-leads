@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-20T15:39:25+00:00",
- "window_from": "2026.01.23",
- "recent_transfers": 39924,
+ "generated_at": "2026-10-21T15:57:57+00:00",
+ "window_from": "2026.01.24",
+ "recent_transfers": 39823,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -13,7 +13,7 @@
   ],
   [
    "U.S. BANK TRUST NATIONAL",
-   22
+   21
   ],
   [
    "OPENDOOR PROPERTY TRUST I",
@@ -240,10 +240,6 @@
    4
   ],
   [
-   "M & T BANK",
-   4
-  ],
-  [
    "JEROME FREIBAUM LIVING TRUST",
    4
   ],
@@ -404,10 +400,6 @@
    3
   ],
   [
-   "MIDFIRST BANK",
-   3
-  ],
-  [
    "MICHEAL A MORELLI RESIDUARY TRUST",
    3
   ],
@@ -425,6 +417,10 @@
   ],
   [
    "M&T BANK",
+   3
+  ],
+  [
+   "M & T BANK",
    3
   ],
   [
@@ -601,6 +597,10 @@
   ],
   [
    "WELLS FARGO BANK N A",
+   2
+  ],
+  [
+   "WEISSINGER THOMAS R II TRUSTEE",
    2
   ]
  ]
