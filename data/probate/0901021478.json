@@ -1,0 +1,34 @@
+{
+ "account": "0901021478",
+ "estates": [
+  {
+   "estate_number": "SE-11675",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "",
+   "date_closed": "04/04/1998",
+   "decedent": "AGNES  QUEEN",
+   "date_of_death": "3/11/1989",
+   "date_of_filing": "03/14/1989",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [],
+   "last_docket_activity": "",
+   "interested_persons": [],
+   "death_to_probate_days": 3,
+   "probate_age_days": 3308,
+   "days_since_last_docket": null,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911952486",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911952486",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "AGNES S QUEEN"
+  }
+ ]
+}

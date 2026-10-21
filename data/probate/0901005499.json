@@ -1,0 +1,590 @@
+{
+ "account": "0901005499",
+ "estates": [
+  {
+   "estate_number": "11100",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "01/21/1998",
+   "date_closed": "11/12/2024",
+   "decedent": "KATHERINE MARIE TAYLOR",
+   "date_of_death": "1/12/1998",
+   "date_of_filing": "01/21/1998",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MARY ELIZABETH JONES",
+     "address": "1399 SARK CT, PRNC FREDERCK, MD 20678-3266"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/21/1998",
+     "n": 1,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 3
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 3,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 4,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 7,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE (4)",
+     "pages": 4
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 8,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE (3)",
+     "pages": 3
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 9,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION __1___ NO OF LETTERS ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/1998",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE (1)",
+     "pages": 1
+    },
+    {
+     "filed": "01/22/1998",
+     "n": 11,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION __1___ NO OF LETTERS ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/1998",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/15/1998",
+     "n": 13,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/1998",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 7
+    },
+    {
+     "filed": "04/23/1998",
+     "n": 15,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - CAPITAL ONE SERVICES, INC.",
+     "pages": 7
+    },
+    {
+     "filed": "05/26/1998",
+     "n": 16,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW - DELINQUENT NOTICE REQUESTING INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "06/08/1998",
+     "n": 17,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW - RETURNED MAIL AND LETTER REQUESTING NEW ADDRESS",
+     "pages": 3
+    },
+    {
+     "filed": "08/25/1998",
+     "n": 18,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - SOUTHERN MARYLAND HOSPITAL - FEE PAID REC #",
+     "pages": 4553
+    },
+    {
+     "filed": "09/02/1998",
+     "n": 19,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/1998",
+     "n": 20,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/1998",
+     "n": 21,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS",
+     "pages": 1
+    },
+    {
+     "filed": "10/09/1998",
+     "n": 22,
+     "code": "1336",
+     "desc": "RECEIPTS #4755",
+     "pages": 1
+    },
+    {
+     "filed": "11/05/1998",
+     "n": 23,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE FILED BY A 1 AMBULANCE & TRANSPORT INC.",
+     "pages": 3
+    },
+    {
+     "filed": "11/05/1998",
+     "n": 24,
+     "code": "1336",
+     "desc": "RECEIPTS #4913",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/1999",
+     "n": 25,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW REMINDER NOTICE FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/08/1999",
+     "n": 26,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE-FILED BY SOUTHERN MD. HOSPITAL - FEE PAID - RECEIPT #5345",
+     "pages": 7
+    },
+    {
+     "filed": "02/10/1999",
+     "n": 27,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/1999",
+     "n": 28,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE - A-1 AMBULANCE & TRANSPORT, INC.",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/1999",
+     "n": 29,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE - SOUTHERN MARYLAND HOSPITAL",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/1999",
+     "n": 30,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ADMINISTRATION ACCOUNT FILED/11/23/1999 (APPROVED)",
+     "pages": 3
+    },
+    {
+     "filed": "10/26/1999",
+     "n": 31,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW - DELINQUENT NOTICE FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/1999",
+     "n": 32,
+     "code": "1336",
+     "desc": "RECEIPTS - #",
+     "pages": 6646
+    },
+    {
+     "filed": "11/23/1999",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/1999",
+     "n": 34,
+     "code": "1244",
+     "desc": "RETURNED MAIL - NEW ADDRESS FOR MARY JOHNSON - UNKNOWN",
+     "pages": 2
+    },
+    {
+     "filed": "12/12/2000",
+     "n": 35,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM DELORES TAYLOR",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2000",
+     "n": 36,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "10/29/2001",
+     "n": 37,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - DEPT. OF HOUSING AND COMMUNITY DEVELOPMENT  - RECEIPT #9903",
+     "pages": 30
+    },
+    {
+     "filed": "05/10/2024",
+     "n": 38,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 3
+    },
+    {
+     "filed": "05/10/2024",
+     "n": 39,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "05/10/2024",
+     "n": 40,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "05/10/2024",
+     "n": 41,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "05/10/2024",
+     "n": 42,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "05/10/2024",
+     "n": 43,
+     "code": "1244",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2024",
+     "n": 44,
+     "code": "1244",
+     "desc": "RETURN OF FILE- REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "05/22/2024",
+     "n": 45,
+     "code": "1244",
+     "desc": "RETURN OF FILE",
+     "pages": 1
+    },
+    {
+     "filed": "06/11/2024",
+     "n": 46,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/18/2024",
+     "n": 47,
+     "code": "1372",
+     "desc": "ORDER OF COURT APPOINTING CALANDRA C. TAYLOR AS SUCCESSOR PERSONAL REPRESENTATIVE FOR DECEASED PERSONAL REPRESENTATIVE SUBJECT TO POSTING REGULAR BOND IN THE AMOUNT OF $145,000.00.",
+     "pages": 1
+    },
+    {
+     "filed": "06/18/2024",
+     "n": 48,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "06/18/2024",
+     "n": 49,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2024",
+     "n": 50,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR AUGUST 13, 2024 AT 11:00",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2024",
+     "n": 51,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/13/2024",
+     "n": 53,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "08/13/2024",
+     "n": 54,
+     "code": "1284",
+     "desc": "ORDER OF COURT REMOVING CALANDRA TAYLOR AS SPR AND APPOINTING MARY ELIZABETH JONES AS SPR UPON POSTING REGULAR BOND OF $50,000.00",
+     "pages": 1
+    },
+    {
+     "filed": "08/13/2024",
+     "n": 55,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/13/2024",
+     "n": 56,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE - MARY JONES",
+     "pages": 3
+    },
+    {
+     "filed": "08/13/2024",
+     "n": 57,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "08/14/2024",
+     "n": 58,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 3
+    },
+    {
+     "filed": "08/20/2024",
+     "n": 59,
+     "code": "1151",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO CONTACT, LOCATE, AND IDENTIFY INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/2024",
+     "n": 60,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE- SOUTHERN MARYLAND HOSPITAL",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/2024",
+     "n": 61,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE CAPITAL ONE",
+     "pages": 1
+    },
+    {
+     "filed": "09/13/2024",
+     "n": 62,
+     "code": "1339",
+     "desc": "NIC CONFIRMATIONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2024",
+     "n": 63,
+     "code": "1244",
+     "desc": "RTS TERRIE TAYLOR - RESENT TO FORWARDING ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2024",
+     "n": 64,
+     "code": "1244",
+     "desc": "RTS TERESA Y. THOMPSON (OLDS)- RESENT TO FORWARDING ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2024",
+     "n": 65,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2024",
+     "n": 66,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "11/18/2024",
+     "n": 67,
+     "code": "1244",
+     "desc": "RTS  MARY E. JONES-RESENT",
+     "pages": 1
+    },
+    {
+     "filed": "11/01/2024",
+     "n": 68,
+     "code": "1385",
+     "desc": "FIRST & FINAL ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "12/18/2024",
+     "n": 69,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 2
+    },
+    {
+     "filed": "01/21/2025",
+     "n": 70,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING TRANSFERRING OF INHERITANCE TO BD OF EDUCATION",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2025",
+     "n": 71,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2025",
+     "n": 72,
+     "code": "1332",
+     "desc": "TRANSFER OF FUNDS TO BOA",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2025",
+     "n": 73,
+     "code": "1122",
+     "desc": "SUPPLEMENTAL INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "06/04/2025",
+     "n": 74,
+     "code": "1385",
+     "desc": "SUPPLEMENTAL AND FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "07/15/2025",
+     "n": 75,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SUPPLEMENTAL AND FINAL ACCOUNT (DATED JULY 15, 2025)",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2025",
+     "n": 76,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2025",
+     "n": 77,
+     "code": "1244",
+     "desc": "RTS FRANCES CLEMENTS - RESENT",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2025",
+     "n": 78,
+     "code": "1332",
+     "desc": "CORRESPONDENCE TO BOE TRANSFERRING CHECK",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-08-05",
+   "interested_persons": [
+    {
+     "name": "MARY ELIZABETH JONES",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "DELORES TAYLOR",
+     "role": "CORRESPONDENT",
+     "source": "docket 35"
+    }
+   ],
+   "death_to_probate_days": 9,
+   "probate_age_days": 9792,
+   "days_since_last_docket": 442,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911576460",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911576460",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "KATHERINE M TAYLOR"
+  }
+ ]
+}

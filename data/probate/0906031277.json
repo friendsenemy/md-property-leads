@@ -1,0 +1,102 @@
+{
+ "account": "0906031277",
+ "estates": [
+  {
+   "estate_number": "16434",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/27/2009",
+   "date_closed": "03/30/2009",
+   "decedent": "WALTER  FLORENCE JR",
+   "date_of_death": "1/9/2008",
+   "date_of_filing": "03/27/2009",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "THELMA  FLORENCE",
+     "address": "P.O. BOX 85, POMFRET, MD 20675"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/27/2009",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "03/27/2009",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2009",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2009",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2009",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/27/2009",
+     "n": 6,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/27/2009",
+     "n": 7,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE -",
+     "pages": 1
+    },
+    {
+     "filed": "08/12/2015",
+     "n": 8,
+     "code": "1124",
+     "desc": "AMENDED INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2015-08-12",
+   "interested_persons": [
+    {
+     "name": "THELMA FLORENCE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 443,
+   "probate_age_days": 3,
+   "days_since_last_docket": 4088,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911554158",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911554158",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WALTER FLORENCE JR"
+  }
+ ]
+}

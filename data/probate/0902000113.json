@@ -1,0 +1,42 @@
+{
+ "account": "0902000113",
+ "estates": [
+  {
+   "estate_number": "7937",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/22/1988",
+   "date_closed": "06/20/1989",
+   "decedent": "ALFRED JEFFREY BANNISTER SR",
+   "date_of_death": "11/9/1988",
+   "date_of_filing": "11/22/1988",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "11/22/1988",
+     "n": 1,
+     "code": "1210",
+     "desc": "DOCKET SHEET",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "1988-11-22",
+   "interested_persons": [],
+   "death_to_probate_days": 13,
+   "probate_age_days": 210,
+   "days_since_last_docket": 13847,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911560907",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911560907",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ALFRED J BANNISTER"
+  }
+ ]
+}

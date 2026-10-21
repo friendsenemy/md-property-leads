@@ -1,0 +1,801 @@
+{
+ "account": "0901053299",
+ "estates": [
+  {
+   "estate_number": "70311",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "04/06/2005",
+   "date_closed": "08/14/2013",
+   "decedent": "CHARLES PETER RAPCZYNSKI",
+   "date_of_death": "1/15/1992",
+   "date_of_filing": "07/29/2011",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "CECILE R CROGAN [210 W PENNSYLVANIA AVE, SUITE 300, TOWSON, MD 21204]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ROBERT J RAPCZYNSKI",
+     "address": "8706 MAPLE AVENUE, BOWIE, MD 20720"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/06/2005",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "04/06/2005",
+     "n": 2,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "04/06/2005",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/2005",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "04/13/2005",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "04/13/2005",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2005",
+     "n": 7,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/2005",
+     "n": 8,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/2005",
+     "n": 9,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2005",
+     "n": 10,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2005",
+     "n": 11,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 10
+    },
+    {
+     "filed": "06/06/2005",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/07/2005",
+     "n": 13,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "12/09/2005",
+     "n": 14,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "12/22/2005",
+     "n": 15,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "12/22/2005",
+     "n": 16,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 16
+    },
+    {
+     "filed": "12/22/2005",
+     "n": 17,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 3
+    },
+    {
+     "filed": "01/24/2006",
+     "n": 18,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 1ST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/24/2006",
+     "n": 19,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "01/26/2006",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "07/21/2006",
+     "n": 21,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "07/21/2006",
+     "n": 22,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2006",
+     "n": 23,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 3
+    },
+    {
+     "filed": "08/11/2006",
+     "n": 24,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING  COUNSEL SET",
+     "pages": 1
+    },
+    {
+     "filed": "08/11/2006",
+     "n": 25,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 2ND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2006",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "01/12/2007",
+     "n": 27,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2007",
+     "n": 28,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/12/2007",
+     "n": 29,
+     "code": "1245",
+     "desc": "PETITION FOR THE ALLOWANCE OF COUNSEL FEE",
+     "pages": 3
+    },
+    {
+     "filed": "02/12/2007",
+     "n": 30,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 31,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 32,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING PETITION FOR COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2007",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "08/09/2007",
+     "n": 34,
+     "code": "1383",
+     "desc": "FOURTH  ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/09/2007",
+     "n": 35,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "08/09/2007",
+     "n": 36,
+     "code": "1245",
+     "desc": "PETITION FOR THE ALLOWANCE OF COUNSEL FEE",
+     "pages": 3
+    },
+    {
+     "filed": "09/13/2007",
+     "n": 37,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "09/13/2007",
+     "n": 38,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 4TH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2007",
+     "n": 39,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "07/31/2008",
+     "n": 40,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "08/11/2008",
+     "n": 41,
+     "code": "1390",
+     "desc": "AFFIDAVIT IN LIEU OF 5TH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/20/2008",
+     "n": 42,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AFFIDAVIT OF 5TH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2008",
+     "n": 43,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "12/04/2008",
+     "n": 44,
+     "code": "1385",
+     "desc": "SIXTH AND FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "12/04/2008",
+     "n": 45,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "12/04/2008",
+     "n": 46,
+     "code": "1245",
+     "desc": "PETITION FOR THE ALLOWANCE OF COUNSEL FEE",
+     "pages": 3
+    },
+    {
+     "filed": "01/06/2009",
+     "n": 47,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING ATTORNEY FEES",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2009",
+     "n": 48,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SIXTH AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/08/2009",
+     "n": 49,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/01/2009",
+     "n": 50,
+     "code": "1388",
+     "desc": "SUPPLEMENTAL FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "04/01/2009",
+     "n": 51,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/01/2009",
+     "n": 52,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 3
+    },
+    {
+     "filed": "07/16/2009",
+     "n": 53,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT JULIA M RAPCZYNSKI IS HEREBY, AUTHORIZED TO PAY UNTO THE LAW OFFICE OF PETER G ANGELOS, THE SUM OF $2,776.07 FROM THE ASSETS OF THIS ESTATE AS COUNSEL FEES, SUBJECT TO THE NOTICE REQUIREMENTS OF THE LAW.",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2009",
+     "n": 54,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SUPPLEMENTAL FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2009",
+     "n": 55,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "02/18/2010",
+     "n": 56,
+     "code": "1253",
+     "desc": "PETITION TO APPOINT SUCCESSOR PERSONAL REPRESENTATIVE OF A REGULAR ESTATE",
+     "pages": 4
+    },
+    {
+     "filed": "02/18/2010",
+     "n": 57,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2010",
+     "n": 58,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "02/18/2010",
+     "n": 59,
+     "code": "1117",
+     "desc": "5 WAIVER OF BONDS",
+     "pages": 5
+    },
+    {
+     "filed": "02/18/2010",
+     "n": 60,
+     "code": "1118",
+     "desc": "3 CONSENTS TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "03/17/2010",
+     "n": 61,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/2010",
+     "n": 62,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT ROBERT J RAPCZYNSKI BE, AND IS HEREBY, APPOINTED SUCCESSOR PERSONAL REPRESENTATIVE OF THE ESTATE OF CHARLES P RAPCZYNSKI, FILED IN THE REGISTER OF WILLS FOR PRINCE GEORGE'S COUNTY, WITH BOND IN THE AMOUNT OF $20,000.00, AND THAT LETTERS OF ADMINISTRATION BE GRANTED FOR LITIGATION PURPOSES AND TO TRANSFER THE ESTATE CHECKING ACCOUNT INTO HIS NAME AS PERSONAL REPRESENTATIVE OF THIS ESTATE.",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2010",
+     "n": 63,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/20/2010",
+     "n": 64,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "11/03/2010",
+     "n": 65,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "11/03/2010",
+     "n": 66,
+     "code": "1245",
+     "desc": "PETITION FOR THE ALLOWANCE OF COUNSEL FEE",
+     "pages": 3
+    },
+    {
+     "filed": "11/03/2010",
+     "n": 67,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "12/22/2010",
+     "n": 68,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 1ST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/22/2010",
+     "n": 69,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "12/28/2010",
+     "n": 70,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "07/23/2013",
+     "n": 71,
+     "code": "1388",
+     "desc": "SUPPLEMENTAL FINAL ACCOUNT OF SUCCESSOR PR",
+     "pages": 3
+    },
+    {
+     "filed": "07/23/2013",
+     "n": 72,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "07/29/2013",
+     "n": 73,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "08/02/2013",
+     "n": 74,
+     "code": "1337",
+     "desc": "FACSIMILE RECEIVED WITH COPY OF DOCUMENTATION FOR ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "08/02/2013",
+     "n": 75,
+     "code": "1337",
+     "desc": "FACSIMILE RECEIVED WITH COPY OF CORRESPONDENCE RECEIVED",
+     "pages": 3
+    },
+    {
+     "filed": "08/08/2013",
+     "n": 76,
+     "code": "1337",
+     "desc": "FACSIMILE RECEIVED WITH COPY OF DOCUMENTATION FOR ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/14/2013",
+     "n": 77,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2013",
+     "n": 78,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SUPPLEMENTAL  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2013",
+     "n": 79,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/18/2016",
+     "n": 80,
+     "code": "1388",
+     "desc": "2ND SUPPLEMENTAL FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "08/18/2016",
+     "n": 81,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "09/14/2016",
+     "n": 82,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2016",
+     "n": 83,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SECOND SUPPLEMENATL FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2016",
+     "n": 84,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2016-09-15",
+   "interested_persons": [
+    {
+     "name": "ROBERT J RAPCZYNSKI",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 4830,
+   "probate_age_days": 3052,
+   "days_since_last_docket": 3688,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911937300",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911937300",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CHARLES RAPCZYNSKI"
+  },
+  {
+   "estate_number": "SE-16223",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "04/25/1994",
+   "date_closed": "08/02/2001",
+   "decedent": "CHARLES PETER RAPCZYNSKI",
+   "date_of_death": "1/15/1992",
+   "date_of_filing": "04/25/1994",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "MICHAEL B GILLAND [210 W PENNSYLVANIA AVENUE, SUITE 150, TOWSON, MD 21204]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JULIA M RAPCZYNSKI",
+     "address": "4516 TUCKERMAN STREET, RIVERDALE, MD 20737"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/27/1999",
+     "n": 1,
+     "code": "1244",
+     "desc": "DOCKET FROM LEGACY DATABASE IMAGED AS ONE ENTRY.",
+     "pages": 23
+    },
+    {
+     "filed": "12/28/1999",
+     "n": 2,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "02/07/2001",
+     "n": 3,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2001",
+     "n": 4,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2001",
+     "n": 5,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "04/13/2001",
+     "n": 6,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2001",
+     "n": 7,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/04/2001",
+     "n": 8,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS' MEMORANDUM - INCOMPLETE FILING - NO PERSONAL REPRESENTATIVE APPOINTED",
+     "pages": 1
+    },
+    {
+     "filed": "06/14/2001",
+     "n": 9,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ADDITIONAL REQUIREMENTS   HEARING SCHEDULED FOR SEPTEMBER 14,",
+     "pages": 2001
+    },
+    {
+     "filed": "06/28/2001",
+     "n": 10,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "06/28/2001",
+     "n": 11,
+     "code": "1108",
+     "desc": "AMENDED ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2001",
+     "n": 12,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE O",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/2001",
+     "n": 13,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "07/03/2001",
+     "n": 14,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2001",
+     "n": 15,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/2001",
+     "n": 16,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/2001",
+     "n": 17,
+     "code": "1111",
+     "desc": "SMALL ESTATE CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "11/28/2001",
+     "n": 18,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED LAW OFFICE PETER G. ANGELOS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2001-11-28",
+   "interested_persons": [
+    {
+     "name": "JULIA M RAPCZYNSKI",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 831,
+   "probate_age_days": 2656,
+   "days_since_last_docket": 9093,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912088609",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912088609",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CHARLES RAPCZYNSKI"
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "account": "0906035833",
+ "estates": [
+  {
+   "estate_number": "11661",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "04/28/1999",
+   "date_closed": "12/16/1999",
+   "decedent": "WALTER BRAND GROVE II",
+   "date_of_death": "3/17/1999",
+   "date_of_filing": "04/28/1999",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "WALTER B. GROVE SR.",
+     "address": "P O BOX 986, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/28/1999",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "04/28/1999",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "04/28/1999",
+     "n": 3,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "04/28/1999",
+     "n": 4,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "04/28/1999",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/28/1999",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "04/28/1999",
+     "n": 7,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION - (3) NO OF LETTERS ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "04/28/1999",
+     "n": 8,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "04/29/1999",
+     "n": 9,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS (1)",
+     "pages": 1
+    },
+    {
+     "filed": "04/29/1999",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/1999",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/1999",
+     "n": 12,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "07/26/1999",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/07/1999",
+     "n": 14,
+     "code": "1130",
+     "desc": "PETITION AND ORDER FOR FUNERAL EXPENSES FILED/APP. 12/13/1999",
+     "pages": 2
+    },
+    {
+     "filed": "12/07/1999",
+     "n": 15,
+     "code": "1383",
+     "desc": "FIRST AND FINAL ACCOUNT FILED/APP. 12/13/1999",
+     "pages": 3
+    },
+    {
+     "filed": "12/08/1999",
+     "n": 16,
+     "code": "1336",
+     "desc": "RECEIPTS-COSTS AND PROBATE FEE PAID #6721",
+     "pages": 1
+    },
+    {
+     "filed": "12/13/1999",
+     "n": 17,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/18/2000",
+     "n": 18,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION - NO. OF LETTERS ISSUED",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2000-01-18",
+   "interested_persons": [
+    {
+     "name": "WALTER B. GROVE SR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 42,
+   "probate_age_days": 232,
+   "days_since_last_docket": 9773,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911559397",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911559397",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WALTER B GROVE"
+  }
+ ]
+}

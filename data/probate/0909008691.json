@@ -1,0 +1,865 @@
+{
+ "account": "0909008691",
+ "estates": [
+  {
+   "estate_number": "17606",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "04/29/2011",
+   "date_closed": "10/25/2017",
+   "decedent": "LARRY DAVID PROCTOR",
+   "date_of_death": "3/30/2008",
+   "date_of_filing": "04/29/2011",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "MATTHEW T SIMPSON [PO BOX 265, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LESLIE R FELTON",
+     "address": "10602 POOKEY WAY, UPPER MARLBORO, MD 20774"
+    },
+    {
+     "name": "NICOLE  FLETCHER",
+     "address": "1809 SAHARA LANE, MITCHELLVILLE, MD 20721"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/21/2011",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 3,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 7,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 8,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 9,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "06/21/2011",
+     "n": 10,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "06/23/2011",
+     "n": 11,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - LARRY DAVID PROCTOR, JR",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2011",
+     "n": 12,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO PROVIDE INFORMATION ON SPOUSE HEARING SCHEDULED FOR AUGUST 9, 2011 AT 1:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2011",
+     "n": 13,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2011",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/02/2011",
+     "n": 15,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/08/2011",
+     "n": 16,
+     "code": "1151",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/09/2011",
+     "n": 18,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS.  39 A",
+     "pages": 1
+    },
+    {
+     "filed": "08/09/2011",
+     "n": 19,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT AND/OR REMOVAL",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2011",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2011",
+     "n": 21,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2011",
+     "n": 22,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/14/2011",
+     "n": 23,
+     "code": "1244",
+     "desc": "INVENTORY - NEED BACKUP DOCUMENTATION",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2011",
+     "n": 24,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "10/13/2011",
+     "n": 25,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 2
+    },
+    {
+     "filed": "10/14/2011",
+     "n": 26,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 4
+    },
+    {
+     "filed": "10/27/2011",
+     "n": 27,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE INVENTORY HEARING SCHEDULED FOR NOVEMBER 22, 2011 AT 1:00 PM",
+     "pages": 1
+    },
+    {
+     "filed": "10/27/2011",
+     "n": 28,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/02/2011",
+     "n": 29,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "02/21/2012",
+     "n": 30,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/26/2012",
+     "n": 31,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE FIRST ADMINISTRATION ACCOUNT HEARING SCHEDULED FOR 17 APRIL 2012 @ 1: 10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "03/26/2012",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/18/2012",
+     "n": 34,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT AND/OR REMOVAL SCHEDULED FOR MAY 8, 2012 @ 1 PM",
+     "pages": 1
+    },
+    {
+     "filed": "04/18/2012",
+     "n": 35,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/23/2012",
+     "n": 36,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "05/08/2012",
+     "n": 38,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING  TIME 1:00 - 1:20",
+     "pages": 1
+    },
+    {
+     "filed": "05/08/2012",
+     "n": 39,
+     "code": "1284",
+     "desc": "ORDER OF COURT  REGARDING HEARING HELD ON 5/8/2012",
+     "pages": 1
+    },
+    {
+     "filed": "05/08/2012",
+     "n": 40,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/22/2012",
+     "n": 41,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  FIRST  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/23/2012",
+     "n": 42,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/06/2012",
+     "n": 43,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED LETTER FROM CO PR'S TO THE COURT",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2012",
+     "n": 44,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT AND/OR REMOVAL",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2012",
+     "n": 45,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2012",
+     "n": 47,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -10:29 - 11:08",
+     "pages": 1
+    },
+    {
+     "filed": "07/31/2012",
+     "n": 48,
+     "code": "1284",
+     "desc": "ORDER OF COURT REGARDING HEARING HELD ON 7/17/2012",
+     "pages": 1
+    },
+    {
+     "filed": "08/01/2012",
+     "n": 49,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2012",
+     "n": 50,
+     "code": "1331",
+     "desc": "LETTER FROM SANDERS INS COMPANY REGARDING BOND",
+     "pages": 2
+    },
+    {
+     "filed": "10/19/2012",
+     "n": 51,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "10/23/2012",
+     "n": 52,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/19/2012",
+     "n": 53,
+     "code": "1383",
+     "desc": "SECOND ADMINISTRATION ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "12/04/2012",
+     "n": 54,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/04/2012",
+     "n": 55,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/24/2013",
+     "n": 56,
+     "code": "1271",
+     "desc": "IRREVOCABLE DISCLAIMER OF PROPERTY INTEREST",
+     "pages": 4
+    },
+    {
+     "filed": "03/01/2013",
+     "n": 57,
+     "code": "1244",
+     "desc": "THIRD AND FINAL ACCOUNT - NEEDS CORRECTING",
+     "pages": 14
+    },
+    {
+     "filed": "03/07/2013",
+     "n": 58,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "03/20/2013",
+     "n": 59,
+     "code": "1244",
+     "desc": "CORRECTED THIRD INTERIM ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "03/26/2013",
+     "n": 60,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING CORRECTED THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/26/2013",
+     "n": 61,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/12/2013",
+     "n": 62,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED (CORRECTION ON DEATH CERTIFICATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/16/2013",
+     "n": 63,
+     "code": "1331",
+     "desc": "ORIGINAL MISCELLANEOUS CORRESPONDENCE RECEIVED - CORRECTION TO DEATH CERTIFICATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/05/2013",
+     "n": 64,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM EDWARD SANDERS",
+     "pages": 2
+    },
+    {
+     "filed": "08/27/2013",
+     "n": 65,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2013",
+     "n": 66,
+     "code": "1383",
+     "desc": "FOURTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "10/08/2013",
+     "n": 67,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/08/2013",
+     "n": 68,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/19/2014",
+     "n": 69,
+     "code": "1244",
+     "desc": "AFFIDAVIT OF MARITAL STATUS OF LARRY PROCTOR",
+     "pages": 1
+    },
+    {
+     "filed": "02/19/2014",
+     "n": 70,
+     "code": "1244",
+     "desc": "AFFIDAVIT OF STATUS OF MARITAL STATUS OF LARRY PROCTOR",
+     "pages": 1
+    },
+    {
+     "filed": "03/10/2014",
+     "n": 71,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/07/2014",
+     "n": 72,
+     "code": "1383",
+     "desc": "FIFTH  ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "04/15/2014",
+     "n": 73,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIFTH  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/15/2014",
+     "n": 74,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2014",
+     "n": 75,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SIXTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2014",
+     "n": 76,
+     "code": "1383",
+     "desc": "SIXTH INTERIM ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "10/28/2014",
+     "n": 77,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SIXTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/28/2014",
+     "n": 78,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2015",
+     "n": 79,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SEVENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/2015",
+     "n": 80,
+     "code": "1383",
+     "desc": "SEVENTH INTERIM ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "04/21/2015",
+     "n": 81,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SEVENTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "04/21/2015",
+     "n": 82,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2015",
+     "n": 83,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR EIGHTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/2015",
+     "n": 84,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO FILE ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/2015",
+     "n": 85,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME  FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/2015",
+     "n": 86,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/20/2015",
+     "n": 87,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "11/25/2015",
+     "n": 88,
+     "code": "1383",
+     "desc": "EIGHTH INTERIM ACCOUNT",
+     "pages": 8
+    },
+    {
+     "filed": "12/29/2015",
+     "n": 89,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/29/2015",
+     "n": 90,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/31/2016",
+     "n": 91,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR NINTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/06/2016",
+     "n": 92,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE FOR FAILURE TO FILE THE ACCOUNT HEARING SCHEDULED FOR 2 AUGUST 2016 @ 1:00 PM",
+     "pages": 1
+    },
+    {
+     "filed": "07/06/2016",
+     "n": 93,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/08/2016",
+     "n": 94,
+     "code": "1383",
+     "desc": "NINETH ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 95,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING NINTH  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 96,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/13/2016",
+     "n": 97,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR  TENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2017",
+     "n": 98,
+     "code": "1383",
+     "desc": "TENTH INTERIM ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "02/07/2017",
+     "n": 99,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING TENTH  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/07/2017",
+     "n": 100,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/10/2017",
+     "n": 101,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ELEVENTH ACCOUNT, CORRECTED DEATH CERTIFICATE/ STATUS ON TRANSFER OF PROPERTY",
+     "pages": 1
+    },
+    {
+     "filed": "07/28/2017",
+     "n": 102,
+     "code": "1200",
+     "desc": "ENTRY OF APPEARANCE-RUDOLF A. CARRICO, JR., ATTORNEY FOR LARRY DAVID PROCTOR",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2017",
+     "n": 103,
+     "code": "1383",
+     "desc": "11TH ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "08/16/2017",
+     "n": 104,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE 11TH ACCOUNT WITH DATE ON CERTIFICATE OF SERVICE HEARING SCHEDULED FOR 9/12/2017  **SC NOT NEEDED PR TOOK CARE OF THIS**",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2017",
+     "n": 105,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2017",
+     "n": 106,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING ELEVENTH  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2017",
+     "n": 107,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/25/2017",
+     "n": 108,
+     "code": "1253",
+     "desc": "MOTION TO REMOVE PERSONAL REPRESENTATIVES",
+     "pages": 7
+    },
+    {
+     "filed": "09/05/2017",
+     "n": 109,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR SEPTEMBER 26, 2017 A 10:30 AM REGARDING THE REMOVAL OF THE PR",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2017",
+     "n": 110,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2017",
+     "n": 111,
+     "code": "1244",
+     "desc": "ENTRY OF APPEARANCE",
+     "pages": 1
+    },
+    {
+     "filed": "09/19/2017",
+     "n": 112,
+     "code": "1306",
+     "desc": "RENUNCIATION OF DISCLAIMER",
+     "pages": 3
+    },
+    {
+     "filed": "09/26/2017",
+     "n": 113,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -",
+     "pages": 1
+    },
+    {
+     "filed": "09/26/2017",
+     "n": 114,
+     "code": "1284",
+     "desc": "ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "09/26/2017",
+     "n": 115,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2017",
+     "n": 117,
+     "code": "1122",
+     "desc": "INVENTORY AMENDED",
+     "pages": 3
+    },
+    {
+     "filed": "10/16/2017",
+     "n": 118,
+     "code": "1385",
+     "desc": "ELEVENTH AND FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "10/24/2017",
+     "n": 119,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 12TH & FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/24/2017",
+     "n": 120,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2017-10-24",
+   "interested_persons": [
+    {
+     "name": "LESLIE R FELTON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "NICOLE FLETCHER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "EDWARD SANDERS",
+     "role": "CORRESPONDENT",
+     "source": "docket 64"
+    }
+   ],
+   "death_to_probate_days": 1125,
+   "probate_age_days": 2371,
+   "days_since_last_docket": 3284,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911573934",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911573934",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "LARRY A PROCTOR"
+  }
+ ]
+}

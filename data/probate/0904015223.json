@@ -1,0 +1,49 @@
+{
+ "account": "0904015223",
+ "estates": [
+  {
+   "estate_number": "10234",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "",
+   "date_closed": "",
+   "decedent": "WILLIAM E. DURNER",
+   "date_of_death": "3/17/1985",
+   "date_of_filing": "09/22/1995",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "09/22/1995",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED SEPTEMBER 7,",
+     "pages": 1976
+    },
+    {
+     "filed": "09/22/1995",
+     "n": 2,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY) - ROW MEMORANDUM",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "1995-09-22",
+   "interested_persons": [],
+   "death_to_probate_days": 3841,
+   "probate_age_days": 11352,
+   "days_since_last_docket": 11352,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911574152",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911574152",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WILLIAM E K DURNER"
+  }
+ ]
+}

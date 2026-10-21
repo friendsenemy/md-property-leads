@@ -1,0 +1,102 @@
+{
+ "account": "0906048536",
+ "estates": [
+  {
+   "estate_number": "17938",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "12/20/2011",
+   "date_closed": "12/20/2011",
+   "decedent": "JAMES HILLARY QUADE",
+   "date_of_death": "8/14/2011",
+   "date_of_filing": "12/19/2011",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "JOHN F. MUDD [P.O. BOX 310, LA PLATA, MD 20646-0310]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "KATHRYN R. QUADE",
+     "address": "11115 BERRY RD, WALDORF, MD 20603"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/19/2011",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED SEPT. 23,",
+     "pages": 2002
+    },
+    {
+     "filed": "12/19/2011",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "12/19/2011",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/19/2011",
+     "n": 4,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 5
+    },
+    {
+     "filed": "12/19/2011",
+     "n": 5,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "12/19/2011",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/20/2011",
+     "n": 7,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/14/2012",
+     "n": 8,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-02-14",
+   "interested_persons": [
+    {
+     "name": "KATHRYN R. QUADE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 128,
+   "probate_age_days": 0,
+   "days_since_last_docket": 5363,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911564709",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911564709",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JAMES H KATHRYN QUADE"
+  }
+ ]
+}

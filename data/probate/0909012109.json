@@ -1,0 +1,228 @@
+{
+ "account": "0909012109",
+ "estates": [
+  {
+   "estate_number": "14056",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "01/23/2009",
+   "date_closed": "09/22/2009",
+   "decedent": "CHARLES FRANCIS PILKERTON",
+   "date_of_death": "1/5/2009",
+   "date_of_filing": "01/23/2009",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "SANDRA L. STRISSEL, ESQ. [46 SEABROOK DRIVE, HILTON HEAD, SC 29926-1302]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DELORES A. GARDINER",
+     "address": "16000 ARCHIE'S PLACE, HUGHESVILLE, MD 20637"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/23/2009",
+     "n": 1,
+     "code": "1428",
+     "desc": "PROOF OF CUSTODY OF PURPORTED WILL",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOVEMBER 18,",
+     "pages": 2002
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 6,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE SIGNED BY DONALD PILKERTON",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 3
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 9,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2009",
+     "n": 10,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/28/2009",
+     "n": 11,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE SIGNED BY MICHAEL A. PILKERTON",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2009",
+     "n": 12,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "02/11/2009",
+     "n": 13,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2009",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/23/2009",
+     "n": 15,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2009",
+     "n": 16,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE FILED BY ST. MARY'S NURSING CENTER",
+     "pages": 3
+    },
+    {
+     "filed": "03/24/2009",
+     "n": 17,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2009",
+     "n": 18,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2009",
+     "n": 19,
+     "code": "1123",
+     "desc": "INVENTORY SUPPORTING SCHEDULE (A)",
+     "pages": 2
+    },
+    {
+     "filed": "06/26/2009",
+     "n": 20,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED FROM CHARLES F. PILKERTON, JR. REGARDING STATUS OF ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/2009",
+     "n": 21,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW SENT TO CHARLES F. PILKERTON, JR. REGARDING THE ESTATE FILE",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2009",
+     "n": 22,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "07/29/2009",
+     "n": 23,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "09/03/2009",
+     "n": 24,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FILED BY ST. MARY'S NURSING CENTER, INC.",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2009",
+     "n": 25,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2009",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS FOR ORDER APPROVING FIRST AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2009-09-22",
+   "interested_persons": [
+    {
+     "name": "DELORES A. GARDINER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 18,
+   "probate_age_days": 242,
+   "days_since_last_docket": 6238,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912126053",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912126053",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CHARLES F PILKERTON JR"
+  }
+ ]
+}
