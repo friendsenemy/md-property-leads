@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-21T16:08:36+00:00",
+ "generated_at": "2026-10-22T16:04:03+00:00",
  "sources": {
   "montgomery": {
-   "checked": "2026-10-21T16:07:38+00:00",
+   "checked": "2026-10-22T16:03:01+00:00",
    "count": 0
   },
   "pasted": {
@@ -145,7 +145,7 @@
     "mail": "10742 WILLOW OAKS DR, BOWIE",
     "use": "Residential",
     "built": "1990",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=1516301",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=1516301",
     "matches": 1
    },
    "updated": "2026-10-20T15:23:30.253Z",
@@ -200,7 +200,7 @@
     "mail": "4644 AIRPORT RD, SALISBURY",
     "use": "Residential",
     "built": "1930",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=23&SearchType=ACCT&District=04&AccountNumber=007476",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=23&SearchType=ACCT&District=04&AccountNumber=007476",
     "matches": 1
    },
    "updated": "2026-10-20T17:42:55.927100+00:00",
@@ -434,7 +434,7 @@
     "mail": "5414 INGLEBORO CT, CAPITOL HEIGHTS",
     "use": "Town House",
     "built": "1991",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2029528",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2029528",
     "matches": 1
    },
    "updated": "2026-10-18T19:35:22.574Z",
@@ -542,7 +542,7 @@
     "mail": "802 PENNINO CT, ACCOKEEK",
     "use": "Residential",
     "built": "2018",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=05&AccountNumber=3632924",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=05&AccountNumber=3632924",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:21.883Z",
@@ -655,7 +655,7 @@
     "mail": "5930 APPLEGARTH PL, CAPITOL HEIGHTS",
     "use": "Town House",
     "built": "1982",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2025237",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2025237",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:20.754Z",
@@ -926,7 +926,7 @@
     "mail": "UNIT 118, UPPER MARLBORO",
     "use": "Residential Condominium",
     "built": "1970",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0712901",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0712901",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:19.042Z",
@@ -1053,7 +1053,7 @@
     "mail": "7536 ARDWICK ARDMORE RD, HYATTSVILLE",
     "use": "Residential",
     "built": "1987",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=20&AccountNumber=2238699",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=20&AccountNumber=2238699",
     "matches": 1
    },
    "updated": "2026-10-18T16:26:20.081Z",
@@ -1533,7 +1533,7 @@
     "mail": "1074 KAREN BLVD, CAPITOL HEIGHTS",
     "use": "Town House",
     "built": "1991",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2019735",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2019735",
     "matches": 1
    },
    "updated": "2026-10-18T19:35:20.376Z",
@@ -1778,7 +1778,7 @@
     "mail": "5620 MALVERN WAY, CAPITOL HEIGHTS",
     "use": "Town House",
     "built": "1992",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2030153",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2030153",
     "matches": 1
    },
    "updated": "2026-10-18T19:35:21.975Z",
@@ -1871,7 +1871,7 @@
     "mail": "1203 ADELINE WAY, CAPITOL HEIGHTS",
     "use": "Town House",
     "built": "1987",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2024875",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2024875",
     "matches": 1
    },
    "updated": "2026-10-18T19:35:20.896Z",
@@ -1999,7 +1999,7 @@
     "mail": "5413 INGLEBORO CT, CAPITOL HEIGHTS",
     "use": "Town House",
     "built": "1991",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2029619",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2029619",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:16.914Z",
@@ -2158,7 +2158,7 @@
     "mail": "15017 GREEN WING TER, UPPER MARLBORO",
     "use": "Town House",
     "built": "1997",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=03&AccountNumber=2830016",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=03&AccountNumber=2830016",
     "matches": 1
    },
    "updated": "2026-10-18T19:35:19.826Z",
@@ -2358,7 +2358,7 @@
     "mail": "7536 ARDWICK ARDMORE RD, HYATTSVILLE",
     "use": "Residential",
     "built": "1987",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=20&AccountNumber=2238699",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=20&AccountNumber=2238699",
     "matches": 1
    },
    "updated": "2026-10-18T16:26:17.221Z",
@@ -2456,7 +2456,7 @@
     "mail": "5736 GLADSTONE WAY, CAPITOL HEIGHTS",
     "use": "Town House",
     "built": "1990",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2028603",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2028603",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:19.674Z",
@@ -2599,7 +2599,7 @@
     "mail": "6418 GWINNETT LN, BOWIE",
     "use": "Residential",
     "built": "1992",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638790",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638790",
     "matches": 1
    },
    "updated": "2026-10-18T16:24:21.158Z",
@@ -2741,7 +2741,7 @@
     "mail": "6314 GWINNETT LN, BOWIE",
     "use": "Town House",
     "built": "1993",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638394",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638394",
     "matches": 1
    },
    "updated": "2026-10-18T16:24:20.582Z",
@@ -2879,7 +2879,7 @@
     "mail": "903 ANDEAN GOOSE WAY, UPPER MARLBORO",
     "use": "Residential",
     "built": "2002",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=03&AccountNumber=3311800",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=03&AccountNumber=3311800",
     "matches": 1
    },
    "updated": "2026-10-18T19:35:19.268Z",
@@ -2981,7 +2981,7 @@
     "mail": "14038 GULLIVERS TRL, BOWIE",
     "use": "Exempt",
     "built": "1990",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1636737",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1636737",
     "matches": 1
    },
    "updated": "2026-10-18T16:24:20.013Z",
@@ -3074,7 +3074,7 @@
     "mail": "SHERIKIA SMITH, WALDORF",
     "use": "Town House",
     "built": "1980",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2026557",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=18&AccountNumber=2026557",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:20.211Z",
@@ -3161,7 +3161,7 @@
     "mail": "6307 GILBRALTER CT, BOWIE",
     "use": "Residential",
     "built": "1990",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1637404",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1637404",
     "matches": 1
    },
    "updated": "2026-10-18T16:24:18.851Z",
@@ -3269,7 +3269,7 @@
     "mail": "12304 STAFFORD LN, BOWIE",
     "use": "Residential",
     "built": "1962",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0693739",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0693739",
     "matches": 1
    },
    "updated": "2026-10-18T16:22:06.202Z",
@@ -3371,7 +3371,7 @@
     "mail": "6422 GWINNETT LN, BOWIE",
     "use": "Residential",
     "built": "1992",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638816",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638816",
     "matches": 1
    },
    "updated": "2026-10-18T16:24:19.427Z",
@@ -3576,7 +3576,7 @@
     "mail": "11946 SAINT FRANCIS WAY, BOWIE",
     "use": "Town House",
     "built": "1997",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0730606",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=07&AccountNumber=0730606",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:16.361Z",
@@ -3838,7 +3838,7 @@
     "mail": "5911 GRENFELL LOOP, BOWIE",
     "use": "Town House",
     "built": "1995",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1635358",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1635358",
     "matches": 1
    },
    "updated": "2026-10-18T16:22:05.626Z",
@@ -3931,7 +3931,7 @@
     "mail": "7509 HILL BURNE DR, HYATTSVILLE",
     "use": "Town House",
     "built": "1998",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=2945046",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=13&AccountNumber=2945046",
     "matches": 1
    },
    "updated": "2026-10-18T17:18:21.314Z",
@@ -3993,7 +3993,7 @@
     "mail": "6418 GWINNETT LN, BOWIE",
     "use": "Residential",
     "built": "1992",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638790",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1638790",
     "matches": 1
    },
    "updated": "2026-10-18T16:22:05.057Z",
@@ -4050,7 +4050,7 @@
     "mail": "14038 GULLIVERS TRL, BOWIE",
     "use": "Exempt",
     "built": "1990",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1636737",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1636737",
     "matches": 1
    },
    "updated": "2026-10-18T16:27:28.505Z",
@@ -4122,7 +4122,7 @@
     "mail": "6418 GRENDEL PL, BOWIE",
     "use": "Residential",
     "built": "1993",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1637743",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1637743",
     "matches": 1
    },
    "updated": "2026-10-18T16:27:29.079Z",
@@ -4179,7 +4179,7 @@
     "mail": "6103 GOTHIC LN, BOWIE",
     "use": "Town House",
     "built": "1990",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1635895",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=17&SearchType=ACCT&District=14&AccountNumber=1635895",
     "matches": 1
    },
    "updated": "2026-10-18T16:27:29.629Z",
@@ -4251,7 +4251,7 @@
     "mail": "7593 CHERRYBARK OAK LN, ELKRIDGE",
     "use": "Town House",
     "built": "2009",
-    "sdat": "https://sdat.dat.maryland.gov/RealProperty/Pages/viewdetails.aspx?County=14&SearchType=ACCT&District=01&AccountNumber=319426",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=14&SearchType=ACCT&District=01&AccountNumber=319426",
     "matches": 1
    },
    "updated": "2026-10-18T19:35:25.016Z",
