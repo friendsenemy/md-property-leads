@@ -1,0 +1,319 @@
+{
+ "account": "0908044791",
+ "estates": [
+  {
+   "estate_number": "34267",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "09/22/2010",
+   "date_closed": "02/28/2012",
+   "decedent": "NANCY  GOODMAN",
+   "date_of_death": "9/20/2010",
+   "date_of_filing": "09/22/2010",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "JEFFREY PATRICK MCEVOY ESQ. [8 WEST THIRD STREET, FREDERICK, MD 21701]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "HELEN MIMSIE GOODMAN",
+     "address": "107 LINDEN AVENUE, FREDERICK, MD 21703"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/22/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "LAST WILL AND TESTAMENT",
+     "pages": 6
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 2,
+     "code": "1425",
+     "desc": "CODICIL",
+     "pages": 9
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 7,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 8,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OF MANDATORY FILING DEADLINES & FORMS",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2010",
+     "n": 9,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/28/2010",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "10/05/2010",
+     "n": 11,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 10/05/2010 BY BANK OF AMERICA FOR $18,603.82",
+     "pages": 2
+    },
+    {
+     "filed": "10/05/2010",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 10/05/2010 BY BANK OF AMERICA FOR $546.96",
+     "pages": 2
+    },
+    {
+     "filed": "10/15/2010",
+     "n": 13,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/30/2010",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "12/09/2010",
+     "n": 15,
+     "code": "1395",
+     "desc": "NOTICE OF PROPOSED PAYMENT TO ATTORNEY",
+     "pages": 2
+    },
+    {
+     "filed": "12/20/2010",
+     "n": 16,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 12/20/2010 BY FIRST NATIONAL BANK OF OMAHA FOR $1,300.97",
+     "pages": 1
+    },
+    {
+     "filed": "12/22/2010",
+     "n": 17,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 22
+    },
+    {
+     "filed": "01/19/2011",
+     "n": 18,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 01/19/2011 BY DCM SERVICES/CHASE FOR $5,264.29",
+     "pages": 3
+    },
+    {
+     "filed": "04/21/2011",
+     "n": 19,
+     "code": "1122",
+     "desc": "FIRST AMENDED INVENTORY",
+     "pages": 19
+    },
+    {
+     "filed": "04/29/2011",
+     "n": 20,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "05/20/2011",
+     "n": 21,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM(S) -",
+     "pages": 4
+    },
+    {
+     "filed": "06/24/2011",
+     "n": 22,
+     "code": "1282",
+     "desc": "REQUEST AND APPROVAL FOR EXTENSION OF TIME TO FILE ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "06/24/2011",
+     "n": 23,
+     "code": "1122",
+     "desc": "SECOND AMENDED INVENTORY",
+     "pages": 11
+    },
+    {
+     "filed": "08/29/2011",
+     "n": 24,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "08/29/2011",
+     "n": 25,
+     "code": "1336",
+     "desc": "RECEIPT",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2011",
+     "n": 26,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 13
+    },
+    {
+     "filed": "08/30/2011",
+     "n": 27,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING ATTORNEY'S FEE",
+     "pages": 1
+    },
+    {
+     "filed": "08/30/2011",
+     "n": 28,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2011",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2011",
+     "n": 30,
+     "code": "1267",
+     "desc": "CONSENT TO FIRST ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "10/17/2011",
+     "n": 31,
+     "code": "1124",
+     "desc": "AMENDED INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/20/2011",
+     "n": 32,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2012",
+     "n": 33,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "02/27/2012",
+     "n": 34,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 8
+    },
+    {
+     "filed": "02/27/2012",
+     "n": 35,
+     "code": "1385",
+     "desc": "SECOND AND FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "02/27/2012",
+     "n": 36,
+     "code": "1336",
+     "desc": "RECEIPT",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 37,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR ATTORNEY'S FEES",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 38,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SECOND AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/29/2012",
+     "n": 39,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-02-29",
+   "interested_persons": [
+    {
+     "name": "HELEN MIMSIE GOODMAN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 2,
+   "probate_age_days": 524,
+   "days_since_last_docket": 5349,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912182334",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912182334",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "NANCY L GOODMAN"
+  }
+ ]
+}

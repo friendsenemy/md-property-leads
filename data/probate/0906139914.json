@@ -1,0 +1,207 @@
+{
+ "account": "0906139914",
+ "estates": [
+  {
+   "estate_number": "10420",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "09/11/1997",
+   "date_closed": "09/11/1997",
+   "decedent": "HARRY TRUMAN LOBAUGH SR",
+   "date_of_death": "3/10/1996",
+   "date_of_filing": "03/29/1996",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "NANCY L LOBAUGH",
+     "address": "3576 PINECONE CIRCLE, WALDORF, MD 20602"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/29/1996",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 23 OCTOBER",
+     "pages": 1981
+    },
+    {
+     "filed": "05/15/1996",
+     "n": 2,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/1996",
+     "n": 3,
+     "code": "1100",
+     "desc": "CERTIFICATE OF LEGAL HEIR",
+     "pages": 14
+    },
+    {
+     "filed": "06/04/1996",
+     "n": 4,
+     "code": "1336",
+     "desc": "RECEIPTS  #478 LEGAL HEIR FORM",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/1996",
+     "n": 5,
+     "code": "1303",
+     "desc": "QUESTIONNAIRE",
+     "pages": 1
+    },
+    {
+     "filed": "06/10/1996",
+     "n": 6,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/10/1996",
+     "n": 7,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/1996",
+     "n": 8,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 2
+    },
+    {
+     "filed": "07/12/1996",
+     "n": 9,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS",
+     "pages": 8
+    },
+    {
+     "filed": "07/12/1996",
+     "n": 10,
+     "code": "1336",
+     "desc": "RECEIPT #657 INH TAX",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/1996",
+     "n": 11,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 2
+    },
+    {
+     "filed": "07/18/1996",
+     "n": 12,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS",
+     "pages": 2
+    },
+    {
+     "filed": "07/18/1996",
+     "n": 13,
+     "code": "1336",
+     "desc": "RECEIPT #694 INH TAX",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/1996",
+     "n": 14,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW/CERTIFICATION OF LEGAL HEIR",
+     "pages": 2
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 15,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 16,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 17,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 18,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 19,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 20,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS",
+     "pages": 4
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 21,
+     "code": "1336",
+     "desc": "RECEIPT #2760 INH TAX",
+     "pages": 1
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 22,
+     "code": "1336",
+     "desc": "RECEIPT #2757 SMALL ESTATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "09/11/1997",
+     "n": 23,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE -",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "1997-09-11",
+   "interested_persons": [
+    {
+     "name": "NANCY L LOBAUGH",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 550,
+   "probate_age_days": 0,
+   "days_since_last_docket": 10633,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912128581",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912128581",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "HARRY T LOBAUGH"
+  }
+ ]
+}

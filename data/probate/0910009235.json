@@ -1,0 +1,109 @@
+{
+ "account": "0910009235",
+ "estates": [
+  {
+   "estate_number": "161402",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "12/10/2010",
+   "date_closed": "01/07/2011",
+   "decedent": "MARIE A. PAYNE",
+   "date_of_death": "6/6/1978",
+   "date_of_filing": "12/10/2010",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "VERONICA I. SHIFFLETT",
+     "address": "27184 BATKANTINE DRIVE, MILLSBORO, DE 19966"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/10/2010",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "12/10/2010",
+     "n": 2,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "12/10/2010",
+     "n": 3,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS - DAILY RECORD",
+     "pages": 1
+    },
+    {
+     "filed": "12/10/2010",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "12/10/2010",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/10/2010",
+     "n": 6,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "12/13/2010",
+     "n": 7,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2010",
+     "n": 8,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE) - DAILY RECORD",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 9,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2011-01-06",
+   "interested_persons": [
+    {
+     "name": "VERONICA I. SHIFFLETT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 11875,
+   "probate_age_days": 28,
+   "days_since_last_docket": 5768,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911926082",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911926082",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARIE A PAYNE"
+  }
+ ]
+}

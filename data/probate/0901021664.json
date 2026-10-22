@@ -1,0 +1,16 @@
+{
+ "account": "0901021664",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "GIBSON E MCKENZIE",
+   "decedent_searched": "GIBSON E MCKENZIE",
+   "date_of_death": "1992-09-28",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}

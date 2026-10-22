@@ -1,0 +1,42 @@
+{
+ "account": "0901015095",
+ "estates": [
+  {
+   "estate_number": "8459",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "05/18/1990",
+   "date_closed": "",
+   "decedent": "JOHN GRANTLY JAMESON SR.",
+   "date_of_death": "5/5/1990",
+   "date_of_filing": "05/18/1990",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "05/18/1990",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED MARCH 26,",
+     "pages": 1979
+    }
+   ],
+   "last_docket_activity": "1990-05-18",
+   "interested_persons": [],
+   "death_to_probate_days": 13,
+   "probate_age_days": 13306,
+   "days_since_last_docket": 13306,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912123163",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912123163",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOHN G JAMESON JR"
+  }
+ ]
+}

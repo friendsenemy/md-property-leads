@@ -1,0 +1,69 @@
+{
+ "account": "0909003975",
+ "estates": [
+  {
+   "estate_number": "11497",
+   "status": "CLOSED",
+   "type": "NP",
+   "date_opened": "12/02/1998",
+   "date_closed": "",
+   "decedent": "JENNINGS COLUMBUS CROSS SR.",
+   "date_of_death": "11/13/1998",
+   "date_of_filing": "12/02/1998",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "12/02/1998",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JULY 11,",
+     "pages": 1967
+    },
+    {
+     "filed": "12/02/1998",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "12/02/1998",
+     "n": 3,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS, FAYE C. OLIVER, DAUGHTER, NO TAX DUE",
+     "pages": 2
+    },
+    {
+     "filed": "12/02/1998",
+     "n": 4,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "1998-12-02",
+   "interested_persons": [
+    {
+     "name": "FAYE C. OLIVER",
+     "role": "DAUGHTER",
+     "source": "docket 3"
+    }
+   ],
+   "death_to_probate_days": 19,
+   "probate_age_days": 10186,
+   "days_since_last_docket": 10186,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912123219",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912123219",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JENNINGS C CROSS JR"
+  }
+ ]
+}

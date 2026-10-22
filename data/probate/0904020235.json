@@ -1,0 +1,70 @@
+{
+ "account": "0904020235",
+ "estates": [
+  {
+   "estate_number": "20127",
+   "status": "ARCHIVED",
+   "type": "UN",
+   "date_opened": "08/19/2015",
+   "date_closed": "08/19/2015",
+   "decedent": "JOHN ALEXANDER CAYWOOD SR",
+   "date_of_death": "12/17/2014",
+   "date_of_filing": "08/19/2015",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "08/19/2015",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOVEMBER 11, 2004 FILED FOR RECORD ONLY - NOT PROBATED",
+     "pages": 7
+    },
+    {
+     "filed": "08/19/2015",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "08/19/2015",
+     "n": 3,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/20/2015",
+     "n": 4,
+     "code": "1428",
+     "desc": "WILL/CODICIL REMOVAL FORM",
+     "pages": 1
+    },
+    {
+     "filed": "11/20/2025",
+     "n": 5,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-11-20",
+   "interested_persons": [],
+   "death_to_probate_days": 245,
+   "probate_age_days": 0,
+   "days_since_last_docket": 336,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912122728",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912122728",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "JOHN A CAYWOOD"
+  }
+ ]
+}

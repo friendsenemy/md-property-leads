@@ -1,0 +1,186 @@
+{
+ "account": "0908040133",
+ "estates": [
+  {
+   "estate_number": "79912",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "09/05/2008",
+   "date_closed": "07/15/2009",
+   "decedent": "MARY ELLEN UNDERWOOD",
+   "date_of_death": "8/24/2008",
+   "date_of_filing": "09/05/2008",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "BRENDA K MOSRIE",
+     "address": "PO BOX 426, NEWBURG, MD 20664"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/05/2008",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 03-27-08",
+     "pages": 5
+    },
+    {
+     "filed": "09/05/2008",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 5
+    },
+    {
+     "filed": "09/05/2008",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2008",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2008",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2008",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2008",
+     "n": 7,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2008",
+     "n": 8,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/17/2008",
+     "n": 9,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/27/2008",
+     "n": 10,
+     "code": "1379",
+     "desc": "PUBLISHED NOTICE RECEIVED FOR MAILING BY REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "11/05/2008",
+     "n": 11,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "12/10/2008",
+     "n": 12,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/10/2008",
+     "n": 13,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "12/17/2008",
+     "n": 14,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2009",
+     "n": 15,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 7
+    },
+    {
+     "filed": "05/06/2009",
+     "n": 16,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "05/18/2009",
+     "n": 17,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "06/26/2009",
+     "n": 18,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2009",
+     "n": 19,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2009",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2009-07-16",
+   "interested_persons": [
+    {
+     "name": "BRENDA K MOSRIE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 12,
+   "probate_age_days": 313,
+   "days_since_last_docket": 6307,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912509027",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912509027",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARY E UNDERWOOD"
+  }
+ ]
+}

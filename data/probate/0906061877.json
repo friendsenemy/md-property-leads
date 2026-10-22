@@ -1,0 +1,382 @@
+{
+ "account": "0906061877",
+ "estates": [
+  {
+   "estate_number": "135512",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "08/05/2005",
+   "date_closed": "01/23/2023",
+   "decedent": "MICHAEL ALAN DOUGLASS",
+   "date_of_death": "5/20/2005",
+   "date_of_filing": "08/05/2005",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "NANCY  DOUGLASS",
+     "address": "1732 BAYARD AVENUE, BALTIMORE, MD 21222"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/05/2005",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE -2",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 3,
+     "code": "1117",
+     "desc": "WAIVER OF BOND -",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 6,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE -",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS - THE DAILY RECORD",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 9,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2005",
+     "n": 10,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "08/09/2005",
+     "n": 11,
+     "code": "1130",
+     "desc": "PETITION AND ORDER FOR FUNERAL EXPENSES",
+     "pages": 2
+    },
+    {
+     "filed": "08/17/2005",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2006",
+     "n": 13,
+     "code": "1383",
+     "desc": "FINAL ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "02/14/2006",
+     "n": 14,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT DATED 02/14/2006",
+     "pages": 1
+    },
+    {
+     "filed": "08/07/2006",
+     "n": 15,
+     "code": "1383",
+     "desc": "SECOND AND FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "08/16/2006",
+     "n": 16,
+     "code": "1245",
+     "desc": "PETITION FOR ALLOWANCE OF ATTORNEY'S FEE",
+     "pages": 5
+    },
+    {
+     "filed": "08/23/2006",
+     "n": 17,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR ATTORNEY'S FEE",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2006",
+     "n": 18,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT DATED 8/232006",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2006",
+     "n": 19,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW DATED 8/16/2006",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2007",
+     "n": 20,
+     "code": "1383",
+     "desc": "THIRD AND FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "05/04/2007",
+     "n": 21,
+     "code": "1281",
+     "desc": "AUDIT MEMORANDUM ACCOUNT IS BEING HELD PENDING ATTYS FEES FOR ASBESTOS SETTLEMENTS",
+     "pages": 1
+    },
+    {
+     "filed": "05/07/2007",
+     "n": 22,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 5
+    },
+    {
+     "filed": "05/08/2007",
+     "n": 23,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING ATTYS FEES",
+     "pages": 1
+    },
+    {
+     "filed": "05/08/2007",
+     "n": 24,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED 05/03/2007)",
+     "pages": 1
+    },
+    {
+     "filed": "12/14/2009",
+     "n": 25,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM FROM MIKE FRANCO TO MS DOUGLAS CONCERNING ASBESTOS SETTLEMENTS",
+     "pages": 1
+    },
+    {
+     "filed": "01/28/2010",
+     "n": 26,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE ACCOUNT APPEAR 03/01/2010",
+     "pages": 1
+    },
+    {
+     "filed": "02/02/2010",
+     "n": 27,
+     "code": "1281",
+     "desc": "AUDIT MEMORANDUM ACCOUNT MUST BE REVISED PENDING TWO ASBESTOS SETTLEMENTS REFERENCED IN 4TH ACCOUNT WERE REPORTED IN 3RD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2010",
+     "n": 28,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 5
+    },
+    {
+     "filed": "03/01/2010",
+     "n": 29,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2010",
+     "n": 30,
+     "code": "1383",
+     "desc": "AMENDED FOURTH AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "03/01/2010",
+     "n": 31,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AMENDED FOURTH AND  FINAL ACCOUNT (DATED __2/26/10___)",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 32,
+     "code": "1281",
+     "desc": "AUDIT MEMORANDUM ACCOUNT IS BEING HELD PENDING CHECK FOR ADDITIONAL PROBATE FEES IN THE AMOUNT OF $50.00 ALSO NEED STATEMENT FROM PETER T NICHOLS OFFICE CONCERNING SETTLEMENTS",
+     "pages": 1
+    },
+    {
+     "filed": "03/05/2012",
+     "n": 33,
+     "code": "1400",
+     "desc": "CONTRACT OF REPRESENTATION",
+     "pages": 1
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 34,
+     "code": "1383",
+     "desc": "FIFTH FINAL ACCOUNT DATED 02/27/2012",
+     "pages": 5
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 35,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED 02/27/2012)",
+     "pages": 1
+    },
+    {
+     "filed": "07/11/2012",
+     "n": 36,
+     "code": "1383",
+     "desc": "SIXTH FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "07/11/2012",
+     "n": 37,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT DATED 07/11/2012",
+     "pages": 1
+    },
+    {
+     "filed": "06/18/2014",
+     "n": 38,
+     "code": "1383",
+     "desc": "SEVENTH FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "06/18/2014",
+     "n": 39,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED 06/18/2014)",
+     "pages": 2
+    },
+    {
+     "filed": "01/30/2015",
+     "n": 40,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS - UAW LEGAL SERVICES PLAN",
+     "pages": 1
+    },
+    {
+     "filed": "10/20/2016",
+     "n": 41,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS - UAW LEGAL SERVICES",
+     "pages": 1
+    },
+    {
+     "filed": "05/01/2017",
+     "n": 42,
+     "code": "1383",
+     "desc": "EIGHTH FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "05/02/2017",
+     "n": 43,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED 05/01/2017)",
+     "pages": 2
+    },
+    {
+     "filed": "05/19/2021",
+     "n": 44,
+     "code": "1244",
+     "desc": "ASBESTOS SETTLEMENT SHEET (DATED 5/5/2021)  $290.00 ADD TO 9TH AA- SEE FILE LOG",
+     "pages": 1
+    },
+    {
+     "filed": "01/12/2023",
+     "n": 45,
+     "code": "1332",
+     "desc": "REQUEST FOR ANOTHER ADMINISTRATION ACCOUNT IN REGARDS TO ADDITIONAL ASBESTOS SETTLEMENT - MCF",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2023",
+     "n": 46,
+     "code": "1385",
+     "desc": "9TH & FINAL ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "01/23/2023",
+     "n": 47,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 9TH & FINAL ACCOUNT (DATED & SIGNED 01/23/23)",
+     "pages": 2
+    },
+    {
+     "filed": "12/27/2024",
+     "n": 48,
+     "code": "1244",
+     "desc": "ASBESTOS SETTLEMENT SHEET - FROM PTN - CHECK DATE 03/18/22",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2024-12-27",
+   "interested_persons": [
+    {
+     "name": "NANCY DOUGLASS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 77,
+   "probate_age_days": 6380,
+   "days_since_last_docket": 664,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1911928593",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1911928593",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MICHAEL A DOUGLASS"
+  }
+ ]
+}
