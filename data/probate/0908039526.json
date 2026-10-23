@@ -1,0 +1,333 @@
+{
+ "account": "0908039526",
+ "estates": [
+  {
+   "estate_number": "W24156",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/25/1998",
+   "date_closed": "04/15/1999",
+   "decedent": "THOMAS ELGIE ROWE",
+   "date_of_death": "9/5/1997",
+   "date_of_filing": "03/25/1998",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "ATHENA MALLOY GROVES [9200 BASIL COURT SUITE, 410, UPPER MARLBORO, MD 20774-2077]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DOROTHY B ROWE-JONES",
+     "address": "1220 BLAIR MILL ROAD, #505, SILVER SPRING, MD 20910"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/25/1998",
+     "n": 1,
+     "code": "1112",
+     "desc": "PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/25/1998",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS [1]",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/1998",
+     "n": 3,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/1998",
+     "n": 4,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/1998",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT - NOTICE TO CREDITORS - NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/1998",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/1998",
+     "n": 7,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/30/1998",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER (LETTERS OF ADMINISTRATION ISSUED)",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/1998",
+     "n": 9,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF FORMS AND INSTRUCTIONS",
+     "pages": 2
+    },
+    {
+     "filed": "03/30/1998",
+     "n": 10,
+     "code": "1380",
+     "desc": "NOTICES NOT REQUIRED",
+     "pages": 1
+    },
+    {
+     "filed": "04/23/1998",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION",
+     "pages": 1
+    },
+    {
+     "filed": "04/29/1998",
+     "n": 12,
+     "code": "1356",
+     "desc": "NON-PROBATE INHERITANCE TAX ADVICE: NO INHERITANCE TAX DUE",
+     "pages": 1
+    },
+    {
+     "filed": "07/01/1998",
+     "n": 13,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "10/15/1998",
+     "n": 14,
+     "code": "1281",
+     "desc": "SECOND AND FINAL NOTICE TO PERFECT THE INVENTORY BY 10-30-98 SEND TO FILE FEBRUARY 2-10-99",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/1999",
+     "n": 15,
+     "code": "1277",
+     "desc": "NOTICE OF DELINQUENT ESTATE (FIRST ACCOUNT)",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/1999",
+     "n": 16,
+     "code": "1262",
+     "desc": "DELINQUENT MATTER REFERRED TO COURT BY REGISTER OF WILLS/PERFECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/1999",
+     "n": 17,
+     "code": "1261",
+     "desc": "ORDER DATED 01/14/99 TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO PERFECT THE INVENTORY (JUDGE L. SCRIVENER ) HEARING DATE 03/02/99 .",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/1999",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/08/1999",
+     "n": 19,
+     "code": "1296",
+     "desc": "PRAECIPE (ROW NOTE: SCANNED UNDER \"0\")",
+     "pages": 1
+    },
+    {
+     "filed": "02/08/1999",
+     "n": 20,
+     "code": "1382",
+     "desc": "AMENDED INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "02/24/1999",
+     "n": 21,
+     "code": "1265",
+     "desc": "ORDER RESCINDING ORDER TO SHOW CAUSE 02/23/99 (JUDGE D. THOMPSON )",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/1999",
+     "n": 22,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/25/1999",
+     "n": 23,
+     "code": "1277",
+     "desc": "NOTICE OF DELINQUENT ESTATE (FIRST ACCOUNT)",
+     "pages": 1
+    },
+    {
+     "filed": "03/02/1999",
+     "n": 24,
+     "code": "1244",
+     "desc": "INVENTORY STATUS [DATED 02/16/99]",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/1999",
+     "n": 25,
+     "code": "1262",
+     "desc": "DELINQUENT MATTER REFERRED TO COURT BY REGISTER OF WILLS/FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/01/1999",
+     "n": 26,
+     "code": "1261",
+     "desc": "ORDER DATED 03/31/99 TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE 1ST ACCOUNT (JUDGE J. MC KENNA ) HEARING DATE 05/18/99 .",
+     "pages": 1
+    },
+    {
+     "filed": "04/01/1999",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/15/1999",
+     "n": 28,
+     "code": "1382",
+     "desc": "SECOND AMENDED INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "04/15/1999",
+     "n": 29,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "04/15/1999",
+     "n": 30,
+     "code": "1245",
+     "desc": "PETITION FOR ALLOWANCE OF PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 3
+    },
+    {
+     "filed": "04/15/1999",
+     "n": 31,
+     "code": "1245",
+     "desc": "PETITION FOR ALLOWANCE OF ATTORNEY'S FEES",
+     "pages": 5
+    },
+    {
+     "filed": "04/16/1999",
+     "n": 32,
+     "code": "1244",
+     "desc": "INVENTORY STATUS",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/1999",
+     "n": 33,
+     "code": "1265",
+     "desc": "ORDER RESCINDING ORDER TO SHOW CAUSE DATED 04/19/99 (JUDGE L. SCRIVENER )",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/1999",
+     "n": 34,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "05/14/1999",
+     "n": 35,
+     "code": "1130",
+     "desc": "PETITION FOR FUNERAL EXPENSES",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1999",
+     "n": 36,
+     "code": "1284",
+     "desc": "ORDER OF COURT DATED 06/08/99 ALLOWING $6,000 IN FEES (JUDGE J. RYAN )",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1999",
+     "n": 37,
+     "code": "1284",
+     "desc": "ORDER OF COURT DATED 06/08/99 ALLOWING $5,000 IN COMMISSION (JUDGE J. RYAN )",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1999",
+     "n": 38,
+     "code": "1284",
+     "desc": "ORDER OF COURT DATED 06/08/99 ALLOWING $9,280.96 IN FUNERAL EXPENSES (JUDGE J. RYAN )",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1999",
+     "n": 39,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT DATED 06/08/99 (JUDGE J. RYAN )",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1999",
+     "n": 40,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 6
+    },
+    {
+     "filed": "02/10/2000",
+     "n": 41,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN - MET RECEIVED 02/10/2000",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2000-02-10",
+   "interested_persons": [
+    {
+     "name": "DOROTHY B ROWE-JONES",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 201,
+   "probate_age_days": 386,
+   "days_since_last_docket": 9752,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913384833",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913384833",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "THOMAS E ROWE"
+  }
+ ]
+}

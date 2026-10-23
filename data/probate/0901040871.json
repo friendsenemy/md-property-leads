@@ -1,0 +1,95 @@
+{
+ "account": "0901040871",
+ "estates": [
+  {
+   "estate_number": "145757",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/05/2007",
+   "date_closed": "11/05/2007",
+   "decedent": "ROY L. SIMMONS",
+   "date_of_death": "4/15/2007",
+   "date_of_filing": "09/20/2007",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "GRACE E SIMMONS",
+     "address": "507 HIGH ACRE DRIVE, APT 119, WESTMINSTER, MD 21157"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/20/2007",
+     "n": 1,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2007",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 12/6/2004",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2007",
+     "n": 3,
+     "code": "1428",
+     "desc": "PROOF OF CUSTODY OF PURPORTED WILL AND/OR CODICIL",
+     "pages": 1
+    },
+    {
+     "filed": "11/05/2007",
+     "n": 4,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 5
+    },
+    {
+     "filed": "11/05/2007",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/05/2007",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/05/2007",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2007-11-05",
+   "interested_persons": [
+    {
+     "name": "GRACE E SIMMONS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 204,
+   "probate_age_days": 0,
+   "days_since_last_docket": 6927,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1912900148",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1912900148",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROY L SIMMONS"
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "account": "0901011995",
+ "estates": [
+  {
+   "estate_number": "53797",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "08/18/2000",
+   "date_closed": "08/21/2000",
+   "decedent": "DIANE MARIE MORGAN",
+   "date_of_death": "7/20/2000",
+   "date_of_filing": "08/18/2000",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "RONALD G MORGAN SR",
+     "address": "838 WEST 36TH STREET, BALTIMORE, MD 21211"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/18/2000",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "08/18/2000",
+     "n": 2,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2000",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2000",
+     "n": 4,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE - NO. OF LETTERS ISSUED ___1__",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2000",
+     "n": 5,
+     "code": "1336",
+     "desc": "RECEIPTS   #56607  $2.73",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2000",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2000",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2001",
+     "n": 8,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - GENERAL MOTORS ACCEPTANCE CORPORATION",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2001",
+     "n": 9,
+     "code": "1336",
+     "desc": "RECEIPTS #60908 - $3.00",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2001-01-16",
+   "interested_persons": [
+    {
+     "name": "RONALD G MORGAN SR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 29,
+   "probate_age_days": 3,
+   "days_since_last_docket": 9411,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913791658",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913791658",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "DIANE M MORGAN"
+  }
+ ]
+}
