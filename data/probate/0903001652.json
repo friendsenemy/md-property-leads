@@ -1,0 +1,407 @@
+{
+ "account": "0903001652",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "FLORENCE L DATCHER",
+   "decedent_searched": "FLORENCE L DATCHER",
+   "date_of_death": "2006-10-14",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-24",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "18573",
+   "status": "OPEN",
+   "type": "RE",
+   "date_opened": "02/05/2013",
+   "date_closed": "",
+   "decedent": "RUDOLPH CLINTON DATCHER",
+   "date_of_death": "9/24/2012",
+   "date_of_filing": "02/05/2013",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "I WILLIAM CHASE [1190 WEST NORTHERN PKWY, SUITE 124, BALTIMORE, MD 21210]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JOSHUA E ZUKERBERG ESQ",
+     "address": "1190 W NORTHERN PKWY, APT 124, BALTIMORE, MD 21210-1467"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/05/2013",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED- 27 MARCH",
+     "pages": 2003
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 3,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 5,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 6,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 7,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 8,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 9,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2013",
+     "n": 10,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 3
+    },
+    {
+     "filed": "02/15/2013",
+     "n": 11,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 02/15/2013 BY AIS RECOVERY SOLUTIONS, LLC FOR $2,078.26",
+     "pages": 3
+    },
+    {
+     "filed": "02/26/2013",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 02/25/2013 BY FORT WASHINGTON HLTH & RHAB FOR $867.00",
+     "pages": 3
+    },
+    {
+     "filed": "02/26/2013",
+     "n": 13,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 02/26/2013 BY AMERICAN COLLECTIONS ENTERPRISE, INC FOR $2,030.67",
+     "pages": 2
+    },
+    {
+     "filed": "03/05/2013",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2013",
+     "n": 15,
+     "code": "1141",
+     "desc": "ELECTION OF PERSONAL REPRESENTATIVE FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2013",
+     "n": 16,
+     "code": "1142",
+     "desc": "(3) CONSENT TO ELECTION FOR MODIFIED ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "03/13/2013",
+     "n": 17,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/05/2013",
+     "n": 18,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2013",
+     "n": 19,
+     "code": "1146",
+     "desc": "CONSENT TO EXTEND TIME TO FILE FINAL REPORT AND TO MAKE DISTRIBUTION IN A MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "03/10/2014",
+     "n": 20,
+     "code": "1143",
+     "desc": "FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 7
+    },
+    {
+     "filed": "03/13/2014",
+     "n": 21,
+     "code": "1437",
+     "desc": "MODIFIED ADMINISTATION WAS RECORDED AND DOES NOT QUALIFY AT THIS TIME FOR THE FOLLOWING REASON: HAS NOT COMPLIED WITH TIMELY FILING.",
+     "pages": 2
+    },
+    {
+     "filed": "03/14/2014",
+     "n": 22,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY AND FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/26/2014",
+     "n": 23,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 7
+    },
+    {
+     "filed": "03/26/2014",
+     "n": 24,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "03/26/2014",
+     "n": 25,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM (3)",
+     "pages": 7
+    },
+    {
+     "filed": "04/08/2014",
+     "n": 26,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/08/2014",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2026",
+     "n": 28,
+     "code": "1376",
+     "desc": "PETITION FOR APPOINTMENT OF SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 4
+    },
+    {
+     "filed": "02/10/2026",
+     "n": 29,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2026",
+     "n": 30,
+     "code": "1244",
+     "desc": "NOTICE TO INTERESTED PERSONS FROM CHASE, CHASE & HAMMERSCHLAG  (3)",
+     "pages": 3
+    },
+    {
+     "filed": "02/10/2026",
+     "n": 31,
+     "code": "1331",
+     "desc": "COVER LETTER- WILLIAM CHASE, ATTY",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2026",
+     "n": 32,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 24 MARCH 2026 AT 10:30 AM",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2026",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2026",
+     "n": 34,
+     "code": "1244",
+     "desc": "RETURN OF FILE REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2026",
+     "n": 35,
+     "code": "1244",
+     "desc": "RETURN OF FILE",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2026",
+     "n": 37,
+     "code": "1333",
+     "desc": "EXHIBIT 1 - CERTIFICATE OF SALE",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2026",
+     "n": 38,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "05/19/2026",
+     "n": 39,
+     "code": "1284",
+     "desc": "ORDER OF COURT REMOVING DECEASED PR AND APPOINTING SUCCCESSOR PR UPON POSTING BOND",
+     "pages": 1
+    },
+    {
+     "filed": "05/19/2026",
+     "n": 40,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/26/2026",
+     "n": 41,
+     "code": "1284",
+     "desc": "AMENDED ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2026",
+     "n": 42,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2026",
+     "n": 43,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2026",
+     "n": 44,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "05/27/2026",
+     "n": 45,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "06/01/2026",
+     "n": 46,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY OF SUCCESSOR PR",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2026",
+     "n": 47,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR THE EST OF MICHAEL TERRY DATCHER - FILED",
+     "pages": 1
+    },
+    {
+     "filed": "06/16/2026",
+     "n": 48,
+     "code": "1122",
+     "desc": "INVENTORY OF SUCCESSOR PR",
+     "pages": 3
+    },
+    {
+     "filed": "06/16/2026",
+     "n": 49,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/16/2026",
+     "n": 50,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "06/23/2026",
+     "n": 51,
+     "code": "1244",
+     "desc": "RETURNED MAIL- ESTATE OF MICHAEL TERRY DATCHER- RESENT",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2026-06-23",
+   "interested_persons": [
+    {
+     "name": "JOSHUA E ZUKERBERG ESQ",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 134,
+   "probate_age_days": 5009,
+   "days_since_last_docket": 123,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-24",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913605441",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913605441",
+   "title_class": "D2-S",
+   "title_class_label": "Estate open and stale",
+   "decedent_searched": "RUDOLPH C DATCHER"
+  }
+ ]
+}
