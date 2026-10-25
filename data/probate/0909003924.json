@@ -1,0 +1,187 @@
+{
+ "account": "0909003924",
+ "estates": [
+  {
+   "estate_number": "10957",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "10/07/1997",
+   "date_closed": "10/08/1997",
+   "decedent": "LORETTA ADELE COOKSEY",
+   "date_of_death": "8/15/1997",
+   "date_of_filing": "08/28/1997",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "KSEY",
+     "address": "4139 ADELE DRIVE, BRANDYWINE, MD 20613"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/28/1997",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 16 SEPTEMBER 1977 FILED",
+     "pages": 5
+    },
+    {
+     "filed": "08/28/1997",
+     "n": 2,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/07/1997",
+     "n": 3,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "10/07/1997",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/07/1997",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/07/1997",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "10/07/1997",
+     "n": 7,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/08/1997",
+     "n": 8,
+     "code": "1336",
+     "desc": "RECEIPT #",
+     "pages": 2898
+    },
+    {
+     "filed": "10/06/2004",
+     "n": 9,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2004",
+     "n": 10,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2004",
+     "n": 11,
+     "code": "1336",
+     "desc": "RECEIPTS #15080",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2004",
+     "n": 12,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE - 1 REISSUED (GAVE BACK OLD LETTERS)",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2004",
+     "n": 13,
+     "code": "1137",
+     "desc": "SUPPLEMENTAL SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2004",
+     "n": 14,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2004",
+     "n": 15,
+     "code": "1336",
+     "desc": "RECEIPT#15358 ADDITIONAL SE FEE PAID",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2004",
+     "n": 16,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2004",
+     "n": 17,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE-1",
+     "pages": 2
+    },
+    {
+     "filed": "02/14/2011",
+     "n": 18,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "02/16/2011",
+     "n": 19,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2011",
+     "n": 20,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/2011",
+     "n": 21,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2011-02-24",
+   "interested_persons": [],
+   "death_to_probate_days": 53,
+   "probate_age_days": 1,
+   "days_since_last_docket": 5722,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-25",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913612488",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913612488",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "LORETTA A COOKSEY"
+  }
+ ]
+}

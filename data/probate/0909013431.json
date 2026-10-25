@@ -1,0 +1,144 @@
+{
+ "account": "0909013431",
+ "estates": [
+  {
+   "estate_number": "18655",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/21/2013",
+   "date_closed": "05/28/2013",
+   "decedent": "RACHEL MARY CECCHINI",
+   "date_of_death": "5/3/2012",
+   "date_of_filing": "03/21/2013",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "JUDITH H. MULLEN [PO BOX 919, 6295 MCKENDREE ROAD, DUNKIRK, MD 20754]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LOUIS RICHARD CECCHINI JR",
+     "address": "6250 NANA DRIVE, HUGHESVILLE, MD 20637"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/25/2013",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED- 22 AUG",
+     "pages": 2008
+    },
+    {
+     "filed": "03/25/2013",
+     "n": 2,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM JUDITH H MULLEN, ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 3,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 4,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 5,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 7,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 8,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS- NOT NECESSARY",
+     "pages": 2
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 9,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 10,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "04/03/2013",
+     "n": 11,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (COPIES)",
+     "pages": 8
+    },
+    {
+     "filed": "04/17/2013",
+     "n": 12,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR DOCS FOR GNA LIFE INS.",
+     "pages": 1
+    },
+    {
+     "filed": "05/28/2013",
+     "n": 13,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "05/28/2013",
+     "n": 14,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS- DOCUMENTATION FROM GNA LIFE INS/ ATTORNEY",
+     "pages": 44
+    }
+   ],
+   "last_docket_activity": "2013-05-28",
+   "interested_persons": [
+    {
+     "name": "LOUIS RICHARD CECCHINI JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 322,
+   "probate_age_days": 68,
+   "days_since_last_docket": 4898,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-25",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913613712",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913613712",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "RACHEL M CECCHINI"
+  }
+ ]
+}

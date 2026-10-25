@@ -1,0 +1,109 @@
+{
+ "account": "0906187196",
+ "estates": [
+  {
+   "estate_number": "12997",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/11/2002",
+   "date_closed": "03/13/2002",
+   "decedent": "JOHN DAVID GALLACHER",
+   "date_of_death": "2/25/2002",
+   "date_of_filing": "03/11/2002",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ANGELA F. GALLACHER",
+     "address": "6181 HUMPBACK WHALE CT, WALDORF, MD 20603"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/11/2002",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION/SCHEDULE B",
+     "pages": 3
+    },
+    {
+     "filed": "03/11/2002",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/11/2002",
+     "n": 3,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/11/2002",
+     "n": 4,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/11/2002",
+     "n": 5,
+     "code": "1336",
+     "desc": "RECEIPT #10460",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2002",
+     "n": 6,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/13/2002",
+     "n": 7,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2002",
+     "n": 8,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2002",
+     "n": 9,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2002-03-13",
+   "interested_persons": [
+    {
+     "name": "ANGELA F. GALLACHER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 14,
+   "probate_age_days": 2,
+   "days_since_last_docket": 8992,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-25",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913603842",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913603842",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOHN D GALLACHER"
+  }
+ ]
+}

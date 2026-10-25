@@ -1,0 +1,137 @@
+{
+ "account": "0903014428",
+ "estates": [
+  {
+   "estate_number": "15482",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "02/03/2012",
+   "date_closed": "09/18/2012",
+   "decedent": "LOWELL FRANKLIN STUMP JR.",
+   "date_of_death": "8/6/2011",
+   "date_of_filing": "02/03/2012",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LINDA K. STUMP",
+     "address": "40434 WATERVIEW DRIVE, MECHANICSVILLE, MD 20659"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/03/2012",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 9
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 3,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 6,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 7,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "02/08/2012",
+     "n": 8,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 02/01/2012 BY ST. MARY'S HOSPITAL FOR $6,917.50",
+     "pages": 7
+    },
+    {
+     "filed": "02/13/2012",
+     "n": 9,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/2012",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE FILED BY LAURA STUMP AND MELISSA SAMPSON",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/2012",
+     "n": 11,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/2012",
+     "n": 12,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2012",
+     "n": 13,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FILED BY ST. MARY'S HOSPITAL",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-09-18",
+   "interested_persons": [
+    {
+     "name": "LINDA K. STUMP",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 181,
+   "probate_age_days": 228,
+   "days_since_last_docket": 5150,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-25",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1914158517",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1914158517",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "LOWELL F STUMP JR"
+  }
+ ]
+}

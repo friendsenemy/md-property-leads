@@ -1,0 +1,1257 @@
+{
+ "account": "0906131778",
+ "estates": [
+  {
+   "estate_number": "84938",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "06/23/2010",
+   "date_closed": "08/24/2018",
+   "decedent": "JACQUELINE ANN WASHINGTON",
+   "date_of_death": "6/15/2010",
+   "date_of_filing": "06/23/2010",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "YVONNE  MAPILY",
+     "address": "8600 HAMLIN ST, HYATTSVILLE, MD 20785"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/23/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "(COPY) PURPORTED LAST WILL AND TESTAMENT DATED 06/26/1991",
+     "pages": 5
+    },
+    {
+     "filed": "06/23/2010",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 10
+    },
+    {
+     "filed": "06/23/2010",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "06/23/2010",
+     "n": 4,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- INCOMPLETE FILING",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/2010",
+     "n": 5,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 3
+    },
+    {
+     "filed": "09/07/2010",
+     "n": 6,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/29/2010",
+     "n": 7,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- ADDITIONAL REQUIREMENT",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/2010",
+     "n": 8,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED-OP",
+     "pages": 2
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 9,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 10,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 11,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 12,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 13,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 14,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 15,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 16,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 17,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 18,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 19,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 20,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 21,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 22,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 23,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 24,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 25,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 26,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 27,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 28,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)",
+     "pages": 1
+    },
+    {
+     "filed": "12/14/2010",
+     "n": 29,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "12/14/2010",
+     "n": 30,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE REQUEST IS HEREBY DENIED.",
+     "pages": 1
+    },
+    {
+     "filed": "12/21/2010",
+     "n": 31,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "12/28/2010",
+     "n": 32,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 4
+    },
+    {
+     "filed": "12/29/2010",
+     "n": 33,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  THAT ALL INTERESTED PERSONS IN THE ABOVE ESTATE S/C  ON OR BEFORE THE 17TH DAY OF FEBRUARY 2011FOR WHY THE COPY OF THE LAST WILL AND TESTAMENT OF THE DECEDENT DATED 06/26/1991 SHOULD NOT BE ADMITTED TO PROBATE PROVIDED THAT A COPY OF THE SHOW CAUSE ORDER IS SERVED ON ALL INTERESTED PERSONS ON OR BEFORE THE 5TH FEBRUARY 2011  HEARING SCHEDULE",
+     "pages": 1
+    },
+    {
+     "filed": "01/04/2011",
+     "n": 34,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "01/19/2011",
+     "n": 35,
+     "code": "2004",
+     "desc": "CERTIFICATE OF PUBLICATION - NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2011",
+     "n": 36,
+     "code": "1293",
+     "desc": "ANSWER TO SHOW CAUSE",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2011",
+     "n": 37,
+     "code": "1266",
+     "desc": "MEMORANDUM OF THE COURT",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2011",
+     "n": 38,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "02/17/2011",
+     "n": 39,
+     "code": "2002",
+     "desc": "LETTER TO THE COURT",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2011",
+     "n": 40,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2011",
+     "n": 41,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -JUDICIAL PROBATE-CASE CALLED-YVONNE MAPILY APPEARED. COPY OF WILL DATED 6-26-91 ADMITTED TO PROBATE. YVONNE MAPILY APPOINTED P.R., UPON FILING A BOND P.R.-$20,000.00",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2011",
+     "n": 43,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2011",
+     "n": 44,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2011",
+     "n": 45,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/2011",
+     "n": 46,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/21/2011",
+     "n": 47,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/2011",
+     "n": 48,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/2011",
+     "n": 49,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/01/2011",
+     "n": 50,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)-OP",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2011",
+     "n": 51,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2011",
+     "n": 52,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 06/26/1991",
+     "pages": 5
+    },
+    {
+     "filed": "05/23/2011",
+     "n": 53,
+     "code": "1122",
+     "desc": "INVENTORY-NO SIGNATURE",
+     "pages": 9
+    },
+    {
+     "filed": "05/23/2011",
+     "n": 54,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/23/2011",
+     "n": 55,
+     "code": "1249",
+     "desc": "PETITION TO ACCEPT VALUATION IN LIEU OF FORMAL APPRAISAL",
+     "pages": 2
+    },
+    {
+     "filed": "05/26/2011",
+     "n": 56,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "06/13/2011",
+     "n": 57,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/2011",
+     "n": 58,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/2011",
+     "n": 59,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE INVENTORY VALUE OF THE SAID PERSONAL PROPERTY BE $9,481.00",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2011",
+     "n": 60,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "07/12/2011",
+     "n": 61,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 62,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT DATED 6-22-11 FOR THE PETITION TO ACCEPT THE VALUE OF TANGIBLE PERSONAL PROPERTY IS VOID.",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/2011",
+     "n": 63,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE INVENTORYL VALUE OF THE SAID PERSONAL PROPERTY IN THE ABOVE REFERENCED ESTATE BE $9,481.00.",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2011",
+     "n": 64,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "10/24/2011",
+     "n": 65,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "11/22/2011",
+     "n": 66,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 7
+    },
+    {
+     "filed": "12/06/2011",
+     "n": 67,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/15/2012",
+     "n": 68,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCOUNT  HEARING SCHEDULED FOR 06/05/2012",
+     "pages": 1
+    },
+    {
+     "filed": "02/15/2012",
+     "n": 69,
+     "code": "1300",
+     "desc": "REQUEST FOR PAYMENT PLAN",
+     "pages": 1
+    },
+    {
+     "filed": "02/15/2012",
+     "n": 70,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 12
+    },
+    {
+     "filed": "02/15/2012",
+     "n": 71,
+     "code": "1384",
+     "desc": "AMENDED FIRST ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "02/21/2012",
+     "n": 72,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "03/30/2012",
+     "n": 73,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/13/2012",
+     "n": 74,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCOUNT  HEARING SCHEDULED FOR 09/19/2012",
+     "pages": 1
+    },
+    {
+     "filed": "06/14/2012",
+     "n": 75,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "06/29/2012",
+     "n": 76,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 3
+    },
+    {
+     "filed": "06/29/2012",
+     "n": 77,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/17/2012",
+     "n": 78,
+     "code": "1384",
+     "desc": "2ND AMENDED 1ST ACCOUNT",
+     "pages": 23
+    },
+    {
+     "filed": "09/18/2012",
+     "n": 79,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCT  HEARING SCHEDULED FOR 12/12/2012",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 80,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "09/25/2012",
+     "n": 81,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/07/2012",
+     "n": 82,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCOUNT   HEARING SCHEDULED FOR 01/30/2013",
+     "pages": 1
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 83,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "01/28/2013",
+     "n": 84,
+     "code": "1383",
+     "desc": "3RD AMENDED 1ST ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "01/28/2013",
+     "n": 85,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 2
+    },
+    {
+     "filed": "02/01/2013",
+     "n": 86,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 22
+    },
+    {
+     "filed": "02/01/2013",
+     "n": 87,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "03/20/2013",
+     "n": 88,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCOUNT   HEARING SCHEDULED FOR 05/29/2013",
+     "pages": 1
+    },
+    {
+     "filed": "03/21/2013",
+     "n": 89,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "05/22/2013",
+     "n": 90,
+     "code": "1384",
+     "desc": "2ND AMENDED 1ST ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "05/22/2013",
+     "n": 91,
+     "code": "1253",
+     "desc": "PETITION TO  ACCEPT DONATIONS",
+     "pages": 2
+    },
+    {
+     "filed": "05/22/2013",
+     "n": 92,
+     "code": "1245",
+     "desc": "PETITION FOR PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 3
+    },
+    {
+     "filed": "05/28/2013",
+     "n": 93,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE INVENTORY VALUE OF THE SAID PERSONAL PROERTY BE $278.75",
+     "pages": 1
+    },
+    {
+     "filed": "05/28/2013",
+     "n": 94,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING PR'S COMMISSION",
+     "pages": 1
+    },
+    {
+     "filed": "05/28/2013",
+     "n": 95,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "05/28/2013",
+     "n": 96,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 2ND AMENDED 1ST  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/30/2013",
+     "n": 97,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "10/29/2013",
+     "n": 98,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2013",
+     "n": 99,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "12/02/2013",
+     "n": 100,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2013",
+     "n": 101,
+     "code": "1382",
+     "desc": "INVENTORY SUPPLEMENTAL",
+     "pages": 3
+    },
+    {
+     "filed": "01/15/2014",
+     "n": 102,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCOUNT   HEARING SCHEDULED FOR 02/27/2014",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2014",
+     "n": 103,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/25/2014",
+     "n": 104,
+     "code": "1384",
+     "desc": "AMENDED SECOND ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/25/2014",
+     "n": 105,
+     "code": "1249",
+     "desc": "PETITION TO ACCEPT VALUATION IN LIEU OF FORMAL APPRAISAL",
+     "pages": 4
+    },
+    {
+     "filed": "03/05/2014",
+     "n": 106,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "03/05/2014",
+     "n": 107,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE INVENTORY VALUE OF THE SAID PERSONAL PROPERTY BE $5,932.00",
+     "pages": 1
+    },
+    {
+     "filed": "03/05/2014",
+     "n": 108,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 2ND  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/10/2014",
+     "n": 109,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "08/06/2014",
+     "n": 110,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2014",
+     "n": 111,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "09/08/2014",
+     "n": 112,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2014",
+     "n": 113,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "10/15/2014",
+     "n": 114,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/10/2014",
+     "n": 115,
+     "code": "1384",
+     "desc": "AMENDED THIRD ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 116,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 117,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AMENDED 3RD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/18/2014",
+     "n": 118,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "05/18/2015",
+     "n": 119,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "07/28/2015",
+     "n": 120,
+     "code": "1383",
+     "desc": "FOURTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "07/28/2015",
+     "n": 121,
+     "code": "1249",
+     "desc": "PETITION TO ACCEPT THE VALUE FOR THE DONATED TANGIBLE PERSONAL PROPERTY IN LIEU OF FORMAL APPRAISAL",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2015",
+     "n": 122,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2015",
+     "n": 123,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE INVENTORY VALUE OF THE SAID PERSONAL PROPERTY BE $0.00",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2015",
+     "n": 124,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 4TH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2015",
+     "n": 125,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "01/06/2016",
+     "n": 126,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2016",
+     "n": 127,
+     "code": "1383",
+     "desc": "FIFTH  ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/10/2016",
+     "n": 128,
+     "code": "1249",
+     "desc": "PETITION TO ACCEPT VALUATION IN LIEU OF FORMAL APPRAISAL",
+     "pages": 2
+    },
+    {
+     "filed": "02/11/2016",
+     "n": 129,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2016",
+     "n": 130,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE PR'S ARE HEREBY  AUTHORIZED TO DONATE THE PERSONAL PROPERTY AS LISTED IN  THE PETITION",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2016",
+     "n": 131,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 5TH  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2016",
+     "n": 132,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 133,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2016",
+     "n": 134,
+     "code": "1383",
+     "desc": "6TH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/16/2016",
+     "n": 135,
+     "code": "1253",
+     "desc": "PETITION TO ALLOW DONATION",
+     "pages": 2
+    },
+    {
+     "filed": "08/16/2016",
+     "n": 136,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2016",
+     "n": 137,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2016",
+     "n": 138,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SIXTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2016",
+     "n": 139,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR STATUS OF THE SALE OF THE ASSETS  HEARING SCHEDULED FOR 10/18/16",
+     "pages": 1
+    },
+    {
+     "filed": "08/24/2016",
+     "n": 140,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "10/11/2016",
+     "n": 141,
+     "code": "1286",
+     "desc": "RESPONSE TO SHOW CAUSE AND REQUEST TO SELL PROPERTY UNDER VALUE",
+     "pages": 2
+    },
+    {
+     "filed": "10/18/2016",
+     "n": 142,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE/STATUS OF SALE OF ASSETS- PR TO SEEK COUNSEL; MATTER CONT TO 11/15/16",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2016",
+     "n": 143,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2016",
+     "n": 144,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 11/15/16",
+     "pages": 2
+    },
+    {
+     "filed": "11/15/2016",
+     "n": 145,
+     "code": "1253",
+     "desc": "PETITION TO ALLOW DONATION IN LIEU OF SALE",
+     "pages": 2
+    },
+    {
+     "filed": "11/15/2016",
+     "n": 146,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 2
+    },
+    {
+     "filed": "11/15/2016",
+     "n": 147,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE/STATUS OF SALE OF ASSETS- PR TO SIT WITH AUDITOR; SHOW CAUSE-SATISFIED",
+     "pages": 1
+    },
+    {
+     "filed": "01/24/2017",
+     "n": 148,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/2017",
+     "n": 149,
+     "code": "1300",
+     "desc": "REQUEST FOR EXTENSION",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2017",
+     "n": 150,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT  HEARING SCHEDULED FOR MAY 31,",
+     "pages": 2017
+    },
+    {
+     "filed": "04/17/2017",
+     "n": 151,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/25/2017",
+     "n": 152,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2017",
+     "n": 153,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2017",
+     "n": 154,
+     "code": "1261",
+     "desc": "VOIDED ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT  HEARING SCHEDULED FOR MAY 31,",
+     "pages": 2017
+    },
+    {
+     "filed": "05/02/2017",
+     "n": 155,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "05/08/2017",
+     "n": 156,
+     "code": "1300",
+     "desc": "REQUEST FOR EXTENSION TO FILE ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "05/18/2017",
+     "n": 157,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "05/25/2017",
+     "n": 158,
+     "code": "1233",
+     "desc": "COURT'S APPROVAL OF EXTENSION OF TIME TO JUNE 26, 2017 FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/31/2017",
+     "n": 159,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "06/28/2017",
+     "n": 160,
+     "code": "1383",
+     "desc": "SEVENTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "06/30/2017",
+     "n": 161,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2017",
+     "n": 162,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ADDITIONAL REQUIREMENTS  HEARING SCHEDULED FOR NOVEMBER 29,",
+     "pages": 2017
+    },
+    {
+     "filed": "10/12/2017",
+     "n": 163,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "10/24/2017",
+     "n": 164,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 2
+    },
+    {
+     "filed": "12/14/2017",
+     "n": 165,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "12/14/2017",
+     "n": 166,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 7TH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/29/2017",
+     "n": 167,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "05/15/2018",
+     "n": 168,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2018",
+     "n": 169,
+     "code": "1385",
+     "desc": "7TH AND FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "06/29/2018",
+     "n": 170,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2018",
+     "n": 171,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/21/2018",
+     "n": 172,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "08/24/2018",
+     "n": 173,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING AMENDED SEVENTH AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/27/2018",
+     "n": 174,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2018-08-27",
+   "interested_persons": [
+    {
+     "name": "YVONNE MAPILY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 8,
+   "probate_age_days": 2984,
+   "days_since_last_docket": 2981,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-25",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1914138266",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1914138266",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JACQUELINE A WASHINGTON"
+  }
+ ]
+}

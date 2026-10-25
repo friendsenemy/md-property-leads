@@ -1,0 +1,42 @@
+{
+ "account": "0908002878",
+ "estates": [
+  {
+   "estate_number": "10020",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/10/1995",
+   "date_closed": "",
+   "decedent": "BRENDA CECILIA LEVENDUSKY",
+   "date_of_death": "3/3/1995",
+   "date_of_filing": "03/10/1995",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "11/10/2005",
+     "n": 1,
+     "code": "1210",
+     "desc": "DOCKET SHEET",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2005-11-10",
+   "interested_persons": [],
+   "death_to_probate_days": 7,
+   "probate_age_days": 11552,
+   "days_since_last_docket": 7654,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-25",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913595057",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913595057",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "BRENDA C LEVENDUSKY"
+  }
+ ]
+}
