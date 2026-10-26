@@ -328,6 +328,17 @@
    "title_class": "UNKNOWN",
    "title_class_label": "Estate status 'ARCHIVED'",
    "decedent_searched": "JUDITH H REPASS"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "CHARLES G REPASS JR",
+   "decedent_searched": "CHARLES G REPASS JR",
+   "date_of_death": "2013-09-14",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-26",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
   }
  ]
 }

@@ -11,6 +11,17 @@
    "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
    "imported_at": "2026-10-15",
    "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "ISRAEL C SWAREY",
+   "decedent_searched": "ISRAEL C SWAREY",
+   "date_of_death": "2000-10-19",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-26",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
   }
  ]
 }

@@ -1,0 +1,449 @@
+{
+ "account": "0904019865",
+ "estates": [
+  {
+   "estate_number": "12046",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/10/2000",
+   "date_closed": "01/16/2003",
+   "decedent": "EVELYN Y BOWLING",
+   "date_of_death": "2/1/2000",
+   "date_of_filing": "02/28/2000",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "CHARLES A. BONGAR JR. [11705 BERRY ROAD, SUITE 202, WALDORF, MD 20603]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "VICTOR B BOWLING JR",
+     "address": "P O BOX 151, LA PLATA, MD 20646"
+    },
+    {
+     "name": "ANN B DAVIS",
+     "address": "P O BOX 3, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/28/2000",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/28/2000",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/28/2000",
+     "n": 3,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE PATRICIA ALBRITTIAN",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2000",
+     "n": 4,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE SAMUEL Y BOWLING",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2000",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2000",
+     "n": 6,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED COVER LETTER FROM ATTY CHARLES BONGAR, JR",
+     "pages": 1
+    },
+    {
+     "filed": "03/10/2000",
+     "n": 7,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/10/2000",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/10/2000",
+     "n": 9,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION - NO. OF LETTERS ISSUED",
+     "pages": 6
+    },
+    {
+     "filed": "03/13/2000",
+     "n": 10,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS PATRICIA ALBRITTIAN",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2000",
+     "n": 11,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS SAMUEL BOWLING",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2000",
+     "n": 12,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL PATRICIA ALBRITTIAN",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2000",
+     "n": 13,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL SAMUEL BOWLING",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2000",
+     "n": 14,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2000",
+     "n": 15,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2000",
+     "n": 16,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/12/2000",
+     "n": 17,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM CHARLES BONGAR ATTY",
+     "pages": 2
+    },
+    {
+     "filed": "06/07/2000",
+     "n": 18,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/07/2000",
+     "n": 19,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 16
+    },
+    {
+     "filed": "07/25/2000",
+     "n": 20,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION  (5)  NO. OF LETTERS ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2000",
+     "n": 21,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM CHARLES A. BUNGAR, JR., ATTY.  CHECK RETURNED/LETTERS INCLUDED IN  PROBATE FEE",
+     "pages": 2
+    },
+    {
+     "filed": "10/23/2000",
+     "n": 22,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE/FILED BY: STATE OF MARYLAND, COMPTROLLER OF THE TREASURY",
+     "pages": 2
+    },
+    {
+     "filed": "10/26/2000",
+     "n": 23,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION - NO. OF LETTERS ISSUED",
+     "pages": 6
+    },
+    {
+     "filed": "11/06/2000",
+     "n": 24,
+     "code": "1231",
+     "desc": "MOTION FOR EXTENSION OF TIME FOR FILING FIRST ADMINISTRATIVE ACCOUNT FILED/ ORDER APPROVED 11/9/2000 - EXTENSION GRANTED UNTIL FEBRUARY 9,",
+     "pages": 2001
+    },
+    {
+     "filed": "11/09/2000",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/08/2001",
+     "n": 26,
+     "code": "1383",
+     "desc": "FIRST ADMINISTRATION ACCOUNT FILED/ APP 3/01/01",
+     "pages": 4
+    },
+    {
+     "filed": "02/08/2001",
+     "n": 27,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED - COVER LETTER",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2001",
+     "n": 28,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW - REQUESTING FEES FOR THE FIRST ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2001",
+     "n": 29,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED - COVER LETTER WITH CHECK",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2001",
+     "n": 30,
+     "code": "1336",
+     "desc": "RECEIPTS - # 8765 - PROBATE FEE, CERTIFIED MAIL, & ADDITIONAL LETTERS",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2001",
+     "n": 31,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2001",
+     "n": 32,
+     "code": "1383",
+     "desc": "AUDIT COPY SECOND ACCOUNT FILED - NEEDS CORRECTIONS",
+     "pages": 3
+    },
+    {
+     "filed": "10/22/2001",
+     "n": 33,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/22/2001",
+     "n": 34,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT FILED/ APPROVED 10/25/01",
+     "pages": 4
+    },
+    {
+     "filed": "10/22/2001",
+     "n": 35,
+     "code": "1130",
+     "desc": "PETITION AND ORDER FOR FUNERAL EXPENSES FILED/ APPROVED 10/25/01",
+     "pages": 4
+    },
+    {
+     "filed": "10/25/2001",
+     "n": 36,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/07/2002",
+     "n": 37,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT FILED/ APPROVED 5/14/02",
+     "pages": 5
+    },
+    {
+     "filed": "05/14/2002",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2002",
+     "n": 39,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY) RETURNED MAIL FOR PATRICIA ALBRITTIAN",
+     "pages": 1
+    },
+    {
+     "filed": "10/15/2002",
+     "n": 40,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR  FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/06/2002",
+     "n": 41,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO COMPLETE FOURTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "11/12/2002",
+     "n": 42,
+     "code": "1233",
+     "desc": "COURT'S APPROVAL OF EXTENSION OF TIME TO DECEMBER 12,2002   FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2002",
+     "n": 43,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2002",
+     "n": 44,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY) - UNCLAIMED MAIL FROM PATRICIA ALBRITTIAN",
+     "pages": 1
+    },
+    {
+     "filed": "12/12/2002",
+     "n": 45,
+     "code": "1122",
+     "desc": "AMENDED INVENTORY",
+     "pages": 16
+    },
+    {
+     "filed": "12/12/2002",
+     "n": 46,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE FILED/",
+     "pages": 3
+    },
+    {
+     "filed": "12/12/2002",
+     "n": 47,
+     "code": "1385",
+     "desc": "FOURTH AND FINAL ACCOUNT FILED/CORRECTIONS NEEDED",
+     "pages": 7
+    },
+    {
+     "filed": "12/26/2002",
+     "n": 48,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FILED BY THE COMPTROLLER OF MD",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2002",
+     "n": 49,
+     "code": "1385",
+     "desc": "FOURTH AND FINAL ACCOUNT REFILED/",
+     "pages": 4
+    },
+    {
+     "filed": "01/06/2002",
+     "n": 50,
+     "code": "1336",
+     "desc": "RECEIPTS",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2003",
+     "n": 51,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED 01/03/03)",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2003",
+     "n": 52,
+     "code": "1284",
+     "desc": "ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2003",
+     "n": 53,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/22/2003",
+     "n": 54,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY) - RETURNED MAIL FROM PATRICIA B. ALBRITTIAN",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2003-01-22",
+   "interested_persons": [
+    {
+     "name": "VICTOR B BOWLING JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "ANN B DAVIS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "CHARLES BONGAR ATTY",
+     "role": "CORRESPONDENT",
+     "source": "docket 17"
+    }
+   ],
+   "death_to_probate_days": 38,
+   "probate_age_days": 1042,
+   "days_since_last_docket": 8678,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-26",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1913607120",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1913607120",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "EVELYN MARIE BOWLING"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "JAMES A BOWLING",
+   "decedent_searched": "JAMES A BOWLING",
+   "date_of_death": "2012-06-15",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-26",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}

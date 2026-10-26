@@ -1,0 +1,27 @@
+{
+ "account": "0906086756",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "JERRY R MOORE",
+   "decedent_searched": "JERRY R MOORE",
+   "date_of_death": "2011-12-09",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-26",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "LINDA L MOORE",
+   "decedent_searched": "LINDA L MOORE",
+   "date_of_death": "2013-06-07",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-10-26",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}
