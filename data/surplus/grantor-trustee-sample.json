@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-24T14:33:02+00:00",
- "window_from": "2026.01.27",
- "recent_transfers": 39822,
+ "generated_at": "2026-10-26T17:23:44+00:00",
+ "window_from": "2026.01.29",
+ "recent_transfers": 39697,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -9,7 +9,7 @@
   ],
   [
    "FEDERAL NATIONAL MORTGAGE",
-   23
+   22
   ],
   [
    "U.S. BANK TRUST NATIONAL",
@@ -213,10 +213,6 @@
   ],
   [
    "ROSEBANK TRAILER PARK LLC",
-   4
-  ],
-  [
-   "POWELL R THOMAS TR",
    4
   ],
   [
@@ -601,6 +597,10 @@
   ],
   [
    "WEISSINGER THOMAS R II TRUSTEE",
+   2
+  ],
+  [
+   "WAMPLER JOHN C TR",
    2
   ]
  ]

@@ -1,10 +1,10 @@
 {
- "window_from": "2026.01.27",
- "kept": 3718,
+ "window_from": "2026.01.29",
+ "kept": 3705,
  "skipped": {
-  "family": 332,
-  "entity_grantor": 1343,
-  "not_res": 469
+  "family": 329,
+  "entity_grantor": 1335,
+  "not_res": 468
  },
  "method": "how_conveyed = (4) + price >= 40k + person grantor + different surname"
 }
