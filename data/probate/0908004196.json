@@ -1,0 +1,319 @@
+{
+ "account": "0908004196",
+ "estates": [
+  {
+   "estate_number": "14044",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "05/03/2004",
+   "date_closed": "02/21/2006",
+   "decedent": "WILLIAM THOMAS CASEY",
+   "date_of_death": "4/25/2004",
+   "date_of_filing": "05/03/2004",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "EDWARD W. OLMSTED [P.O. BOX 1966, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "NANCY  SNYDER",
+     "address": "11411 WOODSHIRE COURT, FORT WAYNE, IN 46845"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/03/2004",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 2,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 4,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 5,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 6,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE-KENNETH SEAN CASEY",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 7,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE-WILLIAM T. CASEY, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 8,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE--BRIAN MATTHEW CASEY",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE-BRIAN MATTHEW CASEY",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 11,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE-WILLIAM T. CASEY, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 12,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE-KENNETH SEAN CASEY",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 13,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 14,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 15,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION-5",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 16,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2004",
+     "n": 17,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2004",
+     "n": 18,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/02/2004",
+     "n": 19,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "08/13/2004",
+     "n": 20,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/13/2004",
+     "n": 21,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 12
+    },
+    {
+     "filed": "12/29/2004",
+     "n": 22,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR  FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/09/2005",
+     "n": 23,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE FIRST ACCOUNT HEARING SCHEDULED FOR 1 MAR @ 1:30",
+     "pages": 1
+    },
+    {
+     "filed": "02/09/2005",
+     "n": 24,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2005",
+     "n": 25,
+     "code": "1383",
+     "desc": "FIRST ADMINISTRATION ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "02/18/2005",
+     "n": 26,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "02/23/2005",
+     "n": 27,
+     "code": "1336",
+     "desc": "RECEIPTS - # 15798 - PROBATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2005",
+     "n": 28,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2005",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2005",
+     "n": 30,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2005",
+     "n": 31,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "08/30/2005",
+     "n": 32,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/30/2005",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/27/2006",
+     "n": 34,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2006",
+     "n": 35,
+     "code": "1385",
+     "desc": "THIRD AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "02/06/2006",
+     "n": 36,
+     "code": "1245",
+     "desc": "PETITION AND ORDER FOR ATTORNEY'S FEES",
+     "pages": 3
+    },
+    {
+     "filed": "02/21/2006",
+     "n": 37,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING ATTORNEY'S FEES",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2006",
+     "n": 38,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED FEBRUARY 6, 2006)",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2006",
+     "n": 39,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2006-02-21",
+   "interested_persons": [
+    {
+     "name": "NANCY SNYDER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 8,
+   "probate_age_days": 659,
+   "days_since_last_docket": 7553,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-27",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1914498013",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1914498013",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WILLIAM T CASEY"
+  }
+ ]
+}

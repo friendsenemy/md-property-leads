@@ -1,0 +1,179 @@
+{
+ "account": "0906218628",
+ "estates": [
+  {
+   "estate_number": "17768",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "08/18/2011",
+   "date_closed": "04/10/2012",
+   "decedent": "GLADYS MAE LLOYD",
+   "date_of_death": "5/29/2011",
+   "date_of_filing": "08/18/2011",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "PATRICE LLOYD OLIVER",
+     "address": "8503 ADVENTURE COURT, WALKERSVILLE, MD 21793"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/18/2011",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 3,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE -",
+     "pages": 2
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 4,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 2
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 7,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "08/18/2011",
+     "n": 10,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "10/03/2011",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2011",
+     "n": 12,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "11/07/2011",
+     "n": 13,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "03/01/2012",
+     "n": 14,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2012",
+     "n": 15,
+     "code": "1244",
+     "desc": "FIRST ADMINISTRATION ACCOUNT INCORRRECT",
+     "pages": 9
+    },
+    {
+     "filed": "03/01/2012",
+     "n": 16,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 3
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 17,
+     "code": "1385",
+     "desc": "CORRECTED FIRST AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 8
+    },
+    {
+     "filed": "04/10/2012",
+     "n": 18,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING CORRECTED FIRST AND FINAL",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2012",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-04-10",
+   "interested_persons": [
+    {
+     "name": "PATRICE LLOYD OLIVER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 81,
+   "probate_age_days": 236,
+   "days_since_last_docket": 5313,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-27",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1914511097",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1914511097",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GLADYS M LLOYD"
+  }
+ ]
+}

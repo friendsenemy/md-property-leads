@@ -1,0 +1,144 @@
+{
+ "account": "0908027676",
+ "estates": [
+  {
+   "estate_number": "13122",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "01/02/2007",
+   "date_closed": "06/26/2007",
+   "decedent": "ANNE MAE THOMAS",
+   "date_of_death": "12/16/2006",
+   "date_of_filing": "01/02/2007",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CHARLES S. BUTLER",
+     "address": "PO BOX 3932, CAPITOL HEIGHTS, MD 20791"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/02/2007",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION - PETITION FOR JUDICIAL PROBATE",
+     "pages": 7
+    },
+    {
+     "filed": "01/02/2007",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/02/2007",
+     "n": 3,
+     "code": "1336",
+     "desc": "RECEIPTS #19963",
+     "pages": 1
+    },
+    {
+     "filed": "01/02/2007",
+     "n": 4,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/02/2007",
+     "n": 5,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS FOR NOTICE OF JUDICIAL PROBATE",
+     "pages": 4
+    },
+    {
+     "filed": "01/02/2007",
+     "n": 6,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW TO ENTERPRISE NEWSPAPER",
+     "pages": 4
+    },
+    {
+     "filed": "01/02/2007",
+     "n": 7,
+     "code": "1244",
+     "desc": "ONLINE OBITUARY",
+     "pages": 1
+    },
+    {
+     "filed": "01/18/2007",
+     "n": 8,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2007",
+     "n": 9,
+     "code": "1401",
+     "desc": "JUDICIAL SMALL ESTATE ORDER DATED FEBRUARY 13, 2007 APPOINTING CHARLES S. BUTLER AS PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2007",
+     "n": 10,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS FOR JUDICIAL PROBATE ORDER DATED FEBRUARY 13, 2007 APPOINTING CHARLES BUTLER AS PR",
+     "pages": 1
+    },
+    {
+     "filed": "02/14/2007",
+     "n": 11,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/14/2007",
+     "n": 12,
+     "code": "1244",
+     "desc": "HEARING SHEET FOR HEARING HELD FEBRUARY 13, 2007 RE: PETITION FOR JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2007",
+     "n": 13,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "05/14/2007",
+     "n": 14,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2007-05-14",
+   "interested_persons": [
+    {
+     "name": "CHARLES S. BUTLER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 17,
+   "probate_age_days": 175,
+   "days_since_last_docket": 7106,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-27",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1915057913",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1915057913",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ANNE M THOMAS"
+  }
+ ]
+}
