@@ -1,0 +1,56 @@
+{
+ "account": "1113302391",
+ "estates": [
+  {
+   "estate_number": "17338",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "11/18/2010",
+   "date_closed": "11/18/2010",
+   "decedent": "KAREN LINDA WOOD",
+   "date_of_death": "10/5/2010",
+   "date_of_filing": "11/18/2010",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "11/18/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 08/10/1983",
+     "pages": 3
+    },
+    {
+     "filed": "11/18/2010",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 06/30/2008",
+     "pages": 3
+    },
+    {
+     "filed": "11/18/2010",
+     "n": 3,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2010-11-18",
+   "interested_persons": [],
+   "death_to_probate_days": 44,
+   "probate_age_days": 0,
+   "days_since_last_docket": 5823,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-28",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1915043273",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1915043273",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "KAREN L WOOD"
+  }
+ ]
+}

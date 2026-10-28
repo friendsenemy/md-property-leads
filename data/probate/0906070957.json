@@ -1,0 +1,88 @@
+{
+ "account": "0906070957",
+ "estates": [
+  {
+   "estate_number": "17695",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "07/01/2011",
+   "date_closed": "07/01/2011",
+   "decedent": "GRACE ANNE SUTHERLAND",
+   "date_of_death": "11/26/2010",
+   "date_of_filing": "07/01/2011",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "EDDIE J SUTHERLAND",
+     "address": "1006 DARTMOUTH RD, WALDORF, MD 20602"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/01/2011",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "07/01/2011",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/01/2011",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/01/2011",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/01/2011",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/01/2011",
+     "n": 6,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2011-07-01",
+   "interested_persons": [
+    {
+     "name": "EDDIE J SUTHERLAND",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 217,
+   "probate_age_days": 0,
+   "days_since_last_docket": 5598,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-28",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1915053346",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1915053346",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GRACE A SUTHERLAND"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "account": "0906043054",
+ "estates": [
+  {
+   "estate_number": "21154",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/30/2017",
+   "date_closed": "03/30/2017",
+   "decedent": "BOYD ARNOLD SHAFFER",
+   "date_of_death": "11/15/2014",
+   "date_of_filing": "03/30/2017",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "NORMA JEAN SHAFFER",
+     "address": "3615 ELSA AVE, WALDORF, MD 20603"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/30/2017",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JUNE 26,",
+     "pages": 1994
+    },
+    {
+     "filed": "03/30/2017",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "03/30/2017",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "03/30/2017",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2017",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/30/2017",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2017-03-30",
+   "interested_persons": [
+    {
+     "name": "NORMA JEAN SHAFFER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 866,
+   "probate_age_days": 0,
+   "days_since_last_docket": 3499,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-28",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1915030736",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1915030736",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "BOYD A SHAFFER"
+  }
+ ]
+}
