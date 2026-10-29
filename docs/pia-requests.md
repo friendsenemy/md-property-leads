@@ -49,6 +49,9 @@ Both letters below are ready to send as-is. Fill in nothing but the date.
 
 ## 2. Charles County — code case violation descriptions
 
+**Status (Oct 20, 2026): answered.** PIA #7178 — the County confirmed the violation code/section is not an exportable field in EnerGov; the free-form Code Case Description field needs per-case redaction review. Ray narrowed to open building-code/nuisance cases; the County sent `PIA 7178_Violation List.pdf` (1,434 open cases, descriptions on the 25 newest). Parsed into `data/distress/pia/charles-code-descriptions-2026-10-20.csv`; the tool shows them as **CITED:** text on the case. Contact: Lacey Levy, Administrative Coordinator, PGM, 240-776-6702, levyl@charlescountymd.gov. For more descriptions, ask for the next batch of ~25 open Building Code cases (each batch fits the free two hours).
+
+
 The Civic Access portal shows every code case's number, type, status, address and parcel, but
 the "Violations" tab is restricted to contacts on the record. The violation text (what the
 inspector actually cited) is a public record in the County's possession and can be requested.

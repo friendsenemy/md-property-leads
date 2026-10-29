@@ -205,6 +205,23 @@ def _count(cases, key):
     return dict(sorted(out.items(), key=lambda kv: -kv[1]))
 
 
+PIA_DIR = os.path.join(OUT_DIR, "pia")
+
+
+def pia_descriptions():
+    """case_number -> description text released by the County under a PIA request
+    (data/distress/pia/charles-code-descriptions-<date>.csv). Newest file wins."""
+    import csv
+    import glob
+    out = {}
+    for path in sorted(glob.glob(os.path.join(PIA_DIR, "charles-code-descriptions-*.csv"))):
+        with open(path, encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("case_number") and r.get("description"):
+                    out[r["case_number"].strip()] = {"text": r["description"].strip(), "source": r.get("source") or os.path.basename(path)}
+    return out
+
+
 def signals(data=None):
     """Turn the stored cases into distress_watch signal dicts (one per open
     case, plus a REPEAT_CODE_CASES signal for parcels with 3+ cases since 2020)."""
@@ -218,6 +235,7 @@ def signals(data=None):
             per_parcel.setdefault(key, []).append(c)
     kind_for = {"Building Code Violation": "CODE_VIOLATIONS", "Nuisance": "NUISANCE_CASE",
                 "Zoning": "ZONING_CASE", "Infrastructure Violation": "CODE_VIOLATIONS"}
+    pia = pia_descriptions()
     for c in cases.values():
         if not is_open(c.get("status")):
             continue
@@ -231,6 +249,7 @@ def signals(data=None):
             "city": c.get("city"), "zip": c.get("zip"), "ref": c.get("parcel"),
             "detail": f"{c.get('case_number')} · {c.get('type')} · {c.get('status')}"
                       + (" · ESCALATED" if esc else "")
+                      + (f" · CITED: {pia[c['case_number']]['text'][:300]} [{pia[c['case_number']]['source']}]" if c.get("case_number") in pia else "")
                       + (f" · {len(per_parcel.get(c.get('parcel') or c.get('address'), []))} cases at this parcel since 2020"
                          if len(per_parcel.get(c.get("parcel") or c.get("address"), [])) > 1 else ""),
             "residential": True, "escalated": esc,
