@@ -1,0 +1,200 @@
+{
+ "account": "0905040728",
+ "estates": [
+  {
+   "estate_number": "13470",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/04/2003",
+   "date_closed": "06/03/2014",
+   "decedent": "THOMAS LEONARD HIGDON SR.",
+   "date_of_death": "4/17/2002",
+   "date_of_filing": "03/04/2003",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "SHELLEY R. CULHANE [PO BOX 610, LA PLATA, MD 20646-0610]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "THOMAS L HIGDON JR",
+     "address": "P.O. BOX 415, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/04/2003",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOVEMBE 11, 1994 FILED FOR RECORD ONLY - NOT PROBATED",
+     "pages": 15
+    },
+    {
+     "filed": "03/04/2003",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 3,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 4,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 7,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 9,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE-1",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 10,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2008",
+     "n": 11,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2008",
+     "n": 12,
+     "code": "1244",
+     "desc": "ACKNOWLEDGEMENT",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2008",
+     "n": 13,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - THOMAS HIGDON JR",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2008",
+     "n": 14,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - GERALD N. HIGDON",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2008",
+     "n": 15,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - THOMAS L. HIGDON JR - TRUSTEE",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2008",
+     "n": 16,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - JOSEPH HIGDON",
+     "pages": 1
+    },
+    {
+     "filed": "07/07/2008",
+     "n": 17,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/20/2014",
+     "n": 18,
+     "code": "1253",
+     "desc": "PETITION FOR APPOINTMENT OF PR",
+     "pages": 3
+    },
+    {
+     "filed": "05/30/2014",
+     "n": 19,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 20,
+     "code": "1284",
+     "desc": "ORDER OF COURT REAPPOINTING THOMAS L. HIGDON, JR., IS REAPPOINTED AS PR",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2014",
+     "n": 22,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2014-06-04",
+   "interested_persons": [
+    {
+     "name": "THOMAS L HIGDON JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 321,
+   "probate_age_days": 4109,
+   "days_since_last_docket": 4530,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-29",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1915972183",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1915972183",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "THOMAS L HIGDON JR"
+  }
+ ]
+}
