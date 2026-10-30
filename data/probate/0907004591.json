@@ -1,0 +1,95 @@
+{
+ "account": "0907004591",
+ "estates": [
+  {
+   "estate_number": "19778",
+   "status": "ARCHIVED",
+   "type": "SE",
+   "date_opened": "02/04/2015",
+   "date_closed": "02/05/2015",
+   "decedent": "WILLIAM AUGUSTUS SAVOY JR",
+   "date_of_death": "7/11/2013",
+   "date_of_filing": "02/04/2015",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MERVIN A SAVOY",
+     "address": "121 JENKINS DR, INDIAN HEAD, MD 20640"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/05/2015",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "02/05/2015",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2015",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 4
+    },
+    {
+     "filed": "02/05/2015",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2015",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/08/2015",
+     "n": 6,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "09/18/2025",
+     "n": 7,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-09-18",
+   "interested_persons": [
+    {
+     "name": "MERVIN A SAVOY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 573,
+   "probate_age_days": 1,
+   "days_since_last_docket": 407,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-30",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1916526931",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1916526931",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "WILLIAM A SAVOY JR"
+  }
+ ]
+}

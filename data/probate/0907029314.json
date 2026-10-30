@@ -1,0 +1,95 @@
+{
+ "account": "0907029314",
+ "estates": [
+  {
+   "estate_number": "58460",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/28/2005",
+   "date_closed": "12/28/2005",
+   "decedent": "LILLIAN PEARL ROWE",
+   "date_of_death": "9/28/2004",
+   "date_of_filing": "11/28/2005",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "BONNIE A WINDERS ESQ [12074 KEMPS MILL RD, WILLIAMSPORT, MD 21795-3142]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "VICKIE  LOOKABAUGH",
+     "address": "636 NORTH MULBERRY STREET, HAGERSTOWN, MD 21740"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/28/2005",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "11/28/2005",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)  #33205",
+     "pages": 3
+    },
+    {
+     "filed": "11/28/2005",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/28/2005",
+     "n": 4,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "11/28/2005",
+     "n": 5,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE (7)",
+     "pages": 7
+    },
+    {
+     "filed": "11/28/2005",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2005",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2005-12-27",
+   "interested_persons": [
+    {
+     "name": "VICKIE LOOKABAUGH",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 426,
+   "probate_age_days": 30,
+   "days_since_last_docket": 7612,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-30",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917143623",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917143623",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "LILLIAN P ROWE"
+  }
+ ]
+}

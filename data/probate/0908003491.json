@@ -1,0 +1,123 @@
+{
+ "account": "0908003491",
+ "estates": [
+  {
+   "estate_number": "18426",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/09/2012",
+   "date_closed": "11/09/2012",
+   "decedent": "WILLIAM GORDON MCCANN",
+   "date_of_death": "10/28/2012",
+   "date_of_filing": "11/09/2012",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JENNIFER LYNN WEBB",
+     "address": "1215 7TH PL, HERNOSA BEACH, CA 98254"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/09/2012",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 26 MAY",
+     "pages": 2012
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 2,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 3,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 4,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 5,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 7,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/09/2012",
+     "n": 9,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2012",
+     "n": 10,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2012",
+     "n": 11,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-11-13",
+   "interested_persons": [
+    {
+     "name": "JENNIFER LYNN WEBB",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 12,
+   "probate_age_days": 0,
+   "days_since_last_docket": 5099,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-30",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1916518667",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1916518667",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WILLIAM G MCCANN"
+  }
+ ]
+}

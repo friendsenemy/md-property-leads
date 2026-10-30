@@ -1,0 +1,42 @@
+{
+ "account": "0901033794",
+ "estates": [
+  {
+   "estate_number": "39498",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "10/19/1994",
+   "date_closed": "06/20/1995",
+   "decedent": "MARY C VANCE",
+   "date_of_death": "2/23/1994",
+   "date_of_filing": "10/19/1994",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "10/19/1994",
+     "n": 1,
+     "code": "1244",
+     "desc": "ESTATE PAPERS FILED",
+     "pages": 39
+    }
+   ],
+   "last_docket_activity": "1994-10-19",
+   "interested_persons": [],
+   "death_to_probate_days": 238,
+   "probate_age_days": 244,
+   "days_since_last_docket": 11699,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-30",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917184129",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917184129",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARY C VANCE"
+  }
+ ]
+}

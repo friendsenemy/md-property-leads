@@ -139,6 +139,763 @@
    "title_class": "D3",
    "title_class_label": "Estate closed — property still titled to decedent",
    "decedent_searched": "KAY M MCPHERSON"
+  },
+  {
+   "estate_number": "20121",
+   "status": "ARCHIVED",
+   "type": "RE",
+   "date_opened": "08/17/2015",
+   "date_closed": "05/24/2022",
+   "decedent": "CECIL ELMER MCPHERSON",
+   "date_of_death": "6/3/2014",
+   "date_of_filing": "08/17/2015",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CECIL ELMER MCPHERSON JR",
+     "address": "101 CHARLES PLACE, INDIAN HEAD, MD 20640"
+    },
+    {
+     "name": "VALARIE A PRUE",
+     "address": "7801 WILSON WAY, FORT WASHINGTON, MD 20744"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/17/2015",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED FEBRUARY 25,",
+     "pages": 1987
+    },
+    {
+     "filed": "08/17/2015",
+     "n": 2,
+     "code": "1428",
+     "desc": "PROOF OF CUSTODY OF PURPORTED WILL AND/OR CODICIL",
+     "pages": 1
+    },
+    {
+     "filed": "08/17/2015",
+     "n": 3,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 4,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 5,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 6,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 7,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 8,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 9,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE (5)",
+     "pages": 5
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 11,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 12,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 14,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2015",
+     "n": 15,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2015",
+     "n": 16,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "12/30/2015",
+     "n": 17,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE INVENTORY HEARING SCHEDULED FOR 26 JANUARY 2016 @ 2:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "12/30/2015",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2016",
+     "n": 19,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 14
+    },
+    {
+     "filed": "02/19/2016",
+     "n": 20,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "03/14/2016",
+     "n": 21,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "04/21/2016",
+     "n": 22,
+     "code": "1122",
+     "desc": "AMENDED INVENTORY",
+     "pages": 17
+    },
+    {
+     "filed": "05/16/2016",
+     "n": 23,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2016",
+     "n": 24,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE FOR FAILURE TO TO FILE THE ACCOUNT HEARING SCHEDULED FOR 12 JULY 2016 @ 1:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2016",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 27,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT AND/OR REMOVAL",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 28,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 29,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2016",
+     "n": 31,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2016",
+     "n": 32,
+     "code": "1284",
+     "desc": "ORDER OF COURT   ADDING A CO PR",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2016",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2016",
+     "n": 34,
+     "code": "1244",
+     "desc": "SURETY RIDER TO  NOMINAL BOND ADDING CO PR",
+     "pages": 2
+    },
+    {
+     "filed": "09/29/2016",
+     "n": 35,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVES SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE ACCOUNT HEARING SCHEDULED FOR 25 OCTOBER 2016 @ 1:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "09/29/2016",
+     "n": 36,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/25/2016",
+     "n": 38,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -",
+     "pages": 1
+    },
+    {
+     "filed": "10/25/2016",
+     "n": 39,
+     "code": "1284",
+     "desc": "ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "10/25/2016",
+     "n": 40,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/31/2016",
+     "n": 41,
+     "code": "1383",
+     "desc": "FIRST  ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "10/31/2016",
+     "n": 42,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR EVELYN MCPHERSON - RESENT VIA REGULAR MAIL TO NEW ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "11/15/2016",
+     "n": 43,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/15/2016",
+     "n": 44,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/17/2017",
+     "n": 45,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/15/2017",
+     "n": 46,
+     "code": "1244",
+     "desc": "SECOND ADMINISTRATION ACCOUNT  INCORRECT",
+     "pages": 14
+    },
+    {
+     "filed": "05/16/2017",
+     "n": 47,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW RE INVENTORY AND ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "06/01/2017",
+     "n": 48,
+     "code": "1122",
+     "desc": "2ND CORRECTED INVENTORY",
+     "pages": 12
+    },
+    {
+     "filed": "06/09/2017",
+     "n": 49,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE A CORRECTED SECOND ADMINISTRATION ACCOUNT HEARING SCHEDULED FOR 27 JUNE 2017  1:00 PM",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/2017",
+     "n": 50,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/14/2017",
+     "n": 51,
+     "code": "1244",
+     "desc": "CORRECTED SECOND ACCOUNT INCORRECT",
+     "pages": 10
+    },
+    {
+     "filed": "08/04/2017",
+     "n": 52,
+     "code": "1383",
+     "desc": "2ND CORRECTED SECOND ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "08/22/2017",
+     "n": 53,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 2ND CORRECT SECOND  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2017",
+     "n": 54,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2018",
+     "n": 55,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT-THIRD",
+     "pages": 1
+    },
+    {
+     "filed": "02/16/2018",
+     "n": 56,
+     "code": "1383",
+     "desc": "THIRD  ACCOUNT",
+     "pages": 13
+    },
+    {
+     "filed": "02/20/2018",
+     "n": 57,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/20/2018",
+     "n": 58,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/23/2018",
+     "n": 59,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT- FOURTH",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2018",
+     "n": 60,
+     "code": "1383",
+     "desc": "FOURTH ACCOUNT",
+     "pages": 12
+    },
+    {
+     "filed": "08/21/2018",
+     "n": 61,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING  FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/21/2018",
+     "n": 62,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/27/2018",
+     "n": 63,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR ALVIN MCPHERSON - RESENT",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2018",
+     "n": 64,
+     "code": "1244",
+     "desc": "RETURNED MAIL FOR CAROLYN MOSS - NO FORWARDING ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "01/22/2019",
+     "n": 65,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT- FIFTH",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2019",
+     "n": 66,
+     "code": "1383",
+     "desc": "FIFTH ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "03/05/2019",
+     "n": 67,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 5TH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/05/2019",
+     "n": 68,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/06/2019",
+     "n": 69,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT- SIXTH",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/2019",
+     "n": 70,
+     "code": "1383",
+     "desc": "SIXTH INTERIM ACCOUNT",
+     "pages": 11
+    },
+    {
+     "filed": "09/10/2019",
+     "n": 71,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SIXTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2019",
+     "n": 72,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2020",
+     "n": 73,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT- SEVENTH",
+     "pages": 1
+    },
+    {
+     "filed": "03/12/2020",
+     "n": 74,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT- SEVENTH",
+     "pages": 11
+    },
+    {
+     "filed": "03/19/2020",
+     "n": 75,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SEVENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2020",
+     "n": 76,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/20/2020",
+     "n": 77,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT- EIGHTH",
+     "pages": 1
+    },
+    {
+     "filed": "09/16/2020",
+     "n": 78,
+     "code": "1383",
+     "desc": "8TH INTERIM ACCOUNT",
+     "pages": 11
+    },
+    {
+     "filed": "09/29/2020",
+     "n": 79,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 8TH  INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/29/2020",
+     "n": 80,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/01/2021",
+     "n": 81,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR 9TH  INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2021",
+     "n": 82,
+     "code": "1383",
+     "desc": "NINTH INTERIM ACCOUNT",
+     "pages": 12
+    },
+    {
+     "filed": "11/19/2021",
+     "n": 83,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT- 10TH",
+     "pages": 1
+    },
+    {
+     "filed": "12/16/2021",
+     "n": 84,
+     "code": "1383",
+     "desc": "TENTH INTERIM ACCOUNT",
+     "pages": 12
+    },
+    {
+     "filed": "01/06/2022",
+     "n": 85,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR FEB. 1, 2022 @10:30AM",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2022",
+     "n": 86,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2022",
+     "n": 88,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2022",
+     "n": 89,
+     "code": "1284",
+     "desc": "ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2022",
+     "n": 90,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/02/2022",
+     "n": 91,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 27
+    },
+    {
+     "filed": "04/06/2022",
+     "n": 92,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "04/06/2022",
+     "n": 93,
+     "code": "1244",
+     "desc": "ELEVENTH AND FINAL ACCT UNDER REVIEW",
+     "pages": 10
+    },
+    {
+     "filed": "04/08/2022",
+     "n": 94,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2022",
+     "n": 95,
+     "code": "1385",
+     "desc": "AMENDED ELEVENTH AND FINAL ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "04/27/2022",
+     "n": 96,
+     "code": "1289",
+     "desc": "ASSIGNMENT OF PROPERTY",
+     "pages": 2
+    },
+    {
+     "filed": "04/27/2022",
+     "n": 97,
+     "code": "1244",
+     "desc": "INVOICE FOR SERVICES RENDERED",
+     "pages": 1
+    },
+    {
+     "filed": "04/28/2022",
+     "n": 98,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2022",
+     "n": 99,
+     "code": "1245",
+     "desc": "PETITION FOR PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 2
+    },
+    {
+     "filed": "05/24/2022",
+     "n": 100,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING NINTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2022",
+     "n": 101,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING TENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2022",
+     "n": 102,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING AMENDED ELEVENTH AND FINAL ACCOUNT (DATED MAY 24, 2022)",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2022",
+     "n": 103,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PR COMMISSIONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/24/2022",
+     "n": 104,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/20/2025",
+     "n": 105,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-11-20",
+   "interested_persons": [
+    {
+     "name": "CECIL ELMER MCPHERSON JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "VALARIE A PRUE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 440,
+   "probate_age_days": 2472,
+   "days_since_last_docket": 344,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-30",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1916512014",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1916512014",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "CECIL E MCPHERSON JR"
   }
  ]
 }

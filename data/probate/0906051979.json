@@ -1,0 +1,116 @@
+{
+ "account": "0906051979",
+ "estates": [
+  {
+   "estate_number": "143263",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/21/2007",
+   "date_closed": "06/15/2007",
+   "decedent": "CAROLYN A WRIGHT",
+   "date_of_death": "12/16/2006",
+   "date_of_filing": "03/21/2007",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "MICHAEL J DAUSCH III [2070 A KURTZ AVENUE, PASADENA, MD 21122]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LEONARD E OLSEN",
+     "address": "7849 EASTDALE ROAD, BALTIMORE, MD 21224"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/22/2007",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 1/10/2001",
+     "pages": 3
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 4
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 4,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "03/22/2007",
+     "n": 7,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/04/2007",
+     "n": 8,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE) THE DAILY RECORD",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2007",
+     "n": 9,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM - DHMH",
+     "pages": 2
+    },
+    {
+     "filed": "11/08/2007",
+     "n": 10,
+     "code": "1223",
+     "desc": "PARTIAL - SATISFACTION OF CLAIM - DHMH -",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2007-11-08",
+   "interested_persons": [
+    {
+     "name": "LEONARD E OLSEN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 95,
+   "probate_age_days": 86,
+   "days_since_last_docket": 6931,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-30",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1916386166",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1916386166",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CAROLYN A WRIGHT"
+  }
+ ]
+}
