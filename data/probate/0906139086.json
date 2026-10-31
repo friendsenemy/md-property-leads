@@ -1,0 +1,305 @@
+{
+ "account": "0906139086",
+ "estates": [
+  {
+   "estate_number": "W75853",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "04/12/2013",
+   "date_closed": "04/25/2016",
+   "decedent": "ROBERT W MINER",
+   "date_of_death": "4/10/2013",
+   "date_of_filing": "04/12/2013",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "THOMAS J O'ROURKE [11 N. WASHINGTON STREET, SUITE 700, ROCKVILLE, MD 20850]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MICHAEL R MINER",
+     "address": "3114 UNIVERSITY BOULEVARD, HOUSTON, TX 77005"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/12/2013",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED",
+     "pages": 4
+    },
+    {
+     "filed": "04/17/2013",
+     "n": 2,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2013",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "04/25/2013",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE (FILED ON 04/22/2013)",
+     "pages": 3
+    },
+    {
+     "filed": "04/25/2013",
+     "n": 5,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S) FILED ON 04/22/2013",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2013",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (5  ) FILED ON 04/22/2013",
+     "pages": 2
+    },
+    {
+     "filed": "04/25/2013",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2013",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2013",
+     "n": 9,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 2
+    },
+    {
+     "filed": "05/17/2013",
+     "n": 10,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2013",
+     "n": 11,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 06/24/2013 BY CITIBANK FOR $1,913.11",
+     "pages": 2
+    },
+    {
+     "filed": "07/15/2013",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/15/2013",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 35
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 15,
+     "code": "1356",
+     "desc": "NON-PROBATE INHERITANCE TAX ADVICE: NO INHERITANCE TAX DUE",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2013",
+     "n": 16,
+     "code": "2001",
+     "desc": "INVENTORY STATUS",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2013",
+     "n": 17,
+     "code": "1126",
+     "desc": "ELECTION TO TAKE STATUTORY SHARE OF ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/17/2014",
+     "n": 18,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 11
+    },
+    {
+     "filed": "01/17/2014",
+     "n": 19,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 11
+    },
+    {
+     "filed": "02/12/2014",
+     "n": 20,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING COUNSEL FEES AND COSTS IN THE AMOUNT OF $9,000  DATED 2/12/14  ( JUDGE MCCORMICK  )",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2014",
+     "n": 21,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST  INTERIM ACCOUNT DATED 2/12/14  ( JUDGE MCCORMICK  )",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2014",
+     "n": 22,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "08/05/2014",
+     "n": 23,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 12
+    },
+    {
+     "filed": "09/02/2014",
+     "n": 24,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND  INTERIM ACCOUNT DATED 9/2/14  ( JUDGE CREIGHTON  )",
+     "pages": 1
+    },
+    {
+     "filed": "09/02/2014",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/10/2015",
+     "n": 26,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2015",
+     "n": 27,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT",
+     "pages": 11
+    },
+    {
+     "filed": "04/21/2015",
+     "n": 28,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM - CITIBANK",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2015",
+     "n": 29,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING THIRD  INTERIM ACCOUNT DATED 6/1/15  ( JUDGE ALBRIGHT  )",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2015",
+     "n": 30,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "12/11/2015",
+     "n": 31,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/16/2015",
+     "n": 32,
+     "code": "1383",
+     "desc": "FOURTH ACCOUNT",
+     "pages": 11
+    },
+    {
+     "filed": "03/23/2016",
+     "n": 33,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FOURTH  INTERIM ACCOUNT DATED 3/23/16  ( JUDGE RUBIN  )",
+     "pages": 1
+    },
+    {
+     "filed": "03/23/2016",
+     "n": 34,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/31/2016",
+     "n": 35,
+     "code": "1385",
+     "desc": "FIFTH AND FINAL ACCOUNT",
+     "pages": 15
+    },
+    {
+     "filed": "04/25/2016",
+     "n": 36,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIFTH AND FINAL ACCOUNT DATED ( 4/22/16  ), ( JUDGE MALONEY  )",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2016",
+     "n": 37,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2016-04-25",
+   "interested_persons": [
+    {
+     "name": "MICHAEL R MINER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 2,
+   "probate_age_days": 1109,
+   "days_since_last_docket": 3841,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-31",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917768214",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917768214",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROBERT WANDA L MINER"
+  }
+ ]
+}

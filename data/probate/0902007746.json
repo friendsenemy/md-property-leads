@@ -1,0 +1,165 @@
+{
+ "account": "0902007746",
+ "estates": [
+  {
+   "estate_number": "17129",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "06/28/2010",
+   "date_closed": "08/14/2014",
+   "decedent": "WILLIAM WARREN TIPPETT",
+   "date_of_death": "12/17/2006",
+   "date_of_filing": "06/24/2010",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "MARLA STEWART OWCZAREK [8171 MAPLE LAWN BLOULEVARD, SUITE 200, MAPLE LAWN, MD 20759]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CHERYL  MAGERS",
+     "address": "4 TIPPIN DRIVE, THURMONT, MD 21788"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/24/2010",
+     "n": 1,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 4,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 5,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 8,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2010",
+     "n": 9,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/08/2014",
+     "n": 10,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "01/08/2014",
+     "n": 11,
+     "code": "1137",
+     "desc": "1ST SUPPLEMENTAL SCHEDULE B",
+     "pages": 1
+    },
+    {
+     "filed": "01/08/2014",
+     "n": 12,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/08/2014",
+     "n": 13,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 3
+    },
+    {
+     "filed": "01/09/2014",
+     "n": 14,
+     "code": "1244",
+     "desc": "CONTRACT OF REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/09/2014",
+     "n": 15,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/27/2014",
+     "n": 16,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/28/2014",
+     "n": 17,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL (3)",
+     "pages": 3
+    }
+   ],
+   "last_docket_activity": "2014-01-28",
+   "interested_persons": [
+    {
+     "name": "CHERYL MAGERS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 1289,
+   "probate_age_days": 1508,
+   "days_since_last_docket": 4659,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-31",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917430880",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917430880",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WILLIAM W TIPPETT"
+  }
+ ]
+}

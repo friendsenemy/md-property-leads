@@ -1,0 +1,249 @@
+{
+ "account": "0903021475",
+ "estates": [
+  {
+   "estate_number": "18088",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/29/2012",
+   "date_closed": "01/31/2013",
+   "decedent": "ROY FRANKLIN DAUGHERTY SR",
+   "date_of_death": "2/20/2012",
+   "date_of_filing": "03/28/2012",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "THOMAS F. MUDD [11520 MAGNOLIA COURT, ISSUE, MD 20645]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ROY FRANKLIN DAUGHERTY JR",
+     "address": "3195 DAUGHERTY FARM PLAC, NANJEMOY, MD 20662"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/28/2012",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 28 DECEMBER",
+     "pages": 2007
+    },
+    {
+     "filed": "03/28/2012",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/28/2012",
+     "n": 3,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/28/2012",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/28/2012",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/28/2012",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "03/28/2012",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/29/2012",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/29/2012",
+     "n": 9,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2012",
+     "n": 10,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/30/2012",
+     "n": 11,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "07/06/2012",
+     "n": 12,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE INVENTORY HEARING SCHEDULED FOR 31 JULY 2O12 @ 1: 20 PM",
+     "pages": 1
+    },
+    {
+     "filed": "07/06/2012",
+     "n": 13,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/23/2012",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 12
+    },
+    {
+     "filed": "09/07/2012",
+     "n": 15,
+     "code": "1271",
+     "desc": "DISCLAIMER OF ROY DAUGHERTY THAT THE JOINT ACCOUNT IS TO BE PART OF THE ESTATE. SAID THAT IT BELONGED TO THE DECEDENT IT WAS NOT INTENDED TO BE A JOINT ACCOUNT FOR DISTRIBUTION TO HIM AS A JOINT OWNER AT THE TIME OF DEATH.",
+     "pages": 1
+    },
+    {
+     "filed": "11/29/2012",
+     "n": 16,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2013",
+     "n": 17,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE FIRST ACCOUNT HEARING SCHEDULED FOR 29 JANUARY 2013 @ 2:10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2013",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2013",
+     "n": 19,
+     "code": "1385",
+     "desc": "FIRST & FINAL ACCOUNT",
+     "pages": 11
+    },
+    {
+     "filed": "01/09/2013",
+     "n": 20,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 7
+    },
+    {
+     "filed": "01/29/2013",
+     "n": 21,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2013",
+     "n": 22,
+     "code": "1284",
+     "desc": "ORDER OF COURT  APPROVING COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "01/31/2013",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2013",
+     "n": 24,
+     "code": "1124",
+     "desc": "INFORMATION REPORT (AMENDED)",
+     "pages": 2
+    },
+    {
+     "filed": "02/21/2013",
+     "n": 25,
+     "code": "1244",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2013",
+     "n": 26,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT  (AMENDED)",
+     "pages": 4
+    },
+    {
+     "filed": "02/26/2013",
+     "n": 27,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING AMENDED FIRST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2013",
+     "n": 28,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/27/2013",
+     "n": 29,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2013-02-27",
+   "interested_persons": [
+    {
+     "name": "ROY FRANKLIN DAUGHERTY JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 38,
+   "probate_age_days": 308,
+   "days_since_last_docket": 4994,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-31",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917430696",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917430696",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROY F DAUGHERTY JR"
+  }
+ ]
+}

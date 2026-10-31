@@ -1,0 +1,102 @@
+{
+ "account": "0904001222",
+ "estates": [
+  {
+   "estate_number": "18240",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "07/09/2012",
+   "date_closed": "08/03/2012",
+   "decedent": "MILTON FRED HEIN JR",
+   "date_of_death": "2/24/2010",
+   "date_of_filing": "08/03/2012",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MARGARET M HEIN",
+     "address": "10670 LLOYD POINT RD, NEWBURG, MD 20664"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/03/2012",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "08/03/2012",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/03/2012",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/03/2012",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/03/2012",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/03/2012",
+     "n": 6,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 7,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 8,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 7
+    }
+   ],
+   "last_docket_activity": "2012-09-20",
+   "interested_persons": [
+    {
+     "name": "MARGARET M HEIN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 866,
+   "probate_age_days": 25,
+   "days_since_last_docket": 5154,
+   "foreign_proceeding": false,
+   "imported_at": "2026-10-31",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917430079",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917430079",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MILTON F HEIN III"
+  }
+ ]
+}
