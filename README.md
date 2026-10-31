@@ -16,6 +16,18 @@ Every morning a GitHub Action:
 
 The dashboard is a static page on GitHub Pages that reads that file. No server, no database, nothing to keep alive. Lead status and notes are stored in your browser.
 
+## Pre-probate heir audience (inbound, no cold calls)
+
+After each scrape, `audience_export.py` turns every obituary's "survived by" line (deaths in the last 120 days) into named adult heirs — spouses, children, siblings, parents, in-laws. Grandchildren, pets and friends are left out on purpose. It writes three files to `data/audience/`:
+
+| File | Use |
+|---|---|
+| `meta_custom_audience.csv` | Meta Ads Manager → Audiences → Create → Custom Audience → Customer list → upload. Columns already use Meta's names (fn, ln, ct, st, zip, country). Run the ad under the **Housing** special ad category. |
+| `survivors_review.csv` | Every heir with the decedent, property address, county and SDAT account # for lookup |
+| `smartskip_bulk.csv` | Last 7 days of new leads in SmartSkip's bulk-upload layout (paid — only if you choose to skip trace) |
+
+Download any of them from the repo's `data/audience/` folder (open the file → Download raw).
+
 ## Running a scrape on demand
 
 Click **Run Scrape Now** on the dashboard (or go to Actions → Daily Scrape → Run workflow). Results appear in about 10 minutes — refresh the page.
