@@ -1,0 +1,424 @@
+{
+ "account": "0906213944",
+ "estates": [
+  {
+   "estate_number": "W76613",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "06/24/2013",
+   "date_closed": "10/03/2018",
+   "decedent": "DAVID NORMAN LITTLE",
+   "date_of_death": "6/19/2013",
+   "date_of_filing": "06/24/2013",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LYNN CAUDLE BOYNTON ESQ",
+     "address": "316 EAST DIAMOND AVENUE, GAITHERSBURG, MD 20877"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/24/2013",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JUNE 12,",
+     "pages": 2013
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 4,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 5,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 6,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 2
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/27/2013",
+     "n": 8,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (3)",
+     "pages": 1
+    },
+    {
+     "filed": "07/02/2013",
+     "n": 9,
+     "code": "1356",
+     "desc": "NON-PROBATE INHERITANCE TAX ADVICE: NO INHERITANCE TAX DUE",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2013",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/24/2013",
+     "n": 12,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 27
+    },
+    {
+     "filed": "11/26/2013",
+     "n": 13,
+     "code": "2001",
+     "desc": "INVENTORY STATUS",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2014",
+     "n": 14,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 01/29/2014 BY UNIVERSITY TOWNERS CONDO FOR $13,843.01",
+     "pages": 4
+    },
+    {
+     "filed": "04/01/2014",
+     "n": 15,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2014",
+     "n": 16,
+     "code": "1262",
+     "desc": "DELINQUENT MATTER REFERRED TO COURT BY REGISTER OF WILLS FIRST ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/10/2016",
+     "n": 17,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE FIRST ACCOUNT  HEARING SCHEDULED FOR 10/13/16   ( JUDGE DUGAN  ) DATED 8/10/16",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2016",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "10/13/2016",
+     "n": 19,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING ON THE SHOW CAUSE ORDER FOR FAILURE TO FILE THE FIRST ACCOUNT. CONTINUED TO 11/29/16. IF THE ACCOUNT IS FILED PRIOR TO THAT DATE THE MATTER SHALL BE DISMISSED. (JUDGE GREENBERG) (TAPE NOS. 9A-101316{10:00:25-10:01:24})",
+     "pages": 1
+    },
+    {
+     "filed": "11/29/2016",
+     "n": 20,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING ON THE SHOW CAUSE ORDER FOR FAILURE TO FILE THE FIRST ACCOUNT.  GRANTED, PERSONAL REPRESENTATIVE REMOVED AND LYNN CAUDLE BOYNTON, ESQ. APPOINTED SUCCESSOR PERSONAL REPRESENTATIVE.  ORDER SIGNED.  (JUDGE BAIR) (TAPE NOS.: 5G-112916{10:15:19-10:16:49})",
+     "pages": 1
+    },
+    {
+     "filed": "11/29/2016",
+     "n": 21,
+     "code": "1374",
+     "desc": "ORDER OF COURT DATED 11/29/16,  REMOVING SUSAN DOREEN LITTLE AS PERSONAL REPRESENTATIVE AND APPOINTING LYNN CAUDLE BOYNTON AS (SUCCESSOR) PERSONAL REPRESENTATIVE, BOND WAIVED UNTIL THE DISCOVERY OF ASSETS OR 60 DAYS FROM THE DATE OF THIS ORDER AND THAT THE FORMER PERSONAL REPRESENTATIVE FILE A FINAL ACCOUNTING WITHIN 30 DAYS ( JUDGE BAIR )",
+     "pages": 1
+    },
+    {
+     "filed": "11/29/2016",
+     "n": 22,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "11/29/2016",
+     "n": 23,
+     "code": "1399",
+     "desc": "JUDICIAL BOND",
+     "pages": 1
+    },
+    {
+     "filed": "12/14/2016",
+     "n": 24,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS - SUCCESSOR",
+     "pages": 2
+    },
+    {
+     "filed": "01/20/2017",
+     "n": 25,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED (REGARDING FAILURE OF FORMER PERSONAL REPRESENTATIVE TO FILE FINAL ACCOUNT)",
+     "pages": 4
+    },
+    {
+     "filed": "02/27/2017",
+     "n": 26,
+     "code": "1122",
+     "desc": "INVENTORY ( FILED BY SUCCESSOR PR )",
+     "pages": 2
+    },
+    {
+     "filed": "03/02/2017",
+     "n": 27,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "03/23/2017",
+     "n": 28,
+     "code": "1253",
+     "desc": "COURT APPOINTED SUCCESSOR PERSONAL REPRESENTATIVE'S PETITION TO WAIVE BOND",
+     "pages": 9
+    },
+    {
+     "filed": "03/27/2017",
+     "n": 29,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 2
+    },
+    {
+     "filed": "03/31/2017",
+     "n": 30,
+     "code": "2001",
+     "desc": "INVENTORY STATUS",
+     "pages": 1
+    },
+    {
+     "filed": "05/09/2017",
+     "n": 31,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2017",
+     "n": 32,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING SUCCESSOR PERSONAL REPRESENATTIVES BOND BE WAIVED UNTIL  SUCH TIME ANY ASSETS ARE TURNED OVER   DATED 5/11/17  ( JUDGE SMITH  )",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2017",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/28/2017",
+     "n": 34,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "09/01/2017",
+     "n": 35,
+     "code": "1390",
+     "desc": "SUCCESSOR PERSONAL REPRESENTATIVE 'S AFFIDAVIT OF NO ESTATE ASSETS IN LIEU OF ACCOUNTING",
+     "pages": 4
+    },
+    {
+     "filed": "03/13/2018",
+     "n": 36,
+     "code": "1390",
+     "desc": "SUCESSOR PERSONAL REPRESENTATIVE 'S  SECOND  AFFIDAVIT  OF NO ESTATE ASSETS IN  LIEU OF ACCOUNTING",
+     "pages": 6
+    },
+    {
+     "filed": "03/13/2018",
+     "n": 37,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEES IN LIEU  OF  COMMISSIONS",
+     "pages": 17
+    },
+    {
+     "filed": "03/13/2018",
+     "n": 38,
+     "code": "1253",
+     "desc": "PETITION TO FORFEIT BOND TO PAY COURT COSTS",
+     "pages": 4
+    },
+    {
+     "filed": "03/14/2018",
+     "n": 39,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE - UNIVERSITY TOWNERS CONDO",
+     "pages": 2
+    },
+    {
+     "filed": "04/24/2018",
+     "n": 40,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING ATTORNEY'S FEES IN THE AMOUNT OF $5,000  DATED 4/24/18  ( JUDGE MALONEY  )",
+     "pages": 1
+    },
+    {
+     "filed": "04/24/2018",
+     "n": 41,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/15/2018",
+     "n": 42,
+     "code": "1254",
+     "desc": "LINE TO STAY PETITION TO FORFEIT BOND TO PAY COURT COSTS",
+     "pages": 3
+    },
+    {
+     "filed": "10/02/2018",
+     "n": 43,
+     "code": "1254",
+     "desc": "LINE REQUESTING PETITION TO FORFEIT BOND TO PAY COURT COSTS BE SET IN FOR HEARING",
+     "pages": 2
+    },
+    {
+     "filed": "10/03/2018",
+     "n": 44,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE WHY THE SUCCESSOR PERSONAL REPRESENTATIVE SHOULD NOT PROCEED AGAINST THE BOND OF THE FORMER PERSONAL REPRESENTATIVE HEARING SET FOR 1/2/19 ( ORDER DATED 10/3/18 ) ( JUDGE CHO )",
+     "pages": 1
+    },
+    {
+     "filed": "10/03/2018",
+     "n": 45,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING SECOND AFFIDAVIT OF NO ESTATE IN LIEU OF FINAL ACCOUNT DATED ( 10/3/18  ), ( JUDGE CHO  )",
+     "pages": 1
+    },
+    {
+     "filed": "10/03/2018",
+     "n": 46,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 6
+    },
+    {
+     "filed": "11/14/2018",
+     "n": 47,
+     "code": "1256",
+     "desc": "REGISTER OF WILLS' REQUEST TO FILE UPDATED LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "01/02/2019",
+     "n": 48,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING ON THE SHOW CAUSE ORDER TO FORFEIT THE BOND OF THE FORMER PERSONAL REPRESENTATIVE.   BOND OF FORMER PERSONAL REPRESENTATIVE FORFEITED IN THE AMOUNT OF $5,000.  ORDER SIGNED.  (JUDGE BONIFANT) (TAPE NOS.:9C-010219{10:06:27-10:07:20/10:09:31-10:12:33})",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2019",
+     "n": 49,
+     "code": "1284",
+     "desc": "ORDER OF COURT FOR SUCCESSOR TO PROCEED AGAINST BOND OF FORMER PR  DATED 01/03/2019  ( JUDGE BONIFANT  )",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2019",
+     "n": 50,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "03/21/2019",
+     "n": 51,
+     "code": "1253",
+     "desc": "SURETY'S MOTION TO STRIKE ORDER TO SURCHARGE BOND DATED JANUARY 2, 2019 AND SET MATTER DOWN FOR A HEARING ON MERITS WITH REQUEST TO FILE CROSS CLAIM AND ORDER THEREON",
+     "pages": 5
+    },
+    {
+     "filed": "03/21/2019",
+     "n": 52,
+     "code": "1244",
+     "desc": "HARTFORD FIRE INSURANCE COMPANY'S CROSS CLAIM",
+     "pages": 4
+    },
+    {
+     "filed": "05/03/2019",
+     "n": 53,
+     "code": "1284",
+     "desc": "ORDER OF COURT DENYING MOTION TO STRIKE ORDER TO SURCHARGE BOND ALSO ORDERED HARTFORD CO CROSS CLAIM IS HEREBY STRICKEN  DATED 5/2/19  ( JUDGE BONIFANT  )",
+     "pages": 1
+    },
+    {
+     "filed": "05/03/2019",
+     "n": 54,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2019-05-03",
+   "interested_persons": [
+    {
+     "name": "LYNN CAUDLE BOYNTON ESQ",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 5,
+   "probate_age_days": 1927,
+   "days_since_last_docket": 2739,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-01",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917684152",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917684152",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "DAVID N LITTLE"
+  }
+ ]
+}

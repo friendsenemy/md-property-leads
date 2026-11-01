@@ -632,6 +632,15 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "CARLA J HUNTER|2014-02-23": {
+   "accounts": [
+    "0906264417"
+   ],
+   "checked": "2026-11-01",
+   "dod": "2014-02-23",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "CARLETON J DIEDRICH|1997-06-30": {
    "accounts": [
     "0907013485"
@@ -797,6 +806,20 @@
    "dod": "2014-09-26",
    "results": 4,
    "status": "NONE FOUND"
+  },
+  "CATHERINE L HICKS|2009-05-15": {
+   "accounts": [
+    "0907052936"
+   ],
+   "checked": "2026-11-01",
+   "county": "Howard",
+   "dod": "2009-05-15",
+   "estate_number": "21993",
+   "record_ids": [
+    "1917601237"
+   ],
+   "results": 10,
+   "status": "CLOSED"
   },
   "CATHERINE L PROCTOR|2004-02-15": {
    "accounts": [
@@ -1274,6 +1297,20 @@
    "dod": "2003-11-04",
    "results": 3,
    "status": "NONE FOUND"
+  },
+  "DAVID N LITTLE|2013-06-19": {
+   "accounts": [
+    "0906213944"
+   ],
+   "checked": "2026-11-01",
+   "county": "Montgomery",
+   "dod": "2013-06-19",
+   "estate_number": "W76613",
+   "record_ids": [
+    "1917684152"
+   ],
+   "results": 10,
+   "status": "CLOSED"
   },
   "DAVID P ELLISON|2011-07-29": {
    "accounts": [
@@ -1970,6 +2007,20 @@
    "dod": "2002-09-27",
    "results": 0,
    "status": "NONE FOUND"
+  },
+  "GEORGE H BURCH|2003-10-05": {
+   "accounts": [
+    "0908028788"
+   ],
+   "checked": "2026-11-01",
+   "county": "Charles",
+   "dod": "2003-10-05",
+   "estate_number": "13796",
+   "record_ids": [
+    "1917434141"
+   ],
+   "results": 13,
+   "status": "CLOSED"
   },
   "GEORGE H TALBERT III|2002-04-23": {
    "accounts": [
@@ -4004,6 +4055,15 @@
    "results": 3,
    "status": "CLOSED"
   },
+  "MARILYN S TALEGHANI|2008-07-13": {
+   "accounts": [
+    "0908005958"
+   ],
+   "checked": "2026-11-01",
+   "dod": "2008-07-13",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "MARINETTA GUTRICK|2001-12-16": {
    "accounts": [
     "0903005836"
@@ -4724,6 +4784,20 @@
     "1909194096"
    ],
    "results": 1,
+   "status": "CLOSED"
+  },
+  "PERCY E THOMAS|2004-11-27": {
+   "accounts": [
+    "0906274536"
+   ],
+   "checked": "2026-11-01",
+   "county": "Prince George's",
+   "dod": "2004-11-27",
+   "estate_number": "69637",
+   "record_ids": [
+    "1917871643"
+   ],
+   "results": 3,
    "status": "CLOSED"
   },
   "PETER W BULKA|1998-01-18": {
@@ -5551,6 +5625,20 @@
    "results": 4,
    "status": "NONE FOUND"
   },
+  "SUSAN M KING|2007-03-05": {
+   "accounts": [
+    "0906103529"
+   ],
+   "checked": "2026-11-01",
+   "county": "Allegany",
+   "dod": "2007-03-05",
+   "estate_number": "29723",
+   "record_ids": [
+    "1917038485"
+   ],
+   "results": 11,
+   "status": "CLOSED"
+  },
   "TERRY L DAVIS|2002-07-03": {
    "accounts": [
     "0907057806"
@@ -6200,5 +6288,5 @@
    "status": "NONE FOUND"
   }
  },
- "updated": "2026-10-31"
+ "updated": "2026-11-01"
 }

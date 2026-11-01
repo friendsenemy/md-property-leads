@@ -1,0 +1,179 @@
+{
+ "account": "0907052936",
+ "estates": [
+  {
+   "estate_number": "21993",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/12/2010",
+   "date_closed": "06/27/2025",
+   "decedent": "CATHERINE L HICKS",
+   "date_of_death": "5/15/2009",
+   "date_of_filing": "06/27/2025",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ANGELA  BROWN",
+     "address": "180 S KESWICK AVE, GLENSIDE, PA 19038-4533"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/12/2010",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 5
+    },
+    {
+     "filed": "11/12/2010",
+     "n": 2,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2010",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2010",
+     "n": 4,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2010",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/12/2010",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/18/2010",
+     "n": 7,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 6
+    },
+    {
+     "filed": "11/23/2010",
+     "n": 8,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2011",
+     "n": 9,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 04/25/2011 BY MD DHMH FOR $236,639.39",
+     "pages": 2
+    },
+    {
+     "filed": "08/15/2011",
+     "n": 10,
+     "code": "1300",
+     "desc": "REQUEST FOR SCHEDULE B SENT BY REGULAR MAIL 8/15/2011 BY MAM",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2012",
+     "n": 11,
+     "code": "1244",
+     "desc": "LETTER SENT BY DHMH REQUESTING IF NEW ASSETS ARE DISCOVERED TO CONTACT THEM",
+     "pages": 1
+    },
+    {
+     "filed": "12/06/2017",
+     "n": 12,
+     "code": "1202",
+     "desc": "MOTION TO WITHDRAW AS ATTORNEY",
+     "pages": 3
+    },
+    {
+     "filed": "12/14/2017",
+     "n": 13,
+     "code": "1284",
+     "desc": "ORDER OF COURT ALLOWING LAW OFFICES OF PETER G. ANGELOS TO WITHDRAW THEIR APPEARANCE AS ATTORNEYS FOR THE ESTATE WITH CERTIFICATE OF SERVICE",
+     "pages": 3
+    },
+    {
+     "filed": "06/27/2025",
+     "n": 14,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "06/27/2025",
+     "n": 15,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2025",
+     "n": 16,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "06/27/2025",
+     "n": 17,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2025",
+     "n": 18,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/27/2025",
+     "n": 19,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2025-06-27",
+   "interested_persons": [
+    {
+     "name": "ANGELA BROWN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 546,
+   "probate_age_days": 5341,
+   "days_since_last_docket": 492,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-01",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917601237",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917601237",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CATHERINE L HICKS"
+  }
+ ]
+}
