@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-31T16:06:16+00:00",
- "window_from": "2026.02.03",
- "recent_transfers": 39347,
+ "generated_at": "2026-11-02T20:47:36+00:00",
+ "window_from": "2026.02.05",
+ "recent_transfers": 39035,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -13,11 +13,7 @@
   ],
   [
    "FEDERAL NATIONAL MORTGAGE",
-   21
-  ],
-  [
-   "OPENDOOR PROPERTY TRUST I",
-   19
+   20
   ],
   [
    "FREEDOM MORTGAGE CORPORATION",
@@ -26,6 +22,10 @@
   [
    "FEDERAL REALTY INVESTMENT TRUST",
    19
+  ],
+  [
+   "OPENDOOR PROPERTY TRUST I",
+   18
   ],
   [
    "FEDERAL NATIONAL MORTGAGE ASSOCIAT",
@@ -84,15 +84,15 @@
    9
   ],
   [
-   "EQUITY TRUST COMPANY CUSTODIAN",
-   9
-  ],
-  [
    "U S BANK TRUST NATIONAL ASSOCIATIO",
    8
   ],
   [
    "SUE E BITTINGER REVOCABLE TRUST",
+   8
+  ],
+  [
+   "EQUITY TRUST COMPANY CUSTODIAN",
    8
   ],
   [
@@ -180,15 +180,7 @@
    5
   ],
   [
-   "WELLS FARGO BANK",
-   4
-  ],
-  [
    "UPWARD AMERICA SOUTHEAST REIT TRS",
-   4
-  ],
-  [
-   "U S BANK TRUST NATIONAL",
    4
   ],
   [
@@ -292,11 +284,19 @@
    3
   ],
   [
+   "WELLS FARGO BANK",
+   3
+  ],
+  [
    "UZOMA FAMILY DYNASTY TRUST",
    3
   ],
   [
    "U.S. BANK TRUST COMPANY NATIONAL",
+   3
+  ],
+  [
+   "U S BANK TRUST NATIONAL",
    3
   ],
   [
@@ -373,10 +373,6 @@
   ],
   [
    "PATTON AUDREY B TRUSTEE",
-   3
-  ],
-  [
-   "MORTGAGE RESEARCH CENTER LLC",
    3
   ],
   [
@@ -601,6 +597,10 @@
   ],
   [
    "US BANK NATIONAL ASSOCIATION TRUST",
+   2
+  ],
+  [
+   "TRUSTEES ROBERT E WANDELL II REVOC",
    2
   ]
  ]
