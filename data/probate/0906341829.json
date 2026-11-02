@@ -1,0 +1,130 @@
+{
+ "account": "0906341829",
+ "estates": [
+  {
+   "estate_number": "85906",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "10/21/2010",
+   "date_closed": "01/06/2011",
+   "decedent": "ANNETTE D BROWN",
+   "date_of_death": "10/19/2010",
+   "date_of_filing": "10/21/2010",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "RUTH N HICKS",
+     "address": "5416 85TH AVE #102, NEW CARROLLTON, MD 20784"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "10/21/2010",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 8
+    },
+    {
+     "filed": "10/21/2010",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/21/2010",
+     "n": 3,
+     "code": "1316",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE (ADDRESS UNKNOWN)  (2)",
+     "pages": 2
+    },
+    {
+     "filed": "10/21/2010",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/21/2010",
+     "n": 5,
+     "code": "1377",
+     "desc": "PETITION FOR APPOINTMENT OF SPECIAL ADMINISTRATOR",
+     "pages": 2
+    },
+    {
+     "filed": "10/21/2010",
+     "n": 6,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "10/21/2010",
+     "n": 7,
+     "code": "2003",
+     "desc": "ORDER OF COURT APPOINTING RUTH N HICKS  AS SPECIAL ADMINISTRATOR",
+     "pages": 1
+    },
+    {
+     "filed": "11/08/2010",
+     "n": 8,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 5
+    },
+    {
+     "filed": "11/19/2010",
+     "n": 9,
+     "code": "2004",
+     "desc": "CERTIFICATE OF PUBLICATION - NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 10,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -JUDICIAL PROBATE-CASE CALLED-RUTH HICKS APPEARED. *JUDICIAL PROBATE DISMISSED. LETTER FROM FUNERAL HOME FILED. ESTATE TO BE CLOSED WITH ROW.  *NO ASSETS P.R. APPOINTED FOR PURPOSES OF CLOSING ESTATE.",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 11,
+     "code": "1401",
+     "desc": "JUDICIAL SMALL ESTATE ORDER DATED JANUARY 6, 2011 APPOINTING RUTH N HICKS  AS PERSONAL REPRESENTATIVE/SPECIAL ADMINISTRATOR/SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 12,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2011-01-06",
+   "interested_persons": [
+    {
+     "name": "RUTH N HICKS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 2,
+   "probate_age_days": 77,
+   "days_since_last_docket": 5779,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-02",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917819893",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917819893",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ANNETTE D BROWN"
+  }
+ ]
+}

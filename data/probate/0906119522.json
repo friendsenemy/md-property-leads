@@ -1,0 +1,221 @@
+{
+ "account": "0906119522",
+ "estates": [
+  {
+   "estate_number": "89841",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/28/2012",
+   "date_closed": "02/06/2013",
+   "decedent": "HAROLD RAYMOND ANDRUS JR",
+   "date_of_death": "1/15/2012",
+   "date_of_filing": "02/28/2012",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "REED  SPELLMAN [6404 IVY LANE, SUITE 400, GREENBELT, MD 20770]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "SHIRLEY M ANDRUS",
+     "address": "3509 DEPAUW PLACE, COLLEGE PARK, MD 20740"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/28/2012",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 09/23/1997",
+     "pages": 5
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 7,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2012",
+     "n": 8,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 2
+    },
+    {
+     "filed": "03/26/2012",
+     "n": 9,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2012",
+     "n": 10,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/30/2012",
+     "n": 11,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "05/18/2012",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "06/12/2012",
+     "n": 13,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR INVENTORY AND INFORMATION REPORT   HEARING SCHEDULED FOR 09/18/2012",
+     "pages": 1
+    },
+    {
+     "filed": "06/14/2012",
+     "n": 14,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/22/2012",
+     "n": 15,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2012",
+     "n": 16,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 13
+    },
+    {
+     "filed": "08/22/2012",
+     "n": 17,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/22/2012",
+     "n": 18,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "08/27/2012",
+     "n": 19,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "09/11/2012",
+     "n": 20,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM",
+     "pages": 1
+    },
+    {
+     "filed": "12/05/2012",
+     "n": 21,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR  ADD'L REQUIREMENTS   HEARING SCHEDULED FOR 02/19/2013",
+     "pages": 1
+    },
+    {
+     "filed": "12/07/2012",
+     "n": 22,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "12/19/2012",
+     "n": 23,
+     "code": "1337",
+     "desc": "FACSIMILE RECEIVED WITH COPY OF 1ST AND FINAL GUARDIANSHIP ACCOUNT",
+     "pages": 32
+    },
+    {
+     "filed": "02/06/2013",
+     "n": 24,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 1ST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/08/2013",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2013-02-08",
+   "interested_persons": [
+    {
+     "name": "SHIRLEY M ANDRUS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 44,
+   "probate_age_days": 344,
+   "days_since_last_docket": 5015,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-02",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917836808",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917836808",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "HAROLD R ANDRUS III"
+  }
+ ]
+}

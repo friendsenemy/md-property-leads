@@ -1,0 +1,242 @@
+{
+ "account": "0908004862",
+ "estates": [
+  {
+   "estate_number": "16946",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/19/2010",
+   "date_closed": "09/27/2010",
+   "decedent": "JENNIFER  TAYLOR",
+   "date_of_death": "1/25/2010",
+   "date_of_filing": "03/19/2010",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "EUGENE M BRENNAN JR [7865 QUARTERFIELD RD, SEVERN, MD 21144]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JAMES E TAYLOR",
+     "address": "1022 CIRCLE DR, BALTIMORE, MD 21227"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/19/2010",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "03/19/2010",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2010",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2010",
+     "n": 4,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2010",
+     "n": 5,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 2
+    },
+    {
+     "filed": "03/31/2010",
+     "n": 6,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM EUGENE M. BRENNAN, JR., ATTY",
+     "pages": 1
+    },
+    {
+     "filed": "03/31/2010",
+     "n": 7,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-PENELOPE L. ARBIN",
+     "pages": 2
+    },
+    {
+     "filed": "03/31/2010",
+     "n": 8,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/19/2010",
+     "n": 9,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (JUDICIAL)",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2010",
+     "n": 10,
+     "code": "1244",
+     "desc": "HEARING SIGN IN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2010",
+     "n": 11,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS. 6-2010 SIDE B",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2010",
+     "n": 12,
+     "code": "1284",
+     "desc": "ORDER OF COURT DENYING THE PETITION FOR JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2010",
+     "n": 13,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2010",
+     "n": 14,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM EUGENE M. BRENNAN, JR., ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "05/06/2010",
+     "n": 15,
+     "code": "1279",
+     "desc": "PETITION FOR RECONSIDERATION OF DENIAL AND FOR HEARING",
+     "pages": 3
+    },
+    {
+     "filed": "05/11/2010",
+     "n": 16,
+     "code": "1284",
+     "desc": "ORDER OF COURT ISSUED APPROVING MOTION TO RECONSIDER-JUDICIAL PROBATE HEARING SCHEDULED FOR JUNE 15, 2010 AT 10:00 AM",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2010",
+     "n": 17,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2010",
+     "n": 18,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM EUGENE M. BRENNAN, JR., ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2010",
+     "n": 19,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2010",
+     "n": 20,
+     "code": "1148",
+     "desc": "SCHEDULE C",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2010",
+     "n": 21,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/15/2010",
+     "n": 23,
+     "code": "1244",
+     "desc": "HEARING SIGN IN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "06/15/2010",
+     "n": 24,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/12/2010",
+     "n": 25,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND SMALL ESTATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2010",
+     "n": 26,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE INFORMATION REPORT AND PAY SMALL ESTATE FEE HEARING SCHEDULED FOR 19 OCTOBER 2010 @ 1:30 PM",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2010",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/27/2010",
+     "n": 28,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED - COVER LETTER WITH INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "09/27/2010",
+     "n": 29,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2010-09-27",
+   "interested_persons": [
+    {
+     "name": "JAMES E TAYLOR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 53,
+   "probate_age_days": 192,
+   "days_since_last_docket": 5880,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-02",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917432155",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917432155",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JENNIFER S TAYLOR"
+  }
+ ]
+}

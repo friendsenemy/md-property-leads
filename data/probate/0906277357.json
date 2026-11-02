@@ -1,0 +1,235 @@
+{
+ "account": "0906277357",
+ "estates": [
+  {
+   "estate_number": "75996",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "12/27/2010",
+   "date_closed": "06/26/2012",
+   "decedent": "DALE ALAN HALL",
+   "date_of_death": "12/6/2010",
+   "date_of_filing": "12/27/2010",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "CHRISTINE W HUBBARD [1069 DOUBLE GATE RD, DAVIDSONVILLE, MD 21035]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LINDA SUSAN HALL",
+     "address": "1108 BRASSIE COURT, ARNOLD, MD 21012"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/27/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED APRIL 02, 2010 (PROBATED DECEMBER 27, 2010)",
+     "pages": 9
+    },
+    {
+     "filed": "12/27/2010",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "12/27/2010",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "12/27/2010",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2010",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2010",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "12/27/2010",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT (PIF)",
+     "pages": 2
+    },
+    {
+     "filed": "01/26/2011",
+     "n": 8,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "01/26/2011",
+     "n": 9,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS -- BILL# 9051 -- **PARTIAL PAYMENT** -- REC# 101811 -- (GA)",
+     "pages": 4
+    },
+    {
+     "filed": "01/28/2011",
+     "n": 10,
+     "code": "1330",
+     "desc": "DOCUMENTATION FOR APPLICATION  TO FIX INHERITANCE TAX: COPY 60 DAY EXTENSION FOR NP TAXES -- BILL #9051 (GA)",
+     "pages": 1
+    },
+    {
+     "filed": "01/28/2011",
+     "n": 11,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL (01/31/11 1 CERT MAIL REC'D) (02/10/11 1 CERT MAIL REC'D)",
+     "pages": 3
+    },
+    {
+     "filed": "04/07/2011",
+     "n": 12,
+     "code": "1330",
+     "desc": "DOCUMENTATION FOR APPLICATION TO FIX INHERITANCE TAX: COPY 30 DAY EXTENSION FOR NON-PROBATE TAXES -- BILL #9051 (GA)",
+     "pages": 1
+    },
+    {
+     "filed": "04/11/2011",
+     "n": 13,
+     "code": "1124",
+     "desc": "AMENDED INFORMATION REPORT (GA) (NT)",
+     "pages": 3
+    },
+    {
+     "filed": "04/18/2011",
+     "n": 14,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2011",
+     "n": 15,
+     "code": "1382",
+     "desc": "INVENTORY PARTIAL (EFO)",
+     "pages": 31
+    },
+    {
+     "filed": "05/17/2011",
+     "n": 16,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS -- BILL# 9051-- **BALANCE REMAINING PAID** -- REC# 104382 (GA)",
+     "pages": 2
+    },
+    {
+     "filed": "05/20/2011",
+     "n": 17,
+     "code": "1124",
+     "desc": "SUPPLEMENTAL INFORMATION REPORT (GA) (NT)",
+     "pages": 4
+    },
+    {
+     "filed": "09/12/2011",
+     "n": 18,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/16/2011",
+     "n": 19,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING FIRST ACCOUNT UNTIL MARCH 16, 2012 PASSED BY ORDER OF THE COURT ON SEPTEMBER 20, 2011 (JEG)",
+     "pages": 2
+    },
+    {
+     "filed": "09/21/2011",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS (JEG)",
+     "pages": 1
+    },
+    {
+     "filed": "03/26/2012",
+     "n": 21,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT (FILED) (SC)",
+     "pages": 14
+    },
+    {
+     "filed": "05/31/2012",
+     "n": 22,
+     "code": "1122",
+     "desc": "INVENTORY FINAL & SUPPLEMENTAL (SC)",
+     "pages": 3
+    },
+    {
+     "filed": "05/31/2012",
+     "n": 23,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT (SC)",
+     "pages": 12
+    },
+    {
+     "filed": "06/18/2012",
+     "n": 24,
+     "code": "1331",
+     "desc": "LINE CHANGING TITLE TO AMENDED FIRST AND FINAL ACCOUNT (SC)",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2012",
+     "n": 25,
+     "code": "1386",
+     "desc": "ORDER APPROVING AMENDED FIRST AND FINAL ACCOUNT (SC)",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2012",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS (KTC)",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2013",
+     "n": 27,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN (SC)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2013-04-22",
+   "interested_persons": [
+    {
+     "name": "LINDA SUSAN HALL",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 21,
+   "probate_age_days": 547,
+   "days_since_last_docket": 4942,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-02",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1917153278",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1917153278",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "DALE A HALL"
+  }
+ ]
+}
