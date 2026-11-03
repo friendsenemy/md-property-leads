@@ -1,0 +1,16 @@
+{
+ "account": "0503000761",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "REBECCA BOOTH",
+   "decedent_searched": "REBECCA BOOTH",
+   "date_of_death": "2005-11-05",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-03",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}
