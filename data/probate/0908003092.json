@@ -1,0 +1,249 @@
+{
+ "account": "0908003092",
+ "estates": [
+  {
+   "estate_number": "13178",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "07/16/2002",
+   "date_closed": "01/22/2003",
+   "decedent": "HARVEY MCKEE SYDNOR",
+   "date_of_death": "6/9/2002",
+   "date_of_filing": "07/16/2002",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "VIRGINIA LEE MILLER",
+     "address": "36923 KIMBERLY COURT, MECHANICSVILLE, MD 20659"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/16/2002",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 4,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE-V.L.MILLER - NOT REQUIRED",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 5,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE-H.M.SYDNOR, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 6,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE-A.P.SYDNOR",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 7,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE-R.A.SYDNOR",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 8,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE-M.A. HEISTON",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 9,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 10,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 11,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 12,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 13,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE-2",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2002",
+     "n": 14,
+     "code": "1336",
+     "desc": "RECEIPTS-SMALL ESTATE FEE/CERTIFIED MAIL FEE - #11067",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2002",
+     "n": 15,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-ANDREW P. SYDNOR",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2002",
+     "n": 16,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-MARY ANN HEISTON",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2002",
+     "n": 17,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-HARVEY MCKEE SYDNOR, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2002",
+     "n": 18,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-ROBERT ALLEN SYDNOR",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2002",
+     "n": 19,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2002",
+     "n": 20,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2002",
+     "n": 21,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "07/25/2002",
+     "n": 22,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2002",
+     "n": 23,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-HARVEY MCKEE SYDNOR,JR.",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2002",
+     "n": 24,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-ROBERT ALLEN SYNDOR",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2002",
+     "n": 25,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-MARY ANN HEISTON",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/2002",
+     "n": 26,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-ANDREW P. SYDNOR",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2003",
+     "n": 27,
+     "code": "1111",
+     "desc": "SMALL ESTATE CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2003",
+     "n": 28,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "01/22/2003",
+     "n": 29,
+     "code": "1403",
+     "desc": "SMALL ESTATE CERTIFICATE OF COMPLIANCE (FINAL)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2003-01-22",
+   "interested_persons": [
+    {
+     "name": "VIRGINIA LEE MILLER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 37,
+   "probate_age_days": 190,
+   "days_since_last_docket": 8687,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-04",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1918866840",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1918866840",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "HARVEY M SYDNOR"
+  }
+ ]
+}

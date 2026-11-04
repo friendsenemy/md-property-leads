@@ -1,0 +1,88 @@
+{
+ "account": "0901047523",
+ "estates": [
+  {
+   "estate_number": "90293",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "04/23/2010",
+   "date_closed": "04/26/2010",
+   "decedent": "GLADYS A GROSS",
+   "date_of_death": "4/21/2010",
+   "date_of_filing": "04/23/2010",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LESTER  WRIGHT",
+     "address": "611 PARK AVE, APT 904, BALTIMORE, MD 21201"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/23/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED    03-23-98 (UNPROBATED)",
+     "pages": 1
+    },
+    {
+     "filed": "04/23/2010",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "04/23/2010",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/23/2010",
+     "n": 4,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/23/2010",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/26/2010",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2010-04-26",
+   "interested_persons": [
+    {
+     "name": "LESTER WRIGHT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 2,
+   "probate_age_days": 3,
+   "days_since_last_docket": 6036,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-04",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1919706986",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1919706986",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "GLADYS A GROSS"
+  }
+ ]
+}

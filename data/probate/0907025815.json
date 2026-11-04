@@ -1,0 +1,109 @@
+{
+ "account": "0907025815",
+ "estates": [
+  {
+   "estate_number": "21258",
+   "status": "ARCHIVED",
+   "type": "SE",
+   "date_opened": "05/17/2017",
+   "date_closed": "05/17/2017",
+   "decedent": "PETER MCRAE MCCARTNEY",
+   "date_of_death": "10/29/2014",
+   "date_of_filing": "05/17/2017",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ANNE LOUISE MCCARTNEY",
+     "address": "7103 GARDEN COURT, BRYANS ROAD, MD 20616"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/17/2017",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED OCTOBER 12, 1992 FILED FOR RECORD ONLY - NOT PROBATED",
+     "pages": 8
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 7,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "05/17/2017",
+     "n": 8,
+     "code": "1428",
+     "desc": "PROOF OF CUSTODY OF PURPORTED WILL AND/OR CODICIL",
+     "pages": 1
+    },
+    {
+     "filed": "08/31/2023",
+     "n": 9,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2023-08-31",
+   "interested_persons": [
+    {
+     "name": "ANNE LOUISE MCCARTNEY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 931,
+   "probate_age_days": 0,
+   "days_since_last_docket": 1161,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-04",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1918889725",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1918889725",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "PETER M MCCARTNEY"
+  }
+ ]
+}
