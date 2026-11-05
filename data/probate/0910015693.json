@@ -1,0 +1,88 @@
+{
+ "account": "0910015693",
+ "estates": [
+  {
+   "estate_number": "104665",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "07/30/2014",
+   "date_closed": "07/31/2014",
+   "decedent": "RENEE L SMITH",
+   "date_of_death": "1/22/2014",
+   "date_of_filing": "07/30/2014",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CATRINA  TAYLOR",
+     "address": "1060 BAYNER ROAD, BALTIMORE, MD 21221"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/30/2014",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "07/30/2014",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2014",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2014",
+     "n": 4,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2014",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/01/2014",
+     "n": 6,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 12/01/2014 BY STATE OF MD DHMH",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2014-12-01",
+   "interested_persons": [
+    {
+     "name": "CATRINA TAYLOR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 189,
+   "probate_age_days": 1,
+   "days_since_last_docket": 4357,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-05",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920128637",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920128637",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "RENEE L SMITH"
+  }
+ ]
+}
