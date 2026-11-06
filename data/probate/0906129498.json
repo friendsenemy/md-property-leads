@@ -1,0 +1,144 @@
+{
+ "account": "0906129498",
+ "estates": [
+  {
+   "estate_number": "19820",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "03/09/2015",
+   "date_closed": "07/09/2015",
+   "decedent": "CHARLES  GALLAGHER",
+   "date_of_death": "10/30/2014",
+   "date_of_filing": "03/09/2015",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "ROBERT M. BURKE [300 CHARLES STREET, P O BOX 2283, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CLARA  GALLAGHER",
+     "address": "3493 PINE CONE CIRCLE, WALDORF, MD 20602"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/09/2015",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JUNE 11, 2003 FILED FOR RECORD ONLY - NOT PROBATED",
+     "pages": 7
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 3,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 7,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "04/02/2015",
+     "n": 8,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/07/2015",
+     "n": 9,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "04/07/2015",
+     "n": 10,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "04/09/2015",
+     "n": 11,
+     "code": "1244",
+     "desc": "CLAIM FOR FEE ERRONEOULSY PAID   PAID 4/8/2015 CHECK #1073",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2015",
+     "n": 12,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2015",
+     "n": 13,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/13/2015",
+     "n": 14,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 07/13/2015 BY PNC BANK FOR $3,492.13",
+     "pages": 8
+    }
+   ],
+   "last_docket_activity": "2015-07-13",
+   "interested_persons": [
+    {
+     "name": "CLARA GALLAGHER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 130,
+   "probate_age_days": 122,
+   "days_since_last_docket": 4134,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-06",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920308795",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920308795",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CHARLES F GALLAGHER"
+  }
+ ]
+}

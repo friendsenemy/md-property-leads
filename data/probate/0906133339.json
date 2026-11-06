@@ -1,0 +1,49 @@
+{
+ "account": "0906133339",
+ "estates": [
+  {
+   "estate_number": "10494",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "06/04/1996",
+   "date_closed": "03/03/1998",
+   "decedent": "STEPHEN ALLEN STEINBACH",
+   "date_of_death": "4/29/1996",
+   "date_of_filing": "06/04/1996",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "06/04/1996",
+     "n": 1,
+     "code": "1210",
+     "desc": "DOCKET SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/1996",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED //2/22/1996",
+     "pages": 3
+    }
+   ],
+   "last_docket_activity": "1996-06-04",
+   "interested_persons": [],
+   "death_to_probate_days": 36,
+   "probate_age_days": 637,
+   "days_since_last_docket": 11112,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-06",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920320097",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920320097",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "STEPHEN A STEINBACH II"
+  }
+ ]
+}

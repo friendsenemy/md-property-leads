@@ -1,0 +1,431 @@
+{
+ "account": "0910008018",
+ "estates": [
+  {
+   "estate_number": "12641",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "06/11/2002",
+   "date_closed": "08/15/2002",
+   "decedent": "CECIL ALLEN HUNT SR.",
+   "date_of_death": "5/22/2001",
+   "date_of_filing": "06/21/2001",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "THOMAS F. MUDD [11520 MAGNOLIA COURT, ISSUE, MD 20645]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JUANITA E HUNT",
+     "address": "9575 MAY DAY STREET, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/21/2001",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 17 MAY",
+     "pages": 2001
+    },
+    {
+     "filed": "06/21/2001",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "06/21/2001",
+     "n": 3,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2001",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2001",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/21/2001",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2001",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/21/2001",
+     "n": 8,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION (6)",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/2001",
+     "n": 9,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "06/22/2001",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/2001",
+     "n": 11,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 2
+    },
+    {
+     "filed": "06/27/2001",
+     "n": 12,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - CECIL A. HUNT JR.",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2001",
+     "n": 13,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - WILLIAM R HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2001",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/23/2001",
+     "n": 15,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2001",
+     "n": 16,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - LINDA HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2001",
+     "n": 17,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - NATHAN HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2001",
+     "n": 18,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - EMILY HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2001",
+     "n": 19,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-SANDRA HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2001",
+     "n": 20,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-JEFFREY A. HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2001",
+     "n": 21,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS-EVA CROOKS",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2001",
+     "n": 22,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2001",
+     "n": 23,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - LINDA L. HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2001",
+     "n": 24,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-JEFFREY A. HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2001",
+     "n": 25,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-EVA CROOKS",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2001",
+     "n": 26,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-EVA CROOKS",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2001",
+     "n": 27,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-NATHAN HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2001",
+     "n": 28,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-EMILY HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2001",
+     "n": 29,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-SANDRA HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2001",
+     "n": 30,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW REMINDER OF INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "09/21/2001",
+     "n": 31,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW DELINQUENT NOTICE FOR INVENTORY AND INFORMATION REPORTS",
+     "pages": 1
+    },
+    {
+     "filed": "10/11/2001",
+     "n": 32,
+     "code": "1260",
+     "desc": "NOTICE OF SHOWCAUSE HEARING DATE SCHEDULED FOR 11/01/01",
+     "pages": 1
+    },
+    {
+     "filed": "10/11/2001",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "10/15/2001",
+     "n": 34,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL JUNITA E HUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/15/2001",
+     "n": 35,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL REFUSED THOMAS F. MUDD",
+     "pages": 1
+    },
+    {
+     "filed": "10/24/2001",
+     "n": 36,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/24/2001",
+     "n": 37,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "10/24/2001",
+     "n": 38,
+     "code": "1325",
+     "desc": "NOTICE TO INTERESTED PERSONS OF FILING OF INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "01/30/2002",
+     "n": 39,
+     "code": "1120",
+     "desc": "CERTIFIED COPY OF LAST WILL AND TESTAMENT -",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2002",
+     "n": 40,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (EXEMPLIFIED COPY OF WILL",
+     "pages": 1
+    },
+    {
+     "filed": "02/14/2002",
+     "n": 41,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (CERTIFIED COPY OF PROBATE ORDER AND LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2002",
+     "n": 42,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (CERTIFIED COPY OF WILL PER SHELLEY R. CULHANE, ATTORNEY DOING THE ESTATE TAX RETURN)",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2002",
+     "n": 43,
+     "code": "1336",
+     "desc": "RECEIPTS - # 10399 - CERTIFIED COPY OF WILL",
+     "pages": 2
+    },
+    {
+     "filed": "03/11/2002",
+     "n": 44,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/29/2002",
+     "n": 45,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/2002",
+     "n": 46,
+     "code": "1390",
+     "desc": "AFFIDAVIT IN LIEU OF FINAL ACCOUNT FILED/ PROBATE FEE AND OTHER COSTS DUE PRIOR TO COURT REVIEW",
+     "pages": 2
+    },
+    {
+     "filed": "04/05/2002",
+     "n": 47,
+     "code": "1325",
+     "desc": "NOTICE TO INTERESTED PERSONS OF FILING OF AFFIDAVIT IN LIEU OF FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/09/2002",
+     "n": 48,
+     "code": "1244",
+     "desc": "MEMORANDUM TO THE FILE",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2002",
+     "n": 49,
+     "code": "1103",
+     "desc": "PETITION AND ORDER FOR ADMINISTRATION OF A SMALL ESTATE APPROVED 6/11/02",
+     "pages": 3
+    },
+    {
+     "filed": "06/12/2002",
+     "n": 50,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/01/2002",
+     "n": 51,
+     "code": "1111",
+     "desc": "SMALL ESTATE CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "07/05/2002",
+     "n": 52,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2002",
+     "n": 53,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2002",
+     "n": 54,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 4
+    },
+    {
+     "filed": "07/26/2002",
+     "n": 55,
+     "code": "1336",
+     "desc": "RECEIPT #11127",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2002-07-26",
+   "interested_persons": [
+    {
+     "name": "JUANITA E HUNT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 385,
+   "probate_age_days": 65,
+   "days_since_last_docket": 8869,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-06",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920316693",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920316693",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CECIL A HUNT JR"
+  }
+ ]
+}

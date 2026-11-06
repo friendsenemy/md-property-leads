@@ -1,0 +1,102 @@
+{
+ "account": "0908023352",
+ "estates": [
+  {
+   "estate_number": "22588",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "05/01/2019",
+   "date_closed": "05/01/2019",
+   "decedent": "RUDOLPH ADDISON POSEY",
+   "date_of_death": "8/6/2009",
+   "date_of_filing": "05/01/2019",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "JOHN D. HUNGERFORD [PO BOX 221, BRYANS ROAD, MD 20616-0221]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "GLENN P POSEY",
+     "address": "2004 DEBRA LYNN COURT, ACCOKEEK, MD 20607"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/01/2019",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "05/01/2019",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/01/2019",
+     "n": 3,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/01/2019",
+     "n": 4,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 2
+    },
+    {
+     "filed": "05/01/2019",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "05/01/2019",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/01/2019",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/01/2019",
+     "n": 8,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2019-05-01",
+   "interested_persons": [
+    {
+     "name": "GLENN P POSEY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 3555,
+   "probate_age_days": 0,
+   "days_since_last_docket": 2746,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-06",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920309032",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920309032",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "RUDOLPH A POSEY JR"
+  }
+ ]
+}
