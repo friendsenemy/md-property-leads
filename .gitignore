@@ -17,3 +17,6 @@ build/
 .cache/
 *.sqlite
 data/distress/last-error.txt
+meta_heir_audience.csv
+heir_review.csv
+heirs_master*.json
