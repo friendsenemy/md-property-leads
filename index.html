@@ -128,6 +128,14 @@
             return;
         }
         let saved = ""; try { saved = localStorage.getItem(KEY) || ""; } catch (_) {}
+        // Watchdog: every 2 minutes re-read config.js (cache-busted); if the passcode was rotated, lock this tab.
+        setInterval(() => {
+            fetch(`static/js/config.js?nocache=${Date.now()}`, { cache: "no-store" }).then((r) => r.text()).then((t) => {
+                const m = t.match(/GATE_SHA256:\s*"([0-9a-f]{64})"/);
+                let cur = ""; try { cur = localStorage.getItem(KEY) || ""; } catch (_) {}
+                if (m && cur && m[1] !== cur) { try { localStorage.removeItem(KEY); } catch (_) {} location.reload(); }
+            }).catch(() => {});
+        }, 120000);
         if (saved && saved === want()) { open(); return; }
         const form = document.getElementById("gateForm"), inp = document.getElementById("gateInput"), msg = document.getElementById("gateMsg");
         form.addEventListener("submit", async (e) => {
