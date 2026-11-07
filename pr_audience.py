@@ -107,7 +107,8 @@ def read_sheet():
             "st": r[col["Rep State"]].strip(),
             "zip": r[col["Rep Zip"]].strip(),
             "phones": phones,
-            "emails": [],
+            "emails": [r[col[k]].strip().lower() for k in ("Email 1", "Email 2", "Email 3")
+                       if k in col and "@" in r[col[k]]],
         }
     return list(out.values())
 
@@ -270,7 +271,7 @@ def main():
         s = sup.get(e["estate"])
         if s:
             e["phones"] = e["phones"] or s.get("phones", [])
-            e["emails"] = s.get("emails", [])
+            e["emails"] = e["emails"] or s.get("emails", [])
 
     check_property(estates)
     counts = {}

@@ -1,120 +1,188 @@
 """
-Heir audience keeper — the master list of skip-traced, obituary-confirmed heirs
-and the weekly Meta customer-list file built from it.
+Pre-probate heir audience — keeps the "Pre-Probate Heirs MD" Facebook custom
+audience current from the probate sheet's PreProbate tab.
 
-The master list holds phones and emails, so it never goes in this (public) repo.
-Pass its path on the command line; it lives in Ray's private storage.
+The PreProbate tab is filled every morning by the Apps Script heir tracer:
+one row per (recent death, property), with up to three living heirs per row
+(name, relation, phone, email) and a Match Evidence line per heir saying why
+that phone belongs to that person (lives at the property / related to the
+decedent / town only).
 
-  python heir_audience.py MASTER.json OUT_DIR [--days 180]
+Every run rebuilds the list from scratch:
+  1. Reads the PreProbate tab.
+  2. Keeps rows whose date of death is within --months (default 6).
+  3. Keeps heirs that have a phone or email AND whose match evidence is not a
+     bare name-only guess (those are as likely to be a stranger as the heir).
+  4. Replaces the Meta customer list with those heirs, de-duplicated by
+     phone/email, SHA-256 hashed. Heirs whose decedent has aged out of the
+     window drop off automatically.
 
-Each run:
-  1. Drops every heir whose family member died more than --days ago
-     (default 180 = 6 months). Dropped heirs are deleted from the master.
-  2. Writes OUT_DIR/meta_heir_audience.csv in Meta's customer-list template
-     (email x3, phone x3 with +1, fn, ln, zip, ct, st, country, doby, age).
-     Upload it with "Replace customer list" on the existing audience so the
-     dropped heirs leave the Facebook audience too.
-  3. Writes OUT_DIR/heir_review.csv: one heir per line with the property,
-     county and SDAT account it ties to.
+Nothing is stored in the repo; the log prints counts only.
 
-Records in the master: {"heir_key": {...heir..., "date_of_death": "YYYY-MM-DD",
-"found_at": ISO, "lead_id", "property_address", "county", "sdat_account",
-"relation", "phones": [...], "emails": [...]}}
+  python heir_audience.py             # full run
+  python heir_audience.py --dry-run   # counts only
+
+Env:
+  META_ACCESS_TOKEN        system-user token with ads_management
+  META_HEIR_AUDIENCE_ID    the "Pre-Probate Heirs MD" audience id
 """
 
 import os
 import re
+import io
 import csv
 import sys
 import json
+import time
+import hashlib
 import argparse
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 
-META_COLS = ["email", "email", "email", "phone", "phone", "phone",
-             "fn", "ln", "zip", "ct", "st", "country", "doby", "age"]
+import requests
 
-
-def death_date(rec):
-    """Exact date of death when known, otherwise when the lead was found."""
-    d = rec.get("date_of_death") or ""
-    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d):
-        return datetime.fromisoformat(d).replace(tzinfo=timezone.utc)
-    try:
-        return datetime.fromisoformat((rec.get("found_at") or "").replace("Z", "+00:00"))
-    except ValueError:
-        return None
+SHEET_ID = "1FcbKsxZZ_ISGm3llCxdlxhAIsz4IFwafMmyQOQydzSw"
+PREPROBATE_GID = "372958489"
+GRAPH = "https://graph.facebook.com/v21.0"
+MIN_PEOPLE = 50        # refuse to replace the audience with fewer than this (sheet broke?)
 
 
-def phone_e164(p):
-    digits = re.sub(r"\D", "", p or "")
-    if len(digits) == 10:
-        return "1" + digits
-    if len(digits) == 11 and digits.startswith("1"):
-        return digits
-    return ""
+def parse_date(s):
+    s = (s or "").strip()
+    m = re.match(r"^(\d{4})-(\d{2})-(\d{2})", s)
+    if m:
+        return datetime(int(m[1]), int(m[2]), int(m[3]))
+    m = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{4})", s)
+    if m:
+        return datetime(int(m[3]), int(m[1]), int(m[2]))
+    return None
 
 
-def prune(master, days, now=None):
-    now = now or datetime.now(timezone.utc)
-    cutoff = now - timedelta(days=days)
-    keep, dropped = {}, []
-    for k, rec in master.items():
-        dd = death_date(rec)
-        if dd is None or dd < cutoff:
-            dropped.append(rec)
-        else:
-            keep[k] = rec
-    return keep, dropped
+def read_tab():
+    url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={PREPROBATE_GID}"
+    r = requests.get(url, timeout=120)
+    r.raise_for_status()
+    rows = list(csv.reader(io.StringIO(r.text)))
+    head = [h.strip() for h in rows[0]]
+    col = {h: i for i, h in enumerate(head)}
+    for n in ["Lead ID", "Date of Death", "Trace Status", "Heir 1 Name", "Match Evidence"]:
+        if n not in col:
+            sys.exit(f"PreProbate tab layout changed, missing column: {n}")
+    out = []
+    for r in rows[1:]:
+        r = r + [""] * (len(head) - len(r))
+        out.append({h: r[i] for h, i in col.items()})
+    return out
 
 
-def meta_row(rec):
-    emails = [e.strip().lower() for e in rec.get("emails", []) if e and "@" in e][:3]
-    phones = [p for p in (phone_e164(x) for x in rec.get("phones", [])) if p][:3]
-    emails += [""] * (3 - len(emails))
-    phones += [""] * (3 - len(phones))
-    zip5 = re.sub(r"\D", "", rec.get("zip") or "")[:5]
-    return emails + phones + [
-        (rec.get("fn") or "").strip(), (rec.get("ln") or "").strip(), zip5,
-        (rec.get("ct") or "").strip(), (rec.get("st") or "").strip().upper(), "US",
-        str(rec.get("doby") or ""), str(rec.get("age") or ""),
-    ]
+def evidence_for(row):
+    """heir full name (lower) -> confidence label from the Match Evidence cell."""
+    ev = {}
+    for line in (row.get("Match Evidence") or "").splitlines():
+        m = re.match(r"^(.+?):\s*(STRONG|FAIR|ONLY MATCH|NAME ONLY)", line.strip())
+        if m:
+            ev[m[1].strip().lower()] = m[2]
+    return ev
+
+
+def heirs_from(row):
+    ev = evidence_for(row)
+    for n in (1, 2, 3):
+        name = (row.get(f"Heir {n} Name") or "").strip()
+        phone = re.sub(r"\D", "", row.get(f"Heir {n} Phone") or "")
+        email = (row.get(f"Heir {n} Email") or "").strip().lower()
+        if not name or not (phone or email):
+            continue
+        if len(phone) == 11 and phone[0] == "1":
+            phone = phone[1:]
+        if phone and len(phone) != 10:
+            phone = ""
+        conf = ev.get(name.lower(), "")
+        if conf == "NAME ONLY":
+            continue
+        parts = name.split()
+        yield {"fn": parts[0], "ln": parts[-1] if len(parts) > 1 else "",
+               "phone": phone, "email": email, "conf": conf or "unscored"}
+
+
+def h(v):
+    return hashlib.sha256(v.encode("utf-8")).hexdigest() if v else ""
+
+
+def meta_rows(p):
+    fn = re.sub(r"[^a-z]", "", p["fn"].lower())
+    ln = re.sub(r"[^a-z]", "", p["ln"].lower())
+    base = [h(fn), h(ln), h("us")]
+    ids = []
+    if p["phone"]:
+        ids.append(("", "1" + p["phone"]))
+    if p["email"]:
+        ids.append((p["email"], ""))
+    return [[h(em), h(ph)] + base for em, ph in ids]
+
+
+def push_to_meta(rows):
+    token, aud = os.environ.get("META_ACCESS_TOKEN"), os.environ.get("META_HEIR_AUDIENCE_ID")
+    if not token or not aud:
+        print("META_ACCESS_TOKEN / META_HEIR_AUDIENCE_ID not set - skipping Meta upload")
+        return
+    schema = ["EMAIL", "PHONE", "FN", "LN", "COUNTRY"]
+    session_id = int(time.time())
+    size = 5000
+    chunks = [rows[i:i + size] for i in range(0, len(rows), size)] or [[]]
+    for n, chunk in enumerate(chunks, 1):
+        r = requests.post(f"{GRAPH}/{aud}/usersreplace", data={
+            "access_token": token,
+            "session": json.dumps({"session_id": session_id, "batch_seq": n,
+                                   "last_batch_flag": n == len(chunks),
+                                   "estimated_num_total": len(rows)}),
+            "payload": json.dumps({"schema": schema, "data": chunk}),
+        }, timeout=120)
+        body = r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
+        if r.status_code != 200 or "error" in body:
+            sys.exit(f"Meta upload failed (batch {n}): {json.dumps(body.get('error', body))[:400]}")
+        print(f"Meta batch {n}/{len(chunks)}: received {body.get('num_received')}, "
+              f"invalid {body.get('num_invalid_entries')}")
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("master")
-    ap.add_argument("out_dir")
-    ap.add_argument("--days", type=int, default=180)
+    ap.add_argument("--months", type=int, default=6)
+    ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
-    master = json.load(open(a.master)) if os.path.exists(a.master) else {}
-    master, dropped = prune(master, a.days)
-    json.dump(master, open(a.master, "w"), indent=1)
+    cutoff = datetime.now() - timedelta(days=round(a.months * 30.44))
+    rows = read_tab()
+    recent = [r for r in rows if (parse_date(r["Date of Death"]) or datetime.min) >= cutoff]
+    traced = [r for r in recent if (r.get("Trace Status") or "").startswith("Traced")]
+    print(f"PreProbate tab: {len(rows)} rows, {len(recent)} deaths in the last {a.months} months, "
+          f"{len(traced)} traced")
 
-    os.makedirs(a.out_dir, exist_ok=True)
-    rows = [meta_row(r) for r in master.values() if r.get("phones") or r.get("emails")]
-    with open(os.path.join(a.out_dir, "meta_heir_audience.csv"), "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(META_COLS)
-        w.writerows(rows)
+    people, seen, skipped_name_only = {}, set(), 0
+    conf_counts = {}
+    for r in traced:
+        for p in heirs_from(r):
+            key = p["phone"] or p["email"]
+            if key in seen:
+                continue
+            seen.add(key)
+            people[key] = p
+            conf_counts[p["conf"]] = conf_counts.get(p["conf"], 0) + 1
+    for r in traced:
+        skipped_name_only += sum(1 for v in evidence_for(r).values() if v == "NAME ONLY")
 
-    with open(os.path.join(a.out_dir, "heir_review.csv"), "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["heir", "relation", "phones", "emails", "heir_city", "heir_state",
-                    "decedent", "date_of_death", "drops_off_after",
-                    "property_address", "county", "sdat_account"])
-        for r in sorted(master.values(), key=lambda r: (r.get("county", ""), r.get("decedent", ""))):
-            dd = death_date(r)
-            w.writerow([f"{r.get('fn','')} {r.get('ln','')}", r.get("relation", ""),
-                        "\n".join(r.get("phones", [])), "\n".join(r.get("emails", [])),
-                        r.get("ct", ""), r.get("st", ""), r.get("decedent", ""),
-                        r.get("date_of_death", ""),
-                        (dd + timedelta(days=a.days)).date().isoformat() if dd else "",
-                        r.get("property_address", ""), r.get("county", ""),
-                        r.get("sdat_account", "")])
+    print(f"audience: {len(people)} heirs "
+          f"({sum(1 for p in people.values() if p['phone'])} with phone, "
+          f"{sum(1 for p in people.values() if p['email'])} with email); "
+          f"confidence: " + ", ".join(f"{k} {v}" for k, v in sorted(conf_counts.items())) +
+          f"; skipped {skipped_name_only} name-only guesses")
 
-    print(f"kept {len(master)} heirs ({len(rows)} with a phone or email), "
-          f"dropped {len(dropped)} past {a.days} days")
+    meta = [row for p in people.values() for row in meta_rows(p)]
+    if a.dry_run:
+        print(f"dry run: {len(meta)} rows would be sent to Meta")
+        return
+    if len(people) < MIN_PEOPLE:
+        sys.exit(f"Only {len(people)} heirs - refusing to shrink the audience that far. Check the PreProbate tab.")
+    push_to_meta(meta)
 
 
 if __name__ == "__main__":

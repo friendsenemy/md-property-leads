@@ -1,15 +1,18 @@
-name: Probate PR Audience
+name: Facebook Audiences
 
-# Rebuilds the "MD Probate PRs" Facebook custom audience every weekday:
-# new estates from the probate sheet whose decedent still owns Maryland
-# property go in; estates whose house sold/transferred, or that were opened
-# more than 12 months ago, drop out. Nothing is committed - the reps' phones
-# go straight to Meta (hashed) and the log shows counts only.
+# Rebuilds both Facebook custom audiences every weekday:
+#  - "MD Probate PRs": estates from the probate sheet whose decedent still owns
+#    Maryland property; sold/transferred or >12-month-old estates drop out.
+#  - "Pre-Probate Heirs MD": verified heirs from the sheet's PreProbate tab
+#    (deaths in the last 6 months, name-only guesses excluded).
+# Nothing is committed - phones/emails go straight to Meta (hashed) and the
+# log shows counts only.
 
 on:
   schedule:
-    # 11:23 UTC = 6:23 AM EST / 7:23 AM EDT, Mon-Fri, after the sheet's overnight runs
-    - cron: '23 11 * * 1-5'
+    # 13:23 UTC = 8:23 AM EST / 9:23 AM EDT, Mon-Fri, after the 7 AM heir trace
+    # and the 8 AM Register of Wills run have finished writing to the sheet
+    - cron: '23 13 * * 1-5'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -40,7 +43,7 @@ jobs:
 
       - run: pip install requests==2.31.0
 
-      - name: Rebuild audience
+      - name: Rebuild PR audience
         env:
           MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
           MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
@@ -54,3 +57,15 @@ jobs:
             ARGS="$ARGS --dry-run"
           fi
           python pr_audience.py $ARGS
+
+      - name: Rebuild heir audience
+        if: always()
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_HEIR_AUDIENCE_ID: '120249612365570142'   # "Pre-Probate Heirs MD" in Pages of Purpose Ads
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="--dry-run"
+          fi
+          python heir_audience.py $ARGS
