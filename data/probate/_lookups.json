@@ -1390,6 +1390,20 @@
    "results": 2,
    "status": "ARCHIVED"
   },
+  "CHARLES L BENTON|2014-09-15": {
+   "accounts": [
+    "0908008914"
+   ],
+   "checked": "2026-11-07",
+   "county": "Charles",
+   "dod": "2014-09-15",
+   "estate_number": "20277",
+   "record_ids": [
+    "1920857889"
+   ],
+   "results": 8,
+   "status": "ARCHIVED"
+  },
   "CHARLES O ASHTON|2003-10-14": {
    "accounts": [
     "0906222366"
@@ -1534,6 +1548,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "CLAUDE T WILLETT JR|1999-03-03": {
+   "accounts": [
+    "0901056069"
+   ],
+   "checked": "2026-11-07",
+   "county": "Charles",
+   "dod": "1999-03-03",
+   "estate_number": "11607",
+   "record_ids": [
+    "1920862778"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "CLINTON G BALL|2010-05-06": {
    "accounts": [
     "0906003192"
@@ -1585,6 +1613,24 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "CORNELIUS E ACKERMAN|1988-09-04": {
+   "accounts": [
+    "0908049688"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1988-09-04",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
+  "CURTIS E THOMAS|2003-11-10": {
+   "accounts": [
+    "0907037864"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2003-11-10",
+   "results": 3,
+   "status": "NONE FOUND"
+  },
   "CURTIS S HANCOCK|2004-07-09": {
    "accounts": [
     "0903007936",
@@ -1617,6 +1663,15 @@
    ],
    "results": 4,
    "status": "CLOSED"
+  },
+  "DANIEL T BUTLER|1997-05-01": {
+   "accounts": [
+    "0906024807"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1997-05-01",
+   "results": 10,
+   "status": "NONE FOUND"
   },
   "DANIEL W COFFEL|2011-11-09": {
    "accounts": [
@@ -1811,6 +1866,20 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "DELMAR E RIFE JR|1998-03-08": {
+   "accounts": [
+    "0901045156"
+   ],
+   "checked": "2026-11-07",
+   "county": "Calvert",
+   "dod": "1998-03-08",
+   "estate_number": "6399",
+   "record_ids": [
+    "1920750821"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "DELORES B BRAXTON|2009-05-31": {
    "accounts": [
     "0906118534"
@@ -1953,6 +2022,15 @@
    "results": 1,
    "status": "NONE FOUND"
   },
+  "DONALD E GOLDSMITH|2007-03-08": {
+   "accounts": [
+    "0908043191"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2007-03-08",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "DONALD E GRANT|2013-02-09": {
    "accounts": [
     "0906038948"
@@ -2089,6 +2167,15 @@
    "results": 8,
    "status": "CLOSED"
   },
+  "DOROTHY CROWN|2002-12-23": {
+   "accounts": [
+    "0907010621"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2002-12-23",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "DOROTHY L FIELDS|2006-05-14": {
    "accounts": [
     "0908039151"
@@ -2113,6 +2200,15 @@
    ],
    "checked": "2026-10-15",
    "dod": "2001-07-10",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
+  "EARL C SILAS|1995-01-28": {
+   "accounts": [
+    "0908034397"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1995-01-28",
    "results": 0,
    "status": "NONE FOUND"
   },
@@ -2171,6 +2267,15 @@
    "results": 4,
    "status": "CLOSED"
   },
+  "EDWARD A TOMASKO JR|2014-07-17": {
+   "accounts": [
+    "0908056862"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2014-07-17",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "EDWARD J BAHEN|2006-10-20": {
    "accounts": [
     "0906077994"
@@ -2181,6 +2286,20 @@
    "estate_number": "15353",
    "record_ids": [
     "1918888574"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "EDWARD J LENNON III|2011-09-17": {
+   "accounts": [
+    "0909015086"
+   ],
+   "checked": "2026-11-07",
+   "county": "St. Mary's",
+   "dod": "2011-09-17",
+   "estate_number": "15374",
+   "record_ids": [
+    "1921433511"
    ],
    "results": 1,
    "status": "CLOSED"
@@ -2198,6 +2317,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "EDWIN C LAWTON|1996-07-09": {
+   "accounts": [
+    "0901048082"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1996-07-09",
+   "results": 1,
+   "status": "NONE FOUND"
   },
   "EDWIN M VEVERS JR|2007-07-25": {
    "accounts": [
@@ -2254,6 +2382,15 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "ELIZABETH A BOWIE|1975-11-20": {
+   "accounts": [
+    "0902003724"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1975-11-20",
+   "results": 2,
+   "status": "NONE FOUND"
+  },
   "ELIZABETH A KELLER|2014-12-31": {
    "accounts": [
     "0906184839"
@@ -2261,6 +2398,15 @@
    "checked": "2026-11-05",
    "dod": "2014-12-31",
    "results": 10,
+   "status": "NONE FOUND"
+  },
+  "ELIZABETH A PATTON|1989-08-14": {
+   "accounts": [
+    "0906121071"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1989-08-14",
+   "results": 3,
    "status": "NONE FOUND"
   },
   "ELIZABETH K TODER|2014-05-14": {
@@ -2299,6 +2445,15 @@
    "results": 7,
    "status": "NONE FOUND"
   },
+  "ELIZABETH O SAVOY|2002-02-27": {
+   "accounts": [
+    "0906098649"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2002-02-27",
+   "results": 2,
+   "status": "NONE FOUND"
+  },
   "ELIZABETH W WILLS|2013-01-10": {
    "accounts": [
     "0901058711"
@@ -2315,6 +2470,15 @@
    "checked": "2026-10-27",
    "dod": "1997-05-10",
    "results": 1,
+   "status": "NONE FOUND"
+  },
+  "ELLEN M HAWKINS|2009-03-02": {
+   "accounts": [
+    "0903006093"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2009-03-02",
+   "results": 0,
    "status": "NONE FOUND"
   },
   "ELMER J HILL|2006-01-23": {
@@ -2439,6 +2603,15 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "EVERETT A PARKER|1996-11-27": {
+   "accounts": [
+    "0906098088"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1996-11-27",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "FAHIM S RABIE|2009-04-09": {
    "accounts": [
     "0907029551"
@@ -2535,6 +2708,20 @@
    "results": 3,
    "status": "NONE FOUND"
   },
+  "FRANCIS M CUSICK JR|2001-10-07": {
+   "accounts": [
+    "0909014071"
+   ],
+   "checked": "2026-11-07",
+   "county": "Prince George's",
+   "dod": "2001-10-07",
+   "estate_number": "60972",
+   "record_ids": [
+    "1921391039"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "FRANCIS R COLE|2014-12-18": {
    "accounts": [
     "0906022995"
@@ -2585,6 +2772,15 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "FRANK J VALENTA|2003-09-05": {
+   "accounts": [
+    "0906060161"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2003-09-05",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "FRANK P HUBA|2005-01-11": {
    "accounts": [
     "0908017697"
@@ -2593,6 +2789,20 @@
    "dod": "2005-01-11",
    "results": 0,
    "status": "NONE FOUND"
+  },
+  "FRANK T BOBLITS JR|1998-10-10": {
+   "accounts": [
+    "0903021297"
+   ],
+   "checked": "2026-11-07",
+   "county": "Charles",
+   "dod": "1998-10-10",
+   "estate_number": "11455",
+   "record_ids": [
+    "1920862786"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "FRANK W FUNK SR|2007-11-19": {
    "accounts": [
@@ -2981,6 +3191,15 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "GUY E SMITH|1987-01-08": {
+   "accounts": [
+    "0906088252"
+   ],
+   "checked": "2026-11-07",
+   "dod": "1987-01-08",
+   "results": 8,
+   "status": "NONE FOUND"
+  },
   "GWENDOLYN B PHILLIPS|2004-08-20": {
    "accounts": [
     "17070715706",
@@ -3051,6 +3270,24 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "HARRY E RICE|2006-10-15": {
+   "accounts": [
+    "0904028031"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2006-10-15",
+   "results": 3,
+   "status": "NONE FOUND"
+  },
+  "HARRY L BUTLER|2011-10-11": {
+   "accounts": [
+    "0909010068"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2011-10-11",
+   "results": 15,
+   "status": "NONE FOUND"
   },
   "HARRY T LOBAUGH|1996-03-10": {
    "accounts": [
@@ -3170,6 +3407,43 @@
    "estate_number": "11399",
    "record_ids": [
     "1908666645"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "HOWARD F TOOMEY|2013-05-08": {
+   "accounts": [
+    "0908033862"
+   ],
+   "checked": "2026-11-07",
+   "county": "Charles",
+   "dod": "2013-05-08",
+   "estate_number": "18975",
+   "record_ids": [
+    "1920875702"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "HOWARD J MOORE|2011-08-13": {
+   "accounts": [
+    "0909004238"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2011-08-13",
+   "results": 12,
+   "status": "NONE FOUND"
+  },
+  "HOWARD L MARKHAM|2005-08-11": {
+   "accounts": [
+    "0901029479"
+   ],
+   "checked": "2026-11-07",
+   "county": "Charles",
+   "dod": "2005-08-11",
+   "estate_number": "14716",
+   "record_ids": [
+    "1920870201"
    ],
    "results": 1,
    "status": "CLOSED"
@@ -3307,6 +3581,20 @@
     "1910019229"
    ],
    "results": 1,
+   "status": "CLOSED"
+  },
+  "JAMES A WESTON|2014-07-10": {
+   "accounts": [
+    "0908061629"
+   ],
+   "checked": "2026-11-07",
+   "county": "Charles",
+   "dod": "2014-07-10",
+   "estate_number": "19496",
+   "record_ids": [
+    "1920860620"
+   ],
+   "results": 5,
    "status": "CLOSED"
   },
   "JAMES D CULBRETH|2014-03-01": {
@@ -3458,6 +3746,15 @@
    "results": 10,
    "status": "NONE FOUND"
   },
+  "JAMES L YATES|2001-11-25": {
+   "accounts": [
+    "0904016882"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2001-11-25",
+   "results": 16,
+   "status": "NONE FOUND"
+  },
   "JAMES O DRUMMOND|2009-09-24": {
    "accounts": [
     "0905001773"
@@ -3494,6 +3791,15 @@
    ],
    "results": 7,
    "status": "CLOSED"
+  },
+  "JAMES S PINKNEY|2007-06-18": {
+   "accounts": [
+    "0906175783"
+   ],
+   "checked": "2026-11-07",
+   "dod": "2007-06-18",
+   "results": 18,
+   "status": "NONE FOUND"
   },
   "JAMES T KERSEY JR|2001-09-26": {
    "accounts": [
@@ -3635,6 +3941,20 @@
    "estate_number": "18345",
    "record_ids": [
     "1918878939"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "JAYNE R WILLIAMS|1996-10-21": {
+   "accounts": [
+    "0906004423"
+   ],
+   "checked": "2026-11-07",
+   "county": "Prince George's",
+   "dod": "1996-10-21",
+   "estate_number": "RE-44274",
+   "record_ids": [
+    "1921238982"
    ],
    "results": 1,
    "status": "CLOSED"
@@ -8050,5 +8370,5 @@
    "status": "NONE FOUND"
   }
  },
- "updated": "2026-11-06"
+ "updated": "2026-11-07"
 }

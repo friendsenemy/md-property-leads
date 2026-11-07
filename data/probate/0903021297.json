@@ -1,0 +1,235 @@
+{
+ "account": "0903021297",
+ "estates": [
+  {
+   "estate_number": "11455",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "10/23/1998",
+   "date_closed": "",
+   "decedent": "FRANK THAYER BOBLITS SR",
+   "date_of_death": "10/10/1998",
+   "date_of_filing": "10/23/1998",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "FRANK T. BOBLITS JR",
+     "address": "9605 IRONSIDES RD, NANJEMOY, MD 20662"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "10/23/1998",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 09/27/98",
+     "pages": 5
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 2,
+     "code": "1303",
+     "desc": "QUESTIONNAIRE",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 4,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 6,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 7,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 8,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 9,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 10,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 11,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 12,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION  2 NO OF LETTERS ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "10/23/1998",
+     "n": 14,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/26/1998",
+     "n": 15,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/26/1998",
+     "n": 16,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS LINDA MONROE",
+     "pages": 1
+    },
+    {
+     "filed": "10/26/1998",
+     "n": 17,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS BORBERT BOBLITS",
+     "pages": 1
+    },
+    {
+     "filed": "10/26/1998",
+     "n": 18,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL LINDA MONROE",
+     "pages": 1
+    },
+    {
+     "filed": "10/26/1998",
+     "n": 19,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL ROBERT BOBLITS",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/1998",
+     "n": 20,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/1999",
+     "n": 21,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 8
+    },
+    {
+     "filed": "08/16/1999",
+     "n": 22,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED BACK UP DOCUMENTATION FOR INFO REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "08/16/1999",
+     "n": 23,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS WITH FRANK THAYER BOBLITS JR PD REC #6310",
+     "pages": 5
+    },
+    {
+     "filed": "08/16/1999",
+     "n": 24,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT FILED /  APPROVED 8/26/99",
+     "pages": 51
+    },
+    {
+     "filed": "08/20/1999",
+     "n": 25,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS WITH LINDA  MONROE WELLS NO TAX DUE",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/1999",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/20/1999",
+     "n": 27,
+     "code": "1336",
+     "desc": "RECEIPTS #6554",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "1999-10-20",
+   "interested_persons": [
+    {
+     "name": "FRANK T. BOBLITS JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 13,
+   "probate_age_days": 10242,
+   "days_since_last_docket": 9880,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-07",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920862786",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920862786",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "FRANK T BOBLITS JR"
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "account": "0909015086",
+ "estates": [
+  {
+   "estate_number": "15374",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "11/14/2011",
+   "date_closed": "08/28/2012",
+   "decedent": "EDWARD JAMES LENNON",
+   "date_of_death": "9/17/2011",
+   "date_of_filing": "11/14/2011",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "JOANN M. WOOD ESQ. [23087 THREE NOTCH ROAD, CALIFORNIA, MD 20619]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JAMES MICHAEL LENNON",
+     "address": "11804 WOLLASTON CIRCLE, SWAN POINT, MD 20645"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/14/2011",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JANUARY 12,",
+     "pages": 2001
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE FILED @ $25,000.00",
+     "pages": 2
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 5,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 6,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE SIGNED BY EDWARD JAMES LENNON III",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 7,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE SIGNED BY DENISE MARIE MCCANN",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 8,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE SIGNED BY CRYSTAL M. LENNON",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS SENT TO THE ENTERPRISE",
+     "pages": 2
+    },
+    {
+     "filed": "11/14/2011",
+     "n": 10,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2011",
+     "n": 11,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "11/21/2011",
+     "n": 12,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE) - ONE SENT",
+     "pages": 1
+    },
+    {
+     "filed": "11/28/2011",
+     "n": 13,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL",
+     "pages": 1
+    },
+    {
+     "filed": "12/12/2011",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "01/17/2012",
+     "n": 15,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 16,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 17,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/16/2012",
+     "n": 18,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR THE FIRST ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/06/2012",
+     "n": 19,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 2
+    },
+    {
+     "filed": "08/06/2012",
+     "n": 20,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "08/22/2012",
+     "n": 21,
+     "code": "1385",
+     "desc": "AMENDED FIRST AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "08/28/2012",
+     "n": 22,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR ATTORNEYS FEES",
+     "pages": 1
+    },
+    {
+     "filed": "08/28/2012",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS ORDER APPROVING PETITION FOR ATTORNEY'S FEES",
+     "pages": 1
+    },
+    {
+     "filed": "08/28/2012",
+     "n": 24,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING THE AMENDED FIRST AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/28/2012",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS ORDER APPROVING AMENDED FIRST AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2012-08-28",
+   "interested_persons": [
+    {
+     "name": "JAMES MICHAEL LENNON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 58,
+   "probate_age_days": 288,
+   "days_since_last_docket": 5184,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-07",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921433511",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921433511",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "EDWARD J LENNON III"
+  }
+ ]
+}

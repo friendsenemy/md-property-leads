@@ -1,0 +1,123 @@
+{
+ "account": "0908061629",
+ "estates": [
+  {
+   "estate_number": "19496",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/25/2014",
+   "date_closed": "08/28/2018",
+   "decedent": "JAMES A WESTON",
+   "date_of_death": "7/10/2014",
+   "date_of_filing": "08/05/2014",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MILDRED R WESTON",
+     "address": "4135 RAY DRIVE, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/05/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JULY 29,",
+     "pages": 1977
+    },
+    {
+     "filed": "08/05/2014",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2014",
+     "n": 3,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/25/2014",
+     "n": 4,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 6
+    },
+    {
+     "filed": "11/25/2014",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/25/2014",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2015",
+     "n": 7,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "12/12/2014",
+     "n": 8,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "08/09/2018",
+     "n": 9,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "08/17/2018",
+     "n": 10,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 6
+    },
+    {
+     "filed": "08/17/2018",
+     "n": 11,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2018-08-17",
+   "interested_persons": [
+    {
+     "name": "MILDRED R WESTON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 138,
+   "probate_age_days": 1372,
+   "days_since_last_docket": 3004,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-07",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920860620",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920860620",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JAMES A WESTON"
+  }
+ ]
+}
