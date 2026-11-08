@@ -1,0 +1,172 @@
+{
+ "account": "0906071341",
+ "estates": [
+  {
+   "estate_number": "95335",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "12/19/2013",
+   "date_closed": "08/15/2014",
+   "decedent": "JIMMY LEE CARTER SR",
+   "date_of_death": "6/22/2013",
+   "date_of_filing": "12/19/2013",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CATHERINE  CARTER",
+     "address": "3563 FORT MEADE ROAD #323, LAUREL, MD 20724"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/19/2013",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 10
+    },
+    {
+     "filed": "12/19/2013",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/19/2013",
+     "n": 3,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/27/2013",
+     "n": 4,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- INCOMPLETE FILING",
+     "pages": 2
+    },
+    {
+     "filed": "02/18/2014",
+     "n": 5,
+     "code": "1201",
+     "desc": "MOTION TO WITHDRAWAL OF APPEARANCE",
+     "pages": 0
+    },
+    {
+     "filed": "02/28/2014",
+     "n": 6,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "02/10/2014",
+     "n": 7,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "02/10/2014",
+     "n": 8,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2014",
+     "n": 9,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2014",
+     "n": 10,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2014",
+     "n": 11,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/2014",
+     "n": 12,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "03/12/2014",
+     "n": 13,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/20/2014",
+     "n": 14,
+     "code": "1201",
+     "desc": "AMENDED MOTION TO WITHDRAW ATTORNEY APPEARANCCE",
+     "pages": 2
+    },
+    {
+     "filed": "03/20/2014",
+     "n": 15,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/2014",
+     "n": 16,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/2014",
+     "n": 17,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING AMENDED MOTION TO WITHDRAW ATTORNEY APPEARANCE",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2014",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2014-03-27",
+   "interested_persons": [
+    {
+     "name": "CATHERINE CARTER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 180,
+   "probate_age_days": 239,
+   "days_since_last_docket": 4609,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-08",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921243858",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921243858",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JIMMY L CARTER"
+  }
+ ]
+}

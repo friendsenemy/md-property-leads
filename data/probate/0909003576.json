@@ -1,0 +1,109 @@
+{
+ "account": "0909003576",
+ "estates": [
+  {
+   "estate_number": "14097",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "06/15/2004",
+   "date_closed": "01/23/2019",
+   "decedent": "JOHNNY J. WILSON JR",
+   "date_of_death": "5/31/2004",
+   "date_of_filing": "06/15/2004",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ORA  WILSON",
+     "address": "14890 HOFFMAN ROAD, WALDORF, MD 20601"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/15/2004",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JANUARY 18,",
+     "pages": 1997
+    },
+    {
+     "filed": "06/15/2004",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/23/2019",
+     "n": 3,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "01/23/2019",
+     "n": 4,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2019",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2019",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2019",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/23/2019",
+     "n": 8,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/01/2019",
+     "n": 9,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2019-04-01",
+   "interested_persons": [
+    {
+     "name": "ORA WILSON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 15,
+   "probate_age_days": 5335,
+   "days_since_last_docket": 2778,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-08",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920868025",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920868025",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOHNNY J WILSON"
+  }
+ ]
+}

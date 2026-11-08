@@ -1,0 +1,324 @@
+{
+ "account": "0901023918",
+ "estates": [
+  {
+   "estate_number": "11606",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/17/1999",
+   "date_closed": "10/28/1999",
+   "decedent": "LAWRENCE A. SIMPSON SR.",
+   "date_of_death": "7/1/1993",
+   "date_of_filing": "03/17/1999",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "TINA B. FERNANDES [P.O. BOX 60, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DEBRA R. JOHNSON",
+     "address": "P.O. BOX 1534, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/17/1999",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JULY 17, 1992 FILED FOR PROBATE",
+     "pages": 13
+    },
+    {
+     "filed": "03/17/1999",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/1999",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/1999",
+     "n": 4,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/1999",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/1999",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "03/17/1999",
+     "n": 7,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 9
+    },
+    {
+     "filed": "03/18/1999",
+     "n": 8,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION  NO OF LETTERS ISSUED -5",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/1999",
+     "n": 9,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - linda d. welch",
+     "pages": 2
+    },
+    {
+     "filed": "03/18/1999",
+     "n": 10,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - LAWRENCE A. SIMPSON, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/1999",
+     "n": 11,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/1999",
+     "n": 12,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - LINDA D. WELCH",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/1999",
+     "n": 13,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/1999",
+     "n": 14,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - LINDA D. WELCH",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/1999",
+     "n": 15,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - LAWRENCE A. SIMPSON, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/1999",
+     "n": 16,
+     "code": "1247",
+     "desc": "PETITION FOR AUTHORIZATION TO CONSUMMATE A CONTRACT FOR THE SALE OF REAL ESTATE FILED.",
+     "pages": 17
+    },
+    {
+     "filed": "04/06/1999",
+     "n": 17,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/1999",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/16/1999",
+     "n": 19,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/1999",
+     "n": 20,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM TINA B. FERNANDES, ESQUIRE",
+     "pages": 1
+    },
+    {
+     "filed": "06/29/1999",
+     "n": 21,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "06/30/1999",
+     "n": 22,
+     "code": "1244",
+     "desc": "ORIGINAL APPRAISAL ON HOME AND ONE ACRE LOT",
+     "pages": 37
+    },
+    {
+     "filed": "10/13/1999",
+     "n": 23,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/13/1999",
+     "n": 24,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/13/1999",
+     "n": 25,
+     "code": "1383",
+     "desc": "INTERMIM ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "06/29/1999",
+     "n": 26,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/22/1999",
+     "n": 27,
+     "code": "1346",
+     "desc": "INVOICE # 002118 BILLED TO DEBRA R. JOHNSON FOR CERTIFIED MAILING FEE AND PROBATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "10/28/1999",
+     "n": 28,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "10/28/1999",
+     "n": 29,
+     "code": "1336",
+     "desc": "RECEIPTS-=PROBATE FEE/CERTIFIED MAILINGS - #6581",
+     "pages": 1
+    },
+    {
+     "filed": "10/29/1999",
+     "n": 30,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/04/1999",
+     "n": 31,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM TINA FERNANDEZ",
+     "pages": 3
+    },
+    {
+     "filed": "11/29/1999",
+     "n": 32,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "01/18/2000",
+     "n": 33,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (RETURNED MAIL",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2000-01-18",
+   "interested_persons": [
+    {
+     "name": "DEBRA R. JOHNSON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "TINA B. FERNANDES",
+     "role": "ATTORNEY",
+     "source": "docket 20"
+    },
+    {
+     "name": "TINA FERNANDEZ",
+     "role": "CORRESPONDENT",
+     "source": "docket 31"
+    }
+   ],
+   "death_to_probate_days": 2085,
+   "probate_age_days": 225,
+   "days_since_last_docket": 9791,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-08",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920864346",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920864346",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "LAWRENCE A SIMPSON JR"
+  },
+  {
+   "estate_number": "9686",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "",
+   "date_closed": "",
+   "decedent": "LAWRENCE A. SIMPSON SR.",
+   "date_of_death": "7/1/1993",
+   "date_of_filing": "03/16/1994",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "02/08/2000",
+     "n": 1,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 25
+    }
+   ],
+   "last_docket_activity": "2000-02-08",
+   "interested_persons": [],
+   "death_to_probate_days": 258,
+   "probate_age_days": 11925,
+   "days_since_last_docket": 9770,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-08",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920858645",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920858645",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "LAWRENCE A SIMPSON JR"
+  }
+ ]
+}

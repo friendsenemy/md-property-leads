@@ -1,0 +1,102 @@
+{
+ "account": "0906154654",
+ "estates": [
+  {
+   "estate_number": "19419",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "06/26/2014",
+   "date_closed": "06/26/2014",
+   "decedent": "JOSEPH LOUIS BURCH",
+   "date_of_death": "5/31/2014",
+   "date_of_filing": "06/26/2014",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "ROBERT H. MORELAND [P.O. BOX 778, CHARLOTTE HALL, MD 20622]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CHRISTINE H BURCH",
+     "address": "12500 CHIPMUNK PLACE, WALDORF, MD 20601"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/26/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED APRIL 13,",
+     "pages": 1998
+    },
+    {
+     "filed": "06/26/2014",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "06/26/2014",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2014",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2014",
+     "n": 5,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2014",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/26/2014",
+     "n": 7,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2014",
+     "n": 8,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 7
+    }
+   ],
+   "last_docket_activity": "2014-06-26",
+   "interested_persons": [
+    {
+     "name": "CHRISTINE H BURCH",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 26,
+   "probate_age_days": 0,
+   "days_since_last_docket": 4518,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-08",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920852093",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920852093",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOSEPH L BURCH"
+  }
+ ]
+}

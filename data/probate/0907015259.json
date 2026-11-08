@@ -1,0 +1,223 @@
+{
+ "account": "0907015259",
+ "estates": [
+  {
+   "estate_number": "52640",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "06/09/1998",
+   "date_closed": "",
+   "decedent": "JOHN T MACLAUGHLIN",
+   "date_of_death": "5/27/1998",
+   "date_of_filing": "06/09/1998",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JAMES A MACLAUGHLIN",
+     "address": "1633 ETON WAY, CROFTON, MD 21114"
+    },
+    {
+     "name": "JOHN T MACLAUGHLIN JR",
+     "address": "3064 JENKINS LAND, INDIAN HEAD, MD 20640"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/09/1998",
+     "n": 1,
+     "code": "1244",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "06/09/1998",
+     "n": 2,
+     "code": "1244",
+     "desc": "SCHEDULE-A (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "06/09/1998",
+     "n": 3,
+     "code": "1244",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1998",
+     "n": 4,
+     "code": "1244",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1998",
+     "n": 5,
+     "code": "1244",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/09/1998",
+     "n": 6,
+     "code": "1244",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1998",
+     "n": 7,
+     "code": "1244",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/1998",
+     "n": 8,
+     "code": "1244",
+     "desc": "LETTER OF ADMINISTRATION 12 LETTERS ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/1998",
+     "n": 9,
+     "code": "1244",
+     "desc": "ELECTION OF PR FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/1998",
+     "n": 10,
+     "code": "1244",
+     "desc": "CONSENT TO ELECTION FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/1998",
+     "n": 11,
+     "code": "1244",
+     "desc": "INFORMATION REPORT",
+     "pages": 6
+    },
+    {
+     "filed": "07/06/1998",
+     "n": 12,
+     "code": "1244",
+     "desc": "PUPORTED LAST WILL AND TESTAMENT DATED 110878 ROW PROOF OF CUSTODY",
+     "pages": 3
+    },
+    {
+     "filed": "07/06/1998",
+     "n": 13,
+     "code": "1244",
+     "desc": "INHERITANCE TAX ON JOINT PERSONAL INVOICE # 11509 AND",
+     "pages": 11510
+    },
+    {
+     "filed": "07/10/1998",
+     "n": 14,
+     "code": "1244",
+     "desc": "CERT OF PUBLICATION",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/1998",
+     "n": 15,
+     "code": "1244",
+     "desc": "AMENDED CONSENT TO ELECTION FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/1998",
+     "n": 16,
+     "code": "1244",
+     "desc": "AMENDED ELECTION OF P.R. FOR MODIFIED ADMINISTRA- TION",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/1998",
+     "n": 17,
+     "code": "1244",
+     "desc": "PETITION TO ADMIT WILL TO PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/14/1998",
+     "n": 18,
+     "code": "1244",
+     "desc": "AMENDED ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/1998",
+     "n": 19,
+     "code": "1244",
+     "desc": "LETTERS OF ADMINISTRATION 12 LETTERS ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "08/11/1998",
+     "n": 20,
+     "code": "1244",
+     "desc": "LETTERS OF ADMINISTRATION 6 ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/1998",
+     "n": 21,
+     "code": "1244",
+     "desc": "MISC CORRESPONDENCE REC",
+     "pages": 2
+    },
+    {
+     "filed": "01/29/1999",
+     "n": 22,
+     "code": "1244",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 2
+    },
+    {
+     "filed": "01/29/1999",
+     "n": 23,
+     "code": "1244",
+     "desc": "FINAL REPORT  UNDER MODIFIED ADMINISTRATION",
+     "pages": 17
+    },
+    {
+     "filed": "01/29/1999",
+     "n": 24,
+     "code": "1244",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL PR AND/OR ATTY",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "1999-01-29",
+   "interested_persons": [
+    {
+     "name": "JAMES A MACLAUGHLIN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "JOHN T MACLAUGHLIN JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 13,
+   "probate_age_days": 10379,
+   "days_since_last_docket": 10145,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-08",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921343096",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921343096",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOHN T MACLAUGHLIN"
+  }
+ ]
+}
