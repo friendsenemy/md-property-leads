@@ -1,14 +1,22 @@
 {
- "generated_at": "2026-11-07T16:51:03+00:00",
- "window_from": "2026.02.10",
- "recent_transfers": 38710,
+ "generated_at": "2026-11-09T21:26:59+00:00",
+ "window_from": "2026.02.12",
+ "recent_transfers": 40666,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
-   51
+   52
   ],
   [
    "U.S. BANK TRUST NATIONAL",
+   24
+  ],
+  [
+   "FREEDOM MORTGAGE CORPORATION",
+   22
+  ],
+  [
+   "OPENDOOR PROPERTY TRUST I",
    21
   ],
   [
@@ -16,20 +24,8 @@
    20
   ],
   [
-   "FREEDOM MORTGAGE CORPORATION",
-   19
-  ],
-  [
-   "FEDERAL REALTY INVESTMENT TRUST",
-   19
-  ],
-  [
-   "OPENDOOR PROPERTY TRUST I",
-   18
-  ],
-  [
    "FEDERAL NATIONAL MORTGAGE ASSOCIAT",
-   17
+   18
   ],
   [
    "CASEY BETTY B ET AL TR",
@@ -44,15 +40,27 @@
    15
   ],
   [
-   "PEGGY WHEELER MARITAL TRUST",
-   14
+   "FEDERAL HOME LOAN MORTGAGE",
+   15
   ],
   [
-   "FEDERAL HOME LOAN MORTGAGE",
-   14
+   "ESHELMAN JONAS (TR)",
+   15
   ],
   [
    "CARRINGTON MORTGAGE SERVICES LLC",
+   15
+  ],
+  [
+   "US BANK NATIONAL ASSOCIATION",
+   13
+  ],
+  [
+   "PEGGY WHEELER MARITAL TRUST",
+   13
+  ],
+  [
+   "FEDERAL HOME LOAN MORTGAGE CORPORA",
    13
   ],
   [
@@ -60,39 +68,27 @@
    12
   ],
   [
-   "US BANK NATIONAL ASSOCIATION",
-   11
-  ],
-  [
    "PRESLEY PAMELA LYNN TRUST ETAL",
    11
   ],
   [
-   "FEDERAL HOME LOAN MORTGAGE CORPORA",
-   11
-  ],
-  [
-   "ESHELMAN JONAS (TR)",
-   11
-  ],
-  [
-   "CASCADE FUNDING MORTGAGE TRUST",
-   10
-  ],
-  [
-   "U.S. BANK NATIONAL ASSOCIATION",
+   "U S BANK TRUST NATIONAL ASSOCIATIO",
    9
   ],
   [
-   "U S BANK TRUST NATIONAL ASSOCIATIO",
-   8
+   "NATIONSTAR MORTGAGE LLC",
+   9
   ],
   [
-   "SUE E BITTINGER REVOCABLE TRUST",
-   8
+   "JEAN E HICKS LIVING TRUST",
+   9
   ],
   [
    "EQUITY TRUST COMPANY CUSTODIAN",
+   9
+  ],
+  [
+   "U.S. BANK NATIONAL ASSOCIATION",
    8
   ],
   [
@@ -104,7 +100,11 @@
    8
   ],
   [
-   "TAX AUCTION OF EAST COAST LLC",
+   "CASCADE FUNDING MORTGAGE TRUST",
+   8
+  ],
+  [
+   "SULLIVAN DOROTHY D REVOC TR",
    7
   ],
   [
@@ -112,7 +112,11 @@
    7
   ],
   [
-   "NATIONSTAR MORTGAGE LLC",
+   "ROCKET MORTGAGE LLC",
+   7
+  ],
+  [
+   "LEVY FAMILY TRUST ETAL",
    7
   ],
   [
@@ -128,19 +132,15 @@
    6
   ],
   [
+   "TAX AUCTION OF EAST COAST LLC",
+   6
+  ],
+  [
    "SWANSON ROBERT B TRUST",
    6
   ],
   [
-   "ROCKET MORTGAGE LLC",
-   6
-  ],
-  [
    "MILBOURNE MARK W TRUSTEE",
-   6
-  ],
-  [
-   "LEVY FAMILY TRUST ETAL",
    6
   ],
   [
@@ -156,11 +156,23 @@
    6
   ],
   [
+   "US BANK TRUST NATIONAL",
+   5
+  ],
+  [
+   "THUMULA SANDEEP TRUSTEE",
+   5
+  ],
+  [
    "MICHAEL A MORELLI RESIDUARY TRUST",
    5
   ],
   [
    "KOPPERMAN SUSAN M TRUSTEE",
+   5
+  ],
+  [
+   "DOVE GEORGIA E TRUSTEES",
    5
   ],
   [
@@ -172,8 +184,20 @@
    5
   ],
   [
+   "BANK OF NEW YORK MELLON",
+   5
+  ],
+  [
    "BAINUM BARBARA J TRUSTEE",
    5
+  ],
+  [
+   "WELLS FARGO BANK NA",
+   4
+  ],
+  [
+   "WASHINGTON MELISSA TRUSTEE",
+   4
   ],
   [
    "UPWARD AMERICA SOUTHEAST REIT TRS",
@@ -181,6 +205,10 @@
   ],
   [
    "U.S BANK TRUST NATIONAL",
+   4
+  ],
+  [
+   "U S BANK TRUST NATIONAL",
    4
   ],
   [
@@ -196,11 +224,19 @@
    4
   ],
   [
+   "PLEASANTS MARTHA J TRUSTEE",
+   4
+  ],
+  [
    "PHH MORTGAGE CORPORATION",
    4
   ],
   [
    "PATRICK J ALLEN LIVING TRUST",
+   4
+  ],
+  [
+   "MORTGAGE RESEARCH CENTER LLC",
    4
   ],
   [
@@ -216,15 +252,19 @@
    4
   ],
   [
+   "M&T BANK",
+   4
+  ],
+  [
+   "M & T BANK",
+   4
+  ],
+  [
    "JEROME FREIBAUM LIVING TRUST",
    4
   ],
   [
    "INGBER LOIS REV TR",
-   4
-  ],
-  [
-   "IBS RETIREMENT TRUST",
    4
   ],
   [
@@ -260,10 +300,6 @@
    4
   ],
   [
-   "BANK OF NEW YORK MELLON",
-   4
-  ],
-  [
    "BAHIMAN MYRIAM S TRUSTEE",
    4
   ],
@@ -280,7 +316,7 @@
    3
   ],
   [
-   "WELLS FARGO BANK NA",
+   "WELLS FARGO BANK N A",
    3
   ],
   [
@@ -292,11 +328,7 @@
    3
   ],
   [
-   "U.S. BANK TRUST COMPANY NATIONAL",
-   3
-  ],
-  [
-   "U S BANK TRUST NATIONAL",
+   "US BANK NATIONAL ASSOCIATION TRUST",
    3
   ],
   [
@@ -309,6 +341,10 @@
   ],
   [
    "TRUSTEES",
+   3
+  ],
+  [
+   "THOMPSON CHARLES P LIVING TRUST",
    3
   ],
   [
@@ -325,10 +361,6 @@
   ],
   [
    "THE SECOND POWER TRUST",
-   3
-  ],
-  [
-   "THE BANK OF NEW YORK MELLON",
    3
   ],
   [
@@ -352,7 +384,15 @@
    3
   ],
   [
+   "SEATTLE BANK",
+   3
+  ],
+  [
    "SCHRADER HARRY L TRUSTEE",
+   3
+  ],
+  [
+   "SBI LLC 401K TRUST",
    3
   ],
   [
@@ -372,7 +412,15 @@
    3
   ],
   [
+   "PAUL F NORVELL SR LIVING TRUST",
+   3
+  ],
+  [
    "PATTON AUDREY B TRUSTEE",
+   3
+  ],
+  [
+   "NISENFIELD FRANK TR",
    3
   ],
   [
@@ -388,15 +436,11 @@
    3
   ],
   [
+   "MARITAL TRUST UNDER THE WILL OF DE",
+   3
+  ],
+  [
    "MAJERLE METHENY REV TRUST",
-   3
-  ],
-  [
-   "M&T BANK",
-   3
-  ],
-  [
-   "M & T BANK",
    3
   ],
   [
@@ -412,6 +456,10 @@
    3
   ],
   [
+   "KUZMACK LINDA M G REV TR",
+   3
+  ],
+  [
    "KUHN HARRIET LURENSKY TRUSTEE",
    3
   ],
@@ -424,7 +472,23 @@
    3
   ],
   [
+   "JONES PHILIP W TRUSTEE",
+   3
+  ],
+  [
    "JACOBSON FRIDA TR",
+   3
+  ],
+  [
+   "JACKSON FAMILY TRUST",
+   3
+  ],
+  [
+   "IBS RETIREMENT TRUST",
+   3
+  ],
+  [
+   "HUSHON CINDY LEE TRUSTEE",
    3
   ],
   [
@@ -440,7 +504,7 @@
    3
   ],
   [
-   "GITSIT SOLUTIONS LLC TRUSTEE",
+   "GITSIT MORTGAGE LOAN TRUST BBPLC1",
    3
   ],
   [
@@ -448,15 +512,19 @@
    3
   ],
   [
-   "FREEDOM MORTGAGE CORP",
-   3
-  ],
-  [
    "FISHER LIVING TRUST THE",
    3
   ],
   [
+   "FERRETTI MARTINE TRUSTEE",
+   3
+  ],
+  [
    "EVANS PATRICIA C TRUSTEE",
+   3
+  ],
+  [
+   "EQUITY TRUST COMPANY CUSTODIAN FBO",
    3
   ],
   [
@@ -465,6 +533,10 @@
   ],
   [
    "EBERT FRANK R TRUSTEE",
+   3
+  ],
+  [
+   "DUNFEE CHARLES L TR",
    3
   ],
   [
@@ -480,11 +552,11 @@
    3
   ],
   [
-   "CASEY  BETTY ET AL TRUSTEES",
+   "CASCADE FUNDING MORTGAGE",
    3
   ],
   [
-   "CASCADE FUNDING MORTGAGE",
+   "CARRINGTON MORTGAGE SERVICE LLC",
    3
   ],
   [
@@ -529,78 +601,6 @@
   ],
   [
    "ZOELLNER ERIC A TRUSTEE",
-   2
-  ],
-  [
-   "YOUNGHEIN LOUIS TRUSTEE",
-   2
-  ],
-  [
-   "YEAGER GERALDINE TRUSTEE OF THE",
-   2
-  ],
-  [
-   "WRIGHT LINDA L TRUST",
-   2
-  ],
-  [
-   "WONG KAM CHUEN LIVING TRUST",
-   2
-  ],
-  [
-   "WILMINGTON TRUST N.A.",
-   2
-  ],
-  [
-   "WILCOXON JAMES W TRUSTEE",
-   2
-  ],
-  [
-   "WILBER PAUL D CO-TRUSTEE",
-   2
-  ],
-  [
-   "WENDY NADINE JOE TRUST",
-   2
-  ],
-  [
-   "WELLS FARGO BANK N A",
-   2
-  ],
-  [
-   "WEISSINGER THOMAS R II TRUSTEE",
-   2
-  ],
-  [
-   "WAMPLER JOHN C TR",
-   2
-  ],
-  [
-   "VO HIEU (TR)",
-   2
-  ],
-  [
-   "VELANDER CAROL IRENE TRUSTEE",
-   2
-  ],
-  [
-   "VAN RYSWICK PETER TRUSTEE &",
-   2
-  ],
-  [
-   "US BANK TRUST NATIONAL",
-   2
-  ],
-  [
-   "US BANK NATIONAL ASSOCIATION TRUST",
-   2
-  ],
-  [
-   "TRUSTEES ROBERT E WANDELL II REVOC",
-   2
-  ],
-  [
-   "TRUSTEES MARGUERITE D KLINE REVOCA",
    2
   ]
  ]
