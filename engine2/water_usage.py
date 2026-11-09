@@ -11,8 +11,10 @@ The county is taken from the file name prefix:
 Shut-off lists (data/distress/water/<county>-<utility>-shutoffs-<date>.csv, columns
   tran_date, service_address, zip, source) are water service disconnect /
 shut-off transactions released under a PIA request. Signal: WATER_SHUTOFF, one
-per address, with the number of shut-offs and the latest date in the detail;
-3+ shut-offs in a year is called out as chronic.
+per address. Charles bills quarterly, so repeat shut-offs one cycle apart mean
+the account was reconnected each time (occupied, chronically late); a single
+shut-off with nothing after it may mean the water is still off (possible
+vacancy). 3+ shut-offs is flagged WATER_SHUTOFF_CHRONIC.
 
 Signal: ZERO_WATER_USAGE when the newest MIN_ZERO_MONTHS billing months are all
 zero. "Zero all year" is called out in the detail. A zero-usage service
@@ -66,10 +68,15 @@ def shutoff_signals():
                 "source": v["source"],
                 "url": None, "date": dates[-1] if dates else None,
                 "county": county, "address": addr, "precision": "exact", "city": None, "zip": zip5 or None,
-                "detail": (f"Water service shut off / disconnected {n} time{'s' if n != 1 else ''}"
-                           + (f" between {dates[0]} and {dates[-1]}" if n > 1 else f" on {dates[0]}" if dates else "")
-                           + (" · CHRONIC (3+ shut-offs)" if n >= 3 else "")
-                           + " · county utility records (PIA)"),
+                # Charles bills quarterly, so one shut-off per cycle = reconnected and shut off again
+                # each quarter (occupied, chronically late); a single shut-off may still be off (vacant?).
+                "detail": ((f"Water shut off in {n} quarterly billing cycles ({dates[0]} → {dates[-1]}) — reconnected "
+                            f"each time, so OCCUPIED but chronically behind on the bill"
+                            if n >= 3 else
+                            f"Water shut off twice ({dates[0]}, {dates[-1]}) — reconnected once, late payer"
+                            if n == 2 else
+                            f"Water service shut off {dates[0]} — no later transaction, so either paid up or STILL OFF (possible vacancy)")
+                           + " · county utility shut-off list (PIA)"),
                 "ref": None, "residential": True, "shutoffs": n, "needs_improvements": True,
             })
         log.info("%s: %d shut-off addresses", name, len(per))

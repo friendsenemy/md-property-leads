@@ -88,8 +88,8 @@ DISTRESS_HARD_POINTS = {
     "FIRE_REPAIR_PERMIT": 15,     # permit whose case name says fire repair
     "FORECLOSURE_REGISTRY": 35,   # Prince George's Foreclosed Property Registry (lender took it back)
     "ZERO_WATER_USAGE": 35,       # utility export: no water used for 3+ billing months on an improved parcel
-    "WATER_SHUTOFF": 30,          # county utility shut off / disconnected water service (PIA list)
-    "WATER_SHUTOFF_CHRONIC": 10,  # three or more shut-offs in a year on top of WATER_SHUTOFF
+    "WATER_SHUTOFF": 30,          # county utility shut off water service (PIA list); a one-off may still be off = possible vacancy
+    "WATER_SHUTOFF_CHRONIC": 10,  # shut off 3+ quarterly cycles: reconnected each time, so occupied but chronically behind
     "NUISANCE_CASE": 20,          # open nuisance case (Charles: trash, overgrowth, junk vehicles, unsafe conditions)
     "ZONING_CASE": 10,            # open zoning case (Charles)
     "REPEAT_CODE_CASES": 20,      # three or more code cases at one parcel since 2020
