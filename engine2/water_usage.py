@@ -8,6 +8,12 @@ The county is taken from the file name prefix:
   calvert-  -> Calvert
   (add more prefixes in COUNTY_PREFIX as exports arrive)
 
+Shut-off lists (data/distress/water/<county>-<utility>-shutoffs-<date>.csv, columns
+  tran_date, service_address, zip, source) are water service disconnect /
+shut-off transactions released under a PIA request. Signal: WATER_SHUTOFF, one
+per address, with the number of shut-offs and the latest date in the detail;
+3+ shut-offs in a year is called out as chronic.
+
 Signal: ZERO_WATER_USAGE when the newest MIN_ZERO_MONTHS billing months are all
 zero. "Zero all year" is called out in the detail. A zero-usage service
 location on a parcel with no improvements is just an empty lot with a meter
@@ -35,10 +41,47 @@ def _month_key(h):
     return (int(m.group(1)), int(m.group(2))) if m else None
 
 
-def signals():
+def shutoff_signals():
     out = []
+    for path in sorted(glob.glob(os.path.join(WATER_DIR, "*-shutoffs-*.csv"))):
+        name = os.path.basename(path)
+        county = COUNTY_PREFIX.get(name.split("-")[0].lower())
+        if not county:
+            log.warning("%s: unknown county prefix, skipped", name)
+            continue
+        per = {}
+        with open(path, encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f):
+                addr = (r.get("service_address") or "").strip().upper()
+                if not addr or not addr[0].isdigit():
+                    continue
+                key = (addr, (r.get("zip") or "").strip()[:5])
+                per.setdefault(key, {"dates": [], "source": r.get("source") or "county utility shut-off list"})
+                per[key]["dates"].append((r.get("tran_date") or "").strip())
+        for (addr, zip5), v in per.items():
+            dates = sorted(d for d in v["dates"] if d)
+            n = len(dates)
+            out.append({
+                "kind": "WATER_SHUTOFF",
+                "source": v["source"],
+                "url": None, "date": dates[-1] if dates else None,
+                "county": county, "address": addr, "precision": "exact", "city": None, "zip": zip5 or None,
+                "detail": (f"Water service shut off / disconnected {n} time{'s' if n != 1 else ''}"
+                           + (f" between {dates[0]} and {dates[-1]}" if n > 1 else f" on {dates[0]}" if dates else "")
+                           + (" · CHRONIC (3+ shut-offs)" if n >= 3 else "")
+                           + " · county utility records (PIA)"),
+                "ref": None, "residential": True, "shutoffs": n, "needs_improvements": True,
+            })
+        log.info("%s: %d shut-off addresses", name, len(per))
+    return out
+
+
+def signals():
+    out = shutoff_signals()
     for path in sorted(glob.glob(os.path.join(WATER_DIR, "*.csv"))):
         name = os.path.basename(path)
+        if "-shutoffs-" in name:
+            continue
         parts = name.split("-")
         county = COUNTY_PREFIX.get(parts[0].lower())
         if not county:

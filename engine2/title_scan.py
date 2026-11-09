@@ -163,6 +163,8 @@ def apply_distress(prop, flags, distress):
                 flags.add("FIRE_COOLING")
         elif kind in config.DISTRESS_HARD_POINTS:
             flags.add(kind)
+            if kind == "WATER_SHUTOFF" and (s.get("shutoffs") or 0) >= 3:
+                flags.add("WATER_SHUTOFF_CHRONIC")
     if "ZERO_WATER_USAGE" in flags and (prop.get("homestead_code") or "").strip():
         # Owner claims it as home and uses no MetCom water: almost always a private
         # well on a sewer-only account. Keep the signal visible but score it low.

@@ -88,6 +88,8 @@ DISTRESS_HARD_POINTS = {
     "FIRE_REPAIR_PERMIT": 15,     # permit whose case name says fire repair
     "FORECLOSURE_REGISTRY": 35,   # Prince George's Foreclosed Property Registry (lender took it back)
     "ZERO_WATER_USAGE": 35,       # utility export: no water used for 3+ billing months on an improved parcel
+    "WATER_SHUTOFF": 30,          # county utility shut off / disconnected water service (PIA list)
+    "WATER_SHUTOFF_CHRONIC": 10,  # three or more shut-offs in a year on top of WATER_SHUTOFF
     "NUISANCE_CASE": 20,          # open nuisance case (Charles: trash, overgrowth, junk vehicles, unsafe conditions)
     "ZONING_CASE": 10,            # open zoning case (Charles)
     "REPEAT_CODE_CASES": 20,      # three or more code cases at one parcel since 2020
@@ -188,7 +190,7 @@ PROBLEM_GROUPS = {
     "Estate / heirs":        ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND", "MULTI_GENERATION_ESTATES", "FOREIGN_PROBATE"],
     "Tax sale":              ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT"],
     "Code / nuisance":       ["CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER"],
-    "Vacant":                ["VACANT_NOTICE", "ZERO_WATER_USAGE", "RETURNED_MAIL", "VACANT_LAND"],
+    "Vacant":                ["VACANT_NOTICE", "ZERO_WATER_USAGE", "WATER_SHUTOFF", "RETURNED_MAIL", "VACANT_LAND"],
     "Fire / damage":         ["FIRE", "FIRE_BLOCK", "FIRE_REPAIR_PERMIT", "DEMO_PERMIT", "CONDEMNED"],
     "Poor condition":        ["POOR_CONDITION", "BELOW_AVG_CONDITION", "NEGLECT_PROFILE"],
     "Foreclosure / receivership": ["FORECLOSURE_REGISTRY", "RECEIVERSHIP"],
@@ -224,15 +226,15 @@ PRESETS = [
     {"id": "deceased_taxsale","label": "Deceased Owner + Tax Sale",   "any_flags": ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale",       "label": "Tax Sale + Title Signal",      "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "tax_sale_estate","label": "Tax Sale + Estate on Title",   "any_flags": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "CONSERVATOR"]},
-    {"id": "signals",        "label": "🔥 Distress Signal (fire / vacant / code)", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY", "ZERO_WATER_USAGE"]},
+    {"id": "signals",        "label": "🔥 Distress Signal (fire / vacant / code)", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER", "DEMO_PERMIT", "FIRE_REPAIR_PERMIT", "FORECLOSURE_REGISTRY", "ZERO_WATER_USAGE", "WATER_SHUTOFF"]},
     {"id": "fire",           "label": "🔥 Fire-Damaged (Fire Marshal release)", "any_flags": ["FIRE", "FIRE_BLOCK"]},
     {"id": "signal_estate",  "label": "Distress Signal + Estate / Deceased Owner", "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED"]},
     {"id": "signal_taxsale", "label": "Distress Signal + Tax Sale",      "any_flags": ["FIRE", "FIRE_BLOCK", "VACANT_NOTICE", "RECEIVERSHIP", "CODE_VIOLATIONS", "CITY_WORK_ORDER", "DEMO_PERMIT", "FORECLOSURE_REGISTRY"], "any_flags2": ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "stacked",        "label": "Stacked: 2+ Signal Kinds",       "any_flags": ["STACKED_SIGNALS"]},
     {"id": "charles_code",   "label": "Charles Co. Code / Nuisance Case", "any_flags": ["CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES"]},
     {"id": "neglect",        "label": "Neglect Profile (poor condition + absentee)", "any_flags": ["NEGLECT_PROFILE"]},
-    {"id": "zero_water",     "label": "💧 Zero Water Usage (utility export)", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD"]},
-    {"id": "zero_water_estate", "label": "Zero Water + Estate / Deceased / Tax Sale", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
+    {"id": "zero_water",     "label": "💧 Zero Water / Water Shut Off (utility records)", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD", "WATER_SHUTOFF"]},
+    {"id": "zero_water_estate", "label": "Water Off + Estate / Deceased / Tax Sale", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD", "WATER_SHUTOFF"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},
 ]
 
