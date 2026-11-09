@@ -1,0 +1,88 @@
+{
+ "account": "0904005422",
+ "estates": [
+  {
+   "estate_number": "56163",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "08/17/2004",
+   "date_closed": "11/09/2004",
+   "decedent": "ROBERT EARL OLIVER SR",
+   "date_of_death": "7/29/2004",
+   "date_of_filing": "08/17/2004",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ELSIE LUCILLE OLIVER",
+     "address": "829 JANICE DRIVE, ANNAPOLIS, MD 21403"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/17/2004",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 11/23/1973 (UNPROBATED)",
+     "pages": 4
+    },
+    {
+     "filed": "08/17/2004",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "08/17/2004",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/17/2004",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/17/2004",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/09/2004",
+     "n": 6,
+     "code": "1137",
+     "desc": "SUPPLEMENTAL SCHEDULE B (SMALL ESTATE) (JME)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2004-11-09",
+   "interested_persons": [
+    {
+     "name": "ELSIE LUCILLE OLIVER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 19,
+   "probate_age_days": 84,
+   "days_since_last_docket": 8035,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-09",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920580813",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920580813",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROBERT E OLIVER"
+  }
+ ]
+}

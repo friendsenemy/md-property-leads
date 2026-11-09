@@ -1,0 +1,249 @@
+{
+ "account": "0906022723",
+ "estates": [
+  {
+   "estate_number": "19711",
+   "status": "ARCHIVED",
+   "type": "RE",
+   "date_opened": "12/30/2014",
+   "date_closed": "08/18/2016",
+   "decedent": "ROBERT LOUIS PENNY SR",
+   "date_of_death": "12/21/2014",
+   "date_of_filing": "12/30/2014",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "GEORGIA A HACKERSON POSEY",
+     "address": "8385 BOWIE ROAD, NANJEMOY, MD 20662"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/30/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED FEBRUARY 08, 2011 FILED FOR PROBATE",
+     "pages": 6
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 3,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 5,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 9,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 10,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 11,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "02/18/2015",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/23/2015",
+     "n": 13,
+     "code": "1244",
+     "desc": "RERTURNED CERTIFIED MAIL FOR PEDRO PENNY - RESENT TO CORRECT ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "03/16/2015",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2015",
+     "n": 15,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 11
+    },
+    {
+     "filed": "09/15/2015",
+     "n": 16,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2015",
+     "n": 17,
+     "code": "1122",
+     "desc": "AMENDED INVENTORY",
+     "pages": 11
+    },
+    {
+     "filed": "09/30/2015",
+     "n": 18,
+     "code": "1300",
+     "desc": "REQUEST FOR AN EXTENSION OF TIME TO FILE THE FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2015",
+     "n": 19,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING EXT",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2015",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/11/2015",
+     "n": 21,
+     "code": "1383",
+     "desc": "FIRST  ACCOUNT",
+     "pages": 13
+    },
+    {
+     "filed": "02/09/2016",
+     "n": 22,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/09/2016",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/11/2016",
+     "n": 24,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/01/2016",
+     "n": 25,
+     "code": "1385",
+     "desc": "SECOND AND FINAL ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "08/16/2016",
+     "n": 26,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2016",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2016",
+     "n": 28,
+     "code": "1310",
+     "desc": "COURT COSTS/FEES REFUND FORM",
+     "pages": 1
+    },
+    {
+     "filed": "10/01/2026",
+     "n": 29,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2026-10-01",
+   "interested_persons": [
+    {
+     "name": "GEORGIA A HACKERSON POSEY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 9,
+   "probate_age_days": 597,
+   "days_since_last_docket": 39,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-09",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920867011",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920867011",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "ROBERT L PENNY JR"
+  }
+ ]
+}

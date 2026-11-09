@@ -6032,6 +6032,20 @@
    "results": 6,
    "status": "NONE FOUND"
   },
+  "MARY E STURGIS|1997-10-24": {
+   "accounts": [
+    "0906025862"
+   ],
+   "checked": "2026-11-09",
+   "county": "Caroline",
+   "dod": "1997-10-24",
+   "estate_number": "4305",
+   "record_ids": [
+    "1920766597"
+   ],
+   "results": 7,
+   "status": "CLOSED"
+  },
   "MARY E UNDERWOOD|2008-08-24": {
    "accounts": [
     "0908040133"
@@ -6110,6 +6124,20 @@
    "results": 20,
    "status": "CLOSED"
   },
+  "MARY J SLAGLE|1998-07-29": {
+   "accounts": [
+    "0908041679"
+   ],
+   "checked": "2026-11-09",
+   "county": "Frederick",
+   "dod": "1998-07-29",
+   "estate_number": "22297",
+   "record_ids": [
+    "1920929539"
+   ],
+   "results": 6,
+   "status": "CLOSED"
+  },
   "MARY JOYCE A GATES|2006-02-09": {
    "accounts": [
     "0906079865"
@@ -6143,6 +6171,38 @@
    "estate_number": "14134",
    "record_ids": [
     "1913602379"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "MARY L QUADE|1990-09-03": {
+   "accounts": [
+    "0908023646"
+   ],
+   "checked": "2026-11-09",
+   "dod": "1990-09-03",
+   "results": 4,
+   "status": "NONE FOUND"
+  },
+  "MARY L SELLERS|2013-08-16": {
+   "accounts": [
+    "0907046073"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2013-08-16",
+   "results": 6,
+   "status": "NONE FOUND"
+  },
+  "MARY LOU BARNWELL|2011-09-25": {
+   "accounts": [
+    "0904008391"
+   ],
+   "checked": "2026-11-09",
+   "county": "Prince George's",
+   "dod": "2011-09-25",
+   "estate_number": "88695",
+   "record_ids": [
+    "1921330916"
    ],
    "results": 1,
    "status": "CLOSED"
@@ -6207,6 +6267,20 @@
    "results": 1,
    "status": "ARCHIVED"
   },
+  "MELBOURNE L ARBIN III|2002-08-07": {
+   "accounts": [
+    "0901040421"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2002-08-07",
+   "estate_number": "13249",
+   "record_ids": [
+    "1920860191"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "MELINDA CANNON|2014-12-03": {
    "accounts": [
     "0906139272"
@@ -6263,6 +6337,15 @@
    "results": 4,
    "status": "CLOSED"
   },
+  "MICHAEL A KOVACH|2003-06-02": {
+   "accounts": [
+    "0905036178"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2003-06-02",
+   "results": 1,
+   "status": "NONE FOUND"
+  },
   "MICHAEL A LANCASTER|2012-11-17": {
    "accounts": [
     "0909023267"
@@ -6318,6 +6401,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "MICHAEL J DONAHUE|2005-06-22": {
+   "accounts": [
+    "0908048886"
+   ],
+   "checked": "2026-11-09",
+   "county": "Baltimore",
+   "dod": "2005-06-22",
+   "estate_number": "135095",
+   "record_ids": [
+    "1920655431"
+   ],
+   "results": 3,
+   "status": "CLOSED"
+  },
   "MICHAEL J LANGLEY SR|1999-12-14": {
    "accounts": [
     "0903007049"
@@ -6339,6 +6436,15 @@
    "checked": "2026-10-17",
    "dod": "2007-02-17",
    "results": 0,
+   "status": "NONE FOUND"
+  },
+  "MICHAEL J WATSON|2004-01-22": {
+   "accounts": [
+    "0909020969"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2004-01-22",
+   "results": 9,
    "status": "NONE FOUND"
   },
   "MICHAEL K MULLINAX|2011-05-30": {
@@ -6530,6 +6636,20 @@
    "results": 6,
    "status": "CLOSED"
   },
+  "NOLAN M PRESNELL JR|1997-03-16": {
+   "accounts": [
+    "0906097413"
+   ],
+   "checked": "2026-11-09",
+   "county": "Prince George's",
+   "dod": "1997-03-16",
+   "estate_number": "51540",
+   "record_ids": [
+    "1921235392"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "NORMA B GOUGH|2010-06-08": {
    "accounts": [
     "0905012651"
@@ -6636,6 +6756,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "PATRICIA A ARNOLD|2014-07-22": {
+   "accounts": [
+    "0906042376"
+   ],
+   "checked": "2026-11-09",
+   "county": "Baltimore",
+   "dod": "2014-07-22",
+   "estate_number": "180991",
+   "record_ids": [
+    "1920641231"
+   ],
+   "results": 3,
+   "status": "ARCHIVED"
+  },
   "PATRICIA A BUTLER|2012-09-14": {
    "accounts": [
     "0906163246",
@@ -6695,6 +6829,15 @@
    "results": 9,
    "status": "NONE FOUND"
   },
+  "PATRICIA A WASHINGTON|2008-08-24": {
+   "accounts": [
+    "0910010373"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2008-08-24",
+   "results": 5,
+   "status": "NONE FOUND"
+  },
   "PATRICIA L MADDEN|2013-07-16": {
    "accounts": [
     "0906172318"
@@ -6717,6 +6860,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "PATRICK W HUNTT JR|2007-05-21": {
+   "accounts": [
+    "0906038778"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2007-05-21",
+   "results": 0,
+   "status": "NONE FOUND"
   },
   "PATRICK W HUNTT|2007-05-21": {
    "accounts": [
@@ -6741,6 +6893,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "PAUL A WHITLOCK|2008-01-09": {
+   "accounts": [
+    "0906153224"
+   ],
+   "checked": "2026-11-09",
+   "county": "Baltimore",
+   "dod": "2008-01-09",
+   "estate_number": "147179",
+   "record_ids": [
+    "1920643678"
+   ],
+   "results": 3,
+   "status": "CLOSED"
+  },
   "PAUL E FINNEYFROCK|2007-10-08": {
    "accounts": [
     "0910015472"
@@ -6753,6 +6919,20 @@
     "1913593452"
    ],
    "results": 4,
+   "status": "CLOSED"
+  },
+  "PAUL G MORGAN JR|2005-04-11": {
+   "accounts": [
+    "0906152562"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2005-04-11",
+   "estate_number": "14533",
+   "record_ids": [
+    "1920871232"
+   ],
+   "results": 13,
    "status": "CLOSED"
   },
   "PAUL M BROOKS|1999-08-19": {
@@ -6787,6 +6967,29 @@
    "estate_number": "14715",
    "record_ids": [
     "1908682399"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "PAUL R SHINGLETON|2013-04-02": {
+   "accounts": [
+    "0901049585"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2013-04-02",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
+  "PAULETTE BONIFACE|2013-07-31": {
+   "accounts": [
+    "0901011723"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2013-07-31",
+   "estate_number": "18949",
+   "record_ids": [
+    "1920865472"
    ],
    "results": 1,
    "status": "CLOSED"
@@ -7068,6 +7271,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "RAYMOND J SIMPSON|2013-03-09": {
+   "accounts": [
+    "0903023117"
+   ],
+   "checked": "2026-11-09",
+   "county": "Prince George's",
+   "dod": "2013-03-09",
+   "estate_number": "93322",
+   "record_ids": [
+    "1921240648"
+   ],
+   "results": 5,
+   "status": "CLOSED"
+  },
   "RAYMOND L HOFFMAN|2006-08-11": {
    "accounts": [
     "0904013808"
@@ -7108,6 +7325,15 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "REBECCA D CAIN|1976-12-03": {
+   "accounts": [
+    "0901036289"
+   ],
+   "checked": "2026-11-09",
+   "dod": "1976-12-03",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "REBECCA GRAHAM|1997-04-23": {
    "accounts": [
     "0906072178"
@@ -7115,6 +7341,15 @@
    "checked": "2026-11-03",
    "dod": "1997-04-23",
    "results": 1,
+   "status": "NONE FOUND"
+  },
+  "REGINA L OLIVER|2007-04-29": {
+   "accounts": [
+    "0906026303"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2007-04-29",
+   "results": 0,
    "status": "NONE FOUND"
   },
   "RENEE L SMITH|2014-01-22": {
@@ -7167,6 +7402,20 @@
    "dod": "1973-09-14",
    "results": 8,
    "status": "NONE FOUND"
+  },
+  "RICHARD A STUTZ|2009-07-01": {
+   "accounts": [
+    "0907013213"
+   ],
+   "checked": "2026-11-09",
+   "county": "Baltimore City",
+   "dod": "2009-07-01",
+   "estate_number": "87764",
+   "record_ids": [
+    "1921685277"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "RICHARD E DANIELS|1997-08-02": {
    "accounts": [
@@ -7275,6 +7524,43 @@
    "results": 2,
    "status": "NONE FOUND"
   },
+  "ROBERT E CASEY|2007-04-21": {
+   "accounts": [
+    "0906073042"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2007-04-21",
+   "results": 5,
+   "status": "NONE FOUND"
+  },
+  "ROBERT E FRITZ|2014-12-14": {
+   "accounts": [
+    "0906034128"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2014-12-14",
+   "estate_number": "19784",
+   "record_ids": [
+    "1920856860"
+   ],
+   "results": 7,
+   "status": "ARCHIVED"
+  },
+  "ROBERT E OLIVER|2004-07-29": {
+   "accounts": [
+    "0904005422"
+   ],
+   "checked": "2026-11-09",
+   "county": "Anne Arundel",
+   "dod": "2004-07-29",
+   "estate_number": "56163",
+   "record_ids": [
+    "1920580813"
+   ],
+   "results": 18,
+   "status": "CLOSED"
+  },
   "ROBERT E PIKE|1994-04-28": {
    "accounts": [
     "0905005833"
@@ -7335,6 +7621,20 @@
    "results": 8,
    "status": "NONE FOUND"
   },
+  "ROBERT K MCPHERSON|2000-03-29": {
+   "accounts": [
+    "0909004505"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2000-03-29",
+   "estate_number": "13254",
+   "record_ids": [
+    "1920855633"
+   ],
+   "results": 4,
+   "status": "CLOSED"
+  },
   "ROBERT L BARR SR|2002-12-12": {
    "accounts": [
     "0908063311"
@@ -7374,6 +7674,43 @@
    "results": 6,
    "status": "CLOSED"
   },
+  "ROBERT L JAMESON|2004-06-23": {
+   "accounts": [
+    "0909014101"
+   ],
+   "checked": "2026-11-09",
+   "dod": "2004-06-23",
+   "results": 4,
+   "status": "NONE FOUND"
+  },
+  "ROBERT L PENNY JR|2014-12-21": {
+   "accounts": [
+    "0906022723"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2014-12-21",
+   "estate_number": "19711",
+   "record_ids": [
+    "1920867011"
+   ],
+   "results": 4,
+   "status": "ARCHIVED"
+  },
+  "ROBERT M BOYKIN III|2014-12-18": {
+   "accounts": [
+    "0910001501"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2014-12-18",
+   "estate_number": "19702",
+   "record_ids": [
+    "1920853015"
+   ],
+   "results": 4,
+   "status": "ARCHIVED"
+  },
   "ROBERT N HOUCHIN JR|1995-11-20": {
    "accounts": [
     "0907020384"
@@ -7382,6 +7719,20 @@
    "dod": "1995-11-20",
    "results": 0,
    "status": "NONE FOUND"
+  },
+  "ROBERT S COOKSEY|2010-10-21": {
+   "accounts": [
+    "0904018214"
+   ],
+   "checked": "2026-11-09",
+   "county": "Charles",
+   "dod": "2010-10-21",
+   "estate_number": "17332",
+   "record_ids": [
+    "1920864603"
+   ],
+   "results": 8,
+   "status": "CLOSED"
   },
   "ROBERT T MULLOY|2003-04-12": {
    "accounts": [
@@ -7465,6 +7816,15 @@
    ],
    "results": 2,
    "status": "CLOSED"
+  },
+  "ROSE M HUDSON|1987-05-25": {
+   "accounts": [
+    "0906008593"
+   ],
+   "checked": "2026-11-09",
+   "dod": "1987-05-25",
+   "results": 2,
+   "status": "NONE FOUND"
   },
   "ROSE M KRIEGER|1993-05-02": {
    "accounts": [
@@ -8731,5 +9091,5 @@
    "status": "NONE FOUND"
   }
  },
- "updated": "2026-11-08"
+ "updated": "2026-11-09"
 }

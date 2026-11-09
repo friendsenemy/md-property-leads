@@ -1,0 +1,88 @@
+{
+ "account": "0906097413",
+ "estates": [
+  {
+   "estate_number": "51540",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "01/20/1998",
+   "date_closed": "",
+   "decedent": "NOLAN MAYFIELD PRESNELL SR",
+   "date_of_death": "3/16/1997",
+   "date_of_filing": "01/20/1998",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CECELIA E PRESNELL",
+     "address": "11201 LIVINGSTON RD, FT WASH, MD 20744"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/20/1998",
+     "n": 1,
+     "code": "1244",
+     "desc": "PETITION FOR ADMINISTRATION OF SMALL ESTATE",
+     "pages": 6
+    },
+    {
+     "filed": "01/20/1998",
+     "n": 2,
+     "code": "1244",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/1998",
+     "n": 3,
+     "code": "1244",
+     "desc": "QUESTIONNAIRE",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/1998",
+     "n": 4,
+     "code": "1244",
+     "desc": "INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/1998",
+     "n": 5,
+     "code": "1244",
+     "desc": "ORDER FOR AMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/1998",
+     "n": 6,
+     "code": "1244",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE 4 LETTERS ISSUED",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "1998-01-20",
+   "interested_persons": [
+    {
+     "name": "CECELIA E PRESNELL",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 310,
+   "probate_age_days": 10520,
+   "days_since_last_docket": 10520,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-09",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921235392",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921235392",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "NOLAN M PRESNELL JR"
+  }
+ ]
+}

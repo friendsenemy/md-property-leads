@@ -1,0 +1,316 @@
+{
+ "account": "0909004505",
+ "estates": [
+  {
+   "estate_number": "13254",
+   "status": "CLOSED",
+   "type": "SJ",
+   "date_opened": "09/09/2002",
+   "date_closed": "07/28/2003",
+   "decedent": "ROBERT K. MCPHERSON",
+   "date_of_death": "3/29/2000",
+   "date_of_filing": "09/09/2002",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "WILLIAM R. GREER JR.",
+     "address": "P O BOX 1616, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/09/2002",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION (JUDICIAL)",
+     "pages": 2
+    },
+    {
+     "filed": "09/09/2002",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2002",
+     "n": 3,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 4,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - ROSE M. MCPHERSON, WIFE",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 5,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - PATRICK E. MCPHERSON, SON",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 6,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - THERESA L. BILBRA, DAUGHTER",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 7,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - DONNA M. BONDS, DAUGHTER",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 8,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - ROBERT K. MCPHERSON, JR., SON",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 9,
+     "code": "1110",
+     "desc": "NOTICE TO INTERESTED PERSONS - WILLIAM R. GREER, JR., ATTORNEY/ PETITIONER",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 10,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS OF NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2002",
+     "n": 11,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 2
+    },
+    {
+     "filed": "09/23/2002",
+     "n": 12,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE) JUDICIAL",
+     "pages": 1
+    },
+    {
+     "filed": "09/24/2002",
+     "n": 13,
+     "code": "1103",
+     "desc": "AMENDED SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "09/24/2002",
+     "n": 14,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/24/2002",
+     "n": 15,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/24/2002",
+     "n": 16,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "09/24/2002",
+     "n": 17,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS COURT SIGN IN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "09/24/2002",
+     "n": 18,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE) JUDICIAL FILED BY WILLIAM R. GREER, JR. ATTY",
+     "pages": 1
+    },
+    {
+     "filed": "09/24/2002",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/07/2000",
+     "n": 20,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE FILED BY JOHN F. LILLARD, III THE ORIGINAL PETITION HAD WRONG DATE OF DEATH THEREFORE THIS CLAIM WAS NOT ENTERED UNTIL THE AMEND PETITION WAS FILED. IT IS A TIMELY FILED CLAIM",
+     "pages": 5
+    },
+    {
+     "filed": "10/01/2002",
+     "n": 21,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY) - RETURNED CORRESPONDENCE, MOVED, LEFT NO ADDRESS FOR ROBERT K. MCPHERSON, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2002",
+     "n": 22,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL FOR PATRICK E. MCPHERSON",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2002",
+     "n": 23,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY) - UNCLAIMED MAIL FOR WILLIAM GREER, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2002",
+     "n": 24,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - FOR THERESA L BILBRA",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2002",
+     "n": 25,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY) - FOR ROBERT K. MCPHERSON, JR",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2002",
+     "n": 26,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - FOR ROSE M. MCPHERSON",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2002",
+     "n": 27,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - DONNA M. BONDS",
+     "pages": 1
+    },
+    {
+     "filed": "11/25/2002",
+     "n": 28,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "12/30/2002",
+     "n": 29,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2003",
+     "n": 30,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/02/2003",
+     "n": 31,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR CERTIFICATE OF COMPLIANCE AND $49.52 COSTS DUE",
+     "pages": 1
+    },
+    {
+     "filed": "06/17/2003",
+     "n": 32,
+     "code": "1111",
+     "desc": "SMALL ESTATE CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "06/17/2003",
+     "n": 33,
+     "code": "1336",
+     "desc": "RECEIPT #12644 SMALL ESTATE FEE AND CERTIFIED MAILING FEES PAID",
+     "pages": 1
+    },
+    {
+     "filed": "07/23/2003",
+     "n": 34,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR STATUS OF LITIGATION",
+     "pages": 1
+    },
+    {
+     "filed": "07/28/2003",
+     "n": 35,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM MR GREER",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2003-07-28",
+   "interested_persons": [
+    {
+     "name": "WILLIAM R. GREER JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "ROSE M. MCPHERSON",
+     "role": "WIFE",
+     "source": "docket 4"
+    },
+    {
+     "name": "PATRICK E. MCPHERSON",
+     "role": "SON",
+     "source": "docket 5"
+    },
+    {
+     "name": "THERESA L. BILBRA",
+     "role": "DAUGHTER",
+     "source": "docket 6"
+    },
+    {
+     "name": "DONNA M. BONDS",
+     "role": "DAUGHTER",
+     "source": "docket 7"
+    },
+    {
+     "name": "MR GREER",
+     "role": "CORRESPONDENT",
+     "source": "docket 35"
+    }
+   ],
+   "death_to_probate_days": 894,
+   "probate_age_days": 322,
+   "days_since_last_docket": 8505,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-09",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1920855633",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1920855633",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROBERT K MCPHERSON"
+  }
+ ]
+}
