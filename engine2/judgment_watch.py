@@ -378,6 +378,13 @@ def parse_debtor(name):
     return {"last": last.replace(" ", ""), "first": first, "mi": mi, "raw": name.strip()}
 
 
+def add_years(d, n):
+    try:
+        return d.replace(year=d.year + n)
+    except ValueError:          # Feb 29
+        return d.replace(year=d.year + n, day=28)
+
+
 def years_between(d0, d1):
     return (d1 - d0).days / 365.25
 
@@ -514,11 +521,11 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         kind = "STATE / GOV LIEN" if GOV_RE.search(creditor) else "JUDGMENT"
         if kind != "JUDGMENT" and TAX_RE.search(creditor):
             kind = "TAX LIEN"
-        expires = ed.replace(year=ed.year + 12) if ed else None
+        expires = add_years(ed, 12) if ed else None
         if FED_RE.search(creditor) and "CREDIT UNION" not in creditor.upper():
             kind = "FEDERAL LIEN (usually IRS)"
             # IRS collection generally ends 10 years after assessment unless extended or refiled
-            expires = ed.replace(year=ed.year + 10) if ed else None
+            expires = add_years(ed, 10) if ed else None
         ctype = creditor_type(creditor)
         judgments.append({"case": j["case"], "creditor": creditor, "creditor_type": ctype, "case_type": case_type(j["case"]),
                           "buyable": ctype in ("PERSON", "BUSINESS") and j["amount"] >= 2500,
