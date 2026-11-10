@@ -92,6 +92,28 @@ def candidates(done):
             if prev and now - datetime.fromisoformat(prev["checked"]) < timedelta(days=RECHECK_DAYS):
                 continue
             out.append((sc, r["scores"].get("priority", 0), r["id"], addr, p.get("city") or "", zip5))
+    # Lien Leverage leads (buyable judgment + equity): the A-list first (HIGH match, lien <= $25K,
+    # equity >= $150K), then the rest, so the vacant ones among them surface over the daily runs.
+    jpath = os.path.join(os.path.dirname(TITLE_DIR.rstrip("/")), "judgments", "leads.json")
+    if os.path.exists(jpath):
+        seen = {o[2] for o in out}
+        for r in json.load(open(jpath)).get("rows", []):
+            if r["id"] in seen or (r.get("equity_est") or 0) < 100000:
+                continue
+            buy = [j for j in r.get("judgments") or [] if j.get("buyable")]
+            if not buy:
+                continue
+            prev = done.get(r["id"])
+            if prev and now - datetime.fromisoformat(prev["checked"]) < timedelta(days=RECHECK_DAYS):
+                continue
+            zip5 = (r.get("zip") or "")[:5]
+            if not r.get("address") or not zip5.isdigit():
+                continue
+            alist = any(j.get("confidence") == "HIGH" for j in buy) and sum(j["amount"] for j in buy) <= 25000 and r["equity_est"] >= 150000
+            sc = 59 if alist else 45           # below the title-scan "likely vacant" tier so those still go first
+            if r.get("mail_state") not in ("MD", ""):
+                sc += 5
+            out.append((sc, int(r.get("equity_est") or 0), r["id"], r["address"], r.get("city") or "", zip5))
     out.sort(reverse=True)
     return out
 
