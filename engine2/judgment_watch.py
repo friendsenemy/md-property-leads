@@ -252,8 +252,8 @@ def load_raw(slug):
 
 
 def shard_range(k, today):
-    end = today if k == 0 else today.replace(year=today.year - SHARD_YEARS * k)
-    start = today.replace(year=today.year - SHARD_YEARS * (k + 1)) + timedelta(days=1)
+    end = today if k == 0 else add_years(today, -SHARD_YEARS * k)
+    start = add_years(today, -SHARD_YEARS * (k + 1)) + timedelta(days=1)
     return start, end
 
 
