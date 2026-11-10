@@ -513,7 +513,12 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         score += 5; reasons.append(f"${total:,.0f} total owed (+5)")
     # only some owners are debtors -> likely tenancy by the entirety or a single share
     if len(people) > 1 and len(debtor_keys) < len(people):
-        same_last = len({x["last_name"] for x in people}) == 1
+        # tenancy by the entirety needs a married couple: exactly two people joined by "&" on the
+        # first owner line with the same surname. Anything else is treated as a separate share.
+        from engine2.owner_parse import split_individuals
+        line1 = split_individuals(p.get("owner1") or "")
+        same_last = (len(people) == 2 and len(line1) == 2 and "&" in (p.get("owner1") or "")
+                     and len({x["last_name"] for x in line1}) == 1)
         if same_last:
             tags.append("ONE_SPOUSE_ONLY"); score += 10
             reasons.append("Judgment against only one of the spouses — if they own as tenants by the entirety the lien may not touch the house (+10)")
