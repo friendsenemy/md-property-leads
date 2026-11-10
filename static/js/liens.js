@@ -11,9 +11,10 @@ const LiensApp = {
         STACKED: "Stacked liens", GOV_LIEN: "State / gov lien", EXPIRING: "Expiring ≤2 yrs", OLD_LIEN: "Old lien (8+ yrs)",
         ONE_SPOUSE_ONLY: "Only one spouse owes", ONE_OWNER_ONLY: "Only one co-owner owes", DEAD_OWNER: "Owner died / estate",
         CO_OWNER_DEAD: "Co-owner died", NOT_OWNER_OCCUPIED: "Not owner-occupied", OUT_OF_STATE: "Out of state", DISTRESS: "Distress signal",
-        LONG_HELD: "Long-held", OWNER_OCCUPIED: "Owner-occupied",
+        LONG_HELD: "Long-held", OWNER_OCCUPIED: "Owner-occupied", LIEN_BUY: "💰 Lien-buy candidate",
     },
-    HOT: ["DEAD_OWNER", "CO_OWNER_DEAD", "EXPIRING", "ONE_SPOUSE_ONLY", "ONE_OWNER_ONLY", "GOV_LIEN", "STACKED"],
+    CTYPE: { GOV: "government", CONSUMER: "consumer debt — license needed to buy", STORE: "store / restitution", PERSON: "private person", BUSINESS: "business" },
+    HOT: ["LIEN_BUY", "DEAD_OWNER", "CO_OWNER_DEAD", "EXPIRING", "ONE_SPOUSE_ONLY", "ONE_OWNER_ONLY", "GOV_LIEN", "STACKED"],
 
     async init() {
         this.bindEvents();
@@ -161,7 +162,7 @@ const LiensApp = {
         if (!r) return;
         const jrows = r.judgments.map((j) => `<tr>
             <td style="font-family:var(--font-mono)"><a href="https://jportal.mdcourts.gov/judgment/details.jsf?selectedCaseId=${encodeURIComponent(j.case)}" target="_blank" rel="noopener">${this.esc(j.case)}</a></td>
-            <td>${this.esc(j.creditor)}<div style="color:var(--text-dim)">${this.esc(j.kind)}</div></td>
+            <td>${this.esc(j.creditor)}<div style="color:${j.buyable ? "var(--green)" : "var(--text-dim)"}">${this.esc(j.kind)}${j.creditor_type ? ` · ${this.esc(this.CTYPE[j.creditor_type] || j.creditor_type)}` : ""}${j.buyable ? " · 💰 could buy" : ""}</div>${j.case_type ? `<div style="color:var(--text-dim)">${this.esc(j.case_type)}</div>` : ""}</td>
             <td>${this.esc(j.debtor)}${j.confidence !== "HIGH" ? ` <span style="color:var(--yellow)" title="Matched on first + last name only">(confirm)</span>` : ""}</td>
             <td style="font-family:var(--font-mono)">${this.money(j.amount)}</td>
             <td style="font-family:var(--font-mono)">${this.esc(j.entry)}<div style="color:var(--text-dim)">${j.age_years} yrs</div></td>
@@ -209,6 +210,17 @@ const LiensApp = {
                     <li><b>Sort each lien:</b> about to lapse · negotiable (creditor's real recovery is small) · only on one share · real and senior.</li>
                     <li><b>Buy the interest cheap</b> and get paid by buyout, a note, partition, or curing and reselling.</li>
                 </ol>
+                ${r.tags.includes("LIEN_BUY") ? `<div style="margin-top:10px; padding:8px 10px; border:1px solid var(--green); border-radius:var(--radius); font-size:0.82rem; line-height:1.55">
+                    <b style="color:var(--green)">💰 Lien-buy play (Logan Fullmer)</b>
+                    <ol style="margin:4px 0 0 18px">
+                        <li>Land Records: confirm the property is free &amp; clear (or there's equity behind this lien) and the judgment wasn't released.</li>
+                        <li>Call the creditor (the business or person owed — the green row above). Offer cash for the judgment; old ones often sell for pennies.</li>
+                        <li>Get a signed assignment of judgment and file it in the case with the clerk so you're the creditor of record.</li>
+                        <li>Send the owner a payoff demand: judgment + post-judgment interest + costs.</li>
+                        <li>Unpaid? Ask the court for a writ of execution on the property — it leads to a sheriff's sale (see the Writ Watch tab).</li>
+                    </ol>
+                    <div style="color:var(--text-dim); margin-top:4px">Don't buy consumer-debt judgments (debt buyers, banks, medical, landlords) — Maryland requires a collection agency license to collect those. Have an attorney paper your first one.</div>
+                </div>` : ""}
             </div>
             <div class="detail-section">
                 <h3>Imagery</h3>

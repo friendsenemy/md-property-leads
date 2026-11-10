@@ -223,6 +223,40 @@ TAX_RE = re.compile(r"COMPTROLLER|TREASUR|REVENUE|\bTAX\b", re.I)
 COMPANY_RE = re.compile(r"\b(LLC|L\.L\.C|INC|CORP|CORPORATION|COMPANY|\bCO\b|LTD|LP|LLP|BANK|ASSOC|TRUST|CHURCH|"
                         r"SERVICES|HOLDINGS|PROPERTIES|GROUP|ENTERPRISES)\b", re.I)
 SUFFIX = {"JR", "SR", "II", "III", "IV", "V"}
+# Consumer-debt creditors: buying their defaulted consumer judgments and collecting them needs a
+# Maryland collection agency license (MCALA; judgments enforced without one have been held void).
+CONSUMER_RE = re.compile(r"LVNV|MIDLAND|PORTFOLIO RECOVERY|CAVALRY|JEFFERSON CAPITAL|VELOCITY|UNIFUND|ABSOLUTE RESOLUTION|"
+                         r"CROWN ASSET|PALISADES|ASSET ACCEPTANCE|ENCORE|SECOND ROUND|DNF ASSOC|BANK|CREDIT UNION|\bFCU\b|"
+                         r"FINANCIAL|FINANCE|LENDING|LENDMARK|ONEMAIN|CAPITAL ONE|DISCOVER|SYNCHRONY|CITIBANK|AMERICAN EXPRESS|"
+                         r"MARINER|WORLD ACCEPTANCE|AUTO|MOTOR|CREDIT|LOAN|FUNDING|RECEIVABLE|COLLECTION|HOSPITAL|MEDICAL|"
+                         r"HEALTH|PHYSICIAN|RADIOLOGY|DENTAL|APARTMENT|PROPERTY MANAGEMENT|LEASING|RENTAL|VERIZON|COMCAST|"
+                         r"T-MOBILE|AT&T|INSURANCE|GEICO|PROGRESSIVE|ALLSTATE|STATE FARM", re.I)
+STORE_RE = re.compile(r"HOME DEPOT|WALMART|WAL-MART|TARGET|LOWE'?S|SAFEWAY|GIANT|SHERIFF|POLICE", re.I)
+
+
+def creditor_type(creditor):
+    if GOV_RE.search(creditor):
+        return "GOV"
+    if CONSUMER_RE.search(creditor):
+        return "CONSUMER"
+    if STORE_RE.search(creditor):
+        return "STORE"
+    if "," in creditor and not COMPANY_RE.search(creditor):
+        return "PERSON"
+    return "BUSINESS"
+
+
+def case_type(case):
+    c = case.upper()
+    if "-CR-" in c or re.search(r"-K-\d", c):
+        return "Criminal restitution"
+    if "-FM-" in c or "-FAM" in c:
+        return "Family court"
+    if "-JG-" in c:
+        return "Recorded judgment / lien"
+    if "-CV-" in c or re.match(r"^\d\d-C-", c):
+        return "Circuit civil"
+    return ""
 DEAD_FLAGS = {"ALL_OWNERS_DECEASED", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ESTATE_IN_NAME", "HEIRS_IN_NAME",
               "PERSONAL_REP", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_NONE_FOUND", "PROBATE_OPEN_STALE",
               "MULTI_GENERATION_ESTATES", "FOREIGN_PROBATE"}
@@ -375,7 +409,10 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         if kind != "JUDGMENT" and TAX_RE.search(creditor):
             kind = "TAX LIEN"
         expires = ed.replace(year=ed.year + 12) if ed else None
-        judgments.append({"case": j["case"], "creditor": creditor, "debtor": j["debtor"], "amount": j["amount"],
+        ctype = creditor_type(creditor)
+        judgments.append({"case": j["case"], "creditor": creditor, "creditor_type": ctype, "case_type": case_type(j["case"]),
+                          "buyable": ctype in ("PERSON", "BUSINESS") and j["amount"] >= 2500,
+                          "debtor": j["debtor"], "amount": j["amount"],
                           "entry": j["entry"], "age_years": round(age, 1), "kind": kind,
                           "expires": expires.isoformat() if expires else "", "confidence": j["confidence"],
                           "book_page": j.get("book_page", "")})
@@ -427,6 +464,17 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         held = 0
     if held >= 15:
         score += 6; tags.append("LONG_HELD"); reasons.append(f"Owned {int(held)} years (+6)")
+    # ── Logan Fullmer's lien-buy play: buy an existing recorded judgment from a creditor who can
+    # sell it without a collection license problem, record the assignment, demand payoff with
+    # interest, and enforce by writ of execution + sheriff's sale if unpaid. Needs a property that
+    # isn't the debtor's home and has equity behind the lien.
+    buyable = [j for j in judgments if j["buyable"]]
+    # a judgment against only one spouse usually can't reach a tenancy-by-the-entirety house — not a lien to buy
+    if buyable and not occupied and assessed >= 75000 and "ONE_SPOUSE_ONLY" not in tags:
+        b = max(buyable, key=lambda x: x["amount"])
+        score += 10; tags.append("LIEN_BUY")
+        reasons.append(f"Lien-buy candidate: ${b['amount']:,.0f} judgment owed to {b['creditor']} ({b['creditor_type'].lower()} creditor) "
+                       f"on a non-homestead property assessed ${assessed:,.0f} (+10)")
     # ── money
     equity = assessed - total
     if assessed < 40000:
@@ -444,6 +492,10 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         cautions.append("At least one match has no middle initial on one side — confirm the debtor and the owner are the same person (Case Search party address, Land Records).")
     if occupied:
         cautions.append("Owner-occupied (homestead) — skip unless it's the sheriff's-sale play.")
+    if any(j["creditor_type"] == "CONSUMER" for j in judgments):
+        cautions.append("Consumer-debt judgment(s) (debt buyer / bank / medical / landlord): buying and collecting these in Maryland needs a collection agency license — use them as owner pressure, not as a lien to buy.")
+    if "LIEN_BUY" in tags:
+        cautions.append("Lien-buy: confirm in Land Records the property is free & clear (or the lien still has equity behind it) and the judgment wasn't renewed, released or appealed before you offer the creditor anything.")
 
     return {
         "id": p["acct"], "account": p["acct"], "county": county,
