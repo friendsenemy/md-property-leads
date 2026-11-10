@@ -4,7 +4,8 @@ Tim Bender's lien-leverage play: liens and judgments make an owner think a house
 so they'll sign over their interest cheaply. The money is in the ones that are old / about to
 expire, negotiable, only on one co-owner, or stacked on a dead or absent owner's property.
 
-Two phases, both run by .github/workflows/judgment-watch.yml (GitHub's free minutes):
+Three phases, all run by .github/workflows/judgment-watch.yml (GitHub's free minutes); the fetch
+runs as parallel county x 2-year-shard jobs:
 
   fetch   Pull every judgment / lien from the Maryland Judiciary Judgment and Liens Search
           (jportal.mdcourts.gov/judgment) by county + filing-date window — no name needed.
@@ -18,7 +19,8 @@ Two phases, both run by .github/workflows/judgment-watch.yml (GitHub's free minu
           same county (a Maryland judgment lien attaches to land in the county where it is
           indexed), flag and score, and write data/judgments/leads.json for the Lien Leverage tab.
 
-  python -m engine2.judgment_watch fetch [--county charles] [--budget-min 240]
+  python -m engine2.judgment_watch plan [--refresh]                      # GitHub job matrix
+  python -m engine2.judgment_watch fetch --county charles --shard 0 [--budget-min 320]
   python -m engine2.judgment_watch match --index .cache/sdat.sqlite
 """
 import argparse
@@ -43,10 +45,35 @@ CAP = 500                  # the site's per-search limit
 BACKFILL_YEARS = 12        # Maryland judgments live 12 years unless renewed
 RECENT_DAYS = 60
 
+SHARD_YEARS = 2            # history is split into 2-year shards so GitHub can pull them in parallel
+NSHARDS = BACKFILL_YEARS // SHARD_YEARS
+
 # slug -> (jportal county label, SDAT county code, display name)
 COUNTIES = {
-    "charles":   ("CHARLES COUNTY", "09", "Charles"),
-    "st-mary-s": ("SAINT MARY'S COUNTY", "19", "St. Mary's"),
+    "allegany":         ("ALLEGANY COUNTY", "01", "Allegany"),
+    "anne-arundel":     ("ANNE ARUNDEL COUNTY", "02", "Anne Arundel"),
+    "baltimore-city":   ("BALTIMORE CITY", "03", "Baltimore City"),
+    "baltimore-county": ("BALTIMORE COUNTY", "04", "Baltimore County"),
+    "calvert":          ("CALVERT COUNTY", "05", "Calvert"),
+    "caroline":         ("CAROLINE COUNTY", "06", "Caroline"),
+    "carroll":          ("CARROLL COUNTY", "07", "Carroll"),
+    "cecil":            ("CECIL COUNTY", "08", "Cecil"),
+    "charles":          ("CHARLES COUNTY", "09", "Charles"),
+    "dorchester":       ("DORCHESTER COUNTY", "10", "Dorchester"),
+    "frederick":        ("FREDERICK COUNTY", "11", "Frederick"),
+    "garrett":          ("GARRETT COUNTY", "12", "Garrett"),
+    "harford":          ("HARFORD COUNTY", "13", "Harford"),
+    "howard":           ("HOWARD COUNTY", "14", "Howard"),
+    "kent":             ("KENT COUNTY", "15", "Kent"),
+    "montgomery":       ("MONTGOMERY COUNTY", "16", "Montgomery"),
+    "prince-george-s":  ("PRINCE GEORGE'S COUNTY", "17", "Prince George's"),
+    "queen-anne-s":     ("QUEEN ANNE'S COUNTY", "18", "Queen Anne's"),
+    "st-mary-s":        ("SAINT MARY'S COUNTY", "19", "St. Mary's"),
+    "somerset":         ("SOMERSET COUNTY", "20", "Somerset"),
+    "talbot":           ("TALBOT COUNTY", "21", "Talbot"),
+    "washington":       ("WASHINGTON COUNTY", "22", "Washington"),
+    "wicomico":         ("WICOMICO COUNTY", "23", "Wicomico"),
+    "worcester":        ("WORCESTER COUNTY", "24", "Worcester"),
 }
 
 ROW_RE = re.compile(
@@ -161,58 +188,106 @@ def row_key(r):
     return "|".join([r["case"], ";".join(r["for"]), ";".join(r["against"]), f"{r['amount']:.2f}"])
 
 
-def raw_path(slug):
-    return os.path.join(RAW_DIR, f"{slug}.json.gz")
+def shard_path(slug, k):
+    return os.path.join(RAW_DIR, f"{slug}.s{k}.json.gz")
 
 
-def load_raw(slug):
-    p = raw_path(slug)
-    if not os.path.exists(p):
-        return {"county": slug, "rows": {}, "backfill_cursor": None, "backfill_done": False}
+def _read(p):
     with gzip.open(p, "rt") as fh:
         return json.load(fh)
 
 
-def save_raw(slug, raw):
+def load_shard(slug, k):
+    p = shard_path(slug, k)
+    if not os.path.exists(p):
+        return {"county": slug, "shard": k, "rows": {}, "backfill_cursor": None, "backfill_done": False}
+    return _read(p)
+
+
+def save_shard(slug, k, raw):
     os.makedirs(RAW_DIR, exist_ok=True)
     raw["updated_at"] = _now()
-    with gzip.open(raw_path(slug), "wt") as fh:
+    # paid / vacated / withdrawn liens are dropped once seen — keeps the files small
+    raw["rows"] = {key: r for key, r in raw["rows"].items() if r["status"].strip().upper() not in CLOSED}
+    with gzip.open(shard_path(slug, k), "wt") as fh:
         json.dump(raw, fh, separators=(",", ":"))
 
 
-def fetch(slugs, budget_min):
+def load_raw(slug):
+    """Every stored row for a county: the old single file (first run) plus all shards, oldest first
+    so the most recently fetched copy of a row wins. Returns the same shape the matcher expects."""
+    rows, done, cursors = {}, True, []
+    legacy = os.path.join(RAW_DIR, f"{slug}.json.gz")
+    if os.path.exists(legacy):
+        rows.update(_read(legacy)["rows"])
+    for k in range(NSHARDS - 1, -1, -1):
+        p = shard_path(slug, k)
+        if not os.path.exists(p):
+            done = False
+            continue
+        r = _read(p)
+        rows.update(r["rows"])
+        if not r.get("backfill_done"):
+            done = False
+            cursors.append(r.get("backfill_cursor") or "")
+    return {"county": slug, "rows": rows, "backfill_done": done, "backfill_cursor": min([c for c in cursors if c], default=None)}
+
+
+def shard_range(k, today):
+    end = today if k == 0 else today.replace(year=today.year - SHARD_YEARS * k)
+    start = today.replace(year=today.year - SHARD_YEARS * (k + 1)) + timedelta(days=1)
+    return start, end
+
+
+def fetch_shard(slug, k, budget_min, refresh=False):
     deadline = time.time() + budget_min * 60
     portal = Portal()
     today = date.today()
-    oldest = today.replace(year=today.year - BACKFILL_YEARS)
-    for i, slug in enumerate(slugs):
-        label = COUNTIES[slug][0]
-        slug_deadline = time.time() + max(0, deadline - time.time()) / (len(slugs) - i)
-        raw = load_raw(slug)
-        rows = raw["rows"]
-        # 1) recent window — new filings and fresh satisfactions
-        d = today - timedelta(days=RECENT_DAYS)
-        n = 0
+    label = COUNTIES[slug][0]
+    raw = load_shard(slug, k)
+    if refresh and raw.get("backfill_done"):
+        raw["backfill_cursor"], raw["backfill_done"] = None, False
+    rows = raw["rows"]
+    start, end = shard_range(k, today)
+    if k == 0:   # new filings and fresh payoffs
+        d, n = today - timedelta(days=RECENT_DAYS), 0
         while d <= today:
             e = min(d + timedelta(days=6), today)
             n += pull_window(portal, label, d, e, rows)
             d = e + timedelta(days=1)
         log(f"{slug}: recent {RECENT_DAYS} days -> {n} rows")
-        # 2) backfill newest -> oldest, one week at a time, resumable
-        cur = date.fromisoformat(raw["backfill_cursor"]) if raw.get("backfill_cursor") else today - timedelta(days=RECENT_DAYS + 1)
-        weeks = 0
-        while cur > oldest and time.time() < slug_deadline:
-            s = max(cur - timedelta(days=6), oldest)
-            got = pull_window(portal, label, s, cur, rows)
-            cur = s - timedelta(days=1)
-            raw["backfill_cursor"] = cur.isoformat()
-            weeks += 1
-            if weeks % 20 == 0:
-                log(f"{slug}: backfilled to {cur} ({len(rows)} rows)")
-                save_raw(slug, raw)
-        raw["backfill_done"] = cur <= oldest
-        save_raw(slug, raw)
-        log(f"{slug}: {len(rows)} rows total · backfill {'done' if raw['backfill_done'] else 'resumes at ' + raw['backfill_cursor']}")
+        end = today - timedelta(days=RECENT_DAYS + 1)
+    if raw.get("backfill_done"):
+        save_shard(slug, k, raw)
+        log(f"{slug} s{k}: history already loaded")
+        return
+    cur = date.fromisoformat(raw["backfill_cursor"]) if raw.get("backfill_cursor") else end
+    weeks = 0
+    while cur >= start and time.time() < deadline:
+        s0 = max(cur - timedelta(days=6), start)
+        pull_window(portal, label, s0, cur, rows)
+        cur = s0 - timedelta(days=1)
+        raw["backfill_cursor"] = cur.isoformat()
+        weeks += 1
+        if weeks % 25 == 0:
+            log(f"{slug} s{k}: back to {cur} ({len(rows)} rows)")
+            save_shard(slug, k, raw)
+    raw["backfill_done"] = cur < start
+    save_shard(slug, k, raw)
+    log(f"{slug} s{k} [{start}..{end}]: {len(rows)} rows · {'done' if raw['backfill_done'] else 'resumes at ' + raw['backfill_cursor']}")
+
+
+def plan(refresh=False, only=None):
+    """GitHub matrix: shard 0 of every county each run, older shards until their history is loaded
+    (all shards on a refresh run, so payoffs of old liens get picked up)."""
+    jobs = []
+    for slug in COUNTIES:
+        if only and slug not in only:
+            continue
+        for k in range(NSHARDS):
+            if k == 0 or refresh or not load_shard(slug, k).get("backfill_done"):
+                jobs.append({"county": slug, "shard": k})
+    print(json.dumps({"include": jobs}, separators=(",", ":")))
 
 
 # ───────────────────────────────────────────────────────────────── match
@@ -515,13 +590,20 @@ def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     f = sub.add_parser("fetch")
-    f.add_argument("--county", choices=list(COUNTIES), action="append")
-    f.add_argument("--budget-min", type=float, default=240)
+    f.add_argument("--county", choices=list(COUNTIES), required=True)
+    f.add_argument("--shard", type=int, required=True)
+    f.add_argument("--budget-min", type=float, default=320)
+    f.add_argument("--refresh", action="store_true")
+    pl = sub.add_parser("plan")
+    pl.add_argument("--refresh", action="store_true")
+    pl.add_argument("--county", action="append")
     m = sub.add_parser("match")
     m.add_argument("--index", default=".cache/sdat.sqlite")
     a = ap.parse_args()
     if a.cmd == "fetch":
-        fetch(a.county or list(COUNTIES), a.budget_min)
+        fetch_shard(a.county, a.shard, a.budget_min, a.refresh)
+    elif a.cmd == "plan":
+        plan(a.refresh, a.county)
     else:
         match(a.index)
 

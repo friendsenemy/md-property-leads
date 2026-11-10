@@ -1,19 +1,26 @@
 name: Judgment Watch (Lien Leverage)
 
-# Weekly: pull every judgment / lien recorded in Charles and St. Mary's from the Maryland Judiciary
+# Pull every judgment / lien recorded in all 24 Maryland jurisdictions from the Maryland Judiciary
 # Judgment and Liens Search (by county + date, no names needed), keep the open ones, and match the
-# debtors to SDAT property owners for the Lien Leverage tab. The first runs load 12 years of history
-# (resumes where it left off each run); after that each run re-pulls the last 60 days.
-# Runs on GitHub's free minutes (no Claude credits).
+# debtors to SDAT property owners for the Lien Leverage tab.
+#
+# Speed: history is split into county x 2-year shards that run as parallel GitHub jobs (up to 10 at
+# once). Each run pulls the newest shard of every county (new filings + payoffs) and keeps loading
+# any older shard that isn't finished. The first Tuesday of each month re-pulls every shard so
+# payoffs of old liens drop out. Runs on GitHub's free minutes (no Claude credits).
 
 on:
   schedule:
     - cron: '23 8 * * 2'      # Tuesday 4:23 AM ET
   workflow_dispatch:
     inputs:
-      budget_min:
-        description: 'Minutes to spend loading history this run'
-        default: '240'
+      refresh:
+        description: 'Re-pull every shard (picks up payoffs of old liens)'
+        default: 'false'
+        required: false
+      parallel:
+        description: 'How many shards to pull at once'
+        default: '10'
         required: false
 
 permissions:
@@ -24,19 +31,63 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  watch:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 340
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      refresh: ${{ steps.plan.outputs.refresh }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - id: plan
+        run: |
+          R=""
+          if [ "${{ github.event.inputs.refresh }}" = "true" ] || { [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%d)" -le 7 ]; }; then R="--refresh"; fi
+          echo "refresh=$R" >> "$GITHUB_OUTPUT"
+          M=$(python -m engine2.judgment_watch plan $R)
+          echo "matrix=$M" >> "$GITHUB_OUTPUT"
+          echo "$M" | python -c "import json,sys;print(len(json.load(sys.stdin)['include']),'shards to pull')"
+
+  fetch:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ fromJSON(github.event.inputs.parallel || '10') }}
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.11', cache: pip }
       - run: pip install requests==2.31.0
-
-      - name: Pull judgments and liens (Charles, St. Mary's)
-        id: fetch
+      - name: Pull ${{ matrix.county }} shard ${{ matrix.shard }}
         continue-on-error: true
-        run: python -m engine2.judgment_watch fetch --budget-min "${{ github.event.inputs.budget_min || '240' }}"
+        run: python -m engine2.judgment_watch fetch --county "${{ matrix.county }}" --shard ${{ matrix.shard }} --budget-min 320 ${{ needs.plan.outputs.refresh }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raw-${{ matrix.county }}-s${{ matrix.shard }}
+          path: data/judgments/raw/${{ matrix.county }}.s${{ matrix.shard }}.json.gz
+          if-no-files-found: ignore
+          retention-days: 3
+
+  match:
+    needs: fetch
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install requests==2.31.0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: raw-*
+          merge-multiple: true
+          path: data/judgments/raw
 
       - name: Compute cache key (ISO week)
         id: week
@@ -67,19 +118,18 @@ jobs:
         run: python -m engine2.judgment_watch match --index .cache/sdat.sqlite
 
       - name: Commit results
-        if: always()
         run: |
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p /tmp/out && cp -r data/judgments /tmp/out/ 2>/dev/null || { echo "Nothing to commit."; exit 0; }
+          mkdir -p /tmp/out && cp -r data/judgments /tmp/out/
           git fetch origin main
           git checkout -f -B main origin/main
-          mkdir -p data && rm -rf data/judgments && cp -r /tmp/out/judgments data/judgments
+          mkdir -p data/judgments && cp -r /tmp/out/judgments/. data/judgments/
           git add data/judgments
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           N=$(python -c "import json;d=json.load(open('data/judgments/leads.json'));print(len(d['rows']))" 2>/dev/null || echo "?")
           git commit -m "Judgment watch: ${N} parcels with open liens on the owner"
           git push origin main
-      - name: Fail if a phase failed
-        if: steps.fetch.outcome == 'failure' || steps.match.outcome == 'failure'
+      - name: Fail if matching failed
+        if: steps.match.outcome == 'failure'
         run: exit 1
