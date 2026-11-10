@@ -180,8 +180,21 @@ def pull_window(portal, label, d0, d1, sink):
         return pull_window(portal, label, d0, mid, sink) + pull_window(portal, label, mid + timedelta(days=1), d1, sink)
     for r in rows:
         r["filed_window"] = d0.isoformat()
-        sink[row_key(r)] = r
+        put(sink, r)
     return len(rows)
+
+
+def is_closed(r):
+    return r["status"].strip().upper() in CLOSED
+
+
+def put(sink, r):
+    """Keep one row per judgment. A paid / released / vacated status always wins over 'Entered',
+    whatever order the windows were pulled in — the court index lists both events."""
+    k = row_key(r)
+    old = sink.get(k)
+    if old is None or is_closed(r) or not is_closed(old):
+        sink[k] = r
 
 
 def row_key(r):
@@ -207,8 +220,11 @@ def load_shard(slug, k):
 def save_shard(slug, k, raw):
     os.makedirs(RAW_DIR, exist_ok=True)
     raw["updated_at"] = _now()
-    # paid / vacated / withdrawn liens are dropped once seen — keeps the files small
-    raw["rows"] = {key: r for key, r in raw["rows"].items() if r["status"].strip().upper() not in CLOSED}
+    # paid / released rows are kept (slimmed) so they cancel the 'Entered' copy pulled in another shard
+    for key, r in raw["rows"].items():
+        if is_closed(r):
+            raw["rows"][key] = {"case": r["case"], "for": r["for"], "against": r["against"], "amount": r["amount"],
+                                "status": r["status"], "entry": r.get("entry", "")}
     with gzip.open(shard_path(slug, k), "wt") as fh:
         json.dump(raw, fh, separators=(",", ":"))
 
@@ -219,14 +235,16 @@ def load_raw(slug):
     rows, done, cursors = {}, True, []
     legacy = os.path.join(RAW_DIR, f"{slug}.json.gz")
     if os.path.exists(legacy):
-        rows.update(_read(legacy)["rows"])
+        for r in _read(legacy)["rows"].values():
+            put(rows, r)
     for k in range(NSHARDS - 1, -1, -1):
         p = shard_path(slug, k)
         if not os.path.exists(p):
             done = False
             continue
         r = _read(p)
-        rows.update(r["rows"])
+        for x in r["rows"].values():
+            put(rows, x)
         if not r.get("backfill_done"):
             done = False
             cursors.append(r.get("backfill_cursor") or "")
