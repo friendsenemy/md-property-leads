@@ -331,6 +331,8 @@ STORE_RE = re.compile(r"HOME DEPOT|WALMART|WAL-MART|TARGET|LOWE'?S|SAFEWAY|GIANT
 
 
 def creditor_type(creditor):
+    if re.search(r"\bBANK\b|CREDIT UNION|\bFCU\b|FINANCIAL", creditor, re.I):   # "Capital One Bank USA NA" is a bank, not the U.S.
+        return "CONSUMER"
     if GOV_RE.search(creditor):
         return "GOV"
     if CONSUMER_RE.search(creditor):
