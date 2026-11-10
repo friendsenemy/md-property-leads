@@ -1,0 +1,286 @@
+{
+ "account": "0908047855",
+ "estates": [
+  {
+   "estate_number": "13406",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/03/2003",
+   "date_closed": "04/27/2004",
+   "decedent": "CATHERINE GREER WHALEN",
+   "date_of_death": "1/9/2003",
+   "date_of_filing": "01/14/2003",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "WILLIAM R. GREER JR. [PO BOX 1616, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "GARY F. WHALEN",
+     "address": "1208 ADAMS COURT, WALDORF, MD 20602-2978"
+    },
+    {
+     "name": "PAUL S. WHALEN",
+     "address": "1208 ADAMS COURT, WALDORF, MD 20602-2978"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/14/2003",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOVEMBER 6,",
+     "pages": 2002
+    },
+    {
+     "filed": "01/14/2003",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 4,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 7,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 9,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION -",
+     "pages": 5
+    },
+    {
+     "filed": "02/03/2003",
+     "n": 10,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 11,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL - WILLIAM WHALEN, JR.",
+     "pages": 1
+    },
+    {
+     "filed": "02/27/2003",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/04/2003",
+     "n": 13,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2003",
+     "n": 14,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2003",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/03/2003",
+     "n": 16,
+     "code": "1244",
+     "desc": "INCOMPLETE INVENTORY SUMMARY - RW 1122 (NO SCHEDULES)",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/2003",
+     "n": 17,
+     "code": "1122",
+     "desc": "INVENTORY WITH SCH A & C",
+     "pages": 6
+    },
+    {
+     "filed": "10/01/2003",
+     "n": 18,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/2003",
+     "n": 19,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE FIRST ACCT   HEARING SCHEDULED FOR 12/9/03",
+     "pages": 1
+    },
+    {
+     "filed": "11/19/2003",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/09/2003",
+     "n": 21,
+     "code": "1244",
+     "desc": "COURT SIGN IN SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "12/09/2003",
+     "n": 22,
+     "code": "1284",
+     "desc": "ORDER OF COURT GIVING PR 60 DAYS TO TRANSFER ESTATE ASSETS TO ESTATE ACCT",
+     "pages": 1
+    },
+    {
+     "filed": "12/09/2003",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2004",
+     "n": 24,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR APRIL 27, 2004 AT 10:30 A.M. FOR REMOVAL OF PR",
+     "pages": 1
+    },
+    {
+     "filed": "03/31/2004",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/12/2004",
+     "n": 26,
+     "code": "1122",
+     "desc": "AMENDED INVENTORY",
+     "pages": 8
+    },
+    {
+     "filed": "04/12/2004",
+     "n": 27,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "04/12/2004",
+     "n": 28,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 4
+    },
+    {
+     "filed": "04/20/2004",
+     "n": 29,
+     "code": "1354",
+     "desc": "PROBATE FEE/CERTIFIED MAIL - INVOICE #",
+     "pages": 2286
+    },
+    {
+     "filed": "04/22/2004",
+     "n": 30,
+     "code": "1336",
+     "desc": "RECEIPTS #14231",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2004",
+     "n": 31,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING ATTORNEY FEES",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2004",
+     "n": 32,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED APRIL 12, 2004)",
+     "pages": 1
+    },
+    {
+     "filed": "04/27/2004",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2004-04-27",
+   "interested_persons": [
+    {
+     "name": "GARY F. WHALEN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "PAUL S. WHALEN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 25,
+   "probate_age_days": 449,
+   "days_since_last_docket": 8232,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-10",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921793847",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921793847",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CATHERINE G WHALEN"
+  }
+ ]
+}

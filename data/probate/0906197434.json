@@ -1,0 +1,214 @@
+{
+ "account": "0906197434",
+ "estates": [
+  {
+   "estate_number": "13434",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/06/2003",
+   "date_closed": "09/10/2003",
+   "decedent": "ERNEST JOHN BARETINCIC",
+   "date_of_death": "2/1/2003",
+   "date_of_filing": "02/06/2003",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ERNEST JOSEPH BARETINCIC",
+     "address": "2406 BULRUSH CT, WALDORF, MD 20603"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/06/2003",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 12/05/80",
+     "pages": 4
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 3,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 5,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 6,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 7,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 8,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 11,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "04/07/2003",
+     "n": 12,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2003",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/05/2003",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 23
+    },
+    {
+     "filed": "05/19/2003",
+     "n": 15,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 2
+    },
+    {
+     "filed": "08/11/2003",
+     "n": 16,
+     "code": "1244",
+     "desc": "FIRST & FINAL ACCOUNT - NEEDS CORRECTIONS",
+     "pages": 7
+    },
+    {
+     "filed": "08/11/2003",
+     "n": 17,
+     "code": "1245",
+     "desc": "PETITION FOR PERSONAL REPRESENTATIVE FEES",
+     "pages": 2
+    },
+    {
+     "filed": "08/14/2003",
+     "n": 18,
+     "code": "1336",
+     "desc": "RECEIPT#12961 FOR PROBATE FEE PAID BY ERNEST JOHN BARETINCIC",
+     "pages": 1
+    },
+    {
+     "filed": "08/21/2003",
+     "n": 19,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW RE: CORRECTIONS TO ACCOUNT FILING",
+     "pages": 5
+    },
+    {
+     "filed": "08/27/2003",
+     "n": 20,
+     "code": "1244",
+     "desc": "INCORRECT 1ST & FINAL ACCOUNT:  CORRECTIONS NOT PROPERLY MADE",
+     "pages": 5
+    },
+    {
+     "filed": "08/28/2003",
+     "n": 21,
+     "code": "1383",
+     "desc": "CORRECTED FIRST & FINAL ACCOUNT - UNDER REVIEW",
+     "pages": 4
+    },
+    {
+     "filed": "09/09/2003",
+     "n": 22,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED 8/28/03",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2003",
+     "n": 23,
+     "code": "1284",
+     "desc": "ORDER OF COURT ____________________",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2003",
+     "n": 24,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2003-09-10",
+   "interested_persons": [
+    {
+     "name": "ERNEST JOSEPH BARETINCIC",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 5,
+   "probate_age_days": 216,
+   "days_since_last_docket": 8462,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-10",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921780368",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921780368",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ERNEST J BARETINCIC"
+  }
+ ]
+}

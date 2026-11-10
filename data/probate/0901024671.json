@@ -1,0 +1,102 @@
+{
+ "account": "0901024671",
+ "estates": [
+  {
+   "estate_number": "18160",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "05/11/2012",
+   "date_closed": "05/11/2012",
+   "decedent": "MICHAEL PATRICK KELLEY",
+   "date_of_death": "12/14/2011",
+   "date_of_filing": "05/10/2012",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "EDWARD W. OLMSTED [P.O. BOX 1966, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LISA ANNE MCGUIRE",
+     "address": "6286 SLEEPY HOLLOW ROAD, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/11/2012",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "05/11/2012",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/11/2012",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 10
+    },
+    {
+     "filed": "05/11/2012",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/11/2012",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/30/2012",
+     "n": 6,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 05/30/2012 BY AMERICAN INFO SOURCE FOR BANK OF AMERICA FOR $3,858.60",
+     "pages": 4
+    },
+    {
+     "filed": "05/31/2012",
+     "n": 7,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW REQUESING ORIGINAL COPY OF RECEIPT TO BE RETURNED",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2012",
+     "n": 8,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 07/09/2012 BY ASCENSION POINT RECOVERY SERVICES FOR $3,000.67",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2012-07-09",
+   "interested_persons": [
+    {
+     "name": "LISA ANNE MCGUIRE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 149,
+   "probate_age_days": 0,
+   "days_since_last_docket": 5237,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-10",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921796245",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921796245",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MICHAEL P KELLEY"
+  }
+ ]
+}

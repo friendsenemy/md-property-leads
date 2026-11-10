@@ -1,0 +1,158 @@
+{
+ "account": "0907036957",
+ "estates": [
+  {
+   "estate_number": "13754",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "10/10/2003",
+   "date_closed": "10/10/2003",
+   "decedent": "DAVID WALTER TAYMAN",
+   "date_of_death": "8/23/2003",
+   "date_of_filing": "09/24/2003",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "SHELVIE ANN TAYMAN",
+     "address": "2948 EDGEWOOD ROAD, BRYANS ROAD, MD 20616"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/24/2003",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 05/23/2002",
+     "pages": 5
+    },
+    {
+     "filed": "09/24/2003",
+     "n": 2,
+     "code": "1303",
+     "desc": "QUESTIONNAIRE",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 3,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 4,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 6,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 7,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 8,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 9,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE-1",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 10,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 11,
+     "code": "1336",
+     "desc": "RECEIPT#13252 SMALL ESTATE FEE PAID",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 12,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2003",
+     "n": 13,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2006",
+     "n": 14,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2006",
+     "n": 15,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "11/16/2006",
+     "n": 16,
+     "code": "1336",
+     "desc": "RECEIPTS-ADDITITIONAL SMALL ESTATE FEE #19122",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2006-11-16",
+   "interested_persons": [
+    {
+     "name": "SHELVIE ANN TAYMAN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 48,
+   "probate_age_days": 0,
+   "days_since_last_docket": 7299,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-10",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1921801259",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1921801259",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "DAVID W TAYMAN"
+  }
+ ]
+}
