@@ -491,8 +491,10 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         kind = "STATE / GOV LIEN" if GOV_RE.search(creditor) else "JUDGMENT"
         if kind != "JUDGMENT" and TAX_RE.search(creditor):
             kind = "TAX LIEN"
-        if re.search(r"UNITED STATES|\bU\.?S\.?A\b", creditor, re.I) and "-L-" in j["case"] + "-JG-":
+        if re.search(r"UNITED STATES|\bU\.?S\.?A\b", creditor, re.I):
             kind = "FEDERAL LIEN (usually IRS)"
+            # IRS collection generally ends 10 years after assessment unless extended or refiled
+            expires = ed.replace(year=ed.year + 10) if ed else None
         expires = ed.replace(year=ed.year + 12) if ed else None
         ctype = creditor_type(creditor)
         judgments.append({"case": j["case"], "creditor": creditor, "creditor_type": ctype, "case_type": case_type(j["case"]),
@@ -503,6 +505,13 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
                           "book_page": j.get("book_page", "")})
 
     n = len(judgments)
+    fed = [j for j in judgments if j["kind"].startswith("FEDERAL")]
+    if fed:
+        tags.append("FED_LIEN")
+        old = [j for j in fed if j["age_years"] >= 8]
+        if old:
+            score += 12; tags.append("FED_OLD")
+            reasons.append(f"Federal (usually IRS) lien filed {max(j['age_years'] for j in old):.0f}+ years ago — IRS liens generally run 10 years unless refiled; may be dead or nearly dead (+12)")
     # ── the lien side
     if n >= 3:
         score += 20; tags.append("STACKED"); reasons.append(f"{n} open judgments/liens on the owner (+20)")

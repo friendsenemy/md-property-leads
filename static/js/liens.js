@@ -11,10 +11,10 @@ const LiensApp = {
         STACKED: "Stacked liens", GOV_LIEN: "State / gov lien", EXPIRING: "Expiring ≤2 yrs", OLD_LIEN: "Old lien (8+ yrs)",
         ONE_SPOUSE_ONLY: "Only one spouse owes", ONE_OWNER_ONLY: "Only one co-owner owes", DEAD_OWNER: "Owner died / estate",
         CO_OWNER_DEAD: "Co-owner died", NOT_OWNER_OCCUPIED: "Not owner-occupied", OUT_OF_STATE: "Out of state", DISTRESS: "Distress signal",
-        LONG_HELD: "Long-held", OWNER_OCCUPIED: "Owner-occupied", LIEN_BUY: "💰 Lien-buy candidate",
+        LONG_HELD: "Long-held", OWNER_OCCUPIED: "Owner-occupied", LIEN_BUY: "💰 Lien-buy candidate", FED_LIEN: "Federal lien", FED_OLD: "🏛 Old federal lien (8+ yrs)",
     },
     CTYPE: { GOV: "government", CONSUMER: "consumer debt — license needed to buy", STORE: "store / restitution", PERSON: "private person", BUSINESS: "business" },
-    HOT: ["LIEN_BUY", "DEAD_OWNER", "CO_OWNER_DEAD", "EXPIRING", "ONE_SPOUSE_ONLY", "ONE_OWNER_ONLY", "GOV_LIEN", "STACKED"],
+    HOT: ["LIEN_BUY", "FED_OLD", "DEAD_OWNER", "CO_OWNER_DEAD", "EXPIRING", "ONE_SPOUSE_ONLY", "ONE_OWNER_ONLY", "GOV_LIEN", "STACKED"],
 
     async init() {
         this.bindEvents();
