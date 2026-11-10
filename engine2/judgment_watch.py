@@ -477,7 +477,7 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
     people = p["_people"]
     debtor_keys = {j["owner_match"] for j in js}
     ms = mailing_state(p.get("mail_city"), p.get("mail_zip"))
-    occupied = (p.get("occupancy") or "").upper() == "H"
+    occupied = (p.get("occupancy") or "").upper() in ("H", "D")   # SDAT: H = principal residence, D = principal residence plus extra land
     tflags = (title or {}).get("flags", [])
     dead = bool(DEAD_FLAGS.intersection(tflags))
     co_dead = not dead and "CO_OWNER_DECEASED" in tflags
