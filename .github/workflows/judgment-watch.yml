@@ -1,0 +1,85 @@
+name: Judgment Watch (Lien Leverage)
+
+# Weekly: pull every judgment / lien recorded in Charles and St. Mary's from the Maryland Judiciary
+# Judgment and Liens Search (by county + date, no names needed), keep the open ones, and match the
+# debtors to SDAT property owners for the Lien Leverage tab. The first runs load 12 years of history
+# (resumes where it left off each run); after that each run re-pulls the last 60 days.
+# Runs on GitHub's free minutes (no Claude credits).
+
+on:
+  schedule:
+    - cron: '23 8 * * 2'      # Tuesday 4:23 AM ET
+  workflow_dispatch:
+    inputs:
+      budget_min:
+        description: 'Minutes to spend loading history this run'
+        default: '240'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: judgment-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: pip install requests==2.31.0
+
+      - name: Pull judgments and liens (Charles, St. Mary's)
+        id: fetch
+        continue-on-error: true
+        run: python -m engine2.judgment_watch fetch --budget-min "${{ github.event.inputs.budget_min || '240' }}"
+
+      - name: Compute cache key (ISO week)
+        id: week
+        run: echo "key=sdat-index-v2-$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+      - name: Restore SDAT index
+        id: restore
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+      - name: Build SDAT index (only if this week's cache is missing)
+        if: steps.restore.outputs.cache-hit != 'true'
+        env:
+          MD_OPENDATA_USERNAME: ${{ secrets.MD_OPENDATA_USERNAME }}
+          MD_OPENDATA_PASSWORD: ${{ secrets.MD_OPENDATA_PASSWORD }}
+          MD_OPENDATA_APP_TOKEN: ${{ secrets.MD_OPENDATA_APP_TOKEN }}
+        run: python -m engine2.build_index
+      - name: Save SDAT index
+        if: steps.restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/sdat.sqlite
+          key: ${{ steps.week.outputs.key }}
+
+      - name: Match debtors to property owners
+        id: match
+        continue-on-error: true
+        run: python -m engine2.judgment_watch match --index .cache/sdat.sqlite
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "md-property-leads bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp -r data/judgments /tmp/out/ 2>/dev/null || { echo "Nothing to commit."; exit 0; }
+          git fetch origin main
+          git checkout -f -B main origin/main
+          mkdir -p data && rm -rf data/judgments && cp -r /tmp/out/judgments data/judgments
+          git add data/judgments
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          N=$(python -c "import json;d=json.load(open('data/judgments/leads.json'));print(len(d['rows']))" 2>/dev/null || echo "?")
+          git commit -m "Judgment watch: ${N} parcels with open liens on the owner"
+          git push origin main
+      - name: Fail if a phase failed
+        if: steps.fetch.outcome == 'failure' || steps.match.outcome == 'failure'
+        run: exit 1

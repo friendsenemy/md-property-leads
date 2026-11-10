@@ -184,6 +184,7 @@
         <button class="view-tab" data-view="writ">⚖ Writ Watch <span class="view-tab-sub">sheriff's sales · judgment levies</span></button>
         <button class="view-tab" data-view="vested">Failed Foreclosures <span class="view-tab-sub">§14-847 · county took title</span></button>
         <button class="view-tab" data-view="land">🌱 Dirt Deals <span class="view-tab-sub">land a builder would want</span></button>
+        <button class="view-tab" data-view="liens">🔗 Lien Leverage <span class="view-tab-sub">judgments · state tax liens</span></button>
         <a class="view-tab" id="tabGuideLink" href="guide.html#start" target="_blank" rel="noopener" style="margin-left:auto; text-decoration:none; color:var(--text-dim)" title="Open the field guide for this tab">? what does this tab mean</a>
     </div>
 
@@ -574,6 +575,73 @@
         </div>
     </div>
 </div><!-- /view-land -->
+<div id="view-liens" style="display:none">
+    <div class="stats-grid">
+        <div class="stat-card cyan"><div class="stat-label">Properties With Open Liens on the Owner</div><div class="stat-value" id="jstatTotal">0</div><div class="stat-sub" style="font-size:0.72rem; color:var(--text-dim); margin-top:2px">not owner-occupied</div></div>
+        <div class="stat-card red"><div class="stat-label">Owner / Co-owner Died</div><div class="stat-value" id="jstatDead">0</div></div>
+        <div class="stat-card yellow"><div class="stat-label">Lien Lapses Within 2 Years</div><div class="stat-value" id="jstatExpiring">0</div></div>
+        <div class="stat-card green"><div class="stat-label">Lien on Only One Owner</div><div class="stat-value" id="jstatShare">0</div></div>
+        <div class="stat-card purple"><div class="stat-label">State / Government Lien</div><div class="stat-value" id="jstatGov">0</div></div>
+    </div>
+    <div class="controls">
+        <div class="search-box"><span class="search-icon">🔍</span><input type="text" id="lienSearch" placeholder="Search address, owner, creditor, case #, account…"></div>
+        <div class="county-filter"><select id="lienCounty"><option value="">All counties</option></select></div>
+        <div class="county-filter">
+            <select id="lienTag">
+                <option value="">All angles</option>
+                <option value="DEAD">Owner / co-owner died</option>
+                <option value="EXPIRING">Lien lapses within 2 years</option>
+                <option value="OLD_LIEN">Old lien (8+ years)</option>
+                <option value="SHARE">Lien on only one owner</option>
+                <option value="GOV_LIEN">State / government lien</option>
+                <option value="STACKED">2+ liens stacked</option>
+                <option value="OUT_OF_STATE">Owner out of state</option>
+                <option value="DISTRESS">Distress signal</option>
+            </select>
+        </div>
+        <div class="county-filter">
+            <select id="lienMin">
+                <option value="0">Any amount</option>
+                <option value="5000">$5K+ owed</option>
+                <option value="25000">$25K+ owed</option>
+                <option value="100000">$100K+ owed</option>
+            </select>
+        </div>
+        <label style="font-size:0.78rem; color:var(--text-secondary); display:flex; align-items:center; gap:4px"><input type="checkbox" id="lienHideOcc" checked> Hide owner-occupied</label>
+        <label style="font-size:0.78rem; color:var(--text-secondary); display:flex; align-items:center; gap:4px" title="Middle initial matched on both the judgment and the deed"><input type="checkbox" id="lienHigh"> Strong name match only</label>
+        <button class="btn btn-export" id="lienExport"><span class="icon">⬇</span> Export CSV</button>
+    </div>
+    <div class="run-info" id="lienRunInfo" style="text-align:left; margin:6px 0 10px;"></div>
+    <div class="leads-container">
+        <table class="leads-table" id="lienTable">
+            <thead>
+                <tr>
+                    <th data-sort="score">Score <span class="sort-arrow">↕</span></th>
+                    <th>Property</th>
+                    <th>Owner</th>
+                    <th data-sort="county">County <span class="sort-arrow">↕</span></th>
+                    <th data-sort="owed">Owed <span class="sort-arrow">↕</span></th>
+                    <th>Biggest Lien</th>
+                    <th data-sort="assessed">Assessed <span class="sort-arrow">↕</span></th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="lienBody"></tbody>
+        </table>
+        <div class="empty-state" id="lienEmpty" style="display:none;">
+            <div class="icon">🔗</div>
+            <h3 id="lienEmptyTitle">No liens matched yet</h3>
+            <p id="lienEmptyText">The “Judgment Watch” workflow on GitHub pulls every judgment and lien in Charles and St. Mary's and matches them to property owners. The first run loads 12 years of history.</p>
+        </div>
+        <div class="pagination">
+            <span id="lienPageInfo">No parcels</span>
+            <div class="pagination-buttons">
+                <button class="page-btn" id="lienPrev">← Prev</button>
+                <button class="page-btn" id="lienNext">Next →</button>
+            </div>
+        </div>
+    </div>
+</div><!-- /view-liens -->
 
 <div id="view-vested" style="display:none">
     <div class="stats-grid">
@@ -773,15 +841,16 @@
 <script src="static/js/surplus.js?v=sync1"></script>
 <script src="static/js/vested.js?v=sync1"></script>
 <script src="static/js/land.js?v=1"></script>
+<script src="static/js/liens.js?v=1"></script>
 <script src="static/js/writ.js?v=13"></script>
 <script src="static/js/d4d.js?v=sync1"></script>
-<script src="static/js/myleads.js?v=sync1"></script>
+<script src="static/js/myleads.js?v=liens1"></script>
 <script src="static/js/worksheet.js?v=1"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const VIEWS = ["obits", "title", "surplus", "writ", "vested", "land", "d4d", "myleads"];
+    const VIEWS = ["obits", "title", "surplus", "writ", "vested", "land", "liens", "d4d", "myleads"];
     const started = {};
-    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), land: () => LandApp.init(), writ: () => WritApp.init(), d4d: () => D4DApp.init(), myleads: () => MyLeadsApp.init() };
+    const LAZY = { title: () => TitleApp.init(), surplus: () => SurplusApp.init(), vested: () => VestedApp.init(), land: () => LandApp.init(), liens: () => LiensApp.init(), writ: () => WritApp.init(), d4d: () => D4DApp.init(), myleads: () => MyLeadsApp.init() };
     document.querySelectorAll(".view-tab").forEach((tab) => tab.addEventListener("click", () => {
         document.querySelectorAll(".view-tab").forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");
