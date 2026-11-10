@@ -55,7 +55,7 @@ const LiensApp = {
         set("jstatGov", rs.filter((r) => r.tags.includes("GOV_LIEN")).length.toLocaleString());
         const m = this.meta, info = document.getElementById("lienRunInfo");
         const st = m.stats || {};
-        const vs = Object.values(st), open = vs.reduce((n, v) => n + (v.open || 0), 0), loading = vs.filter((v) => !v.backfill_done).length;
+        const vs = Object.values(st).filter((v) => v && typeof v === "object"), open = vs.reduce((n, v) => n + (v.open || 0), 0), loading = vs.filter((v) => !v.backfill_done).length;
         const prog = `<b>${open.toLocaleString()}</b> open judgments &amp; liens across ${vs.length} counties → <b>${rs.length.toLocaleString()}</b> non-homestead properties hit`
             + (loading ? ` · <span style="color:var(--yellow)">12-year history still loading in ${loading} count${loading > 1 ? "ies" : "y"}</span>` : "");
         info.innerHTML = m.generated_at ? `${prog} · updated ${this.esc(this.fmtDT(m.generated_at))}` : "";

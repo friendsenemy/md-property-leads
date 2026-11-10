@@ -455,6 +455,14 @@ def match(index_path):
             p = owners[acct]
             leads.append(build_lead(p, js, disp, title.get(acct), signals.get(acct, []), mailing_state, today))
 
+    # owner-occupied homes are skipped in this play (the Writ Watch tab covers sheriff's sales), and
+    # keeping them would push the file past what a browser — and GitHub — handle well
+    occupied_hits = sum(1 for x in leads if x["occupied"])
+    leads = [x for x in leads if not x["occupied"]]
+    for x in leads:
+        for k in ("lat", "lon", "land_use"):
+            x.pop(k, None)
+    stats["_owner_occupied_dropped"] = occupied_hits
     leads.sort(key=lambda x: -x["score"])
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump({"generated_at": _now(), "counties": [v[2] for v in COUNTIES.values()], "stats": stats, "rows": leads},
