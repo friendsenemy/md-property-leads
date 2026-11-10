@@ -293,7 +293,9 @@ def plan(refresh=False, only=None):
 # ───────────────────────────────────────────────────────────────── match
 GOV_RE = re.compile(r"COMPTROLLER|STATE OF MARYLAND|MARYLAND STATE|\bMD STATE\b|STATE OF MD|DEPT\.?|DEPARTMENT|LABOR|UNEMPLOY|"
                     r"UNITED STATES|INTERNAL REVENUE|\bIRS\b|COUNTY COMMISSIONERS|COMMISSIONERS OF|HEALTH|MEDICAID|"
-                    r"CHILD SUPPORT|SOCIAL SERVICES|TREASUR|REVENUE", re.I)
+                    r"CHILD SUPPORT|SOCIAL SERVICES|TREASUR|REVENUE|JUSTICE", re.I)
+FED_RE = re.compile(r"UNITED STATES|\bU\.?S\.?A?\b|INTERNAL REVENUE|\bIRS\b|DEPARTMENT OF (THE )?TREASURY|DEPT\.? OF (THE )?TREASURY|"
+                    r"JUSTICE|D[E]?PA?RTMENT OF JUSTICE|SMALL BUSINESS ADMIN", re.I)
 TAX_RE = re.compile(r"COMPTROLLER|TREASUR|REVENUE|\bTAX\b", re.I)
 COMPANY_RE = re.compile(r"\b(LLC|L\.L\.C|INC|CORP|CORPORATION|COMPANY|\bCO\b|LTD|LP|LLP|BANK|ASSOC|TRUST|CHURCH|"
                         r"SERVICES|HOLDINGS|PROPERTIES|GROUP|ENTERPRISES)\b", re.I)
@@ -491,7 +493,7 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         kind = "STATE / GOV LIEN" if GOV_RE.search(creditor) else "JUDGMENT"
         if kind != "JUDGMENT" and TAX_RE.search(creditor):
             kind = "TAX LIEN"
-        if re.search(r"UNITED STATES|\bU\.?S\.?A\b", creditor, re.I):
+        if FED_RE.search(creditor) and "CREDIT UNION" not in creditor.upper():
             kind = "FEDERAL LIEN (usually IRS)"
             # IRS collection generally ends 10 years after assessment unless extended or refiled
             expires = ed.replace(year=ed.year + 10) if ed else None
