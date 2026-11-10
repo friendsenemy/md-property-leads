@@ -491,6 +491,8 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         kind = "STATE / GOV LIEN" if GOV_RE.search(creditor) else "JUDGMENT"
         if kind != "JUDGMENT" and TAX_RE.search(creditor):
             kind = "TAX LIEN"
+        if re.search(r"UNITED STATES|\bU\.?S\.?A\b", creditor, re.I) and "-L-" in j["case"] + "-JG-":
+            kind = "FEDERAL LIEN (usually IRS)"
         expires = ed.replace(year=ed.year + 12) if ed else None
         ctype = creditor_type(creditor)
         judgments.append({"case": j["case"], "creditor": creditor, "creditor_type": ctype, "case_type": case_type(j["case"]),
@@ -525,8 +527,8 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         # first owner line with the same surname. Anything else is treated as a separate share.
         from engine2.owner_parse import split_individuals
         line1 = split_individuals(p.get("owner1") or "")
-        same_last = (len(people) == 2 and len(line1) == 2 and "&" in (p.get("owner1") or "")
-                     and len({x["last_name"] for x in line1}) == 1)
+        # SDAT puts the second spouse either after "&" on line 1 or alone on line 2
+        same_last = len(people) == 2 and len({x["last_name"] for x in people}) == 1
         if same_last:
             tags.append("ONE_SPOUSE_ONLY"); score += 10
             reasons.append("Judgment against only one of the spouses — if they own as tenants by the entirety the lien may not touch the house (+10)")
@@ -582,6 +584,7 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
         cautions.append("Owner-occupied (homestead) — skip unless it's the sheriff's-sale play.")
     if any(j["creditor_type"] == "CONSUMER" for j in judgments):
         cautions.append("Consumer-debt judgment(s) (debt buyer / bank / medical / landlord): buying and collecting these in Maryland needs a collection agency license — use them as owner pressure, not as a lien to buy.")
+    cautions.append("The circuit judgment index can still say 'open' after the District Court case was paid — open the case in Case Search and check its Judgment Status before counting on any lien.")
     if "LIEN_BUY" in tags:
         cautions.append("Lien-buy: confirm in Land Records the property is free & clear (or the lien still has equity behind it) and the judgment wasn't renewed, released or appealed before you offer the creditor anything.")
 
