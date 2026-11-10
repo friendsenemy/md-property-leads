@@ -175,11 +175,18 @@ def main():
     log.info("%d leads due for a USPS check; doing up to %d", len(todo), MAX_PER_RUN)
     if not todo:
         return 0
-    if sid and stok:
+    # USPS's own API first (free, 60/hour); Smarty only if USPS is unavailable or refuses.
+    if not (cid and secret):
         n = smarty_run(todo, done, sid, stok, MAX_PER_RUN)
         save(done, n)
         return 0
-    hdr = {"Authorization": f"Bearer {token(cid, secret)}", "Accept": "application/json"}
+    try:
+        hdr = {"Authorization": f"Bearer {token(cid, secret)}", "Accept": "application/json"}
+    except Exception as e:  # noqa: BLE001
+        log.warning("USPS token failed (%s)%s", e, "; falling back to Smarty" if sid and stok else "")
+        if sid and stok:
+            save(done, smarty_run(todo, done, sid, stok, MAX_PER_RUN))
+        return 0
     n = 0
     for sc, _, lid, addr, city, zip5 in todo[:MAX_PER_RUN]:
         q = {"streetAddress": addr, "state": "MD", "ZIPCode": zip5}
@@ -188,7 +195,10 @@ def main():
         r = requests.get(f"{API}/addresses/v3/address", params=q, headers=hdr, timeout=30)
         now = datetime.now(timezone.utc).isoformat(timespec="seconds")
         if r.status_code == 403:
-            log.warning("USPS refused access (since 8/1/2026 the Addresses API needs a paid license): %s", r.text[:400])
+            log.warning("USPS refused access (Addresses API license?): %s", r.text[:400])
+            if n == 0 and sid and stok:
+                log.warning("falling back to Smarty for this run")
+                n = smarty_run(todo, done, sid, stok, MAX_PER_RUN)
             break
         if r.status_code == 429:
             log.warning("USPS hourly quota reached; stopping, the rest go next run.")
