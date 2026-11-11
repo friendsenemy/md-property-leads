@@ -1,7 +1,44 @@
 {
- "generated": "2026-11-10",
+ "generated": "2026-11-11",
  "parcels_checked": 15020,
  "hits": [
+  {
+   "account": "020400003690400",
+   "address": "1492 Berger St",
+   "city": "Odenton",
+   "county": "Anne Arundel",
+   "owner": "HOWARD JOAN M",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 975600,
+   "equity_est": 965031,
+   "total_owed": 10569.26,
+   "transfer_date": "1996.12.16",
+   "title_flags": [
+    "ABSENTEE",
+    "DECEASED_SOLE_OWNER_HIGH",
+    "MAIL_MISMATCH",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_HISTORY"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "JOAN M HOWARD",
+     "dod": "2010-07-26",
+     "age": 70,
+     "confidence": "HIGH",
+     "points": 95,
+     "same_name_deaths": 5
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 53
+  },
   {
    "account": "020367013132315",
    "address": "202 Providence Rd",
@@ -666,6 +703,61 @@
    "score": 43
   },
   {
+   "account": "1102218348",
+   "address": "2537 Waterside Dr",
+   "city": "Frederick",
+   "county": "Frederick",
+   "owner": "COX MARK H & WENDY G",
+   "owner2": "",
+   "mail_state": "TX",
+   "assessed": 404700,
+   "equity_est": 385693,
+   "total_owed": 19006.53,
+   "transfer_date": "1999.02.01",
+   "title_flags": [
+    "ABSENTEE",
+    "CO_OWNER_DECEASED",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OUT_OF_STATE",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_SOLD"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "MARK H COX",
+     "dod": "2008-07-25",
+     "age": 49,
+     "confidence": "HIGH",
+     "points": 100,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [
+    {
+     "case": "C-10-JG-20-001756",
+     "creditor": "Wormans Mill Community Conservancy, Inc.",
+     "amount": 2760.53,
+     "entry": "11/10/2020",
+     "expires": "2032-11-10"
+    },
+    {
+     "case": "C-10-JG-25-003133",
+     "creditor": "Worman's Mill Community Conservancy, Inc.",
+     "amount": 16246.0,
+     "entry": "10/16/2025",
+     "expires": "2037-10-16"
+    }
+   ],
+   "all_judgments": 2,
+   "score": 67
+  },
+  {
    "account": "1006086896",
    "address": "2737 Hoopers Island Rd",
    "city": "Fishing Creek",
@@ -981,6 +1073,52 @@
    "score": 26
   },
   {
+   "account": "04032500004375",
+   "address": "7301 Travertine Dr",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "WEINER BERNARD",
+   "owner2": "WEINER TOBY I",
+   "mail_state": "MD",
+   "assessed": 360000,
+   "equity_est": 328536,
+   "total_owed": 31464.11,
+   "transfer_date": "2008.10.02",
+   "title_flags": [
+    "ABSENTEE",
+    "ALL_OWNERS_DECEASED",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "BERNARD WEINER",
+     "dod": "2014-10-27",
+     "age": 76,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 2
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "TOBY I WEINER",
+     "dod": "2008-10-31",
+     "age": 75,
+     "confidence": "HIGH",
+     "points": 105,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 63
+  },
+  {
    "account": "0908020124",
    "address": "12750 La Plata Rd",
    "city": "Waldorf",
@@ -1042,6 +1180,37 @@
    "score": 92
   },
   {
+   "account": "1401246763",
+   "address": "7670 Stony Creek Ln",
+   "city": "Ellicott City",
+   "county": "Howard",
+   "owner": "ROBINSON KIM DIANE",
+   "owner2": "ROBINSON YVONNE MARIE",
+   "mail_state": "MD",
+   "assessed": 323700,
+   "equity_est": 314160,
+   "total_owed": 9540.13,
+   "transfer_date": "1993.03.04",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "YVONNE MARIE ROBINSON",
+     "dod": "1997-03-11",
+     "age": 89,
+     "confidence": "HIGH",
+     "points": 90,
+     "same_name_deaths": 2
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 38
+  },
+  {
    "account": "0322020867009",
    "address": "412 S Hanover St",
    "city": "Baltimore",
@@ -1070,6 +1239,44 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 58
+  },
+  {
+   "account": "17103864865",
+   "address": "603 7Th St",
+   "city": "Laurel",
+   "county": "Prince George's",
+   "owner": "TORRES SONIA M",
+   "owner2": "TORRES-COLLAZO JORGE E ETAL",
+   "mail_state": "MD",
+   "assessed": 303800,
+   "equity_est": 298046,
+   "total_owed": 5754.0,
+   "transfer_date": "2009.08.13",
+   "title_flags": [
+    "ABSENTEE",
+    "DECEASED_SOLE_OWNER_HIGH",
+    "ET_AL",
+    "MAIL_MISMATCH",
+    "NO_HOMESTEAD",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "SONIA M TORRES",
+     "dod": "2013-11-24",
+     "age": 45,
+     "confidence": "HIGH",
+     "points": 100,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 68
   },
   {
    "account": "020304190074600",
@@ -1410,6 +1617,68 @@
    "score": 23
   },
   {
+   "account": "04021700003959",
+   "address": "19 Papago Ct",
+   "city": "Randallstown",
+   "county": "Baltimore County",
+   "owner": "COX ROSA LEE B",
+   "owner2": "COX MICHELLE DENISE",
+   "mail_state": "MD",
+   "assessed": 246700,
+   "equity_est": 230724,
+   "total_owed": 15975.66,
+   "transfer_date": "1990.08.14",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "ROSA LEE B COX",
+     "dod": "1992-07-22",
+     "age": 75,
+     "confidence": "HIGH",
+     "points": 90,
+     "same_name_deaths": 2
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "MICHELLE DENISE COX",
+     "dod": "2010-06-29",
+     "age": 58,
+     "confidence": "LOW",
+     "points": 45,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [
+    {
+     "case": "C-03-JG-21-002529",
+     "creditor": "TWELVE TREES ASSN INC",
+     "amount": 4106.4,
+     "entry": "08/03/2021",
+     "expires": "2033-08-03"
+    },
+    {
+     "case": "C-03-JG-23-006677",
+     "creditor": "TWELVE TREES ASSN INC",
+     "amount": 3447.17,
+     "entry": "10/13/2023",
+     "expires": "2035-10-13"
+    },
+    {
+     "case": "C-03-JG-23-006678",
+     "creditor": "TWELVE TREES ASSN INC",
+     "amount": 3447.17,
+     "entry": "10/13/2023",
+     "expires": "2035-10-13"
+    }
+   ],
+   "all_judgments": 5,
+   "score": 53
+  },
+  {
    "account": "17111175066",
    "address": "6300 Mister Rd",
    "city": "Brandywine",
@@ -1563,6 +1832,53 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 68
+  },
+  {
+   "account": "04151501500850",
+   "address": "2307 Sparrows Point Rd",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "PORECA DANIEL J JR",
+   "owner2": "PORECA ROSE M",
+   "mail_state": "MD",
+   "assessed": 197600,
+   "equity_est": 191142,
+   "total_owed": 6458.08,
+   "transfer_date": "1971.08.06",
+   "title_flags": [
+    "ABSENTEE",
+    "ALL_OWNERS_DECEASED",
+    "BELOW_AVG_CONDITION",
+    "MULTIPLE_INDIVIDUALS",
+    "NEGLECT_PROFILE",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "DANIEL J PORECA JR",
+     "dod": "1992-01-17",
+     "age": 89,
+     "confidence": "MEDIUM",
+     "points": 70,
+     "same_name_deaths": 1
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "ROSE M PORECA",
+     "dod": "1997-03-01",
+     "age": 64,
+     "confidence": "HIGH",
+     "points": 105,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 63
   },
   {
    "account": "04151518474850",
@@ -2166,6 +2482,37 @@
    "score": 28
   },
   {
+   "account": "04151513201920",
+   "address": "7719 Eastdale Rd",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "REARDON JOHN H",
+   "owner2": "REARDON MARY D",
+   "mail_state": "MD",
+   "assessed": 126100,
+   "equity_est": 124778,
+   "total_owed": 1321.67,
+   "transfer_date": "2000.07.28",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "MARY D REARDON",
+     "dod": "2009-09-28",
+     "age": 66,
+     "confidence": "HIGH",
+     "points": 95,
+     "same_name_deaths": 4
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 18
+  },
+  {
    "account": "0316062520021",
    "address": "918 Wildwood Pkwy",
    "city": "Baltimore",
@@ -2461,6 +2808,51 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 13
+  },
+  {
+   "account": "2305101409",
+   "address": "208 Aydelotte Rd",
+   "city": "Salisbury",
+   "county": "Wicomico",
+   "owner": "TRADER PEGGY D",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 177700,
+   "equity_est": 92043,
+   "total_owed": 85656.86,
+   "transfer_date": "2012.08.09",
+   "title_flags": [
+    "ABSENTEE",
+    "DECEASED_SOLE_OWNER_HIGH",
+    "MAIL_MISMATCH",
+    "NO_HOMESTEAD",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "PEGGY D TRADER",
+     "dod": "2014-07-19",
+     "age": 77,
+     "confidence": "HIGH",
+     "points": 105,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [
+    {
+     "case": "C-22-JG-17-001251",
+     "creditor": "U S A",
+     "amount": 85656.86,
+     "entry": "09/06/2017",
+     "expires": "2029-09-06"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 66
   },
   {
    "account": "0106019870",
@@ -3104,6 +3496,68 @@
    "score": 38
   },
   {
+   "account": "020375090224467",
+   "address": "",
+   "city": "Glen Burnie",
+   "county": "Anne Arundel",
+   "owner": "CASTRUCCIO PETER A",
+   "owner2": "CASTRUCCIO SADIE M",
+   "mail_state": "MD",
+   "assessed": 55000,
+   "equity_est": 54810,
+   "total_owed": 190.48,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "PETER A CASTRUCCIO",
+     "dod": "2013-02-19",
+     "age": 88,
+     "confidence": "HIGH",
+     "points": 105,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 31
+  },
+  {
+   "account": "020375090224466",
+   "address": "",
+   "city": "Glen Burnie",
+   "county": "Anne Arundel",
+   "owner": "CASTRUCCIO PETER A",
+   "owner2": "CASTRUCCIO SADIE M",
+   "mail_state": "MD",
+   "assessed": 48400,
+   "equity_est": 48210,
+   "total_owed": 190.48,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "PETER A CASTRUCCIO",
+     "dod": "2013-02-19",
+     "age": 88,
+     "confidence": "HIGH",
+     "points": 105,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 31
+  },
+  {
    "account": "0315380018017",
    "address": "1533 N Pulaski St",
    "city": "Baltimore",
@@ -3576,6 +4030,54 @@
    "score": 23
   },
   {
+   "account": "0129005788",
+   "address": "13605 Bristol Dr Sw",
+   "city": "Cresaptown",
+   "county": "Allegany",
+   "owner": "WARNER MARIE A ET AL",
+   "owner2": "MARKS RITA M",
+   "mail_state": "MD",
+   "assessed": 28300,
+   "equity_est": 25800,
+   "total_owed": 2500.0,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "MARIE A WARNER",
+     "dod": "2003-01-08",
+     "age": 87,
+     "confidence": "HIGH",
+     "points": 95,
+     "same_name_deaths": 5
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "RITA M MARKS",
+     "dod": "2010-10-04",
+     "age": 90,
+     "confidence": "LOW",
+     "points": 35,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-24-000034",
+     "creditor": "Lavale Sanitary Commission",
+     "amount": 2500.0,
+     "entry": "06/05/2026",
+     "expires": "2038-06-05"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 6
+  },
+  {
    "account": "0327204602020F",
    "address": "3709 Oakmont Ave",
    "city": "Baltimore",
@@ -3828,6 +4330,85 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 0
+  },
+  {
+   "account": "0120004886",
+   "address": "12541 Richfield Ave Nw",
+   "city": "Corriganville",
+   "county": "Allegany",
+   "owner": "FETTERS CLARA E",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 17800,
+   "equity_est": 16725,
+   "total_owed": 1075.37,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "CLARA E FETTERS",
+     "dod": "1989-08-28",
+     "age": 83,
+     "confidence": "HIGH",
+     "points": 105,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 13
+  },
+  {
+   "account": "0129005761",
+   "address": "13607 Bristol Dr Sw",
+   "city": "Cresaptown",
+   "county": "Allegany",
+   "owner": "WARNER MARIE A LE",
+   "owner2": "MARKS RITA M",
+   "mail_state": "MD",
+   "assessed": 19000,
+   "equity_est": 16500,
+   "total_owed": 2500.0,
+   "transfer_date": "1997.07.31",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "MARIE A WARNER",
+     "dod": "2003-01-08",
+     "age": 87,
+     "confidence": "HIGH",
+     "points": 95,
+     "same_name_deaths": 5
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "RITA M MARKS",
+     "dod": "2010-10-04",
+     "age": 90,
+     "confidence": "LOW",
+     "points": 35,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-24-000034",
+     "creditor": "Lavale Sanitary Commission",
+     "amount": 2500.0,
+     "entry": "06/05/2026",
+     "expires": "2038-06-05"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 6
   },
   {
    "account": "1506001238",
@@ -4091,6 +4672,37 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 28
+  },
+  {
+   "account": "020415501863400",
+   "address": "",
+   "city": "Severn",
+   "county": "Anne Arundel",
+   "owner": "CASTRUCCIO PETER A",
+   "owner2": "CASTRUCCIO SADIE M",
+   "mail_state": "MD",
+   "assessed": 6000,
+   "equity_est": 5810,
+   "total_owed": 190.48,
+   "transfer_date": "1996.12.30",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "PETER A CASTRUCCIO",
+     "dod": "2013-02-19",
+     "age": 88,
+     "confidence": "HIGH",
+     "points": 105,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 16
   },
   {
    "account": "0320140175037",
@@ -4657,6 +5269,37 @@
    "score": 25
   },
   {
+   "account": "020357090217459",
+   "address": "504 Scrimshaw Way",
+   "city": "Severna Park",
+   "county": "Anne Arundel",
+   "owner": "SMITH DAVID A",
+   "owner2": "SMITH DIANE M",
+   "mail_state": "MD",
+   "assessed": 2202700,
+   "equity_est": 2199836,
+   "total_owed": 2864.02,
+   "transfer_date": "2005.02.15",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "DIANE M SMITH",
+     "dod": "2006-07-14",
+     "age": 56,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 10
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 55
+  },
+  {
    "account": "020223190092514",
    "address": "900 River Knoll Ct",
    "city": "Davidsonville",
@@ -4785,6 +5428,45 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 45
+  },
+  {
+   "account": "04111103000026",
+   "address": "11600 Stocksdale Rd",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "CARTER MELVIN J",
+   "owner2": "CARTER KATHY A",
+   "mail_state": "MD",
+   "assessed": 634900,
+   "equity_est": 630588,
+   "total_owed": 4311.98,
+   "transfer_date": "1989.07.28",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "KATHY A CARTER",
+     "dod": "1990-04-02",
+     "age": 29,
+     "confidence": "MEDIUM",
+     "points": 70,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "03-L-18-004888",
+     "creditor": "Clinical Associates P A",
+     "amount": 4311.98,
+     "entry": "04/25/2018",
+     "expires": "2030-04-25"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 36
   },
   {
    "account": "161303342961",
@@ -4956,6 +5638,37 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 40
+  },
+  {
+   "account": "160502148955",
+   "address": "504 Eldrid Dr",
+   "city": "Silver Spring",
+   "county": "Montgomery",
+   "owner": "NGUYEN TAM THANH & THUY THI",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 480600,
+   "equity_est": 478953,
+   "total_owed": 1646.65,
+   "transfer_date": "2009.10.21",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "TAM THANH NGUYEN",
+     "dod": "2010-08-12",
+     "age": 75,
+     "confidence": "MEDIUM",
+     "points": 75,
+     "same_name_deaths": 2
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 33
   },
   {
    "account": "1401266756",
@@ -5210,6 +5923,45 @@
    "score": 50
   },
   {
+   "account": "0129041741",
+   "address": "988 Oaklawn Ave",
+   "city": "Lavale",
+   "county": "Allegany",
+   "owner": "JENNINGS DANIEL L ET AL",
+   "owner2": "JENNINGS HELEN M",
+   "mail_state": "MD",
+   "assessed": 375900,
+   "equity_est": 366543,
+   "total_owed": 9356.98,
+   "transfer_date": "2006.01.24",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "DANIEL L JENNINGS",
+     "dod": "2013-06-28",
+     "age": 74,
+     "confidence": "MEDIUM",
+     "points": 65,
+     "same_name_deaths": 3
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-18-000231",
+     "creditor": "Lavale Sanitary Commission",
+     "amount": 7000.0,
+     "entry": "08/19/2024",
+     "expires": "2036-08-19"
+    }
+   ],
+   "all_judgments": 5,
+   "score": 56
+  },
+  {
    "account": "160903075295",
    "address": "11621 Scarlet Leaf Cir",
    "city": "Germantown",
@@ -5449,6 +6201,51 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 50
+  },
+  {
+   "account": "1303359255",
+   "address": "1531 Sunswept Dr",
+   "city": "Bel Air",
+   "county": "Harford",
+   "owner": "MARTIN LEON H",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 341700,
+   "equity_est": 333168,
+   "total_owed": 8532.0,
+   "transfer_date": "2006.02.03",
+   "title_flags": [
+    "ABSENTEE",
+    "DECEASED_SOLE_OWNER_MEDIUM",
+    "MAIL_MISMATCH",
+    "NO_HOMESTEAD",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "LEON H MARTIN",
+     "dod": "2006-08-23",
+     "age": 76,
+     "confidence": "MEDIUM",
+     "points": 75,
+     "same_name_deaths": 2
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "12-L-18-000153",
+     "creditor": "Christopher J Selling & Associates",
+     "amount": 8532.0,
+     "entry": "01/19/2018",
+     "expires": "2030-01-19"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 66
   },
   {
    "account": "161301233205",
@@ -5889,6 +6686,45 @@
    "score": 78
   },
   {
+   "account": "04111103000702",
+   "address": "6929 Sunshine Ave",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "CARTER MELVIN J",
+   "owner2": "CARTER KATHY A",
+   "mail_state": "MD",
+   "assessed": 295400,
+   "equity_est": 291088,
+   "total_owed": 4311.98,
+   "transfer_date": "1982.03.15",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "KATHY A CARTER",
+     "dod": "1990-04-02",
+     "age": 29,
+     "confidence": "MEDIUM",
+     "points": 70,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "03-L-18-004888",
+     "creditor": "Clinical Associates P A",
+     "amount": 4311.98,
+     "entry": "04/25/2018",
+     "expires": "2030-04-25"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 36
+  },
+  {
    "account": "04131303000470",
    "address": "1004 S Beechfield Ave",
    "city": "Baltimore",
@@ -5928,6 +6764,37 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 73
+  },
+  {
+   "account": "1102454858",
+   "address": "1805A Wheyfield Dr",
+   "city": "Frederick",
+   "county": "Frederick",
+   "owner": "NARANJO TONY M & DELIA A",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 295000,
+   "equity_est": 285623,
+   "total_owed": 9377.18,
+   "transfer_date": "2006.11.16",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "DELIA A NARANJO",
+     "dod": "2012-09-26",
+     "age": 57,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 72
   },
   {
    "account": "2410329426",
@@ -6161,6 +7028,45 @@
    "score": 57
   },
   {
+   "account": "04131318000490",
+   "address": "2056 Northeast Ave",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "GIVENS CHARLES E",
+   "owner2": "GIVENS DOROTHY",
+   "mail_state": "MD",
+   "assessed": 275600,
+   "equity_est": 271247,
+   "total_owed": 4352.76,
+   "transfer_date": "1998.06.30",
+   "title_flags": [
+    "ABSENTEE",
+    "CO_OWNER_DECEASED",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OLD_STRUCTURE",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_LISTED"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "DOROTHY GIVENS",
+     "dod": "2013-05-26",
+     "age": 90,
+     "confidence": "MEDIUM",
+     "points": 65,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 74
+  },
+  {
    "account": "04141900013752",
    "address": "9010 Lennings Ln",
    "city": "",
@@ -6261,6 +7167,37 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 48
+  },
+  {
+   "account": "04020208002090",
+   "address": "3212 Richwood Ave",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "TURNER MARIO JOSEPH",
+   "owner2": "TURNER JOAN DWAIN",
+   "mail_state": "MD",
+   "assessed": 237100,
+   "equity_est": 234522,
+   "total_owed": 2577.91,
+   "transfer_date": "1985.05.09",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "MARIO JOSEPH TURNER",
+     "dod": "1999-11-08",
+     "age": 45,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 33
   },
   {
    "account": "020366002947905",
@@ -6707,6 +7644,37 @@
    "score": 50
   },
   {
+   "account": "020539413515450",
+   "address": "6405 Jefferson Pl",
+   "city": "Glen Burnie",
+   "county": "Anne Arundel",
+   "owner": "BRYANT MARK S",
+   "owner2": "BRYANT CATHERINE",
+   "mail_state": "MD",
+   "assessed": 217800,
+   "equity_est": 197297,
+   "total_owed": 20503.35,
+   "transfer_date": "2006.01.19",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "CATHERINE BRYANT",
+     "dod": "2011-10-28",
+     "age": 68,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 2
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 3,
+   "score": 53
+  },
+  {
    "account": "04010105610360",
    "address": "5300 Overhill Rd",
    "city": "Baltimore",
@@ -6785,6 +7753,46 @@
    "score": 52
   },
   {
+   "account": "04151502853050",
+   "address": "2706 North Point Rd",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "BUTLER AUGUSTA E",
+   "owner2": "BUTLER JAMES L",
+   "mail_state": "MD",
+   "assessed": 194800,
+   "equity_est": 190323,
+   "total_owed": 4477.09,
+   "transfer_date": "2002.12.04",
+   "title_flags": [
+    "ABSENTEE",
+    "CO_OWNER_DECEASED",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OLD_STRUCTURE",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_LISTED"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "AUGUSTA E BUTLER",
+     "dod": "2006-05-23",
+     "age": 86,
+     "confidence": "MEDIUM",
+     "points": 65,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 45
+  },
+  {
    "account": "020600003824802",
    "address": "921 Spa Rd",
    "city": "Annapolis",
@@ -6823,6 +7831,50 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 55
+  },
+  {
+   "account": "0709009795",
+   "address": "3400 Buffalo Rd",
+   "city": "New Windsor",
+   "county": "Carroll",
+   "owner": "YOUNG REGINALD C JR",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 214800,
+   "equity_est": 187696,
+   "total_owed": 27104.48,
+   "transfer_date": "2005.12.08",
+   "title_flags": [
+    "ABSENTEE",
+    "DECEASED_SOLE_OWNER_MEDIUM",
+    "MAIL_MISMATCH",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "REGINALD C YOUNG JR",
+     "dod": "2012-11-14",
+     "age": 93,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 4
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-06-CR-22-341-JG",
+     "creditor": "Humane Society of Carroll County",
+     "amount": 27104.48,
+     "entry": "01/17/2023",
+     "expires": "2035-01-17"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 68
   },
   {
    "account": "0327014198B002",
@@ -7113,6 +8165,44 @@
    "score": 75
   },
   {
+   "account": "04131302850650",
+   "address": "4415 Norfen Rd",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "BROWN HEATHER",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 167400,
+   "equity_est": 166757,
+   "total_owed": 643.16,
+   "transfer_date": "2003.09.12",
+   "title_flags": [
+    "ABSENTEE",
+    "DECEASED_SOLE_OWNER_MEDIUM",
+    "NUISANCE_CASE",
+    "REPEAT_CODE_CASES",
+    "STACKED_SIGNALS",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "HEATHER BROWN",
+     "dod": "2013-03-03",
+     "age": 30,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 2
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 59
+  },
+  {
    "account": "0327025809014",
    "address": "4905 Arabia Ave",
    "city": "Baltimore",
@@ -7149,6 +8239,77 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 70
+  },
+  {
+   "account": "020491206620800",
+   "address": "8549 Pioneer Dr",
+   "city": "Severn",
+   "county": "Anne Arundel",
+   "owner": "MORTON KENNETH",
+   "owner2": "MORTON CAROLYN",
+   "mail_state": "MD",
+   "assessed": 179200,
+   "equity_est": 164639,
+   "total_owed": 14560.9,
+   "transfer_date": "2004.10.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "KENNETH MORTON",
+     "dod": "2008-12-13",
+     "age": 89,
+     "confidence": "MEDIUM",
+     "points": 55,
+     "same_name_deaths": 3
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "CAROLYN MORTON",
+     "dod": "2004-02-11",
+     "age": 45,
+     "confidence": "LOW",
+     "points": 45,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 30
+  },
+  {
+   "account": "04121202085077",
+   "address": "8311 Bear Creek Dr",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "BUTLER AUGUSTA E",
+   "owner2": "BUTLER JAMES LEE",
+   "mail_state": "MD",
+   "assessed": 168900,
+   "equity_est": 164423,
+   "total_owed": 4477.09,
+   "transfer_date": "2002.11.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "AUGUSTA E BUTLER",
+     "dod": "2006-05-23",
+     "age": 86,
+     "confidence": "MEDIUM",
+     "points": 65,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 33
   },
   {
    "account": "17060557447",
@@ -7344,6 +8505,54 @@
    "score": 48
   },
   {
+   "account": "0111004296",
+   "address": "100 Mount Savage Rd Nw",
+   "city": "Frostburg",
+   "county": "Allegany",
+   "owner": "KELLY FRANCIS P ET UX",
+   "owner2": "KELLY VIRGINIA W",
+   "mail_state": "MD",
+   "assessed": 161400,
+   "equity_est": 154142,
+   "total_owed": 7258.32,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "FRANCIS P KELLY",
+     "dod": "2007-03-02",
+     "age": 90,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 16
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "VIRGINIA W KELLY",
+     "dod": "2001-05-27",
+     "age": 79,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 12
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-19-000768",
+     "creditor": "Jennings Run/wills Creek Sanitary District",
+     "amount": 3828.32,
+     "entry": "12/19/2019",
+     "expires": "2031-12-19"
+    }
+   ],
+   "all_judgments": 3,
+   "score": 73
+  },
+  {
    "account": "0327295288D214",
    "address": "2102 Westfield Ave",
    "city": "Baltimore",
@@ -7497,6 +8706,77 @@
    "buyable_judgments": [],
    "all_judgments": 6,
    "score": 75
+  },
+  {
+   "account": "04121203023245",
+   "address": "705 Aldworth Rd",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "COTTON WILLIAM JOSEPH",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 145100,
+   "equity_est": 143922,
+   "total_owed": 1177.63,
+   "transfer_date": "1985.03.01",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "WILLIAM JOSEPH COTTON",
+     "dod": "1993-12-26",
+     "age": 63,
+     "confidence": "MEDIUM",
+     "points": 80,
+     "same_name_deaths": 8
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 21
+  },
+  {
+   "account": "04121202088100",
+   "address": "3127 Baybriar Rd",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "BUTLER AUGUSTA E",
+   "owner2": "BUTLER JAMES L",
+   "mail_state": "MD",
+   "assessed": 146800,
+   "equity_est": 142323,
+   "total_owed": 4477.09,
+   "transfer_date": "2002.10.25",
+   "title_flags": [
+    "ABSENTEE",
+    "CO_OWNER_DECEASED",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OLD_STRUCTURE",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_LISTED"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "AUGUSTA E BUTLER",
+     "dod": "2006-05-23",
+     "age": 86,
+     "confidence": "MEDIUM",
+     "points": 65,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 35
   },
   {
    "account": "0327045603H012",
@@ -7754,6 +9034,54 @@
    "buyable_judgments": [],
    "all_judgments": 3,
    "score": 65
+  },
+  {
+   "account": "0112010613",
+   "address": "198 E Main St",
+   "city": "Frostburg",
+   "county": "Allegany",
+   "owner": "KELLY FRANCIS P ET UX",
+   "owner2": "KELLY VIRGINIA W",
+   "mail_state": "MD",
+   "assessed": 139100,
+   "equity_est": 131842,
+   "total_owed": 7258.32,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "FRANCIS P KELLY",
+     "dod": "2007-03-02",
+     "age": 90,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 16
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "VIRGINIA W KELLY",
+     "dod": "2001-05-27",
+     "age": 79,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 12
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-19-000768",
+     "creditor": "Jennings Run/wills Creek Sanitary District",
+     "amount": 3828.32,
+     "entry": "12/19/2019",
+     "expires": "2031-12-19"
+    }
+   ],
+   "all_judgments": 3,
+   "score": 63
   },
   {
    "account": "0325012530C368",
@@ -8368,6 +9696,65 @@
    "score": 60
   },
   {
+   "account": "0113007152",
+   "address": "",
+   "city": "Mt Savage",
+   "county": "Allegany",
+   "owner": "KELLY FRANCIS P ET AL",
+   "owner2": "KELLY VIRGINIA W",
+   "mail_state": "MD",
+   "assessed": 104800,
+   "equity_est": 97542,
+   "total_owed": 7258.32,
+   "transfer_date": "0000.00.00",
+   "title_flags": [
+    "ABSENTEE",
+    "ALL_OWNERS_DECEASED",
+    "BELOW_AVG_CONDITION",
+    "ET_AL",
+    "MULTIPLE_INDIVIDUALS",
+    "NEGLECT_PROFILE",
+    "NO_HOMESTEAD",
+    "NO_RECORDED_TRANSFER",
+    "OLD_STRUCTURE",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "FRANCIS P KELLY",
+     "dod": "2007-03-02",
+     "age": 90,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 16
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "VIRGINIA W KELLY",
+     "dod": "2001-05-27",
+     "age": 79,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 12
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-19-000768",
+     "creditor": "Jennings Run/wills Creek Sanitary District",
+     "amount": 3828.32,
+     "entry": "12/19/2019",
+     "expires": "2031-12-19"
+    }
+   ],
+   "all_judgments": 3,
+   "score": 80
+  },
+  {
    "account": "04030303003650",
    "address": "6800 Southern Cross Ct",
    "city": "Baltimore",
@@ -8403,6 +9790,85 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 68
+  },
+  {
+   "account": "0111004326",
+   "address": "87 W Main St",
+   "city": "Frostburg",
+   "county": "Allegany",
+   "owner": "KELLY FRANCIS P ET UX",
+   "owner2": "KELLY VIRGINIA W",
+   "mail_state": "MD",
+   "assessed": 104000,
+   "equity_est": 96742,
+   "total_owed": 7258.32,
+   "transfer_date": "1975.02.11",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "FRANCIS P KELLY",
+     "dod": "2007-03-02",
+     "age": 90,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 16
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "VIRGINIA W KELLY",
+     "dod": "2001-05-27",
+     "age": 79,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 12
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-19-000768",
+     "creditor": "Jennings Run/wills Creek Sanitary District",
+     "amount": 3828.32,
+     "entry": "12/19/2019",
+     "expires": "2031-12-19"
+    }
+   ],
+   "all_judgments": 3,
+   "score": 63
+  },
+  {
+   "account": "04121202085076",
+   "address": "1703 Evergreen Dr",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "BUTLER AUGUSTA E",
+   "owner2": "BUTLER JAMES LEE",
+   "mail_state": "MD",
+   "assessed": 99900,
+   "equity_est": 95423,
+   "total_owed": 4477.09,
+   "transfer_date": "2002.11.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "AUGUSTA E BUTLER",
+     "dod": "2006-05-23",
+     "age": 86,
+     "confidence": "MEDIUM",
+     "points": 65,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 23
   },
   {
    "account": "04131323501230",
@@ -10060,6 +11526,37 @@
    "score": 5
   },
   {
+   "account": "0801023837",
+   "address": "",
+   "city": "Earleville",
+   "county": "Cecil",
+   "owner": "STEVENS HARRY G & NORMA G",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 27300,
+   "equity_est": 26355,
+   "total_owed": 944.84,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "HARRY G STEVENS",
+     "dod": "1993-02-14",
+     "age": 82,
+     "confidence": "MEDIUM",
+     "points": 80,
+     "same_name_deaths": 10
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 23
+  },
+  {
    "account": "0110004675",
    "address": "68 Douglas Ave",
    "city": "Lonaconing",
@@ -10215,6 +11712,37 @@
    "score": 47
   },
   {
+   "account": "1102250284",
+   "address": "2500 Coleridge Dr",
+   "city": "Frederick",
+   "county": "Frederick",
+   "owner": "BROWN LAVERNE CUMMINGS",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 25000,
+   "equity_est": 22373,
+   "total_owed": 2627.28,
+   "transfer_date": "2006.05.05",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "LAVERNE CUMMINGS BROWN",
+     "dod": "2006-04-15",
+     "age": 63,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 0
+  },
+  {
    "account": "0102019515",
    "address": "",
    "city": "Oldtown",
@@ -10244,6 +11772,37 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 25
+  },
+  {
+   "account": "04010112002131",
+   "address": "129 Arbutus Ave",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "LAWRENCE CATHERINE S",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 39900,
+   "equity_est": 18901,
+   "total_owed": 20999.42,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "CATHERINE S LAWRENCE",
+     "dod": "1982-06-27",
+     "age": null,
+     "confidence": "MEDIUM",
+     "points": 65,
+     "same_name_deaths": 4
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 3,
+   "score": 40
   },
   {
    "account": "0315130293041",
@@ -10306,6 +11865,54 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 15
+  },
+  {
+   "account": "0111007589",
+   "address": "",
+   "city": "Frostburg",
+   "county": "Allegany",
+   "owner": "KELLY FRANCIS P ET UX",
+   "owner2": "KELLY VIRGINIA W",
+   "mail_state": "MD",
+   "assessed": 22300,
+   "equity_est": 15042,
+   "total_owed": 7258.32,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "FRANCIS P KELLY",
+     "dod": "2007-03-02",
+     "age": 90,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 16
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "VIRGINIA W KELLY",
+     "dod": "2001-05-27",
+     "age": 79,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 12
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-19-000768",
+     "creditor": "Jennings Run/wills Creek Sanitary District",
+     "amount": 3828.32,
+     "entry": "12/19/2019",
+     "expires": "2031-12-19"
+    }
+   ],
+   "all_judgments": 3,
+   "score": 38
   },
   {
    "account": "0308171484011",
@@ -10439,6 +12046,132 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 10
+  },
+  {
+   "account": "0111007597",
+   "address": "",
+   "city": "Frostburg",
+   "county": "Allegany",
+   "owner": "KELLY FRANCIS P ET UX",
+   "owner2": "KELLY VIRGINIA W",
+   "mail_state": "MD",
+   "assessed": 20600,
+   "equity_est": 13342,
+   "total_owed": 7258.32,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "FRANCIS P KELLY",
+     "dod": "2007-03-02",
+     "age": 90,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 16
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "VIRGINIA W KELLY",
+     "dod": "2001-05-27",
+     "age": 79,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 12
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-19-000768",
+     "creditor": "Jennings Run/wills Creek Sanitary District",
+     "amount": 3828.32,
+     "entry": "12/19/2019",
+     "expires": "2031-12-19"
+    }
+   ],
+   "all_judgments": 3,
+   "score": 38
+  },
+  {
+   "account": "04111113076670",
+   "address": "",
+   "city": "",
+   "county": "Baltimore County",
+   "owner": "CARTER MELVIN J",
+   "owner2": "CARTER KATHY A",
+   "mail_state": "MD",
+   "assessed": 17300,
+   "equity_est": 12988,
+   "total_owed": 4311.98,
+   "transfer_date": "1988.11.01",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "KATHY A CARTER",
+     "dod": "1990-04-02",
+     "age": 29,
+     "confidence": "MEDIUM",
+     "points": 70,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "03-L-18-004888",
+     "creditor": "Clinical Associates P A",
+     "amount": 4311.98,
+     "entry": "04/25/2018",
+     "expires": "2030-04-25"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 11
+  },
+  {
+   "account": "0110003237",
+   "address": "75 Ayers Aly",
+   "city": "Lonaconing",
+   "county": "Allegany",
+   "owner": "RITCHIE JAMES P",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 21200,
+   "equity_est": 12863,
+   "total_owed": 8336.8,
+   "transfer_date": "2005.02.08",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "JAMES P RITCHIE",
+     "dod": "2012-01-22",
+     "age": 62,
+     "confidence": "MEDIUM",
+     "points": 80,
+     "same_name_deaths": 8
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "C-01-JG-23-000525",
+     "creditor": "Georges Creek Sanitary District",
+     "amount": 7767.67,
+     "entry": "12/06/2023",
+     "expires": "2035-12-06"
+    }
+   ],
+   "all_judgments": 2,
+   "score": 18
   },
   {
    "account": "0316100097049",
@@ -10769,6 +12502,46 @@
    "score": 20
   },
   {
+   "account": "0106021352",
+   "address": "14432 Amcelle St Sw",
+   "city": "Cumberland",
+   "county": "Allegany",
+   "owner": "INGRAM WILLIAM J LE ET AL",
+   "owner2": "INGRAM MARY JO LE",
+   "mail_state": "MD",
+   "assessed": 7700,
+   "equity_est": 7324,
+   "total_owed": 376.06,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "WILLIAM J INGRAM",
+     "dod": "1978-12-23",
+     "age": null,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 11
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "MARY JO INGRAM",
+     "dod": "1996-04-28",
+     "age": 77,
+     "confidence": "LOW",
+     "points": 35,
+     "same_name_deaths": 7
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 8
+  },
+  {
    "account": "0309054041028",
    "address": "607 Bartlett Ave",
    "city": "Baltimore",
@@ -10829,6 +12602,37 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 20
+  },
+  {
+   "account": "2003052060",
+   "address": "4052 Back Shelltown Rd",
+   "city": "",
+   "county": "Somerset",
+   "owner": "CROSS GEORGE W AND JANET E",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 5900,
+   "equity_est": 5651,
+   "total_owed": 249.0,
+   "transfer_date": "1992.04.10",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "GEORGE W CROSS",
+     "dod": "2012-01-05",
+     "age": 61,
+     "confidence": "MEDIUM",
+     "points": 80,
+     "same_name_deaths": 7
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 16
   },
   {
    "account": "0106024734",
@@ -10995,6 +12799,45 @@
    "score": 32
   },
   {
+   "account": "04112000005285",
+   "address": "",
+   "city": "Kingsville",
+   "county": "Baltimore County",
+   "owner": "CARTER MELVIN J",
+   "owner2": "CARTER KATHY A",
+   "mail_state": "MD",
+   "assessed": 7200,
+   "equity_est": 2888,
+   "total_owed": 4311.98,
+   "transfer_date": "1985.10.17",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "KATHY A CARTER",
+     "dod": "1990-04-02",
+     "age": 29,
+     "confidence": "MEDIUM",
+     "points": 70,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [
+    {
+     "case": "03-L-18-004888",
+     "creditor": "Clinical Associates P A",
+     "amount": 4311.98,
+     "entry": "04/25/2018",
+     "expires": "2030-04-25"
+    }
+   ],
+   "all_judgments": 1,
+   "score": 11
+  },
+  {
    "account": "0309081144039",
    "address": "1318 Ensor St",
    "city": "Baltimore",
@@ -11137,6 +12980,46 @@
    "score": 45
   },
   {
+   "account": "2008151091",
+   "address": "",
+   "city": "",
+   "county": "Somerset",
+   "owner": "HOLLAND CLYDE J AND LYNDA",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 900,
+   "equity_est": 634,
+   "total_owed": 266.45,
+   "transfer_date": "1993.08.18",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "CLYDE J HOLLAND",
+     "dod": "2012-06-03",
+     "age": 68,
+     "confidence": "LOW",
+     "points": 35,
+     "same_name_deaths": 2
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "LYNDA HOLLAND",
+     "dod": "2008-06-30",
+     "age": 60,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 3
+  },
+  {
    "account": "0319010125041",
    "address": "527 N Calhoun St",
    "city": "Baltimore",
@@ -11166,6 +13049,37 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 18
+  },
+  {
+   "account": "1010005809",
+   "address": "",
+   "city": "Toddville",
+   "county": "Dorchester",
+   "owner": "WICKWIRE DAVID LEE",
+   "owner2": "C/O SHIRLEY WICKWIRE",
+   "mail_state": "PA",
+   "assessed": 400,
+   "equity_est": 400,
+   "total_owed": 0.0,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "DAVID LEE WICKWIRE",
+     "dod": "1973-09-01",
+     "age": null,
+     "confidence": "MEDIUM",
+     "points": 75,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 26
   },
   {
    "account": "020336208332029",
@@ -11206,6 +13120,46 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 30
+  },
+  {
+   "account": "0106030564",
+   "address": "",
+   "city": "Cumberland",
+   "county": "Allegany",
+   "owner": "INGRAM WILLIAM J LE ET AL",
+   "owner2": "INGRAM MARY J LE",
+   "mail_state": "MD",
+   "assessed": 700,
+   "equity_est": 324,
+   "total_owed": 376.06,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "MSA death index",
+     "decedent": "WILLIAM J INGRAM",
+     "dod": "1978-12-23",
+     "age": null,
+     "confidence": "MEDIUM",
+     "points": 50,
+     "same_name_deaths": 11
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "MARY J INGRAM",
+     "dod": "1996-04-28",
+     "age": 77,
+     "confidence": "LOW",
+     "points": 35,
+     "same_name_deaths": 7
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 8
   },
   {
    "account": "0129002312",
@@ -11334,40 +13288,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 33
-  },
-  {
-   "account": "020357090217459",
-   "address": "504 Scrimshaw Way",
-   "city": "Severna Park",
-   "county": "Anne Arundel",
-   "owner": "SMITH DAVID A",
-   "owner2": "SMITH DIANE M",
-   "mail_state": "MD",
-   "assessed": 2202700,
-   "equity_est": 2199836,
-   "total_owed": 2864.02,
-   "transfer_date": "2005.02.15",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "DIANE M SMITH",
-     "dod": "2006-07-14",
-     "age": 56,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 10
-    }
-   ],
-   "conflicts": [
-    "Anne Arundel County Maryland entered 06/26/2015 after death",
-    "Anne Arundel County, Maryland entered 12/09/2015 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 2,
-   "score": 55
   },
   {
    "account": "020351015250202",
@@ -11505,9 +13425,7 @@
      "same_name_deaths": 13
     }
    ],
-   "conflicts": [
-    "SEASIDE COMMUNITY DEVELOPMENT CORP entered 12/08/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [
     {
@@ -11561,45 +13479,6 @@
    ],
    "all_judgments": 2,
    "score": 57
-  },
-  {
-   "account": "020400003690400",
-   "address": "1492 Berger St",
-   "city": "Odenton",
-   "county": "Anne Arundel",
-   "owner": "HOWARD JOAN M",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 975600,
-   "equity_est": 965031,
-   "total_owed": 10569.26,
-   "transfer_date": "1996.12.16",
-   "title_flags": [
-    "ABSENTEE",
-    "DECEASED_SOLE_OWNER_HIGH",
-    "MAIL_MISMATCH",
-    "STALE_OWNERSHIP",
-    "TAX_SALE_HISTORY"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "JOAN M HOWARD",
-     "dod": "2010-07-26",
-     "age": 70,
-     "confidence": "LOW",
-     "points": 95,
-     "same_name_deaths": 5
-    }
-   ],
-   "conflicts": [
-    "Russett Community Association, Inc. c/o Rees Broome, PC entered 03/25/2023 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 53
   },
   {
    "account": "1415100052",
@@ -11698,9 +13577,7 @@
      "same_name_deaths": 3
     }
    ],
-   "conflicts": [
-    "The Columbia Association Inc entered 02/14/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -12266,47 +14143,6 @@
    "score": 41
   },
   {
-   "account": "04111103000026",
-   "address": "11600 Stocksdale Rd",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "CARTER MELVIN J",
-   "owner2": "CARTER KATHY A",
-   "mail_state": "MD",
-   "assessed": 634900,
-   "equity_est": 630588,
-   "total_owed": 4311.98,
-   "transfer_date": "1989.07.28",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "KATHY A CARTER",
-     "dod": "1990-04-02",
-     "age": 29,
-     "confidence": "LOW",
-     "points": 70,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Clinical Associates P A entered 04/25/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "03-L-18-004888",
-     "creditor": "Clinical Associates P A",
-     "amount": 4311.98,
-     "entry": "04/25/2018",
-     "expires": "2030-04-25"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 36
-  },
-  {
    "account": "17093796737",
    "address": "6605 Tall Woods Way",
    "city": "Clinton",
@@ -12341,8 +14177,6 @@
     }
    ],
    "conflicts": [
-    "Perrywood Community Association Inc entered 11/18/2019 after death",
-    "Portfolio Recovery Associates Llc entered 06/06/2022 after death",
     "MIDLAND CREDIT MANAGEMENT,INC entered 12/18/2024 after death",
     "CAPITAL ONE, N.A. entered 09/18/2025 after death"
    ],
@@ -12447,9 +14281,7 @@
      "same_name_deaths": 4
     }
    ],
-   "conflicts": [
-    "ANNE ARUNDEL COUNTY, MARYLAND entered 04/11/2021 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -13183,10 +15015,7 @@
      "same_name_deaths": 20
     }
    ],
-   "conflicts": [
-    "Aspen Woods Homeowners Association, Inc. entered 11/08/2018 after death",
-    "Aspen Woods Homeowners Association, Inc. entered 04/11/2022 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -13252,11 +15081,7 @@
    ],
    "conflicts": [
     "TAYLOR, MARY A entered 10/11/2018 after death",
-    "TAYLOR, MARY A entered 10/11/2018 after death",
-    "SWEEPSTAKES HOMEOWNERS ASSOCIATION INC entered 11/08/2019 after death",
-    "SWEEPSTAKES HOMEOWNERS ASSOCIATION INC entered 08/31/2023 after death",
-    "Sweepstakes Homeowners Association, Inc. entered 08/05/2025 after death",
-    "Sweepstakes Homeowners Association, Inc. entered 08/05/2025 after death"
+    "TAYLOR, MARY A entered 10/11/2018 after death"
    ],
    "best_confidence": "LOW",
    "buyable_judgments": [
@@ -13358,39 +15183,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 46
-  },
-  {
-   "account": "160502148955",
-   "address": "504 Eldrid Dr",
-   "city": "Silver Spring",
-   "county": "Montgomery",
-   "owner": "NGUYEN TAM THANH & THUY THI",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 480600,
-   "equity_est": 478953,
-   "total_owed": 1646.65,
-   "transfer_date": "2009.10.21",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "TAM THANH NGUYEN",
-     "dod": "2010-08-12",
-     "age": 75,
-     "confidence": "LOW",
-     "points": 75,
-     "same_name_deaths": 2
-    }
-   ],
-   "conflicts": [
-    "Tanglewood Homeowners Recreational Association, Inc. c/o Rees Broome, PC entered 03/09/2026 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 33
   },
   {
    "account": "04151516002900",
@@ -13666,10 +15458,7 @@
      "same_name_deaths": 1
     }
    ],
-   "conflicts": [
-    "Piney Orchard Community Association, Inc. entered 10/31/2024 after death",
-    "Piney Orchard Community Association, Inc. entered 11/01/2024 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -13970,7 +15759,6 @@
    ],
    "conflicts": [
     "PPE CASINO RESORTS MARYLAND, LLC entered 10/26/2023 after death",
-    "Potomac Grove Homeowners Association, Inc. c/o Rees Broome, PC entered 02/06/2026 after death",
     "LVNV FUNDING LLC entered 02/27/2026 after death"
    ],
    "best_confidence": "LOW",
@@ -14587,64 +16375,6 @@
    "score": 35
   },
   {
-   "account": "1102218348",
-   "address": "2537 Waterside Dr",
-   "city": "Frederick",
-   "county": "Frederick",
-   "owner": "COX MARK H & WENDY G",
-   "owner2": "",
-   "mail_state": "TX",
-   "assessed": 404700,
-   "equity_est": 385693,
-   "total_owed": 19006.53,
-   "transfer_date": "1999.02.01",
-   "title_flags": [
-    "ABSENTEE",
-    "CO_OWNER_DECEASED",
-    "MAIL_MISMATCH",
-    "MULTIPLE_INDIVIDUALS",
-    "NO_HOMESTEAD",
-    "OUT_OF_STATE",
-    "STALE_OWNERSHIP",
-    "TAX_SALE_SOLD"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "MARK H COX",
-     "dod": "2008-07-25",
-     "age": 49,
-     "confidence": "LOW",
-     "points": 100,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Wormans Mill Community Conservancy, Inc. entered 11/10/2020 after death",
-    "Worman's Mill Community Conservancy, Inc. entered 10/16/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-10-JG-20-001756",
-     "creditor": "Wormans Mill Community Conservancy, Inc.",
-     "amount": 2760.53,
-     "entry": "11/10/2020",
-     "expires": "2032-11-10"
-    },
-    {
-     "case": "C-10-JG-25-003133",
-     "creditor": "Worman's Mill Community Conservancy, Inc.",
-     "amount": 16246.0,
-     "entry": "10/16/2025",
-     "expires": "2037-10-16"
-    }
-   ],
-   "all_judgments": 2,
-   "score": 67
-  },
-  {
    "account": "160702087457",
    "address": "5301 Westbard Cir",
    "city": "Bethesda",
@@ -14754,9 +16484,7 @@
      "same_name_deaths": 5
     }
    ],
-   "conflicts": [
-    "COVE POINT BEACH ASSOCIATION, INC entered 10/10/2018 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -15091,9 +16819,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Federal National Mortgage Assn entered 02/13/2015 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -15158,58 +16884,12 @@
     }
    ],
    "conflicts": [
-    "Wilde, Andrew; (AKA)Wilde Services entered 09/21/2022 after death",
-    "Deering Woods Condominium entered 09/28/2026 after death"
+    "Wilde, Andrew; (AKA)Wilde Services entered 09/21/2022 after death"
    ],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 4,
    "score": 60
-  },
-  {
-   "account": "0129041741",
-   "address": "988 Oaklawn Ave",
-   "city": "Lavale",
-   "county": "Allegany",
-   "owner": "JENNINGS DANIEL L ET AL",
-   "owner2": "JENNINGS HELEN M",
-   "mail_state": "MD",
-   "assessed": 375900,
-   "equity_est": 366543,
-   "total_owed": 9356.98,
-   "transfer_date": "2006.01.24",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "DANIEL L JENNINGS",
-     "dod": "2013-06-28",
-     "age": 74,
-     "confidence": "LOW",
-     "points": 65,
-     "same_name_deaths": 3
-    }
-   ],
-   "conflicts": [
-    "Lavale Sanitary Commission entered 11/09/2017 after death",
-    "Lavale Sanitary Commission entered 11/09/2017 after death",
-    "Lavale Sanitary Commission entered 06/14/2018 after death",
-    "Lavale Sanitary Commission entered 04/09/2019 after death",
-    "Lavale Sanitary Commission entered 08/19/2024 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-18-000231",
-     "creditor": "Lavale Sanitary Commission",
-     "amount": 7000.0,
-     "entry": "08/19/2024",
-     "expires": "2036-08-19"
-    }
-   ],
-   "all_judgments": 5,
-   "score": 56
   },
   {
    "account": "0804004094",
@@ -15689,9 +17369,7 @@
      "same_name_deaths": 8
     }
    ],
-   "conflicts": [
-    "Emergency Service Associates, P.A. entered 09/21/2026 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -15839,9 +17517,7 @@
      "same_name_deaths": 3
     }
    ],
-   "conflicts": [
-    "Kensington Homeowners Assn Inc entered 11/03/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -15945,53 +17621,6 @@
    "score": 43
   },
   {
-   "account": "1303359255",
-   "address": "1531 Sunswept Dr",
-   "city": "Bel Air",
-   "county": "Harford",
-   "owner": "MARTIN LEON H",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 341700,
-   "equity_est": 333168,
-   "total_owed": 8532.0,
-   "transfer_date": "2006.02.03",
-   "title_flags": [
-    "ABSENTEE",
-    "DECEASED_SOLE_OWNER_MEDIUM",
-    "MAIL_MISMATCH",
-    "NO_HOMESTEAD",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "LEON H MARTIN",
-     "dod": "2006-08-23",
-     "age": 76,
-     "confidence": "LOW",
-     "points": 75,
-     "same_name_deaths": 2
-    }
-   ],
-   "conflicts": [
-    "Christopher J Selling & Associates entered 01/19/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "12-L-18-000153",
-     "creditor": "Christopher J Selling & Associates",
-     "amount": 8532.0,
-     "entry": "01/19/2018",
-     "expires": "2030-01-19"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 66
-  },
-  {
    "account": "17182095925",
    "address": "6721 Central Hills Ter",
    "city": "Landover",
@@ -16028,54 +17657,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 50
-  },
-  {
-   "account": "04032500004375",
-   "address": "7301 Travertine Dr",
-   "city": "Baltimore",
-   "county": "Baltimore County",
-   "owner": "WEINER BERNARD",
-   "owner2": "WEINER TOBY I",
-   "mail_state": "MD",
-   "assessed": 360000,
-   "equity_est": 328536,
-   "total_owed": 31464.11,
-   "transfer_date": "2008.10.02",
-   "title_flags": [
-    "ABSENTEE",
-    "ALL_OWNERS_DECEASED",
-    "MAIL_MISMATCH",
-    "MULTIPLE_INDIVIDUALS",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "BERNARD WEINER",
-     "dod": "2014-10-27",
-     "age": 76,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 2
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "TOBY I WEINER",
-     "dod": "2008-10-31",
-     "age": 75,
-     "confidence": "LOW",
-     "points": 105,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "7101 7201 7301 TRAVERTINE CONDOMINIUM ASSN INC entered 02/19/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 63
   },
   {
    "account": "160901870955",
@@ -16507,9 +18088,7 @@
      "same_name_deaths": 3
     }
    ],
-   "conflicts": [
-    "The Columbia Association Inc entered 02/14/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -16555,39 +18134,6 @@
    ],
    "all_judgments": 1,
    "score": 33
-  },
-  {
-   "account": "1401246763",
-   "address": "7670 Stony Creek Ln",
-   "city": "Ellicott City",
-   "county": "Howard",
-   "owner": "ROBINSON KIM DIANE",
-   "owner2": "ROBINSON YVONNE MARIE",
-   "mail_state": "MD",
-   "assessed": 323700,
-   "equity_est": 314160,
-   "total_owed": 9540.13,
-   "transfer_date": "1993.03.04",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "YVONNE MARIE ROBINSON",
-     "dod": "1997-03-11",
-     "age": 89,
-     "confidence": "LOW",
-     "points": 90,
-     "same_name_deaths": 2
-    }
-   ],
-   "conflicts": [
-    "Woodland Village Condominium Association Inc entered 05/13/2024 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 38
   },
   {
    "account": "160902051820",
@@ -17107,46 +18653,6 @@
    "score": 33
   },
   {
-   "account": "17103864865",
-   "address": "603 7Th St",
-   "city": "Laurel",
-   "county": "Prince George's",
-   "owner": "TORRES SONIA M",
-   "owner2": "TORRES-COLLAZO JORGE E ETAL",
-   "mail_state": "MD",
-   "assessed": 303800,
-   "equity_est": 298046,
-   "total_owed": 5754.0,
-   "transfer_date": "2009.08.13",
-   "title_flags": [
-    "ABSENTEE",
-    "DECEASED_SOLE_OWNER_HIGH",
-    "ET_AL",
-    "MAIL_MISMATCH",
-    "NO_HOMESTEAD",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "SONIA M TORRES",
-     "dod": "2013-11-24",
-     "age": 45,
-     "confidence": "LOW",
-     "points": 100,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Park Place Laurel Condominium, INC entered 06/01/2016 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 68
-  },
-  {
    "account": "1102049066",
    "address": "1731 Northridge Ln",
    "city": "Frederick",
@@ -17367,47 +18873,6 @@
    "score": 78
   },
   {
-   "account": "04111103000702",
-   "address": "6929 Sunshine Ave",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "CARTER MELVIN J",
-   "owner2": "CARTER KATHY A",
-   "mail_state": "MD",
-   "assessed": 295400,
-   "equity_est": 291088,
-   "total_owed": 4311.98,
-   "transfer_date": "1982.03.15",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "KATHY A CARTER",
-     "dod": "1990-04-02",
-     "age": 29,
-     "confidence": "LOW",
-     "points": 70,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Clinical Associates P A entered 04/25/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "03-L-18-004888",
-     "creditor": "Clinical Associates P A",
-     "amount": 4311.98,
-     "entry": "04/25/2018",
-     "expires": "2030-04-25"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 36
-  },
-  {
    "account": "04010111770500",
    "address": "500 Bloomingdale Ave",
    "city": "Baltimore",
@@ -17592,39 +19057,6 @@
    "score": 43
   },
   {
-   "account": "1102454858",
-   "address": "1805A Wheyfield Dr",
-   "city": "Frederick",
-   "county": "Frederick",
-   "owner": "NARANJO TONY M & DELIA A",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 295000,
-   "equity_est": 285623,
-   "total_owed": 9377.18,
-   "transfer_date": "2006.11.16",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "DELIA A NARANJO",
-     "dod": "2012-09-26",
-     "age": 57,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Capital One Bank U S A N A entered 09/19/2016 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 2,
-   "score": 72
-  },
-  {
    "account": "0906168957",
    "address": "6113 Red Squirrel Pl",
    "city": "Waldorf",
@@ -17682,9 +19114,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Choptank Electric Employee Federal Credit Union entered 01/30/2024 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -17946,9 +19376,7 @@
      "same_name_deaths": 23
     }
    ],
-   "conflicts": [
-    "Village Of Deer Park Homeowners Assn Inc entered 04/26/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -17986,47 +19414,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 33
-  },
-  {
-   "account": "04131318000490",
-   "address": "2056 Northeast Ave",
-   "city": "Baltimore",
-   "county": "Baltimore County",
-   "owner": "GIVENS CHARLES E",
-   "owner2": "GIVENS DOROTHY",
-   "mail_state": "MD",
-   "assessed": 275600,
-   "equity_est": 271247,
-   "total_owed": 4352.76,
-   "transfer_date": "1998.06.30",
-   "title_flags": [
-    "ABSENTEE",
-    "CO_OWNER_DECEASED",
-    "MULTIPLE_INDIVIDUALS",
-    "NO_HOMESTEAD",
-    "OLD_STRUCTURE",
-    "STALE_OWNERSHIP",
-    "TAX_SALE_LISTED"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "DOROTHY GIVENS",
-     "dod": "2013-05-26",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 65,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Federal National Mortgage Assn entered 12/23/2014 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 2,
-   "score": 74
   },
   {
    "account": "04090919328490",
@@ -18133,9 +19520,7 @@
      "same_name_deaths": 1
     }
    ],
-   "conflicts": [
-    "VANTAGE POINT AT TOWN CENTER CONDOMINIUM entered 05/06/2019 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -18927,10 +20312,7 @@
      "same_name_deaths": 4
     }
    ],
-   "conflicts": [
-    "Huntington Neighborhood Association, Inc. entered 10/30/2025 after death",
-    "Huntington Neighborhood Association, Inc. entered 10/30/2025 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -19116,8 +20498,7 @@
     }
    ],
    "conflicts": [
-    "STATE EMPLOYEES CREDIT UNION OF MARYLAND INC entered 07/03/2024 after death",
-    "FAIR BROOK COMMUNITY ASSN INC entered 04/30/2026 after death"
+    "STATE EMPLOYEES CREDIT UNION OF MARYLAND INC entered 07/03/2024 after death"
    ],
    "best_confidence": "LOW",
    "buyable_judgments": [
@@ -19266,7 +20647,6 @@
     "judgment entered 03/25/2016 after death",
     "judgment entered 05/25/2018 after death",
     "MIDLAND CREDIT MANAGEMENT INC entered 06/12/2025 after death",
-    "Germantown Park Homes Association, Inc. entered 11/19/2025 after death",
     "Hewitt Properties, LLC entered 11/26/2025 after death"
    ],
    "best_confidence": "LOW",
@@ -19307,9 +20687,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Aspen Woods Homeowners Association, Inc. entered 05/27/2026 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -19341,8 +20719,7 @@
     }
    ],
    "conflicts": [
-    "judgment entered 03/31/2021 after death",
-    "Brighton West Condominium III entered 10/02/2023 after death"
+    "judgment entered 03/31/2021 after death"
    ],
    "best_confidence": "LOW",
    "buyable_judgments": [
@@ -19500,39 +20877,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 48
-  },
-  {
-   "account": "04020208002090",
-   "address": "3212 Richwood Ave",
-   "city": "Baltimore",
-   "county": "Baltimore County",
-   "owner": "TURNER MARIO JOSEPH",
-   "owner2": "TURNER JOAN DWAIN",
-   "mail_state": "MD",
-   "assessed": 237100,
-   "equity_est": 234522,
-   "total_owed": 2577.91,
-   "transfer_date": "1985.05.09",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "MARIO JOSEPH TURNER",
-     "dod": "1999-11-08",
-     "age": 45,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "CAPITAL ONE BANK U S A N A entered 04/28/2020 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 33
   },
   {
    "account": "0910013321",
@@ -19694,74 +21038,6 @@
    "score": 52
   },
   {
-   "account": "04021700003959",
-   "address": "19 Papago Ct",
-   "city": "Randallstown",
-   "county": "Baltimore County",
-   "owner": "COX ROSA LEE B",
-   "owner2": "COX MICHELLE DENISE",
-   "mail_state": "MD",
-   "assessed": 246700,
-   "equity_est": 230724,
-   "total_owed": 15975.66,
-   "transfer_date": "1990.08.14",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "ROSA LEE B COX",
-     "dod": "1992-07-22",
-     "age": 75,
-     "confidence": "LOW",
-     "points": 90,
-     "same_name_deaths": 2
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "MICHELLE DENISE COX",
-     "dod": "2010-06-29",
-     "age": 58,
-     "confidence": "LOW",
-     "points": 45,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "TWELVE TREES ASSN INC entered 11/20/2019 after death",
-    "TWELVE TREES ASSN INC entered 11/20/2019 after death",
-    "TWELVE TREES ASSN INC entered 08/03/2021 after death",
-    "TWELVE TREES ASSN INC entered 10/13/2023 after death",
-    "TWELVE TREES ASSN INC entered 10/13/2023 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-03-JG-21-002529",
-     "creditor": "TWELVE TREES ASSN INC",
-     "amount": 4106.4,
-     "entry": "08/03/2021",
-     "expires": "2033-08-03"
-    },
-    {
-     "case": "C-03-JG-23-006677",
-     "creditor": "TWELVE TREES ASSN INC",
-     "amount": 3447.17,
-     "entry": "10/13/2023",
-     "expires": "2035-10-13"
-    },
-    {
-     "case": "C-03-JG-23-006678",
-     "creditor": "TWELVE TREES ASSN INC",
-     "amount": 3447.17,
-     "entry": "10/13/2023",
-     "expires": "2035-10-13"
-    }
-   ],
-   "all_judgments": 5,
-   "score": 53
-  },
-  {
    "account": "04151519001501",
    "address": "1818 Kittyhawk Rd",
    "city": "",
@@ -19787,7 +21063,6 @@
     }
    ],
    "conflicts": [
-    "Federal National Mortgage Association entered 05/19/2022 after death",
     "SYNCHRONY BANK entered 04/28/2023 after death",
     "Synchrony Bank entered 05/03/2023 after death"
    ],
@@ -19967,9 +21242,7 @@
      "same_name_deaths": 6
     }
    ],
-   "conflicts": [
-    "ROCKFIELDS COMMUNITY ASSN INC entered 02/21/2019 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -20312,9 +21585,7 @@
     }
    ],
    "conflicts": [
-    "Credit Acceptance Corporation entered 05/06/2016 after death",
-    "Hunting Creek Homeowners Association Inc entered 04/14/2017 after death",
-    "Hunting Creek Homeowners Association Inc entered 04/14/2017 after death"
+    "Credit Acceptance Corporation entered 05/06/2016 after death"
    ],
    "best_confidence": "LOW",
    "buyable_judgments": [],
@@ -20829,9 +22100,7 @@
      "same_name_deaths": 3
     }
    ],
-   "conflicts": [
-    "Anne Arundel County,Maryland entered 02/06/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -21143,10 +22412,7 @@
      "same_name_deaths": 1
     }
    ],
-   "conflicts": [
-    "Devon Hills Condominium entered 08/13/2021 after death",
-    "Devon Hills Condominium entered 08/13/2021 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -21248,41 +22514,6 @@
    "score": 23
   },
   {
-   "account": "020539413515450",
-   "address": "6405 Jefferson Pl",
-   "city": "Glen Burnie",
-   "county": "Anne Arundel",
-   "owner": "BRYANT MARK S",
-   "owner2": "BRYANT CATHERINE",
-   "mail_state": "MD",
-   "assessed": 217800,
-   "equity_est": 197297,
-   "total_owed": 20503.35,
-   "transfer_date": "2006.01.19",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "CATHERINE BRYANT",
-     "dod": "2011-10-28",
-     "age": 68,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 2
-    }
-   ],
-   "conflicts": [
-    "Heritage Hill Condominium I, Board of Directors and Council of Unit Owners entered 08/06/2021 after death",
-    "Weymuth Ridge Condominium, Inc. entered 08/09/2024 after death",
-    "Weymuth Ridge Condominium entered 10/25/2024 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 3,
-   "score": 53
-  },
-  {
    "account": "0803115763",
    "address": "25 Kina Ct",
    "city": "Elkton",
@@ -21340,9 +22571,7 @@
      "same_name_deaths": 4
     }
    ],
-   "conflicts": [
-    "PNC Bank, National Association entered 12/12/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -21442,55 +22671,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 53
-  },
-  {
-   "account": "04151501500850",
-   "address": "2307 Sparrows Point Rd",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "PORECA DANIEL J JR",
-   "owner2": "PORECA ROSE M",
-   "mail_state": "MD",
-   "assessed": 197600,
-   "equity_est": 191142,
-   "total_owed": 6458.08,
-   "transfer_date": "1971.08.06",
-   "title_flags": [
-    "ABSENTEE",
-    "ALL_OWNERS_DECEASED",
-    "BELOW_AVG_CONDITION",
-    "MULTIPLE_INDIVIDUALS",
-    "NEGLECT_PROFILE",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "DANIEL J PORECA JR",
-     "dod": "1992-01-17",
-     "age": 89,
-     "confidence": "LOW",
-     "points": 70,
-     "same_name_deaths": 1
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "ROSE M PORECA",
-     "dod": "1997-03-01",
-     "age": 64,
-     "confidence": "LOW",
-     "points": 105,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "CAPITAL ONE BANK U S A N A entered 04/07/2020 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 63
   },
   {
    "account": "1905039924",
@@ -21610,48 +22790,6 @@
    "score": 28
   },
   {
-   "account": "04151502853050",
-   "address": "2706 North Point Rd",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "BUTLER AUGUSTA E",
-   "owner2": "BUTLER JAMES L",
-   "mail_state": "MD",
-   "assessed": 194800,
-   "equity_est": 190323,
-   "total_owed": 4477.09,
-   "transfer_date": "2002.12.04",
-   "title_flags": [
-    "ABSENTEE",
-    "CO_OWNER_DECEASED",
-    "MAIL_MISMATCH",
-    "MULTIPLE_INDIVIDUALS",
-    "NO_HOMESTEAD",
-    "OLD_STRUCTURE",
-    "STALE_OWNERSHIP",
-    "TAX_SALE_LISTED"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "AUGUSTA E BUTLER",
-     "dod": "2006-05-23",
-     "age": 86,
-     "confidence": "LOW",
-     "points": 65,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "T D BANK U S A N A entered 03/11/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 45
-  },
-  {
    "account": "2207006683",
    "address": "22018 Leitersburg Smithsburg Rd",
    "city": "Smithsburg",
@@ -21683,52 +22821,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 28
-  },
-  {
-   "account": "0709009795",
-   "address": "3400 Buffalo Rd",
-   "city": "New Windsor",
-   "county": "Carroll",
-   "owner": "YOUNG REGINALD C JR",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 214800,
-   "equity_est": 187696,
-   "total_owed": 27104.48,
-   "transfer_date": "2005.12.08",
-   "title_flags": [
-    "ABSENTEE",
-    "DECEASED_SOLE_OWNER_MEDIUM",
-    "MAIL_MISMATCH",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "REGINALD C YOUNG JR",
-     "dod": "2012-11-14",
-     "age": 93,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 4
-    }
-   ],
-   "conflicts": [
-    "Humane Society of Carroll County entered 01/17/2023 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-06-CR-22-341-JG",
-     "creditor": "Humane Society of Carroll County",
-     "amount": 27104.48,
-     "entry": "01/17/2023",
-     "expires": "2035-01-17"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 68
   },
   {
    "account": "020700000584000",
@@ -22136,8 +23228,7 @@
     }
    ],
    "conflicts": [
-    "Aberdeen Proving Ground F C U entered 02/28/2017 after death",
-    "Td Bank U S A entered 04/15/2020 after death"
+    "Aberdeen Proving Ground F C U entered 02/28/2017 after death"
    ],
    "best_confidence": "LOW",
    "buyable_judgments": [
@@ -22665,9 +23756,7 @@
      "same_name_deaths": 3
     }
    ],
-   "conflicts": [
-    "First Watergate N Association Inc entered 02/27/2018 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -22786,9 +23875,7 @@
      "same_name_deaths": 8
     }
    ],
-   "conflicts": [
-    "Emergency Service Associates, P.A. entered 09/21/2026 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -22874,46 +23961,6 @@
    ],
    "all_judgments": 3,
    "score": 61
-  },
-  {
-   "account": "04131302850650",
-   "address": "4415 Norfen Rd",
-   "city": "Baltimore",
-   "county": "Baltimore County",
-   "owner": "BROWN HEATHER",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 167400,
-   "equity_est": 166757,
-   "total_owed": 643.16,
-   "transfer_date": "2003.09.12",
-   "title_flags": [
-    "ABSENTEE",
-    "DECEASED_SOLE_OWNER_MEDIUM",
-    "NUISANCE_CASE",
-    "REPEAT_CODE_CASES",
-    "STACKED_SIGNALS",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "HEATHER BROWN",
-     "dod": "2013-03-03",
-     "age": 30,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 2
-    }
-   ],
-   "conflicts": [
-    "Baltimore County Government entered 12/04/2019 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 59
   },
   {
    "account": "2305066999",
@@ -23134,82 +24181,6 @@
    "score": 40
   },
   {
-   "account": "020491206620800",
-   "address": "8549 Pioneer Dr",
-   "city": "Severn",
-   "county": "Anne Arundel",
-   "owner": "MORTON KENNETH",
-   "owner2": "MORTON CAROLYN",
-   "mail_state": "MD",
-   "assessed": 179200,
-   "equity_est": 164639,
-   "total_owed": 14560.9,
-   "transfer_date": "2004.10.20",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "KENNETH MORTON",
-     "dod": "2008-12-13",
-     "age": 89,
-     "confidence": "LOW",
-     "points": 55,
-     "same_name_deaths": 3
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "CAROLYN MORTON",
-     "dod": "2004-02-11",
-     "age": 45,
-     "confidence": "LOW",
-     "points": 45,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "COUNCIL OF CO-OWNERS OF WARFIELD CONDO entered 02/02/2022 after death",
-    "COUNCIL OF CO-OWNERS OF WARFIELD CONDO entered 02/16/2022 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 2,
-   "score": 30
-  },
-  {
-   "account": "04121202085077",
-   "address": "8311 Bear Creek Dr",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "BUTLER AUGUSTA E",
-   "owner2": "BUTLER JAMES LEE",
-   "mail_state": "MD",
-   "assessed": 168900,
-   "equity_est": 164423,
-   "total_owed": 4477.09,
-   "transfer_date": "2002.11.20",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "AUGUSTA E BUTLER",
-     "dod": "2006-05-23",
-     "age": 86,
-     "confidence": "LOW",
-     "points": 65,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "T D BANK U S A N A entered 03/11/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 33
-  },
-  {
    "account": "1102029995",
    "address": "109 E 6Th St",
    "city": "Frederick",
@@ -23398,8 +24369,6 @@
    "conflicts": [
     "Wales, Deborah entered 06/29/2015 after death",
     "Wales, Harold S Jr entered 06/29/2015 after death",
-    "Estate Of Herbert G Jenkins entered 08/20/2015 after death",
-    "U S A entered 09/09/2015 after death",
     "D & D Scarborough Inc entered 09/24/2015 after death",
     "J Govane Mcclees Inc entered 03/30/2017 after death",
     "Stark And Keenan Pa entered 04/23/2018 after death",
@@ -23693,64 +24662,11 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Choptank Electric Employee Federal Credit Union entered 01/30/2024 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 57
-  },
-  {
-   "account": "0111004296",
-   "address": "100 Mount Savage Rd Nw",
-   "city": "Frostburg",
-   "county": "Allegany",
-   "owner": "KELLY FRANCIS P ET UX",
-   "owner2": "KELLY VIRGINIA W",
-   "mail_state": "MD",
-   "assessed": 161400,
-   "equity_est": 154142,
-   "total_owed": 7258.32,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "FRANCIS P KELLY",
-     "dod": "2007-03-02",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 16
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "VIRGINIA W KELLY",
-     "dod": "2001-05-27",
-     "age": 79,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 12
-    }
-   ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/19/2019 after death",
-    "City Of Frostburg entered 05/12/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-19-000768",
-     "creditor": "Jennings Run/wills Creek Sanitary District",
-     "amount": 3828.32,
-     "entry": "12/19/2019",
-     "expires": "2031-12-19"
-    }
-   ],
-   "all_judgments": 3,
-   "score": 73
   },
   {
    "account": "0312173844003",
@@ -24084,7 +25000,6 @@
     }
    ],
    "conflicts": [
-    "PORTFOLIO RECOVERY ASSOCIATES L L C entered 02/05/2020 after death",
     "STATE EMPLOYEES FEDERAL CREDIT UNION entered 03/11/2020 after death"
    ],
    "best_confidence": "LOW",
@@ -24411,39 +25326,6 @@
    "score": 28
   },
   {
-   "account": "04121203023245",
-   "address": "705 Aldworth Rd",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "COTTON WILLIAM JOSEPH",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 145100,
-   "equity_est": 143922,
-   "total_owed": 1177.63,
-   "transfer_date": "1985.03.01",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "WILLIAM JOSEPH COTTON",
-     "dod": "1993-12-26",
-     "age": 63,
-     "confidence": "LOW",
-     "points": 80,
-     "same_name_deaths": 8
-    }
-   ],
-   "conflicts": [
-    "Capital One Bank U S A N A entered 09/05/2017 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 21
-  },
-  {
    "account": "0322040685B029",
    "address": "709 Portland St",
    "city": "Baltimore",
@@ -24604,55 +25486,11 @@
      "same_name_deaths": 8
     }
    ],
-   "conflicts": [
-    "T D BANK U S A N A entered 01/05/2024 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 13
-  },
-  {
-   "account": "04121202088100",
-   "address": "3127 Baybriar Rd",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "BUTLER AUGUSTA E",
-   "owner2": "BUTLER JAMES L",
-   "mail_state": "MD",
-   "assessed": 146800,
-   "equity_est": 142323,
-   "total_owed": 4477.09,
-   "transfer_date": "2002.10.25",
-   "title_flags": [
-    "ABSENTEE",
-    "CO_OWNER_DECEASED",
-    "MAIL_MISMATCH",
-    "MULTIPLE_INDIVIDUALS",
-    "NO_HOMESTEAD",
-    "OLD_STRUCTURE",
-    "STALE_OWNERSHIP",
-    "TAX_SALE_LISTED"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "AUGUSTA E BUTLER",
-     "dod": "2006-05-23",
-     "age": 86,
-     "confidence": "LOW",
-     "points": 65,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "T D BANK U S A N A entered 03/11/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 35
   },
   {
    "account": "0327025845C001",
@@ -25146,57 +25984,6 @@
    "score": 26
   },
   {
-   "account": "0112010613",
-   "address": "198 E Main St",
-   "city": "Frostburg",
-   "county": "Allegany",
-   "owner": "KELLY FRANCIS P ET UX",
-   "owner2": "KELLY VIRGINIA W",
-   "mail_state": "MD",
-   "assessed": 139100,
-   "equity_est": 131842,
-   "total_owed": 7258.32,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "FRANCIS P KELLY",
-     "dod": "2007-03-02",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 16
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "VIRGINIA W KELLY",
-     "dod": "2001-05-27",
-     "age": 79,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 12
-    }
-   ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/19/2019 after death",
-    "City Of Frostburg entered 05/12/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-19-000768",
-     "creditor": "Jennings Run/wills Creek Sanitary District",
-     "amount": 3828.32,
-     "entry": "12/19/2019",
-     "expires": "2031-12-19"
-    }
-   ],
-   "all_judgments": 3,
-   "score": 63
-  },
-  {
    "account": "1907008759",
    "address": "20944 Golden Thompson Rd",
    "city": "Avenue",
@@ -25530,39 +26317,6 @@
    "score": 34
   },
   {
-   "account": "04151513201920",
-   "address": "7719 Eastdale Rd",
-   "city": "Baltimore",
-   "county": "Baltimore County",
-   "owner": "REARDON JOHN H",
-   "owner2": "REARDON MARY D",
-   "mail_state": "MD",
-   "assessed": 126100,
-   "equity_est": 124778,
-   "total_owed": 1321.67,
-   "transfer_date": "2000.07.28",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "MARY D REARDON",
-     "dod": "2009-09-28",
-     "age": 66,
-     "confidence": "LOW",
-     "points": 95,
-     "same_name_deaths": 4
-    }
-   ],
-   "conflicts": [
-    "PORTFOLIO RECOVERY ASSOCIATES L L C entered 07/19/2021 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 18
-  },
-  {
    "account": "0313023553022",
    "address": "3728 Roland Ave",
    "city": "Baltimore",
@@ -25838,9 +26592,7 @@
      "same_name_deaths": 1
     }
    ],
-   "conflicts": [
-    "Portfolio Recovery Associates, LLC entered 02/07/2022 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -25966,9 +26718,7 @@
      "same_name_deaths": 6
     }
    ],
-   "conflicts": [
-    "Portfolio Recovery Associates LLC entered 04/29/2024 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 3,
@@ -26411,9 +27161,7 @@
      "same_name_deaths": 5
     }
    ],
-   "conflicts": [
-    "COVE POINT BEACH ASSOCIATION, INC entered 10/10/2018 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -26788,9 +27536,7 @@
      "same_name_deaths": 5
     }
    ],
-   "conflicts": [
-    "Capital One Bank U S A entered 04/14/2020 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -26938,68 +27684,6 @@
    "score": 45
   },
   {
-   "account": "0113007152",
-   "address": "",
-   "city": "Mt Savage",
-   "county": "Allegany",
-   "owner": "KELLY FRANCIS P ET AL",
-   "owner2": "KELLY VIRGINIA W",
-   "mail_state": "MD",
-   "assessed": 104800,
-   "equity_est": 97542,
-   "total_owed": 7258.32,
-   "transfer_date": "0000.00.00",
-   "title_flags": [
-    "ABSENTEE",
-    "ALL_OWNERS_DECEASED",
-    "BELOW_AVG_CONDITION",
-    "ET_AL",
-    "MULTIPLE_INDIVIDUALS",
-    "NEGLECT_PROFILE",
-    "NO_HOMESTEAD",
-    "NO_RECORDED_TRANSFER",
-    "OLD_STRUCTURE",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "FRANCIS P KELLY",
-     "dod": "2007-03-02",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 16
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "VIRGINIA W KELLY",
-     "dod": "2001-05-27",
-     "age": 79,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 12
-    }
-   ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/19/2019 after death",
-    "City Of Frostburg entered 05/12/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-19-000768",
-     "creditor": "Jennings Run/wills Creek Sanitary District",
-     "amount": 3828.32,
-     "entry": "12/19/2019",
-     "expires": "2031-12-19"
-    }
-   ],
-   "all_judgments": 3,
-   "score": 80
-  },
-  {
    "account": "020388609697450",
    "address": "1906 Yorkie Ave",
    "city": "Pasadena",
@@ -27031,90 +27715,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 26
-  },
-  {
-   "account": "0111004326",
-   "address": "87 W Main St",
-   "city": "Frostburg",
-   "county": "Allegany",
-   "owner": "KELLY FRANCIS P ET UX",
-   "owner2": "KELLY VIRGINIA W",
-   "mail_state": "MD",
-   "assessed": 104000,
-   "equity_est": 96742,
-   "total_owed": 7258.32,
-   "transfer_date": "1975.02.11",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "FRANCIS P KELLY",
-     "dod": "2007-03-02",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 16
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "VIRGINIA W KELLY",
-     "dod": "2001-05-27",
-     "age": 79,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 12
-    }
-   ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/19/2019 after death",
-    "City Of Frostburg entered 05/12/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-19-000768",
-     "creditor": "Jennings Run/wills Creek Sanitary District",
-     "amount": 3828.32,
-     "entry": "12/19/2019",
-     "expires": "2031-12-19"
-    }
-   ],
-   "all_judgments": 3,
-   "score": 63
-  },
-  {
-   "account": "04121202085076",
-   "address": "1703 Evergreen Dr",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "BUTLER AUGUSTA E",
-   "owner2": "BUTLER JAMES LEE",
-   "mail_state": "MD",
-   "assessed": 99900,
-   "equity_est": 95423,
-   "total_owed": 4477.09,
-   "transfer_date": "2002.11.20",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "AUGUSTA E BUTLER",
-     "dod": "2006-05-23",
-     "age": 86,
-     "confidence": "LOW",
-     "points": 65,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "T D BANK U S A N A entered 03/11/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 23
   },
   {
    "account": "0501131915",
@@ -27215,12 +27815,7 @@
      "same_name_deaths": 3
     }
    ],
-   "conflicts": [
-    "U S A entered 05/03/2017 after death",
-    "U S A entered 12/18/2018 after death",
-    "U S A entered 09/17/2019 after death",
-    "U S A entered 09/17/2019 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [
     {
@@ -27285,53 +27880,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 35
-  },
-  {
-   "account": "2305101409",
-   "address": "208 Aydelotte Rd",
-   "city": "Salisbury",
-   "county": "Wicomico",
-   "owner": "TRADER PEGGY D",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 177700,
-   "equity_est": 92043,
-   "total_owed": 85656.86,
-   "transfer_date": "2012.08.09",
-   "title_flags": [
-    "ABSENTEE",
-    "DECEASED_SOLE_OWNER_HIGH",
-    "MAIL_MISMATCH",
-    "NO_HOMESTEAD",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "PEGGY D TRADER",
-     "dod": "2014-07-19",
-     "age": 77,
-     "confidence": "LOW",
-     "points": 105,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "U S A entered 09/06/2017 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-22-JG-17-001251",
-     "creditor": "U S A",
-     "amount": 85656.86,
-     "entry": "09/06/2017",
-     "expires": "2029-09-06"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 66
   },
   {
    "account": "2316016292",
@@ -27622,8 +28170,7 @@
    ],
    "conflicts": [
     "Cumberland Mayor & City Council entered 09/28/2016 after death",
-    "Cumberland Mayor & City Council entered 09/28/2016 after death",
-    "City Of Cumberland entered 08/15/2024 after death"
+    "Cumberland Mayor & City Council entered 09/28/2016 after death"
    ],
    "best_confidence": "LOW",
    "buyable_judgments": [],
@@ -27702,9 +28249,6 @@
     }
    ],
    "conflicts": [
-    "Garrett County Sanitary District entered 04/18/2019 after death",
-    "Garrett County Sanitary District entered 04/18/2019 after death",
-    "Garrett County Sanitary District entered 12/13/2021 after death",
     "DISCOVER BANK entered 04/21/2023 after death"
    ],
    "best_confidence": "LOW",
@@ -27737,9 +28281,7 @@
      "same_name_deaths": 8
     }
    ],
-   "conflicts": [
-    "Emergency Service Associates, P.A. entered 09/21/2026 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -28005,9 +28547,7 @@
      "same_name_deaths": 6
     }
    ],
-   "conflicts": [
-    "Georges Creek Sanitary District entered 12/19/2014 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -28071,11 +28611,7 @@
      "same_name_deaths": 5
     }
    ],
-   "conflicts": [
-    "Georges Creek Sanitary District entered 12/19/2014 after death",
-    "Georges Creek Sanitary District entered 12/18/2015 after death",
-    "Georges Creek Sanitary District entered 12/22/2016 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [
     {
@@ -28543,10 +29079,7 @@
      "same_name_deaths": 1
     }
    ],
-   "conflicts": [
-    "Payroll Plus & Assoc LLC entered 06/07/2019 after death",
-    "Payroll Plus & Assoc LLC entered 06/07/2019 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 3,
@@ -28789,10 +29322,7 @@
      "same_name_deaths": 14
     }
    ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/22/2017 after death",
-    "Jennings Run/wills Creek Sanitary District entered 12/22/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -29106,7 +29636,6 @@
     }
    ],
    "conflicts": [
-    "Lancaster Neighborhood Association, Inc. entered 07/25/2019 after death",
     "LVNV FUNDING LLC entered 08/24/2021 after death"
    ],
    "best_confidence": "LOW",
@@ -29242,9 +29771,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Choptank Electric Employee Federal Credit Union entered 01/30/2024 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -29622,39 +30149,6 @@
    "score": 30
   },
   {
-   "account": "020375090224467",
-   "address": "",
-   "city": "Glen Burnie",
-   "county": "Anne Arundel",
-   "owner": "CASTRUCCIO PETER A",
-   "owner2": "CASTRUCCIO SADIE M",
-   "mail_state": "MD",
-   "assessed": 55000,
-   "equity_est": 54810,
-   "total_owed": 190.48,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "PETER A CASTRUCCIO",
-     "dod": "2013-02-19",
-     "age": 88,
-     "confidence": "LOW",
-     "points": 105,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Estate of Peter A Castruccio entered 02/06/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 31
-  },
-  {
    "account": "0907021011",
    "address": "",
    "city": "",
@@ -29760,7 +30254,6 @@
     }
    ],
    "conflicts": [
-    "Capital One Bank U S A N A entered 04/14/2015 after death",
     "JUDGMENT GROUP THE entered 05/24/2024 after death"
    ],
    "best_confidence": "LOW",
@@ -30131,39 +30624,6 @@
    "score": 58
   },
   {
-   "account": "020375090224466",
-   "address": "",
-   "city": "Glen Burnie",
-   "county": "Anne Arundel",
-   "owner": "CASTRUCCIO PETER A",
-   "owner2": "CASTRUCCIO SADIE M",
-   "mail_state": "MD",
-   "assessed": 48400,
-   "equity_est": 48210,
-   "total_owed": 190.48,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "PETER A CASTRUCCIO",
-     "dod": "2013-02-19",
-     "age": 88,
-     "confidence": "LOW",
-     "points": 105,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Estate of Peter A Castruccio entered 02/06/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 31
-  },
-  {
    "account": "0320090696091",
    "address": "2226 Christian St",
    "city": "Baltimore",
@@ -30285,9 +30745,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Woodland Homeowners Association Inc entered 04/07/2025 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -30360,9 +30818,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Woodland Homeowners Association Inc entered 04/07/2025 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -30455,9 +30911,7 @@
      "same_name_deaths": 8
     }
    ],
-   "conflicts": [
-    "Emergency Service Associates, P.A. entered 09/21/2026 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -30595,9 +31049,7 @@
      "same_name_deaths": 5
     }
    ],
-   "conflicts": [
-    "COVE POINT BEACH ASSOCIATION, INC entered 10/10/2018 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -31348,9 +31800,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Woodland Homeowners Association Inc entered 04/07/2025 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -31563,39 +32013,6 @@
    "score": 38
   },
   {
-   "account": "0801023837",
-   "address": "",
-   "city": "Earleville",
-   "county": "Cecil",
-   "owner": "STEVENS HARRY G & NORMA G",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 27300,
-   "equity_est": 26355,
-   "total_owed": 944.84,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "HARRY G STEVENS",
-     "dod": "1993-02-14",
-     "age": 82,
-     "confidence": "LOW",
-     "points": 80,
-     "same_name_deaths": 10
-    }
-   ],
-   "conflicts": [
-    "WEST VIEW SHORE CIVIC ASSOCIATION INC entered 09/01/2016 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 23
-  },
-  {
    "account": "0316050071036",
    "address": "919 N Payson St",
    "city": "Baltimore",
@@ -31627,56 +32044,6 @@
    "score": 20
   },
   {
-   "account": "0129005788",
-   "address": "13605 Bristol Dr Sw",
-   "city": "Cresaptown",
-   "county": "Allegany",
-   "owner": "WARNER MARIE A ET AL",
-   "owner2": "MARKS RITA M",
-   "mail_state": "MD",
-   "assessed": 28300,
-   "equity_est": 25800,
-   "total_owed": 2500.0,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "MARIE A WARNER",
-     "dod": "2003-01-08",
-     "age": 87,
-     "confidence": "LOW",
-     "points": 95,
-     "same_name_deaths": 5
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "RITA M MARKS",
-     "dod": "2010-10-04",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 35,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Lavale Sanitary Commission entered 06/05/2026 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-24-000034",
-     "creditor": "Lavale Sanitary Commission",
-     "amount": 2500.0,
-     "entry": "06/05/2026",
-     "expires": "2038-06-05"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 6
-  },
-  {
    "account": "1906036694",
    "address": "42313 Riva Ridge Dr",
    "city": "",
@@ -31701,10 +32068,7 @@
      "same_name_deaths": 4
     }
    ],
-   "conflicts": [
-    "PNC Bank, National Association entered 12/12/2017 after death",
-    "PNC Bank, National Association entered 12/12/2017 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 2,
@@ -32138,39 +32502,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 3
-  },
-  {
-   "account": "1102250284",
-   "address": "2500 Coleridge Dr",
-   "city": "Frederick",
-   "county": "Frederick",
-   "owner": "BROWN LAVERNE CUMMINGS",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 25000,
-   "equity_est": 22373,
-   "total_owed": 2627.28,
-   "transfer_date": "2006.05.05",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "LAVERNE CUMMINGS BROWN",
-     "dod": "2006-04-15",
-     "age": 63,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Whittier Community Association, Inc. entered 08/18/2026 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 0
   },
   {
    "account": "2201008331",
@@ -32754,39 +33085,6 @@
    "score": 20
   },
   {
-   "account": "04010112002131",
-   "address": "129 Arbutus Ave",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "LAWRENCE CATHERINE S",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 39900,
-   "equity_est": 18901,
-   "total_owed": 20999.42,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "CATHERINE S LAWRENCE",
-     "dod": "1982-06-27",
-     "age": null,
-     "confidence": "LOW",
-     "points": 65,
-     "same_name_deaths": 4
-    }
-   ],
-   "conflicts": [
-    "J P Morgan Chase Bank National Assn entered 06/10/2015 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 3,
-   "score": 40
-  },
-  {
    "account": "1210091905",
    "address": "",
    "city": "Oakland",
@@ -32811,9 +33109,7 @@
      "same_name_deaths": 2
     }
    ],
-   "conflicts": [
-    "Garrett County Sanitary District entered 04/16/2021 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -32979,9 +33275,7 @@
      "same_name_deaths": 1
     }
    ],
-   "conflicts": [
-    "Emergency Service Associates, P.A. entered 11/13/2023 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -33059,90 +33353,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 55
-  },
-  {
-   "account": "0120004886",
-   "address": "12541 Richfield Ave Nw",
-   "city": "Corriganville",
-   "county": "Allegany",
-   "owner": "FETTERS CLARA E",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 17800,
-   "equity_est": 16725,
-   "total_owed": 1075.37,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "CLARA E FETTERS",
-     "dod": "1989-08-28",
-     "age": 83,
-     "confidence": "LOW",
-     "points": 105,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Jennings Run/Wills Creek Sanitary District entered 12/22/2016 after death",
-    "Jennings Run/wills Creek Sanitary District entered 12/22/2017 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 2,
-   "score": 13
-  },
-  {
-   "account": "0129005761",
-   "address": "13607 Bristol Dr Sw",
-   "city": "Cresaptown",
-   "county": "Allegany",
-   "owner": "WARNER MARIE A LE",
-   "owner2": "MARKS RITA M",
-   "mail_state": "MD",
-   "assessed": 19000,
-   "equity_est": 16500,
-   "total_owed": 2500.0,
-   "transfer_date": "1997.07.31",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "MARIE A WARNER",
-     "dod": "2003-01-08",
-     "age": 87,
-     "confidence": "LOW",
-     "points": 95,
-     "same_name_deaths": 5
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "RITA M MARKS",
-     "dod": "2010-10-04",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 35,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Lavale Sanitary Commission entered 06/05/2026 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-24-000034",
-     "creditor": "Lavale Sanitary Commission",
-     "amount": 2500.0,
-     "entry": "06/05/2026",
-     "expires": "2038-06-05"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 6
   },
   {
    "account": "2104153898",
@@ -33242,57 +33452,6 @@
    "score": 13
   },
   {
-   "account": "0111007589",
-   "address": "",
-   "city": "Frostburg",
-   "county": "Allegany",
-   "owner": "KELLY FRANCIS P ET UX",
-   "owner2": "KELLY VIRGINIA W",
-   "mail_state": "MD",
-   "assessed": 22300,
-   "equity_est": 15042,
-   "total_owed": 7258.32,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "FRANCIS P KELLY",
-     "dod": "2007-03-02",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 16
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "VIRGINIA W KELLY",
-     "dod": "2001-05-27",
-     "age": 79,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 12
-    }
-   ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/19/2019 after death",
-    "City Of Frostburg entered 05/12/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-19-000768",
-     "creditor": "Jennings Run/wills Creek Sanitary District",
-     "amount": 3828.32,
-     "entry": "12/19/2019",
-     "expires": "2031-12-19"
-    }
-   ],
-   "all_judgments": 3,
-   "score": 38
-  },
-  {
    "account": "2403018814",
    "address": "9524 Mary Rd",
    "city": "Berlin",
@@ -33317,9 +33476,7 @@
      "same_name_deaths": 8
     }
    ],
-   "conflicts": [
-    "Emergency Service Associates, P.A. entered 09/21/2026 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -33421,57 +33578,6 @@
    "score": 15
   },
   {
-   "account": "0111007597",
-   "address": "",
-   "city": "Frostburg",
-   "county": "Allegany",
-   "owner": "KELLY FRANCIS P ET UX",
-   "owner2": "KELLY VIRGINIA W",
-   "mail_state": "MD",
-   "assessed": 20600,
-   "equity_est": 13342,
-   "total_owed": 7258.32,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "FRANCIS P KELLY",
-     "dod": "2007-03-02",
-     "age": 90,
-     "confidence": "LOW",
-     "points": 60,
-     "same_name_deaths": 16
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "VIRGINIA W KELLY",
-     "dod": "2001-05-27",
-     "age": 79,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 12
-    }
-   ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/19/2019 after death",
-    "City Of Frostburg entered 05/12/2025 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-19-000768",
-     "creditor": "Jennings Run/wills Creek Sanitary District",
-     "amount": 3828.32,
-     "entry": "12/19/2019",
-     "expires": "2031-12-19"
-    }
-   ],
-   "all_judgments": 3,
-   "score": 38
-  },
-  {
    "account": "0121003484",
    "address": "17400 Breakneck Rd Ne",
    "city": "Flintstone",
@@ -33503,89 +33609,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 0
-  },
-  {
-   "account": "04111113076670",
-   "address": "",
-   "city": "",
-   "county": "Baltimore County",
-   "owner": "CARTER MELVIN J",
-   "owner2": "CARTER KATHY A",
-   "mail_state": "MD",
-   "assessed": 17300,
-   "equity_est": 12988,
-   "total_owed": 4311.98,
-   "transfer_date": "1988.11.01",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "KATHY A CARTER",
-     "dod": "1990-04-02",
-     "age": 29,
-     "confidence": "LOW",
-     "points": 70,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Clinical Associates P A entered 04/25/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "03-L-18-004888",
-     "creditor": "Clinical Associates P A",
-     "amount": 4311.98,
-     "entry": "04/25/2018",
-     "expires": "2030-04-25"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 11
-  },
-  {
-   "account": "0110003237",
-   "address": "75 Ayers Aly",
-   "city": "Lonaconing",
-   "county": "Allegany",
-   "owner": "RITCHIE JAMES P",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 21200,
-   "equity_est": 12863,
-   "total_owed": 8336.8,
-   "transfer_date": "2005.02.08",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "JAMES P RITCHIE",
-     "dod": "2012-01-22",
-     "age": 62,
-     "confidence": "LOW",
-     "points": 80,
-     "same_name_deaths": 8
-    }
-   ],
-   "conflicts": [
-    "Georges Creek Sanitary District entered 12/22/2016 after death",
-    "Georges Creek Sanitary District entered 12/06/2023 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "C-01-JG-23-000525",
-     "creditor": "Georges Creek Sanitary District",
-     "amount": 7767.67,
-     "entry": "12/06/2023",
-     "expires": "2035-12-06"
-    }
-   ],
-   "all_judgments": 2,
-   "score": 18
   },
   {
    "account": "0906052061",
@@ -33834,7 +33857,6 @@
     }
    ],
    "conflicts": [
-    "Council of Unit Owners of Plumtree Condominium, Inc. entered 01/02/2019 after death",
     "LVNV FUNDING LLC entered 06/29/2022 after death"
    ],
    "best_confidence": "LOW",
@@ -34232,7 +34254,6 @@
     "Cavalry SPV I, LLC entered 02/16/2018 after death",
     "MIDLAND FUNDING LLC, SUCCESSOR IN entered 12/03/2019 after death",
     "MIDLAND FUNDING LLC, SUCCESSOR IN entered 03/26/2020 after death",
-    "PORTFOLIO RECOVERY ASSOCIATES, LLC entered 10/07/2020 after death",
     "LVNV FUNDING LLC entered 03/12/2026 after death",
     "MIDLAND CREDIT MANAGEMENT, INC. entered 03/30/2026 after death"
    ],
@@ -34299,11 +34320,7 @@
      "same_name_deaths": 23
     }
    ],
-   "conflicts": [
-    "Jennings Run/wills Creek Sanitary District entered 12/22/2017 after death",
-    "Jennings Run/wills Creek Sanitary District entered 12/13/2018 after death",
-    "Jennings Run/wills Creek Sanitary District entered 12/19/2019 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 3,
@@ -34384,7 +34401,6 @@
     }
    ],
    "conflicts": [
-    "Portfolio Recovery Associates, LLC entered 04/01/2021 after death",
     "LVNV FUNDING LLC entered 06/02/2022 after death"
    ],
    "best_confidence": "LOW",
@@ -34640,51 +34656,7 @@
      "same_name_deaths": 250
     }
    ],
-   "conflicts": [
-    "Federal National Mortgage Association entered 09/02/2022 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 8
-  },
-  {
-   "account": "0106021352",
-   "address": "14432 Amcelle St Sw",
-   "city": "Cumberland",
-   "county": "Allegany",
-   "owner": "INGRAM WILLIAM J LE ET AL",
-   "owner2": "INGRAM MARY JO LE",
-   "mail_state": "MD",
-   "assessed": 7700,
-   "equity_est": 7324,
-   "total_owed": 376.06,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "WILLIAM J INGRAM",
-     "dod": "1978-12-23",
-     "age": null,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 11
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "MARY JO INGRAM",
-     "dod": "1996-04-28",
-     "age": 77,
-     "confidence": "LOW",
-     "points": 35,
-     "same_name_deaths": 7
-    }
-   ],
-   "conflicts": [
-    "Cresaptown Sanitary District entered 12/17/2019 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -35005,72 +34977,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 60
-  },
-  {
-   "account": "020415501863400",
-   "address": "",
-   "city": "Severn",
-   "county": "Anne Arundel",
-   "owner": "CASTRUCCIO PETER A",
-   "owner2": "CASTRUCCIO SADIE M",
-   "mail_state": "MD",
-   "assessed": 6000,
-   "equity_est": 5810,
-   "total_owed": 190.48,
-   "transfer_date": "1996.12.30",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "PETER A CASTRUCCIO",
-     "dod": "2013-02-19",
-     "age": 88,
-     "confidence": "LOW",
-     "points": 105,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Estate of Peter A Castruccio entered 02/06/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 16
-  },
-  {
-   "account": "2003052060",
-   "address": "4052 Back Shelltown Rd",
-   "city": "",
-   "county": "Somerset",
-   "owner": "CROSS GEORGE W AND JANET E",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 5900,
-   "equity_est": 5651,
-   "total_owed": 249.0,
-   "transfer_date": "1992.04.10",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "GEORGE W CROSS",
-     "dod": "2012-01-05",
-     "age": 61,
-     "confidence": "LOW",
-     "points": 80,
-     "same_name_deaths": 7
-    }
-   ],
-   "conflicts": [
-    "Ability Rehab Associates, P A C/O Synergy Practice Solutions entered 10/11/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 16
   },
   {
    "account": "04080803002500",
@@ -35502,9 +35408,7 @@
      "same_name_deaths": 6
     }
    ],
-   "conflicts": [
-    "Portfolio Recovery Associates LLC entered 04/29/2024 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 3,
@@ -35747,47 +35651,6 @@
    "score": 6
   },
   {
-   "account": "04112000005285",
-   "address": "",
-   "city": "Kingsville",
-   "county": "Baltimore County",
-   "owner": "CARTER MELVIN J",
-   "owner2": "CARTER KATHY A",
-   "mail_state": "MD",
-   "assessed": 7200,
-   "equity_est": 2888,
-   "total_owed": 4311.98,
-   "transfer_date": "1985.10.17",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "KATHY A CARTER",
-     "dod": "1990-04-02",
-     "age": 29,
-     "confidence": "LOW",
-     "points": 70,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Clinical Associates P A entered 04/25/2018 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [
-    {
-     "case": "03-L-18-004888",
-     "creditor": "Clinical Associates P A",
-     "amount": 4311.98,
-     "entry": "04/25/2018",
-     "expires": "2030-04-25"
-    }
-   ],
-   "all_judgments": 1,
-   "score": 11
-  },
-  {
    "account": "0308151520014",
    "address": "2432 E Preston St",
    "city": "Baltimore",
@@ -35942,9 +35805,7 @@
      "same_name_deaths": 10
     }
    ],
-   "conflicts": [
-    "Peninsula Orthopedic Associates, PA entered 03/10/2025 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -35975,9 +35836,7 @@
      "same_name_deaths": 5
     }
    ],
-   "conflicts": [
-    "COVE POINT BEACH ASSOCIATION, INC entered 10/10/2018 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -36008,9 +35867,7 @@
      "same_name_deaths": 5
     }
    ],
-   "conflicts": [
-    "COVE POINT BEACH ASSOCIATION, INC entered 10/10/2018 after death"
-   ],
+   "conflicts": [],
    "best_confidence": "LOW",
    "buyable_judgments": [],
    "all_judgments": 1,
@@ -36390,48 +36247,6 @@
    "score": 40
   },
   {
-   "account": "2008151091",
-   "address": "",
-   "city": "",
-   "county": "Somerset",
-   "owner": "HOLLAND CLYDE J AND LYNDA",
-   "owner2": "",
-   "mail_state": "MD",
-   "assessed": 900,
-   "equity_est": 634,
-   "total_owed": 266.45,
-   "transfer_date": "1993.08.18",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "CLYDE J HOLLAND",
-     "dod": "2012-06-03",
-     "age": 68,
-     "confidence": "LOW",
-     "points": 35,
-     "same_name_deaths": 2
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "LYNDA HOLLAND",
-     "dod": "2008-06-30",
-     "age": 60,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Emergency Service Associates, P.A. entered 06/15/2026 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 3
-  },
-  {
    "account": "04151600009537",
    "address": "",
    "city": "",
@@ -36563,81 +36378,6 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 0
-  },
-  {
-   "account": "1010005809",
-   "address": "",
-   "city": "Toddville",
-   "county": "Dorchester",
-   "owner": "WICKWIRE DAVID LEE",
-   "owner2": "C/O SHIRLEY WICKWIRE",
-   "mail_state": "PA",
-   "assessed": 400,
-   "equity_est": 400,
-   "total_owed": 0.0,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "DAVID LEE WICKWIRE",
-     "dod": "1973-09-01",
-     "age": null,
-     "confidence": "LOW",
-     "points": 75,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [
-    "Delmarva Power; (AKA)Delmarva Power & Light Company entered 01/27/2015 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 26
-  },
-  {
-   "account": "0106030564",
-   "address": "",
-   "city": "Cumberland",
-   "county": "Allegany",
-   "owner": "INGRAM WILLIAM J LE ET AL",
-   "owner2": "INGRAM MARY J LE",
-   "mail_state": "MD",
-   "assessed": 700,
-   "equity_est": 324,
-   "total_owed": 376.06,
-   "transfer_date": "0000.00.00",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "WILLIAM J INGRAM",
-     "dod": "1978-12-23",
-     "age": null,
-     "confidence": "LOW",
-     "points": 50,
-     "same_name_deaths": 11
-    },
-    {
-     "source": "MSA death index",
-     "decedent": "MARY J INGRAM",
-     "dod": "1996-04-28",
-     "age": 77,
-     "confidence": "LOW",
-     "points": 35,
-     "same_name_deaths": 7
-    }
-   ],
-   "conflicts": [
-    "Cresaptown Sanitary District entered 12/17/2019 after death"
-   ],
-   "best_confidence": "LOW",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 8
   },
   {
    "account": "0802032287",

@@ -136,7 +136,14 @@ def main():
         conflicts = []
         for j in r.get("judgments") or []:
             ey = re.search(r"(\d{4})", j.get("entry") or "")
-            if ey and dod_years and int(ey[1]) > min(dod_years) and j.get("creditor_type") != "GOV":
+            cred = (j.get("creditor") or "").upper()
+            # HOAs, condos, utilities and governments sue the record owner whether or
+            # not he is alive (Mark Cox: HOA judgment 17 years after death), so only a
+            # private creditor's suit after the death date argues the owner is alive.
+            association = any(w in cred for w in ("ASSOC", "ASSN", "HOMEOWNER", "CONDOMINIUM", "CONDO", "COMMUNITY",
+                                                   "COUNCIL OF UNIT", "SANITARY", "WATER", "ELECTRIC", "POWER",
+                                                   "COUNTY", "CITY OF", "TOWN OF", "STATE OF", "COMPTROLLER", "U S A"))
+            if ey and dod_years and int(ey[1]) > min(dod_years) and j.get("creditor_type") != "GOV" and not association:
                 conflicts.append(f"{j.get('creditor') or 'judgment'} entered {j.get('entry')} after death")
         if conflicts:
             for fnd in found:

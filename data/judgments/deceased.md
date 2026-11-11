@@ -1,11 +1,12 @@
-# Judgment parcels with a dead owner — 2026-11-10
+# Judgment parcels with a dead owner — 2026-11-11
 
 15,020 open-judgment parcels checked against the Register of Wills files, obituary leads and the 1973–2014 state death index. 1052 owners dead.
 
-## HIGH identity match (146)
+## HIGH identity match (161)
 
 | Property | SDAT acct | Owner | Equity | Death | Buyable judgment(s) |
 |---|---|---|---|---|---|
+| 1492 Berger St, Odenton (Anne Arundel) | 020400003690400 | HOWARD JOAN M | $965,031 | MSA death index: JOAN M HOWARD d. 2010-07-26 | — (gov/non-buyable only) |
 | 202 Providence Rd, Annapolis (Anne Arundel) | 020367013132315 | HARPER ROBERT L | $786,131 | MSA death index: CAROL A HARPER d. 2011-11-22 | — (gov/non-buyable only) |
 | 340 Marba Rd, Severna Park (Anne Arundel) | 020312306068248 | ROBERTS GREGORY | $755,474 | Obituary: Gregory M. Roberts d. 2026-09-24 | — (gov/non-buyable only) |
 | 810 Bulkhead Ct, Annapolis (Anne Arundel) | 020347490101294 | JOHNSON MICHAEL KAMIS | $723,143 | Obituary: Michael Johnson d. 2026 | — (gov/non-buyable only) |
@@ -27,6 +28,7 @@
 | 2255 Fuchsia Ct, Bryans Road (Charles) | 0907062265 | MARTIN WAYNE A | $412,276 | Obituary: Wayne Alzandro Martin d. 2026-10-15 | — (gov/non-buyable only) |
 | 10901 Clerkenwell Aly, Waldorf (Charles) | 0906357523 | JOHNSON ANTHONY | $403,679 | Obituary: Anthony R. Johnson Jr. d. 2026-10-29 | — (gov/non-buyable only) |
 | 3353 Cranberry  S, Laurel (Anne Arundel) | 020447206577500 | MARTINEZ MIGUEL A | $397,917 | MSA death index: MIGUEL A MARTINEZ d. 2004-05-02 | — (gov/non-buyable only) |
+| 2537 Waterside Dr, Frederick (Frederick) | 1102218348 | COX MARK H & WENDY G | $385,693 | MSA death index: MARK H COX d. 2008-07-25 | Wormans Mill Community Conservancy, Inc. $2,761 (C-10-JG-20-001756); Worman's Mill Community Conservancy, Inc. $16,246 (C-10-JG-25-003133) |
 | 2737 Hoopers Island Rd, Fishing Creek (Dorchester) | 1006086896 | CANNON WILLIAM ROBERT | $380,338 | MSA death index: JUDY ANN CANNON d. 2006-06-21 | — (gov/non-buyable only) |
 | 1 Royal Oaks Dr, Ocean Pines (Worcester) | 2403106330 | ROBINSON STEPHEN | $380,151 | Obituary: Stephen Robinson d. 2026-10-14 | — (gov/non-buyable only) |
 | 6003 Quintana St, Riverdale (Prince George's) | 17192150894 | MILLER NANCY SUE | $380,073 | Obituary: Nancy Miller d. 2026-08-12 | — (gov/non-buyable only) |
@@ -36,9 +38,12 @@
 | 403 Bay Dale Dr, Arnold (Anne Arundel) | 020360390016257 | JOHNSON MICHAEL KAMIS | $358,943 | Obituary: Michael Johnson d. 2026 | — (gov/non-buyable only) |
 | 2501 Lisa Dr, Waldorf (Charles) | 0908005745 | LAMANNA JOSEPH A & THERESA A | $350,112 | Register of Wills: JOSEPH A LAMANNA d. 11/23/2009 — estate 16869 CLOSED; PR THERESA ANN LAMANNA 2501 LISA DRIVE, WALDORF, MD 20601 | — (gov/non-buyable only) |
 | 4 Edge O Woods Ln, Lavale (Allegany) | 0129001723 | WILSON ZACHARY ETAL | $332,263 | Obituary: Zachary (Zach) Owen Wilson d. 2026-09-18 | — (gov/non-buyable only) |
+| 7301 Travertine Dr, Baltimore (Baltimore County) | 04032500004375 | WEINER BERNARD | $328,536 | MSA death index: BERNARD WEINER d. 2014-10-27 | — (gov/non-buyable only) |
 | 12750 La Plata Rd, Waldorf (Charles) | 0908020124 | DAVIS CLARENCE | $323,639 | Obituary: Clarence (Mike) Michael Davis d. 2026 | — (gov/non-buyable only) |
 | 4 N Rolling Rd, Baltimore (Baltimore County) | 04010111000760 | MCCULLEGAN JOHN | $322,224 | MSA death index: LILLIE R MCCULLEGAN d. 2003-02-12 | — (gov/non-buyable only) |
+| 7670 Stony Creek Ln, Ellicott City (Howard) | 1401246763 | ROBINSON KIM DIANE | $314,160 | MSA death index: YVONNE MARIE ROBINSON d. 1997-03-11 | — (gov/non-buyable only) |
 | 412 S Hanover St, Baltimore (Baltimore City) | 0322020867009 | FLANAGAN MICHAEL | $306,847 | Obituary: Michael Lewis Flanagan d. 2026-10-19 | — (gov/non-buyable only) |
+| 603 7Th St, Laurel (Prince George's) | 17103864865 | TORRES SONIA M | $298,046 | MSA death index: SONIA M TORRES d. 2013-11-24 | — (gov/non-buyable only) |
 | 208 Windy Ridge Ct, Pasadena (Anne Arundel) | 020304190074600 | BROOKS MATHEW B | $285,997 | MSA death index: MATHEW B BROOKS d. 1996-08-19 | — (gov/non-buyable only) |
 | 468 Man O War Ct, Annapolis (Anne Arundel) | 020368490012623 | JOHNSON MICHAEL A | $275,340 | Obituary: Michael Johnson d. 2026 | — (gov/non-buyable only) |
 | 100 Wrightson Ave, Easton (Talbot) | 2101020641 | WILLIAMS JUSTIN EDWARD | $271,627 | Obituary: Justin Williams d. 2026-10-03 | — (gov/non-buyable only) |
@@ -50,11 +55,13 @@
 | 205 Dominion Ln, Chester (Queen Anne's) | 1804009088 | SMITH DANIEL A | $250,504 | Obituary: Daniel Allen Smith d. 2025 | — (gov/non-buyable only) |
 | 4858 Drawbridge Rd, Cambridge (Dorchester) | 1014010564 | JONES PAUL DAVID AND | $244,394 | Obituary: Paul David Jones d. 2026-09-02 | — (gov/non-buyable only) |
 | 3220 Corporate Ct, Ellicott City (Howard) | 1402311879 | MUNSON THOMAS K III | $236,646 | Obituary: Thomas Keefer Munson IV d. 2026-10-04 | — (gov/non-buyable only) |
+| 19 Papago Ct, Randallstown (Baltimore County) | 04021700003959 | COX ROSA LEE B | $230,724 | MSA death index: ROSA LEE B COX d. 1992-07-22 | TWELVE TREES ASSN INC $4,106 (C-03-JG-21-002529); TWELVE TREES ASSN INC $3,447 (C-03-JG-23-006677); TWELVE TREES ASSN INC $3,447 (C-03-JG-23-006678) |
 | 6300 Mister Rd, Brandywine (Prince George's) | 17111175066 | MILLER BARBARA | $219,901 | Obituary: Barbara Kohn Miller d. 2026-10-02 | — (gov/non-buyable only) |
 | 3102 Fairview Rd, Baltimore (Baltimore County) | 04020208001230 | JOHNSON SUNNY JERRI | $218,152 | MSA death index: SUNNY JERRI JOHNSON d. 2013-03-27 | — (gov/non-buyable only) |
 | 5928 Kavon Ave, Baltimore (Baltimore City) | 0326235730031 | BROWN DALE R | $207,435 | Obituary: Dale Brown d. 2026-10-23 | — (gov/non-buyable only) |
 | 3523 Narragansett Ave, Annapolis (Anne Arundel) | 020200207884600 | WARNER ROBERT A | $201,138 | Obituary: Robert Allen "Bob" Warner Sr. d. 2026-09-21 | — (gov/non-buyable only) |
 | , Showell (Worcester) | 2403004090 | BALCERZAK REGINA M | $192,176 | Obituary: Regina M. Balcerzak d. 2026-04-02 | — (gov/non-buyable only) |
+| 2307 Sparrows Point Rd,  (Baltimore County) | 04151501500850 | PORECA DANIEL J JR | $191,142 | MSA death index: DANIEL J PORECA JR d. 1992-01-17 | — (gov/non-buyable only) |
 | 1908 Middleborough Rd,  (Baltimore County) | 04151518474850 | LONG HENRY WILLIAM | $187,500 | Obituary: Henry William "Bill" Long d.  | — (gov/non-buyable only) |
 | , Crisfield (Somerset) | 2007120397 | BRITTINGHAM CHARLES T III | $181,983 | Obituary: Charles Thomas Brittingham, Jr. d. 2026-07-20 | — (gov/non-buyable only) |
 | 313 Pinewood Rd, Baltimore (Baltimore County) | 04121211015730 | BAUER JOSEPH R | $181,756 | MSA death index: CAROLYN M BAUER d. 1997-09-27 | — (gov/non-buyable only) |
@@ -74,6 +81,7 @@
 | 10850 Green Mountain Cir, Columbia (Howard) | 1415063866 | CHOI DAVID K | $132,979 | MSA death index: SHIRLEY J CHOI d. 2014-09-12 | — (gov/non-buyable only) |
 | 6412 Fair Oaks Ave, Baltimore (Baltimore City) | 0327335447005 | LEE JASON C | $129,787 | MSA death index: JASON C LEE d. 2004-05-04 | — (gov/non-buyable only) |
 | 4711 Amberley Ave, Baltimore (Baltimore City) | 0328058102A026 | HALL DANIEL HAVEN | $125,641 | Obituary: Daniel Hall d.  | Crofton Route 3 Associates, LLLP $11,359 (C-24-JG-24-001691) |
+| 7719 Eastdale Rd, Baltimore (Baltimore County) | 04151513201920 | REARDON JOHN H | $124,778 | MSA death index: MARY D REARDON d. 2009-09-28 | — (gov/non-buyable only) |
 | 918 Wildwood Pkwy, Baltimore (Baltimore City) | 0316062520021 | SALLIEY DORIS D | $124,708 | MSA death index: DORIS D SALLIEY d. 2009-08-25 | — (gov/non-buyable only) |
 | 9223 North Point Rd, Fort Howard (Baltimore County) | 04152200025243 | MCCRACKEN ROBERT JR | $114,700 | Obituary: Robert Bernard McCracken d. 2026 | Anderson, Carolyn Ann $6,900 (03-K-15-006310JG) |
 | 709 Yale Ave, Baltimore (Baltimore City) | 0325012530C090 | BROWN DALE RYAN | $109,535 | Obituary: Dale Brown d. 2026-10-23 | — (gov/non-buyable only) |
@@ -83,6 +91,7 @@
 | 117 Maple St, Crisfield (Somerset) | 2007118236 | BRITTINGHAM CHARLES T III | $97,083 | Obituary: Charles Thomas Brittingham, Jr. d. 2026-07-20 | — (gov/non-buyable only) |
 | 3508 Chesterfield Ave, Baltimore (Baltimore City) | 0326296114020 | HALL DANIEL HAVEN | $94,941 | Obituary: Daniel Hall d.  | Crofton Route 3 Associates, LLLP $11,359 (C-24-JG-24-001691) |
 | , Brandywine (Prince George's) | 17111173889 | BAILEY MARGARET | $94,480 | Obituary: Margaret Doris "Mickey" Bailey d. 2026 | — (gov/non-buyable only) |
+| 208 Aydelotte Rd, Salisbury (Wicomico) | 2305101409 | TRADER PEGGY D | $92,043 | MSA death index: PEGGY D TRADER d. 2014-07-19 | U S A $85,657 (C-22-JG-17-001251) |
 | 12216 Fall Ave Sw, Cumberland (Allegany) | 0106019870 | PERKINS RICHARD | $91,123 | Obituary: Richard (Ricky) William Perkins d. 2026-09-24 | Henderson, Erica $2,695 (01-P-16-005837) |
 | 2315 Crystal Beach Rd, Earleville (Cecil) | 0801003364 | BARCLAY WALTER SCOTT SR & | $86,528 | MSA death index: WALTER SCOTT BARCLAY SR d. 2007-01-26 | — (gov/non-buyable only) |
 | 7616 Lhirondelle Club Rd, Towson (Baltimore County) | 04092100007587 | COLE KEVIN | $80,180 | Obituary: Kevin Michael Cole d. 2026-10-08 | — (gov/non-buyable only) |
@@ -103,6 +112,8 @@
 | 345 Caroline St, Charlestown (Cecil) | 0805006767 | TUCKER PAUL F JR & | $57,684 | Obituary: Paul Fontez Tucker d. 2026-06-19 | — (gov/non-buyable only) |
 | 2307 E Hoffman St, Baltimore (Baltimore City) | 0308141519040 | MILLER JOSEPH | $56,837 | Obituary: Joseph A. Miller Jr. d. 2026-10-09 | — (gov/non-buyable only) |
 | 1812 N Pulaski St, Baltimore (Baltimore City) | 0315372300029 | CLAIBORNE REGINA C. | $55,505 | MSA death index: REGINA C CLAIBORNE d. 2006-10-15 | — (gov/non-buyable only) |
+| , Glen Burnie (Anne Arundel) | 020375090224467 | CASTRUCCIO PETER A | $54,810 | MSA death index: PETER A CASTRUCCIO d. 2013-02-19 | — (gov/non-buyable only) |
+| , Glen Burnie (Anne Arundel) | 020375090224466 | CASTRUCCIO PETER A | $48,210 | MSA death index: PETER A CASTRUCCIO d. 2013-02-19 | — (gov/non-buyable only) |
 | 1533 N Pulaski St, Baltimore (Baltimore City) | 0315380018017 | WALKER ERNEST M | $47,325 | MSA death index: DONNA MOSLEY WALKER d. 2013-11-07 | — (gov/non-buyable only) |
 | 226 S Stricker St, Baltimore (Baltimore City) | 0319120263050 | ROBINSON WILLIAM | $43,818 | Obituary: William (Billy) James Robinson Jr. d. 2026 | — (gov/non-buyable only) |
 | 16920 Piney Point Rd, Piney Point (St. Mary's) | 1909002650 | MOORE ROBERT B SR & | $43,539 | Obituary: Robert Moore d. 2026 | — (gov/non-buyable only) |
@@ -118,6 +129,7 @@
 | 2118 W Saratoga St, Baltimore (Baltimore City) | 0320220145030 | SMITH JOSEPH A | $30,885 | Obituary: Joseph (Joe) Smith d. 2026-10-10 | — (gov/non-buyable only) |
 | 3504 Greenspring Ave, Baltimore (Baltimore City) | 0315323327F002 | LYLE PAULINE E | $29,000 | MSA death index: PAULINE E LYLE d. 2001-02-10 | — (gov/non-buyable only) |
 | 236 Main St, Warwick (Cecil) | 0801009524 | WEBB CHARLES | $28,902 | Obituary: Charles Leon Webb d. 2026-09-26 | — (gov/non-buyable only) |
+| 13605 Bristol Dr Sw, Cresaptown (Allegany) | 0129005788 | WARNER MARIE A ET AL | $25,800 | MSA death index: MARIE A WARNER d. 2003-01-08 | Lavale Sanitary Commission $2,500 (C-01-JG-24-000034) |
 | 3709 Oakmont Ave, Baltimore (Baltimore City) | 0327204602020F | SEIBLES JAMES R | $24,328 | MSA death index: JAMES R SEIBLES d. 2009-07-22 | — (gov/non-buyable only) |
 | 12036 Bunkhouse Rd, Lusby (Calvert) | 0501089579 | WILLIAMS FRANK | $24,156 | Obituary: Frank Edwin Williams IV d. 2026 | — (gov/non-buyable only) |
 | 1123 N Milton Ave, Baltimore (Baltimore City) | 0308221556012 | HARRISON KENNETH L | $23,696 | Obituary: Kenneth Harrison d. 2026 | — (gov/non-buyable only) |
@@ -126,6 +138,8 @@
 | 642 Gutman Ave, Baltimore (Baltimore City) | 0309054061014 | SPELLEN COMPTON A | $21,097 | MSA death index: COMPTON A SPELLEN d. 2012-01-14 | — (gov/non-buyable only) |
 | 1904 W North Ave, Baltimore (Baltimore City) | 0315163207003 | WALLACE RAYMOND E | $20,480 | MSA death index: RAYMOND E WALLACE d. 2006-12-06 | — (gov/non-buyable only) |
 | 4183 Lawson Barnes Rd, Crisfield (Somerset) | 2008138877 | BRITTINGHAM CHARLES T III | $18,783 | Obituary: Charles Thomas Brittingham, Jr. d. 2026-07-20 | — (gov/non-buyable only) |
+| 12541 Richfield Ave Nw, Corriganville (Allegany) | 0120004886 | FETTERS CLARA E | $16,725 | MSA death index: CLARA E FETTERS d. 1989-08-28 | — (gov/non-buyable only) |
+| 13607 Bristol Dr Sw, Cresaptown (Allegany) | 0129005761 | WARNER MARIE A LE | $16,500 | MSA death index: MARIE A WARNER d. 2003-01-08 | Lavale Sanitary Commission $2,500 (C-01-JG-24-000034) |
 | 8971 Georgetown Rd, Chestertown (Kent) | 1506001238 | BLAKE ALVIN R SR ETALS | $16,480 | MSA death index: JERVIS W BLAKE SR d. 2008-08-20 | — (gov/non-buyable only) |
 | 1213 Brandford Rd,  (Baltimore County) | 04012300003904 | JOHNSON GEORGE CALVIN | $16,264 | Obituary: George C. Johnson Jr. d. 2026-10-31 | — (gov/non-buyable only) |
 | , Mardela Springs (Wicomico) | 2301003283 | DASHIELL THOMAS F & NOVELLA L | $15,228 | MSA death index: THOMAS F DASHIELL d. 1997-06-04 | — (gov/non-buyable only) |
@@ -134,6 +148,7 @@
 | , Crisfield (Somerset) | 2007118872 | BRITTINGHAM CHARLES T III | $10,683 | Obituary: Charles Thomas Brittingham, Jr. d. 2026-07-20 | — (gov/non-buyable only) |
 | 13203 Pershing St Sw, Cumberland (Allegany) | 0106022391 | WEAKLEY CHARLES E III LE | $9,438 | MSA death index: CHARLES E WEAKLEY III d. 2012-05-01 | — (gov/non-buyable only) |
 | ,  (Frederick) | 1104152565 | ELGIN JAMES H JR & MARGARET D | $6,020 | MSA death index: JAMES H ELGIN JR d. 2011-12-13 | — (gov/non-buyable only) |
+| , Severn (Anne Arundel) | 020415501863400 | CASTRUCCIO PETER A | $5,810 | MSA death index: PETER A CASTRUCCIO d. 2013-02-19 | — (gov/non-buyable only) |
 | 2130 Vine St, Baltimore (Baltimore City) | 0320140175037 | WILLIAMS ALICE | $5,756 | Obituary: Alice (Faye) Faye Williams d. 2026-10-09 | — (gov/non-buyable only) |
 | 2409 E Lafayette Ave, Baltimore (Baltimore City) | 0308211464005 | HARRISON KENNETH L | $5,396 | Obituary: Kenneth Harrison d. 2026 | — (gov/non-buyable only) |
 | , Federalsburg (Caroline) | 0605003792 | BRUMMELL CHARLES E | $4,554 | MSA death index: CHARLES E BRUMMELL d. 1991-02-06 | — (gov/non-buyable only) |
@@ -153,19 +168,22 @@
 | ,  (Baltimore County) | 04151513550041 | LONG HENRY WILLIAM | $400 | Obituary: Henry William "Bill" Long d.  | — (gov/non-buyable only) |
 | 1131 Aintree Rd, Baltimore (Baltimore County) | 04090910251700 | REED DEBORAH L | $275 | MSA death index: DEBORAH L REED d. 2000-04-16 | — (gov/non-buyable only) |
 
-## MEDIUM identity match (198)
+## MEDIUM identity match (233)
 
 | Property | SDAT acct | Owner | Equity | Death | Buyable judgment(s) |
 |---|---|---|---|---|---|
+| 504 Scrimshaw Way, Severna Park (Anne Arundel) | 020357090217459 | SMITH DAVID A | $2,199,836 | MSA death index: DIANE M SMITH d. 2006-07-14 | — (gov/non-buyable only) |
 | 900 River Knoll Ct, Davidsonville (Anne Arundel) | 020223190092514 | CURRY MICHAEL R | $820,874 | MSA death index: MICHAEL R CURRY d. 2007-12-08 | — (gov/non-buyable only) |
 | 513 4Th St, Annapolis (Anne Arundel) | 020600006160000 | HUTTON MARY A | $730,972 | MSA death index: MARY A HUTTON d. 2001-09-04 | — (gov/non-buyable only) |
 | 9005 Shadybrook Dr,  (Frederick) | 1109279385 | PEARCE SCOTT GREGORY & MARY E | $657,025 | MSA death index: MARY E PEARCE d. 1996-09-13 | — (gov/non-buyable only) |
 | 1237 Washington Dr, Annapolis (Anne Arundel) | 020259704019400 | JONES KEITH J | $631,233 | MSA death index: ANDREA C JONES d. 2014-03-05 | — (gov/non-buyable only) |
+| 11600 Stocksdale Rd,  (Baltimore County) | 04111103000026 | CARTER MELVIN J | $630,588 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
 | 2112 Darcy Green Pl, Silver Spring (Montgomery) | 161303342961 | MILLER JAMES G & JUDITH A | $603,802 | MSA death index: JUDITH A MILLER d. 2009-05-24 | — (gov/non-buyable only) |
 | 243 W Haven Dr, Severna Park (Anne Arundel) | 020376690032716 | NGUYEN THANH TAM | $540,589 | MSA death index: THANH TRUONG BUI d. 2014-03-08 | — (gov/non-buyable only) |
 | 14317 Arctic Ave, Rockville (Montgomery) | 161301441861 | ROMERO JUAN CARLOS | $535,520 | MSA death index: JUAN CARLOS ROMERO d. 2014-12-07 | — (gov/non-buyable only) |
 | 1276 Hoods Mill Rd, Cooksville (Howard) | 1404312678 | NELSON KEITH D | $530,757 | MSA death index: KEITH D NELSON d. 2007-04-06 | — (gov/non-buyable only) |
 | 10227 Douglas Ave, Silver Spring (Montgomery) | 161301102206 | LOPEZ ANGEL & VICTORIA M | $486,656 | MSA death index: ANGEL LOPEZ d. 2004-06-30 | — (gov/non-buyable only) |
+| 504 Eldrid Dr, Silver Spring (Montgomery) | 160502148955 | NGUYEN TAM THANH & THUY THI | $478,953 | MSA death index: TAM THANH NGUYEN d. 2010-08-12 | — (gov/non-buyable only) |
 | 5827 Blue Sky, Elkridge (Howard) | 1401266756 | PACHECO JOSE | $436,123 | MSA death index: JOSE PACHECO d. 2010-06-09 | — (gov/non-buyable only) |
 | 802 Crain Hwy N, Glen Burnie (Anne Arundel) | 020336208332025 | RILEY CHARLES E | $419,570 | MSA death index: CHARLES E RILEY d. 1996-10-30 | — (gov/non-buyable only) |
 | 2411 Hamden Ct, Crofton (Anne Arundel) | 020220090091846 | THOMAS C ANDREW | $418,196 | MSA death index: ANDREW C THOMAS d. 2011-02-20 | — (gov/non-buyable only) |
@@ -173,6 +191,7 @@
 | 11 Main Ave Sw, Glen Burnie (Anne Arundel) | 020336208332027 | RILEY CHARLES E | $380,570 | MSA death index: CHARLES E RILEY d. 1996-10-30 | — (gov/non-buyable only) |
 | 669 Lake Dr, Westminster (Carroll) | 0703019950 | LEWIS GEORGE W JR | $377,544 | MSA death index: THERESA A LEWIS d. 2009-07-16 | — (gov/non-buyable only) |
 | 7722 Old Woodstock Ln, Ellicott City (Howard) | 1401213776 | KELLER THOMAS D | $369,126 | MSA death index: MARIA Y T E KELLER d. 2006-09-29 | — (gov/non-buyable only) |
+| 988 Oaklawn Ave, Lavale (Allegany) | 0129041741 | JENNINGS DANIEL L ET AL | $366,543 | MSA death index: DANIEL L JENNINGS d. 2013-06-28 | Lavale Sanitary Commission $7,000 (C-01-JG-18-000231) |
 | 11621 Scarlet Leaf Cir, Germantown (Montgomery) | 160903075295 | MIAN MOHAMMAD A | $361,790 | MSA death index: MOHAMMAD A MIAN d. 2000-06-14 | — (gov/non-buyable only) |
 | 620 Cadbury Dr, Odenton (Anne Arundel) | 020446506039604 | BREWSTER WILLIAM | $356,677 | MSA death index: WILLIAM BREWSTER d. 2013-05-03 | — (gov/non-buyable only) |
 | 6806 Burkittsville Rd, Middletown (Frederick) | 1103129179 | HENDRICKS ROBERT & WILLIAM L/E & | $354,999 | MSA death index: ROBERT HENDRICKS d. 2010-05-03 | — (gov/non-buyable only) |
@@ -180,6 +199,7 @@
 | 3209 Escapade Cir, Riva (Anne Arundel) | 020102690079309 | LONGO CHARLES R | $345,738 | MSA death index: CHARLES R LONGO d. 2011-10-09 | — (gov/non-buyable only) |
 | 3315 Choptank Rd, Preston (Caroline) | 0604006291 | LEWIS EARL E | $339,848 | MSA death index: EARL E LEWIS d. 2002-11-18 | — (gov/non-buyable only) |
 | 312 Sloping Woods Ct, Annapolis (Anne Arundel) | 020392590070278 | BROWN ALLAN H | $338,448 | MSA death index: ALLAN H BROWN d. 2010-02-11 | — (gov/non-buyable only) |
+| 1531 Sunswept Dr, Bel Air (Harford) | 1303359255 | MARTIN LEON H | $333,168 | MSA death index: LEON H MARTIN d. 2006-08-23 | Christopher J Selling & Associates $8,532 (12-L-18-000153) |
 | 12216 Centerhill St, Silver Spring (Montgomery) | 161301233205 | PORTILLO JOSE A ET AL | $328,044 | MSA death index: JOSE A PORTILLO d. 2007-03-10 | — (gov/non-buyable only) |
 | 8616 Aspen Grove Ct, Odenton (Anne Arundel) | 020457190101248 | JAMES SHANNON M | $326,921 | MSA death index: CHRISTOPHER M JAMES d. 2014-10-31 | — (gov/non-buyable only) |
 | 2090 Peace Ct, St Leonard (Calvert) | 0501131036 | BROOKS WAYNE R | $326,899 | MSA death index: WAYNE R BROOKS d. 2007-01-13 | — (gov/non-buyable only) |
@@ -192,16 +212,20 @@
 | 3950 Falls Rd, Baltimore (Baltimore City) | 0313163575011 | WILDERSON ERIC H | $296,992 | MSA death index: KEITH L SCOTT d. 2010-11-20 | — (gov/non-buyable only) |
 | 11465 H G Trueman Rd, Lusby (Calvert) | 0501015494 | GROSS IRVIN L | $296,962 | MSA death index: IRVIN L GROSS d. 2002-07-01 | — (gov/non-buyable only) |
 | 9385 Ridings Way, Laurel (Howard) | 1406549039 | KIM YOUN T | $296,122 | MSA death index: HYUN J T E KIM d. 2014-09-09 | — (gov/non-buyable only) |
+| 6929 Sunshine Ave,  (Baltimore County) | 04111103000702 | CARTER MELVIN J | $291,088 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
 | 1004 S Beechfield Ave, Baltimore (Baltimore County) | 04131303000470 | CAMPBELL JOSEPH F | $289,614 | MSA death index: ALMA W CAMPBELL d. 2014-01-29 | — (gov/non-buyable only) |
+| 1805A Wheyfield Dr, Frederick (Frederick) | 1102454858 | NARANJO TONY M & DELIA A | $285,623 | MSA death index: DELIA A NARANJO d. 2012-09-26 | — (gov/non-buyable only) |
 | 8819 Bay Ridge Dr, Berlin (Worcester) | 2410329426 | JACKSON JEFFREY L & MELINDA A | $285,200 | MSA death index: JEFFREY L JACKSON d. 2007-03-10 | — (gov/non-buyable only) |
 | 9008 Lennings Ln,  (Baltimore County) | 04141900013751 | MINER WILLIAM A | $280,934 | MSA death index: WILLIAM A MINER d. 2007-04-27 | — (gov/non-buyable only) |
 | 8 Addleton Ct, Reisterstown (Baltimore County) | 04042100012253 | HALL TIMOTHY W | $278,616 | MSA death index: TIMOTHY W HALL d. 1995-07-13 | — (gov/non-buyable only) |
 | 23876 Mervell Dean Rd,  (St. Mary's) | 1906036902 | MARTIN JEFFREY ALLEN | $277,852 | MSA death index: JEFFREY ALLEN MARTIN d. 2011-04-02 | — (gov/non-buyable only) |
 | 2809 Profitt Path, Edgewood (Harford) | 1301329685 | JACKSON ERIC A | $274,003 | MSA death index: ERIC A JACKSON d. 2010-02-17 | — (gov/non-buyable only) |
 | 6907 Adel St, Capitol Heights (Prince George's) | 17182077659 | UTLEY BARBARA J | $273,827 | MSA death index: BARBARA J UTLEY d. 2005-12-02 | — (gov/non-buyable only) |
+| 2056 Northeast Ave, Baltimore (Baltimore County) | 04131318000490 | GIVENS CHARLES E | $271,247 | MSA death index: DOROTHY GIVENS d. 2013-05-26 | — (gov/non-buyable only) |
 | 9010 Lennings Ln,  (Baltimore County) | 04141900013752 | MINER WILLIAM A | $262,234 | MSA death index: WILLIAM A MINER d. 2007-04-27 | — (gov/non-buyable only) |
 | 410 S Wolfe St, Baltimore (Baltimore City) | 0302081772022 | ATWELL JANICE K | $255,295 | MSA death index: JANICE K ATWELL d. 2010-03-12 | — (gov/non-buyable only) |
 | 453 Cornell Ct, Glen Burnie (Anne Arundel) | 020325690016389 | PEREZ MANUEL R | $242,369 | MSA death index: MANUEL R PEREZ d. 2004-03-02 | — (gov/non-buyable only) |
+| 3212 Richwood Ave, Baltimore (Baltimore County) | 04020208002090 | TURNER MARIO JOSEPH | $234,522 | MSA death index: MARIO JOSEPH TURNER d. 1999-11-08 | — (gov/non-buyable only) |
 | 8123 Solley Rd, Pasadena (Anne Arundel) | 020366002947905 | BROWN RALPH A | $230,225 | MSA death index: CATHY L BROWN d. 2003-04-02 | — (gov/non-buyable only) |
 | 1914 Greenhaven Dr, Baltimore (Baltimore City) | 0327174736C066 | WILSON MATTHEW S | $226,744 | MSA death index: MATTHEW S WILSON d. 2009-01-16 | — (gov/non-buyable only) |
 | 38 Taft St, Aberdeen (Harford) | 1302102455 | JOHNSON ALVERTA C | $221,601 | MSA death index: ALVERTA C JOHNSON d. 2009-10-08 | — (gov/non-buyable only) |
@@ -215,9 +239,12 @@
 | 5 E Macphail Rd, Bel Air (Harford) | 1303112926 | FREY MARK R | $201,617 | MSA death index: MARY E FREY d. 1998-08-04 | — (gov/non-buyable only) |
 | 4311 Kenwood Ave,  (Baltimore County) | 04141419058200 | MINER WILLIAM A | $200,934 | MSA death index: WILLIAM A MINER d. 2007-04-27 | — (gov/non-buyable only) |
 | 3800 Frankford Ave, Baltimore (Baltimore City) | 0327025783028B | SMITH BRIAN D. | $200,740 | MSA death index: BRIAN D SMITH d. 2009-12-17 | — (gov/non-buyable only) |
+| 6405 Jefferson Pl, Glen Burnie (Anne Arundel) | 020539413515450 | BRYANT MARK S | $197,297 | MSA death index: CATHERINE BRYANT d. 2011-10-28 | — (gov/non-buyable only) |
 | 5300 Overhill Rd, Baltimore (Baltimore County) | 04010105610360 | WILSON BRIAN Z | $194,478 | MSA death index: SYLVIA F WILSON d. 2011-04-11 | — (gov/non-buyable only) |
 | 2420 Lincoln Ave,  (Baltimore County) | 04151502850740 | HOUSTON PAUL SR | $190,461 | MSA death index: LILLIAN A HOUSTON d. 1987-12-06 | — (gov/non-buyable only) |
+| 2706 North Point Rd,  (Baltimore County) | 04151502853050 | BUTLER AUGUSTA E | $190,323 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 921 Spa Rd, Annapolis (Anne Arundel) | 020600003824802 | GARRETT WILLIAM H | $189,938 | MSA death index: WILLIAM H GARRETT d. 2000-09-02 | — (gov/non-buyable only) |
+| 3400 Buffalo Rd, New Windsor (Carroll) | 0709009795 | YOUNG REGINALD C JR | $187,696 | MSA death index: REGINALD C YOUNG JR d. 2012-11-14 | Humane Society of Carroll County $27,104 (C-06-CR-22-341-JG) |
 | 3013 Weaver Ave, Baltimore (Baltimore City) | 0327014198B002 | MURRAY TYRONE | $184,499 | MSA death index: TYRONE MURRAY d. 2010-04-04 | — (gov/non-buyable only) |
 | 9900 Georgia Ave, Silver Spring (Montgomery) | 161301664834 | CONTRERAS JOSE M | $184,316 | MSA death index: JOSE M CONTRERAS d. 2006-01-24 | — (gov/non-buyable only) |
 | 278 Jay Jay Ct, Glen Burnie (Anne Arundel) | 020361090023736 | WHITE II LAVERGNE A | $183,229 | MSA death index: DARLENE L W WHITE d. 2012-03-11 | — (gov/non-buyable only) |
@@ -227,18 +254,24 @@
 | 922 Reverdy Rd, Baltimore (Baltimore City) | 0327565138A281 | BROWN MONROE | $174,056 | MSA death index: MONROE BROWN d. 2014-07-23 | — (gov/non-buyable only) |
 | 411 Middle River Rd,  (Baltimore County) | 04151506820260 | MINER WILLIAM A | $171,734 | MSA death index: WILLIAM A MINER d. 2007-04-27 | — (gov/non-buyable only) |
 | 6233 Tramore Rd, Baltimore (Baltimore City) | 0327325424018 | CLEMENTS JAMES L | $168,614 | MSA death index: JAMES L CLEMENTS d. 1997-06-13 | — (gov/non-buyable only) |
+| 4415 Norfen Rd, Baltimore (Baltimore County) | 04131302850650 | BROWN HEATHER | $166,757 | MSA death index: HEATHER BROWN d. 2013-03-03 | — (gov/non-buyable only) |
 | 4905 Arabia Ave, Baltimore (Baltimore City) | 0327025809014 | THOMAS DWAYNE ANDRE | $165,946 | MSA death index: DWAYNE ANDRE THOMAS d. 1995-04-07 | — (gov/non-buyable only) |
+| 8549 Pioneer Dr, Severn (Anne Arundel) | 020491206620800 | MORTON KENNETH | $164,639 | MSA death index: KENNETH MORTON d. 2008-12-13 | — (gov/non-buyable only) |
+| 8311 Bear Creek Dr,  (Baltimore County) | 04121202085077 | BUTLER AUGUSTA E | $164,423 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 1841 Addison Rd S, District Heights (Prince George's) | 17060557447 | DAVIS TYRONE | $164,368 | MSA death index: TYRONE DAVIS d. 2006-07-22 | — (gov/non-buyable only) |
 | 8642 Hayshed Ln, Columbia (Howard) | 1416145408 | KIM JIN HO | $163,618 | MSA death index: JIN HO KIM d. 2004-01-19 | — (gov/non-buyable only) |
 | 5217 Fredcrest Rd, Baltimore (Baltimore City) | 0328058030B053 | FOWLKES ALPHONZO G | $163,413 | MSA death index: ALPHONZO G FOWLKES d. 2009-02-09 | — (gov/non-buyable only) |
 | 209 Rolling Rd, Chestertown (Kent) | 1504003799 | FALLAW MARGARET Q & WALTER ROBERT | $161,363 | MSA death index: WALTER ROBERT FALLAW d. 2013-12-13 | — (gov/non-buyable only) |
 | 15725 Fenton Ave, Williamsport (Washington) | 2202009250 | MCKIMMY CLYDE R | $158,599 | MSA death index: CLYDE R MCKIMMY d. 1997-07-18 | — (gov/non-buyable only) |
 | 3514 Woodlea Ave, Baltimore (Baltimore City) | 0327025832D054 | MILLER DANIEL CHRISTIAN | $156,388 | MSA death index: MAGGIE MCALLISTER THOMPSON d. 2014-07-26 | — (gov/non-buyable only) |
+| 100 Mount Savage Rd Nw, Frostburg (Allegany) | 0111004296 | KELLY FRANCIS P ET UX | $154,142 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 2102 Westfield Ave, Baltimore (Baltimore City) | 0327295288D214 | WHITE TYRONE A | $152,119 | MSA death index: TYRONE A WHITE d. 2008-02-17 | — (gov/non-buyable only) |
 | 1118 N Eden St, Baltimore (Baltimore City) | 0310131175026 | WILLIAMS CORNELL D. | $150,997 | MSA death index: CORNELL D WILLIAMS d. 2001-03-04 | — (gov/non-buyable only) |
 | 3515 Woodring Ave, Baltimore (Baltimore City) | 0327045555347 | THOMAS ERIC A | $148,373 | MSA death index: ERIC A THOMAS d. 2001-10-17 | — (gov/non-buyable only) |
 | 612 Wyanoke Ave, Baltimore (Baltimore City) | 0309013913B007 | BURLEY MARY | $147,473 | MSA death index: MARY BURLEY d. 2013-01-06 | — (gov/non-buyable only) |
 | 10734 Green Valley Rd, Union Bridge (Frederick) | 1117359045 | FOWLER THOMAS M & | $144,564 | MSA death index: THOMAS M FOWLER d. 2013-07-30 | — (gov/non-buyable only) |
+| 705 Aldworth Rd,  (Baltimore County) | 04121203023245 | COTTON WILLIAM JOSEPH | $143,922 | MSA death index: WILLIAM JOSEPH COTTON d. 1993-12-26 | — (gov/non-buyable only) |
+| 3127 Baybriar Rd,  (Baltimore County) | 04121202088100 | BUTLER AUGUSTA E | $142,323 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 6601 Alta Ave, Baltimore (Baltimore City) | 0327045603H012 | WENGER DONALD | $141,460 | MSA death index: DONALD WENGER d. 2009-10-28 | — (gov/non-buyable only) |
 | 3200 Mondawmin Ave, Baltimore (Baltimore City) | 0315273059B027 | GREEN CHRISTINE | $140,400 | MSA death index: CHRISTINE GREEN d. 1994-09-01 | — (gov/non-buyable only) |
 | 2544 Edmondson Ave, Baltimore (Baltimore City) | 0316072362016 | MOSBY MICHAEL | $139,959 | MSA death index: MICHAEL MOSBY d. 2008-07-20 | — (gov/non-buyable only) |
@@ -247,6 +280,7 @@
 | 3502 Tivoly Ave, Baltimore (Baltimore City) | 0309243970F036 | HOOD DIANA R | $137,565 | MSA death index: HOWARD B HOOD d. 2009-05-08 | — (gov/non-buyable only) |
 | 2427 Denison St, Baltimore (Baltimore City) | 0315293055A005 | THOMPSON AARON | $137,278 | MSA death index: AARON THOMPSON d. 2014-08-05 | — (gov/non-buyable only) |
 | 4029 Greenmount Ave, Baltimore (Baltimore City) | 0309013902005 | HARRIS MICHAEL | $136,962 | MSA death index: PHYLLIS E HARRIS d. 2005-08-24 | — (gov/non-buyable only) |
+| 198 E Main St, Frostburg (Allegany) | 0112010613 | KELLY FRANCIS P ET UX | $131,842 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 4320 Cedargarden Rd, Baltimore (Baltimore City) | 0325012530C368 | GREEN TYRONE A | $129,289 | MSA death index: TYRONE A GREEN d. 1999-07-24 | — (gov/non-buyable only) |
 | 4202 Fairhaven Ave, Baltimore (Baltimore City) | 0325087231086 | HAYNES BERNARD S | $127,161 | MSA death index: BERNARD S HAYNES d. 2012-12-24 | — (gov/non-buyable only) |
 | 3611 Greenmount Ave, Baltimore (Baltimore City) | 0309204048A012B | JOHNSON VERNON | $126,088 | MSA death index: ELAINE A JOHNSON d. 2004-02-23 | — (gov/non-buyable only) |
@@ -266,7 +300,10 @@
 | 306 Chester Ct, Centreville (Queen Anne's) | 1803020665 | MURDOCH JOHN L SR & ELESE F J/T | $106,116 | MSA death index: JOHN L MURDOCH SR d. 1998-01-21 | — (gov/non-buyable only) |
 | 3813 Bonview Ave, Baltimore (Baltimore City) | 0326334179S177 | DELEAVER-COATES CYNTHIA | $102,841 | MSA death index: KAREN L WILLIAMS d. 2013-05-07 | — (gov/non-buyable only) |
 | , Hollywood (St. Mary's) | 1906063896 | MARTIN JEFFREY ALLEN | $99,552 | MSA death index: JEFFREY ALLEN MARTIN d. 2011-04-02 | — (gov/non-buyable only) |
+| , Mt Savage (Allegany) | 0113007152 | KELLY FRANCIS P ET AL | $97,542 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 6800 Southern Cross Ct, Baltimore (Baltimore County) | 04030303003650 | COATES CURTIS M | $97,292 | MSA death index: CURTIS M COATES d. 1999-11-16 | — (gov/non-buyable only) |
+| 87 W Main St, Frostburg (Allegany) | 0111004326 | KELLY FRANCIS P ET UX | $96,742 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
+| 1703 Evergreen Dr,  (Baltimore County) | 04121202085076 | BUTLER AUGUSTA E | $95,423 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 3228 Gorham Ct, Baltimore (Baltimore County) | 04131323501230 | WILSON WARREN E SR | $92,911 | MSA death index: WARREN E WILSON SR d. 1994-06-02 | — (gov/non-buyable only) |
 | 15200 Bear Hill Rd Se, Oldtown (Allegany) | 0102008475 | BOGGS WAYNE L ET UX | $87,534 | MSA death index: WAYNE L BOGGS d. 2013-05-02 | — (gov/non-buyable only) |
 | 3810 Harlem Ave, Baltimore (Baltimore City) | 0316172507013 | JACKSON CAROLE A | $83,077 | MSA death index: CAROLE A JACKSON d. 2004-06-08 | — (gov/non-buyable only) |
@@ -318,18 +355,25 @@
 | 2536 W Fairmount Ave, Baltimore (Baltimore City) | 0320072170A019 | JOHNSON TONI | $27,683 | MSA death index: TONI JOHNSON d. 2011-01-10 | — (gov/non-buyable only) |
 | ,  (Somerset) | 2015008792 | TILGHMAN GRANVILLE M & DIANE E | $27,681 | MSA death index: GRANVILLE M TILGHMAN d. 1983-06-14 | — (gov/non-buyable only) |
 | 1823 Riggs Ave, Baltimore (Baltimore City) | 0316030059030 | SPEARMAN TIMOTHY T | $26,691 | MSA death index: TIMOTHY T SPEARMAN d. 2010-02-08 | — (gov/non-buyable only) |
+| , Earleville (Cecil) | 0801023837 | STEVENS HARRY G & NORMA G | $26,355 | MSA death index: HARRY G STEVENS d. 1993-02-14 | — (gov/non-buyable only) |
 | 68 Douglas Ave, Lonaconing (Allegany) | 0110004675 | JACKSON MELISSA G ET AL | $26,284 | MSA death index: MELISSA G JACKSON d. 2011-11-15 | — (gov/non-buyable only) |
 | , Earleville (Cecil) | 0801062360 | BREEN CHARLES J & ANN | $26,215 | MSA death index: CHARLES J BREEN d. 2007-11-05 | — (gov/non-buyable only) |
 | 502 Loblolly Ln, Salisbury (Wicomico) | 2313013276 | WAINWRIGHT WILLIAM R & BETTY L | $26,170 | MSA death index: WILLIAM R WAINWRIGHT d. 2009-02-21 | — (gov/non-buyable only) |
 | 2426 Druid Hill Ave, Baltimore (Baltimore City) | 0313073413014 | GRIFFIN EDWARD T. | $26,012 | MSA death index: EDWARD T GRIFFIN d. 2007-01-24 | — (gov/non-buyable only) |
 | 618 S Fulton Ave, Baltimore (Baltimore City) | 0319100720010 | SAUNDERS SR HERMAN L | $22,625 | MSA death index: GLORIA M SAUNDERS d. 1995-11-22 | — (gov/non-buyable only) |
+| 2500 Coleridge Dr, Frederick (Frederick) | 1102250284 | BROWN LAVERNE CUMMINGS | $22,373 | MSA death index: LAVERNE CUMMINGS BROWN d. 2006-04-15 | — (gov/non-buyable only) |
 | , Oldtown (Allegany) | 0102019515 | BOGGS WAYNE L JR-HENRY BRENDA L | $18,967 | MSA death index: WAYNE L JR HENRY BRENDA L BOGGS d. 2013-05-02 | — (gov/non-buyable only) |
+| 129 Arbutus Ave,  (Baltimore County) | 04010112002131 | LAWRENCE CATHERINE S | $18,901 | MSA death index: CATHERINE S LAWRENCE d. 1982-06-27 | — (gov/non-buyable only) |
 | 1715 N Calhoun St, Baltimore (Baltimore City) | 0315130293041 | WOMACK WILLIAM | $16,718 | MSA death index: WILLIAM WOMACK d. 1990-03-18 | — (gov/non-buyable only) |
 | 115 S Fulton Ave, Baltimore (Baltimore City) | 0319080244020 | KUNIKEN CHARLES W | $15,448 | MSA death index: CHARLES W KUNIKEN d. 1977-04-08 | — (gov/non-buyable only) |
+| , Frostburg (Allegany) | 0111007589 | KELLY FRANCIS P ET UX | $15,042 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 1521 N Patterson Park Ave, Baltimore (Baltimore City) | 0308171484011 | GREEN ANDRE | $14,772 | MSA death index: ANDRE GREEN d. 2013-09-29 | — (gov/non-buyable only) |
 | 1804 N Chapel St, Baltimore (Baltimore City) | 0308031448081 | BYRD BRUCE | $14,651 | MSA death index: BRUCE BYRD d. 2006-10-25 | — (gov/non-buyable only) |
 | 3036 Mandela Ct, Port Republic (Calvert) | 0501222546 | PRALEY EDWARD A & MARK E FORD | $14,169 | MSA death index: EDWARD A PRALEY d. 2006-02-25 | — (gov/non-buyable only) |
 | , Severn (Anne Arundel) | 020400090081476 | HOOD ROBERT L | $14,042 | MSA death index: ROBERT L HOOD d. 2002-07-25 | — (gov/non-buyable only) |
+| , Frostburg (Allegany) | 0111007597 | KELLY FRANCIS P ET UX | $13,342 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
+| ,  (Baltimore County) | 04111113076670 | CARTER MELVIN J | $12,988 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
+| 75 Ayers Aly, Lonaconing (Allegany) | 0110003237 | RITCHIE JAMES P | $12,863 | MSA death index: JAMES P RITCHIE d. 2012-01-22 | Georges Creek Sanitary District $7,768 (C-01-JG-23-000525) |
 | 705 N Fulton Ave, Baltimore (Baltimore City) | 0316100097049 | POWELL DENNIS | $12,007 | MSA death index: DENNIS POWELL d. 2004-04-03 | — (gov/non-buyable only) |
 | 530 E North Ave, Baltimore (Baltimore City) | 0309074000016 | MCCOY CHARLES | $11,803 | MSA death index: KATHRYN MCCOY d. 1990-11-27 | — (gov/non-buyable only) |
 | 1504 E Lafayette Ave, Baltimore (Baltimore City) | 0308041101066 | SPEARMAN TIMOTHY T | $11,391 | MSA death index: TIMOTHY T SPEARMAN d. 2010-02-08 | — (gov/non-buyable only) |
@@ -340,35 +384,39 @@
 | , Oldtown (Allegany) | 0102012928 | DOLAN CALVIN LEE SR LE | $9,723 | MSA death index: CALVIN LEE DOLAN SR d. 1991-09-20 | — (gov/non-buyable only) |
 | 13A Main Ave Sw, Glen Burnie (Anne Arundel) | 020336208332030 | RILEY CHARLES E | $9,670 | MSA death index: CHARLES E RILEY d. 1996-10-30 | — (gov/non-buyable only) |
 | , Centreville (Queen Anne's) | 1806001351 | BEATTY DONALD HENRY JR | $8,476 | MSA death index: DONALD HENRY BEATTY JR d. 1998-02-08 | — (gov/non-buyable only) |
+| 14432 Amcelle St Sw, Cumberland (Allegany) | 0106021352 | INGRAM WILLIAM J LE ET AL | $7,324 | MSA death index: WILLIAM J INGRAM d. 1978-12-23 | — (gov/non-buyable only) |
 | 607 Bartlett Ave, Baltimore (Baltimore City) | 0309054041028 | GIBSON HAZEL | $7,178 | MSA death index: HAZEL GIBSON d. 1999-02-14 | — (gov/non-buyable only) |
 | 3626 Oakmont Ave, Baltimore (Baltimore City) | 0327204577026 | SMITH GLENN D | $6,367 | MSA death index: GLENN D SMITH d. 2000-07-14 | — (gov/non-buyable only) |
+| 4052 Back Shelltown Rd,  (Somerset) | 2003052060 | CROSS GEORGE W AND JANET E | $5,651 | MSA death index: GEORGE W CROSS d. 2012-01-05 | — (gov/non-buyable only) |
 | , Cumberland (Allegany) | 0106024734 | MILLER PEGGY ANN | $4,560 | MSA death index: PEGGY ANN MILLER d. 2011-06-23 | — (gov/non-buyable only) |
 | 1101 N Dukeland St, Baltimore (Baltimore City) | 0316232393031 | KING LILLIAN E (LIFE) | $4,267 | MSA death index: LILLIAN E LIFE KING d. 1990-04-10 | — (gov/non-buyable only) |
 | , Harwood (Anne Arundel) | 020150890229508 | MORELAND EVERETT W | $3,992 | MSA death index: BARBARA MORELAND d. 2014-12-05 | — (gov/non-buyable only) |
 | 2110 E Lafayette Ave, Baltimore (Baltimore City) | 0308201450075 | MORRIS HELEN R | $3,621 | MSA death index: DENNIS R CAMPBELL d. 1989-03-09 | — (gov/non-buyable only) |
 | 5717 Oakland Rd,  (Baltimore County) | 04131313203571 | MACDANIEL ALLEN W | $3,130 | MSA death index: ALLEN W MACDANIEL d. 2008-03-02 | — (gov/non-buyable only) |
+| , Kingsville (Baltimore County) | 04112000005285 | CARTER MELVIN J | $2,888 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
 | 1318 Ensor St, Baltimore (Baltimore City) | 0309081144039 | ANDERSON PHYLLIS M | $1,932 | MSA death index: PHYLLIS M ANDERSON d. 1983-12-02 | — (gov/non-buyable only) |
 | , North East (Cecil) | 0805003806 | JIANNINEY JAMES E JR & | $1,858 | MSA death index: JAMES E JIANNINEY JR d. 2012-10-10 | — (gov/non-buyable only) |
 | 8112 Bellona Ave, Baltimore (Baltimore County) | 04080814040291 | COLE HENRY L | $1,752 | MSA death index: HENRY L COLE d. 2014-01-26 | — (gov/non-buyable only) |
 | 1104 N Carey St, Baltimore (Baltimore City) | 0316010055B003 | BISHOP JAMES | $1,176 | MSA death index: PEARLINE C BISHOP d. 1999-07-17 | — (gov/non-buyable only) |
+| ,  (Somerset) | 2008151091 | HOLLAND CLYDE J AND LYNDA | $634 | MSA death index: CLYDE J HOLLAND d. 2012-06-03 | — (gov/non-buyable only) |
 | 527 N Calhoun St, Baltimore (Baltimore City) | 0319010125041 | WILLIAMS ALBERT E | $567 | MSA death index: CHARLES W CURTIS d. 2013-09-05 | — (gov/non-buyable only) |
+| , Toddville (Dorchester) | 1010005809 | WICKWIRE DAVID LEE | $400 | MSA death index: DAVID LEE WICKWIRE d. 1973-09-01 | — (gov/non-buyable only) |
 | 13 Main Ave Sw, Glen Burnie (Anne Arundel) | 020336208332029 | RILEY CHARLES E | $370 | MSA death index: CHARLES E RILEY d. 1996-10-30 | — (gov/non-buyable only) |
+| , Cumberland (Allegany) | 0106030564 | INGRAM WILLIAM J LE ET AL | $324 | MSA death index: WILLIAM J INGRAM d. 1978-12-23 | — (gov/non-buyable only) |
 | 110 Sunset Dr, Lavale (Allegany) | 0129002312 | KELLER ROSS G | $105 | MSA death index: ROSS G KELLER d. 2008-04-11 | — (gov/non-buyable only) |
 | 1826 Edmondson Ave, Baltimore (Baltimore City) | 0316090108041 | POWELL DENNIS | $7 | MSA death index: DENNIS POWELL d. 2004-04-03 | — (gov/non-buyable only) |
 
-## LOW identity match (708)
+## LOW identity match (658)
 
 | Property | SDAT acct | Owner | Equity | Death | Buyable judgment(s) |
 |---|---|---|---|---|---|
 | 11223 York Rd,  (Baltimore County) | 04081800013693 | HUFF JOHN S JR | $2,585,967 | MSA death index: JOHN S HUFF JR d. 1988-07-18 | — (gov/non-buyable only) |
 | 5808 Walton Rd, Bethesda (Montgomery) | 160700687932 | SULLIVAN DAVID J & SUJATA | $2,285,961 | MSA death index: DAVID J SULLIVAN d. 2010-02-03 | — (gov/non-buyable only) |
-| 504 Scrimshaw Way, Severna Park (Anne Arundel) | 020357090217459 | SMITH DAVID A | $2,199,836 | MSA death index: DIANE M SMITH d. 2006-07-14 | — (gov/non-buyable only) |
 | 841 Pat Ln, Arnold (Anne Arundel) | 020351015250202 | DALY PETER E | $2,044,003 | MSA death index: PETER E DALY d. 2013-04-06 | — (gov/non-buyable only) |
 | 9943 Washington Blvd N, Laurel (Howard) | 1406403654 | AUSTIN MICHAEL | $1,529,940 | MSA death index: MICHAEL AUSTIN d. 2006-02-11 | — (gov/non-buyable only) |
 | 21810 New Hampshire Ave, Brookeville (Montgomery) | 160802732535 | RICHARDS JOSEPH E & P J | $1,066,945 | MSA death index: JOSEPH E RICHARDS d. 2002-01-07 | — (gov/non-buyable only) |
 | 4505 Wetherill Rd, Bethesda (Montgomery) | 160700550116 | KELLY BARBARA A & | $1,049,057 | MSA death index: BARBARA A KELLY d. 2012-05-11 | SEASIDE COMMUNITY DEVELOPMENT CORP $611,543 (441072V) |
 | 6804 Georgia St, Chevy Chase (Montgomery) | 160700460298 | CONLEY JAMES C JR | $988,249 | MSA death index: JAMES C CONLEY JR d. 2014-05-29 |  $20,445 (103509F) |
-| 1492 Berger St, Odenton (Anne Arundel) | 020400003690400 | HOWARD JOAN M | $965,031 | MSA death index: JOAN M HOWARD d. 2010-07-26 | — (gov/non-buyable only) |
 | 6412 Misty Top Pass, Columbia (Howard) | 1415100052 | CAMPBELL MICHAEL ROBERT | $852,153 | MSA death index: MICHAEL ROBERT CAMPBELL d. 2007-06-08 | — (gov/non-buyable only) |
 | 8815 Montgomery Ave, Chevy Chase (Montgomery) | 160700525715 | CONLEY JAMES C JR & M S | $850,749 | MSA death index: JAMES C CONLEY JR d. 2014-05-29 |  $20,445 (103509F) |
 | 9624 Dapper Town Row, Laurel (Howard) | 1406579582 | STEWART CAROL E | $831,606 | MSA death index: CAROL E STEWART d. 2012-07-18 | — (gov/non-buyable only) |
@@ -386,7 +434,6 @@
 | 2605 East West Hwy, Chevy Chase (Montgomery) | 161301160405 | RUIZ MARIO | $648,645 | MSA death index: MARIO RUIZ d. 2010-10-16 |  $12,755 (461916V) |
 | 1318 N Main St, Hampstead (Carroll) | 0708031509 | WHEELER ROBERT LESLIE | $641,260 | MSA death index: ROBERT LESLIE WHEELER d. 2011-01-01 | — (gov/non-buyable only) |
 | 11545 Brandy Hall Ln, N Potomac (Montgomery) | 160600415616 | LEE FRANCIS & | $632,456 | MSA death index: FRANCIS LEE d. 2009-02-15 | — (gov/non-buyable only) |
-| 11600 Stocksdale Rd,  (Baltimore County) | 04111103000026 | CARTER MELVIN J | $630,588 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
 | 6605 Tall Woods Way, Clinton (Prince George's) | 17093796737 | HILL YVETTE C | $629,418 | MSA death index: YVETTE C HILL d. 2013-03-19 | — (gov/non-buyable only) |
 | 4941 Hine Dr, Shady Side (Anne Arundel) | 020700100052800 | LOWE HUBERT O | $623,332 | MSA death index: HUBERT O LOWE d. 2010-02-12 | — (gov/non-buyable only) |
 | 8901 S Atlantic Ave, Ocean City (Worcester) | 2410102758 | DILLON MATTHEW & JULIA & | $611,861 | MSA death index: MATTHEW DILLON d. 2011-07-25 | — (gov/non-buyable only) |
@@ -415,7 +462,6 @@
 | 23920 Jockey Club Ter, Damascus (Montgomery) | 161202672395 | MILLS JAMES R & SUSAN M | $496,870 | MSA death index: SUSAN M MILLS d. 2008-09-25 | TAYLOR, MARY A $23,889 (100111R); TAYLOR, MARY A $23,889 (100111R) |
 | 200 E Franklin Ave, Silver Spring (Montgomery) | 161301013064 | HERNANDEZ MANUEL A & M C | $488,684 | MSA death index: MANUEL A HERNANDEZ d. 2001-07-01 |  $64,894 (101743F);  $12,704 (101825F) |
 | 23808 Old Chaptico Wharf Ln, Maddox (St. Mary's) | 1904011430 | JAMES CHRISTOPHER D & | $480,836 | MSA death index: CHRISTOPHER D JAMES d. 2001-01-09 | — (gov/non-buyable only) |
-| 504 Eldrid Dr, Silver Spring (Montgomery) | 160502148955 | NGUYEN TAM THANH & THUY THI | $478,953 | MSA death index: TAM THANH NGUYEN d. 2010-08-12 | — (gov/non-buyable only) |
 | 1912 Middleborough Rd, Baltimore (Baltimore County) | 04151516002900 | LONG HENRY WILLIAM | $477,800 | Obituary: Henry William "Bill" Long d.  | — (gov/non-buyable only) |
 | 7989 Cross Creek Dr, Glen Burnie (Anne Arundel) | 020343015429177 | TYLER GREGORY M | $471,634 | MSA death index: GREGORY M TYLER d. 2011-03-21 | — (gov/non-buyable only) |
 | 6311 Joslyn Pl, Landover (Prince George's) | 17020166199 | EVANS ANTHONY | $470,686 | MSA death index: ANTHONY EVANS d. 2014-01-20 | — (gov/non-buyable only) |
@@ -448,7 +494,6 @@
 | 8176 Waterford Rd, Pasadena (Anne Arundel) | 020389610031000 | FORD JOHN W | $391,225 | MSA death index: BARBARA L FORD d. 2014-01-14 | — (gov/non-buyable only) |
 | 3408 Glorus Pl, Silver Spring (Montgomery) | 161301248467 | CONLEY JAMES C JR | $388,049 | MSA death index: JAMES C CONLEY JR d. 2014-05-29 |  $20,445 (103509F) |
 | 9300 Brookwood Pl, White Plains (Charles) | 0906047602 | STOVER WILLIE J JR | $387,455 | MSA death index: WILLIE J STOVER JR d. 2009-02-24 | — (gov/non-buyable only) |
-| 2537 Waterside Dr, Frederick (Frederick) | 1102218348 | COX MARK H & WENDY G | $385,693 | MSA death index: MARK H COX d. 2008-07-25 | Wormans Mill Community Conservancy, Inc. $2,761 (C-10-JG-20-001756); Worman's Mill Community Conservancy, Inc. $16,246 (C-10-JG-25-003133) |
 | 5301 Westbard Cir, Bethesda (Montgomery) | 160702087457 | BRYANT SANDRA W | $384,780 | MSA death index: SANDRA W BRYANT d. 2013-02-14 |  $4,460 (462004V) |
 | 7120 Upper Mills Cir, Baltimore (Baltimore County) | 04011800007004 | HUNT FRANKLIN WILLIAM | $382,905 | MSA death index: FRANKLIN WILLIAM HUNT d. 1985-10-17 | Fisher, Gloria $44,295 (C-03-JG-23-006682) |
 | 10971 Poplar Dr, Lusby (Calvert) | 0501032887 | COLLINS FREDERICK O | $381,932 | MSA death index: FREDERICK O COLLINS d. 2001-11-22 | — (gov/non-buyable only) |
@@ -463,7 +508,6 @@
 | 8017 Yellowstone Rd, Kingsville (Baltimore County) | 04111600004199 | DAMICO JOSEPH S | $372,700 | MSA death index: JOSEPH S DAMICO d. 1982-07-14 | — (gov/non-buyable only) |
 | 954 Seneca Park Rd,  (Baltimore County) | 04151513750640 | SMITH ARTHUR L | $370,072 | MSA death index: ARLENE SMITH d. 2013-12-08 | — (gov/non-buyable only) |
 | 14044 Harrisville Rd, Mount Airy (Frederick) | 1118385341 | LOPEZ STEPHEN A JR & LAURA D | $368,947 | MSA death index: LAURA D LOPEZ d. 2007-08-15 | — (gov/non-buyable only) |
-| 988 Oaklawn Ave, Lavale (Allegany) | 0129041741 | JENNINGS DANIEL L ET AL | $366,543 | MSA death index: DANIEL L JENNINGS d. 2013-06-28 | Lavale Sanitary Commission $7,000 (C-01-JG-18-000231) |
 | 825 Hilltop Rd, Elkton (Cecil) | 0804004094 | BIVENS JAMES J & MARY | $366,453 | MSA death index: JAMES J BIVENS d. 2012-04-04 | Broadcast Music Inc Et Al $20,630 (07-L-16-001001); Broadcast Music Inc Et Al $20,630 (07-L-16-001001); Broadcast Music Inc $20,716 (07-C-16-001017); Broadcast Music Inc $20,716 (07-C-16-001017) |
 | 5893 Telegraph Rd, Elkton (Cecil) | 0804025024 | GREEN JOHN DAVID & DAVID E | $365,144 | MSA death index: DAVID E GREEN d. 2013-01-24 | — (gov/non-buyable only) |
 | 603 University Blvd E, Silver Spring (Montgomery) | 161301451712 | NGUYEN THANH TRUC & | $364,136 | MSA death index: THANH TRUC NGUYEN d. 2013-05-28 |  $16,089 (419579V);  $7,710 (457666V); LOGAN VILLAGE CENTER LLC $24,563 (C-15-JG-22-004410) |
@@ -483,9 +527,7 @@
 | 3610 Darcey Manor Dr,  (Carroll) | 0703027651 | KIRBY JOHN C | $339,000 | MSA death index: JOHN C KIRBY d. 2014-09-22 | — (gov/non-buyable only) |
 | 1188 White Coral Ct, Arnold (Anne Arundel) | 020387890028850 | JONES STEPHANIE L | $338,644 | MSA death index: STEPHANIE L JONES d. 2011-10-23 | — (gov/non-buyable only) |
 | 3600 Darcey Manor Dr,  (Carroll) | 0703027716 | KIRBY JOHN C | $338,500 | MSA death index: JOHN C KIRBY d. 2014-09-22 | — (gov/non-buyable only) |
-| 1531 Sunswept Dr, Bel Air (Harford) | 1303359255 | MARTIN LEON H | $333,168 | MSA death index: LEON H MARTIN d. 2006-08-23 | Christopher J Selling & Associates $8,532 (12-L-18-000153) |
 | 6721 Central Hills Ter, Landover (Prince George's) | 17182095925 | HOLT ANGELA | $330,735 | MSA death index: JAMES E HOLT d. 1999-12-30 | — (gov/non-buyable only) |
-| 7301 Travertine Dr, Baltimore (Baltimore County) | 04032500004375 | WEINER BERNARD | $328,536 | MSA death index: BERNARD WEINER d. 2014-10-27 | — (gov/non-buyable only) |
 | 20316 Grazing Way, Gaithersburg (Montgomery) | 160901870955 | DURAN JORGE & ANA E | $328,338 | MSA death index: JORGE DURAN d. 2012-06-17 | — (gov/non-buyable only) |
 | 1223 Tyler Ave, Annapolis (Anne Arundel) | 020600007179700 | WILLIAMS WARREN D | $328,095 | MSA death index: MARSHA WILLIAMS d. 2008-12-26 | — (gov/non-buyable only) |
 | 6116 Burnt Oak Rd, Catonsville (Baltimore County) | 04010104203040 | JOHNSON ALICIA | $325,861 | MSA death index: ALICIA JOHNSON d. 2013-01-10 | — (gov/non-buyable only) |
@@ -499,7 +541,6 @@
 | 4200 Wabash Ave, Baltimore (Baltimore City) | 0315213100A009 | GOLDMAN JOSEPH | $317,982 | MSA death index: JOSEPH GOLDMAN d. 2003-02-07 | National Collegiate Student $106,118 (24C13001220) |
 | 6167 Encounter Row, Columbia (Howard) | 1416065579 | STEWART CAROL E | $317,606 | MSA death index: CAROL E STEWART d. 2012-07-18 | — (gov/non-buyable only) |
 | 8356 Mountain Ash Way, Gaithersburg (Montgomery) | 160902086908 | FUENTES CARLOS A & M E | $315,514 | MSA death index: CARLOS A FUENTES d. 2001-04-16 |  $2,586 (476349V) |
-| 7670 Stony Creek Ln, Ellicott City (Howard) | 1401246763 | ROBINSON KIM DIANE | $314,160 | MSA death index: YVONNE MARIE ROBINSON d. 1997-03-11 | — (gov/non-buyable only) |
 | 11501 Brundidge Ter, Germantown (Montgomery) | 160902051820 | NGUYEN HUNG NGOC | $313,343 | MSA death index: HUNG NGOC NGUYEN d. 2008-02-23 | — (gov/non-buyable only) |
 | 314 Baltimore Annapolis Blvd, Severna Park (Anne Arundel) | 020300006993000 | JOHNSON ELROY JR | $312,180 | MSA death index: CAROL L JOHNSON d. 2006-12-19 | — (gov/non-buyable only) |
 | 11710 Old Georgetown Rd, North Bethesda (Montgomery) | 160403479237 | LEE KANG SUN | $310,815 | MSA death index: KANG SUN LEE d. 2013-01-26 | Commercial Servicing Company, LLC $34,185 (C-15-JG-24-003857) |
@@ -514,20 +555,17 @@
 | 16 W Chestnut Hill Ln, Reisterstown (Baltimore County) | 04040411001110 | POWELL MICHAEL T | $298,784 | MSA death index: MICHAEL T POWELL d. 2014-11-18 | Carriage Hill Investments L P $5,116 (03-L-16-011357) |
 | 7864 Hidden Creek Way, Baltimore (Anne Arundel) | 020377190065849 | JACKSON STEVEN B | $298,629 | MSA death index: STEVEN B JACKSON d. 2005-06-03 | — (gov/non-buyable only) |
 | 47 Webster St, Westminster (Carroll) | 0707060882 | MAIER CHRISTIAN C | $298,461 | MSA death index: GREGORY C MAIER d. 2014-02-09 | — (gov/non-buyable only) |
-| 603 7Th St, Laurel (Prince George's) | 17103864865 | TORRES SONIA M | $298,046 | MSA death index: SONIA M TORRES d. 2013-11-24 | — (gov/non-buyable only) |
 | 1731 Northridge Ln, Frederick (Frederick) | 1102049066 | GRANT GARY | $296,686 | MSA death index: GARY GRANT d. 2011-07-21 | (AKA)Weschler, Thomas M Jr.; (AKA)Weschler, Thomas M. Esquire; WESCHLER, THOMAS MATTHEW $8,200 (C-10-FM-18-002345) |
 | 8135 Pepperwood Ln, Gaithersburg (Montgomery) | 160901543925 | AMAYA JOSE A ET AL | $294,746 | MSA death index: JOSE A AMAYA d. 2000-07-21 | — (gov/non-buyable only) |
 | 20055 Dunstable Cir, Germantown (Montgomery) | 160903041677 | BASS SARAH | $294,372 | MSA death index: SARAH BASS d. 2013-04-29 | — (gov/non-buyable only) |
 | 5616 Onslow Way, Capitol Heights (Prince George's) | 17182030856 | MAKONNEN TEKESTE I | $293,084 | MSA death index: TEKESTE I MAKONNEN d. 2014-06-29 | — (gov/non-buyable only) |
 | 6903 Alex Ct, Frederick (Frederick) | 1128562500 | MORALES JOSE & | $292,389 | MSA death index: JOSE MORALES d. 2005-05-25 | — (gov/non-buyable only) |
 | 1074 West Side Dr, Gaithersburg (Montgomery) | 160901529002 | LOPEZ LUIS A & C E | $292,028 | MSA death index: LUIS A LOPEZ d. 2006-09-29 |  $21,196 (103233F) |
-| 6929 Sunshine Ave,  (Baltimore County) | 04111103000702 | CARTER MELVIN J | $291,088 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
 | 500 Bloomingdale Ave, Baltimore (Baltimore County) | 04010111770500 | BROWN ALAN | $290,823 | MSA death index: KAREN R BROWN d. 2005-04-11 | — (gov/non-buyable only) |
 | 9401 Harford Rd, Baltimore (Baltimore County) | 04111107000225 | STEVENS JOSEPH | $290,239 | MSA death index: JOSEPH STEVENS d. 2014-08-24 | N C R ENTERPRISES L T D $8,761 (C-03-JG-21-004125) |
 | 8212 Shady Nook Ct, Pasadena (Anne Arundel) | 020304190044338 | BROWN ERICA L | $289,415 | MSA death index: ERICA L BROWN d. 2005-06-04 | — (gov/non-buyable only) |
 | 1312 N Main St, Hampstead (Carroll) | 0708034818 | WHEELER ROBERT LESLIE | $289,360 | MSA death index: ROBERT LESLIE WHEELER d. 2011-01-01 | — (gov/non-buyable only) |
 | 11493 Stoney Point Pl, Germantown (Montgomery) | 160902049837 | MULCAHY JACQUELINE G | $285,769 | MSA death index: JOHN MULCAHY d. 2013-06-02 | — (gov/non-buyable only) |
-| 1805A Wheyfield Dr, Frederick (Frederick) | 1102454858 | NARANJO TONY M & DELIA A | $285,623 | MSA death index: DELIA A NARANJO d. 2012-09-26 | — (gov/non-buyable only) |
 | 6113 Red Squirrel Pl, Waldorf (Charles) | 0906168957 | JONES BONNIE J | $285,213 | MSA death index: BONNIE J JONES d. 2006-06-13 | — (gov/non-buyable only) |
 | 10514 Assateague Rd, Berlin (Worcester) | 2403015122 | LAYTON RAYMOND S SR & | $284,170 | MSA death index: RAYMOND S LAYTON SR d. 2004-01-15 | — (gov/non-buyable only) |
 | 1907 Shore Dr, Edgewater (Anne Arundel) | 020190404428900 | MCDERMOTT MICHAEL J | $281,591 | MSA death index: MICHAEL J MCDERMOTT d. 2013-05-31 | — (gov/non-buyable only) |
@@ -539,7 +577,6 @@
 | 520 Holly Hunt Rd,  (Baltimore County) | 04151700006114 | SMITH ARTHUR LEE SR | $276,372 | MSA death index: ARLENE SMITH d. 2013-12-08 | — (gov/non-buyable only) |
 | 3978 Red Deer Cir, Randallstown (Baltimore County) | 04022200020495 | SMITH CAROL L | $275,058 | MSA death index: CAROL L SMITH d. 2009-10-19 | — (gov/non-buyable only) |
 | 12458 El Segunda Ln, Lusby (Calvert) | 0501103717 | NGUYEN JOSEPH K | $273,229 | MSA death index: JOSEPH K NGUYEN d. 2012-03-31 | — (gov/non-buyable only) |
-| 2056 Northeast Ave, Baltimore (Baltimore County) | 04131318000490 | GIVENS CHARLES E | $271,247 | MSA death index: DOROTHY GIVENS d. 2013-05-26 | — (gov/non-buyable only) |
 | 1524 Cottage Ln, Baltimore (Baltimore County) | 04090919328490 | TORRES MARIA A | $270,695 | MSA death index: MARIA A TORRES d. 2013-07-23 | — (gov/non-buyable only) |
 | 325 Ballard Ave, Baltimore (Baltimore County) | 04151800002637 | MCNEAL JEHOVAH H | $270,095 | MSA death index: JEHOVAH H MCNEAL d. 1983-04-22 | — (gov/non-buyable only) |
 | 5364 Smooth Meadow Way, Columbia (Howard) | 1415067888 | GRIFFITHS ROBERT | $266,901 | MSA death index: ROBERT GRIFFITHS d. 2002-04-21 | — (gov/non-buyable only) |
@@ -580,12 +617,10 @@
 | 9816 Lake Pointe Ct, Upper Marlboro (Prince George's) | 17131519768 | ANDERSON KIMBERLY D | $235,972 | MSA death index: KIMBERLY D ANDERSON d. 2009-04-28 | — (gov/non-buyable only) |
 | 18 East St,  (Frederick) | 1115335386 | LONG NATHAN | $235,317 | MSA death index: NATHAN LONG d. 2012-07-18 | — (gov/non-buyable only) |
 | 13 Upton Ct, Ocean Pines (Worcester) | 2403047253 | ROBERTS DOUGLAS B | $234,855 | MSA death index: DOUGLAS B ROBERTS d. 2007-11-12 | — (gov/non-buyable only) |
-| 3212 Richwood Ave, Baltimore (Baltimore County) | 04020208002090 | TURNER MARIO JOSEPH | $234,522 | MSA death index: MARIO JOSEPH TURNER d. 1999-11-08 | — (gov/non-buyable only) |
 | 5140 Bicknell Rd, Marbury (Charles) | 0910013321 | ROBEY BEN A JR & FLORENCE MARY | $234,057 | Register of Wills: BEN AUBREY ROBEY d. 11/4/2008 — estate 16229 CLOSED; PR   | — (gov/non-buyable only) |
 | 648 Augustine Herman Hwy, Elkton (Cecil) | 0803021920 | MULLINS CHARLES E & VIOLET | $233,267 | MSA death index: CHARLES E MULLINS d. 1979-03-05 | — (gov/non-buyable only) |
 | 381 Joseph Biggs Memorial Hwy, Rising Sun (Cecil) | 0806033962 | WHITE CLARENCE E & BETTY | $232,716 | MSA death index: CLARENCE E WHITE d. 2011-08-20 | — (gov/non-buyable only) |
 | 1300 S Hanover St, Baltimore (Baltimore City) | 0323060976021 | COX ELENA M | $230,905 | MSA death index: ELENA M COX d. 2011-09-26 | — (gov/non-buyable only) |
-| 19 Papago Ct, Randallstown (Baltimore County) | 04021700003959 | COX ROSA LEE B | $230,724 | MSA death index: ROSA LEE B COX d. 1992-07-22 | TWELVE TREES ASSN INC $4,106 (C-03-JG-21-002529); TWELVE TREES ASSN INC $3,447 (C-03-JG-23-006677); TWELVE TREES ASSN INC $3,447 (C-03-JG-23-006678) |
 | 1818 Kittyhawk Rd,  (Baltimore County) | 04151519001501 | CAMPBELL HARRY T | $230,472 | MSA death index: PATRICIA A CAMPBELL d. 2013-06-03 | — (gov/non-buyable only) |
 | 25874 Garey Rd, Denton (Caroline) | 0602020904 | WHITE JAMES M | $226,241 | MSA death index: NANCY J WHITE d. 2011-02-17 | — (gov/non-buyable only) |
 | 9513 Badger Ave, Clinton (Prince George's) | 17090985747 | GREENFIELD MARY E | $225,491 | MSA death index: MARY E GREENFIELD d. 1988-05-24 | — (gov/non-buyable only) |
@@ -628,19 +663,15 @@
 | 3211 Poseytown Rd, Nanjemoy (Charles) | 0903001334 | ADAMS DAVID M JR | $200,442 | MSA death index: DAVID M ADAMS JR d. 2005-07-17 | — (gov/non-buyable only) |
 | 9895 H G Trueman Rd, Lusby (Calvert) | 0501019422 | ADAMS RAYMOND SCOTT | $199,777 | MSA death index: RAYMOND SCOTT ADAMS d. 1994-04-12 | — (gov/non-buyable only) |
 | 1116 Stephen Dr, Baltimore (Baltimore County) | 04151504001770 | KOHLER MICHAEL J KOHLER ANGELA M | $198,258 | MSA death index: MICHAEL J KOHLER ANGELA M KOHLER d. 2014-09-20 | — (gov/non-buyable only) |
-| 6405 Jefferson Pl, Glen Burnie (Anne Arundel) | 020539413515450 | BRYANT MARK S | $197,297 | MSA death index: CATHERINE BRYANT d. 2011-10-28 | — (gov/non-buyable only) |
 | 25 Kina Ct, Elkton (Cecil) | 0803115763 | LOVE LEONARD T | $195,902 | MSA death index: LEONARD T LOVE d. 2012-06-30 | — (gov/non-buyable only) |
 | 26314 Skyview Dr,  (St. Mary's) | 1906026540 | BENNETT KENNETH A | $194,685 | MSA death index: KENNETH A BENNETT d. 1999-12-02 | — (gov/non-buyable only) |
 | 5912 Edna Ave, Baltimore (Baltimore City) | 0327035681029 | SNYDER MARK A | $193,754 | MSA death index: MARK A SNYDER d. 2007-12-07 | — (gov/non-buyable only) |
 | 800 Brookmeade Ct, Salisbury (Wicomico) | 2305103142 | BAER ROBERT L | $191,886 | MSA death index: ROBERT L BAER d. 2014-06-17 | — (gov/non-buyable only) |
 | 1009 S Highland Ave, Baltimore (Baltimore City) | 0326046472035 | WILLIAMS CHARLES L | $191,206 | MSA death index: MICHELLE D WILLIAMS d. 2010-01-03 | — (gov/non-buyable only) |
-| 2307 Sparrows Point Rd,  (Baltimore County) | 04151501500850 | PORECA DANIEL J JR | $191,142 | MSA death index: DANIEL J PORECA JR d. 1992-01-17 | — (gov/non-buyable only) |
 | 38100 Mount Wolf Rd,  (St. Mary's) | 1905039924 | GUY WILLIAM E | $190,856 | MSA death index: WILLIAM E GUY d. 1992-04-03 | — (gov/non-buyable only) |
 | 38065 Guy Manor Ln,  (St. Mary's) | 1905039967 | GUY WILLIAM E | $190,756 | MSA death index: WILLIAM E GUY d. 1992-04-03 | — (gov/non-buyable only) |
 | 41 Eastern Blvd,  (Baltimore County) | 04151503470010 | SNYDER ROBERT J | $190,563 | MSA death index: ROBERT J SNYDER d. 2014-06-22 | — (gov/non-buyable only) |
-| 2706 North Point Rd,  (Baltimore County) | 04151502853050 | BUTLER AUGUSTA E | $190,323 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 22018 Leitersburg Smithsburg Rd, Smithsburg (Washington) | 2207006683 | HARTMAN JAMES R | $189,842 | MSA death index: JAMES R HARTMAN d. 2003-04-16 | — (gov/non-buyable only) |
-| 3400 Buffalo Rd, New Windsor (Carroll) | 0709009795 | YOUNG REGINALD C JR | $187,696 | MSA death index: REGINALD C YOUNG JR d. 2012-11-14 | Humane Society of Carroll County $27,104 (C-06-CR-22-341-JG) |
 | 6136 Shady Side Rd, Shady Side (Anne Arundel) | 020700000584000 | BROWN CURTIS L | $185,463 | MSA death index: CURTIS L BROWN d. 2010-08-27 | — (gov/non-buyable only) |
 | 44 Ark Rd, Lothian (Anne Arundel) | 020100002444400 | ESTEP DANIEL | $185,364 | MSA death index: DANIEL ESTEP d. 1988-11-17 | — (gov/non-buyable only) |
 | 7923 34Th St, Baltimore (Baltimore County) | 04141402004830 | MUIR KIMBERLY | $184,545 | MSA death index: SAMUEL ND FRAZIER d. 2014-06-14 | EASTCOAST BAIL BONDS $9,655 (C-03-JG-21-000403) |
@@ -672,15 +703,12 @@
 | 9204 Mary Rd, Berlin (Worcester) | 2403018806 | THOMPSON GILBERT WILLIAM | $168,868 | MSA death index: GILBERT WILLIAM THOMPSON d. 2004-07-16 | — (gov/non-buyable only) |
 | 415 Old Riverside Rd, Baltimore (Anne Arundel) | 020504714439600 | WALLS CHARLES R | $168,115 | MSA death index: CHARLES R WALLS d. 2003-07-28 | — (gov/non-buyable only) |
 | , Lothian (Anne Arundel) | 020800090245278 | PHIPPS THOMAS E JR | $167,157 | MSA death index: THOMAS E PHIPPS JR d. 1994-03-04 | J. Marcus Slowiak, P.A. $4,560 (C-02-JG-18-021707); Robin, Dennis R. $9,601 (C-02-JG-19-000278) |
-| 4415 Norfen Rd, Baltimore (Baltimore County) | 04131302850650 | BROWN HEATHER | $166,757 | MSA death index: HEATHER BROWN d. 2013-03-03 | — (gov/non-buyable only) |
 | 112 Roseberry Ave, Salisbury (Wicomico) | 2305066999 | BRADLEY JOHN D | $166,603 | MSA death index: LINDA C BRADLEY d. 2009-11-05 | — (gov/non-buyable only) |
 | 5955 Roosevelt Pl, Bryantown (Charles) | 0908008817 | NEAL JOHN H JR | $165,654 | MSA death index: JOHN H NEAL JR d. 2012-09-16 | — (gov/non-buyable only) |
 | 430 S Law St, Aberdeen (Harford) | 1302019833 | GRANT WOODROW B JR | $165,344 | MSA death index: JANICE M GRANT d. 2012-02-13 | — (gov/non-buyable only) |
 | 16611 Cresap Mill Rd Se, Oldtown (Allegany) | 0116012475 | DAVIS GEORGE E LE ETAL | $165,200 | MSA death index: NORMA J DAVIS d. 2010-08-14 | — (gov/non-buyable only) |
 | 912 National Hwy, Lavale (Allegany) | 0129010463 | BURKEY JOHN E-M KATHRYN | $165,100 | MSA death index: JOHN E M KATHRYN BURKEY d. 2007-11-18 | — (gov/non-buyable only) |
 | 10401 Grosvenor Pl, Rockville (Montgomery) | 160401937663 | MCGUIRE CATHERINE T | $165,056 | MSA death index: CATHERINE T MCGUIRE d. 2007-01-01 | — (gov/non-buyable only) |
-| 8549 Pioneer Dr, Severn (Anne Arundel) | 020491206620800 | MORTON KENNETH | $164,639 | MSA death index: KENNETH MORTON d. 2008-12-13 | — (gov/non-buyable only) |
-| 8311 Bear Creek Dr,  (Baltimore County) | 04121202085077 | BUTLER AUGUSTA E | $164,423 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 109 E 6Th St, Frederick (Frederick) | 1102029995 | PARKER JOHN S & LINDA | $164,296 | MSA death index: LINDA PARKER d. 2009-04-13 | — (gov/non-buyable only) |
 | 1516 E 36Th St, Baltimore (Baltimore City) | 0309243970F098 | COTTMAN WAYNE T | $163,683 | MSA death index: DEBORAH COTTMAN d. 2011-09-26 | — (gov/non-buyable only) |
 | 1624 Burnwood Rd, Baltimore (Baltimore City) | 0327095267O510 | PAYNE ROBERT A. | $161,529 | MSA death index: ROBERT A PAYNE d. 2011-09-26 | — (gov/non-buyable only) |
@@ -694,7 +722,6 @@
 | 442 E 28Th St, Baltimore (Baltimore City) | 0312173846022 | BLACKWELL JAMES | $155,126 | MSA death index: ANNIE BLACKWELL d. 2003-03-10 | — (gov/non-buyable only) |
 | 1534 Stonewood Rd, Baltimore (Baltimore City) | 0327095267O160 | JACKSON MICHAEL A | $154,492 | MSA death index: MICHAEL A JACKSON d. 2013-11-29 | — (gov/non-buyable only) |
 | 10534 Assateague Rd, Berlin (Worcester) | 2403015149 | LAYTON RAYMOND S SR | $154,270 | MSA death index: RAYMOND S LAYTON SR d. 2004-01-15 | — (gov/non-buyable only) |
-| 100 Mount Savage Rd Nw, Frostburg (Allegany) | 0111004296 | KELLY FRANCIS P ET UX | $154,142 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 346 E 27Th St, Baltimore (Baltimore City) | 0312173844003 | CAMPBELL SHARON L. | $153,772 | MSA death index: SHARON L CAMPBELL d. 2006-02-12 | SINAI $3,328 (24L16011725) |
 | 3638 Linkwood Dr, Linkwood (Dorchester) | 1014005854 | ROBBINS ROMIE G AND NANCY R | $152,623 | MSA death index: ROMIE G ROBBINS d. 1977-10-20 | — (gov/non-buyable only) |
 | ,  (Frederick) | 1121412414 | SMITH RANDY ALLEN & KAREN LYNN | $152,036 | MSA death index: RANDY ALLEN SMITH d. 2004-07-21 | — (gov/non-buyable only) |
@@ -713,13 +740,11 @@
 | 9614 Magledt Rd,  (Baltimore County) | 04111119053320 | SMITH ROBERT M | $146,088 | MSA death index: NANCY JEANE SMITH d. 2009-08-20 | — (gov/non-buyable only) |
 | 38045 Guy Manor Ln,  (St. Mary's) | 1905039959 | GUY WILLIAM E | $145,356 | MSA death index: WILLIAM E GUY d. 1992-04-03 | — (gov/non-buyable only) |
 | 2258 Southorn Rd, Baltimore (Baltimore County) | 04151511771160 | SMITH ARTHUR L SR | $144,372 | MSA death index: ARLENE SMITH d. 2013-12-08 | — (gov/non-buyable only) |
-| 705 Aldworth Rd,  (Baltimore County) | 04121203023245 | COTTON WILLIAM JOSEPH | $143,922 | MSA death index: WILLIAM JOSEPH COTTON d. 1993-12-26 | — (gov/non-buyable only) |
 | 709 Portland St, Baltimore (Baltimore City) | 0322040685B029 | ALEXANDER ANDRE | $143,747 | MSA death index: ANDRE ALEXANDER d. 1994-11-02 | — (gov/non-buyable only) |
 | 1306 Walker Ave, Baltimore (Baltimore City) | 0327595210C117 | HOLMES ERIC | $143,364 | MSA death index: ERIC HOLMES d. 2008-11-28 | — (gov/non-buyable only) |
 | 1 E Orville Rd,  (Baltimore County) | 04151519072890 | BALCH WILLIAM S JR | $143,314 | MSA death index: WILLIAM S BALCH JR d. 2002-10-08 | — (gov/non-buyable only) |
 | , District Heights (Prince George's) | 17060605659 | KIM YONG O & JONG B (BT) | $142,894 | MSA death index: YONG O KIM d. 2008-04-16 | THC/UDR Domain College Park LLC $56,406 (CAL16-00289) |
 | 1925 Eastfield Rd, Baltimore (Baltimore County) | 04121218035810 | WILLIAMS TERRY G | $142,826 | MSA death index: TERRY G WILLIAMS d. 2006-12-15 | — (gov/non-buyable only) |
-| 3127 Baybriar Rd,  (Baltimore County) | 04121202088100 | BUTLER AUGUSTA E | $142,323 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 4930 Belair Rd, Baltimore (Baltimore City) | 0327025845C001 | EVANS JOE | $140,210 | MSA death index: JOE EVANS d. 2007-04-10 | — (gov/non-buyable only) |
 | 8182 Waterford Rd, Pasadena (Anne Arundel) | 020389610030000 | FORD JOHN W | $138,725 | MSA death index: BARBARA L FORD d. 2014-01-14 | — (gov/non-buyable only) |
 | 23812 Piedmont St Sw, Barton (Allegany) | 0109008616 | MILLER GERALD G | $138,623 | MSA death index: GERALD G MILLER d. 2009-04-05 | — (gov/non-buyable only) |
@@ -734,7 +759,6 @@
 | 2027 Jasmine Rd, Baltimore (Baltimore County) | 04121220066990 | HICKS DOLORES L | $133,907 | MSA death index: DOLORES L HICKS d. 2012-12-05 | — (gov/non-buyable only) |
 | , Hampstead (Carroll) | 0708014876 | WHEELER ROBERT LESLIE | $132,660 | MSA death index: ROBERT LESLIE WHEELER d. 2011-01-01 | — (gov/non-buyable only) |
 | 2101 Mcginnes Rd, Crumpton (Queen Anne's) | 1807015194 | MCDONOUGH SUE ANN | $131,851 | MSA death index: SUE ANN MCDONOUGH d. 2001-02-06 | — (gov/non-buyable only) |
-| 198 E Main St, Frostburg (Allegany) | 0112010613 | KELLY FRANCIS P ET UX | $131,842 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 20944 Golden Thompson Rd, Avenue (St. Mary's) | 1907008759 | FAUNCE MARY V | $128,600 | MSA death index: MARY FAUNCE V d. 2014-11-07 | — (gov/non-buyable only) |
 | 104 Robinson Dr, Stevensville (Queen Anne's) | 1804050037 | BOARDLEY CHARLETTE MICHELLE | $128,461 | MSA death index: SHARON DELORES ROBINSON d. 2013-04-18 | — (gov/non-buyable only) |
 | 6112 Clarks Ln,  (Baltimore County) | 04090906101530 | TAYLOR CARL E | $128,229 | MSA death index: CARL E TAYLOR d. 2010-02-04 | — (gov/non-buyable only) |
@@ -745,7 +769,6 @@
 | 1303 Harkins Rd, Pylesville (Harford) | 1304043766 | SMITH CHRISTOPHER M | $125,500 | MSA death index: CHRISTOPHER M SMITH d. 2009-05-30 | — (gov/non-buyable only) |
 | 317 Craft St, Salisbury (Wicomico) | 2305035988 | COLLINS BYARD W JR | $125,487 | MSA death index: PHYLLIS D COLLINS d. 2012-05-20 | — (gov/non-buyable only) |
 | 10031 Piney Mountain Rd Sw, Eckhart (Allegany) | 0124009602 | MCKENZIE MARY E LE | $125,054 | MSA death index: MARY E MCKENZIE d. 2013-04-29 | — (gov/non-buyable only) |
-| 7719 Eastdale Rd, Baltimore (Baltimore County) | 04151513201920 | REARDON JOHN H | $124,778 | MSA death index: MARY D REARDON d. 2009-09-28 | — (gov/non-buyable only) |
 | 3728 Roland Ave, Baltimore (Baltimore City) | 0313023553022 | O'BRIEN FRANCIS W | $123,547 | MSA death index: FRANCIS W O'BRIEN d. 1985-08-24 | — (gov/non-buyable only) |
 | 307 Leeanne Rd, Essex (Baltimore County) | 04151516450530 | PIERCE JAMES E | $123,453 | MSA death index: MARY M PIERCE d. 2010-01-28 | — (gov/non-buyable only) |
 | 20132 Leitersburg Pike, Hagerstown (Washington) | 2209011692 | BARNHART DAVID W | $122,720 | MSA death index: DAVID W BARNHART d. 2004-04-24 | — (gov/non-buyable only) |
@@ -786,15 +809,11 @@
 | 1695 Joe Harris Rd, Prince Frederick (Calvert) | 0502010577 | HARRIS MAURICE P | $100,299 | MSA death index: MAURICE P HARRIS d. 2000-08-27 | — (gov/non-buyable only) |
 | 395 Mason Rd, Prince Frederick (Calvert) | 0502015307 | BROOKS LYDIA F | $99,279 | MSA death index: GREGORY BROOKS d. 2011-05-27 | JRCM, LLC d/b/a Judgment Recovery Center of MD $9,056 (C-04-JG-26-000895) |
 | 8 S Rosedale St, Baltimore (Baltimore City) | 0320202230L019 | JOHNSON REGINA L | $97,687 | MSA death index: REGINA L JOHNSON d. 2003-09-24 | — (gov/non-buyable only) |
-| , Mt Savage (Allegany) | 0113007152 | KELLY FRANCIS P ET AL | $97,542 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 1906 Yorkie Ave, Pasadena (Anne Arundel) | 020388609697450 | FERGUSON BEVERLY B | $97,180 | MSA death index: BEVERLY B FERGUSON d. 2009-07-21 | — (gov/non-buyable only) |
-| 87 W Main St, Frostburg (Allegany) | 0111004326 | KELLY FRANCIS P ET UX | $96,742 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
-| 1703 Evergreen Dr,  (Baltimore County) | 04121202085076 | BUTLER AUGUSTA E | $95,423 | MSA death index: AUGUSTA E BUTLER d. 2006-05-23 | — (gov/non-buyable only) |
 | 12230 H G Trueman Rd, Lusby (Calvert) | 0501131915 | SEARS TRACY ELLIOTT | $95,030 | MSA death index: JAMES WILLIAM SEARS II d. 2011-08-24 | — (gov/non-buyable only) |
 | 12419 Hennessy Ln,  (Baltimore County) | 04112300003933 | BROOKS JOHN R | $94,640 | MSA death index: JOHN R BROOKS d. 2012-07-23 | — (gov/non-buyable only) |
 | 612 Regency Dr, Salisbury (Wicomico) | 2313008566 | LEWIS WILLIAM R JR & PAMELA S | $93,865 | MSA death index: PAMELA S LEWIS d. 2012-06-19 | U S A $26,629 (C-22-JG-17-000538); U S A $10,478 (C-22-JG-18-002795); U S A $5,690 (C-22-JG-19-001731); U S A $5,690 (C-22-JG-19-001731) |
 | 15404 Iron Rail St Nw, Mt Savage (Allegany) | 0113008388 | BAKER GARY ET AL | $93,011 | MSA death index: HEATHER BAKER d. 2010-03-08 | — (gov/non-buyable only) |
-| 208 Aydelotte Rd, Salisbury (Wicomico) | 2305101409 | TRADER PEGGY D | $92,043 | MSA death index: PEGGY D TRADER d. 2014-07-19 | U S A $85,657 (C-22-JG-17-001251) |
 | 617 S Camden Ave, Fruitland (Wicomico) | 2316016292 | DONALDS RALPH JR & CYNTHIA J | $91,749 | MSA death index: RALPH DONALDS JR d. 2007-06-11 | — (gov/non-buyable only) |
 | 207 E Chestnut St, Delmar (Wicomico) | 2311007341 | VETRA HENRY W | $91,200 | MSA death index: HENRY W VETRA d. 2011-12-02 | Wilson, Ralph $5,000 (22-L-15-001027) |
 | ,  (Carroll) | 0710006716 | YOUNG BRENDA LEE | $89,926 | MSA death index: BRENDA LEE YOUNG d. 2012-06-14 | — (gov/non-buyable only) |
@@ -858,7 +877,6 @@
 | 162 Chestnut St, Baltimore (Baltimore County) | 04121207000170 | GARNER JEFFREY | $55,520 | MSA death index: JEFFREY GARNER d. 2014-11-26 | — (gov/non-buyable only) |
 | ,  (Charles) | 0907030371 | SPOONER HELEN H | $55,391 | MSA death index: HELEN H SPOONER d. 2007-03-22 | — (gov/non-buyable only) |
 | ,  (Charles) | 0907030398 | SPOONER HELEN H | $55,191 | MSA death index: HELEN H SPOONER d. 2007-03-22 | — (gov/non-buyable only) |
-| , Glen Burnie (Anne Arundel) | 020375090224467 | CASTRUCCIO PETER A | $54,810 | MSA death index: PETER A CASTRUCCIO d. 2013-02-19 | — (gov/non-buyable only) |
 | ,  (Charles) | 0907021011 | GRIMES EVA M & MICHAEL & EDWARD | $54,238 | MSA death index: EVA M GRIMES d. 2005-08-17 | FIA Card Services NA $9,062 (08-L-15-002297) |
 | 911 N Port St, Baltimore (Baltimore City) | 0307011591095 | HILL LOUIS ALONA | $54,105 | MSA death index: LOUIS ALONA HILL d. 2014-11-05 | — (gov/non-buyable only) |
 | ,  (Baltimore County) | 04152000011989 | SMITH JOHN A | $53,819 | MSA death index: ROSEMARY L SMITH d. 2014-05-16 | JUDGMENT GROUP THE $6,666 (C-03-JG-24-004577) |
@@ -872,7 +890,6 @@
 | 2026 Penrose Ave, Baltimore (Baltimore City) | 0320220161070 | CALDWELL WILLIAM | $48,452 | MSA death index: WILLIAM CALDWELL d. 2008-12-18 | — (gov/non-buyable only) |
 | 2201 W Pratt St, Baltimore (Baltimore City) | 0320090239038 | WHITE JONATHAN A | $48,272 | MSA death index: JONATHAN A WHITE d. 2009-03-27 | — (gov/non-buyable only) |
 | , Greensboro (Caroline) | 0602003821 | DENNIS CHARLES H | $48,265 | MSA death index: CHARLES H DENNIS d. 1997-09-07 | — (gov/non-buyable only) |
-| , Glen Burnie (Anne Arundel) | 020375090224466 | CASTRUCCIO PETER A | $48,210 | MSA death index: PETER A CASTRUCCIO d. 2013-02-19 | — (gov/non-buyable only) |
 | 2226 Christian St, Baltimore (Baltimore City) | 0320090696091 | JACKSON PATRICIA A | $47,963 | MSA death index: PATRICIA A JACKSON d. 1998-09-06 | — (gov/non-buyable only) |
 | 27359 Davy Ln,  (Somerset) | 2006100333 | WATERS THEODORE AND BEULAH | $47,785 | MSA death index: THEODORE WATERS d. 1975-06-10 | — (gov/non-buyable only) |
 | 1314 N Main St,  (Carroll) | 0708031525 | WHEELER ROBERT LESLIE | $46,660 | MSA death index: ROBERT LESLIE WHEELER d. 2011-01-01 | — (gov/non-buyable only) |
@@ -914,9 +931,7 @@
 | 1911 Herbert St, Baltimore (Baltimore City) | 0315163207072 | COLEY LEWIS | $27,942 | MSA death index: LEWIS COLEY d. 1974-04-19 | — (gov/non-buyable only) |
 | 10031 Piney Mountain Rd Sw, Eckhart (Allegany) | 0124010104 | MCKENZIE MARY E LE | $27,854 | MSA death index: MARY E MCKENZIE d. 2013-04-29 | — (gov/non-buyable only) |
 | ,  (Somerset) | 2013002991 | WALLACE ALBERT AND ETHEL MAE | $27,023 | MSA death index: ALBERT WALLACE d. 2003-10-23 | — (gov/non-buyable only) |
-| , Earleville (Cecil) | 0801023837 | STEVENS HARRY G & NORMA G | $26,355 | MSA death index: HARRY G STEVENS d. 1993-02-14 | — (gov/non-buyable only) |
 | 919 N Payson St, Baltimore (Baltimore City) | 0316050071036 | HUTCHINSON JOAN | $26,189 | MSA death index: JOAN HUTCHINSON d. 2006-09-18 | — (gov/non-buyable only) |
-| 13605 Bristol Dr Sw, Cresaptown (Allegany) | 0129005788 | WARNER MARIE A ET AL | $25,800 | MSA death index: MARIE A WARNER d. 2003-01-08 | Lavale Sanitary Commission $2,500 (C-01-JG-24-000034) |
 | 42313 Riva Ridge Dr,  (St. Mary's) | 1906036694 | BENNETT KENNETH A & | $25,569 | MSA death index: KENNETH A BENNETT d. 1999-12-02 | — (gov/non-buyable only) |
 | 5705 Smallwood Church Rd,  (Charles) | 0903006166 | RYCE ROBERT M & DORIS E | $25,111 | MSA death index: ROBERT M RYCE d. 1997-10-26 | — (gov/non-buyable only) |
 | ,  (Carroll) | 0709006273 | SMITH CHERYL L | $24,800 | MSA death index: CHERYL L SMITH d. 2008-05-01 | — (gov/non-buyable only) |
@@ -931,7 +946,6 @@
 | ,  (St. Mary's) | 1907032722 | DOUGLAS JAMES F & | $22,577 | MSA death index: BARBARA DOUGLAS d. 2004-05-25 | — (gov/non-buyable only) |
 | 940 Glenwood St, Cumberland (Allegany) | 0104016270 | BISHOP ROGER L ET AL | $22,575 | MSA death index: ANITA R BISHOP d. 2008-09-27 | — (gov/non-buyable only) |
 | 940 Oaklawn Ave, Lavale (Allegany) | 0129024138 | MOONEY ROY ELWOOD SR-NORMA LEE LE | $22,396 | MSA death index: ROY ELWOOD SR NORMA LEE MOONEY d. 2009-04-25 | — (gov/non-buyable only) |
-| 2500 Coleridge Dr, Frederick (Frederick) | 1102250284 | BROWN LAVERNE CUMMINGS | $22,373 | MSA death index: LAVERNE CUMMINGS BROWN d. 2006-04-15 | — (gov/non-buyable only) |
 | 5011 Harpers Ferry Rd, Sharpsburg (Washington) | 2201008331 | SNYDER ROBERT G | $22,012 | MSA death index: ROBERT G SNYDER d. 1992-07-25 | — (gov/non-buyable only) |
 | 1617 Carswell St, Baltimore (Baltimore City) | 0309174129045 | JOYNER RICHARD | $21,967 | MSA death index: RICHARD JOYNER d. 2001-11-20 | — (gov/non-buyable only) |
 | 1711 Baker St, Baltimore (Baltimore City) | 0315080021025 | COATES KEVIN | $21,693 | MSA death index: KEVIN COATES d. 2005-05-18 | — (gov/non-buyable only) |
@@ -950,7 +964,6 @@
 | 3709 Patterson Ave, Baltimore (Baltimore County) | 04030303090011 | BURTON ANTHONY | $19,080 | MSA death index: ANTHONY BURTON d. 2012-06-08 | — (gov/non-buyable only) |
 | 3709 Patterson Ave, Baltimore (Baltimore County) | 04030303090012 | BURTON ANTHONY | $19,080 | MSA death index: ANTHONY BURTON d. 2012-06-08 | — (gov/non-buyable only) |
 | 628 N Gilmor St, Baltimore (Baltimore City) | 0316090110012 | REID ETAL TYRONE A | $18,974 | MSA death index: LUCILLE REID d. 1977-09-05 | — (gov/non-buyable only) |
-| 129 Arbutus Ave,  (Baltimore County) | 04010112002131 | LAWRENCE CATHERINE S | $18,901 | MSA death index: CATHERINE S LAWRENCE d. 1982-06-27 | — (gov/non-buyable only) |
 | , Oakland (Garrett) | 1210091905 | KING RODNEY R | $18,656 | MSA death index: RODNEY R KING d. 1996-06-22 | — (gov/non-buyable only) |
 | 1913 E Oliver St, Baltimore (Baltimore City) | 0308101496007 | BARKSDALE MICHAEL | $18,085 | MSA death index: MICHAEL BARKSDALE d. 2007-04-23 | — (gov/non-buyable only) |
 | 2227 Prentiss Pl, Baltimore (Baltimore City) | 0308131570082 | COLEY LEWIS | $17,942 | MSA death index: LEWIS COLEY d. 1974-04-19 | — (gov/non-buyable only) |
@@ -959,20 +972,14 @@
 | 11742 Beechwood St, Princess Anne (Somerset) | 2015007516 | O'DEA THOMAS J III | $17,643 | MSA death index: THOMAS J O'DEA III d. 2009-04-09 | — (gov/non-buyable only) |
 | 1128 N Longwood St, Baltimore (Baltimore City) | 0316202448027 | YOUNG ARTHUR L | $17,626 | MSA death index: ARTHUR L YOUNG d. 2014-08-05 | — (gov/non-buyable only) |
 | 8281 New Hope Rd, Willards (Wicomico) | 2314011749 | CURTIS BERNARD T | $17,343 | MSA death index: BERNARD T CURTIS d. 2012-04-28 | — (gov/non-buyable only) |
-| 12541 Richfield Ave Nw, Corriganville (Allegany) | 0120004886 | FETTERS CLARA E | $16,725 | MSA death index: CLARA E FETTERS d. 1989-08-28 | — (gov/non-buyable only) |
-| 13607 Bristol Dr Sw, Cresaptown (Allegany) | 0129005761 | WARNER MARIE A LE | $16,500 | MSA death index: MARIE A WARNER d. 2003-01-08 | Lavale Sanitary Commission $2,500 (C-01-JG-24-000034) |
 | 11399A Kittys Corner Rd, Cordova (Talbot) | 2104153898 | SEDGWICK ROBERT L | $15,962 | MSA death index: ROBERT L SEDGWICK d. 1984-11-30 | — (gov/non-buyable only) |
 | 2808 Louisiana Ave,  (Baltimore County) | 04131316600561 | SCHMIDT LOUIS S | $15,552 | MSA death index: LOUIS S SCHMIDT d. 2005-10-09 | — (gov/non-buyable only) |
 | 1818 N Dallas St, Baltimore (Baltimore City) | 0308041101078 | PALMER CYNTHIA | $15,497 | MSA death index: CYNTHIA PALMER d. 2011-12-08 | — (gov/non-buyable only) |
-| , Frostburg (Allegany) | 0111007589 | KELLY FRANCIS P ET UX | $15,042 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 9524 Mary Rd, Berlin (Worcester) | 2403018814 | THOMPSON GILBERT WILLIAM | $14,668 | MSA death index: GILBERT WILLIAM THOMPSON d. 2004-07-16 | — (gov/non-buyable only) |
 | 3020 Westwood Ave, Baltimore (Baltimore City) | 0315052426011 | GALLOWAY CHARLES LEONARD | $14,172 | MSA death index: CHARLES LEONARD GALLOWAY d. 2014-12-27 | — (gov/non-buyable only) |
 | 806 Alvin Ave, Salisbury (Wicomico) | 2305018102 | AUSTIN GARY L & KIMBERLY | $13,919 | MSA death index: KIMBERLY AUSTIN d. 2009-10-23 | — (gov/non-buyable only) |
 | 2014 Wilhelm St, Baltimore (Baltimore City) | 0320100273080 | THOMPSON NOAH | $13,665 | MSA death index: NOAH THOMPSON d. 2014-07-20 | — (gov/non-buyable only) |
-| , Frostburg (Allegany) | 0111007597 | KELLY FRANCIS P ET UX | $13,342 | MSA death index: FRANCIS P KELLY d. 2007-03-02 | Jennings Run/wills Creek Sanitary District $3,828 (C-01-JG-19-000768) |
 | 17400 Breakneck Rd Ne, Flintstone (Allegany) | 0121003484 | FRY MARY EDNA | $13,081 | MSA death index: MARY EDNA FRY d. 2010-08-12 | — (gov/non-buyable only) |
-| ,  (Baltimore County) | 04111113076670 | CARTER MELVIN J | $12,988 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
-| 75 Ayers Aly, Lonaconing (Allegany) | 0110003237 | RITCHIE JAMES P | $12,863 | MSA death index: JAMES P RITCHIE d. 2012-01-22 | Georges Creek Sanitary District $7,768 (C-01-JG-23-000525) |
 | 8805 Billingsley Rd, White Plains (Charles) | 0906052061 | FOX KENNETH S & VALERIE A | $12,331 | MSA death index: KENNETH S FOX d. 2013-06-20 | — (gov/non-buyable only) |
 | , Catonsville (Baltimore County) | 04010102570050 | BENNETT BARBARA M | $11,945 | MSA death index: BARBARA M BENNETT d. 2011-01-08 | Sawyer Property Mgmt Of MD L L C $5,455 (03-L-15-008441) |
 | 1131 N Carey St, Baltimore (Baltimore City) | 0316160055C016 | HARLEY JAMES E | $11,766 | MSA death index: JAMES E HARLEY d. 1999-06-13 | — (gov/non-buyable only) |
@@ -1004,7 +1011,6 @@
 | 49 Keithley Ln, Elkton (Cecil) | 0803029115 | SEGRAVES DOUGHTON & MARY F | $7,527 | MSA death index: MARY F SEGRAVES d. 1999-08-17 | — (gov/non-buyable only) |
 | , Elkton (Cecil) | 0803029123 | SEGRAVES DOUGHTON & MARY F | $7,527 | MSA death index: MARY F SEGRAVES d. 1999-08-17 | — (gov/non-buyable only) |
 | 1810 Maxwell Ave,  (Baltimore County) | 04121206057681 | MILLER KIMBERLY F | $7,500 | MSA death index: JOHN M MILLER SR d. 2013-10-11 | — (gov/non-buyable only) |
-| 14432 Amcelle St Sw, Cumberland (Allegany) | 0106021352 | INGRAM WILLIAM J LE ET AL | $7,324 | MSA death index: WILLIAM J INGRAM d. 1978-12-23 | — (gov/non-buyable only) |
 | ,  (Baltimore County) | 04020218721041 | RUSSELL VERNON E | $7,300 | MSA death index: VERNON E RUSSELL d. 2012-10-12 | — (gov/non-buyable only) |
 | 1429 Jewell Rd, Dunkirk (Calvert) | 0503012743 | HUGHES BERNARD F | $7,246 | MSA death index: IRENE HUGHES d. 1988-08-04 | Albright, Henry H $18,422 (04-L-15-000975); ALBRIGHT, HENRY H $18,432 (C-04-JG-23-000394) |
 | , Crisfield (Somerset) | 2007138636 | FOSTER ROBERT A & PATTY U | $7,170 | MSA death index: ROBERT A FOSTER d. 2005-07-31 | — (gov/non-buyable only) |
@@ -1014,8 +1020,6 @@
 | , Crisfield (Somerset) | 2007113188 | CORBIN DONALD S AND SHARON R | $6,792 | MSA death index: DONALD S CORBIN d. 1985-12-28 | — (gov/non-buyable only) |
 | , Severn (Anne Arundel) | 020474103511550 | MALECKI JOSEPH W | $6,767 | MSA death index: JOSEPH W MALECKI d. 1990-11-11 | — (gov/non-buyable only) |
 | 2546 Edmondson Ave, Baltimore (Baltimore City) | 0316072377E001 | KIM MIKE | $6,184 | MSA death index: MIKE KIM d. 1989-07-02 | — (gov/non-buyable only) |
-| , Severn (Anne Arundel) | 020415501863400 | CASTRUCCIO PETER A | $5,810 | MSA death index: PETER A CASTRUCCIO d. 2013-02-19 | — (gov/non-buyable only) |
-| 4052 Back Shelltown Rd,  (Somerset) | 2003052060 | CROSS GEORGE W AND JANET E | $5,651 | MSA death index: GEORGE W CROSS d. 2012-01-05 | — (gov/non-buyable only) |
 | ,  (Baltimore County) | 04080803002500 | MILLER JANE E | $5,600 | MSA death index: JANE E MILLER d. 2010-10-01 | — (gov/non-buyable only) |
 | 822 Bumble Bee Rd, Accident (Garrett) | 1206003990 | MCKENZIE CLINTON J JR | $5,000 | MSA death index: CLINTON J MCKENZIE JR d. 2012-04-02 | Yanoff, David $15,000 (C-11-CV-20-000037) |
 | 1723 N Chapel St, Baltimore (Baltimore City) | 0308191458088 | COLEY LEWIS | $4,942 | MSA death index: LEWIS COLEY d. 1974-04-19 | — (gov/non-buyable only) |
@@ -1035,7 +1039,6 @@
 | 333 Stinson St, Baltimore (Baltimore City) | 0320062183018 | JOHNSON LLOYD | $3,031 | MSA death index: CELESTINE JOHNSON d. 1996-03-18 | — (gov/non-buyable only) |
 | 3842 Stockton Rd, Pocomoke (Worcester) | 2401007157 | YOUNG JOHN W & HELEN F | $2,958 | MSA death index: HELEN F YOUNG d. 2014-12-09 | — (gov/non-buyable only) |
 | 326 W Chesapeake Ave, Crisfield (Somerset) | 2007114915 | WHITTINGTON JAMES H AND | $2,915 | MSA death index: JAMES H WHITTINGTON d. 1995-12-10 | — (gov/non-buyable only) |
-| , Kingsville (Baltimore County) | 04112000005285 | CARTER MELVIN J | $2,888 | MSA death index: KATHY A CARTER d. 1990-04-02 | Clinical Associates P A $4,312 (03-L-18-004888) |
 | 2432 E Preston St, Baltimore (Baltimore City) | 0308151520014 | DIXON WILLIAM E. | $2,749 | MSA death index: WILLIAM E DIXON d. 2009-03-24 | — (gov/non-buyable only) |
 | 11384 San Gabriel Ct, Lusby (Calvert) | 0501113046 | PETERSON SHIRLEY O & | $2,493 | MSA death index: SHIRLEY O PETERSON d. 2010-10-21 | — (gov/non-buyable only) |
 | , Bivalve (Wicomico) | 2312005334 | INSLEY RICHARD C & | $2,345 | MSA death index: RICHARD C INSLEY d. 2010-08-20 | — (gov/non-buyable only) |
@@ -1054,13 +1057,10 @@
 | 925 Glenwood St, Cumberland (Allegany) | 0104010132 | YORK JAMES T | $754 | MSA death index: JAMES T YORK d. 1999-07-11 | — (gov/non-buyable only) |
 | 1307 Maywood Ave, Baltimore (Baltimore County) | 04092500009447 | SULLIVAN JOHN DORSEY | $727 | MSA death index: JOHN DORSEY SULLIVAN d. 2014-07-01 | — (gov/non-buyable only) |
 | ,  (Charles) | 0901007572 | HOPKINS STUART A & MARGARET A | $698 | MSA death index: MARGARET A HOPKINS d. 2006-05-16 | — (gov/non-buyable only) |
-| ,  (Somerset) | 2008151091 | HOLLAND CLYDE J AND LYNDA | $634 | MSA death index: CLYDE J HOLLAND d. 2012-06-03 | — (gov/non-buyable only) |
 | ,  (Baltimore County) | 04151600009537 | ABRAMS JAMES A | $600 | MSA death index: JAMES A ABRAMS d. 1996-01-11 | — (gov/non-buyable only) |
 | , Mechanicsville (St. Mary's) | 1905066174 | GUY WILLIAM EDWARD & | $556 | MSA death index: WILLIAM EDWARD GUY d. 1992-04-03 | — (gov/non-buyable only) |
 | ,  (Baltimore County) | 04121203037367 | SOUDERS RANDY | $455 | MSA death index: RANDY SOUDERS d. 2013-08-10 | — (gov/non-buyable only) |
 | 3596 Gorman Rd, Oakland (Garrett) | 1216000701 | RILEY SHIRLEY A | $440 | MSA death index: SHIRLEY A RILEY d. 1996-05-16 | — (gov/non-buyable only) |
-| , Toddville (Dorchester) | 1010005809 | WICKWIRE DAVID LEE | $400 | MSA death index: DAVID LEE WICKWIRE d. 1973-09-01 | — (gov/non-buyable only) |
-| , Cumberland (Allegany) | 0106030564 | INGRAM WILLIAM J LE ET AL | $324 | MSA death index: WILLIAM J INGRAM d. 1978-12-23 | — (gov/non-buyable only) |
 | 1026 Town Point Rd, Chesapeake City (Cecil) | 0802032287 | WAGNER GEORGE C JR & DAWN | $290 | MSA death index: DAWN WAGNER d. 2007-04-21 | — (gov/non-buyable only) |
 | 2454 Davidsonville Rd, Gambrills (Anne Arundel) | 020200090222536 | THOMPSON MICHAEL E | $170 | MSA death index: SUSAN S THOMPSON d. 2006-07-28 | — (gov/non-buyable only) |
 | 102 Foxridge Dr, Havre De Grace (Harford) | 1302070871 | THOMPSON KENNETH PARKER | $137 | MSA death index: DEBORAH L THOMPSON d. 2005-02-17 | — (gov/non-buyable only) |
