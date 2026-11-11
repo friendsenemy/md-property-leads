@@ -1,0 +1,88 @@
+{
+ "account": "0904017102",
+ "estates": [
+  {
+   "estate_number": "13511",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "11/06/2007",
+   "date_closed": "03/03/2008",
+   "decedent": "ANDREW JOHN LEWIS JR.",
+   "date_of_death": "8/31/2007",
+   "date_of_filing": "11/06/2007",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ANDREW J. LEWIS III",
+     "address": "7000 COPPER LANE, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/06/2007",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED MAY 29,",
+     "pages": 1973
+    },
+    {
+     "filed": "11/06/2007",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 6
+    },
+    {
+     "filed": "11/06/2007",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/06/2007",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/06/2007",
+     "n": 5,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/06/2007",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2007-11-06",
+   "interested_persons": [
+    {
+     "name": "ANDREW J. LEWIS III",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 67,
+   "probate_age_days": 118,
+   "days_since_last_docket": 6945,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-11",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1922872967",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1922872967",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ANDREW J LEWIS"
+  }
+ ]
+}
