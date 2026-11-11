@@ -9,6 +9,8 @@ statewide) and asks three death sources whether the OWNER is dead:
                                               probate_import / probate_lookup)
   3. Obituary leads                          (data/leads.json: Legacy obituaries
                                               already matched to SDAT parcels)
+  4. Find a Grave / Legacy backfill           (data/judgments/deaths_graves.tsv,
+                                              hand-scored from the browser runs)
 
 Owners found in any source become data/judgments/deceased.json plus a
 markdown brief, sorted by equity.  No network calls; everything is local.
@@ -30,6 +32,7 @@ from engine2.owner_parse import split_individuals
 
 LEADS = os.path.join("data", "judgments", "leads.json")
 OBITS = os.path.join("data", "leads.json")
+GRAVES = os.path.join("data", "judgments", "deaths_graves.tsv")
 OUT_JSON = os.path.join("data", "judgments", "deceased.json")
 OUT_MD = os.path.join("data", "judgments", "deceased.md")
 
@@ -84,6 +87,28 @@ def load_obits():
     return out
 
 
+def load_graves():
+    """account -> [death dicts] from the hand-scored Find a Grave / Legacy backfill
+    (data/judgments/deaths_graves.tsv: account, decedent, dod, relation, confidence)."""
+    out = {}
+    try:
+        f = open(GRAVES)
+    except Exception:
+        return out
+    header = None
+    for line in f:
+        parts = line.rstrip("\n").split("\t")
+        if header is None:
+            header = parts
+            continue
+        if len(parts) < 5 or not parts[0].strip():
+            continue
+        acct = re.sub(r"\s+", "", parts[0])
+        out.setdefault(acct, []).append({"source": "Find a Grave", "decedent": parts[1], "dod": parts[2],
+                                         "relation": parts[3], "confidence": parts[4].strip() or "MEDIUM"})
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-equity", type=int, default=0)
@@ -94,6 +119,7 @@ def main():
     rows = load_rows()
     probate = load_probate()
     obits = load_obits()
+    graves = load_graves()
     deaths = DeathIndex()
     deaths.load()
 
@@ -112,6 +138,8 @@ def main():
         if ob:
             found.append({"source": "Obituary", "decedent": ob.get("full_name"), "dod": ob.get("date_of_death"),
                           "url": ob.get("obituary_url"), "survived_by": ob.get("survived_by"), "confidence": "HIGH"})
+        for g in graves.get(acct, []):
+            found.append(dict(g))
         cc = COUNTY_CODE.get(r.get("county") or "", "")
         ty = transfer_year(r)
         for person in split_individuals(r.get("owner") or "", r.get("owner2") or ""):
@@ -170,8 +198,8 @@ def main():
 
     with open(OUT_MD, "w") as f:
         f.write(f"# Judgment parcels with a dead owner — {date.today()}\n\n")
-        f.write(f"{len(rows):,} open-judgment parcels checked against the Register of Wills files, obituary leads and the "
-                f"1973–2014 state death index. {len(hits)} owners dead.\n\n")
+        f.write(f"{len(rows):,} open-judgment parcels checked against the Register of Wills files, obituary leads, the Find a Grave "
+                f"backfill and the 1973–2014 state death index. {len(hits)} owners dead.\n\n")
         for conf in ("HIGH", "MEDIUM", "LOW"):
             sub = [h for h in hits if h["best_confidence"] == conf]
             if not sub:
