@@ -1,13 +1,13 @@
 name: USPS Vacancy Check
 
 # Asks USPS whether each "Likely vacant" lead in Ray's counties is flagged
-# vacant by the mail carrier. Max 50 lookups a run, each address re-checked
-# every 60 days. Does nothing until the USPS_CLIENT_ID / USPS_CLIENT_SECRET
+# vacant by the mail carrier. Hourly, 55 lookups a run (the free quota), every
+# county, each address re-checked every 60 days. Does nothing until the USPS_CLIENT_ID / USPS_CLIENT_SECRET
 # repo secrets exist.
 
 on:
   schedule:
-    - cron: '17 9 * * *'   # daily 5:17 AM EDT; exits in seconds when nothing is due
+    - cron: '23 * * * *'   # hourly; USPS allows 60 lookups an hour, so ~1,300 a day for free
   workflow_dispatch:
     inputs:
       max:
@@ -18,7 +18,7 @@ on:
         default: '60'
       counties:
         description: 'County files, comma-separated'
-        default: 'charles,calvert,st-mary-s,prince-george-s,anne-arundel'
+        default: 'all'
 
 permissions:
   contents: write
@@ -43,9 +43,9 @@ jobs:
           USPS_CLIENT_SECRET: ${{ secrets.USPS_CLIENT_SECRET }}
           SMARTY_AUTH_ID: ${{ secrets.SMARTY_AUTH_ID }}
           SMARTY_AUTH_TOKEN: ${{ secrets.SMARTY_AUTH_TOKEN }}
-          USPS_MAX_PER_RUN: ${{ github.event.inputs.max || '50' }}
+          USPS_MAX_PER_RUN: ${{ github.event.inputs.max || '55' }}
           USPS_MIN_SCORE: ${{ github.event.inputs.min_score || '60' }}
-          USPS_COUNTIES: ${{ github.event.inputs.counties || 'charles,calvert,st-mary-s,prince-george-s,anne-arundel' }}
+          USPS_COUNTIES: ${{ github.event.inputs.counties || 'all' }}
         run: python -m engine2.usps_vacancy
       - name: Commit results
         run: |

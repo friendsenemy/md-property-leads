@@ -18,6 +18,7 @@ quietly so the workflow never fails.
   python -m engine2.usps_vacancy
 """
 
+import glob
 import json
 import logging
 import os
@@ -31,7 +32,7 @@ TITLE_DIR = os.path.join("data", "title")
 OUT_PATH = os.path.join("data", "usps", "vacancy.json")
 API = os.environ.get("USPS_API_BASE", "https://apis.usps.com")
 COUNTIES = os.environ.get(
-    "USPS_COUNTIES", "charles,calvert,st-mary-s,prince-george-s,anne-arundel"
+    "USPS_COUNTIES", "all"
 ).split(",")
 MAX_PER_RUN = int(os.environ.get("USPS_MAX_PER_RUN", "50"))
 RECHECK_DAYS = int(os.environ.get("USPS_RECHECK_DAYS", "60"))
@@ -74,7 +75,11 @@ def vacancy_score(r):
 def candidates(done):
     now = datetime.now(timezone.utc)
     out = []
-    for slug in COUNTIES:
+    slugs = COUNTIES
+    if COUNTIES == ["all"]:
+        slugs = sorted(os.path.basename(f)[:-5] for f in glob.glob(os.path.join(TITLE_DIR, "*.json"))
+                       if os.path.basename(f) not in ("people.json", "summary.json", "top.json"))
+    for slug in slugs:
         path = os.path.join(TITLE_DIR, f"{slug.strip()}.json")
         if not os.path.exists(path):
             log.warning("no %s", path)
@@ -98,21 +103,25 @@ def candidates(done):
     if os.path.exists(jpath):
         seen = {o[2] for o in out}
         for r in json.load(open(jpath)).get("rows", []):
-            if r["id"] in seen or (r.get("equity_est") or 0) < 100000:
+            if r["id"] in seen or r.get("occupied"):
                 continue
             buy = [j for j in r.get("judgments") or [] if j.get("buyable")]
-            if not buy:
-                continue
             prev = done.get(r["id"])
             if prev and now - datetime.fromisoformat(prev["checked"]) < timedelta(days=RECHECK_DAYS):
                 continue
             zip5 = (r.get("zip") or "")[:5]
             if not r.get("address") or not zip5.isdigit():
                 continue
-            alist = any(j.get("confidence") == "HIGH" for j in buy) and sum(j["amount"] for j in buy) <= 25000 and r["equity_est"] >= 150000
-            sc = 59 if alist else 45           # below the title-scan "likely vacant" tier so those still go first
+            alist = bool(buy) and any(j.get("confidence") == "HIGH" for j in buy) and sum(j["amount"] for j in buy) <= 25000 and (r.get("equity_est") or 0) >= 150000
+            # below the title-scan "likely vacant" tier so those still go first; then A-list, then any
+            # buyable judgment, then the gov-lien-only parcels, ordered by equity inside each band
+            sc = 59 if alist else (45 if buy else 40)
             if r.get("mail_state") not in ("MD", ""):
                 sc += 5
+            if "DEAD_OWNER" in (r.get("tags") or []) or "CO_OWNER_DEAD" in (r.get("tags") or []):
+                sc += 8
+            if (r.get("equity_est") or 0) < 60000:
+                sc -= 15                       # still checked, but last
             out.append((sc, int(r.get("equity_est") or 0), r["id"], r["address"], r.get("city") or "", zip5))
     out.sort(reverse=True)
     return out
