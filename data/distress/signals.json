@@ -46,7 +46,7 @@
   "ZERO_WATER_USAGE": 1677,
   "ZONING_CASE": 900,
   "STALE_TAX_CERT": 596,
-  "ZOMBIE_DOT": 12
+  "ZOMBIE_DOT": 10
  },
  "by_account": {
   "0802016451": [
@@ -291761,14 +291761,6 @@
     "county": "Anne Arundel",
     "address": "1925 WEST ST, ANNAPOLIS 21401",
     "detail": "Sold at the 2023 tax sale to GBIF LLC ($1,167 owed), still on the 2024 list(s), and no Right of Redemption suit filed in 3 years \u2014 the certificate is void (TP 14-833) and nobody is enforcing the lien"
-   },
-   {
-    "kind": "ZOMBIE_DOT",
-    "source": "Land Records + tax-sale list (engine2.creditor_watch browser pass)",
-    "date": "2019-02-25",
-    "county": "Anne Arundel",
-    "address": "1925 WEST ST, ANNAPOLIS 21401",
-    "detail": "Deed of trust 32899/102 (2019-02-25, see Land Records) never released, taxes delinquent, and no substitute trustee or foreclosure of record: the lender is not protecting its own lien"
    }
   ],
   "020411090238426": [
@@ -291827,14 +291819,6 @@
     "county": "Anne Arundel",
     "address": "127 CARVEL BEACH RD, BALTIMORE 21226",
     "detail": "Sold at the 2023 tax sale to GBIF LLC ($6,203 owed), still on the 2024 list(s), and no Right of Redemption suit filed in 3 years \u2014 the certificate is void (TP 14-833) and nobody is enforcing the lien"
-   },
-   {
-    "kind": "ZOMBIE_DOT",
-    "source": "Land Records + tax-sale list (engine2.creditor_watch browser pass)",
-    "date": "2021",
-    "county": "Anne Arundel",
-    "address": "127 CARVEL BEACH RD, BALTIMORE 21226",
-    "detail": "Deed of trust 37296/421 (2021, see Land Records) never released, taxes delinquent, and no substitute trustee or foreclosure of record \u2014 last activity prior DOT 28738/93 (2015): the lender is not protecting its own lien"
    }
   ],
   "020457190075270": [

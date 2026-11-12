@@ -2,22 +2,6 @@
  "generated": "2026-11-12",
  "rows": [
   {
-   "account": "020600090040199",
-   "county": "Anne Arundel",
-   "owner": "SAMARAS KAREN E",
-   "address": "1925 WEST ST, ANNAPOLIS 21401",
-   "dot": "32899/102",
-   "dot_date": "2019-02-25",
-   "lender": "see Land Records",
-   "assessed": 1899200.0,
-   "last_activity": "",
-   "note": "unreleased DOT, no substitute trustee / foreclosure in Land Records name search (browser pass 2026-11-12)",
-   "owner_mail": "13 SILVERWOOD, ANNAPOLIS MD 21401",
-   "owner_occupied_mail": false,
-   "est_mortgage": 0,
-   "est_equity": 1913625
-  },
-  {
    "account": "17070757799",
    "county": "Prince George's",
    "owner": "THOMAS AUDREY LEE",
@@ -146,22 +130,6 @@
    "est_equity": 447342
   },
   {
-   "account": "020317516791400",
-   "county": "Anne Arundel",
-   "owner": "ROGALL ALBERT F JR",
-   "address": "127 CARVEL BEACH RD, BALTIMORE 21226",
-   "dot": "37296/421",
-   "dot_date": "2021",
-   "lender": "see Land Records",
-   "assessed": 511467.0,
-   "last_activity": "prior DOT 28738/93 (2015)",
-   "note": "unreleased DOT, no substitute trustee / foreclosure in Land Records name search (browser pass 2026-11-12)",
-   "owner_mail": "966 NABS CREEK RD, GLEN BURNIE MD 21060",
-   "owner_occupied_mail": false,
-   "est_mortgage": 108048,
-   "est_equity": 471762
-  },
-  {
    "account": "17090882258",
    "county": "Prince George's",
    "owner": "MITCHELL GARY",
@@ -193,5 +161,6 @@
    "est_mortgage": 0,
    "est_equity": 1055040
   }
- ]
+ ],
+ "note": "Samaras (1925 West St) and Rogall (127 Carvel Beach) removed 2026-11-12: their unreleased DOTs are on the owner's other parcel (13 Silverwood / 966 Nabbs Creek), not the tax-delinquent one."
 }
