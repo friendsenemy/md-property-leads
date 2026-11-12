@@ -3,6 +3,122 @@
  "parcels_checked": 15020,
  "hits": [
   {
+   "account": "160703254505",
+   "address": "",
+   "city": "Chevy Chase",
+   "county": "Montgomery",
+   "owner": "SMALL SHIRLEY S",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 3069000,
+   "equity_est": 2713235,
+   "total_owed": 355764.91,
+   "transfer_date": "2005.12.14",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "SHIRLEY SMALL",
+     "dod": "2025-12",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 45
+  },
+  {
+   "account": "020200005037200",
+   "address": "3260 Kitty Duvall Dr",
+   "city": "Annapolis",
+   "county": "Anne Arundel",
+   "owner": "STEELE JOHN T",
+   "owner2": "STEELE LESLIE J",
+   "mail_state": "VA",
+   "assessed": 1516200,
+   "equity_est": 1514614,
+   "total_owed": 1586.4,
+   "transfer_date": "2022.02.08",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JOHN THOMAS STEELE",
+     "dod": "2023-02",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 58
+  },
+  {
+   "account": "04082500014022",
+   "address": "220 Hampton Park Cir",
+   "city": "Lutherville",
+   "county": "Baltimore County",
+   "owner": "MORTIMER BRUCE R",
+   "owner2": "MORTIMER KAREN KLINE",
+   "mail_state": "MD",
+   "assessed": 1254300,
+   "equity_est": 1254300,
+   "total_owed": 0.0,
+   "transfer_date": "2017.12.04",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "BRUCE R MORTIMER",
+     "dod": "2021",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 43
+  },
+  {
+   "account": "1103128407",
+   "address": "207 W Main St",
+   "city": "Middletown",
+   "county": "Frederick",
+   "owner": "WOLFE TERRY E & GLORIA J",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 1277300,
+   "equity_est": 1245727,
+   "total_owed": 31572.65,
+   "transfer_date": "2001.11.29",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "GLORIA JEAN BISSETT WOLFE",
+     "dod": "2026-10",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 51
+  },
+  {
    "account": "1507009127",
    "address": "7281 Wilkins Ln",
    "city": "Chestertown",
@@ -142,6 +258,35 @@
    "score": 40
   },
   {
+   "account": "2410371805",
+   "address": "9812 Marthas Landing Dr",
+   "city": "Ocean City",
+   "county": "Worcester",
+   "owner": "BALCERZAK A EDWIN SR & REGINA M",
+   "owner2": "BALCERZAK & A EDWIN BALCERZAK JR",
+   "mail_state": "MD",
+   "assessed": 790900,
+   "equity_est": 738576,
+   "total_owed": 52324.38,
+   "transfer_date": "2002.07.31",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "REGINA M BALCERZAK",
+     "dod": "2026-04",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 70
+  },
+  {
    "account": "020347490101294",
    "address": "810 Bulkhead Ct",
    "city": "Annapolis",
@@ -200,6 +345,35 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 47
+  },
+  {
+   "account": "17033708351",
+   "address": "8205 Hollow Tree Ln",
+   "city": "Upper Marlboro",
+   "county": "Prince George's",
+   "owner": "BROOKS MARVIN N",
+   "owner2": "WATSON ANGELA B",
+   "mail_state": "MD",
+   "assessed": 755700,
+   "equity_est": 682394,
+   "total_owed": 73305.87,
+   "transfer_date": "2013.08.16",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "MARVIN NOEL BROOKS",
+     "dod": "2018",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 3,
+   "score": 95
   },
   {
    "account": "0902003554",
@@ -291,6 +465,35 @@
    "score": 31
   },
   {
+   "account": "020700100052800",
+   "address": "4941 Hine Dr",
+   "city": "Shady Side",
+   "county": "Anne Arundel",
+   "owner": "LOWE HUBERT O",
+   "owner2": "LOWE REBECCA H",
+   "mail_state": "MD",
+   "assessed": 626200,
+   "equity_est": 623332,
+   "total_owed": 2868.45,
+   "transfer_date": "1998.09.01",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "REBECCA HICKS LOWE",
+     "dod": "2024",
+     "relation": "spouse",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 33
+  },
+  {
    "account": "17122971950",
    "address": "612 Mace Dr",
    "city": "Fort Washington",
@@ -319,6 +522,64 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 70
+  },
+  {
+   "account": "020669690246694",
+   "address": "69 Primrose Hill Ln",
+   "city": "Annapolis",
+   "county": "Anne Arundel",
+   "owner": "BRYANT ROBERT L",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 589800,
+   "equity_est": 589056,
+   "total_owed": 744.29,
+   "transfer_date": "2018.06.05",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "ROBERT LEONARD BRYANT",
+     "dod": "2023",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 35
+  },
+  {
+   "account": "2225040015",
+   "address": "12922 Nittany Lion Cir",
+   "city": "Hagerstown",
+   "county": "Washington",
+   "owner": "BROWN IRA WILLIAM",
+   "owner2": "JAY BROWN",
+   "mail_state": "MD",
+   "assessed": 595500,
+   "equity_est": 581570,
+   "total_owed": 13930.25,
+   "transfer_date": "2008.07.07",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "IRA WILLIAM BROWN",
+     "dod": "2024-07",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 5,
+   "score": 63
   },
   {
    "account": "0326046467026K",
@@ -409,6 +670,64 @@
    "buyable_judgments": [],
    "all_judgments": 4,
    "score": 73
+  },
+  {
+   "account": "020460501049127",
+   "address": "1876 Montreal Rd",
+   "city": "Severn",
+   "county": "Anne Arundel",
+   "owner": "SORTO MARTIN N",
+   "owner2": "HERNANDEZ SISSI D",
+   "mail_state": "MD",
+   "assessed": 563300,
+   "equity_est": 559748,
+   "total_owed": 3551.98,
+   "transfer_date": "2018.04.24",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "MARTIN NOE SORTO",
+     "dod": "2022-08",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 38
+  },
+  {
+   "account": "020254190063691",
+   "address": "1823 Hyman Ln",
+   "city": "Crofton",
+   "county": "Anne Arundel",
+   "owner": "OWEN THOMAS D",
+   "owner2": "OWEN RHONDA L",
+   "mail_state": "MD",
+   "assessed": 562100,
+   "equity_est": 556036,
+   "total_owed": 6063.98,
+   "transfer_date": "2004.08.16",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "RHONDA LEIGH OWEN",
+     "dod": "2026-02",
+     "relation": "spouse",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 50
   },
   {
    "account": "1107243359",
@@ -506,6 +825,35 @@
    "score": 65
   },
   {
+   "account": "020800000800800",
+   "address": "5111 Sands Rd",
+   "city": "Lothian",
+   "county": "Anne Arundel",
+   "owner": "DRAYER PHILIP WORTHINGTON",
+   "owner2": "BONES-DRAYER NYRMA",
+   "mail_state": "MD",
+   "assessed": 520600,
+   "equity_est": 518349,
+   "total_owed": 2251.39,
+   "transfer_date": "2009.11.03",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "PHILIP W DRAYER",
+     "dod": "2022",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 34
+  },
+  {
    "account": "17033867967",
    "address": "2203 Turleygreen Pl",
    "city": "Upper Marlboro",
@@ -566,6 +914,35 @@
    "score": 33
   },
   {
+   "account": "020695690235448",
+   "address": "104 Waterline Ct",
+   "city": "Annapolis",
+   "county": "Anne Arundel",
+   "owner": "MCDANIEL REBECCA J",
+   "owner2": "ALLEN ERIC M",
+   "mail_state": "MD",
+   "assessed": 505600,
+   "equity_est": 498835,
+   "total_owed": 6765.41,
+   "transfer_date": "2017.07.31",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "REBECCA JANE HOFFMAN MCDANIEL",
+     "dod": "2024-08",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 63
+  },
+  {
    "account": "17033653656",
    "address": "2714 Moores Plains Blvd",
    "city": "Upper Marlboro",
@@ -617,6 +994,13 @@
    "usps_vacant": null,
    "deaths": [
     {
+     "source": "Legacy",
+     "decedent": "CHANG SHIK OH",
+     "dod": "2022-10",
+     "relation": "owner",
+     "confidence": "HIGH"
+    },
+    {
      "source": "MSA death index",
      "decedent": "CHANG S OH",
      "dod": "2010-03-19",
@@ -631,6 +1015,209 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 80
+  },
+  {
+   "account": "0905026199",
+   "address": "13200 Rock Point Rd",
+   "city": "Newburg",
+   "county": "Charles",
+   "owner": "KIMMONS JOHN H",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 491000,
+   "equity_est": 472939,
+   "total_owed": 18061.33,
+   "transfer_date": "1997.09.10",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JOHN HENRY KIMMONS",
+     "dod": "2024",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 40
+  },
+  {
+   "account": "161203399727",
+   "address": "25466 Paine St",
+   "city": "Damascus",
+   "county": "Montgomery",
+   "owner": "STEWART SHARON L",
+   "owner2": "DAVIS TIMOTHY W",
+   "mail_state": "MD",
+   "assessed": 473300,
+   "equity_est": 470279,
+   "total_owed": 3021.27,
+   "transfer_date": "2020.01.02",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "SHARON LEE HOWARD STEWART",
+     "dod": "2024-03",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 65
+  },
+  {
+   "account": "2403010457",
+   "address": "10715 Griffin Rd",
+   "city": "Berlin",
+   "county": "Worcester",
+   "owner": "STRAKA GEORGE M",
+   "owner2": "FOR LIFE",
+   "mail_state": "MD",
+   "assessed": 462200,
+   "equity_est": 461585,
+   "total_owed": 615.06,
+   "transfer_date": "2024.11.08",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "GEORGE M STRAKA",
+     "dod": "2025-04",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 33
+  },
+  {
+   "account": "1303151743",
+   "address": "3402 Carvale Dr",
+   "city": "Aberdeen",
+   "county": "Harford",
+   "owner": "SHELTON GERALD W",
+   "owner2": "SHELTON HOPE YVONNE",
+   "mail_state": "MD",
+   "assessed": 451500,
+   "equity_est": 450291,
+   "total_owed": 1209.2,
+   "transfer_date": "2002.09.03",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "GERALD WAYNE SHELTON",
+     "dod": "2017-10",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 36
+  },
+  {
+   "account": "1304017307",
+   "address": "2320 Birmingham Ct",
+   "city": "Jarrettsville",
+   "county": "Harford",
+   "owner": "DRAGUNAS JOSEPH J",
+   "owner2": "DRAGUNAS DIANE M",
+   "mail_state": "MD",
+   "assessed": 451100,
+   "equity_est": 445656,
+   "total_owed": 5444.21,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JOSEPH JOHN DRAGUNAS SR",
+     "dod": "2024-01",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 65
+  },
+  {
+   "account": "020457190211807",
+   "address": "2474 Ivy Landing Way",
+   "city": "Odenton",
+   "county": "Anne Arundel",
+   "owner": "KLINE JERRY LEE",
+   "owner2": "KLINE MARY ELLEN",
+   "mail_state": "MD",
+   "assessed": 442400,
+   "equity_est": 440387,
+   "total_owed": 2013.23,
+   "transfer_date": "2011.07.13",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "MARY ELLEN KLINE",
+     "dod": "2024-04",
+     "relation": "spouse",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 45
+  },
+  {
+   "account": "04152200006143",
+   "address": "4425 North Point Blvd",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "BOCEK NORMAN M",
+   "owner2": "KIDD CHARLES W JR/BONNIE R",
+   "mail_state": "MD",
+   "assessed": 441100,
+   "equity_est": 425624,
+   "total_owed": 15476.18,
+   "transfer_date": "1996.01.14",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "NORMAN M BOCEK",
+     "dod": "2024-09",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 35
   },
   {
    "account": "1803015149",
@@ -670,6 +1257,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 67
+  },
+  {
+   "account": "160702194360",
+   "address": "5500 Friendship Blvd",
+   "city": "Chevy Chase",
+   "county": "Montgomery",
+   "owner": "MOLINA JOSE M & A M",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 430000,
+   "equity_est": 421464,
+   "total_owed": 8535.91,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JOSE MARIA MOLINA",
+     "dod": "2023-02",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 3,
+   "score": 65
   },
   {
    "account": "04111107001960",
@@ -731,6 +1347,13 @@
    "usps_vacant": null,
    "deaths": [
     {
+     "source": "Legacy",
+     "decedent": "JAMES HANSFORD ELGIN JR",
+     "dod": "2011-12",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    },
+    {
      "source": "MSA death index",
      "decedent": "JAMES H ELGIN JR",
      "dod": "2011-12-13",
@@ -745,6 +1368,41 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 65
+  },
+  {
+   "account": "0910006759",
+   "address": "2600 Butterfly Pl",
+   "city": "Indian Head",
+   "county": "Charles",
+   "owner": "DOTSON HELEN TREADER HENRY",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 418400,
+   "equity_est": 415718,
+   "total_owed": 2682.38,
+   "transfer_date": "2012.11.30",
+   "title_flags": [
+    "ABSENTEE",
+    "MAIL_MISMATCH",
+    "NO_HOMESTEAD",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_SOLD"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "HELEN TREADER DOTSON",
+     "dod": "2025-07",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 18
   },
   {
    "account": "0907062265",
@@ -836,6 +1494,80 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 43
+  },
+  {
+   "account": "160901754753",
+   "address": "18324 Quondal Ct",
+   "city": "Gaithersburg",
+   "county": "Montgomery",
+   "owner": "CHRISTIAN JAMES SR & HELEN",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 405200,
+   "equity_est": 396704,
+   "total_owed": 8496.05,
+   "transfer_date": "2003.10.21",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Obituary",
+     "decedent": "JAMES ALBORN CHRISTIAN",
+     "dod": "2026",
+     "url": "https://www.legacy.com/us/obituaries/name/james-christian-obituary?id=62954443",
+     "survived_by": "his devoted wife of 34 years, Melodie Christian, and his loving children: Terri Clayton (Benjamin), Ashley Christian (Fernando), Thomas Christian, Jackson Christian, Joseph Jameson, and Timothy Jameson",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [
+    {
+     "case": "460964V",
+     "creditor": "",
+     "amount": 2827.52,
+     "entry": "12/21/2018",
+     "expires": "2030-12-21"
+    },
+    {
+     "case": "479012V",
+     "creditor": "",
+     "amount": 3688.9,
+     "entry": "02/07/2020",
+     "expires": "2032-02-07"
+    }
+   ],
+   "all_judgments": 3,
+   "score": 48
+  },
+  {
+   "account": "2102104393",
+   "address": "8735 Dawson Rd",
+   "city": "St. Michaels",
+   "county": "Talbot",
+   "owner": "ROE RICHARD N",
+   "owner2": "ROE KIMBERLY A",
+   "mail_state": "MD",
+   "assessed": 404800,
+   "equity_est": 392303,
+   "total_owed": 12496.82,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "RICHARD N ROE SR",
+     "dod": "2023-12",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 57
   },
   {
    "account": "1102218348",
@@ -1027,6 +1759,42 @@
    "score": 70
   },
   {
+   "account": "17060647339",
+   "address": "2014 Shadyside Ave",
+   "city": "Suitland",
+   "county": "Prince George's",
+   "owner": "WHITE THOMAS J & WILLIAM H ETAL",
+   "owner2": "WHITE JAMES P JR & MICHAEL A ETAL",
+   "mail_state": "MD",
+   "assessed": 394600,
+   "equity_est": 374942,
+   "total_owed": 19657.79,
+   "transfer_date": "1999.05.28",
+   "title_flags": [
+    "ABSENTEE",
+    "ET_AL",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OLD_STRUCTURE",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "THOMAS JOSEPH WHITE",
+     "dod": "2025",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 8,
+   "score": 80
+  },
+  {
    "account": "020100008251848",
    "address": "826 Central Ave E",
    "city": "Edgewater",
@@ -1057,6 +1825,35 @@
    "score": 48
   },
   {
+   "account": "2410315514",
+   "address": "716 Bahia Rd",
+   "city": "Ocean City",
+   "county": "Worcester",
+   "owner": "PIORUNSKI JAMES BERNARD &",
+   "owner2": "PIORUNSKI PAMELA",
+   "mail_state": "MD",
+   "assessed": 369800,
+   "equity_est": 364235,
+   "total_owed": 5564.95,
+   "transfer_date": "2014.03.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JAMES B PIORUNSKI",
+     "dod": "2022-12",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 50
+  },
+  {
    "account": "17121208719",
    "address": "418 Winslow Rd",
    "city": "Oxon Hill",
@@ -1085,6 +1882,35 @@
    "buyable_judgments": [],
    "all_judgments": 4,
    "score": 68
+  },
+  {
+   "account": "04022200014978",
+   "address": "4641 Kings Mills Way",
+   "city": "Owings Mills",
+   "county": "Baltimore County",
+   "owner": "RIGGS MICHAEL R",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 366500,
+   "equity_est": 362081,
+   "total_owed": 4418.84,
+   "transfer_date": "2006.01.24",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "MICHAEL R RIGGS SR",
+     "dod": "2025",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 35
   },
   {
    "account": "020360390016257",
@@ -1274,6 +2100,35 @@
    "score": 95
   },
   {
+   "account": "04021800007294",
+   "address": "4127 Century Towne Rd",
+   "city": "Randallstown",
+   "county": "Baltimore County",
+   "owner": "JOHNSON DELORES E",
+   "owner2": "JOHNSON RONALD E JR",
+   "mail_state": "MD",
+   "assessed": 346100,
+   "equity_est": 346100,
+   "total_owed": 0.0,
+   "transfer_date": "1989.06.16",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "DELORES E JOHNSON",
+     "dod": "2023-06",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 48
+  },
+  {
    "account": "1908069999",
    "address": "20652 Old Gravel Ln",
    "city": "Lexington Park",
@@ -1301,6 +2156,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 33
+  },
+  {
+   "account": "04042100002345",
+   "address": "37 Woodhollow Ct",
+   "city": "Owings Mills",
+   "county": "Baltimore County",
+   "owner": "LANG JEFFREY W JR",
+   "owner2": "LANG AMANDA E",
+   "mail_state": "MD",
+   "assessed": 340300,
+   "equity_est": 340300,
+   "total_owed": 0.0,
+   "transfer_date": "2017.09.11",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JEFFREY WILLIAM LANG",
+     "dod": "2022-04",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 43
   },
   {
    "account": "0129001723",
@@ -1386,6 +2270,116 @@
    "score": 63
   },
   {
+   "account": "04152200015296",
+   "address": "11 Windward Way",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "GALANTI WILLIAM A",
+   "owner2": "GALANTI PATRICIA L",
+   "mail_state": "MD",
+   "assessed": 329800,
+   "equity_est": 327118,
+   "total_owed": 2681.94,
+   "transfer_date": "2003.01.02",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "WILLIAM ANDREW GALANTI",
+     "dod": "2024-05",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 33
+  },
+  {
+   "account": "0501131036",
+   "address": "2090 Peace Ct",
+   "city": "St Leonard",
+   "county": "Calvert",
+   "owner": "BROOKS WAYNE R",
+   "owner2": "BROOKS BEVERLY A",
+   "mail_state": "MD",
+   "assessed": 348900,
+   "equity_est": 326899,
+   "total_owed": 22001.25,
+   "transfer_date": "1986.02.11",
+   "title_flags": [
+    "ABSENTEE",
+    "CO_OWNER_DECEASED",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "WAYNE ROLAND BROOKS",
+     "dod": "2024",
+     "relation": "owner",
+     "confidence": "HIGH"
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "WAYNE R BROOKS",
+     "dod": "2007-01-13",
+     "age": 42,
+     "confidence": "MEDIUM",
+     "points": 60,
+     "same_name_deaths": 5
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 77
+  },
+  {
+   "account": "1116349623",
+   "address": "3614 Bittle Rd",
+   "city": "Myersville",
+   "county": "Frederick",
+   "owner": "WHYTE FRANK JAMES III & MARCIA",
+   "owner2": "",
+   "mail_state": "TX",
+   "assessed": 334900,
+   "equity_est": 325830,
+   "total_owed": 9070.47,
+   "transfer_date": "2003.07.17",
+   "title_flags": [
+    "ABSENTEE",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OUT_OF_STATE",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "FRANK JAMES WHYTE III",
+     "dod": "2011-07",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 58
+  },
+  {
    "account": "0908020124",
    "address": "12750 La Plata Rd",
    "city": "Waldorf",
@@ -1461,6 +2455,100 @@
    "score": 92
   },
   {
+   "account": "160901549762",
+   "address": "16 Sparrow Valley Ct",
+   "city": "Gaithersburg",
+   "county": "Montgomery",
+   "owner": "BUENVIAJE ABRAHAM A",
+   "owner2": "BUENVIAJE IRRINE LINGAT",
+   "mail_state": "MD",
+   "assessed": 322300,
+   "equity_est": 320676,
+   "total_owed": 1624.18,
+   "transfer_date": "2018.08.01",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "ABRAHAM ALBANO BUENVIAJE",
+     "dod": "2023-06",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 33
+  },
+  {
+   "account": "0501177478",
+   "address": "12707 Austin Ln",
+   "city": "Lusby",
+   "county": "Calvert",
+   "owner": "MARSH PAUL M",
+   "owner2": "MARSH LISA",
+   "mail_state": "MD",
+   "assessed": 321000,
+   "equity_est": 318519,
+   "total_owed": 2481.02,
+   "transfer_date": "2015.07.09",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "PAUL MALCOLM MARSH",
+     "dod": "2024-08",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 48
+  },
+  {
+   "account": "161202344931",
+   "address": "24230 Newbury Rd",
+   "city": "Gaithersburg",
+   "county": "Montgomery",
+   "owner": "MAGAHA RAY D & L C",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 322700,
+   "equity_est": 316592,
+   "total_owed": 6107.75,
+   "transfer_date": "0000.00.00",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "RAY DOUGLAS MAGAHA",
+     "dod": "2026-05",
+     "relation": "owner",
+     "confidence": "HIGH"
+    },
+    {
+     "source": "Legacy",
+     "decedent": "LINDA MAGAHA",
+     "dod": "",
+     "relation": "co-owner",
+     "confidence": "MEDIUM"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 38
+  },
+  {
    "account": "1401246763",
    "address": "7670 Stony Creek Ln",
    "city": "Ellicott City",
@@ -1522,6 +2610,93 @@
    "score": 58
   },
   {
+   "account": "160603143311",
+   "address": "13105 Millhaven Pl",
+   "city": "Germantown",
+   "county": "Montgomery",
+   "owner": "RYFFEL GEORGE G II",
+   "owner2": "MIDGLEY LAURIE A",
+   "mail_state": "MD",
+   "assessed": 320000,
+   "equity_est": 305952,
+   "total_owed": 14048.08,
+   "transfer_date": "2015.01.16",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "GEORGE GUSTAVE RYFFEL II",
+     "dod": "2026-03",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 47
+  },
+  {
+   "account": "020610501272802",
+   "address": "1075 Cedar Ridge Ct",
+   "city": "Annapolis",
+   "county": "Anne Arundel",
+   "owner": "GOODE MELINDA A",
+   "owner2": "GOODE ROBERT E",
+   "mail_state": "MD",
+   "assessed": 313200,
+   "equity_est": 304200,
+   "total_owed": 8999.61,
+   "transfer_date": "1996.11.07",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "ROBERT EUGENE GOODE",
+     "dod": "2019-12",
+     "relation": "spouse",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 58
+  },
+  {
+   "account": "0805110254",
+   "address": "385 Calvary Ln",
+   "city": "Rising Sun",
+   "county": "Cecil",
+   "owner": "OIKEMUS EDWARD A JR &",
+   "owner2": "OIKEMUS TRACY F",
+   "mail_state": "MD",
+   "assessed": 301400,
+   "equity_est": 300756,
+   "total_owed": 643.94,
+   "transfer_date": "2001.12.14",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "TRACY FAYE OIKEMUS",
+     "dod": "2026-01",
+     "relation": "spouse",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 28
+  },
+  {
    "account": "17103864865",
    "address": "603 7Th St",
    "city": "Laurel",
@@ -1558,6 +2733,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 68
+  },
+  {
+   "account": "020457190084993",
+   "address": "2408 Forest Edge Ct",
+   "city": "Odenton",
+   "county": "Anne Arundel",
+   "owner": "GAMS FREDERICK W",
+   "owner2": "GAMS EUGENIA",
+   "mail_state": "MD",
+   "assessed": 306000,
+   "equity_est": 292600,
+   "total_owed": 13400.26,
+   "transfer_date": "2005.06.28",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "FREDERICK W GAMS",
+     "dod": "2026",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 50
   },
   {
    "account": "020304190074600",
@@ -1656,6 +2860,122 @@
    "buyable_judgments": [],
    "all_judgments": 8,
    "score": 68
+  },
+  {
+   "account": "0327224400A017",
+   "address": "6014 Woodcrest Ave",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "HARGROVE PEGGY A (LIFE)",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 288000,
+   "equity_est": 285064,
+   "total_owed": 2936.12,
+   "transfer_date": "2026.10.27",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "PEGGY ANN HARGROVE",
+     "dod": "2026-10",
+     "relation": "life tenant",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 45
+  },
+  {
+   "account": "2403015122",
+   "address": "10514 Assateague Rd",
+   "city": "Berlin",
+   "county": "Worcester",
+   "owner": "LAYTON RAYMOND S SR &",
+   "owner2": "LAYTON LOU ANN",
+   "mail_state": "MD",
+   "assessed": 309000,
+   "equity_est": 284170,
+   "total_owed": 24829.71,
+   "transfer_date": "1999.06.30",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "RAYMOND STANLEY LAYTON",
+     "dod": "2004-01",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 57
+  },
+  {
+   "account": "04131900004919",
+   "address": "2038 Putnam Rd",
+   "city": "Halethorpe",
+   "county": "Baltimore County",
+   "owner": "RITTER JOHN W",
+   "owner2": "RITTER SUSAN H",
+   "mail_state": "MD",
+   "assessed": 325900,
+   "equity_est": 280807,
+   "total_owed": 45093.15,
+   "transfer_date": "1993.10.05",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JOHN WILLIAM RITTER",
+     "dod": "2018-05",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 55
+  },
+  {
+   "account": "020341818568420",
+   "address": "1014 Upton Rd",
+   "city": "Glen Burnie",
+   "county": "Anne Arundel",
+   "owner": "KAUFFMAN CYNTHIA M",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 282200,
+   "equity_est": 280652,
+   "total_owed": 1548.23,
+   "transfer_date": "2001.05.09",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "CYNTHIA M KAUFFMAN",
+     "dod": "2026-04",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 18
   },
   {
    "account": "04060603037120",
@@ -1812,6 +3132,41 @@
    "score": 70
   },
   {
+   "account": "0906210473",
+   "address": "11314D Golden Eagle Pl",
+   "city": "Waldorf",
+   "county": "Charles",
+   "owner": "BENNETT BRUCE W & LINDA D",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 329800,
+   "equity_est": 268546,
+   "total_owed": 61254.12,
+   "transfer_date": "1993.01.12",
+   "title_flags": [
+    "ABSENTEE",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "BRUCE WEBB BENNETT",
+     "dod": "2023",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 3,
+   "score": 80
+  },
+  {
    "account": "0906131492",
    "address": "3901 Huntington Woods Dr",
    "city": "Waldorf",
@@ -1840,6 +3195,93 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 60
+  },
+  {
+   "account": "1904015762",
+   "address": "38419 Chaptico Rd",
+   "city": "",
+   "county": "St. Mary's",
+   "owner": "THOMAS AGNES E",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 261100,
+   "equity_est": 260295,
+   "total_owed": 805.25,
+   "transfer_date": "2014.08.05",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "AGNES ELIZABETH THOMAS",
+     "dod": "2024-12",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 18
+  },
+  {
+   "account": "0306171730040",
+   "address": "2934 E Baltimore St",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "YOUNG MATTHEW R",
+   "owner2": "YOUNG ANNA",
+   "mail_state": "MD",
+   "assessed": 262600,
+   "equity_est": 259503,
+   "total_owed": 3096.97,
+   "transfer_date": "2013.05.22",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "MATTHEW R YOUNG",
+     "dod": "2022-04",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 48
+  },
+  {
+   "account": "020100090045317",
+   "address": "223 Polling House Rd",
+   "city": "Harwood",
+   "county": "Anne Arundel",
+   "owner": "TICE JOSIAH H",
+   "owner2": "TICE E JOAN",
+   "mail_state": "MD",
+   "assessed": 285100,
+   "equity_est": 256591,
+   "total_owed": 28508.98,
+   "transfer_date": "2000.09.25",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JOSIAH HAMMOND TICE JR",
+     "dod": "2021-12",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 50
   },
   {
    "account": "04021800006357",
@@ -1871,6 +3313,44 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 50
+  },
+  {
+   "account": "0302081772022",
+   "address": "410 S Wolfe St",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "ATWELL JANICE K",
+   "owner2": "ATWELL DOUGLAS L",
+   "mail_state": "MD",
+   "assessed": 275800,
+   "equity_est": 255295,
+   "total_owed": 20505.27,
+   "transfer_date": "2007.06.08",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JANICE KASSAKATIS ATWELL",
+     "dod": "2010-03",
+     "relation": "owner",
+     "confidence": "HIGH"
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "JANICE K ATWELL",
+     "dod": "2010-03-12",
+     "age": 58,
+     "confidence": "MEDIUM",
+     "points": 70,
+     "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 5,
+   "score": 73
   },
   {
    "account": "2410133440",
@@ -1923,6 +3403,13 @@
      "dod": "2026",
      "url": "https://www.legacy.com/us/obituaries/name/james-sullivan-obituary?id=62759934",
      "survived_by": "will live on in everyone fortunate enough to have known him",
+     "confidence": "HIGH"
+    },
+    {
+     "source": "Legacy",
+     "decedent": "JAMES L SULLIVAN",
+     "dod": "2026-10",
+     "relation": "owner",
      "confidence": "HIGH"
     }
    ],
@@ -2022,6 +3509,41 @@
    "score": 23
   },
   {
+   "account": "1119387976",
+   "address": "15625 Barnes Rd",
+   "city": "New Windsor",
+   "county": "Frederick",
+   "owner": "COVELL RICHARD EUGENE JR &",
+   "owner2": "LONG JANET &",
+   "mail_state": "MD",
+   "assessed": 250800,
+   "equity_est": 248402,
+   "total_owed": 2398.0,
+   "transfer_date": "2012.03.27",
+   "title_flags": [
+    "ABSENTEE",
+    "NO_HOMESTEAD",
+    "OLD_STRUCTURE",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_SOLD"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "RICHARD EUGENE COVELL",
+     "dod": "2026-04",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 25
+  },
+  {
    "account": "1014010564",
    "address": "4858 Drawbridge Rd",
    "city": "Cambridge",
@@ -2086,6 +3608,36 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 23
+  },
+  {
+   "account": "0327385460154",
+   "address": "7017 Hamlet Ave",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "JONES BRANDON",
+   "owner2": "JONES GENNIFER",
+   "mail_state": "MD",
+   "assessed": 244300,
+   "equity_est": 232021,
+   "total_owed": 12278.93,
+   "transfer_date": "2019.04.10",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Obituary",
+     "decedent": "Brandon Jones",
+     "dod": "2026-10-19",
+     "url": "https://www.legacy.com/person/brandon-jones-62846176",
+     "survived_by": "",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 45
   },
   {
    "account": "04020219610640",
@@ -2176,6 +3728,41 @@
    "score": 53
   },
   {
+   "account": "1302083191",
+   "address": "313 Seagull Dr",
+   "city": "Aberdeen",
+   "county": "Harford",
+   "owner": "GRAHAM JERALD W SR",
+   "owner2": "GRAHAM ETHEL E",
+   "mail_state": "MD",
+   "assessed": 238400,
+   "equity_est": 227816,
+   "total_owed": 10583.59,
+   "transfer_date": "2014.01.16",
+   "title_flags": [
+    "ABSENTEE",
+    "CARE_OF",
+    "MULTIPLE_INDIVIDUALS",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_SOLD"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "ETHEL ELIZABETH GRAHAM",
+     "dod": "2025-04",
+     "relation": "spouse",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 38
+  },
+  {
    "account": "17111175066",
    "address": "6300 Mister Rd",
    "city": "Brandywine",
@@ -2241,6 +3828,35 @@
    "score": 92
   },
   {
+   "account": "1301281674",
+   "address": "3115 Eden Dr",
+   "city": "Abingdon",
+   "county": "Harford",
+   "owner": "BARTON JEFFREY A",
+   "owner2": "BARTON DEBORAH",
+   "mail_state": "MD",
+   "assessed": 223800,
+   "equity_est": 216788,
+   "total_owed": 7012.02,
+   "transfer_date": "2005.09.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JEFFREY A BARTON",
+     "dod": "2023-08",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 46
+  },
+  {
    "account": "0327184804029",
    "address": "2909 Woodland Ave",
    "city": "Baltimore",
@@ -2270,6 +3886,73 @@
    "score": 31
   },
   {
+   "account": "04141416075425",
+   "address": "7407 Brightside Ave",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "POLING DENNIS",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 219400,
+   "equity_est": 215387,
+   "total_owed": 4013.12,
+   "transfer_date": "2018.02.08",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "DENNIS LEE POLING",
+     "dod": "2026-05",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 30
+  },
+  {
+   "account": "04082000009657",
+   "address": "10598 Topsfield Dr",
+   "city": "Cockeysville",
+   "county": "Baltimore County",
+   "owner": "HOOPER MURRAY F",
+   "owner2": "SHUB JUDITH HOOPER",
+   "mail_state": "MD",
+   "assessed": 449200,
+   "equity_est": 213257,
+   "total_owed": 235943.26,
+   "transfer_date": "1989.08.21",
+   "title_flags": [
+    "ABSENTEE",
+    "CODE_VIOLATIONS",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "REPEAT_CODE_CASES",
+    "STACKED_SIGNALS",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_LISTED"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "MURRAY HOOPER",
+     "dod": "2022-12",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 10,
+   "score": 99
+  },
+  {
    "account": "04151503472620",
    "address": "28 Chandelle Rd",
    "city": "Baltimore",
@@ -2297,6 +3980,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 34
+  },
+  {
+   "account": "0107028768",
+   "address": "14804 Woods Edge Ct Sw",
+   "city": "Cresaptown",
+   "county": "Allegany",
+   "owner": "KIRCHNER JAMES R JR",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 215100,
+   "equity_est": 210892,
+   "total_owed": 4207.93,
+   "transfer_date": "2014.02.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JAMES R KIRCHNER",
+     "dod": "2025-04",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 18
   },
   {
    "account": "0316062528D011",
@@ -2355,6 +4067,13 @@
      "decedent": "JACQUELINE MYRA HENRY CANN",
      "dod": "2019-10-31",
      "relation": "co-owner",
+     "confidence": "HIGH"
+    },
+    {
+     "source": "Legacy",
+     "decedent": "WILLIAM CANN",
+     "dod": "2019-05",
+     "relation": "owner",
      "confidence": "HIGH"
     },
     {
@@ -2434,6 +4153,106 @@
    "score": 48
   },
   {
+   "account": "0901024906",
+   "address": "7754 Crain Hwy",
+   "city": "La Plata",
+   "county": "Charles",
+   "owner": "HANCOCK LOWELL H & CATHERINE E",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 202800,
+   "equity_est": 200871,
+   "total_owed": 1928.52,
+   "transfer_date": "2011.05.11",
+   "title_flags": [
+    "ABSENTEE",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OLD_STRUCTURE",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_SOLD"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "CATHERINE ELIZABETH HANCOCK",
+     "dod": "2015-04",
+     "relation": "co-owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 45
+  },
+  {
+   "account": "04030311015750",
+   "address": "3617 Patterson Ave",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "MONROE CHARLES A JR",
+   "owner2": "CARTER NAIMA L",
+   "mail_state": "MD",
+   "assessed": 204400,
+   "equity_est": 200364,
+   "total_owed": 4035.74,
+   "transfer_date": "2005.11.07",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "CHARLES ANDREW MONROE JR",
+     "dod": "2026-09",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 58
+  },
+  {
+   "account": "1007156510",
+   "address": "107 Buena Vista Ave",
+   "city": "Cambridge",
+   "county": "Dorchester",
+   "owner": "BETTS DAWSON C",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 203800,
+   "equity_est": 197160,
+   "total_owed": 6639.66,
+   "transfer_date": "2024.04.25",
+   "title_flags": [
+    "ABSENTEE",
+    "MAIL_MISMATCH",
+    "NO_HOMESTEAD",
+    "TAX_SALE_SOLD"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "DAWSON C BETTS",
+     "dod": "2024-11",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 28
+  },
+  {
    "account": "04090903672770",
    "address": "8523 Oakleigh Rd",
    "city": "Baltimore",
@@ -2469,6 +4288,35 @@
    "score": 45
   },
   {
+   "account": "0327234429008",
+   "address": "5604 Park Heights Ave",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "GOBER ROSALIND",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 194000,
+   "equity_est": 193508,
+   "total_owed": 491.79,
+   "transfer_date": "2019.06.12",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "ROSALIND D GOBER",
+     "dod": "2021-11",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 30
+  },
+  {
    "account": "2403004090",
    "address": "",
    "city": "Showell",
@@ -2497,6 +4345,35 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 68
+  },
+  {
+   "account": "0316172524018",
+   "address": "3812 Flowerton Rd",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "GAY NIESHA",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 195800,
+   "equity_est": 192094,
+   "total_owed": 3706.02,
+   "transfer_date": "2018.06.07",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "NIESHA KEEMA GAY",
+     "dod": "2025-02",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 30
   },
   {
    "account": "04151501500850",
@@ -2546,6 +4423,35 @@
    "score": 63
   },
   {
+   "account": "0707020287",
+   "address": "1374 Pleasant Valley Rd",
+   "city": "Westminster",
+   "county": "Carroll",
+   "owner": "BOWERSOX DONALD C",
+   "owner2": "BOWERSOX ANGELA GIST",
+   "mail_state": "MD",
+   "assessed": 195600,
+   "equity_est": 189914,
+   "total_owed": 5685.68,
+   "transfer_date": "2008.01.29",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "DONALD CLYDE BOWERSOX",
+     "dod": "2023-03",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 53
+  },
+  {
    "account": "04151518474850",
    "address": "1908 Middleborough Rd",
    "city": "",
@@ -2574,6 +4480,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 23
+  },
+  {
+   "account": "2206000142",
+   "address": "8423 Old National Pike",
+   "city": "Boonsboro",
+   "county": "Washington",
+   "owner": "SEABOLT THURMAN P",
+   "owner2": "SEABOLT TERESA",
+   "mail_state": "MD",
+   "assessed": 187600,
+   "equity_est": 186652,
+   "total_owed": 948.2,
+   "transfer_date": "1991.10.15",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "THURMAN P SEABOLT",
+     "dod": "2026-01",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 28
   },
   {
    "account": "2007120397",
@@ -2628,6 +4563,13 @@
    ],
    "usps_vacant": null,
    "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JOSEPH RICHARD BAUER JR",
+     "dod": "2015-08",
+     "relation": "owner",
+     "confidence": "HIGH"
+    },
     {
      "source": "MSA death index",
      "decedent": "CAROLYN M BAUER",
@@ -2771,6 +4713,35 @@
    "score": 97
   },
   {
+   "account": "0315243100M027",
+   "address": "4033 Hilton Rd",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "DUNKLEY GARFIELD A",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 173700,
+   "equity_est": 170272,
+   "total_owed": 3428.42,
+   "transfer_date": "1997.05.29",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "GARFIELD ASTON DUNKLEY SR",
+     "dod": "2026-04",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 30
+  },
+  {
    "account": "0315223123007",
    "address": "3809 Callaway Ave",
    "city": "Baltimore",
@@ -2802,6 +4773,35 @@
    "score": 73
   },
   {
+   "account": "04070716060054",
+   "address": "20624 Green Rd",
+   "city": "White Hall",
+   "county": "Baltimore County",
+   "owner": "POE HUGH MELVIN",
+   "owner2": "POE ELIZABETH KATHRYN",
+   "mail_state": "MD",
+   "assessed": 169100,
+   "equity_est": 169100,
+   "total_owed": 0.0,
+   "transfer_date": "2019.08.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "HUGH MELVIN POE",
+     "dod": "2022-01",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 28
+  },
+  {
    "account": "04151506000340",
    "address": "9 Contact Ct",
    "city": "",
@@ -2824,6 +4824,72 @@
      "confidence": "HIGH",
      "points": 100,
      "same_name_deaths": 1
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 40
+  },
+  {
+   "account": "0806007368",
+   "address": "324 Porters Bridge Rd",
+   "city": "Colora",
+   "county": "Cecil",
+   "owner": "HAMILTON MICHAEL D",
+   "owner2": "HAMILTON DEBRA M",
+   "mail_state": "MD",
+   "assessed": 212100,
+   "equity_est": 168307,
+   "total_owed": 43792.99,
+   "transfer_date": "2016.07.08",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "DEBRA MARGARET HAMILTON",
+     "dod": "2025-04",
+     "relation": "spouse",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 43
+  },
+  {
+   "account": "0327605210D189",
+   "address": "1636 Walterswood Rd",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "GRAVES ANTHONY",
+   "owner2": "GRAVES JACQUELINE",
+   "mail_state": "MD",
+   "assessed": 168100,
+   "equity_est": 167681,
+   "total_owed": 419.12,
+   "transfer_date": "2010.09.16",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Obituary",
+     "decedent": "Anthony Graves Jr.",
+     "dod": "2026-11-06",
+     "url": "https://www.legacy.com/person/anthony-graves-jr.-62859377",
+     "survived_by": "",
+     "confidence": "HIGH"
+    },
+    {
+     "source": "Legacy",
+     "decedent": "ANTHONY GRAVES JR",
+     "dod": "2026-11",
+     "relation": "owner",
+     "confidence": "HIGH"
     }
    ],
    "conflicts": [],
@@ -2954,6 +5020,42 @@
    "score": 60
   },
   {
+   "account": "04121203038600",
+   "address": "8100 Stratman Rd",
+   "city": "Baltimore",
+   "county": "Baltimore County",
+   "owner": "BARRETT GARY L",
+   "owner2": "BARRETT PATRICIA",
+   "mail_state": "PA",
+   "assessed": 160600,
+   "equity_est": 159975,
+   "total_owed": 625.0,
+   "transfer_date": "2007.06.20",
+   "title_flags": [
+    "ABSENTEE",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "OUT_OF_STATE",
+    "STALE_OWNERSHIP"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "GARY LEE BARRETT SR",
+     "dod": "2023-12",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 53
+  },
+  {
    "account": "1807003420",
    "address": "301 Pine Tree Rd",
    "city": "Chestertown",
@@ -2969,6 +5071,13 @@
    "usps_vacant": null,
    "deaths": [
     {
+     "source": "Legacy",
+     "decedent": "HAYWOOD DAVIS ELLIOTT",
+     "dod": "2014-06",
+     "relation": "owner",
+     "confidence": "HIGH"
+    },
+    {
      "source": "MSA death index",
      "decedent": "HAYWOOD D ELLIOTT",
      "dod": "2014-06-22",
@@ -2983,6 +5092,35 @@
    "buyable_judgments": [],
    "all_judgments": 6,
    "score": 65
+  },
+  {
+   "account": "0316062528J002",
+   "address": "1202 Wildwood Pkwy",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "JENNINGS KENNETH A",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 162300,
+   "equity_est": 158200,
+   "total_owed": 4100.35,
+   "transfer_date": "2015.12.04",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "KENNETH JENNINGS",
+     "dod": "2021-01",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 37
   },
   {
    "account": "0312143827005",
@@ -3074,6 +5212,93 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 23
+  },
+  {
+   "account": "04121212022080",
+   "address": "3305 Wallford Dr",
+   "city": "Dundalk",
+   "county": "Baltimore County",
+   "owner": "MACK KELLY LYNN",
+   "owner2": "BROCKMEYER SANDRA",
+   "mail_state": "MD",
+   "assessed": 154000,
+   "equity_est": 154000,
+   "total_owed": 0.0,
+   "transfer_date": "2021.12.09",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "KELLY MACK",
+     "dod": "2022-01",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 39
+  },
+  {
+   "account": "0907036914",
+   "address": "3340 Livingston Rd",
+   "city": "Indian Head",
+   "county": "Charles",
+   "owner": "TAYLOR DARRYL ANTHONY ETAL",
+   "owner2": "TAYLOR SADONIA A",
+   "mail_state": "MD",
+   "assessed": 155500,
+   "equity_est": 153953,
+   "total_owed": 1547.43,
+   "transfer_date": "2015.12.18",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "SADONIA ANN TAYLOR",
+     "dod": "2019-05",
+     "relation": "parent (etal)",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 40
+  },
+  {
+   "account": "0312173846035",
+   "address": "415 Ilchester Ave",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "REID TYRONE A",
+   "owner2": "REID LUCILLE",
+   "mail_state": "MD",
+   "assessed": 154300,
+   "equity_est": 152274,
+   "total_owed": 2026.37,
+   "transfer_date": "1992.01.20",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "TYRONE ADRIAN REID",
+     "dod": "2023-02",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 45
   },
   {
    "account": "0707079370",
@@ -3413,6 +5638,35 @@
    "score": 28
   },
   {
+   "account": "2305035988",
+   "address": "317 Craft St",
+   "city": "Salisbury",
+   "county": "Wicomico",
+   "owner": "COLLINS BYARD W JR",
+   "owner2": "COLLINS PHYLLIS D",
+   "mail_state": "MD",
+   "assessed": 145800,
+   "equity_est": 125487,
+   "total_owed": 20312.61,
+   "transfer_date": "2007.03.02",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "BYARD WHALEY COLLINS JR",
+     "dod": "2021-10",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 62
+  },
+  {
    "account": "04151513201920",
    "address": "7719 Eastdale Rd",
    "city": "Baltimore",
@@ -3560,6 +5814,44 @@
    "buyable_judgments": [],
    "all_judgments": 6,
    "score": 60
+  },
+  {
+   "account": "0327014198C025",
+   "address": "3003 Overland Ave",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "HOWARD HAROLD T.",
+   "owner2": "HOWARD ANN S.",
+   "mail_state": "MD",
+   "assessed": 140400,
+   "equity_est": 117155,
+   "total_owed": 23245.29,
+   "transfer_date": "1999.10.05",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "HAROLD TIMOTHY HOWARD",
+     "dod": "2016-02",
+     "relation": "owner",
+     "confidence": "HIGH"
+    },
+    {
+     "source": "MSA death index",
+     "decedent": "ANN S HOWARD",
+     "dod": "2014-02-06",
+     "age": 75,
+     "confidence": "MEDIUM",
+     "points": 55,
+     "same_name_deaths": 4
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 50
   },
   {
    "account": "0328014256129",
@@ -3764,6 +6056,71 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 48
+  },
+  {
+   "account": "0106015689",
+   "address": "715 Fayette St",
+   "city": "Cumberland",
+   "county": "Allegany",
+   "owner": "FREY EUGENE L LE",
+   "owner2": "FREY FRANKLIN F",
+   "mail_state": "MD",
+   "assessed": 108900,
+   "equity_est": 108385,
+   "total_owed": 515.04,
+   "transfer_date": "2007.05.15",
+   "title_flags": [
+    "ABSENTEE",
+    "MAIL_MISMATCH",
+    "MULTIPLE_INDIVIDUALS",
+    "NO_HOMESTEAD",
+    "STALE_OWNERSHIP",
+    "TAX_SALE_SOLD"
+   ],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "EUGENE L FREY",
+     "dod": "2009-03",
+     "relation": "life tenant",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 38
+  },
+  {
+   "account": "0129038635",
+   "address": "64 National Hwy",
+   "city": "Lavale",
+   "county": "Allegany",
+   "owner": "BEAULIEU VERNITA M",
+   "owner2": "BEAULIEU MARK W",
+   "mail_state": "MD",
+   "assessed": 112700,
+   "equity_est": 107358,
+   "total_owed": 5341.72,
+   "transfer_date": "2018.09.18",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "VERNITA MONAHAN BEAULIEU",
+     "dod": "2020-03",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 4,
+   "score": 45
   },
   {
    "account": "04111800012782",
@@ -3982,6 +6339,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 25
+  },
+  {
+   "account": "2311017444",
+   "address": "29063 Bryan Brooke Ln",
+   "city": "Salisbury",
+   "county": "Wicomico",
+   "owner": "MEILHAMMER STEVE A",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 104000,
+   "equity_est": 97627,
+   "total_owed": 6372.92,
+   "transfer_date": "2016.07.07",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "STEVE A MEILHAMMER SR",
+     "dod": "2025",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 2,
+   "score": 52
   },
   {
    "account": "2007118236",
@@ -4301,6 +6687,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 50
+  },
+  {
+   "account": "0804003853",
+   "address": "136 Brick Hill Rd",
+   "city": "Elkton",
+   "county": "Cecil",
+   "owner": "CROUSE KYLE DAVID",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 78200,
+   "equity_est": 76591,
+   "total_owed": 1609.06,
+   "transfer_date": "2013.02.12",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "KYLE D CROUSE JR",
+     "dod": "2019-01",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 25
   },
   {
    "account": "1304034112",
@@ -4784,6 +7199,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 28
+  },
+  {
+   "account": "0107023766",
+   "address": "14604 Brant Rd Sw",
+   "city": "Cresaptown",
+   "county": "Allegany",
+   "owner": "DURR ALAN J ET AL",
+   "owner2": "DURR VICKI L",
+   "mail_state": "MD",
+   "assessed": 74100,
+   "equity_est": 59345,
+   "total_owed": 14754.89,
+   "transfer_date": "2007.08.10",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "ALAN JAY DURR",
+     "dod": "2024-10",
+     "relation": "owner",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 3,
+   "score": 55
   },
   {
    "account": "0805006767",
@@ -5974,6 +8418,36 @@
    "score": 72
   },
   {
+   "account": "0308151538025B",
+   "address": "2518 E Biddle St",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "HAYES ANTONIO JAMES",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 12700,
+   "equity_est": 10989,
+   "total_owed": 1711.3,
+   "transfer_date": "2011.05.26",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Obituary",
+     "decedent": "Antonio Hayes",
+     "dod": "",
+     "url": "https://www.legacy.com/us/obituaries/capitalgazette/name/antonio-hayes-obituary?id=62956899",
+     "survived_by": "",
+     "confidence": "HIGH"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "HIGH",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 0
+  },
+  {
    "account": "2007118872",
    "address": "",
    "city": "Crisfield",
@@ -7121,6 +9595,35 @@
    "score": 33
   },
   {
+   "account": "04080808056610",
+   "address": "118 Tregarone Rd",
+   "city": "Lutherville Timonium",
+   "county": "Baltimore County",
+   "owner": "CLARK MICHAEL F",
+   "owner2": "CLARK LISA M",
+   "mail_state": "MD",
+   "assessed": 454800,
+   "equity_est": 450652,
+   "total_owed": 4147.64,
+   "transfer_date": "2019.05.02",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "LISA MARIE CLARK",
+     "dod": "2024",
+     "relation": "spouse",
+     "confidence": "MEDIUM"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 45
+  },
+  {
    "account": "1401266756",
    "address": "5827 Blue Sky",
    "city": "Elkridge",
@@ -7547,6 +10050,35 @@
    "score": 68
   },
   {
+   "account": "17212319945",
+   "address": "8171 Mandan Ter",
+   "city": "Greenbelt",
+   "county": "Prince George's",
+   "owner": "VASQUEZ MARIA A R",
+   "owner2": "RAMIREZ JORGE R T ETAL",
+   "mail_state": "MD",
+   "assessed": 346500,
+   "equity_est": 345507,
+   "total_owed": 993.09,
+   "transfer_date": "2014.03.06",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "MARIA ANTONIA VASQUEZ",
+     "dod": "2025-08",
+     "relation": "owner",
+     "confidence": "MEDIUM"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 43
+  },
+  {
    "account": "0604006291",
    "address": "3315 Choptank Rd",
    "city": "Preston",
@@ -7728,44 +10260,6 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 52
-  },
-  {
-   "account": "0501131036",
-   "address": "2090 Peace Ct",
-   "city": "St Leonard",
-   "county": "Calvert",
-   "owner": "BROOKS WAYNE R",
-   "owner2": "BROOKS BEVERLY A",
-   "mail_state": "MD",
-   "assessed": 348900,
-   "equity_est": 326899,
-   "total_owed": 22001.25,
-   "transfer_date": "1986.02.11",
-   "title_flags": [
-    "ABSENTEE",
-    "CO_OWNER_DECEASED",
-    "MAIL_MISMATCH",
-    "MULTIPLE_INDIVIDUALS",
-    "NO_HOMESTEAD",
-    "STALE_OWNERSHIP"
-   ],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "WAYNE R BROOKS",
-     "dod": "2007-01-13",
-     "age": 42,
-     "confidence": "MEDIUM",
-     "points": 60,
-     "same_name_deaths": 5
-    }
-   ],
-   "conflicts": [],
-   "best_confidence": "MEDIUM",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 77
   },
   {
    "account": "020678905566400",
@@ -8569,37 +11063,6 @@
    "score": 45
   },
   {
-   "account": "0302081772022",
-   "address": "410 S Wolfe St",
-   "city": "Baltimore",
-   "county": "Baltimore City",
-   "owner": "ATWELL JANICE K",
-   "owner2": "ATWELL DOUGLAS L",
-   "mail_state": "MD",
-   "assessed": 275800,
-   "equity_est": 255295,
-   "total_owed": 20505.27,
-   "transfer_date": "2007.06.08",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "JANICE K ATWELL",
-     "dod": "2010-03-12",
-     "age": 58,
-     "confidence": "MEDIUM",
-     "points": 70,
-     "same_name_deaths": 1
-    }
-   ],
-   "conflicts": [],
-   "best_confidence": "MEDIUM",
-   "buyable_judgments": [],
-   "all_judgments": 5,
-   "score": 73
-  },
-  {
    "account": "020325690016389",
    "address": "453 Cornell Ct",
    "city": "Glen Burnie",
@@ -8788,6 +11251,35 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 78
+  },
+  {
+   "account": "0327595210E061",
+   "address": "6406 Loch Raven Blvd",
+   "city": "Baltimore",
+   "county": "Baltimore City",
+   "owner": "MCNEIL JAMES",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 226700,
+   "equity_est": 219256,
+   "total_owed": 7444.19,
+   "transfer_date": "2017.06.13",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JAMES THOMAS MCNEIL",
+     "dod": "2025-09",
+     "relation": "owner",
+     "confidence": "MEDIUM"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 62
   },
   {
    "account": "04010113202960",
@@ -9421,6 +11913,35 @@
    "buyable_judgments": [],
    "all_judgments": 2,
    "score": 55
+  },
+  {
+   "account": "160902754725",
+   "address": "18526 Office Park Dr",
+   "city": "Montgomery Village",
+   "county": "Montgomery",
+   "owner": "BEST JAMES L ET AL",
+   "owner2": "",
+   "mail_state": "MD",
+   "assessed": 190700,
+   "equity_est": 187890,
+   "total_owed": 2810.46,
+   "transfer_date": "1987.12.07",
+   "title_flags": [],
+   "usps_vacant": null,
+   "deaths": [
+    {
+     "source": "Legacy",
+     "decedent": "JAMES L BEST",
+     "dod": "2025-02",
+     "relation": "owner",
+     "confidence": "MEDIUM"
+    }
+   ],
+   "conflicts": [],
+   "best_confidence": "MEDIUM",
+   "buyable_judgments": [],
+   "all_judgments": 1,
+   "score": 18
   },
   {
    "account": "0709009795",
@@ -11125,37 +13646,6 @@
    "buyable_judgments": [],
    "all_judgments": 1,
    "score": 38
-  },
-  {
-   "account": "0327014198C025",
-   "address": "3003 Overland Ave",
-   "city": "Baltimore",
-   "county": "Baltimore City",
-   "owner": "HOWARD HAROLD T.",
-   "owner2": "HOWARD ANN S.",
-   "mail_state": "MD",
-   "assessed": 140400,
-   "equity_est": 117155,
-   "total_owed": 23245.29,
-   "transfer_date": "1999.10.05",
-   "title_flags": [],
-   "usps_vacant": null,
-   "deaths": [
-    {
-     "source": "MSA death index",
-     "decedent": "ANN S HOWARD",
-     "dod": "2014-02-06",
-     "age": 75,
-     "confidence": "MEDIUM",
-     "points": 55,
-     "same_name_deaths": 4
-    }
-   ],
-   "conflicts": [],
-   "best_confidence": "MEDIUM",
-   "buyable_judgments": [],
-   "all_judgments": 1,
-   "score": 50
   },
   {
    "account": "0328024286A003",

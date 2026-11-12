@@ -89,7 +89,7 @@ def load_obits():
 
 def load_graves():
     """account -> [death dicts] from the hand-scored Find a Grave / Legacy backfill
-    (data/judgments/deaths_graves.tsv: account, decedent, dod, relation, confidence)."""
+    (data/judgments/deaths_graves.tsv: account, decedent, dod, relation, confidence, source)."""
     out = {}
     try:
         f = open(GRAVES)
@@ -104,7 +104,8 @@ def load_graves():
         if len(parts) < 5 or not parts[0].strip():
             continue
         acct = re.sub(r"\s+", "", parts[0])
-        out.setdefault(acct, []).append({"source": "Find a Grave", "decedent": parts[1], "dod": parts[2],
+        out.setdefault(acct, []).append({"source": (parts[5].strip() if len(parts) > 5 and parts[5].strip() else "Find a Grave"),
+                                         "decedent": parts[1], "dod": parts[2],
                                          "relation": parts[3], "confidence": parts[4].strip() or "MEDIUM"})
     return out
 
