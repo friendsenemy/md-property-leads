@@ -91,10 +91,34 @@ def load_cs():
     return out
 
 
+EST = os.path.join("data", "judgments", "row_estates.tsv")
+
+
+def load_estates():
+    """acct|estate# \t type \t status \t dod \t will \t PRs \t attorney \t docket -> {acct: [estate dicts]}
+    (Register of Wills dockets pulled in the browser; only EXACT name+date matches were pulled)."""
+    out = {}
+    if not os.path.exists(EST):
+        return out
+    for line in open(EST):
+        p = line.rstrip("\n").split("\t")
+        if len(p) < 4 or "|" not in p[0] or p[1] == "PENDING":
+            continue
+        acct, est = p[0].split("|", 1)
+        prs = []
+        for m in re.finditer(r"([A-Z][A-Z .,'-]+?)\s*\[([^\]]+)\]", p[5] if len(p) > 5 else ""):
+            prs.append({"name": m[1].strip(" ;"), "address": m[2].strip()})
+        out.setdefault(acct, []).append({"estate": est, "type": p[1], "status": p[2], "dod": p[3],
+                                          "will": p[4] if len(p) > 4 else "", "prs": prs,
+                                          "attorney": p[6] if len(p) > 6 else "", "docket": p[7] if len(p) > 7 else ""})
+    return out
+
+
 def main():
     q = json.load(open(Q))
     res = load_res()
     cs = load_cs()
+    estates = load_estates()
     out = []
     for p in q:
         flags, notes = [], []
@@ -196,12 +220,36 @@ def main():
                 flags.append("TBE_ONE_SPOUSE")
                 notes.append("Co-owners share a last name and only one was sued — tenancy by the entirety likely; lien may not reach the house")
 
+        # 4. Register of Wills (exact name + date-of-death match pulled in the browser)
+        ests = estates.get(p["acct"]) or []
+        pr_contacts = []
+        if ests:
+            e = ests[0]
+            if "DEATH_CONFIRMED" not in flags:
+                flags.append("DEATH_CONFIRMED")
+            flags.append("ESTATE_OPEN" if e["status"] == "OPEN" else "ESTATE_CLOSED")
+            if re.search(r"SHOW CAUSE|REMOV|DELINQUEN", e.get("docket") or "", re.I):
+                flags.append("ESTATE_STALLED")
+            for pr in e["prs"]:
+                pr_contacts.append(f"{pr['name']} (PR) — {pr['address']}")
+                if prop_key and addr_key(pr["address"]) == prop_key:
+                    if "OCCUPIED_FAMILY" not in flags:
+                        flags.append("OCCUPIED_FAMILY")
+                    notes.append(f"PR {pr['name']} gives the property as their address — family in the house")
+            notes.append(f"Register of Wills: estate {e['estate']} ({e['type']}, {e['status']}, will {e['will'].lower()}), d. {e['dod']}"
+                         + (f"; attorney {e['attorney']}" if e.get("attorney") else "")
+                         + ("; docket shows show-cause/removal — stalled estate" if "ESTATE_STALLED" in flags else ""))
+        elif p.get("dead") and any(d.get("src") in ("Legacy", "Obituary", "Find a Grave") for d in p["dead"]):
+            # death documented by an obituary/grave but no estate anywhere in Maryland = probate gap
+            flags.append("NO_ESTATE_PROBATE_GAP")
+            notes.append("No estate opened anywhere in Maryland (statewide Register of Wills search) — probate gap; an heir or a creditor must open one before the house can be sold")
+
         # deed after death (already in grave scoring, re-check here when data allows)
         if conf not in ("KILL", "LOW") and "DEATH_CONFIRMED" in flags and "DEBTOR_ADDR_MISMATCH" not in flags:
             conf = "HIGH"
         if "OCCUPIED_FAMILY" in flags and conf == "HIGH":
             conf = "HIGH-OCCUPIED"
-        out.append({**p, "flags": flags, "confidence": conf, "verify_notes": notes})
+        out.append({**p, "flags": flags, "confidence": conf, "verify_notes": notes, "pr_contacts": pr_contacts})
 
     order = {"HIGH": 0, "HIGH-OCCUPIED": 1, "MEDIUM": 2, "LOW": 3, "KILL": 4}
     out.sort(key=lambda x: (order[x["confidence"]], 0 if "DEBTOR_ADDR_MATCH" in x["flags"] else 1, -(x.get("equity") or 0)))
