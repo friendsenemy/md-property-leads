@@ -82,16 +82,20 @@ jobs:
         id: match
         continue-on-error: true
         run: python -m engine2.distress_watch --index .cache/sdat.sqlite
+      - name: Creditor abandonment (stale tax certificates, sleeping lenders)
+        run: python -m engine2.creditor_watch || echo "creditor_watch skipped"
 
       - name: Commit results
         run: |
           git config user.name "md-property-leads bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p /tmp/out && cp data/distress/signals.json data/distress/charles-code.json data/distress/accela-code.json /tmp/out/
+          cp data/distress/stale_certs.json /tmp/out/ 2>/dev/null || true
           cp data/distress/last-error.txt /tmp/out/ 2>/dev/null || true
           git fetch origin main
           git checkout -f -B main origin/main
           cp /tmp/out/signals.json /tmp/out/charles-code.json /tmp/out/accela-code.json data/distress/
+          [ -f /tmp/out/stale_certs.json ] && cp /tmp/out/stale_certs.json data/distress/ && git add data/distress/stale_certs.json
           [ -f /tmp/out/last-error.txt ] && cp /tmp/out/last-error.txt data/distress/
           git add data/distress/signals.json data/distress/charles-code.json data/distress/accela-code.json
           git add data/distress/last-error.txt 2>/dev/null || true

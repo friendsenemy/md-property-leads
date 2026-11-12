@@ -87,6 +87,8 @@ DISTRESS_HARD_POINTS = {
     "DEMO_PERMIT": 25,            # demolition / raze permit issued
     "FIRE_REPAIR_PERMIT": 15,     # permit whose case name says fire repair
     "FORECLOSURE_REGISTRY": 35,   # Prince George's Foreclosed Property Registry (lender took it back)
+    "STALE_TAX_CERT": 30,         # sold at tax sale 2+ yrs ago, still delinquent, no redemption suit: void certificate, creditor asleep (engine2.creditor_watch)
+    "ZOMBIE_DOT": 25,             # open deed of trust + taxes delinquent + no substitute trustee / foreclosure: the lender is not protecting its lien (engine2.creditor_watch)
     "ZERO_WATER_USAGE": 35,       # utility export: no water used for 3+ billing months on an improved parcel
     "WATER_SHUTOFF": 30,          # county utility shut off water service (PIA list); a one-off may still be off = possible vacancy
     "WATER_SHUTOFF_CHRONIC": 10,  # shut off 3+ quarterly cycles: reconnected each time, so occupied but chronically behind
@@ -188,7 +190,8 @@ ESTATE_MARKERS = (" ESTATE", " EST OF", " EST ", " ESTATE OF", "ESTATE OF ", " H
 PROBLEM_GROUPS = {
     "Owner deceased":        ["DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "DECEASED_IN_NAME"],
     "Estate / heirs":        ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "PROBATE_CLOSED_STILL_TITLED", "PROBATE_OPEN_STALE", "PROBATE_OPEN", "PROBATE_NONE_FOUND", "MULTI_GENERATION_ESTATES", "FOREIGN_PROBATE"],
-    "Tax sale":              ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT"],
+    "Tax sale":              ["TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED", "TAX_SALE_REPEAT", "STALE_TAX_CERT"],
+    "Sleeping lender":       ["ZOMBIE_DOT"],
     "Code / nuisance":       ["CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES", "CITY_WORK_ORDER"],
     "Vacant":                ["VACANT_NOTICE", "ZERO_WATER_USAGE", "WATER_SHUTOFF", "RETURNED_MAIL", "VACANT_LAND"],
     "Fire / damage":         ["FIRE", "FIRE_BLOCK", "FIRE_REPAIR_PERMIT", "DEMO_PERMIT", "CONDEMNED"],
@@ -234,6 +237,7 @@ PRESETS = [
     {"id": "charles_code",   "label": "Charles Co. Code / Nuisance Case", "any_flags": ["CODE_VIOLATIONS", "NUISANCE_CASE", "ZONING_CASE", "REPEAT_CODE_CASES"]},
     {"id": "neglect",        "label": "Neglect Profile (poor condition + absentee)", "any_flags": ["NEGLECT_PROFILE"]},
     {"id": "zero_water",     "label": "💧 Zero Water / Water Shut Off (utility records)", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD", "WATER_SHUTOFF"]},
+    {"id": "creditor_asleep", "label": "😴 Creditor Asleep (void tax cert / sleeping lender)", "any_flags": ["STALE_TAX_CERT", "ZOMBIE_DOT"]},
     {"id": "zero_water_estate", "label": "Water Off + Estate / Deceased / Tax Sale", "any_flags": ["ZERO_WATER_USAGE", "ZERO_WATER_HOMESTEAD", "WATER_SHUTOFF"], "any_flags2": ["ESTATE_IN_NAME", "HEIRS_IN_NAME", "DECEASED_IN_NAME", "PERSONAL_REP", "LIFE_ESTATE", "DECEASED_SOLE_OWNER_HIGH", "DECEASED_SOLE_OWNER_MEDIUM", "ALL_OWNERS_DECEASED", "CO_OWNER_DECEASED", "TAX_SALE_SOLD", "TAX_SALE_STRUCK", "TAX_SALE_LISTED"]},
     {"id": "top",            "label": "Highest Research Priority",    "sort": "priority"},
 ]
