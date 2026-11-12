@@ -1,0 +1,42 @@
+{
+ "account": "0908015554",
+ "estates": [
+  {
+   "estate_number": "10675",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/20/1997",
+   "date_closed": "02/03/1998",
+   "decedent": "JOSEPH LEO GARDINER JR.",
+   "date_of_death": "11/30/1996",
+   "date_of_filing": "12/04/1996",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "01/28/2005",
+     "n": 1,
+     "code": "1210",
+     "desc": "DOCKET SHEET",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2005-01-28",
+   "interested_persons": [],
+   "death_to_probate_days": 82,
+   "probate_age_days": 348,
+   "days_since_last_docket": 7958,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-12",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1923272294",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1923272294",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOSEPH L GARDINER JR"
+  }
+ ]
+}

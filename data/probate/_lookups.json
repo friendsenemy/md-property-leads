@@ -936,6 +936,20 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "CALVERT R POSEY JR|2006-01-09": {
+   "accounts": [
+    "0903021726"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2006-01-09",
+   "estate_number": "14901",
+   "record_ids": [
+    "1923267788"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "CALVIN B GALBREATH|2005-04-10": {
    "accounts": [
     "0906243193"
@@ -1211,6 +1225,15 @@
    "checked": "2026-10-23",
    "dod": "2004-02-15",
    "results": 12,
+   "status": "NONE FOUND"
+  },
+  "CATHERINE M DEMARR|1985-06-25": {
+   "accounts": [
+    "0906032923"
+   ],
+   "checked": "2026-11-12",
+   "dod": "1985-06-25",
+   "results": 1,
    "status": "NONE FOUND"
   },
   "CATHERINE O DAY|1995-05-19": {
@@ -1677,6 +1700,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "CLAUDE T WILLETT|1999-03-03": {
+   "accounts": [
+    "0906060722"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "1999-03-03",
+   "estate_number": "11607",
+   "record_ids": [
+    "1923262896"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "CLINTON G BALL|2010-05-06": {
    "accounts": [
     "0906003192"
@@ -1793,6 +1830,15 @@
    "results": 4,
    "status": "CLOSED"
   },
+  "DALJIT AULAKH|2014-04-02": {
+   "accounts": [
+    "0906316840"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2014-04-02",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "DAN TYREE|2005-07-13": {
    "accounts": [
     "0905015642"
@@ -1833,6 +1879,20 @@
    "dod": "2013-10-24",
    "results": 0,
    "status": "NONE FOUND"
+  },
+  "DARRELL L TOWNSEND|2003-11-18": {
+   "accounts": [
+    "0906168744"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2003-11-18",
+   "estate_number": "13868",
+   "record_ids": [
+    "1923264810"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "DARRELL M BUCK|2006-02-03": {
    "accounts": [
@@ -1894,6 +1954,15 @@
    "results": 3,
    "status": "NONE FOUND"
   },
+  "DAVID L HAMILTON|1994-06-29": {
+   "accounts": [
+    "0910018226"
+   ],
+   "checked": "2026-11-12",
+   "dod": "1994-06-29",
+   "results": 8,
+   "status": "NONE FOUND"
+  },
   "DAVID L WILT|2003-11-04": {
    "accounts": [
     "0907036299"
@@ -1902,6 +1971,20 @@
    "dod": "2003-11-04",
    "results": 3,
    "status": "NONE FOUND"
+  },
+  "DAVID M COONTZ|2012-06-05": {
+   "accounts": [
+    "0906005373"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2012-06-05",
+   "estate_number": "19219",
+   "record_ids": [
+    "1923277683"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "DAVID N LITTLE|2013-06-19": {
    "accounts": [
@@ -2045,6 +2128,15 @@
    "checked": "2026-11-03",
    "dod": "2013-06-06",
    "results": 0,
+   "status": "NONE FOUND"
+  },
+  "DEBRA L JONES|2013-10-18": {
+   "accounts": [
+    "0901018205"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2013-10-18",
+   "results": 2,
    "status": "NONE FOUND"
   },
   "DELMAR E RIFE JR|1998-03-08": {
@@ -2258,6 +2350,20 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "DONALD JUNG JR|1990-08-04": {
+   "accounts": [
+    "0906044026"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "1990-08-04",
+   "estate_number": "8702",
+   "record_ids": [
+    "1923269097"
+   ],
+   "results": 2,
+   "status": "CLOSED"
+  },
   "DONALD L HARDY|2007-02-20": {
    "accounts": [
     "0908063524"
@@ -2357,6 +2463,15 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "DOROTHY L BOND|1984-03-10": {
+   "accounts": [
+    "0908011516"
+   ],
+   "checked": "2026-11-12",
+   "dod": "1984-03-10",
+   "results": 8,
+   "status": "NONE FOUND"
+  },
   "DOROTHY L FIELDS|2006-05-14": {
    "accounts": [
     "0908039151"
@@ -2391,6 +2506,15 @@
    "checked": "2026-11-07",
    "dod": "1995-01-28",
    "results": 0,
+   "status": "NONE FOUND"
+  },
+  "EARL K HUGHES|2012-07-05": {
+   "accounts": [
+    "0907019149"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2012-07-05",
+   "results": 3,
    "status": "NONE FOUND"
   },
   "EARL T GROSS|1999-12-20": {
@@ -2433,6 +2557,20 @@
    "dod": "1991-04-01",
    "results": 0,
    "status": "NONE FOUND"
+  },
+  "EDNA MARBURY|2007-01-27": {
+   "accounts": [
+    "0907027249"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2007-01-27",
+   "estate_number": "15411",
+   "record_ids": [
+    "1923256097"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "EDWARD A DOVE|2011-12-01": {
    "accounts": [
@@ -2561,6 +2699,15 @@
    "checked": "2026-11-05",
    "dod": "2013-08-14",
    "results": 0,
+   "status": "NONE FOUND"
+  },
+  "ELI S JENIFER JR|2001-07-11": {
+   "accounts": [
+    "0906227988"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2001-07-11",
+   "results": 1,
    "status": "NONE FOUND"
   },
   "ELIZABETH A BOWIE|1975-11-20": {
@@ -2740,6 +2887,15 @@
    "checked": "2026-11-05",
    "dod": "2004-04-04",
    "results": 5,
+   "status": "NONE FOUND"
+  },
+  "EMMETT L FOWLER III|2003-03-02": {
+   "accounts": [
+    "0909014578"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2003-03-02",
+   "results": 2,
    "status": "NONE FOUND"
   },
   "ERNEST J BARETINCIC|2003-02-01": {
@@ -3082,6 +3238,20 @@
    "results": 11,
    "status": "NONE FOUND"
   },
+  "GEORGE E SPOONER JR|2008-11-23": {
+   "accounts": [
+    "0906093167"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2008-11-23",
+   "estate_number": "16279",
+   "record_ids": [
+    "1923254679"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "GEORGE F HAYDEN|1997-11-24": {
    "accounts": [
     "0904013581"
@@ -3137,6 +3307,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "GEORGE M PROCTOR|2008-07-08": {
+   "accounts": [
+    "0907030444"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2008-07-08",
+   "results": 8,
+   "status": "NONE FOUND"
   },
   "GEORGE R SAVOY III|2000-09-13": {
    "accounts": [
@@ -3194,6 +3373,15 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "GEORGIA A HENRY|2002-02-08": {
+   "accounts": [
+    "0906007163"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2002-02-08",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "GERALD L BATTLE|2009-02-10": {
    "accounts": [
     "0906238386"
@@ -3222,6 +3410,20 @@
     "1908669009"
    ],
    "results": 1,
+   "status": "CLOSED"
+  },
+  "GERTRUDE A YOUNG|1991-02-26": {
+   "accounts": [
+    "0908031606"
+   ],
+   "checked": "2026-11-12",
+   "county": "Somerset",
+   "dod": "1991-02-26",
+   "estate_number": "SYOG91RE2801",
+   "record_ids": [
+    "1923841567"
+   ],
+   "results": 9,
    "status": "CLOSED"
   },
   "GIBSON E MCKENZIE|1992-09-28": {
@@ -3414,6 +3616,15 @@
    "results": 3,
    "status": "CLOSED"
   },
+  "GRANT W RAMSEY JR|2005-03-15": {
+   "accounts": [
+    "0906098134"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2005-03-15",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "GREGORY A CAMPBELL|2009-12-05": {
    "accounts": [
     "0907061412"
@@ -3449,6 +3660,20 @@
     "1915049817"
    ],
    "results": 1,
+   "status": "CLOSED"
+  },
+  "GREGORY M CURTIS|2007-01-12": {
+   "accounts": [
+    "0906074782"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2007-01-12",
+   "estate_number": "19265",
+   "record_ids": [
+    "1923277191"
+   ],
+   "results": 2,
    "status": "CLOSED"
   },
   "GUY E SMITH|1987-01-08": {
@@ -3626,6 +3851,21 @@
     "1913966262"
    ],
    "results": 2,
+   "status": "CLOSED"
+  },
+  "HENRY D MIDDLETON III|1991-09-04": {
+   "accounts": [
+    "0904006445"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "1991-09-04",
+   "estate_number": "8902",
+   "record_ids": [
+    "1923261091",
+    "1923949150"
+   ],
+   "results": 6,
    "status": "CLOSED"
   },
   "HERBERT F GROTE|2003-08-31": {
@@ -3837,6 +4077,20 @@
    "dod": "1979-05-16",
    "results": 15,
    "status": "NONE FOUND"
+  },
+  "JAMES A JAMESON III|1990-04-22": {
+   "accounts": [
+    "0908018308"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "1990-04-22",
+   "estate_number": "8504",
+   "record_ids": [
+    "1923274063"
+   ],
+   "results": 3,
+   "status": "CLOSED"
   },
   "JAMES A O'DELL|2012-10-09": {
    "accounts": [
@@ -4571,6 +4825,20 @@
    "results": 4,
    "status": "CLOSED"
   },
+  "JOHN A ROOD|2005-12-07": {
+   "accounts": [
+    "0906069754"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2005-12-07",
+   "estate_number": "14860",
+   "record_ids": [
+    "1923253047"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "JOHN A VENDEMIA|1994-03-26": {
    "accounts": [
     "0908018987"
@@ -4839,6 +5107,34 @@
    "results": 2,
    "status": "NONE FOUND"
   },
+  "JOHN P YATES|2013-12-20": {
+   "accounts": [
+    "0904008804"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2013-12-20",
+   "estate_number": "19121",
+   "record_ids": [
+    "1923276879"
+   ],
+   "results": 16,
+   "status": "CLOSED"
+  },
+  "JOHN R HARLEY|2013-06-01": {
+   "accounts": [
+    "0908003777"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "2013-06-01",
+   "estate_number": "18831",
+   "record_ids": [
+    "1923270423"
+   ],
+   "results": 10,
+   "status": "CLOSED"
+  },
   "JOHN S HEMSLEY|2002-04-06": {
    "accounts": [
     "0905009855"
@@ -4874,6 +5170,15 @@
    "checked": "2026-10-17",
    "dod": "2006-10-20",
    "results": 1,
+   "status": "NONE FOUND"
+  },
+  "JOHN W MINICHINO JR|2003-05-06": {
+   "accounts": [
+    "0903007537"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2003-05-06",
+   "results": 0,
    "status": "NONE FOUND"
   },
   "JOHN W O'HARA|2010-11-26": {
@@ -5001,6 +5306,20 @@
    "results": 7,
    "status": "CLOSED"
   },
+  "JOSEPH F HANSON|1988-10-24": {
+   "accounts": [
+    "0910004802"
+   ],
+   "checked": "2026-11-12",
+   "county": "Prince George's",
+   "dod": "1988-10-24",
+   "estate_number": "SE-11797",
+   "record_ids": [
+    "1923624208"
+   ],
+   "results": 2,
+   "status": "CLOSED"
+  },
   "JOSEPH F MEHALL|2006-12-26": {
    "accounts": [
     "0910007321"
@@ -5036,6 +5355,20 @@
     "1920852093"
    ],
    "results": 12,
+   "status": "CLOSED"
+  },
+  "JOSEPH L GARDINER JR|1996-11-30": {
+   "accounts": [
+    "0908015554"
+   ],
+   "checked": "2026-11-12",
+   "county": "Charles",
+   "dod": "1996-11-30",
+   "estate_number": "10675",
+   "record_ids": [
+    "1923272294"
+   ],
+   "results": 10,
    "status": "CLOSED"
   },
   "JOSEPH L GREENFIELD|1989-12-02": {
@@ -5149,6 +5482,20 @@
    "results": 4,
    "status": "NONE FOUND"
   },
+  "JOYCE A THOMPSON|2014-11-13": {
+   "accounts": [
+    "0907048351"
+   ],
+   "checked": "2026-11-12",
+   "county": "Prince George's",
+   "dod": "2014-11-13",
+   "estate_number": "99353",
+   "record_ids": [
+    "1923693986"
+   ],
+   "results": 6,
+   "status": "ARCHIVED"
+  },
   "JOYCE A WILSON|2014-03-25": {
    "accounts": [
     "0906191843"
@@ -5183,6 +5530,15 @@
    "checked": "2026-11-08",
    "dod": "2011-04-16",
    "results": 14,
+   "status": "NONE FOUND"
+  },
+  "JOYCE PROCTOR|2010-09-24": {
+   "accounts": [
+    "0907030541"
+   ],
+   "checked": "2026-11-12",
+   "dod": "2010-09-24",
+   "results": 0,
    "status": "NONE FOUND"
   },
   "JUANITA L FOX|2004-05-01": {
@@ -9800,5 +10156,5 @@
    "status": "NONE FOUND"
   }
  },
- "updated": "2026-11-11"
+ "updated": "2026-11-12"
 }

@@ -1,0 +1,16 @@
+{
+ "account": "0906007163",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "GEORGIA A HENRY",
+   "decedent_searched": "GEORGIA A HENRY",
+   "date_of_death": "2002-02-08",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-12",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}
