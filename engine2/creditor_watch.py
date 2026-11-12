@@ -36,7 +36,7 @@ SIGNALS = os.path.join("data", "distress", "signals.json")
 # PG's results PDF truncates owner names at 18 characters ("NORTHEAST INVESTME", "GREENBELT MD PROPE"),
 # so match company fragments and leading digits, not just whole words.
 COMPANY = re.compile(r"(^\d|\b(LLC|L L C|INC|CORP|TRUST|TR|LP|LTD|COMPANY|CO|PARTNERS|ASSOC|CHURCH|BANK|ESTATES? OF|ET AL|LL)\b|"
-                     r"INVEST|PROPE|PLAZA|AUTO|DAYCA|IGLESIA|HOLDING|COMMONS|ENTERPR|REALTY|DEVELOP|GROUP|VENTURE|HOMES|SERVICES|"
+                     r"INVEST|PROPE|PLAZA|AUTO|DAYCA|IGLESIA|HOLDING|COMMONS|ENTERPR|REALTY|DEVELOP|GROUP|VENTURE|HOMES|SERVICES|TRUSTEE|REAL ESTATE|CONSTRUCT|MANAGEM|HILLS PH|\bSVD\b|\bWL\b|"
                      r"MINISTR|TEMPLE|BAPTIST|BUILDER|CAPITAL|FUND|PARTNERSHIP|ASSN|CONDO|APARTMENT|CENTER|CORPORATION|HOSPITAL|SCHOOL|"
                      r"\bLL$|\bL$|\bIN$|\bCORP$|\bPROP$|\bHOLD$|\bINV$|\bLLC$)", re.I)
 SUFFIX = {"JR", "SR", "II", "III", "IV", "ET", "AL", "ETAL", "TR", "TRS"}
@@ -68,8 +68,27 @@ def title_defendant(title):
     return (t[-1], t[0]) if len(t) >= 2 else ((t[0], "") if t else ("", ""))
 
 
+def load_title_addr():
+    """account -> (address, city, zip, mailing) from data/title/<county>.json."""
+    out = {}
+    for p in glob.glob(os.path.join("data", "title", "*.json")):
+        if os.path.basename(p) in ("people.json", "summary.json", "top.json"):
+            continue
+        try:
+            d = json.load(open(p))
+        except Exception:
+            continue
+        for r in (d.get("rows") if isinstance(d, dict) else d) or []:
+            pr = r.get("property") or {}
+            a = re.sub(r"\s+", "", str(pr.get("account_number") or r.get("id") or ""))
+            if a:
+                out[a] = pr
+    return out
+
+
 def main():
     years = {}
+    title = load_title_addr()
     for p in sorted(glob.glob(TAX_GLOB)):
         y = int(re.search(r"(\d{4})", os.path.basename(p))[1])
         years[y] = load_year(p)
@@ -78,6 +97,26 @@ def main():
     ror_by_county = {}
     for cn, c in ror.items():
         ror_by_county.setdefault((c.get("c") or "").upper().replace(" COUNTY", ""), []).append((cn, c))
+    # Account-keyed matches from the browser passes (plaintiff-side pull of the tax buyers'
+    # suits matched to stale_candidates.json, and the defendant-side Case Search check):
+    #   data/distress/ror_matches.tsv   acct \t case \t county \t filed \t status \t plaintiff \t title
+    #   data/distress/ror_defendant.json {acct: {n, ror: ["case|type|filed"], other: [...]}}
+    by_acct = {}
+    mp = os.path.join("data", "distress", "ror_matches.tsv")
+    if os.path.exists(mp):
+        for line in open(mp):
+            p = line.rstrip("\n").split("\t")
+            if len(p) >= 7 and p[0].strip():
+                by_acct.setdefault(p[0].strip(), []).append({"case": p[1], "title": p[6], "filed": p[3], "status": p[4], "plaintiff": p[5]})
+    dp = os.path.join("data", "distress", "ror_defendant.json")
+    checked_def = {}
+    if os.path.exists(dp):
+        checked_def = json.load(open(dp))
+        for a, d in checked_def.items():
+            for s in d.get("ror") or []:
+                cn, fd, st, ct = (s.split("|") + ["", "", ""])[:4]
+                if not any(x["case"] == cn for x in by_acct.get(a, [])):
+                    by_acct.setdefault(a, []).append({"case": cn, "title": ct, "filed": fd, "status": st, "plaintiff": "(defendant-side search)"})
 
     out = []
     for y, recs in sorted(years.items()):
@@ -95,23 +134,42 @@ def main():
                 continue                                      # individuals only (Ray skips investor-owners)
             county = (r.get("county") or latest.get("county") or "").upper()
             last, first = owner_tokens(owner)
-            suits = []
+            suits = list(by_acct.get(acct, []))
             for cn, c in ror_by_county.get(county.replace(" COUNTY", ""), []):
                 dl, df = title_defendant(c.get("t"))
                 if last and dl == last and (not first or not df or df == first):
                     suits.append({"case": cn, "title": c.get("t"), "filed": c.get("d"), "status": c.get("s"), "plaintiff": c.get("p")})
+            # a suit filed before this certificate's sale enforced an EARLIER certificate; only
+            # suits filed in or after the sale year count for this one
+            def filed_year(s):
+                m = re.search(r"(\d{4})", s.get("filed") or "")
+                return int(m[1]) if m else 0
+            old_suits = [s for s in suits if filed_year(s) and filed_year(s) < y]
+            suits = [s for s in suits if not filed_year(s) or filed_year(s) >= y]
+            pr = title.get(acct) or {}
+            addr = r.get("address") or latest.get("address") or (f"{pr.get('property_address')}, {pr.get('city')} {pr.get('zip_code')}" if pr.get("property_address") else None)
+            mail = f"{pr.get('mailing_address')}, {pr.get('mailing_city')} {pr.get('mailing_state')} {pr.get('mailing_zip')}" if pr.get("mailing_address") else None
+            other = (checked_def.get(acct) or {}).get("other") or []
+            recent_fc = [o for o in other if "Foreclosure" in o and re.search(r"/(\d{4})$", o) and int(re.search(r"/(\d{4})$", o)[1]) >= this_year - 2]
+            nhits = (checked_def.get(acct) or {}).get("n")
             out.append({
                 "account": acct, "county": r.get("county") or latest.get("county"), "owner": owner,
-                "address": r.get("address") or latest.get("address"),
+                "address": addr, "mail": mail,
+                "mail_differs": bool(mail and pr.get("property_address") and not (pr.get("mailing_address") or "").upper().startswith(pr["property_address"].upper()[:8])),
+                "recent_foreclosure": recent_fc,
+                "name_check_reliable": (nhits is not None and nhits < 150),
                 "sold_year": y, "cert_bidder": r.get("bidder"), "cert_face": r.get("face"), "cert_bid": r.get("bid"),
-                "assessed": r.get("assessed") or latest.get("assessed"),
+                "assessed": r.get("assessed") or latest.get("assessed") or pr.get("assessed_value"),
                 "still_listed": sorted(later), "latest_face": latest.get("face"), "latest_status": latest.get("status"),
                 "years_since_sale": this_year - y,
-                "ror_suits": suits,
+                "ror_suits": suits, "prior_cert_suits": old_suits,
+                "defendant_checked": acct in checked_def,
+                "defendant_name_hits": (checked_def.get(acct) or {}).get("n"),
+                "other_cases": (checked_def.get(acct) or {}).get("other") or [],
                 "stale": not suits and this_year - y >= 2,
             })
     stale = [o for o in out if o["stale"]]
-    stale.sort(key=lambda o: (-(o["years_since_sale"]), -(o.get("assessed") or 0)))
+    stale.sort(key=lambda o: (0 if o["defendant_checked"] else 1, -(o["years_since_sale"]), -(o.get("assessed") or 0)))
     json.dump({"generated": date.today().isoformat(), "checked": len(out), "stale": len(stale),
                "ror_cases_loaded": len(ror), "rows": stale,
                "with_suit": [o for o in out if o["ror_suits"]]}, open(OUT, "w"), indent=1)
