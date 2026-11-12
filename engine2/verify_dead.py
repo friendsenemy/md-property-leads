@@ -18,8 +18,8 @@ import re
 from datetime import date
 
 Q = os.path.join("data", "judgments", "verify_queue.json")
-RES = os.path.join("data", "judgments", "verify_residents.json")
-CS = os.path.join("data", "judgments", "verify_cases.json")
+RES = os.path.join("data", "judgments", "verify_residents.tsv")
+CS = os.path.join("data", "judgments", "verify_cases.tsv")
 OUT = os.path.join("data", "judgments", "verified.json")
 OUT_MD = os.path.join("data", "judgments", "verified.md")
 
@@ -60,10 +60,41 @@ def addr_key(a):
     return (m[1], m[2]) if m else None
 
 
+def load_res():
+    """acct \t name \t age \t lives-at  ->  {acct: {"p": [...]}}; a bare 'NONE' line = page had no people."""
+    out = {}
+    if not os.path.exists(RES):
+        return out
+    for line in open(RES):
+        parts = line.rstrip("\n").split("\t")
+        if not parts[0].strip():
+            continue
+        acct = re.sub(r"\s+", "", parts[0])
+        rec = out.setdefault(acct, {"p": []})
+        if len(parts) >= 4:
+            rec["p"].append({"n": parts[1], "a": parts[2], "la": parts[3]})
+        elif len(parts) >= 2 and parts[1] == "BLOCKED":
+            rec["err"] = "blocked"
+    return out
+
+
+def load_cs():
+    """case \t defendant \t address -> {case: {"defs": [{"n","a"}]}}"""
+    out = {}
+    if not os.path.exists(CS):
+        return out
+    for line in open(CS):
+        parts = line.rstrip("\n").split("\t")
+        if len(parts) < 2 or not parts[0].strip():
+            continue
+        out.setdefault(parts[0].strip(), {"defs": []})["defs"].append({"n": parts[1], "a": parts[2] if len(parts) > 2 else ""})
+    return out
+
+
 def main():
     q = json.load(open(Q))
-    res = json.load(open(RES)) if os.path.exists(RES) else {}
-    cs = json.load(open(CS)) if os.path.exists(CS) else {}
+    res = load_res()
+    cs = load_cs()
     out = []
     for p in q:
         flags, notes = [], []
@@ -82,7 +113,7 @@ def main():
         if r and not r.get("err"):
             for per in r.get("p", []):
                 pf, pl = person_fl(per["n"])
-                lives_here = prop_key and addr_key(per.get("la") or "") == prop_key
+                lives_here = (per.get("la") == "HERE") or (prop_key and addr_key(per.get("la") or "") == prop_key)
                 age = per.get("a") or ""
                 for dn, rel in dead_names:
                     df, dl = person_fl(dn)
@@ -112,8 +143,14 @@ def main():
         else:
             flags.append("RESIDENTS_UNCHECKED")
 
-        # 2. debtor address
+        # 2. debtor address (and the clerk's own "DEC'D" tag on a defendant)
         match, mismatch = 0, 0
+        for j in p.get("judg") or []:
+            c = cs.get(j.get("case") or "")
+            if c and any("DEC'D" in (d.get("n") or "").upper() for d in c.get("defs", [])):
+                if "DEATH_CONFIRMED" not in flags:
+                    flags.append("DEATH_CONFIRMED")
+                notes.append("Circuit Court indexed the defendant as DEC'D")
         for j in p.get("judg") or []:
             c = cs.get(j.get("case") or "")
             if not c or c.get("err"):
