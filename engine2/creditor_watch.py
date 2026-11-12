@@ -33,7 +33,12 @@ ROR = os.path.join("data", "distress", "ror_cases.json")
 OUT = os.path.join("data", "distress", "stale_certs.json")
 SIGNALS = os.path.join("data", "distress", "signals.json")
 
-COMPANY = re.compile(r"\b(LLC|L L C|INC|CORP|TRUST|TR\b|LP\b|LTD|COMPANY|CO\b|PARTNERS|ASSOC|CHURCH|BANK|HOLDINGS|PROPERTIES|INVESTMENTS|ESTATES OF|ESTATE OF|ET AL)", re.I)
+# PG's results PDF truncates owner names at 18 characters ("NORTHEAST INVESTME", "GREENBELT MD PROPE"),
+# so match company fragments and leading digits, not just whole words.
+COMPANY = re.compile(r"(^\d|\b(LLC|L L C|INC|CORP|TRUST|TR|LP|LTD|COMPANY|CO|PARTNERS|ASSOC|CHURCH|BANK|ESTATES? OF|ET AL|LL)\b|"
+                     r"INVEST|PROPE|PLAZA|AUTO|DAYCA|IGLESIA|HOLDING|COMMONS|ENTERPR|REALTY|DEVELOP|GROUP|VENTURE|HOMES|SERVICES|"
+                     r"MINISTR|TEMPLE|BAPTIST|BUILDER|CAPITAL|FUND|PARTNERSHIP|ASSN|CONDO|APARTMENT|CENTER|CORPORATION|HOSPITAL|SCHOOL|"
+                     r"\bLL$|\bL$|\bIN$|\bCORP$|\bPROP$|\bHOLD$|\bINV$|\bLLC$)", re.I)
 SUFFIX = {"JR", "SR", "II", "III", "IV", "ET", "AL", "ETAL", "TR", "TRS"}
 
 
