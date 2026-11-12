@@ -131,8 +131,10 @@ def main():
                 # house with no other address is weak, one at a different address is strong
                 elsewhere = [a for a in alive_hit if " at " in a]
                 if elsewhere:
-                    flags.append("ALIVE_ELSEWHERE"); conf = "KILL"
-                    notes.append("Owner listed alive at another address: " + "; ".join(elsewhere[:2]))
+                    # same first+last name alive somewhere else: either the owner is alive or it is a
+                    # namesake (son, cousin). Without a birth year we cannot tell, so LOW, not KILL.
+                    flags.append("ALIVE_ELSEWHERE"); conf = "LOW"
+                    notes.append("Same name listed alive at another address (owner alive, or a namesake — confirm at the Register of Wills): " + "; ".join(elsewhere[:2]))
                 else:
                     flags.append("ALIVE_LISTED_HERE"); conf = "LOW"
                     notes.append("People-search still lists the owner alive at the house (site lags deaths): " + "; ".join(alive_hit[:2]))
@@ -202,11 +204,16 @@ def main():
         out.append({**p, "flags": flags, "confidence": conf, "verify_notes": notes})
 
     order = {"HIGH": 0, "HIGH-OCCUPIED": 1, "MEDIUM": 2, "LOW": 3, "KILL": 4}
-    out.sort(key=lambda x: (order[x["confidence"]], -(x.get("equity") or 0)))
+    out.sort(key=lambda x: (order[x["confidence"]], 0 if "DEBTOR_ADDR_MATCH" in x["flags"] else 1, -(x.get("equity") or 0)))
     json.dump({"generated": date.today().isoformat(), "rows": out}, open(OUT, "w"), indent=1)
     counts = {k: sum(1 for x in out if x["confidence"] == k) for k in order}
     with open(OUT_MD, "w") as f:
-        f.write(f"# Dead-owner lien parcels — verified cut, {date.today()}\n\n{counts}\n\n")
+        f.write(f"# Dead-owner lien parcels — verified cut, {date.today()}\n\n{counts}\n\n"
+                "Checks: (1) current-resident lookup on the property address — done for 55 of 284 before the people-search site's bot "
+                "protection stopped it (the rest carry RESIDENTS_UNCHECKED and cannot rate HIGH); (2) Case Search defendant address vs "
+                "property / tax-bill address on all 519 judgments; (3) co-owner-with-same-surname rule (tenancy by the entirety). "
+                "HIGH = death confirmed by an independent record and nothing contradicts it. LOW = a contradiction that needs the "
+                "Register of Wills before anyone is called.\n\n")
         for conf in order:
             rows = [x for x in out if x["confidence"] == conf]
             if not rows:
