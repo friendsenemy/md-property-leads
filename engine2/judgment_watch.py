@@ -408,6 +408,30 @@ def load_title_by_account():
     return out
 
 
+def load_graves():
+    """Deaths confirmed by hand from Legacy / Find a Grave (data/judgments/deaths_graves.tsv) -> account -> rows."""
+    out = {}
+    path = "data/judgments/deaths_graves.tsv"
+    if not os.path.exists(path):
+        return out
+    with open(path) as f:
+        header = None
+        for line in f:
+            parts = line.rstrip("\n").split("\t")
+            if header is None:
+                header = parts
+                continue
+            if len(parts) < 5 or not parts[0].strip():
+                continue
+            out.setdefault(re.sub(r"\s+", "", parts[0]), []).append(
+                {"decedent": parts[1], "dod": parts[2], "relation": parts[3], "confidence": parts[4],
+                 "source": parts[5] if len(parts) > 5 and parts[5] else "Find a Grave"})
+    return out
+
+
+GRAVES = load_graves()
+
+
 def load_signals():
     p = "data/distress/signals.json"
     if not os.path.exists(p):
@@ -511,6 +535,13 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
     tflags = (title or {}).get("flags", [])
     dead = bool(DEAD_FLAGS.intersection(tflags))
     co_dead = not dead and "CO_OWNER_DECEASED" in tflags
+    graves = GRAVES.get(re.sub(r"\s+", "", str(p["acct"])), [])
+    grave_owner = [g for g in graves if g["relation"].split()[0] in ("owner", "life", "co-owner")]
+    grave_spouse = [g for g in graves if g not in grave_owner]
+    if grave_owner:
+        dead, co_dead = True, False
+    elif grave_spouse and not dead:
+        co_dead = True
 
     tags, reasons, score = [], [], 0
     judgments = []
@@ -575,7 +606,13 @@ def build_lead(p, js, county, title, sigs, mailing_state, today):
             tags.append("ONE_OWNER_ONLY"); score += 8
             reasons.append("Judgment against only one co-owner — it hits that share only; buy around it (+8)")
     # ── the seller side
-    if dead:
+    if graves:
+        who = "; ".join(f"{g['decedent'].title()} ({g['relation']}) d. {g['dod'] or '?'} — {g['source']}" for g in graves)
+        if grave_owner:
+            score += 25; tags.append("DEAD_OWNER"); reasons.append(f"Owner died, deed never moved: {who} (+25) — confirm at the Register of Wills")
+        else:
+            score += 12; tags.append("CO_OWNER_DEAD"); reasons.append(f"Spouse / co-owner died: {who} (+12)")
+    elif dead:
         score += 25; tags.append("DEAD_OWNER"); reasons.append("Title Scan: owner died / estate unresolved (+25) — confirm with obituaries")
     elif co_dead:
         score += 12; tags.append("CO_OWNER_DEAD"); reasons.append("Title Scan: a co-owner died (+12) — confirm with obituaries")
