@@ -121,14 +121,21 @@ def main():
                         if age == "Deceased":
                             confirmed.append(dn)
                         elif age.isdigit():
-                            alive_hit.append(f"{per['n']} age {age}" + (f" at {per['la'][:40]}" if per.get("la") else ""))
+                            alive_hit.append(f"{per['n']} age {age}" + (f" at {per['la'][:40]}" if per.get("la") and per["la"] != "HERE" else ""))
                 if lives_here:
                     occupants.append(f"{per['n']} ({age})")
                     if pl and (pl == owner_last or pl == o2_last):
                         family_occ.append(per["n"])
             if alive_hit:
-                flags.append("ALIVE_HIT"); conf = "KILL"
-                notes.append("Owner shows alive: " + "; ".join(alive_hit[:2]))
+                # the people-search site lags deaths by a year or two; an "alive" listing AT the
+                # house with no other address is weak, one at a different address is strong
+                elsewhere = [a for a in alive_hit if " at " in a]
+                if elsewhere:
+                    flags.append("ALIVE_ELSEWHERE"); conf = "KILL"
+                    notes.append("Owner listed alive at another address: " + "; ".join(elsewhere[:2]))
+                else:
+                    flags.append("ALIVE_LISTED_HERE"); conf = "LOW"
+                    notes.append("People-search still lists the owner alive at the house (site lags deaths): " + "; ".join(alive_hit[:2]))
             if confirmed:
                 flags.append("DEATH_CONFIRMED")
                 notes.append("Resident data marks deceased: " + "; ".join(sorted(set(confirmed))[:2]))
@@ -188,7 +195,7 @@ def main():
                 notes.append("Co-owners share a last name and only one was sued — tenancy by the entirety likely; lien may not reach the house")
 
         # deed after death (already in grave scoring, re-check here when data allows)
-        if conf != "KILL" and "DEATH_CONFIRMED" in flags and "DEBTOR_ADDR_MISMATCH" not in flags:
+        if conf not in ("KILL", "LOW") and "DEATH_CONFIRMED" in flags and "DEBTOR_ADDR_MISMATCH" not in flags:
             conf = "HIGH"
         if "OCCUPIED_FAMILY" in flags and conf == "HIGH":
             conf = "HIGH-OCCUPIED"
