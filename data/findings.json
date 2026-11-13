@@ -1,10 +1,10 @@
 {
  "generated": "2026-11-12",
  "counts": {
-  "WORK": 164,
-  "PARK": 31,
+  "WORK": 161,
+  "PARK": 32,
   "GO": 11,
-  "KILL": 7
+  "KILL": 9
  },
  "by_account": {
   "04082000009657": {
@@ -563,11 +563,11 @@
    "source": "Register of Wills docket"
   },
   "2102104393": {
-   "verdict": "WORK",
+   "verdict": "PARK",
    "confidence": "MEDIUM",
    "checked": "2026-11-12",
    "play": "Dead owner \u2014 estate on file",
-   "reason": "Register of Wills estate 24915 (UN, CLOSED, will unprobated (will deposited, no estate)), d. 12/16/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "reason": "8735 Dawson Rd St. Michaels \u2014 Richard N Roe Sr d. 12/2023 (will deposited, no estate); co-owner Kimberly A Roe; tax bill to the property; Comptroller liens $12.5K name him. Likely widow in the house \u2014 confirm before any contact.",
    "death": "Richard N Roe Sr d. 2023-12 (Legacy)",
    "contacts": [],
    "next": "Land Records DOT check, then letter/call to the PR",
@@ -1013,11 +1013,11 @@
    "source": "Register of Wills docket"
   },
   "04080819011600": {
-   "verdict": "WORK",
+   "verdict": "KILL",
    "confidence": "MEDIUM",
    "checked": "2026-11-12",
    "play": "Dead owner \u2014 estate on file",
-   "reason": "Register of Wills estate 185710 (SE, CLOSED, will no will), d. 10/11/2014. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "reason": "1615 Landon Rd \u2014 both owners dead (Norbert 10/2014, Grace Kemler Schirmer 8/22/2022; small estate + 'later discovered' 2018 will filed 12/2023), BUT the 2007 deed of trust was assigned 3/2026 and SUBSTITUTE TRUSTEES WERE APPOINTED 9/2/2026 \u2014 active foreclosure. Lender is awake.",
    "death": "Norbert E Schirmer d. 2014-10-11 (Find a Grave)",
    "contacts": [
     "STEPHANIE S AYERS (PR) \u2014 2 ATHENRY COURT, APT 201, LUTHERVILLE, MD 21093-8019"
@@ -1681,11 +1681,11 @@
    "source": "Register of Wills statewide search (no match)"
   },
   "04080808056610": {
-   "verdict": "WORK",
+   "verdict": "KILL",
    "confidence": "MEDIUM",
    "checked": "2026-11-12",
    "play": "Dead owner \u2014 estate on file",
-   "reason": "Register of Wills estate 14482 (SE, ARCHIVED, will no will), d. 7/12/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "reason": "118 Tregarone Rd \u2014 Lisa M Clark (d. 2024) was an investor with 5+ Baltimore County properties; bought this one 5/2019 (41373/343); co-owner/husband Michael F Clark has no estate (alive) and takes by survivorship; tax bill goes to their Monkton home. Investor-owned rental with a living owner.",
    "death": "Lisa Marie Clark d. 2024 (Legacy)",
    "contacts": [
     "ALEXANDER CLARK (PR) \u2014 529 LIEBY RD, CHURCH HILL, MD 21623-1273",
