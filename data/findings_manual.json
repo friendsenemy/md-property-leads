@@ -293,17 +293,34 @@
   "next": "Re-check March 2027: if still on the 2027 Calvert list with no deed recorded, call again."
  },
  "1902014661": {
-  "verdict": "GO",
+  "verdict": "PARK",
   "confidence": "HIGH",
   "checked": "2026-11-12",
   "play": "Dead co-owner; surviving spouse out of county; house vacant (zero water)",
-  "reason": "John F Offenbacher d. 4/3/2003 at 48; title never moved \u2014 Cheryl opened a Charles small estate in 12/2021 (will probated) and is PR, but no deed out followed. Water utility: ZERO use for all 10 billing months of 2026 \u2014 vacant. Tall Timbers on the Potomac subdivision (water community). Every loan released: 2002 DOT 1893/647 satisfied 2009 (3328/110); Cheryl's 2008 and 2009 BofA loans released 2012 (3728/783) and 2018 (4944/231). Free & clear. Taxes current.",
+  "reason": "Ray checked 11/2026: house is well maintained and appears in use (rental / short-term / summer home). The zero-water signal was misleading (rural lot \u2014 likely a well). John F Offenbacher d. 4/3/2003 at 48; title never moved \u2014 Cheryl opened a Charles small estate in 12/2021 (will probated) and is PR, but no deed out followed. Water utility: ZERO use for all 10 billing months of 2026 \u2014 vacant. Tall Timbers on the Potomac subdivision (water community). Every loan released: 2002 DOT 1893/647 satisfied 2009 (3328/110); Cheryl's 2008 and 2009 BofA loans released 2012 (3728/783) and 2018 (4944/231). Free & clear. Taxes current.",
   "title": "Deed 386/60 (11/20/1987) John F Offenbacher, Tall Timbers on the Potomac; quitclaim 2898/150 (11/2006) Meatyard/Hersman \u2192 Cheryl L Offenbacher ($250, adjoining interest). No deed out since John's death. Free & clear.",
   "death": "John Francis Offenbacher d. 4/3/2003 \u2014 Charles RoW 24538 (SE, closed), will 2/15/2002 probated 12/28/2021.",
   "contacts": [
    "Cheryl Lynn Offenbacher (co-owner / PR of John's estate) \u2014 PO Box 571, La Plata MD 20646 (docket); SDAT mail 16 Tulip Tree Way, Gettysburg PA 17325"
   ],
   "numbers": "Assessed $390K; equity est. $410K; 1938 house on River Rd (check waterfront/Critical Area). 25% \u2248 $100K; max \u2248 $235K.",
-  "next": "Letter to both addresses (La Plata PO box and Gettysburg); pitch: empty house, I buy as-is, PR deed closes the estate. Check waterfront/Critical Area on iMap before the number."
+  "next": "Leave alone; revisit only if it shows up on a tax list."
+ },
+ "1404335287": {
+  "verdict": "GO",
+  "confidence": "HIGH",
+  "checked": "2026-11-12",
+  "play": "Dead owner 28 yrs \u2014 estate closed 1998, never deeded; 2026 tax sale to Effect Inc ($117.6K); redemption clock",
+  "reason": "Frances G (Lloyd) Slagle, 61, died 2/17/1998 at Gilchrist Hospice (obituary, Unicoi Co. TN archive). Howard estate 12233 (will probated, closed 1998), PR daughter Brenda (Denney) Tate, Martinsburg WV \u2014 no deed ever recorded; SDAT still shows Frances. Only Land Records entries: deed 771/701 (1976) and DOT 771/703 released 1994 \u2014 FREE & CLEAR since 1994. Howard County cited 'Frances G. Slagle' for a code infraction in 2019 (0Z41104070) \u2014 21 years after her death. SOLD at the 2026 Howard tax sale to Effect Inc: face $117,626 (\u224815+ years unpaid), bid $122,100. No redemption suit yet (Case Search 11/12/2026); Effect can file 6 months after the sale and typically does.",
+  "title": "Deed 771/701 (6/17/1976) Frances G Slagle, 17767 Annapolis Rock Rd, .484 ac, 1950 house 1,237 sf. DOT 771/703 released 3201/467 (1994). No deed out. Title passes under the 1993 will (probated 1998) \u2014 needs a PR deed from a reopened estate or signatures of all devisees.",
+  "death": "Frances Gail Slagle d. 2/17/1998 \u2014 Howard RoW 12233 (RE, closed). Husband Donald R Slagle predeceased (6/29/1983). Survivors 1998: sons Michael W Slagle (Newport VA), Kelsey Slagle (Woodbine MD \u2014 at the house then); daughter Brenda Denney/Tate (Charles Town / Martinsburg WV); grandchildren Michelle, Elizabeth, Donald Walker, Matthew Slagle, Christa Denney, Joshua O'Dell. No Maryland estates for Kelsey, Michael W or Brenda.",
+  "contacts": [
+   "Brenda (Denney) Tate (daughter, PR of record 1998) \u2014 84 Babbling Brook Ln, Martinsburg WV 25403 (docket, 1998 \u2014 confirm)",
+   "Kelsey Slagle (son) \u2014 last known Woodbine MD; may have occupied the house \u2014 confirm living/whereabouts",
+   "Michael W Slagle (son) \u2014 last known Newport VA",
+   "Effect Inc / J. Scott Morse Esq (2026 certificate holder) \u2014 redemption payoff through Howard County Finance"
+  ],
+  "numbers": "Assessed $453.9K (mostly land, Woodbine). Redemption \u2248 $117.6K + 18%/yr interest + Effect's fees once a suit is filed \u2248 $130\u2013140K. Max total outlay for $100K profit \u2248 $290K \u2192 max to the heirs \u2248 $150K after redemption; realistic $50\u2013100K split among three. Heirs' alternative is losing it all to Effect's foreclosure.",
+  "next": "Skip-trace Brenda Tate and Kelsey Slagle; call Brenda first (she held letters). Confirm the house is empty (2019 citation + $117K arrears say yes; verify by drive-by/Street View). Title attorney: reopen estate 12233 for a PR deed or collect devisee deeds. Redeem at Howard County Finance before Effect's suit reaches judgment."
  }
 }
