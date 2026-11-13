@@ -160,5 +160,117 @@
   "verdict": "KILL",
   "checked": "2026-11-12",
   "reason": "McFarland 133 Eastern Ave \u2014 substitute trustee appointed 12/17/2025, foreclosure C-02-CV-25-003627 filed. Lender is awake."
+ },
+ "1402299127": {
+  "verdict": "GO",
+  "confidence": "HIGH",
+  "checked": "2026-11-12",
+  "play": "Dead owner \u2014 open estate, PR in Charles County",
+  "reason": "Bruce R Simpers d. 6/12/2024; Howard estate 36364 OPEN (no will). The 2018 HECM reverse mortgage (two DOTs 18180/158 & /178, Carrington + HUD) was RELEASED 12/18/2024 and 1/13/2025 \u2014 paid off after death. House is free & clear in a dead man's name with an open estate.",
+  "title": "Deed 3721/12 (1996) Bruce R Simpers, Lot 52 Market Square South. 1987 mortgage released 1996; 2018 reverse mortgage pair released 12/2024\u20131/2025. Free & clear.",
+  "death": "Bruce Robert Simpers d. 6/12/2024 \u2014 Howard RoW 36364, RE, OPEN, no will; claims filed 8/2024, 10/2024; court orders 4/2025, 11/2025.",
+  "contacts": [
+   "Glen R. Simpers (PR) \u2014 3861 Fawn Ln, White Plains MD 20695",
+   "Edward W Olmsted, estate attorney \u2014 PO Box 1966, La Plata MD 20646"
+  ],
+  "numbers": "Equity est. $505K; judgments BB&T $8.3K + Tower FCU $6.0K.",
+  "next": "Call the PR (White Plains \u2014 20 min from Charlotte Hall) or the La Plata attorney; confirm vacancy; 25% math on comps."
+ },
+ "161202344931": {
+  "verdict": "GO",
+  "confidence": "HIGH",
+  "checked": "2026-11-12",
+  "play": "Dead owners \u2014 open estate, free & clear",
+  "reason": "Ray D Magaha d. 5/1/2026 and co-owner Linda also deceased (Legacy); Montgomery estate W127131 OPEN, will probated, three claims filed. Every DOT (1998, 2003, 2009) released by 2013 \u2014 free & clear 13 years.",
+  "title": "Deed 16577/121 (1998) Ray D & Linda C Magaha. DOTs 16493/575, 24852/387, 25139/196, 36628/366, 37662/202 all released (last 46241/153, 2013). Free & clear.",
+  "death": "Ray Douglas Magaha d. 5/1/2026 \u2014 Montgomery RoW W127131, RE, OPEN, will probated; claims 8/2026, 9/2026.",
+  "contacts": [
+   "Mary E Moore (PR) \u2014 3007 Green Valley, Ijamsville MD 21754",
+   "J E Gibson, estate attorney \u2014 8400 Corporate Dr, Suite 230, Hyattsville MD 20785"
+  ],
+  "numbers": "Equity est. $317K; Citibank judgment $6.1K.",
+  "next": "Letter/call to the PR; confirm vacancy; comps."
+ },
+ "04131302370290": {
+  "verdict": "WORK",
+  "confidence": "MEDIUM",
+  "checked": "2026-11-12",
+  "play": "Dead owner \u2014 but surviving co-owner likely holds title",
+  "reason": "Dennis A Randle d. 2/6/2026 (Baltimore Co estate 238451 OPEN, no will, PR facing removal 11/12/2026). Co-owner Tammy L Randle has no estate \u2014 probably alive; if they held as husband and wife she owns 1240 Vogt Ave outright and the estate is irrelevant to the house. All Vogt Ave DOTs released (last BofA 26003/690 released 2015). Free & clear.",
+  "title": "Deed 12254/747 (1997) Dennis A Randle; DOTs 1997\u20132007 all released; 2011 loan was on 213 Oella Ave (released 2020). Free & clear.",
+  "death": "Dennis A Randle d. 2/6/2026 \u2014 Baltimore Co RoW 238451, OPEN, stalled (show-cause, delinquency docket, removal order 11/12/2026).",
+  "contacts": [
+   "Tammy L Randle (co-owner of record) \u2014 confirm status/address via SDAT tax bill",
+   "Matthew Randle (PR) \u2014 5605 Shelbourne Rd Apt A, Halethorpe MD 21227"
+  ],
+  "next": "Confirm Tammy is living and whether she occupies; if not, owner-direct to Tammy."
+ },
+ "0501131036": {
+  "verdict": "WORK",
+  "confidence": "MEDIUM",
+  "checked": "2026-11-12",
+  "play": "Dead owner \u2014 surviving co-owner likely holds title; federal judgment",
+  "reason": "Wayne R Brooks d. 9/8/2024 (Calvert estate 114985 OPEN, no will, two show-cause orders). Co-owner Beverly A Brooks has no Calvert estate \u2014 probably alive and sole owner by survivorship. 2090 Peace Ct acquired 2016 (4741/189) with no DOT of record on it; the foreclosure history (2013\u20132024 trustees) is on 6890 Broomes Island Rd. USA judgment $22K.",
+  "title": "Deed 4741/189 (4/7/2016) Peace Ct; no DOT indexed against it. Prior loans/sub-trustees relate to Broomes Island Rd.",
+  "death": "Wayne Roland Brooks d. 9/8/2024 \u2014 Calvert RoW 114985, OPEN, stalled.",
+  "contacts": [
+   "Beverly A Brooks (co-owner of record) \u2014 confirm status/address via SDAT tax bill",
+   "Karen Grace Connolley (PR) \u2014 363 Valley Stream Rd, Severna Park MD 21146"
+  ],
+  "next": "Confirm Beverly; read deed 4741/189 for vesting; owner-direct."
+ },
+ "020700100052800": {
+  "verdict": "PARK",
+  "confidence": "HIGH",
+  "checked": "2026-11-12",
+  "play": "Dead owners \u2014 contested estate",
+  "reason": "Both owners dead: Hubert O Lowe d. 2/12/2010 (AA estate 89602, archived) and Rebecca H Lowe d. 3/18/2024 (AA estate 116084 OPEN, will probated) \u2014 a PETITION TO CAVEAT (will contest) was filed 3/3/2026. Litigation; PR Melody Lowe lives next door (4937 Hine Dr). All DOTs released (last 2014). Free & clear but tied up.",
+  "contacts": [
+   "Melody Lowe (PR) \u2014 4937 Hine Dr, Shady Side MD 20764",
+   "Matthew S Ballard, estate attorney \u2014 1788 Forest Dr, Annapolis MD 21401"
+  ],
+  "next": "Re-check in 6 months when the caveat resolves; one letter to the attorney is fine."
+ },
+ "2403010457": {
+  "verdict": "PARK",
+  "confidence": "MEDIUM",
+  "checked": "2026-11-12",
+  "play": "Dead owner \u2014 life-estate deed likely",
+  "reason": "SDAT shows 'STRAKA GEORGE M / FOR LIFE' and Land Records shows a 11/8/2024 deed (8848/201) with George as both grantor and grantee \u2014 a life-estate deed five months before he died 4/1/2025. The remainderman (probably PR Andrew Straka Sr) owns it outside probate. Open estate is stalled (show-cause 6/2026).",
+  "contacts": [
+   "Andrew L Straka Sr (PR / likely remainderman) \u2014 7513 Iroquois Ave, Sparrows Point MD 21219",
+   "Brian A Cavanaugh, estate attorney \u2014 25 Shipping Pl, Dundalk MD 21222"
+  ],
+  "next": "Read deed 8848/201 for the remainderman; then owner-direct."
+ },
+ "020800000800800": {
+  "verdict": "KILL",
+  "checked": "2026-11-12",
+  "reason": "5111 Sands Rd \u2014 2021 refi (36691/107) went to substitute trustees 11/19/2025 and a deed out of Drayer was recorded 11/4/2026 (42838/479). Sold/foreclosed a week ago."
+ },
+ "1302083191": {
+  "verdict": "KILL",
+  "checked": "2026-11-12",
+  "reason": "313 Seagull Dr \u2014 2014 DOT (10628/418) assigned 2020, substitute trustees appointed 3/18/2026. Active foreclosure; lender is awake."
+ },
+ "0107028768": {
+  "verdict": "KILL",
+  "checked": "2026-11-12",
+  "reason": "14804 Woods Edge Ct \u2014 2021 VA refi (2672/410) assigned to the Secretary of Veterans Affairs 11/17/2025 (VA took the loan back \u2014 default/claim). Open loan, VA foreclosure track."
+ },
+ "1015004037": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "4357 Cabin Creek Hurlock Rd \u2014 serial refinancer; 11/2020 DOT (1609/55) open, assigned New Day \u2192 Freedom Mortgage 9/2025. Equity figure is unreliable; professional PR (Simon/Moss). Low priority."
+ },
+ "1501000551": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "13262 Augustine Herman Hwy \u2014 equity \u2248 $132K, under the $100K-profit bar; 2006 DOT 480/30 status unknown; estate open and stalled (PR Jeremy Scarberry, North East MD). Revisit only if comps run high."
+ },
+ "020100090045317": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "223 Polling House Rd \u2014 Tice family compound (PR Dennis Tice Sr at 227 next door; co-owner E Joan Tice, no estate \u2014 likely living). A loan on 223 was released 1/2024, after the death \u2014 family is paying. Occupied/used by family."
  }
 }
