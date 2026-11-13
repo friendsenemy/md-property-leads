@@ -276,11 +276,11 @@
   "reason": "223 Polling House Rd \u2014 Tice family compound (PR Dennis Tice Sr at 227 next door; co-owner E Joan Tice, no estate \u2014 likely living). A loan on 223 was released 1/2024, after the death \u2014 family is paying. Occupied/used by family."
  },
  "0501051601": {
-  "verdict": "GO",
+  "verdict": "PARK",
   "confidence": "HIGH",
   "checked": "2026-11-12",
   "play": "Dead owner 16 yrs \u2014 ancillary estate closed, house never deeded, 2026 tax sale",
-  "reason": "Nicola J Brintzenhofe d. 11/14/2010 (Springfield VA, cancer, 62). Calvert ancillary (foreign will) estate 12065 closed 2013 with a 'list of recipients of Maryland property' \u2014 but NO deed was ever recorded; SDAT still shows her. 1996 purchase DOT (892/623) RELEASED 9/2/2011 \u2014 free & clear. Sold at the 2026 Calvert tax sale for $17,048 (\u22483+ years unpaid). Absentee (tax bill to Springfield VA).",
+  "reason": "Ray called 11/2026 \u2014 family says they are taking care of it. Nicola J Brintzenhofe d. 11/14/2010 (Springfield VA, cancer, 62). Calvert ancillary (foreign will) estate 12065 closed 2013 with a 'list of recipients of Maryland property' \u2014 but NO deed was ever recorded; SDAT still shows her. 1996 purchase DOT (892/623) RELEASED 9/2/2011 \u2014 free & clear. Sold at the 2026 Calvert tax sale for $17,048 (\u22483+ years unpaid). Absentee (tax bill to Springfield VA).",
   "title": "Deed with plat 892/620 (8/29/1996) Nicola J Brintzenhofe, 1924 Elm Rd, Port Republic. DOT 892/623 released 3770/101 (2011). No deed out. Free & clear.",
   "death": "Nicola Brintzenhofe d. 11/14/2010 \u2014 Calvert RoW 12065 (FP, closed 2013), foreign will 11/8/2010. Survivors per Washington Post obituary: sons Danny Selario and Christopher Selario; siblings incl. Karlynn Brintzenhofe Szoc (the Maryland PR).",
   "contacts": [
@@ -290,20 +290,20 @@
    "Robert S Freideman Esq (estate attorney per docket) \u2014 1200 G St NW Suite 800, Washington DC 20005"
   ],
   "numbers": "Assessed $467.7K; equity est. $491K; 1976 SFR. 25% \u2248 $120K; max for $100K \u2248 $305K; back taxes \u2248 $17K + 2026\u201327.",
-  "next": "Call Karlynn (Hyattsville) \u2014 she ran the estate and knows where the sons are; the will names who takes the house, so title passes by a PR/personal-rep deed or the sons sign. Check whether the 2026 cert holder has filed a redemption suit (none on Case Search as of 11/12/2026). Street View / vacancy check."
+  "next": "Re-check March 2027: if still on the 2027 Calvert list with no deed recorded, call again."
  },
  "1902014661": {
-  "verdict": "WORK",
+  "verdict": "GO",
   "confidence": "HIGH",
   "checked": "2026-11-12",
   "play": "Dead co-owner; surviving spouse out of county; house vacant (zero water)",
-  "reason": "John F Offenbacher d. 4/3/2003 at 48; Charles small estate 24538 opened 12/2021 (18 yrs later), will probated, PR Cheryl Lynn Offenbacher (wife, co-owner) \u2014 PO Box 571 La Plata. SDAT tax bill goes to Gettysburg PA. Water utility shows ZERO use all 10 billing months of 2026 \u2014 empty house on River Rd, St. Mary's. Taxes current (no sale).",
-  "title": "Deed 2898/150 (11/20/1987) John F & Cheryl L Offenbacher. Land Records SM name search pending on DOTs. If TBE, Cheryl owns outright.",
+  "reason": "John F Offenbacher d. 4/3/2003 at 48; title never moved \u2014 Cheryl opened a Charles small estate in 12/2021 (will probated) and is PR, but no deed out followed. Water utility: ZERO use for all 10 billing months of 2026 \u2014 vacant. Tall Timbers on the Potomac subdivision (water community). Every loan released: 2002 DOT 1893/647 satisfied 2009 (3328/110); Cheryl's 2008 and 2009 BofA loans released 2012 (3728/783) and 2018 (4944/231). Free & clear. Taxes current.",
+  "title": "Deed 386/60 (11/20/1987) John F Offenbacher, Tall Timbers on the Potomac; quitclaim 2898/150 (11/2006) Meatyard/Hersman \u2192 Cheryl L Offenbacher ($250, adjoining interest). No deed out since John's death. Free & clear.",
   "death": "John Francis Offenbacher d. 4/3/2003 \u2014 Charles RoW 24538 (SE, closed), will 2/15/2002 probated 12/28/2021.",
   "contacts": [
-   "Cheryl Lynn Offenbacher (co-owner, PR) \u2014 PO Box 571, La Plata MD 20646 (per docket); SDAT mail 16 Tulip Tree Way, Gettysburg PA"
+   "Cheryl Lynn Offenbacher (co-owner / PR of John's estate) \u2014 PO Box 571, La Plata MD 20646 (docket); SDAT mail 16 Tulip Tree Way, Gettysburg PA 17325"
   ],
   "numbers": "Assessed $390K; equity est. $410K; 1938 house on River Rd (check waterfront/Critical Area). 25% \u2248 $100K; max \u2248 $235K.",
-  "next": "Land Records SM: DOT/releases on 2898/150 and whether Cheryl recorded anything after 2021; then owner-direct letter to the La Plata PO box."
+  "next": "Letter to both addresses (La Plata PO box and Gettysburg); pitch: empty house, I buy as-is, PR deed closes the estate. Check waterfront/Critical Area on iMap before the number."
  }
 }
