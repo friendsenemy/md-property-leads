@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-12",
  "counts": {
-  "WORK": 172,
+  "WORK": 175,
   "PARK": 24,
   "GO": 7,
   "KILL": 4
@@ -424,6 +424,19 @@
    "contacts": [],
    "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
    "source": "Register of Wills statewide search (no match)"
+  },
+  "0315043066C025": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 204763 (RE, OPEN, will no will), d. 11/10/2022. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate still open: the PR can sign now.",
+   "death": "Donald William Briscoe d. 2022-11-10 (Find a Grave)",
+   "contacts": [
+    "KYLE L BRISCOE (PR) \u2014 4 GREENERY CT, WINDSOR MILL, MD 21244-2996"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
   },
   "04111800012782": {
    "verdict": "WORK",
@@ -1236,6 +1249,19 @@
    "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
    "source": "Register of Wills statewide search (no match)"
   },
+  "04121212022080": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 217065 (SE, OPEN, will no will), d. 1/7/2022. Estate still open: the PR can sign now.",
+   "death": "Kelly Mack d. 2022-01 (Legacy)",
+   "contacts": [
+    "DAVID JOSEPH MACK (PR) \u2014 311 WORTHINGTON CT, ABERDEEN, MD 21001-1120"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
   "0106015689": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
@@ -1740,6 +1766,19 @@
    "reason": "Register of Wills estate 12149 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 4/8/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "John Alfred Klecan d. 2017-04-08 (Find a Grave)",
    "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0806007368": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 62632 (SE, ARCHIVED, will unprobated), d. 4/13/2025. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Debra Margaret Hamilton d. 2025-04 (Legacy)",
+   "contacts": [
+    "MICHAEL DEAN HAMILTON (PR) \u2014 1584 MAIN ST, WHITEFORD, MD 21160-1225"
+   ],
    "next": "Land Records DOT check, then letter/call to the PR",
    "source": "Register of Wills docket"
   },
