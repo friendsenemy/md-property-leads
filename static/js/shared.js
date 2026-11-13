@@ -203,3 +203,43 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") SharedNotes.refresh(); });
     window.addEventListener("focus", () => SharedNotes.refresh());
 });
+
+/* Worked-file findings: Claude's research verdicts per SDAT account (data/findings.json, built by
+   engine2/findings_build.py from data/findings_manual.json + the Register of Wills dockets).
+   Public-record facts only. Shown as a chip on the row and a "Worked file" block in the modal. */
+const Findings = {
+    byAcct: {}, loaded: false,
+    key(id) { return String(id || "").replace(/[\s-]+/g, ""); },
+    async load() {
+        if (this.loaded) return;
+        try {
+            const r = await fetch(`data/findings.json?t=${Date.now()}`, { cache: "no-store" });
+            const j = await r.json();
+            this.byAcct = j.by_account || {};
+        } catch { this.byAcct = {}; }
+        this.loaded = true;
+    },
+    get(id) { return this.byAcct[this.key(id)] || null; },
+    color(v) { return v === "GO" ? "var(--green)" : v === "KILL" ? "var(--red)" : v === "PARK" ? "var(--yellow)" : "var(--purple)"; },
+    chip(id) {
+        const f = this.get(id); if (!f) return "";
+        const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+        return `<span class="chip" style="border-color:${this.color(f.verdict)}; color:${this.color(f.verdict)}" title="${esc(f.reason)}">📁 ${esc(f.verdict)}${f.confidence ? ` · ${esc(f.confidence)}` : ""}</span>`;
+    },
+    block(id) {
+        const f = this.get(id); if (!f) return "";
+        const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+        const li = (arr) => (arr || []).map((x) => `<li>${esc(x)}</li>`).join("");
+        return `<div class="detail-section" style="border:1px solid ${this.color(f.verdict)}; border-radius:var(--radius); padding:10px 12px">
+            <h3>📁 Worked file — <span style="color:${this.color(f.verdict)}">${esc(f.verdict)}</span>${f.confidence ? ` <span style="font-size:0.75rem; color:var(--text-dim)">${esc(f.confidence)}</span>` : ""}
+                <span style="float:right; font-size:0.7rem; color:var(--text-dim); font-weight:400">${esc(f.checked || "")}</span></h3>
+            ${f.reason ? `<div style="font-size:0.84rem; margin:4px 0 6px">${esc(f.reason)}</div>` : ""}
+            ${f.title ? `<div style="font-size:0.8rem"><b>Title:</b> ${esc(f.title)}</div>` : ""}
+            ${f.death ? `<div style="font-size:0.8rem"><b>Death / estate:</b> ${esc(f.death)}</div>` : ""}
+            ${f.contacts && f.contacts.length ? `<div style="font-size:0.8rem; margin-top:4px"><b>Who signs (living):</b><ul style="margin:2px 0 0 18px">${li(f.contacts)}</ul></div>` : ""}
+            ${f.numbers ? `<div style="font-size:0.8rem; margin-top:4px"><b>Numbers:</b> ${esc(f.numbers)}</div>` : ""}
+            ${f.next ? `<div style="font-size:0.8rem; margin-top:4px"><b>Next step:</b> ${esc(f.next)}</div>` : ""}
+            ${f.notes && f.notes.length ? `<ul style="margin:6px 0 0 18px; font-size:0.78rem; color:var(--text-secondary)">${li(f.notes)}</ul>` : ""}
+        </div>`;
+    },
+};

@@ -18,6 +18,7 @@ const LiensApp = {
 
     async init() {
         this.bindEvents();
+        await Findings.load();
         try {
             const r = await fetch(`data/judgments/leads.json?t=${Date.now()}`, { cache: "no-store" });
             if (!r.ok) throw new Error(r.status);
@@ -136,7 +137,7 @@ const LiensApp = {
                     <td class="property-cell">
                         <div class="address">${this.esc(r.address || "(no street address)")}${r.city ? `, ${this.esc(r.city)}` : ""}</div>
                         <div class="meta" style="font-family:var(--font-mono)">Acct ${this.esc(r.account)}${r.deed ? ` · Deed ${this.esc(r.deed)}` : ""}</div>
-                        <div>${this.chips(r)}</div>
+                        <div>${Findings.chip(r.account)}${this.chips(r)}</div>
                     </td>
                     <td class="name-cell" style="font-family:var(--font-mono); font-size:0.76rem">${this.esc(r.owner || "—")}${r.owner2 ? `<br>${this.esc(r.owner2)}` : ""}${r.mail_state && r.mail_state !== "MD" ? ` <span style="color:var(--yellow)">(${this.esc(r.mail_state)})</span>` : ""}${this.notesOf(r) ? '<span class="note-badge" title="Has notes">✎</span>' : ""}</td>
                     <td class="county-cell">${this.esc(r.county)}</td>
@@ -170,6 +171,7 @@ const LiensApp = {
             <td style="font-family:var(--font-mono)">${this.esc(j.entry)}<div style="color:var(--text-dim)">${j.age_years} yrs</div></td>
             <td style="font-family:var(--font-mono)">${this.esc(j.expires)}</td></tr>`).join("");
         document.getElementById("modalBody").innerHTML = `
+            ${Findings.block(r.account)}
             <div class="detail-section">
                 <h3>Why It Scored <span style="color:${this.scoreColor(r.score)}">${r.score}</span></h3>
                 <ul style="margin:6px 0 0 18px; font-size:0.84rem; line-height:1.6">${r.reasons.map((x) => `<li>${this.esc(x)}</li>`).join("")}</ul>

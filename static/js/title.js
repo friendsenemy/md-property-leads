@@ -11,6 +11,7 @@ const TitleApp = {
     state: { scope: "top", preset: "", search: "", minPriority: 0, status: "all", vacantOnly: false, sort: "priority", dir: -1, page: 1, perPage: 25 },
 
     async init() {
+        await Findings.load();
         this.loadLocal();
         this.bindEvents();
         await this.loadSummary();
@@ -180,7 +181,7 @@ const TitleApp = {
                     <td>${this.vacBadge(r._vac)}</td>
                     <td class="property-cell">
                         <div class="address">${this.esc(p.property_address || "N/A")}${p.city ? `, ${this.esc(p.city)}` : ""}</div>
-                        <div class="meta">${this.esc(p.property_type || "")}${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? ` • owner on +${r.other_parcels_same_owner.length} parcels` : ""}</div>
+                        <div class="meta">${Findings.chip(p.account_number)} ${this.esc(p.property_type || "")}${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? ` • owner on +${r.other_parcels_same_owner.length} parcels` : ""}</div>
                     </td>
                     <td class="name-cell" style="font-family:var(--font-mono); font-size:0.8rem">${this.esc(p.owner_name)}${p.owner_name_2 ? `<div style="color:var(--text-secondary); font-size:0.72rem">${this.esc(p.owner_name_2)}</div>` : ""}${this.notesOf(r) ? '<span class="note-badge" title="Has notes">✎</span>' : ""}</td>
                     <td><span class="cls cls-${r.title_class[0]}" title="${this.esc(r.title_class_label)}">${r.title_class}</span> <span class="flags">${this.flagChips(r.flags)}</span></td>
@@ -207,6 +208,7 @@ const TitleApp = {
         const list = (arr) => arr && arr.length ? `<ul class="reasons">${arr.map((x) => `<li>${this.esc(x)}</li>`).join("")}</ul>` : '<span style="color:var(--text-dim)">—</span>';
         const owners = (p.owners || []).map((o) => this.esc(o.normalized_name)).join(", ");
         document.getElementById("modalBody").innerHTML = `
+            ${Findings.block(p.account_number)}
             <div class="detail-section">
                 <h3>Property</h3>
                 <div class="detail-row"><span class="label">Address</span><span class="value" style="font-weight:600">${this.esc(p.property_address)}, ${this.esc(p.city)} ${this.esc(p.zip_code)}</span></div>
