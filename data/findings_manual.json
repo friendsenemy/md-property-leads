@@ -192,18 +192,20 @@
   "next": "Letter/call to the PR; confirm vacancy; comps."
  },
  "04131302370290": {
-  "verdict": "WORK",
-  "confidence": "MEDIUM",
+  "verdict": "GO",
+  "confidence": "HIGH",
   "checked": "2026-11-12",
-  "play": "Dead owner \u2014 but surviving co-owner likely holds title",
-  "reason": "Dennis A Randle d. 2/6/2026 (Baltimore Co estate 238451 OPEN, no will, PR facing removal 11/12/2026). Co-owner Tammy L Randle has no estate \u2014 probably alive; if they held as husband and wife she owns 1240 Vogt Ave outright and the estate is irrelevant to the house. All Vogt Ave DOTs released (last BofA 26003/690 released 2015). Free & clear.",
-  "title": "Deed 12254/747 (1997) Dennis A Randle; DOTs 1997\u20132007 all released; 2011 loan was on 213 Oella Ave (released 2020). Free & clear.",
+  "play": "Dead co-owner \u2014 tenants in common after divorce; two signers",
+  "reason": "Deed 12254/747 (5/14/1997, $96,000) vested Dennis A. & Tammy L. Randle as tenants by the entireties, Lots 534 & 535 Arbutus Terraces (two lots). Dennis later married and divorced Kimberleigh (Carroll Co. divorce 06-C-15-068324, 2015), so he and Tammy were divorced before his death 2/6/2026 \u2014 the entireties became a tenancy in common: Tammy owns half outright, Dennis's half is in his no-will estate (238451, PR being removed). All Vogt Ave DOTs released (last BofA 26003/690, 2015). Free & clear. Street View 6/2026: unmowed, weeds through the drive \u2014 vacant.",
+  "title": "Deed 12254/747 (1997) Dennis A & Tammy L Randle, TBE, Lots 534\u2013535 Arbutus Terraces; DOTs 1997\u20132007 all released; 2011 loan was on 213 Oella Ave (released 2020). Free & clear.",
   "death": "Dennis A Randle d. 2/6/2026 \u2014 Baltimore Co RoW 238451, OPEN, stalled (show-cause, delinquency docket, removal order 11/12/2026).",
   "contacts": [
-   "Tammy L Randle (co-owner of record) \u2014 confirm status/address via SDAT tax bill",
-   "Matthew Randle (PR) \u2014 5605 Shelbourne Rd Apt A, Halethorpe MD 21227"
+   "Tammy L Randle (half owner) \u2014 address needed (skip trace; tax bill goes to the property)",
+   "Matthew Randle (PR, facing removal 11/12/2026) \u2014 5605 Shelbourne Rd Apt A, Halethorpe MD 21227",
+   "Replacement PR / Dennis's heirs \u2014 via the Register of Wills file 238451"
   ],
-  "next": "Confirm Tammy is living and whether she occupies; if not, owner-direct to Tammy."
+  "next": "Skip-trace Tammy; letter to her for her half (partition leverage, don't lead with it); then the estate for Dennis's half. Confirm the Dennis\u2013Tammy divorce decree (not on Case Search; the 2015 remarriage proves it).",
+  "numbers": "Equity est. $260K; two lots. 25% \u2248 $65K; max for $100K \u2248 $150K; Comptroller $4.3K + Cavalry $1.0K + Midland $1.5K paid from the estate's half."
  },
  "0501131036": {
   "verdict": "WORK",
