@@ -7,14 +7,14 @@
   "play": "Creditor asleep (stale tax cert) + dead owner",
   "reason": "Free & clear since 1973; owner died 2021; the tax bill goes to a daughter's address in Reston VA; taxes unpaid since 2024, 2024 certificate (#812) void, no redemption suit.",
   "title": "Deed 4281/159 (1973) Bernard A Downey Jr & Margaret C (TBE). DOTs 1991/1995/2003 all released (last 35309/197, 2013). Free & clear; title passed to Margaret by survivorship.",
-  "death": "Bernard A Downey Jr d. 10/28/2021 \u2014 PG small estate 125464 (closed 7/2022, will unprobated). Co-owner Margaret C Downey: no Maryland estate found; title passed to her by survivorship.",
+  "death": "Bernard A Downey Jr d. 10/28/2021 — PG small estate 125464 (closed 7/2022, will unprobated). Co-owner Margaret C Downey: no Maryland estate found; title passed to her by survivorship.",
   "contacts": [
-   "James A Downey (son, PR per docket) \u2014 26115 Woodridge Dr, Mechanicsville MD 20659 \u2014 first call",
-   "Elizabeth Ann Lewis (daughter, PR per docket) \u2014 2406 Bugle Ln, Reston VA 20191 (also the SDAT tax-bill address)",
-   "Robert H Moreland, estate attorney (per docket) \u2014 PO Box 778, Charlotte Hall MD 20622"
+   "James A Downey (son, PR per docket) — 26115 Woodridge Dr, Mechanicsville MD 20659 — first call",
+   "Elizabeth Ann Lewis (daughter, PR per docket) — 2406 Bugle Ln, Reston VA 20191 (also the SDAT tax-bill address)",
+   "Robert H Moreland, estate attorney (per docket) — PO Box 778, Charlotte Hall MD 20622"
   ],
-  "numbers": "Zestimate $530K; 25% = $133K; max for $100K = $362K; back taxes \u2248 $6.6K + 2025\u201326.",
-  "next": "Letter to James Downey (written 2026-11-12), call the week after; elderly owner \u2014 one warm contact."
+  "numbers": "Zestimate $530K; 25% = $133K; max for $100K = $362K; back taxes ≈ $6.6K + 2025–26.",
+  "next": "Letter to James Downey (written 2026-11-12), call the week after; elderly owner — one warm contact."
  },
  "17121227263": {
   "verdict": "GO",
@@ -23,13 +23,13 @@
   "play": "Creditor asleep (stale tax cert) + fresh heir",
   "reason": "Estate deeded the house to Sharon Marshall (DC) 12/2024; she has never paid a tax bill; 2024 cert (#598) void; free & clear.",
   "title": "Estate deed 50410/139 (12/13/2024) to Sharon Marshall; Jones's 2009 DOTs released 2018 (41647/351, 41651/447). SDAT owner now MARSHALL SHARON.",
-  "death": "Prentice E Jones d. 4/30/2018 \u2014 PG estate 111330 (will probated, closed).",
+  "death": "Prentice E Jones d. 4/30/2018 — PG estate 111330 (will probated, closed).",
   "contacts": [
-   "Sharon Marshall (owner/heir) \u2014 3819 26th St NE, Washington DC 20018",
-   "Karen Miller (former PR) \u2014 201 Blackberry Dr, Fort Washington MD 20744",
-   "Lu Juana Richardson (former PR) \u2014 15807 Baden Naylor Rd, Brandywine MD 20613"
+   "Sharon Marshall (owner/heir) — 3819 26th St NE, Washington DC 20018",
+   "Karen Miller (former PR) — 201 Blackberry Dr, Fort Washington MD 20744",
+   "Lu Juana Richardson (former PR) — 15807 Baden Naylor Rd, Brandywine MD 20613"
   ],
-  "numbers": "Redfin $535K; 25% = $134K; max $366K; back taxes \u2248 $6K + 2025\u201326.",
+  "numbers": "Redfin $535K; 25% = $134K; max $366K; back taxes ≈ $6K + 2025–26.",
   "next": "Letter to Sharon Marshall (written 2026-11-12)."
  },
  "020317516791400": {
@@ -37,13 +37,13 @@
   "confidence": "HIGH",
   "checked": "2026-11-12",
   "play": "Creditor asleep (stale tax cert), tired landlord, waterfront",
-  "reason": "Landlord lives elsewhere; 2023 GBIF cert void; still on 2024\u201326 lists; free & clear; SDAT tags parcel WATERFRONT, 0.94 acre.",
+  "reason": "Landlord lives elsewhere; 2023 GBIF cert void; still on 2024–26 lists; free & clear; SDAT tags parcel WATERFRONT, 0.94 acre.",
   "title": "Deed 28482/426 (6/11/2015) Albert F Rogall Jr. Purchase DOT 28482/431 released 2020-09-21 (35248/355). His 2021 DOT 37296/421 is on 966 Nabbs Creek, not this parcel. Free & clear.",
   "contacts": [
-   "Albert F Rogall Jr (owner) \u2014 966 Nabbs Creek Rd, Glen Burnie MD 21060"
+   "Albert F Rogall Jr (owner) — 966 Nabbs Creek Rd, Glen Burnie MD 21060"
   ],
-  "numbers": "Redfin $512K; 25% = $128K; max $346K; back taxes \u2248 $6.2K + 3 yrs. Check Critical Area / FEMA before the number.",
-  "next": "Letter written 2026-11-12. Investor-owner \u2014 Ray's call."
+  "numbers": "Redfin $512K; 25% = $128K; max $346K; back taxes ≈ $6.2K + 3 yrs. Check Critical Area / FEMA before the number.",
+  "next": "Letter written 2026-11-12. Investor-owner — Ray's call."
  },
  "020400006202500": {
   "verdict": "GO",
@@ -53,7 +53,7 @@
   "reason": "Bought for cash 11/2022, never paid a tax bill; 2024 cert (Insight Real Estate, $14.3K) void. Commercial, old structure.",
   "title": "Deed 39275/163 (11/15/2022) Duane McKinney; no DOT of record. (2011 'vs McKinney' suits are PG, different person.)",
   "contacts": [
-   "Duane McKinney (owner) \u2014 7004 40th Ave, Hyattsville MD 20782"
+   "Duane McKinney (owner) — 7004 40th Ave, Hyattsville MD 20782"
   ],
   "numbers": "Assessed $776K (no AVM); 25% = $194K; max $583K.",
   "next": "Letter written 2026-11-12; commercial buyer pool."
@@ -66,9 +66,9 @@
   "reason": "Owners in Bowie 24 yrs; 2009 refi released 2023 then taxes stopped; 2024 cert (#944) void; free & clear.",
   "title": "Deed 15690/49 (4/11/2002) William S Kirk (& Hilary J). 2009 DOT 30472/272 released 2023-03-22 (48676/126). Free & clear. Not the deceased William A Kirk Sr (different parcel).",
   "contacts": [
-   "William S & Hilary J Kirk (owners) \u2014 11700 Locust Glen Dr, Bowie MD 20721"
+   "William S & Hilary J Kirk (owners) — 11700 Locust Glen Dr, Bowie MD 20721"
   ],
-  "numbers": "Zestimate $513K (5bd/3ba); 25% = $128K; max $347K; back taxes \u2248 $8.5K + 2025\u201326.",
+  "numbers": "Zestimate $513K (5bd/3ba); 25% = $128K; max $347K; back taxes ≈ $8.5K + 2025–26.",
   "next": "Letter written 2026-11-12."
  },
  "1102218348": {
@@ -76,14 +76,14 @@
   "confidence": "MEDIUM",
   "checked": "2026-11-12",
   "play": "Judgment buy (HOA) + absentee owner",
-  "reason": "Mark H Cox d. 2008, 'will \u2013 no estate'; house passed to Wendy G Cox by survivorship; mortgage released 11/2008; HOA liens 2018\u20132025 and two HOA judgments ($2.7K + $16.2K).",
-  "title": "Owned Cox Mark H & Wendy G (TBE) \u2192 Wendy sole owner by survivorship. Mortgage released 7118/514 (2008-11-18). HOA liens 12705/171, 12954/274, 13749/235, 16646/290, 17199/162; two released 2023-11-27.",
-  "death": "Mark H Cox d. 7/25/2008 \u2014 Frederick RoW 32030, will deposited, no estate (none needed).",
+  "reason": "Mark H Cox d. 2008, 'will – no estate'; house passed to Wendy G Cox by survivorship; mortgage released 11/2008; HOA liens 2018–2025 and two HOA judgments ($2.7K + $16.2K).",
+  "title": "Owned Cox Mark H & Wendy G (TBE) → Wendy sole owner by survivorship. Mortgage released 7118/514 (2008-11-18). HOA liens 12705/171, 12954/274, 13749/235, 16646/290, 17199/162; two released 2023-11-27.",
+  "death": "Mark H Cox d. 7/25/2008 — Frederick RoW 32030, will deposited, no estate (none needed).",
   "contacts": [
-   "Wendy G Cox (owner of record) \u2014 address per SDAT tax bill / Land Records; confirm current",
-   "Worman's Mill Community Conservancy (judgment creditor) \u2014 via its attorney; buy the two judgments"
+   "Wendy G Cox (owner of record) — address per SDAT tax bill / Land Records; confirm current",
+   "Worman's Mill Community Conservancy (judgment creditor) — via its attorney; buy the two judgments"
   ],
-  "numbers": "Equity est. $386K; HOA judgments \u2248 $19K face.",
+  "numbers": "Equity est. $386K; HOA judgments ≈ $19K face.",
   "next": "Confirm Wendy's current mailing address from the tax bill; letter to her + offer to the HOA attorney for the judgments."
  },
  "19-07018126": {
@@ -91,14 +91,14 @@
   "confidence": "HIGH",
   "checked": "2026-11-11",
   "play": "Right-of-redemption suit filed (Effect Inc.)",
-  "reason": "Tax-delinquent investor-owned house; Effect Inc. filed to foreclose the right of redemption 10/26/2026 (C-18-CV-26-000721) \u2014 court clock, not just a tax list.",
+  "reason": "Tax-delinquent investor-owned house; Effect Inc. filed to foreclose the right of redemption 10/26/2026 (C-18-CV-26-000721) — court clock, not just a tax list.",
   "title": "Deed SM 4694/218 (7/2017, $33,600) from four Equity Trust IRA accounts; no mortgage.",
   "contacts": [
-   "Daniel Lynn Meyers (owner, 52) \u2014 7035 Bensville Rd, White Plains MD",
-   "J. Scott Morse, Esq. \u2014 plaintiff's attorney for Effect Inc."
+   "Daniel Lynn Meyers (owner, 52) — 7035 Bensville Rd, White Plains MD",
+   "J. Scott Morse, Esq. — plaintiff's attorney for Effect Inc."
   ],
-  "numbers": "As-is \u2248 $345K; max offer \u2248 $199K; 2026 sale face $8,074, bid $67,100.",
-  "next": "Call the owner first \u2014 he is being sued and has a deadline."
+  "numbers": "As-is ≈ $345K; max offer ≈ $199K; 2026 sale face $8,074, bid $67,100.",
+  "next": "Call the owner first — he is being sued and has a deadline."
  },
  "09-05017718": {
   "verdict": "PARK",
@@ -107,14 +107,14 @@
   "play": "Owner-direct (trust), waterfront",
   "reason": "Purvis Family Trust 2014 (CH 8514/86), free & clear; trustees William J Purvis III (83) and Doris (81) alive in Naples FL; tenant Tomas Gallardo Sr in the house; flood VE.",
   "contacts": [
-   "William J & Doris Purvis (trustees) \u2014 1302 Westlake Blvd, Naples FL"
+   "William J & Doris Purvis (trustees) — 1302 Westlake Blvd, Naples FL"
   ],
   "next": "Owner-direct letter; Lot 24 (09-05017726) first."
  },
  "020600090040199": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "Karen Samaras signed new leases on 1925 West St in 2021; her open DOT is on her condo, not this parcel. Active commercial landlord, $1.2K cert \u2014 late, not asleep."
+  "reason": "Karen Samaras signed new leases on 1925 West St in 2021; her open DOT is on her condo, not this parcel. Active commercial landlord, $1.2K cert — late, not asleep."
  },
  "17101121821": {
   "verdict": "PARK",
@@ -124,69 +124,69 @@
  "17215584563": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "Yingqiao Gou bought 1/2023 cash; HOA liens 10/2024 and 10/2026; tax bill goes to 8100 Greenbelt Station Pkwy which he sold 7/2024 \u2014 not receiving mail. Needs skip trace."
+  "reason": "Yingqiao Gou bought 1/2023 cash; HOA liens 10/2024 and 10/2026; tax bill goes to 8100 Greenbelt Station Pkwy which he sold 7/2024 — not receiving mail. Needs skip trace."
  },
  "17070770883": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "Warner / Warner-Davidson investor family (5+ deeds); 2017 DOT with substitute trustee 11/2017; HOA liens 2015\u20132021. Ray skips investor-owners."
+  "reason": "Warner / Warner-Davidson investor family (5+ deeds); 2017 DOT with substitute trustee 11/2017; HOA liens 2015–2021. Ray skips investor-owners."
  },
  "17050406199": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "3001 E Ridge Rd \u2014 SDAT tax bill goes to the property (mail-mismatch was a spelling artifact); treat as owner-occupied. Lien list only."
+  "reason": "3001 E Ridge Rd — SDAT tax bill goes to the property (mail-mismatch was a spelling artifact); treat as owner-occupied. Lien list only."
  },
  "020680990035338": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "2A3 Spa Creek Landing \u2014 tax-bill address is the same building; owner-occupied condo."
+  "reason": "2A3 Spa Creek Landing — tax-bill address is the same building; owner-occupied condo."
  },
  "17181986603": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "Margaret H Lucas d. 4/28/2022 (PG small estate 125494); PR James T Lucas Sr lives at the house \u2014 family-occupied."
+  "reason": "Margaret H Lucas d. 4/28/2022 (PG small estate 125494); PR James T Lucas Sr lives at the house — family-occupied."
  },
  "0804039130": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "Marcella E Moore \u2014 no estate anywhere in Maryland; death claim unconfirmed (only a 1955 Marcella Moore estate exists). Needs an obituary before anything else."
+  "reason": "Marcella E Moore — no estate anywhere in Maryland; death claim unconfirmed (only a 1955 Marcella Moore estate exists). Needs an obituary before anything else."
  },
  "020200006629000": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "Alvarado \u2014 Columbia Liens filed a redemption suit 12/2024 (C-02-CV-24-003203, closed); 2022 DOT 39207/88 unreleased. Creditor is not asleep."
+  "reason": "Alvarado — Columbia Liens filed a redemption suit 12/2024 (C-02-CV-24-003203, closed); 2022 DOT 39207/88 unreleased. Creditor is not asleep."
  },
  "020600090031249": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "McFarland 133 Eastern Ave \u2014 substitute trustee appointed 12/17/2025, foreclosure C-02-CV-25-003627 filed. Lender is awake."
+  "reason": "McFarland 133 Eastern Ave — substitute trustee appointed 12/17/2025, foreclosure C-02-CV-25-003627 filed. Lender is awake."
  },
  "1402299127": {
   "verdict": "GO",
   "confidence": "HIGH",
   "checked": "2026-11-12",
-  "play": "Dead owner \u2014 open estate, PR in Charles County",
-  "reason": "Bruce R Simpers, 73, died at home 6/12/2024 \u2014 no spouse/children; brother Glen is sole heir and PR. Estate 36364 OPEN since 7/2024 and on its FOURTH administration account (11/10/2026) because of a COMPTROLLER OF MARYLAND CLAIM for $155,754.93 (filed 10/21/2024); other claims UMMS $250. The 2018 HECM reverse mortgage was released 12/2024\u20131/2025. House free & clear of mortgages, empty since June 2024; a cash sale is what pays the Comptroller and closes the estate.",
-  "title": "Deed 3721/12 (1996) Bruce R Simpers, Lot 52 Market Square South. 1987 mortgage released 1996; 2018 reverse mortgage pair released 12/2024\u20131/2025. Free & clear.",
-  "death": "Bruce Robert Simpers (1/7/1951\u20136/12/2024), died at home; retired DoD chemist. Howard RoW 36364, RE, OPEN, no will; claims 8/2024, 10/2024; court orders 4/2025, 11/2025.",
+  "play": "Dead owner — open estate, PR in Charles County",
+  "reason": "Bruce R Simpers, 73, died at home 6/12/2024 — no spouse/children; brother Glen is sole heir and PR. Estate 36364 OPEN since 7/2024 and on its FOURTH administration account (11/10/2026) because of a COMPTROLLER OF MARYLAND CLAIM for $155,754.93 (filed 10/21/2024); other claims UMMS $250. The 2018 HECM reverse mortgage was released 12/2024–1/2025. House free & clear of mortgages, empty since June 2024; a cash sale is what pays the Comptroller and closes the estate.",
+  "title": "Deed 3721/12 (1996) Bruce R Simpers, Lot 52 Market Square South. 1987 mortgage released 1996; 2018 reverse mortgage pair released 12/2024–1/2025. Free & clear.",
+  "death": "Bruce Robert Simpers (1/7/1951–6/12/2024), died at home; retired DoD chemist. Howard RoW 36364, RE, OPEN, no will; claims 8/2024, 10/2024; court orders 4/2025, 11/2025.",
   "contacts": [
-   "Glen R. Simpers (PR) \u2014 3861 Fawn Ln, White Plains MD 20695",
-   "Edward W Olmsted, estate attorney \u2014 PO Box 1966, La Plata MD 20646"
+   "Glen R. Simpers (PR) — 3861 Fawn Ln, White Plains MD 20695",
+   "Edward W Olmsted, estate attorney — PO Box 1966, La Plata MD 20646"
   ],
-  "numbers": "Zestimate $675K / Redfin \u2248 $705K; 1986 SFR 1,796 sf, 0.35 ac. Less Comptroller $155.8K + BB&T $8.3K + Tower $6.0K + UMMS $250 \u2248 $500K true equity. 25% \u2248 $170K; max for $100K \u2248 $490K (liens paid from price at closing).",
-  "next": "Call attorney Olmsted (La Plata) and Glen (White Plains) the same day; lead with 'a cash closing pays the Comptroller and closes the estate'. Confirm whether the Comptroller will accept payoff at settlement. Do not buy the small judgments \u2014 the state is the creditor that matters."
+  "numbers": "Zestimate $675K / Redfin ≈ $705K; 1986 SFR 1,796 sf, 0.35 ac. Less Comptroller $155.8K + BB&T $8.3K + Tower $6.0K + UMMS $250 ≈ $500K true equity. 25% ≈ $170K; max for $100K ≈ $490K (liens paid from price at closing).",
+  "next": "Call attorney Olmsted (La Plata) and Glen (White Plains) the same day; lead with 'a cash closing pays the Comptroller and closes the estate'. Confirm whether the Comptroller will accept payoff at settlement. Do not buy the small judgments — the state is the creditor that matters."
  },
  "161202344931": {
   "verdict": "GO",
   "confidence": "HIGH",
   "checked": "2026-11-12",
-  "play": "Dead owners \u2014 open estate, free & clear",
-  "reason": "Ray D Magaha d. 5/1/2026 and co-owner Linda also deceased (Legacy); Montgomery estate W127131 OPEN, will probated, three claims filed. Every DOT (1998, 2003, 2009) released by 2013 \u2014 free & clear 13 years.",
+  "play": "Dead owners — open estate, free & clear",
+  "reason": "Ray D Magaha d. 5/1/2026 and co-owner Linda also deceased (Legacy); Montgomery estate W127131 OPEN, will probated, three claims filed. Every DOT (1998, 2003, 2009) released by 2013 — free & clear 13 years.",
   "title": "Deed 16577/121 (1998) Ray D & Linda C Magaha. DOTs 16493/575, 24852/387, 25139/196, 36628/366, 37662/202 all released (last 46241/153, 2013). Free & clear.",
-  "death": "Ray Douglas Magaha d. 5/1/2026 \u2014 Montgomery RoW W127131, RE, OPEN, will probated; claims 8/2026, 9/2026.",
+  "death": "Ray Douglas Magaha d. 5/1/2026 — Montgomery RoW W127131, RE, OPEN, will probated; claims 8/2026, 9/2026.",
   "contacts": [
-   "Mary E Moore (PR) \u2014 3007 Green Valley, Ijamsville MD 21754",
-   "J E Gibson, estate attorney \u2014 8400 Corporate Dr, Suite 230, Hyattsville MD 20785"
+   "Mary E Moore (PR) — 3007 Green Valley, Ijamsville MD 21754",
+   "J E Gibson, estate attorney — 8400 Corporate Dr, Suite 230, Hyattsville MD 20785"
   ],
   "numbers": "Equity est. $317K; Citibank judgment $6.1K.",
   "next": "Letter/call to the PR; confirm vacancy; comps."
@@ -195,29 +195,29 @@
   "verdict": "GO",
   "confidence": "HIGH",
   "checked": "2026-11-12",
-  "play": "Dead owner \u2014 whole house in one no-will estate, PR being removed",
-  "reason": "Deed 12254/747 (5/14/1997, $96,000) vested Dennis A. & Tammy L. Randle as tenants by the entireties (Lots 534\u2013535 Arbutus Terraces). Tammy died 12/15/2008 as his wife (Baltimore Sun obituary), so Dennis took 100% by survivorship; his later marriage to Kimberleigh ended in a 2015 Carroll Co. divorce (06-C-15-068324) \u2014 she has no claim. Dennis d. 2/6/2026 (Ambrose Funeral Home); Baltimore Co estate 238451, no will, PR facing removal 11/12/2026. All Vogt Ave DOTs released (last BofA 2015). Free & clear. Street View 6/2026: vacant/neglected.",
-  "title": "Deed 12254/747 (1997) TBE \u2192 Dennis sole owner by survivorship 12/2008 \u2192 Dennis's estate 238451 (intestate). Free & clear.",
-  "death": "Tammy Leigh Randle d. 12/15/2008 (no estate needed). Dennis Andrew Randle d. 2/6/2026 \u2014 estate 238451 OPEN, no will; heirs per obituary: sons Matthew, Nicholas, David.",
+  "play": "Dead owner — whole house in one no-will estate, PR being removed",
+  "reason": "Deed 12254/747 (5/14/1997, $96,000) vested Dennis A. & Tammy L. Randle as tenants by the entireties (Lots 534–535 Arbutus Terraces). Tammy died 12/15/2008 as his wife (Baltimore Sun obituary), so Dennis took 100% by survivorship; his later marriage to Kimberleigh ended in a 2015 Carroll Co. divorce (06-C-15-068324) — she has no claim. Dennis d. 2/6/2026 (Ambrose Funeral Home); Baltimore Co estate 238451, no will, PR facing removal 11/12/2026. All Vogt Ave DOTs released (last BofA 2015). Free & clear. Street View 6/2026: vacant/neglected.",
+  "title": "Deed 12254/747 (1997) TBE → Dennis sole owner by survivorship 12/2008 → Dennis's estate 238451 (intestate). Free & clear.",
+  "death": "Tammy Leigh Randle d. 12/15/2008 (no estate needed). Dennis Andrew Randle d. 2/6/2026 — estate 238451 OPEN, no will; heirs per obituary: sons Matthew, Nicholas, David.",
   "contacts": [
-   "Matthew B Randle Jr (son, PR \u2014 removal order 11/12/2026) \u2014 5605 Shelbourne Rd Apt A, Halethorpe MD 21227",
-   "Nicholas A Randle (son/heir) \u2014 successor-PR candidate",
-   "David P Randle (son/heir) \u2014 successor-PR candidate"
+   "Matthew B Randle Jr (son, PR — removal order 11/12/2026) — 5605 Shelbourne Rd Apt A, Halethorpe MD 21227",
+   "Nicholas A Randle (son/heir) — successor-PR candidate",
+   "David P Randle (son/heir) — successor-PR candidate"
   ],
   "next": "Call Matthew (PR) first; if he is out, one brother petitions as successor PR with the others' consent; contract with whoever holds letters. Title company will want Tammy's death certificate and the Kimberleigh divorce decree.",
-  "numbers": "Equity est. $260K; two lots; free & clear. 25% \u2248 $65K; max for $100K \u2248 $150K; Comptroller $4.3K + Cavalry $1.0K + Midland $1.5K paid at closing."
+  "numbers": "Equity est. $260K; two lots; free & clear. 25% ≈ $65K; max for $100K ≈ $150K; Comptroller $4.3K + Cavalry $1.0K + Midland $1.5K paid at closing."
  },
  "0501131036": {
   "verdict": "WORK",
   "confidence": "MEDIUM",
   "checked": "2026-11-12",
-  "play": "Dead owner \u2014 surviving co-owner likely holds title; federal judgment",
-  "reason": "Wayne R Brooks d. 9/8/2024 (Calvert estate 114985 OPEN, no will, two show-cause orders). Co-owner Beverly A Brooks has no Calvert estate \u2014 probably alive and sole owner by survivorship. 2090 Peace Ct acquired 2016 (4741/189) with no DOT of record on it; the foreclosure history (2013\u20132024 trustees) is on 6890 Broomes Island Rd. USA judgment $22K.",
+  "play": "Dead owner — surviving co-owner likely holds title; federal judgment",
+  "reason": "Wayne R Brooks d. 9/8/2024 (Calvert estate 114985 OPEN, no will, two show-cause orders). Co-owner Beverly A Brooks has no Calvert estate — probably alive and sole owner by survivorship. 2090 Peace Ct acquired 2016 (4741/189) with no DOT of record on it; the foreclosure history (2013–2024 trustees) is on 6890 Broomes Island Rd. USA judgment $22K.",
   "title": "Deed 4741/189 (4/7/2016) Peace Ct; no DOT indexed against it. Prior loans/sub-trustees relate to Broomes Island Rd.",
-  "death": "Wayne Roland Brooks d. 9/8/2024 \u2014 Calvert RoW 114985, OPEN, stalled.",
+  "death": "Wayne Roland Brooks d. 9/8/2024 — Calvert RoW 114985, OPEN, stalled.",
   "contacts": [
-   "Beverly A Brooks (co-owner of record) \u2014 confirm status/address via SDAT tax bill",
-   "Karen Grace Connolley (PR) \u2014 363 Valley Stream Rd, Severna Park MD 21146"
+   "Beverly A Brooks (co-owner of record) — confirm status/address via SDAT tax bill",
+   "Karen Grace Connolley (PR) — 363 Valley Stream Rd, Severna Park MD 21146"
   ],
   "next": "Confirm Beverly; read deed 4741/189 for vesting; owner-direct."
  },
@@ -225,11 +225,11 @@
   "verdict": "PARK",
   "confidence": "HIGH",
   "checked": "2026-11-12",
-  "play": "Dead owners \u2014 contested estate",
-  "reason": "Both owners dead: Hubert O Lowe d. 2/12/2010 (AA estate 89602, archived) and Rebecca H Lowe d. 3/18/2024 (AA estate 116084 OPEN, will probated) \u2014 a PETITION TO CAVEAT (will contest) was filed 3/3/2026. Litigation; PR Melody Lowe lives next door (4937 Hine Dr). All DOTs released (last 2014). Free & clear but tied up.",
+  "play": "Dead owners — contested estate",
+  "reason": "Both owners dead: Hubert O Lowe d. 2/12/2010 (AA estate 89602, archived) and Rebecca H Lowe d. 3/18/2024 (AA estate 116084 OPEN, will probated) — a PETITION TO CAVEAT (will contest) was filed 3/3/2026. Litigation; PR Melody Lowe lives next door (4937 Hine Dr). All DOTs released (last 2014). Free & clear but tied up.",
   "contacts": [
-   "Melody Lowe (PR) \u2014 4937 Hine Dr, Shady Side MD 20764",
-   "Matthew S Ballard, estate attorney \u2014 1788 Forest Dr, Annapolis MD 21401"
+   "Melody Lowe (PR) — 4937 Hine Dr, Shady Side MD 20764",
+   "Matthew S Ballard, estate attorney — 1788 Forest Dr, Annapolis MD 21401"
   ],
   "next": "Re-check in 6 months when the caveat resolves; one letter to the attorney is fine."
  },
@@ -237,59 +237,59 @@
   "verdict": "PARK",
   "confidence": "MEDIUM",
   "checked": "2026-11-12",
-  "play": "Dead owner \u2014 life-estate deed likely",
-  "reason": "SDAT shows 'STRAKA GEORGE M / FOR LIFE' and Land Records shows a 11/8/2024 deed (8848/201) with George as both grantor and grantee \u2014 a life-estate deed five months before he died 4/1/2025. The remainderman (probably PR Andrew Straka Sr) owns it outside probate. Open estate is stalled (show-cause 6/2026).",
+  "play": "Dead owner — life-estate deed likely",
+  "reason": "SDAT shows 'STRAKA GEORGE M / FOR LIFE' and Land Records shows a 11/8/2024 deed (8848/201) with George as both grantor and grantee — a life-estate deed five months before he died 4/1/2025. The remainderman (probably PR Andrew Straka Sr) owns it outside probate. Open estate is stalled (show-cause 6/2026).",
   "contacts": [
-   "Andrew L Straka Sr (PR / likely remainderman) \u2014 7513 Iroquois Ave, Sparrows Point MD 21219",
-   "Brian A Cavanaugh, estate attorney \u2014 25 Shipping Pl, Dundalk MD 21222"
+   "Andrew L Straka Sr (PR / likely remainderman) — 7513 Iroquois Ave, Sparrows Point MD 21219",
+   "Brian A Cavanaugh, estate attorney — 25 Shipping Pl, Dundalk MD 21222"
   ],
   "next": "Read deed 8848/201 for the remainderman; then owner-direct."
  },
  "020800000800800": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "5111 Sands Rd \u2014 2021 refi (36691/107) went to substitute trustees 11/19/2025 and a deed out of Drayer was recorded 11/4/2026 (42838/479). Sold/foreclosed a week ago."
+  "reason": "5111 Sands Rd — 2021 refi (36691/107) went to substitute trustees 11/19/2025 and a deed out of Drayer was recorded 11/4/2026 (42838/479). Sold/foreclosed a week ago."
  },
  "1302083191": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "313 Seagull Dr \u2014 2014 DOT (10628/418) assigned 2020, substitute trustees appointed 3/18/2026. Active foreclosure; lender is awake."
+  "reason": "313 Seagull Dr — 2014 DOT (10628/418) assigned 2020, substitute trustees appointed 3/18/2026. Active foreclosure; lender is awake."
  },
  "0107028768": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "14804 Woods Edge Ct \u2014 2021 VA refi (2672/410) assigned to the Secretary of Veterans Affairs 11/17/2025 (VA took the loan back \u2014 default/claim). Open loan, VA foreclosure track."
+  "reason": "14804 Woods Edge Ct — 2021 VA refi (2672/410) assigned to the Secretary of Veterans Affairs 11/17/2025 (VA took the loan back — default/claim). Open loan, VA foreclosure track."
  },
  "1015004037": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "4357 Cabin Creek Hurlock Rd \u2014 serial refinancer; 11/2020 DOT (1609/55) open, assigned New Day \u2192 Freedom Mortgage 9/2025. Equity figure is unreliable; professional PR (Simon/Moss). Low priority."
+  "reason": "4357 Cabin Creek Hurlock Rd — serial refinancer; 11/2020 DOT (1609/55) open, assigned New Day → Freedom Mortgage 9/2025. Equity figure is unreliable; professional PR (Simon/Moss). Low priority."
  },
  "1501000551": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "13262 Augustine Herman Hwy \u2014 equity \u2248 $132K, under the $100K-profit bar; 2006 DOT 480/30 status unknown; estate open and stalled (PR Jeremy Scarberry, North East MD). Revisit only if comps run high."
+  "reason": "13262 Augustine Herman Hwy — equity ≈ $132K, under the $100K-profit bar; 2006 DOT 480/30 status unknown; estate open and stalled (PR Jeremy Scarberry, North East MD). Revisit only if comps run high."
  },
  "020100090045317": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "223 Polling House Rd \u2014 Tice family compound (PR Dennis Tice Sr at 227 next door; co-owner E Joan Tice, no estate \u2014 likely living). A loan on 223 was released 1/2024, after the death \u2014 family is paying. Occupied/used by family."
+  "reason": "223 Polling House Rd — Tice family compound (PR Dennis Tice Sr at 227 next door; co-owner E Joan Tice, no estate — likely living). A loan on 223 was released 1/2024, after the death — family is paying. Occupied/used by family."
  },
  "0501051601": {
   "verdict": "PARK",
   "confidence": "HIGH",
   "checked": "2026-11-12",
-  "play": "Dead owner 16 yrs \u2014 ancillary estate closed, house never deeded, 2026 tax sale",
-  "reason": "Ray called 11/2026 \u2014 family says they are taking care of it. Nicola J Brintzenhofe d. 11/14/2010 (Springfield VA, cancer, 62). Calvert ancillary (foreign will) estate 12065 closed 2013 with a 'list of recipients of Maryland property' \u2014 but NO deed was ever recorded; SDAT still shows her. 1996 purchase DOT (892/623) RELEASED 9/2/2011 \u2014 free & clear. Sold at the 2026 Calvert tax sale for $17,048 (\u22483+ years unpaid). Absentee (tax bill to Springfield VA).",
+  "play": "Dead owner 16 yrs — ancillary estate closed, house never deeded, 2026 tax sale",
+  "reason": "Ray called 11/2026 — family says they are taking care of it. Nicola J Brintzenhofe d. 11/14/2010 (Springfield VA, cancer, 62). Calvert ancillary (foreign will) estate 12065 closed 2013 with a 'list of recipients of Maryland property' — but NO deed was ever recorded; SDAT still shows her. 1996 purchase DOT (892/623) RELEASED 9/2/2011 — free & clear. Sold at the 2026 Calvert tax sale for $17,048 (≈3+ years unpaid). Absentee (tax bill to Springfield VA).",
   "title": "Deed with plat 892/620 (8/29/1996) Nicola J Brintzenhofe, 1924 Elm Rd, Port Republic. DOT 892/623 released 3770/101 (2011). No deed out. Free & clear.",
-  "death": "Nicola Brintzenhofe d. 11/14/2010 \u2014 Calvert RoW 12065 (FP, closed 2013), foreign will 11/8/2010. Survivors per Washington Post obituary: sons Danny Selario and Christopher Selario; siblings incl. Karlynn Brintzenhofe Szoc (the Maryland PR).",
+  "death": "Nicola Brintzenhofe d. 11/14/2010 — Calvert RoW 12065 (FP, closed 2013), foreign will 11/8/2010. Survivors per Washington Post obituary: sons Danny Selario and Christopher Selario; siblings incl. Karlynn Brintzenhofe Szoc (the Maryland PR).",
   "contacts": [
-   "Karlynn M Brintzenhofe Szoc (sister, foreign PR per docket) \u2014 5721 Lustine St, Hyattsville MD 20781",
-   "Danny Selario (son/heir) \u2014 locate",
-   "Christopher Selario (son/heir) \u2014 locate",
-   "Robert S Freideman Esq (estate attorney per docket) \u2014 1200 G St NW Suite 800, Washington DC 20005"
+   "Karlynn M Brintzenhofe Szoc (sister, foreign PR per docket) — 5721 Lustine St, Hyattsville MD 20781",
+   "Danny Selario (son/heir) — locate",
+   "Christopher Selario (son/heir) — locate",
+   "Robert S Freideman Esq (estate attorney per docket) — 1200 G St NW Suite 800, Washington DC 20005"
   ],
-  "numbers": "Assessed $467.7K; equity est. $491K; 1976 SFR. 25% \u2248 $120K; max for $100K \u2248 $305K; back taxes \u2248 $17K + 2026\u201327.",
+  "numbers": "Assessed $467.7K; equity est. $491K; 1976 SFR. 25% ≈ $120K; max for $100K ≈ $305K; back taxes ≈ $17K + 2026–27.",
   "next": "Re-check March 2027: if still on the 2027 Calvert list with no deed recorded, call again."
  },
  "1902014661": {
@@ -297,46 +297,47 @@
   "confidence": "HIGH",
   "checked": "2026-11-12",
   "play": "Dead co-owner; surviving spouse out of county; house vacant (zero water)",
-  "reason": "Ray checked 11/2026: house is well maintained and appears in use (rental / short-term / summer home). The zero-water signal was misleading (rural lot \u2014 likely a well). John F Offenbacher d. 4/3/2003 at 48; title never moved \u2014 Cheryl opened a Charles small estate in 12/2021 (will probated) and is PR, but no deed out followed. Water utility: ZERO use for all 10 billing months of 2026 \u2014 vacant. Tall Timbers on the Potomac subdivision (water community). Every loan released: 2002 DOT 1893/647 satisfied 2009 (3328/110); Cheryl's 2008 and 2009 BofA loans released 2012 (3728/783) and 2018 (4944/231). Free & clear. Taxes current.",
-  "title": "Deed 386/60 (11/20/1987) John F Offenbacher, Tall Timbers on the Potomac; quitclaim 2898/150 (11/2006) Meatyard/Hersman \u2192 Cheryl L Offenbacher ($250, adjoining interest). No deed out since John's death. Free & clear.",
-  "death": "John Francis Offenbacher d. 4/3/2003 \u2014 Charles RoW 24538 (SE, closed), will 2/15/2002 probated 12/28/2021.",
+  "reason": "Ray checked 11/2026: house is well maintained and appears in use (rental / short-term / summer home). The zero-water signal was misleading (rural lot — likely a well). John F Offenbacher d. 4/3/2003 at 48; title never moved — Cheryl opened a Charles small estate in 12/2021 (will probated) and is PR, but no deed out followed. Water utility: ZERO use for all 10 billing months of 2026 — vacant. Tall Timbers on the Potomac subdivision (water community). Every loan released: 2002 DOT 1893/647 satisfied 2009 (3328/110); Cheryl's 2008 and 2009 BofA loans released 2012 (3728/783) and 2018 (4944/231). Free & clear. Taxes current.",
+  "title": "Deed 386/60 (11/20/1987) John F Offenbacher, Tall Timbers on the Potomac; quitclaim 2898/150 (11/2006) Meatyard/Hersman → Cheryl L Offenbacher ($250, adjoining interest). No deed out since John's death. Free & clear.",
+  "death": "John Francis Offenbacher d. 4/3/2003 — Charles RoW 24538 (SE, closed), will 2/15/2002 probated 12/28/2021.",
   "contacts": [
-   "Cheryl Lynn Offenbacher (co-owner / PR of John's estate) \u2014 PO Box 571, La Plata MD 20646 (docket); SDAT mail 16 Tulip Tree Way, Gettysburg PA 17325"
+   "Cheryl Lynn Offenbacher (co-owner / PR of John's estate) — PO Box 571, La Plata MD 20646 (docket); SDAT mail 16 Tulip Tree Way, Gettysburg PA 17325"
   ],
-  "numbers": "Assessed $390K; equity est. $410K; 1938 house on River Rd (check waterfront/Critical Area). 25% \u2248 $100K; max \u2248 $235K.",
+  "numbers": "Assessed $390K; equity est. $410K; 1938 house on River Rd (check waterfront/Critical Area). 25% ≈ $100K; max ≈ $235K.",
   "next": "Leave alone; revisit only if it shows up on a tax list."
  },
  "1404335287": {
   "verdict": "GO",
   "confidence": "HIGH",
-  "checked": "2026-11-12",
-  "play": "Dead owner 28 yrs \u2014 estate closed 1998, never deeded; 2026 tax sale to Effect Inc ($117.6K); redemption clock",
-  "reason": "Frances G (Lloyd) Slagle, 61, died 2/17/1998 at Gilchrist Hospice (obituary, Unicoi Co. TN archive). Howard estate 12233 (will probated, closed 1998), PR daughter Brenda (Denney) Tate, Martinsburg WV \u2014 no deed ever recorded; SDAT still shows Frances. Only Land Records entries: deed 771/701 (1976) and DOT 771/703 released 1994 \u2014 FREE & CLEAR since 1994. Howard County cited 'Frances G. Slagle' for a code infraction in 2019 (0Z41104070) \u2014 21 years after her death. SOLD at the 2026 Howard tax sale to Effect Inc: face $117,626 (\u224815+ years unpaid), bid $122,100. No redemption suit yet (Case Search 11/12/2026); Effect can file 6 months after the sale and typically does.",
-  "title": "Deed 771/701 (6/17/1976) Frances G Slagle, 17767 Annapolis Rock Rd, .484 ac, 1950 house 1,237 sf. DOT 771/703 released 3201/467 (1994). No deed out. Title passes under the 1993 will (probated 1998) \u2014 needs a PR deed from a reopened estate or signatures of all devisees.",
-  "death": "Frances Gail Slagle d. 2/17/1998 \u2014 Howard RoW 12233 (will 11/15/1993 probated; closed 2/13/2002; no deed of distribution). Son Michael W Slagle predeceased (court named Robin Slagle guardian for his minor children Michele, Elizabeth, Donald, 2/28/2001). Son Kelsey Lee Slagle (b. 7/29/1959) lived at the house 1983\u20132022 and DIED 8/30/2022 \u2014 no Maryland estate; possible wife Janette Fiona Slagle (62) also deceased; children unknown. Daughter Brenda (Denney) Tate living, Martinsburg WV.",
+  "checked": "2026-11-13",
+  "play": "Life estate + testamentary POWER OF SALE — one signer (Brenda) can convey fee simple; 6 remaindermen are payees, not signers. 2026 tax sale to Effect Inc ($117.6K); redemption clock.",
+  "reason": "Frances Gail Slagle d. 2/17/1998. Howard RoW estate 12233 (will 11/15/1993 probated; revised first & final account approved; closed 2/13/2002). WILL ART. V (read 11/13/2026): 17767 Annapolis Rock Rd to daughter BRENDA DENNEY for LIFE; on her death 1/3 to Brenda's children, 1/3 to Kelsey's children, 1/3 to Michael's children, per stirpes. Brenda 'shall have the power to convey a fee simple interest ... during her lifetime for fair market value' (notice to Kelsey/Michael only if living — both now dead), proceeds split in the same thirds; Brenda must pay all taxes, insure and repair during the life estate. Account Sched. E (4/15/1999) names the remaindermen: Michelle, Elizabeth, Donald Slagle (Michael's, Robin Slagle guardian); Matthew Slagle (Kelsey's); Christa and Joshua Denney (Brenda's). A 10/1/1999 PR deed (life estate to Brenda, remainder to the three grandchild classes as tenants in common) was drafted but marked 'deed needs corrections' and NEVER RECORDED; the Orphans' Court ordered a corrected deed recorded by 4/16/2002 — never done. Land Records: deed 771/701 (1976), DOT 771/703 released 3201/467 (1994), nothing since — FREE & CLEAR, still titled to Frances. Taxes unpaid ~15 yrs (life tenant breached the will's tax covenant); SOLD 2026 Howard tax sale to Effect Inc, face $117,626, bid $122,100; no redemption suit as of 11/12/2026. 2019 county code case vs 'Frances G. Slagle' (0Z41104070). Teardown (Street View 10/2026).",
+  "title": "Record: Frances G Slagle, deed 771/701. Equitable (per probated will): life estate in Brenda (Denney) Tate WITH power to sell fee simple for FMV; vested remainder, 1/3 per stirpes to each child's children — Michelle/Elizabeth/Donald Slagle (1/9 each), Matthew Slagle (1/3), Christa Denney & Joshua Denney (1/6 each). Kelsey's and Michael's deaths do NOT put the house in their estates — the remainder goes straight to their children, so no estate needs opening for either son. Cure: reopen 12233, record the court-ordered deed of distribution (life estate + remainder), then Brenda conveys fee simple under Art. V; get the 6 remaindermen to join/consent for insurability.",
+  "death": "Frances Gail Slagle d. 2/17/1998 (RoW 12233; obituary). Son Michael W Slagle — alive at Pearisburg VA in 2002 service list; since deceased. Son Kelsey Lee Slagle — lived at the house (and was at MCI-J in 2000); d. 8/30/2022, no Maryland estate (none needed — he had only an expectancy through his son). Daughter Brenda (Denney) Tate — living, WV.",
   "contacts": [
-   "Brenda G Tate (daughter, PR of record) \u2014 84 Babbling Brook Ln, Martinsburg WV 25403 \u2014 first call",
-   "Robin Ann Slagle (Michael's widow, 2001 guardian) \u2014 route to Michele, Elizabeth and Donald Slagle",
-   "Kelsey Slagle's spouse/children \u2014 unknown; ask Brenda",
-   "Effect Inc / J. Scott Morse Esq \u2014 2026 certificate holder (ask for assignment)",
-   "Debra Garver, 17735 Annapolis Rock Rd (neighbor) \u2014 possible lot buyer"
+   "Brenda G (Denney) Tate — life tenant, former PR, holds the power of sale — THE signer. RoW addresses: 160 Woodland Ct / 332 N Mildred St, Charles Town WV (1999–2002); current WV address in local verified file.",
+   "Matthew Slagle (Kelsey's son, 1/3 remainder) — RoW 2002 address 3610 Ginger Ct, Germantown MD",
+   "Robin Ann Slagle (Michael's widow; 2001 guardian) — route to Michelle, Elizabeth and Donald Slagle (1/9 each); RoW address was the property",
+   "Christa Denney and Joshua Denney (Brenda's children, 1/6 each) — through Brenda",
+   "Effect Inc / J. Scott Morse Esq — 2026 certificate holder (confirm nothing filed; ask assignment price)",
+   "Allen J. Katz Esq, Gaithersburg — 1999 estate attorney (file history)"
   ],
-  "numbers": "Lot-value deal (teardown). Redemption \u2248 $117.6K + 18%/yr \u2248 $128K now; +fees once Effect files. Plan A: $128K + $12K legal + $20K demo + heirs; Plan B (certificate assignment + own foreclosure): \u2248 $140K all-in, no heir signatures. ~$110K profit at $300K lot value; pass below ~$275K.",
-  "next": "Order the 1993 will (RoW 12233 docket #1) \u2014 it decides whether the house is 100% Kelsey's estate or split 3 ways. Run Plan C: family route (reopen 12233 / open Kelsey's estate, buy from devisees, redeem from price) in parallel with asking Effect to assign the certificate so Ray can foreclose it himself. Perc/zoning + builder call before committing. Full plan: scratchpad annapolis-rock-rd-plan.md (also sent to Ray 11/12/2026)."
+  "numbers": "Teardown/lot deal. Redemption ≈ $117.6K + 18%/yr ≈ $128K now (+ Effect's fees once they file). Will requires 'fair market value' — price off an as-is appraisal of the lot (overgrown, house to demo, septic unknown, tax lien, title cloud) with the 6 remaindermen signing consents/quitclaims so no one can later attack the price. Working: contract $170–190K all-in to family (county redeemed from it) + $10K legal + $20K demo vs $300K+ lot → ~$90–110K. Plan B (buy Effect's certificate, foreclose RoR): ≈ $140K all-in, no family signatures.",
+  "next": "1) Call Brenda: she alone can sell under the will; county already sold the taxes; a lien company forecloses next; sale pays the county and puts cash in the grandkids' hands (and clears her exposure for the unpaid taxes). 2) Title attorney: petition to reopen 12233 + record the deed of distribution the court ordered in 2002; opinion that Art. V power of sale lets Brenda convey fee simple (verify MD; underwriter). 3) Appraisal of the lot as-is. 4) Remaindermen consents (6 people, 3 families). 5) Parallel: ask Effect for an assignment quote; Howard Finance redemption statement; DPZ perc/zoning + builder. Plan: scratchpad annapolis-rock-rd-plan.md (rev. 11/13/2026)."
  },
  "04080819011600": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "1615 Landon Rd \u2014 both owners dead (Norbert 10/2014, Grace Kemler Schirmer 8/22/2022; small estate + 'later discovered' 2018 will filed 12/2023), BUT the 2007 deed of trust was assigned 3/2026 and SUBSTITUTE TRUSTEES WERE APPOINTED 9/2/2026 \u2014 active foreclosure. Lender is awake."
+  "reason": "1615 Landon Rd — both owners dead (Norbert 10/2014, Grace Kemler Schirmer 8/22/2022; small estate + 'later discovered' 2018 will filed 12/2023), BUT the 2007 deed of trust was assigned 3/2026 and SUBSTITUTE TRUSTEES WERE APPOINTED 9/2/2026 — active foreclosure. Lender is awake."
  },
  "04080808056610": {
   "verdict": "KILL",
   "checked": "2026-11-12",
-  "reason": "118 Tregarone Rd \u2014 Lisa M Clark (d. 2024) was an investor with 5+ Baltimore County properties; bought this one 5/2019 (41373/343); co-owner/husband Michael F Clark has no estate (alive) and takes by survivorship; tax bill goes to their Monkton home. Investor-owned rental with a living owner."
+  "reason": "118 Tregarone Rd — Lisa M Clark (d. 2024) was an investor with 5+ Baltimore County properties; bought this one 5/2019 (41373/343); co-owner/husband Michael F Clark has no estate (alive) and takes by survivorship; tax bill goes to their Monkton home. Investor-owned rental with a living owner."
  },
  "2102104393": {
   "verdict": "PARK",
   "checked": "2026-11-12",
-  "reason": "8735 Dawson Rd St. Michaels \u2014 Richard N Roe Sr d. 12/2023 (will deposited, no estate); co-owner Kimberly A Roe; tax bill to the property; Comptroller liens $12.5K name him. Likely widow in the house \u2014 confirm before any contact."
+  "reason": "8735 Dawson Rd St. Michaels — Richard N Roe Sr d. 12/2023 (will deposited, no estate); co-owner Kimberly A Roe; tax bill to the property; Comptroller liens $12.5K name him. Likely widow in the house — confirm before any contact."
  }
 }

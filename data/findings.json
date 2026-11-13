@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "counts": {
   "WORK": 161,
   "PARK": 32,
@@ -10,7 +10,7 @@
   "04082000009657": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 225388 (RE, OPEN, will no will), d. 12/11/2022. Estate still open: the PR can sign now.",
    "death": "Murray Hooper d. 2022-12 (Legacy)",
@@ -24,7 +24,7 @@
   "17033708351": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 111242 (SE, ARCHIVED, will no will), d. 8/19/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Marvin Noel Brooks d. 2018 (Legacy)",
@@ -37,7 +37,7 @@
   "04010111000760": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "John Mccullegan Jr d. 2024-02-15 (Find a Grave); Lillie R Mccullegan d. 2003-02-12 (Find a Grave)",
@@ -48,7 +48,7 @@
   "1504000536": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Jacqueline Myra Henry Cann d. 2019-10-31 (Find a Grave); William Cann d. 2019-05 (Legacy)",
@@ -59,7 +59,7 @@
   "0312090407015": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Margaret Elizabeth Coster Collins d. 2009-01-04 (Find a Grave)",
@@ -70,7 +70,7 @@
   "020640590057860": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate W104970 (SE, ARCHIVED, will no will), d. 10/31/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Jennifer Lynn Williams d. 2020-10 (Legacy)",
@@ -84,7 +84,7 @@
   "0906210473": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Bruce Webb Bennett d. 2023 (Legacy)",
@@ -95,7 +95,7 @@
   "17060647339": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Thomas Joseph White d. 2025 (Legacy)",
@@ -106,7 +106,7 @@
   "0502015048": {
    "verdict": "PARK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 12219 (RE, CLOSED, will no will), d. 3/3/2013. PR gives the property as their address \u2014 family in the house. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out.",
    "death": "Russell Leroy Mackall d. 2013-03-03 (Find a Grave)",
@@ -137,7 +137,7 @@
   "0302081772022": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate W64781 (RE, CLOSED, will no will), d. 3/12/2010. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Janice Kassakatis Atwell d. 2010-03 (Legacy)",
@@ -150,7 +150,7 @@
   "04020219610640": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Richard W Fitch Jr d. 2021-12-21 (Find a Grave)",
@@ -161,7 +161,7 @@
   "04121211015730": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Joseph Richard Bauer Jr d. 2015-08 (Legacy)",
@@ -172,7 +172,7 @@
   "0326425963A001": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Carolyn Boyd d. 2021-02-08 (Find a Grave)",
@@ -183,7 +183,7 @@
   "1102454858": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 37326 (SE, CLOSED, will no will), d. 9/26/2012. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Delia A Naranjo d. 2012 (Find a Grave)",
@@ -196,7 +196,7 @@
   "04151800002637": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Barbara Jean Parks Mcneal d. 2021-02-25 (Find a Grave)",
@@ -207,7 +207,7 @@
   "0908005745": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 16869 (SE, CLOSED, will no will), d. 11/23/2009. PR gives the property as their address \u2014 family in the house.",
    "death": "Joseph Andrew Lamanna d. 2009-11-23 (Find a Grave); Theresa Ann Kuster Lamanna d. 2014-08-21 (Find a Grave)",
@@ -220,7 +220,7 @@
   "2410371805": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Regina M Balcerzak d. 2026-04 (Legacy)",
@@ -231,7 +231,7 @@
   "2410246806": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "James L Sullivan d. 2026-10 (Legacy)",
@@ -242,7 +242,7 @@
   "1906038875": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "John S Murphy d. 2002-03-03 (Find a Grave)",
@@ -253,7 +253,7 @@
   "2206005381": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Robert E Courtney Sr d. 2022-11-23 (Find a Grave)",
@@ -279,7 +279,7 @@
   "0108012350": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 41076 (SE, CLOSED, will no will), d. 6/9/2025. PR gives the property as their address \u2014 family in the house.",
    "death": "Carol Sue Martin Lewis d. 2025-06-09 (Find a Grave)",
@@ -292,7 +292,7 @@
   "0313073415002": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "William Charles Brown d. 2020-01-04 (Find a Grave)",
@@ -303,7 +303,7 @@
   "1304017307": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Joseph John Dragunas Sr d. 2024-01 (Legacy)",
@@ -314,7 +314,7 @@
   "161203399727": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 17530 (RE, CLOSED, will no will), d. 3/31/2024. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Sharon Lee Howard Stewart d. 2024-03 (Legacy)",
@@ -328,7 +328,7 @@
   "160702194360": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate W117425 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 2/10/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Jose Maria Molina d. 2023-02 (Legacy)",
@@ -339,7 +339,7 @@
   "1807003420": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 11346 (SE, ARCHIVED, will no will), d. 6/22/2014. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Haywood Davis Elliott d. 2014-06 (Legacy)",
@@ -352,7 +352,7 @@
   "020695690235448": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Rebecca Jane Hoffman Mcdaniel d. 2024-08 (Legacy)",
@@ -363,7 +363,7 @@
   "2225040015": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 81589 (SE, ARCHIVED, will probated), d. 7/10/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Ira William Brown d. 2024-07 (Legacy)",
@@ -376,7 +376,7 @@
   "0327595210E061": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "James Thomas Mcneil d. 2025-09 (Legacy)",
@@ -387,7 +387,7 @@
   "1507009127": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 12305 (RE, CLOSED, will probated), d. 8/29/2009. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Albert Carl Lieber d. 2009-08-29 (Find a Grave)",
@@ -401,7 +401,7 @@
   "2305035988": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Byard Whaley Collins Jr d. 2021-10 (Legacy)",
@@ -412,7 +412,7 @@
   "0328024286A003": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "William A Richardson d. 2005-05-15 (Find a Grave)",
@@ -423,7 +423,7 @@
   "0316172514A033": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Shirley Ann Roller Davis d. 2026-05-20 (Find a Grave)",
@@ -434,7 +434,7 @@
   "0315043066C025": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 204763 (RE, OPEN, will no will), d. 11/10/2022. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate still open: the PR can sign now.",
    "death": "Donald William Briscoe d. 2022-11-10 (Find a Grave)",
@@ -447,7 +447,7 @@
   "04111800012782": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Elizabeth Mccracken Ross d. 2019-01-30 (Find a Grave)",
@@ -458,7 +458,7 @@
   "2203010945": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Robert Eugene Davis Jr d. 2016-06-03 (Find a Grave)",
@@ -469,7 +469,7 @@
   "1103129179": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 33878 (SE, CLOSED, will unprobated), d. 5/3/2010. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Robert Samuel Hendricks d. 2010-05-03 (Find a Grave); William Richard Hendricks d. 2006-11-24 (Find a Grave)",
@@ -482,7 +482,7 @@
   "0108018278": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 28940 (SE, CLOSED, will no will), d. 5/9/2006. PR gives the property as their address \u2014 family in the house.",
    "death": "Jesse Robert Comeau d. 2006-05-09 (Find a Grave)",
@@ -495,7 +495,7 @@
   "020200005037200": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "John Thomas Steele d. 2023-02 (Legacy)",
@@ -506,7 +506,7 @@
   "0313143534078": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 205487 (SE, CLOSED, will no will), d. 8/28/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Brian Maurice Jones d. 2019-08-28 (Find a Grave)",
@@ -519,7 +519,7 @@
   "04030311015750": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Charles Andrew Monroe Jr d. 2026-09 (Legacy)",
@@ -530,7 +530,7 @@
   "1116349623": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Frank James Whyte Iii d. 2011-07 (Legacy)",
@@ -541,7 +541,7 @@
   "161301314574": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Maria E Rivera d. 2015 (Find a Grave)",
@@ -552,7 +552,7 @@
   "0316062520011": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 216030 (SE, CLOSED, will no will), d. 9/20/2021. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Marvin Lewis Johnson d. 2021-09-20 (Find a Grave)",
@@ -576,7 +576,7 @@
   "2403015122": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 128690 (RE, CLOSED, will probated), d. 1/15/2004. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Raymond Stanley Layton d. 2004-01 (Legacy)",
@@ -590,7 +590,7 @@
   "0326206048036": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "William D Sykes d. 2013-02-02 (Find a Grave)",
@@ -601,7 +601,7 @@
   "1402249537": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Chang Shik Oh d. 2022-10 (Legacy)",
@@ -612,7 +612,7 @@
   "0107023766": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Alan Jay Durr d. 2024-10 (Legacy)",
@@ -623,7 +623,7 @@
   "0315183214026": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Joseph Anthony Gillespie d. 2024-05-10 (Find a Grave)",
@@ -634,7 +634,7 @@
   "0324112005109": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Joseph Edward Harris d. 2009-08-26 (Find a Grave)",
@@ -645,7 +645,7 @@
   "04131900004919": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "John William Ritter d. 2018-05 (Legacy)",
@@ -656,7 +656,7 @@
   "1104152557": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 35627 (RE, CLOSED, will probated), d. 12/13/2011. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "James Hansford Elgin Jr d. 2011-12 (Legacy)",
@@ -670,7 +670,7 @@
   "04121203038600": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Gary Lee Barrett Sr d. 2023-12 (Legacy)",
@@ -681,7 +681,7 @@
   "04010113202960": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Michael A Wilson Sr d. 2011-10-07 (Find a Grave)",
@@ -692,7 +692,7 @@
   "04060603037120": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Robert Henry Clark d. 2022-02-19 (Find a Grave); Marilyn E Ryan Clark d. 2017-06-03 (Find a Grave)",
@@ -703,7 +703,7 @@
   "0707020287": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 43285 (SE, CLOSED, will probated), d. 3/29/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Donald Clyde Bowersox d. 2023-03 (Legacy)",
@@ -716,7 +716,7 @@
   "0806033962": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Clarence Ed White d. 2011-08 (Legacy)",
@@ -727,7 +727,7 @@
   "1107243359": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Marilyn Lamm Carter d. 2020-02-10 (Find a Grave); Larry Jerome Carter Jr d. 2013-11-18 (Find a Grave)",
@@ -738,7 +738,7 @@
   "1302019833": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 54877 (UN, ARCHIVED, will no will (no estate)), d. 7/22/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Woodrow B Grant d. 2019 (Find a Grave)",
@@ -749,7 +749,7 @@
   "2311017444": {
    "verdict": "PARK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 28317 (RE, OPEN, will probated), d. 8/11/2025. PR gives the property as their address \u2014 family in the house.",
    "death": "Steve A Meilhammer Sr d. 2025 (Legacy)",
@@ -764,7 +764,7 @@
   "1103128407": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Gloria Jean Bissett Wolfe d. 2026-10 (Legacy)",
@@ -789,7 +789,7 @@
   "020457190084993": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Frederick W Gams d. 2026 (Legacy)",
@@ -800,7 +800,7 @@
   "0327014198C025": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 7995 (SE, ARCHIVED, will no will), d. 2/6/2016. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Harold Timothy Howard d. 2016-02 (Legacy)",
@@ -813,7 +813,7 @@
   "2410315514": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "James B Piorunski d. 2022-12 (Legacy)",
@@ -824,7 +824,7 @@
   "0321050777082": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 131252 (RE, CLOSED, will probated), d. 8/22/2004. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Lloyd George Johnson d. 2004-08-22 (Find a Grave)",
@@ -838,7 +838,7 @@
   "0306171730040": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Matthew R Young d. 2022-04 (Legacy)",
@@ -849,7 +849,7 @@
   "0328058030H024": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 230193 (RE, CLOSED, will probated), d. 4/7/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Earl Edwin Payne d. 2024-04-30 (Find a Grave)",
@@ -863,7 +863,7 @@
   "0325012530C368": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Tyrone A Green d. 2021-04-12 (Find a Grave); Dora Green d. 2018-07-26 (Find a Grave)",
@@ -874,7 +874,7 @@
   "04021800007294": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 204903 (SE, ARCHIVED, will unprobated), d. 6/3/2023. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Delores E Johnson d. 2023-06 (Legacy)",
@@ -885,7 +885,7 @@
   "04151800013936": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 196352 (SE, CLOSED, will probated), d. 10/17/2017. PR gives the property as their address \u2014 family in the house.",
    "death": "Elaine E Robinette d. 2017 (Find a Grave)",
@@ -899,7 +899,7 @@
   "0501177478": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Paul Malcolm Marsh d. 2024-08 (Legacy)",
@@ -910,7 +910,7 @@
   "160603143311": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "George Gustave Ryffel Ii d. 2026-03 (Legacy)",
@@ -921,7 +921,7 @@
   "1301281674": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Jeffrey A Barton d. 2023-08 (Legacy)",
@@ -932,7 +932,7 @@
   "020610501272802": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Robert Eugene Goode d. 2019-12 (Legacy)",
@@ -943,7 +943,7 @@
   "0129038635": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 37408 (RE, CLOSED, will probated), d. 3/2/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Vernita Monahan Beaulieu d. 2020-03 (Legacy)",
@@ -956,7 +956,7 @@
   "0328048473019": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Christopher G Simpson d. 2024-01-16 (Find a Grave)",
@@ -967,7 +967,7 @@
   "0326206042P179": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 195220 (SE, ARCHIVED, will no will), d. 5/31/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Ira Lend Bunch d. 2020-05-31 (Find a Grave); Rosa Lee Bunch d. 2016-12-31 (Find a Grave)",
@@ -980,7 +980,7 @@
   "0327224400A017": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Peggy Ann Hargrove d. 2026-10 (Legacy)",
@@ -991,7 +991,7 @@
   "0312173846035": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Tyrone Adrian Reid d. 2023-02 (Legacy)",
@@ -1002,7 +1002,7 @@
   "04030307061470": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 231136 (SE, CLOSED, will no will), d. 7/18/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Carlos A Andrade d. 2020-07-18 (Find a Grave)",
@@ -1028,7 +1028,7 @@
   "04090903672770": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 17778 (SE, ARCHIVED, will unprobated), d. 2/26/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Frank Buscemi d. 2019 (Find a Grave)",
@@ -1041,7 +1041,7 @@
   "0901024906": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 42575 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 4/28/2015. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Catherine Elizabeth Hancock d. 2015-04 (Legacy)",
@@ -1052,7 +1052,7 @@
   "160703254505": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate W125343 (RE, OPEN, will probated), d. 12/4/2025. Estate still open: the PR can sign now.",
    "death": "Shirley Small d. 2025-12 (Legacy)",
@@ -1067,7 +1067,7 @@
   "04022200024192": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 223918 (SE, CLOSED, will no will), d. 4/3/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Kim Singletary d. 2023-04-03 (Find a Grave)",
@@ -1080,7 +1080,7 @@
   "0315343311001": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Thomas Ali Ansar d. 2025-07-11 (Find a Grave)",
@@ -1091,7 +1091,7 @@
   "04042100002345": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 218649 (SE, CLOSED, will probated), d. 4/23/2022. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Jeffrey William Lang d. 2022-04 (Legacy)",
@@ -1105,7 +1105,7 @@
   "04082500014022": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Bruce R Mortimer d. 2021 (Legacy)",
@@ -1116,7 +1116,7 @@
   "17212319945": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Maria Antonia Vasquez d. 2025-08 (Legacy)",
@@ -1127,7 +1127,7 @@
   "0116012475": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Norma Jean Davis d. 2023-08 (Legacy)",
@@ -1138,7 +1138,7 @@
   "0326235710029": {
    "verdict": "PARK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 205059 (RE, OPEN, will no will), d. 9/7/2023. PR gives the property as their address \u2014 family in the house.",
    "death": "Kenneth M Robinson d. 2023 (Find a Grave)",
@@ -1151,7 +1151,7 @@
   "0327045555107": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 174189 (SE, CLOSED, will no will), d. 7/2/2013. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Alethia Williams d. 2013-07-02 (Find a Grave)",
@@ -1164,7 +1164,7 @@
   "0108014914": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 36009 (SE, CLOSED, will probated), d. 9/23/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "John James Pattison d. 2017-09-23 (Find a Grave); Evelyn Louise Laupert Pattison d. 2015-02-27 (Find a Grave)",
@@ -1177,7 +1177,7 @@
   "2308026912": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Heather Marie Jones d. 2011-05-31 (Find a Grave)",
@@ -1188,7 +1188,7 @@
   "020367013132315": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 82008 (RE, CLOSED, will probated), d. 11/22/2011. PR gives the property as their address \u2014 family in the house.",
    "death": "Carol Ann Hudzik Harper d. 2011-11-22 (Find a Grave)",
@@ -1201,7 +1201,7 @@
   "0328058102I033": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "James T Johnson d. 2018-12-15 (Find a Grave)",
@@ -1212,7 +1212,7 @@
   "0327595210C117": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 192868 (LO, ARCHIVED, will no will), d. 9/4/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Eric Lamont Holmes d. 2018-09-04 (Find a Grave)",
@@ -1223,7 +1223,7 @@
   "0327605210D189": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Anthony Graves Jr d. 2026-11 (Legacy)",
@@ -1234,7 +1234,7 @@
   "0905026199": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 26948 (RE, OPEN, will probated), d. 10/6/2024. Estate still open: the PR can sign now.",
    "death": "John Henry Kimmons d. 2024 (Legacy)",
@@ -1247,7 +1247,7 @@
   "0502003333": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Crispin C Jones d. 2021 (Legacy)",
@@ -1258,7 +1258,7 @@
   "04121212022080": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 217065 (SE, OPEN, will no will), d. 1/7/2022. Estate still open: the PR can sign now.",
    "death": "Kelly Mack d. 2022-01 (Legacy)",
@@ -1271,7 +1271,7 @@
   "0106015689": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Eugene L Frey d. 2009-03 (Legacy)",
@@ -1282,7 +1282,7 @@
   "020460501049127": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 107025 (SE, ARCHIVED, will no will), d. 8/5/2022. PR gives the property as their address \u2014 family in the house.",
    "death": "Martin Noe Sorto d. 2022-08 (Legacy)",
@@ -1295,7 +1295,7 @@
   "0502027038": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Lewis Marshall Early Jr d. 2017-04 (Legacy)",
@@ -1306,7 +1306,7 @@
   "1301050419": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 46539 (SE, CLOSED, will unprobated), d. 7/6/2013. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Jack Dempsey Jones Jr d. 2013-07-06 (Find a Grave)",
@@ -1335,7 +1335,7 @@
   "020254190063691": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Rhonda Leigh Owen d. 2026-02 (Legacy)",
@@ -1346,7 +1346,7 @@
   "0325027796028": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Elizabeth Ann Byrd Anderson d. 2016-10-23 (Find a Grave)",
@@ -1357,7 +1357,7 @@
   "0316062528J002": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 211570 (RE, CLOSED, will no will), d. 1/8/2021. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Kenneth Jennings d. 2021-01 (Legacy)",
@@ -1371,7 +1371,7 @@
   "0326385920036": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 202804 (SE, ARCHIVED, will no will), d. 1/28/2021. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "James A Doles Jr d. 2021-01-28 (Find a Grave)",
@@ -1385,7 +1385,7 @@
   "0327025818A047": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 208084 (SE, ARCHIVED, will no will), d. 7/6/2024. PR gives the property as their address \u2014 family in the house.",
    "death": "Terrance Donnell Burgess d. 2024-07-06 (Find a Grave)",
@@ -1398,7 +1398,7 @@
   "1303151743": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Gerald Wayne Shelton d. 2017-10 (Legacy)",
@@ -1409,7 +1409,7 @@
   "161301092790": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Mario Alfonso Aguilar d. 2022-12-31 (Find a Grave)",
@@ -1420,7 +1420,7 @@
   "161302528834": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate W86066 (SE, ARCHIVED, will no will), d. 7/17/2015. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Fatmata Dabo d. 2015-07 (Legacy)",
@@ -1433,7 +1433,7 @@
   "1804116658": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 12057 (RE, ARCHIVED, will probated), d. 2/2/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Richard Aufderheide d. 2017-02 (Legacy)",
@@ -1447,7 +1447,7 @@
   "020361590048709": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Nancy Lue Sligh Smith d. 2024-11-27 (Find a Grave)",
@@ -1458,7 +1458,7 @@
   "020669690246694": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Robert Leonard Bryant d. 2023 (Legacy)",
@@ -1469,7 +1469,7 @@
   "0326166320001": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "John Anthony Davis d. 2020-12 (Find a Grave)",
@@ -1480,7 +1480,7 @@
   "0326385921037": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 93022 (RE, ARCHIVED, will probated), d. 7/31/2017. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "David S Wallace d. 2017-07-01 (Find a Grave); Denise Wallace d. 2024-11-08 (Find a Grave)",
@@ -1494,7 +1494,7 @@
   "04152200006143": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 235379 (SE, CLOSED, will unprobated), d. 9/28/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Norman M Bocek d. 2024-09 (Legacy)",
@@ -1507,7 +1507,7 @@
   "04022200014978": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Michael R Riggs Sr d. 2025 (Legacy)",
@@ -1548,7 +1548,7 @@
   "04151503472620": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 201241 (RE, CLOSED, will probated), d. 11/3/2018. PR gives the property as their address \u2014 family in the house.",
    "death": "Bruce Billie Billips d. 2018-11-03 (Find a Grave)",
@@ -1562,7 +1562,7 @@
   "0129010463": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 36731 (RE, CLOSED, will probated), d. 1/4/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "John Edward Burkey d. 2019-01 (Legacy)",
@@ -1575,7 +1575,7 @@
   "04031900004380": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 21197 (RE, OPEN, will probated), d. 7/7/2026. Estate still open: the PR can sign now.",
    "death": "Ronald Michael Singer d. 2026-07-07 (Find a Grave)",
@@ -1589,7 +1589,7 @@
   "04151516002900": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 240747 (RE, OPEN, will probated), d. 10/19/2026. Estate still open: the PR can sign now.",
    "death": "Henry William Long d. 2026-10-19 (Find a Grave); Linda Ruth Long d. 2009-05-04 (Find a Grave)",
@@ -1603,7 +1603,7 @@
   "04152200015296": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "William Andrew Galanti d. 2024-05 (Legacy)",
@@ -1614,7 +1614,7 @@
   "1203018482": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Arthur Columbus Rounds Jr d. 2016-07-03 (Find a Grave)",
@@ -1625,7 +1625,7 @@
   "160901549762": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Abraham Albano Buenviaje d. 2023-06 (Legacy)",
@@ -1636,7 +1636,7 @@
   "1908069999": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Carl Edward Knott d. 2026-04-10 (Find a Grave)",
@@ -1661,7 +1661,7 @@
   "020457190211807": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Mary Ellen Kline d. 2024-04 (Legacy)",
@@ -1672,7 +1672,7 @@
   "04121208056420": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "June Miller d. 2023-07-15 (Find a Grave)",
@@ -1697,7 +1697,7 @@
   "161300992511": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Margaret Ann Cook Moeller d. 2023-07-21 (Find a Grave)",
@@ -1708,7 +1708,7 @@
   "2305022606": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Gail E Thompson d. 2016-10 (Legacy)",
@@ -1719,7 +1719,7 @@
   "020341827630400": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 155519 (SE, CLOSED, will probated), d. 8/11/2009. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Charles W Winkler Jr d. 2009-08 (Legacy)",
@@ -1732,7 +1732,7 @@
   "0327184804029": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 228919 (RE, CLOSED, will probated), d. 1/22/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Phyllis Mary Amato Johnson d. 2024-01-22 (Find a Grave)",
@@ -1746,7 +1746,7 @@
   "0502135795": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 14670 (RE, ARCHIVED, will probated), d. 7/11/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Florence Eunice Gross d. 2018-07-11 (Find a Grave)",
@@ -1760,7 +1760,7 @@
   "1401259512": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Ella Louise Long d. 2024-02 (Legacy)",
@@ -1771,7 +1771,7 @@
   "1801006347": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 12149 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 4/8/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "John Alfred Klecan d. 2017-04-08 (Find a Grave)",
@@ -1782,7 +1782,7 @@
   "0806007368": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 62632 (SE, ARCHIVED, will unprobated), d. 4/13/2025. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Debra Margaret Hamilton d. 2025-04 (Legacy)",
@@ -1795,7 +1795,7 @@
   "0316062528D011": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 201134 (SE, ARCHIVED, will no will), d. 12/23/2021. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Keona Schannel Holley d. 2021-12-23 (Find a Grave)",
@@ -1808,7 +1808,7 @@
   "0320052127067": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Michael S Pailer d. 2025-10-28 (Find a Grave)",
@@ -1819,7 +1819,7 @@
   "0327234429008": {
    "verdict": "PARK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 202236 (RE, OPEN, will no will), d. 11/29/2021. PR gives the property as their address \u2014 family in the house. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out.",
    "death": "Rosalind D Gober d. 2021-11 (Legacy)",
@@ -1832,7 +1832,7 @@
   "0315243100M027": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Garfield Aston Dunkley Sr d. 2026-04 (Legacy)",
@@ -1843,7 +1843,7 @@
   "0316172524018": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 210199 (SE, ARCHIVED, will no will), d. 2/16/2025. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Niesha Keema Gay d. 2025-02 (Legacy)",
@@ -1857,7 +1857,7 @@
   "04012300010492": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Gail Lynn Bailey Phillips d. 2022-10-27 (Find a Grave)",
@@ -1868,7 +1868,7 @@
   "04141416075425": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Dennis Lee Poling d. 2026-05 (Legacy)",
@@ -1879,7 +1879,7 @@
   "04070716060054": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 217128 (SE, CLOSED, will unprobated), d. 1/21/2022. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Hugh Melvin Poe d. 2022-01 (Legacy)",
@@ -1892,7 +1892,7 @@
   "1007156510": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 17344 (MA, CLOSED, will no will), d. 11/19/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Dawson C Betts d. 2024-11 (Legacy)",
@@ -1905,7 +1905,7 @@
   "1115318279": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 46745 (SE, ARCHIVED, will probated), d. 7/14/2020. PR gives the property as their address \u2014 family in the house.",
    "death": "Gail Becker d. 2020-07 (Legacy)",
@@ -1918,7 +1918,7 @@
   "2206000142": {
    "verdict": "PARK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 83321 (RE, OPEN, will probated), d. 1/17/2026. PR gives the property as their address \u2014 family in the house.",
    "death": "Thurman P Seabolt d. 2026-01 (Legacy)",
@@ -1931,7 +1931,7 @@
   "2217030175": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Carol Ann Conrad Ronzo d. 2026-01-12 (Find a Grave)",
@@ -1942,7 +1942,7 @@
   "2304016688": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Crystal Lashawn Davis d. 2025-08 (Legacy)",
@@ -1953,7 +1953,7 @@
   "0907036914": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 22978 (RE, CLOSED, will no will), d. 5/19/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Sadonia Ann Taylor d. 2019-05 (Legacy)",
@@ -1966,7 +1966,7 @@
   "020500011646350": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Deborah G Sweatt d. 2024 (Legacy)",
@@ -1977,7 +1977,7 @@
   "04032500004375": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 151425 (RE, CLOSED, will probated), d. 10/31/2008. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Toby I Kaplan Weiner d. 2008-10-31 (Find a Grave)",
@@ -2005,7 +2005,7 @@
   "0134002894": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 36579 (SJ, CLOSED, will unprobated), d. 9/18/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Gary Wayne Shriver Sr d. 2018-09-18 (Find a Grave)",
@@ -2018,7 +2018,7 @@
   "0313073407162": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Kenneth Clark Sherman Jr d. 2023-02-05 (Find a Grave)",
@@ -2029,7 +2029,7 @@
   "0804003853": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 22294 (SE, ARCHIVED, will no will), d. 1/19/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Kyle D Crouse Jr d. 2019-01 (Legacy)",
@@ -2043,7 +2043,7 @@
   "1119387976": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 46626 (SE, CLOSED, will no will), d. 4/8/2026. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Richard Eugene Covell d. 2026-04 (Legacy)",
@@ -2056,7 +2056,7 @@
   "2403047253": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 66145 (MA, CLOSED, will no will), d. 11/12/2007. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Douglas B Roberts d. 2007-11 (Legacy)",
@@ -2070,7 +2070,7 @@
   "020600008591800": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 86757 (RE, OPEN, will probated), d. 1/30/2015. Estate still open: the PR can sign now.",
    "death": "Rachel G Lomax d. 2015-01-30 (Find a Grave)",
@@ -2098,7 +2098,7 @@
   "2209011692": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "David William Barnhart d. 2004-04-24 (Find a Grave)",
@@ -2109,7 +2109,7 @@
   "0603005119": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 8605 (SE, CLOSED, will unprobated), d. 5/1/2008. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Kathryn V Kendall Conneely d. 2008-05-01 (Find a Grave)",
@@ -2122,7 +2122,7 @@
   "04111700007594": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Bette M Langley d. 2006-01 (Legacy)",
@@ -2147,7 +2147,7 @@
   "0328014256154": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Jose Abel Merlos Sorto d. 2019-10-12 (Find a Grave)",
@@ -2158,7 +2158,7 @@
   "0327535146008B": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Alvin Leroy Brown d. 2016 (Find a Grave)",
@@ -2183,7 +2183,7 @@
   "020341818568420": {
    "verdict": "PARK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file (stalled)",
    "reason": "Register of Wills estate 118301 (RE, OPEN, will no will), d. 4/11/2026. PR gives the property as their address \u2014 family in the house. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out.",
    "death": "Cynthia M Kauffman d. 2026-04 (Legacy)",
@@ -2196,7 +2196,7 @@
   "0320192243B066": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Sherman Leonard Johnson d. 2017-01-23 (Find a Grave); Beverly A Johnson d. 2020-04-13 (Find a Grave)",
@@ -2207,7 +2207,7 @@
   "04010112740580": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Kevin D Jones d. 2006-02-01 (Find a Grave)",
@@ -2218,7 +2218,7 @@
   "0910006759": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Helen Treader Dotson d. 2025-07 (Legacy)",
@@ -2229,7 +2229,7 @@
   "160902754725": {
    "verdict": "WORK",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate W123594 (RE, OPEN, will probated), d. 2/8/2025. Estate still open: the PR can sign now.",
    "death": "James L Best d. 2025-02 (Legacy)",
@@ -2243,7 +2243,7 @@
   "1904015762": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 213348 (SE, CLOSED, will no will), d. 12/13/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Agnes Elizabeth Thomas d. 2024-12 (Legacy)",
@@ -2256,7 +2256,7 @@
   "0602020904": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Nancy Josephine Musser White d. 2019-01-12 (Find a Grave)",
@@ -2267,7 +2267,7 @@
   "0707079370": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Joyce Irene Wike Walsh d. 2021-01-07 (Find a Grave)",
@@ -2278,7 +2278,7 @@
   "0805110254": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 26604 (SE, CLOSED, will no will), d. 1/30/2026. PR gives the property as their address \u2014 family in the house.",
    "death": "Tracy Faye Oikemus d. 2026-01 (Legacy)",
@@ -2291,7 +2291,7 @@
   "04151516750800": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 188364 (SE, ARCHIVED, will no will), d. 12/1/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Shirley Ann Dorsey Wilson d. 2017-12-01 (Find a Grave)",
@@ -2304,7 +2304,7 @@
   "04151513855610": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 probate gap",
    "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
    "death": "Richard J Mueller d. 2019-01-28 (Find a Grave)",
@@ -2315,7 +2315,7 @@
   "0803049450": {
    "verdict": "WORK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 22916 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 4/17/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
    "death": "Clifford A Peterson d. 2019-04 (Legacy)",
@@ -2340,7 +2340,7 @@
   "0116004235": {
    "verdict": "PARK",
    "confidence": "MEDIUM",
-   "checked": "2026-11-12",
+   "checked": "2026-11-13",
    "play": "Dead owner \u2014 estate on file",
    "reason": "Register of Wills estate 40899 (SE, CLOSED, will no will), d. 11/19/2025. PR gives the property as their address \u2014 family in the house.",
    "death": "Susan Jo Lease d. 2025-11 (Legacy)",
@@ -2545,20 +2545,21 @@
   "1404335287": {
    "verdict": "GO",
    "confidence": "HIGH",
-   "checked": "2026-11-12",
-   "play": "Dead owner 28 yrs \u2014 estate closed 1998, never deeded; 2026 tax sale to Effect Inc ($117.6K); redemption clock",
-   "reason": "Frances G (Lloyd) Slagle, 61, died 2/17/1998 at Gilchrist Hospice (obituary, Unicoi Co. TN archive). Howard estate 12233 (will probated, closed 1998), PR daughter Brenda (Denney) Tate, Martinsburg WV \u2014 no deed ever recorded; SDAT still shows Frances. Only Land Records entries: deed 771/701 (1976) and DOT 771/703 released 1994 \u2014 FREE & CLEAR since 1994. Howard County cited 'Frances G. Slagle' for a code infraction in 2019 (0Z41104070) \u2014 21 years after her death. SOLD at the 2026 Howard tax sale to Effect Inc: face $117,626 (\u224815+ years unpaid), bid $122,100. No redemption suit yet (Case Search 11/12/2026); Effect can file 6 months after the sale and typically does.",
-   "title": "Deed 771/701 (6/17/1976) Frances G Slagle, 17767 Annapolis Rock Rd, .484 ac, 1950 house 1,237 sf. DOT 771/703 released 3201/467 (1994). No deed out. Title passes under the 1993 will (probated 1998) \u2014 needs a PR deed from a reopened estate or signatures of all devisees.",
-   "death": "Frances Gail Slagle d. 2/17/1998 \u2014 Howard RoW 12233 (will 11/15/1993 probated; closed 2/13/2002; no deed of distribution). Son Michael W Slagle predeceased (court named Robin Slagle guardian for his minor children Michele, Elizabeth, Donald, 2/28/2001). Son Kelsey Lee Slagle (b. 7/29/1959) lived at the house 1983\u20132022 and DIED 8/30/2022 \u2014 no Maryland estate; possible wife Janette Fiona Slagle (62) also deceased; children unknown. Daughter Brenda (Denney) Tate living, Martinsburg WV.",
+   "checked": "2026-11-13",
+   "play": "Life estate + testamentary POWER OF SALE \u2014 one signer (Brenda) can convey fee simple; 6 remaindermen are payees, not signers. 2026 tax sale to Effect Inc ($117.6K); redemption clock.",
+   "reason": "Frances Gail Slagle d. 2/17/1998. Howard RoW estate 12233 (will 11/15/1993 probated; revised first & final account approved; closed 2/13/2002). WILL ART. V (read 11/13/2026): 17767 Annapolis Rock Rd to daughter BRENDA DENNEY for LIFE; on her death 1/3 to Brenda's children, 1/3 to Kelsey's children, 1/3 to Michael's children, per stirpes. Brenda 'shall have the power to convey a fee simple interest ... during her lifetime for fair market value' (notice to Kelsey/Michael only if living \u2014 both now dead), proceeds split in the same thirds; Brenda must pay all taxes, insure and repair during the life estate. Account Sched. E (4/15/1999) names the remaindermen: Michelle, Elizabeth, Donald Slagle (Michael's, Robin Slagle guardian); Matthew Slagle (Kelsey's); Christa and Joshua Denney (Brenda's). A 10/1/1999 PR deed (life estate to Brenda, remainder to the three grandchild classes as tenants in common) was drafted but marked 'deed needs corrections' and NEVER RECORDED; the Orphans' Court ordered a corrected deed recorded by 4/16/2002 \u2014 never done. Land Records: deed 771/701 (1976), DOT 771/703 released 3201/467 (1994), nothing since \u2014 FREE & CLEAR, still titled to Frances. Taxes unpaid ~15 yrs (life tenant breached the will's tax covenant); SOLD 2026 Howard tax sale to Effect Inc, face $117,626, bid $122,100; no redemption suit as of 11/12/2026. 2019 county code case vs 'Frances G. Slagle' (0Z41104070). Teardown (Street View 10/2026).",
+   "title": "Record: Frances G Slagle, deed 771/701. Equitable (per probated will): life estate in Brenda (Denney) Tate WITH power to sell fee simple for FMV; vested remainder, 1/3 per stirpes to each child's children \u2014 Michelle/Elizabeth/Donald Slagle (1/9 each), Matthew Slagle (1/3), Christa Denney & Joshua Denney (1/6 each). Kelsey's and Michael's deaths do NOT put the house in their estates \u2014 the remainder goes straight to their children, so no estate needs opening for either son. Cure: reopen 12233, record the court-ordered deed of distribution (life estate + remainder), then Brenda conveys fee simple under Art. V; get the 6 remaindermen to join/consent for insurability.",
+   "death": "Frances Gail Slagle d. 2/17/1998 (RoW 12233; obituary). Son Michael W Slagle \u2014 alive at Pearisburg VA in 2002 service list; since deceased. Son Kelsey Lee Slagle \u2014 lived at the house (and was at MCI-J in 2000); d. 8/30/2022, no Maryland estate (none needed \u2014 he had only an expectancy through his son). Daughter Brenda (Denney) Tate \u2014 living, WV.",
    "contacts": [
-    "Brenda G Tate (daughter, PR of record) \u2014 84 Babbling Brook Ln, Martinsburg WV 25403 \u2014 first call",
-    "Robin Ann Slagle (Michael's widow, 2001 guardian) \u2014 route to Michele, Elizabeth and Donald Slagle",
-    "Kelsey Slagle's spouse/children \u2014 unknown; ask Brenda",
-    "Effect Inc / J. Scott Morse Esq \u2014 2026 certificate holder (ask for assignment)",
-    "Debra Garver, 17735 Annapolis Rock Rd (neighbor) \u2014 possible lot buyer"
+    "Brenda G (Denney) Tate \u2014 life tenant, former PR, holds the power of sale \u2014 THE signer. RoW addresses: 160 Woodland Ct / 332 N Mildred St, Charles Town WV (1999\u20132002); current WV address in local verified file.",
+    "Matthew Slagle (Kelsey's son, 1/3 remainder) \u2014 RoW 2002 address 3610 Ginger Ct, Germantown MD",
+    "Robin Ann Slagle (Michael's widow; 2001 guardian) \u2014 route to Michelle, Elizabeth and Donald Slagle (1/9 each); RoW address was the property",
+    "Christa Denney and Joshua Denney (Brenda's children, 1/6 each) \u2014 through Brenda",
+    "Effect Inc / J. Scott Morse Esq \u2014 2026 certificate holder (confirm nothing filed; ask assignment price)",
+    "Allen J. Katz Esq, Gaithersburg \u2014 1999 estate attorney (file history)"
    ],
-   "numbers": "Lot-value deal (teardown). Redemption \u2248 $117.6K + 18%/yr \u2248 $128K now; +fees once Effect files. Plan A: $128K + $12K legal + $20K demo + heirs; Plan B (certificate assignment + own foreclosure): \u2248 $140K all-in, no heir signatures. ~$110K profit at $300K lot value; pass below ~$275K.",
-   "next": "Order the 1993 will (RoW 12233 docket #1) \u2014 it decides whether the house is 100% Kelsey's estate or split 3 ways. Run Plan C: family route (reopen 12233 / open Kelsey's estate, buy from devisees, redeem from price) in parallel with asking Effect to assign the certificate so Ray can foreclose it himself. Perc/zoning + builder call before committing. Full plan: scratchpad annapolis-rock-rd-plan.md (also sent to Ray 11/12/2026)."
+   "numbers": "Teardown/lot deal. Redemption \u2248 $117.6K + 18%/yr \u2248 $128K now (+ Effect's fees once they file). Will requires 'fair market value' \u2014 price off an as-is appraisal of the lot (overgrown, house to demo, septic unknown, tax lien, title cloud) with the 6 remaindermen signing consents/quitclaims so no one can later attack the price. Working: contract $170\u2013190K all-in to family (county redeemed from it) + $10K legal + $20K demo vs $300K+ lot \u2192 ~$90\u2013110K. Plan B (buy Effect's certificate, foreclose RoR): \u2248 $140K all-in, no family signatures.",
+   "next": "1) Call Brenda: she alone can sell under the will; county already sold the taxes; a lien company forecloses next; sale pays the county and puts cash in the grandkids' hands (and clears her exposure for the unpaid taxes). 2) Title attorney: petition to reopen 12233 + record the deed of distribution the court ordered in 2002; opinion that Art. V power of sale lets Brenda convey fee simple (verify MD; underwriter). 3) Appraisal of the lot as-is. 4) Remaindermen consents (6 people, 3 families). 5) Parallel: ask Effect for an assignment quote; Howard Finance redemption statement; DPZ perc/zoning + builder. Plan: scratchpad annapolis-rock-rd-plan.md (rev. 11/13/2026)."
   }
  }
 }
