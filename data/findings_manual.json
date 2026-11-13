@@ -1,0 +1,164 @@
+{
+ "_about": "Hand-entered research verdicts (public records only: SDAT, Land Records, Case Search, Register of Wills, obituaries). Keyed by SDAT account. engine2/findings_build.py merges these with the Register of Wills dockets into data/findings.json, which the Title Leads and Lien Leverage tabs show as the Worked file.",
+ "17010019661": {
+  "verdict": "GO",
+  "confidence": "HIGH",
+  "checked": "2026-11-12",
+  "play": "Creditor asleep (stale tax cert) + dead owner",
+  "reason": "Free & clear since 1973; owner died 2021; the tax bill goes to a daughter's address in Reston VA; taxes unpaid since 2024, 2024 certificate (#812) void, no redemption suit.",
+  "title": "Deed 4281/159 (1973) Bernard A Downey Jr & Margaret C (TBE). DOTs 1991/1995/2003 all released (last 35309/197, 2013). Free & clear; title passed to Margaret by survivorship.",
+  "death": "Bernard A Downey Jr d. 10/28/2021 \u2014 PG small estate 125464 (closed 7/2022, will unprobated). Co-owner Margaret C Downey: no Maryland estate found; title passed to her by survivorship.",
+  "contacts": [
+   "James A Downey (son, PR per docket) \u2014 26115 Woodridge Dr, Mechanicsville MD 20659 \u2014 first call",
+   "Elizabeth Ann Lewis (daughter, PR per docket) \u2014 2406 Bugle Ln, Reston VA 20191 (also the SDAT tax-bill address)",
+   "Robert H Moreland, estate attorney (per docket) \u2014 PO Box 778, Charlotte Hall MD 20622"
+  ],
+  "numbers": "Zestimate $530K; 25% = $133K; max for $100K = $362K; back taxes \u2248 $6.6K + 2025\u201326.",
+  "next": "Letter to James Downey (written 2026-11-12), call the week after; elderly owner \u2014 one warm contact."
+ },
+ "17121227263": {
+  "verdict": "GO",
+  "confidence": "HIGH",
+  "checked": "2026-11-12",
+  "play": "Creditor asleep (stale tax cert) + fresh heir",
+  "reason": "Estate deeded the house to Sharon Marshall (DC) 12/2024; she has never paid a tax bill; 2024 cert (#598) void; free & clear.",
+  "title": "Estate deed 50410/139 (12/13/2024) to Sharon Marshall; Jones's 2009 DOTs released 2018 (41647/351, 41651/447). SDAT owner now MARSHALL SHARON.",
+  "death": "Prentice E Jones d. 4/30/2018 \u2014 PG estate 111330 (will probated, closed).",
+  "contacts": [
+   "Sharon Marshall (owner/heir) \u2014 3819 26th St NE, Washington DC 20018",
+   "Karen Miller (former PR) \u2014 201 Blackberry Dr, Fort Washington MD 20744",
+   "Lu Juana Richardson (former PR) \u2014 15807 Baden Naylor Rd, Brandywine MD 20613"
+  ],
+  "numbers": "Redfin $535K; 25% = $134K; max $366K; back taxes \u2248 $6K + 2025\u201326.",
+  "next": "Letter to Sharon Marshall (written 2026-11-12)."
+ },
+ "020317516791400": {
+  "verdict": "GO",
+  "confidence": "HIGH",
+  "checked": "2026-11-12",
+  "play": "Creditor asleep (stale tax cert), tired landlord, waterfront",
+  "reason": "Landlord lives elsewhere; 2023 GBIF cert void; still on 2024\u201326 lists; free & clear; SDAT tags parcel WATERFRONT, 0.94 acre.",
+  "title": "Deed 28482/426 (6/11/2015) Albert F Rogall Jr. Purchase DOT 28482/431 released 2020-09-21 (35248/355). His 2021 DOT 37296/421 is on 966 Nabbs Creek, not this parcel. Free & clear.",
+  "contacts": [
+   "Albert F Rogall Jr (owner) \u2014 966 Nabbs Creek Rd, Glen Burnie MD 21060"
+  ],
+  "numbers": "Redfin $512K; 25% = $128K; max $346K; back taxes \u2248 $6.2K + 3 yrs. Check Critical Area / FEMA before the number.",
+  "next": "Letter written 2026-11-12. Investor-owner \u2014 Ray's call."
+ },
+ "020400006202500": {
+  "verdict": "GO",
+  "confidence": "MEDIUM",
+  "checked": "2026-11-12",
+  "play": "Creditor asleep (stale tax cert), stalled commercial buyer",
+  "reason": "Bought for cash 11/2022, never paid a tax bill; 2024 cert (Insight Real Estate, $14.3K) void. Commercial, old structure.",
+  "title": "Deed 39275/163 (11/15/2022) Duane McKinney; no DOT of record. (2011 'vs McKinney' suits are PG, different person.)",
+  "contacts": [
+   "Duane McKinney (owner) \u2014 7004 40th Ave, Hyattsville MD 20782"
+  ],
+  "numbers": "Assessed $776K (no AVM); 25% = $194K; max $583K.",
+  "next": "Letter written 2026-11-12; commercial buyer pool."
+ },
+ "17212420750": {
+  "verdict": "GO",
+  "confidence": "MEDIUM",
+  "checked": "2026-11-12",
+  "play": "Creditor asleep (stale tax cert), absentee landlord",
+  "reason": "Owners in Bowie 24 yrs; 2009 refi released 2023 then taxes stopped; 2024 cert (#944) void; free & clear.",
+  "title": "Deed 15690/49 (4/11/2002) William S Kirk (& Hilary J). 2009 DOT 30472/272 released 2023-03-22 (48676/126). Free & clear. Not the deceased William A Kirk Sr (different parcel).",
+  "contacts": [
+   "William S & Hilary J Kirk (owners) \u2014 11700 Locust Glen Dr, Bowie MD 20721"
+  ],
+  "numbers": "Zestimate $513K (5bd/3ba); 25% = $128K; max $347K; back taxes \u2248 $8.5K + 2025\u201326.",
+  "next": "Letter written 2026-11-12."
+ },
+ "1102218348": {
+  "verdict": "GO",
+  "confidence": "MEDIUM",
+  "checked": "2026-11-12",
+  "play": "Judgment buy (HOA) + absentee owner",
+  "reason": "Mark H Cox d. 2008, 'will \u2013 no estate'; house passed to Wendy G Cox by survivorship; mortgage released 11/2008; HOA liens 2018\u20132025 and two HOA judgments ($2.7K + $16.2K).",
+  "title": "Owned Cox Mark H & Wendy G (TBE) \u2192 Wendy sole owner by survivorship. Mortgage released 7118/514 (2008-11-18). HOA liens 12705/171, 12954/274, 13749/235, 16646/290, 17199/162; two released 2023-11-27.",
+  "death": "Mark H Cox d. 7/25/2008 \u2014 Frederick RoW 32030, will deposited, no estate (none needed).",
+  "contacts": [
+   "Wendy G Cox (owner of record) \u2014 address per SDAT tax bill / Land Records; confirm current",
+   "Worman's Mill Community Conservancy (judgment creditor) \u2014 via its attorney; buy the two judgments"
+  ],
+  "numbers": "Equity est. $386K; HOA judgments \u2248 $19K face.",
+  "next": "Confirm Wendy's current mailing address from the tax bill; letter to her + offer to the HOA attorney for the judgments."
+ },
+ "19-07018126": {
+  "verdict": "GO",
+  "confidence": "HIGH",
+  "checked": "2026-11-11",
+  "play": "Right-of-redemption suit filed (Effect Inc.)",
+  "reason": "Tax-delinquent investor-owned house; Effect Inc. filed to foreclose the right of redemption 10/26/2026 (C-18-CV-26-000721) \u2014 court clock, not just a tax list.",
+  "title": "Deed SM 4694/218 (7/2017, $33,600) from four Equity Trust IRA accounts; no mortgage.",
+  "contacts": [
+   "Daniel Lynn Meyers (owner, 52) \u2014 7035 Bensville Rd, White Plains MD",
+   "J. Scott Morse, Esq. \u2014 plaintiff's attorney for Effect Inc."
+  ],
+  "numbers": "As-is \u2248 $345K; max offer \u2248 $199K; 2026 sale face $8,074, bid $67,100.",
+  "next": "Call the owner first \u2014 he is being sued and has a deadline."
+ },
+ "09-05017718": {
+  "verdict": "PARK",
+  "confidence": "HIGH",
+  "checked": "2026-11-11",
+  "play": "Owner-direct (trust), waterfront",
+  "reason": "Purvis Family Trust 2014 (CH 8514/86), free & clear; trustees William J Purvis III (83) and Doris (81) alive in Naples FL; tenant Tomas Gallardo Sr in the house; flood VE.",
+  "contacts": [
+   "William J & Doris Purvis (trustees) \u2014 1302 Westlake Blvd, Naples FL"
+  ],
+  "next": "Owner-direct letter; Lot 24 (09-05017726) first."
+ },
+ "020600090040199": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "Karen Samaras signed new leases on 1925 West St in 2021; her open DOT is on her condo, not this parcel. Active commercial landlord, $1.2K cert \u2014 late, not asleep."
+ },
+ "17101121821": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "Jude Onyebuchi & Joy Davis also own 4217 Enterprise Rd (refinanced 6/2026). 2007 DOT on Main St foreclosed 2018, released 2020. Sophisticated owners juggling debt."
+ },
+ "17215584563": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "Yingqiao Gou bought 1/2023 cash; HOA liens 10/2024 and 10/2026; tax bill goes to 8100 Greenbelt Station Pkwy which he sold 7/2024 \u2014 not receiving mail. Needs skip trace."
+ },
+ "17070770883": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "Warner / Warner-Davidson investor family (5+ deeds); 2017 DOT with substitute trustee 11/2017; HOA liens 2015\u20132021. Ray skips investor-owners."
+ },
+ "17050406199": {
+  "verdict": "KILL",
+  "checked": "2026-11-12",
+  "reason": "3001 E Ridge Rd \u2014 SDAT tax bill goes to the property (mail-mismatch was a spelling artifact); treat as owner-occupied. Lien list only."
+ },
+ "020680990035338": {
+  "verdict": "KILL",
+  "checked": "2026-11-12",
+  "reason": "2A3 Spa Creek Landing \u2014 tax-bill address is the same building; owner-occupied condo."
+ },
+ "17181986603": {
+  "verdict": "KILL",
+  "checked": "2026-11-12",
+  "reason": "Margaret H Lucas d. 4/28/2022 (PG small estate 125494); PR James T Lucas Sr lives at the house \u2014 family-occupied."
+ },
+ "0804039130": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "Marcella E Moore \u2014 no estate anywhere in Maryland; death claim unconfirmed (only a 1955 Marcella Moore estate exists). Needs an obituary before anything else."
+ },
+ "020200006629000": {
+  "verdict": "PARK",
+  "checked": "2026-11-12",
+  "reason": "Alvarado \u2014 Columbia Liens filed a redemption suit 12/2024 (C-02-CV-24-003203, closed); 2022 DOT 39207/88 unreleased. Creditor is not asleep."
+ },
+ "020600090031249": {
+  "verdict": "KILL",
+  "checked": "2026-11-12",
+  "reason": "McFarland 133 Eastern Ave \u2014 substitute trustee appointed 12/17/2025, foreclosure C-02-CV-25-003627 filed. Lender is awake."
+ }
+}

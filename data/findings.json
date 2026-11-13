@@ -1,0 +1,2466 @@
+{
+ "generated": "2026-11-12",
+ "counts": {
+  "WORK": 172,
+  "PARK": 24,
+  "GO": 7,
+  "KILL": 4
+ },
+ "by_account": {
+  "04082000009657": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 225388 (RE, OPEN, will no will), d. 12/11/2022. Estate still open: the PR can sign now.",
+   "death": "Murray Hooper d. 2022-12 (Legacy)",
+   "contacts": [
+    "SARA MAJEWSKI (PR) \u2014 7000 GITTINGS COURT, MECHANICSVILLE, VA 23111",
+    "Estate attorney \u2014 JOHN J CONDLIFFE [1 W PENNSYLVANIA AVE, STE 900, TOWSON, MD 21204-5076]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "17033708351": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 111242 (SE, ARCHIVED, will no will), d. 8/19/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Marvin Noel Brooks d. 2018 (Legacy)",
+   "contacts": [
+    "ANGELA BROOKS (PR) \u2014 8205 HOLLOWTREE LANE, UPPER MARLBORO, MD 20772"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04010111000760": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "John Mccullegan Jr d. 2024-02-15 (Find a Grave); Lillie R Mccullegan d. 2003-02-12 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1504000536": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Jacqueline Myra Henry Cann d. 2019-10-31 (Find a Grave); William Cann d. 2019-05 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0312090407015": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Margaret Elizabeth Coster Collins d. 2009-01-04 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020640590057860": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate W104970 (SE, ARCHIVED, will no will), d. 10/31/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Jennifer Lynn Williams d. 2020-10 (Legacy)",
+   "contacts": [
+    "LAWRENCE A WILLIAMS (PR) \u2014 7055 WILSON LANE, BETHESDA, MD 20817",
+    "Estate attorney \u2014 MELISSA E AITKEN [11300 ROCKVILLE PIKE, #708, ROCKVILLE, MD 20852]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0906210473": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Bruce Webb Bennett d. 2023 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "17060647339": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Thomas Joseph White d. 2025 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0502015048": {
+   "verdict": "PARK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 12219 (RE, CLOSED, will no will), d. 3/3/2013. PR gives the property as their address \u2014 family in the house. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out.",
+   "death": "Russell Leroy Mackall d. 2013-03-03 (Find a Grave)",
+   "contacts": [
+    "MARTHA MAE MACKALL (PR) \u2014 1475 SOLOMONS ISLAND ROAD, HUNTINGTOWN, MD 20639",
+    "Estate attorney \u2014 PHYLLIS A. BAKER ESQUIRE [P.O. BOX 840, 481 MAIN STREET, PRINCE FREDERICK, MD 20678]"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "04131302370290": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 238451 (RE, OPEN, will no will), d. 2/6/2026. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate still open: the PR can sign now.",
+   "death": "Dennis A Randle d. 2026-02 (Legacy)",
+   "contacts": [
+    "MATTHEW RANDLE (PR) \u2014 5605 SHELBOURNE RD, APT A, HALETHORPE, MD 21227-2752"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0302081772022": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate W64781 (RE, CLOSED, will no will), d. 3/12/2010. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Janice Kassakatis Atwell d. 2010-03 (Legacy)",
+   "contacts": [
+    "KEITH FIELDS (PR) \u2014 1951 FIELD ROAD, JESSUP, MD 20794"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04020219610640": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Richard W Fitch Jr d. 2021-12-21 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04121211015730": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Joseph Richard Bauer Jr d. 2015-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0326425963A001": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Carolyn Boyd d. 2021-02-08 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1102454858": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 37326 (SE, CLOSED, will no will), d. 9/26/2012. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Delia A Naranjo d. 2012 (Find a Grave)",
+   "contacts": [
+    "ANTONIO M. NARANJO (PR) \u2014 9382 HIGHLANDER BLVD., WALKERSVILLE, MD 21793"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04151800002637": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Barbara Jean Parks Mcneal d. 2021-02-25 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0908005745": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 16869 (SE, CLOSED, will no will), d. 11/23/2009. PR gives the property as their address \u2014 family in the house.",
+   "death": "Joseph Andrew Lamanna d. 2009-11-23 (Find a Grave); Theresa Ann Kuster Lamanna d. 2014-08-21 (Find a Grave)",
+   "contacts": [
+    "THERESA ANN LAMANNA (PR) \u2014 2501 LISA DRIVE, WALDORF, MD 20601"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "2410371805": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Regina M Balcerzak d. 2026-04 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "2410246806": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "James L Sullivan d. 2026-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1906038875": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "John S Murphy d. 2002-03-03 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "2206005381": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Robert E Courtney Sr d. 2022-11-23 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0501131036": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 114985 (RE, OPEN, will no will), d. 9/8/2024. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate still open: the PR can sign now.",
+   "death": "Wayne Roland Brooks d. 2024 (Legacy)",
+   "contacts": [
+    "KAREN GRACE CONNOLLEY (PR) \u2014 363 VALLEY STREAM RD, SEVERNA PARK, MD 21146-1339"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0108012350": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 41076 (SE, CLOSED, will no will), d. 6/9/2025. PR gives the property as their address \u2014 family in the house.",
+   "death": "Carol Sue Martin Lewis d. 2025-06-09 (Find a Grave)",
+   "contacts": [
+    "SANDRA LEWIS (PR) \u2014 22418 COSGROVES LN SW, WESTERNPORT, MD 21562-2106"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0313073415002": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "William Charles Brown d. 2020-01-04 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1304017307": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Joseph John Dragunas Sr d. 2024-01 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "161203399727": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 17530 (RE, CLOSED, will no will), d. 3/31/2024. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Sharon Lee Howard Stewart d. 2024-03 (Legacy)",
+   "contacts": [
+    "SHANNON W. TWIGG (PR) \u2014 12747 BARREDA BLVD, LUSBY, MD 20657-4113",
+    "Estate attorney \u2014 BRIAN W RITTER, JR ESQUIRE [489 MAIN STREET, #101, PRINCE FREDERICK, MD 20678]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "160702194360": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate W117425 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 2/10/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Jose Maria Molina d. 2023-02 (Legacy)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1807003420": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 11346 (SE, ARCHIVED, will no will), d. 6/22/2014. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Haywood Davis Elliott d. 2014-06 (Legacy)",
+   "contacts": [
+    "VALERIE ELLIOTT (PR) \u2014 5134 AREYS ROAD, CAMBRIDGE, MD 21613"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020695690235448": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Rebecca Jane Hoffman Mcdaniel d. 2024-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "2225040015": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 81589 (SE, ARCHIVED, will probated), d. 7/10/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Ira William Brown d. 2024-07 (Legacy)",
+   "contacts": [
+    "JIMAYNE BROWN (PR) \u2014 17711 MEADOW VISTA WAY, GAITHERSBURG, MD 20877-1046"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0327595210E061": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "James Thomas Mcneil d. 2025-09 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1507009127": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 12305 (RE, CLOSED, will probated), d. 8/29/2009. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Albert Carl Lieber d. 2009-08-29 (Find a Grave)",
+   "contacts": [
+    "CAROLINE L. BALDWIN (PR) \u2014 P.O. BOX 498, AVENUE, MD 20609-0498",
+    "Estate attorney \u2014 C. LEE GORDON ESQUIRE [P.O. BOX 1209, EASTON, MD 21601]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2305035988": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Byard Whaley Collins Jr d. 2021-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0328024286A003": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "William A Richardson d. 2005-05-15 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0316172514A033": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Shirley Ann Roller Davis d. 2026-05-20 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04111800012782": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Elizabeth Mccracken Ross d. 2019-01-30 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "2203010945": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Robert Eugene Davis Jr d. 2016-06-03 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1103129179": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 33878 (SE, CLOSED, will unprobated), d. 5/3/2010. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Robert Samuel Hendricks d. 2010-05-03 (Find a Grave); William Richard Hendricks d. 2006-11-24 (Find a Grave)",
+   "contacts": [
+    "GREGORY HENDRICKS (PR) \u2014 9812 WONDERING LANE, HAGERSTOWN, MD 21740"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0108018278": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 28940 (SE, CLOSED, will no will), d. 5/9/2006. PR gives the property as their address \u2014 family in the house.",
+   "death": "Jesse Robert Comeau d. 2006-05-09 (Find a Grave)",
+   "contacts": [
+    "ELLEN MARIE COMEAU (PR) \u2014 202 GREENE ST., WESTERNPORT, MD 21562"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "020200005037200": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "John Thomas Steele d. 2023-02 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0313143534078": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 205487 (SE, CLOSED, will no will), d. 8/28/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Brian Maurice Jones d. 2019-08-28 (Find a Grave)",
+   "contacts": [
+    "IVERA W JONES (PR) \u2014 805 MILFORD MILL ROAD, BALTIMORE, MD 21208"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04030311015750": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Charles Andrew Monroe Jr d. 2026-09 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1116349623": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Frank James Whyte Iii d. 2011-07 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "161301314574": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Maria E Rivera d. 2015 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0316062520011": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 216030 (SE, CLOSED, will no will), d. 9/20/2021. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Marvin Lewis Johnson d. 2021-09-20 (Find a Grave)",
+   "contacts": [
+    "TORI JOHNSON (PR) \u2014 415 S MESA HILLS DR, APT 1122, EL PASO, TX 79912"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2102104393": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 24915 (UN, CLOSED, will unprobated (will deposited, no estate)), d. 12/16/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Richard N Roe Sr d. 2023-12 (Legacy)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2403015122": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 128690 (RE, CLOSED, will probated), d. 1/15/2004. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Raymond Stanley Layton d. 2004-01 (Legacy)",
+   "contacts": [
+    "SHIRLEY LAYTON (PR) \u2014 6615 WICKFIELD RD, BALTIMORE, MD 21209",
+    "Estate attorney \u2014 JONATHAN A AZRAEL [101 E CHESAPEAKE AVENUE, 5TH FLOOR, TOWSON, MD 21286]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0326206048036": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "William D Sykes d. 2013-02-02 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1402249537": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Chang Shik Oh d. 2022-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0107023766": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Alan Jay Durr d. 2024-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0315183214026": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Joseph Anthony Gillespie d. 2024-05-10 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0324112005109": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Joseph Edward Harris d. 2009-08-26 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04131900004919": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "John William Ritter d. 2018-05 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1104152557": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 35627 (RE, CLOSED, will probated), d. 12/13/2011. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "James Hansford Elgin Jr d. 2011-12 (Legacy)",
+   "contacts": [
+    "MARGARET D. ELGIN (PR) \u2014 10270 ROCKY RIDGE ROAD, ROCKY RIDGE, MD 21778",
+    "Estate attorney \u2014 JEFFREY PATRICK MCEVOY ESQ. [8 WEST THIRD STREET, FREDERICK, MD 21701]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04121203038600": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Gary Lee Barrett Sr d. 2023-12 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04010113202960": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Michael A Wilson Sr d. 2011-10-07 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04060603037120": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Robert Henry Clark d. 2022-02-19 (Find a Grave); Marilyn E Ryan Clark d. 2017-06-03 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0707020287": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 43285 (SE, CLOSED, will probated), d. 3/29/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Donald Clyde Bowersox d. 2023-03 (Legacy)",
+   "contacts": [
+    "ANGELA GIST BOWERSOX (PR) \u2014 2020 GIST FARM DRIVE, WESTMINSTER, MD 21158"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0806033962": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Clarence Ed White d. 2011-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1107243359": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Marilyn Lamm Carter d. 2020-02-10 (Find a Grave); Larry Jerome Carter Jr d. 2013-11-18 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1302019833": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 54877 (UN, ARCHIVED, will no will (no estate)), d. 7/22/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Woodrow B Grant d. 2019 (Find a Grave)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2311017444": {
+   "verdict": "PARK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 28317 (RE, OPEN, will probated), d. 8/11/2025. PR gives the property as their address \u2014 family in the house.",
+   "death": "Steve A Meilhammer Sr d. 2025 (Legacy)",
+   "contacts": [
+    "LORI A MEILHAMMER (PR) \u2014 29063 BRYAN BROOKE LN, SALISBURY, MD 21801-1121",
+    "NICOLE A MEILHAMMER (PR) \u2014 1013 PHILLIPS AVE, SALISBURY, MD 21804-4433",
+    "Estate attorney \u2014 PAUL D. WILBER ESQUIRE [PO BOX 910, WEBB LAW, SALISBURY, MD 21803-0910]"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "1103128407": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Gloria Jean Bissett Wolfe d. 2026-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020100090045317": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 24220 (RE, OPEN, will probated), d. 12/7/2021. Estate still open: the PR can sign now.",
+   "death": "Josiah Hammond Tice Jr d. 2021-12 (Legacy)",
+   "contacts": [
+    "DENNIS J. TICE SR. (PR) \u2014 227 POLLING HOUSE ROAD, HARWOOD, MD 20776",
+    "Estate attorney \u2014 C. LEE GORDON ESQ. [129 N WASHINGTON ST, PO BOX 1209, EASTON, MD 21601]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020457190084993": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Frederick W Gams d. 2026 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0327014198C025": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 7995 (SE, ARCHIVED, will no will), d. 2/6/2016. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Harold Timothy Howard d. 2016-02 (Legacy)",
+   "contacts": [
+    "CLARENCE HOWARD (PR) \u2014 109 HALL HIGHWAY, CRISFIELD, MD 21817"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2410315514": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "James B Piorunski d. 2022-12 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0321050777082": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 131252 (RE, CLOSED, will probated), d. 8/22/2004. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Lloyd George Johnson d. 2004-08-22 (Find a Grave)",
+   "contacts": [
+    "ESTELLE M. JOHNSON (PR) \u2014 2124 ALMA AVENUE, BALTIMORE, MD 21219",
+    "Estate attorney \u2014 MARY E GEPHARDT [809 EASTERN BLVD, STE 300, BALTIMORE, MD 21221-3538]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0306171730040": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Matthew R Young d. 2022-04 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0328058030H024": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 230193 (RE, CLOSED, will probated), d. 4/7/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Earl Edwin Payne d. 2024-04-30 (Find a Grave)",
+   "contacts": [
+    "CAROLYN A. PAYNE (PR) \u2014 9840 CLANFORD RD, RANDALLSTOWN, MD 21133-2508",
+    "Estate attorney \u2014 MORRIS L GARTEN [10096 RED RUN BOULEVARD, SUITE 200, OWINGS MILLS, MD 21117]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0325012530C368": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Tyrone A Green d. 2021-04-12 (Find a Grave); Dora Green d. 2018-07-26 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04021800007294": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 204903 (SE, ARCHIVED, will unprobated), d. 6/3/2023. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Delores E Johnson d. 2023-06 (Legacy)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04151800013936": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 196352 (SE, CLOSED, will probated), d. 10/17/2017. PR gives the property as their address \u2014 family in the house.",
+   "death": "Elaine E Robinette d. 2017 (Find a Grave)",
+   "contacts": [
+    "ROBERT LOUIS MAURER (PR) \u2014 201 MIDDLE RIVER ROAD, BALTIMORE, MD 21220",
+    "Estate attorney \u2014 A TONY HEPER [5301 EASTERN AVENUE, BALTIMORE, MD 21224]"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0501177478": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Paul Malcolm Marsh d. 2024-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "160603143311": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "George Gustave Ryffel Ii d. 2026-03 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1301281674": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Jeffrey A Barton d. 2023-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020610501272802": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Robert Eugene Goode d. 2019-12 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0129038635": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 37408 (RE, CLOSED, will probated), d. 3/2/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Vernita Monahan Beaulieu d. 2020-03 (Legacy)",
+   "contacts": [
+    "SHARON MARIE ROHRBAUGH (PR) \u2014 5300 GREENVILLAGE ROAD, CHAMBERSBURG, PA 17202"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0328048473019": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Christopher G Simpson d. 2024-01-16 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0326206042P179": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 195220 (SE, ARCHIVED, will no will), d. 5/31/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Ira Lend Bunch d. 2020-05-31 (Find a Grave); Rosa Lee Bunch d. 2016-12-31 (Find a Grave)",
+   "contacts": [
+    "WALTER CLEMENTS AYERS, JR. (PR) \u2014 5451 BRISTOL GREEN WAY, BALTIMORE, MD 21229"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0327224400A017": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Peggy Ann Hargrove d. 2026-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0312173846035": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Tyrone Adrian Reid d. 2023-02 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04030307061470": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 231136 (SE, CLOSED, will no will), d. 7/18/2020. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Carlos A Andrade d. 2020-07-18 (Find a Grave)",
+   "contacts": [
+    "ROSA A. ANDRADE (PR) \u2014 850 MILFORD MILL RD, PIKESVILLE, MD 21208-4600"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04080819011600": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 185710 (SE, CLOSED, will no will), d. 10/11/2014. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Norbert E Schirmer d. 2014-10-11 (Find a Grave)",
+   "contacts": [
+    "STEPHANIE S AYERS (PR) \u2014 2 ATHENRY COURT, APT 201, LUTHERVILLE, MD 21093-8019"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04090903672770": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 17778 (SE, ARCHIVED, will unprobated), d. 2/26/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Frank Buscemi d. 2019 (Find a Grave)",
+   "contacts": [
+    "DEBORAH A. POTTER (PR) \u2014 1612 HOLLY DRIVE, JOPPA, MD 21085"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0901024906": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 42575 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 4/28/2015. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Catherine Elizabeth Hancock d. 2015-04 (Legacy)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "160703254505": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate W125343 (RE, OPEN, will probated), d. 12/4/2025. Estate still open: the PR can sign now.",
+   "death": "Shirley Small d. 2025-12 (Legacy)",
+   "contacts": [
+    "DOUGLAS L SIEGLER (PR) \u2014 8501 BURDETTE ROAD, BETHESDA, MD 20817",
+    "ALBERT H SMALL JR (PR) \u2014 7311 ARROWOOD ROAD, BETHESDA, MD 20817",
+    "Estate attorney \u2014 DOUGLAS L SIEGLER [600 MASS. AVE NW, WASHINGTON, DC 20001]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04022200024192": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 223918 (SE, CLOSED, will no will), d. 4/3/2023. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Kim Singletary d. 2023-04-03 (Find a Grave)",
+   "contacts": [
+    "RICARDO SINGLETARY (PR) \u2014 9315 HOFFMASTER WAY, RANDALLSTOWN, MD 21133"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0315343311001": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Thomas Ali Ansar d. 2025-07-11 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04042100002345": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 218649 (SE, CLOSED, will probated), d. 4/23/2022. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Jeffrey William Lang d. 2022-04 (Legacy)",
+   "contacts": [
+    "DARLENE M. LANG (PR) \u2014 208 WALGROVE ROAD, REISTERSTOWN, MD 21136",
+    "Estate attorney \u2014 EDWARD S CLAY [1300 YORK RD, STE 120, LUTHERVILLE, MD 21093-6000]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04082500014022": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Bruce R Mortimer d. 2021 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "17212319945": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Maria Antonia Vasquez d. 2025-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0116012475": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Norma Jean Davis d. 2023-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0326235710029": {
+   "verdict": "PARK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 205059 (RE, OPEN, will no will), d. 9/7/2023. PR gives the property as their address \u2014 family in the house.",
+   "death": "Kenneth M Robinson d. 2023 (Find a Grave)",
+   "contacts": [
+    "ANISYA ROBINSON (PR) \u2014 4226 BELMAR AVE, BALTIMORE, MD 21206-1943"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0327045555107": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 174189 (SE, CLOSED, will no will), d. 7/2/2013. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Alethia Williams d. 2013-07-02 (Find a Grave)",
+   "contacts": [
+    "MARY V. WILLIAMS-STOVER (PR) \u2014 1215 BALMORAL DRIVE, CARY, NC 27511"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0108014914": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 36009 (SE, CLOSED, will probated), d. 9/23/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "John James Pattison d. 2017-09-23 (Find a Grave); Evelyn Louise Laupert Pattison d. 2015-02-27 (Find a Grave)",
+   "contacts": [
+    "ROBERT S. PATTISON (PR) \u2014 82 BRICK ROW, BLOOMINGTON, MD 21523"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2308026912": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Heather Marie Jones d. 2011-05-31 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020367013132315": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 82008 (RE, CLOSED, will probated), d. 11/22/2011. PR gives the property as their address \u2014 family in the house.",
+   "death": "Carol Ann Hudzik Harper d. 2011-11-22 (Find a Grave)",
+   "contacts": [
+    "ROBERT LAWRENCE HARPER (PR) \u2014 202 PROVIDENCE ROAD, ANNAPOLIS, MD 21409"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0328058102I033": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "James T Johnson d. 2018-12-15 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0327595210C117": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 192868 (LO, ARCHIVED, will no will), d. 9/4/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Eric Lamont Holmes d. 2018-09-04 (Find a Grave)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0327605210D189": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Anthony Graves Jr d. 2026-11 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0905026199": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 26948 (RE, OPEN, will probated), d. 10/6/2024. Estate still open: the PR can sign now.",
+   "death": "John Henry Kimmons d. 2024 (Legacy)",
+   "contacts": [
+    "JOSEPH C. HANGARTER (PR) \u2014 105 PAUL MELLON COURT, SUITE 18, WALDORF, MD 20602"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0502003333": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Crispin C Jones d. 2021 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0106015689": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Eugene L Frey d. 2009-03 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020460501049127": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 107025 (SE, ARCHIVED, will no will), d. 8/5/2022. PR gives the property as their address \u2014 family in the house.",
+   "death": "Martin Noe Sorto d. 2022-08 (Legacy)",
+   "contacts": [
+    "SISSI HERNANDEZ (PR) \u2014 1876 MONTREAL ROAD, SEVERN, MD 21144"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0502027038": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Lewis Marshall Early Jr d. 2017-04 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1301050419": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 46539 (SE, CLOSED, will unprobated), d. 7/6/2013. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Jack Dempsey Jones Jr d. 2013-07-06 (Find a Grave)",
+   "contacts": [
+    "MARY JONES (PR) \u2014 2009 EAST WHEEL ROAD, BEL AIR, MD 21015"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "161202344931": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate W127131 (RE, OPEN, will probated), d. 5/1/2026. Estate still open: the PR can sign now.",
+   "death": "Ray Douglas Magaha d. 2026-05 (Legacy); Linda Magaha d.  (Legacy)",
+   "contacts": [
+    "MARY E MOORE (PR) \u2014 3007 GREEN VALLEY, IJAMSVILLE, MD 21754",
+    "Estate attorney \u2014 J E GIBSON [8400 CORPORATE DR, SUITE 230, HYATTSVILLE, MD 20785]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020254190063691": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Rhonda Leigh Owen d. 2026-02 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0325027796028": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Elizabeth Ann Byrd Anderson d. 2016-10-23 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0316062528J002": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 211570 (RE, CLOSED, will no will), d. 1/8/2021. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Kenneth Jennings d. 2021-01 (Legacy)",
+   "contacts": [
+    "MEGAN GSVIND (PR) \u2014 10030 ORCHARD RD, BERLIN, MD 21811",
+    "Estate attorney \u2014 JOHN N FOX JR [1001 SAINT PAUL ST, BALTIMORE, MD 21202-2640]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0326385920036": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 202804 (SE, ARCHIVED, will no will), d. 1/28/2021. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "James A Doles Jr d. 2021-01-28 (Find a Grave)",
+   "contacts": [
+    "HAROLD LEE COOK (PR) \u2014 2031 CLIFTWOOD AVENUE, BALTIMORE, MD 21213",
+    "Estate attorney \u2014 STEPHEN L PREVAS [309 N. CHARLES ST., #200, BALTIMORE, MD 21201]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0327025818A047": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 208084 (SE, ARCHIVED, will no will), d. 7/6/2024. PR gives the property as their address \u2014 family in the house.",
+   "death": "Terrance Donnell Burgess d. 2024-07-06 (Find a Grave)",
+   "contacts": [
+    "NICOLE BLICK (PR) \u2014 5429 BELLE VISTA AVE, BALTIMORE, MD 21206-3544"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "1303151743": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Gerald Wayne Shelton d. 2017-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "161301092790": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Mario Alfonso Aguilar d. 2022-12-31 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "161302528834": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate W86066 (SE, ARCHIVED, will no will), d. 7/17/2015. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Fatmata Dabo d. 2015-07 (Legacy)",
+   "contacts": [
+    "MUCTARR DABO (PR) \u2014 12822 CAMELLIA DRIVE, SILVER SPRING, MD 20906"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1804116658": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 12057 (RE, ARCHIVED, will probated), d. 2/2/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Richard Aufderheide d. 2017-02 (Legacy)",
+   "contacts": [
+    "SARAH AUFDERHEIDE (PR) \u2014 852 THOMPSON CREEK ROAD, STEVENSVILLE, MD 21666",
+    "Estate attorney \u2014 S. KENNON SCOTT, ESQUIRE [133 DEFENSE HIGHWAY, SUITE 205, ANNAPOLIS, MD 21401]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020361590048709": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Nancy Lue Sligh Smith d. 2024-11-27 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020669690246694": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Robert Leonard Bryant d. 2023 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0326166320001": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "John Anthony Davis d. 2020-12 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0326385921037": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 93022 (RE, ARCHIVED, will probated), d. 7/31/2017. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "David S Wallace d. 2017-07-01 (Find a Grave); Denise Wallace d. 2024-11-08 (Find a Grave)",
+   "contacts": [
+    "LINDA MAULER (PR) \u2014 113 CARROLL RD, PASADENA, MD 21122",
+    "Estate attorney \u2014 STEVEN M SINDLER [1130 ANNAPOLIS RD, STE 101, ODENTON, MD 21113]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04152200006143": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 235379 (SE, CLOSED, will unprobated), d. 9/28/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Norman M Bocek d. 2024-09 (Legacy)",
+   "contacts": [
+    "BONNIE R KIDD (PR) \u2014 4282 BAY SHORE RD, TAYLORS ISLAND, MD 21669"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04022200014978": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Michael R Riggs Sr d. 2025 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1402299127": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 36364 (RE, OPEN, will no will), d. 6/12/2024. Estate still open: the PR can sign now.",
+   "death": "Bruce Robert Simpers d. 2024-06 (Legacy)",
+   "contacts": [
+    "GLEN R. SIMPERS (PR) \u2014 3861 FAWN LN, WHITE PLAINS, MD 20695-3310",
+    "Estate attorney \u2014 EDWARD W OLMSTED [PO BOX 1966, LA PLATA, MD 20646-1966]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020800000800800": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 115280 (SE, OPEN, will no will), d. 11/30/2022. Professional PR (attorney) \u2014 appointed when no family stepped up; their job is to sell. Estate still open: the PR can sign now.",
+   "death": "Philip W Drayer d. 2022 (Legacy)",
+   "contacts": [
+    "MICHELLE SIMON (PR) \u2014 110 N WASHINGTON ST, STE 500, ROCKVILLE, MD 20850-2230",
+    "Estate attorney \u2014 JULIAN MOSS [401 N WASHINGTON ST, STE 445, ROCKVILLE, MD 20850-0707]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04151503472620": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 201241 (RE, CLOSED, will probated), d. 11/3/2018. PR gives the property as their address \u2014 family in the house.",
+   "death": "Bruce Billie Billips d. 2018-11-03 (Find a Grave)",
+   "contacts": [
+    "JUDY M WILCOX (PR) \u2014 28 CHANDELLE ROAD, BALTIMORE, MD 21220",
+    "Estate attorney \u2014 JERRY T LAMBDIN [9103 TOPWOOD COURT, BALTIMORE, MD 21234]"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0129010463": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 36731 (RE, CLOSED, will probated), d. 1/4/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "John Edward Burkey d. 2019-01 (Legacy)",
+   "contacts": [
+    "MARY KATHRYN BURKEY (PR) \u2014 5 SUNSET DRIVE, LAVALE, MD 21502"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04031900004380": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 21197 (RE, OPEN, will probated), d. 7/7/2026. Estate still open: the PR can sign now.",
+   "death": "Ronald Michael Singer d. 2026-07-07 (Find a Grave)",
+   "contacts": [
+    "ALEXANDRA LAUREN BRIEST (PR) \u2014 5921 YEAGERTOWN RD, NEW MARKET, MD 21774-6335",
+    "Estate attorney \u2014 KATHERINE RUESCH ESQ. [11300 ROCKVILLE PIKE, SUITE 708, ROCKVILLE, MD 20852-3093]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04151516002900": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 240747 (RE, OPEN, will probated), d. 10/19/2026. Estate still open: the PR can sign now.",
+   "death": "Henry William Long d. 2026-10-19 (Find a Grave); Linda Ruth Long d. 2009-05-04 (Find a Grave)",
+   "contacts": [
+    "RONALD ALLEN LONG (PR) \u2014 11333 CHAMPIONSHIP DR, FORT MYERS, FL 33913-8102",
+    "Estate attorney \u2014 DOUGLAS C LAUENSTEIN [9414 BELAIR RD, STE 102, NOTTINGHAM, MD 21236-1542]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04152200015296": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "William Andrew Galanti d. 2024-05 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1203018482": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Arthur Columbus Rounds Jr d. 2016-07-03 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "160901549762": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Abraham Albano Buenviaje d. 2023-06 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1908069999": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Carl Edward Knott d. 2026-04-10 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "2403010457": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 235411 (RE, OPEN, will probated), d. 4/1/2025. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate still open: the PR can sign now.",
+   "death": "George M Straka d. 2025-04 (Legacy)",
+   "contacts": [
+    "ANDREW L STRAKA SR (PR) \u2014 7513 IROQUOIS AVE, SPARROWS POINT, MD 21219-2123",
+    "Estate attorney \u2014 BRIAN A CAVANAUGH [25 SHIPPING PL, DUNDALK, MD 21222-4318]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020457190211807": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Mary Ellen Kline d. 2024-04 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04121208056420": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "June Miller d. 2023-07-15 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04080808056610": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 14482 (SE, ARCHIVED, will no will), d. 7/12/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Lisa Marie Clark d. 2024 (Legacy)",
+   "contacts": [
+    "ALEXANDER CLARK (PR) \u2014 529 LIEBY RD, CHURCH HILL, MD 21623-1273",
+    "HANNAH CLARK (PR) \u2014 2054 QUAKER WAY UNIT 7, ANNAPOLIS, MD 21401-8154"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "161300992511": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Margaret Ann Cook Moeller d. 2023-07-21 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "2305022606": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Gail E Thompson d. 2016-10 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020341827630400": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 155519 (SE, CLOSED, will probated), d. 8/11/2009. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Charles W Winkler Jr d. 2009-08 (Legacy)",
+   "contacts": [
+    "DEBORAH W. HEALY (PR) \u2014 125 WEST LANVALE STREET, BALTIMORE, MD 21217"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0327184804029": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 228919 (RE, CLOSED, will probated), d. 1/22/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Phyllis Mary Amato Johnson d. 2024-01-22 (Find a Grave)",
+   "contacts": [
+    "JOSEPH L. JOHNSON (PR) \u2014 2525 POT SPRING RD, UNIT S422, LUTHERVILLE TIMONIUM, MD 21093-2783",
+    "Estate attorney \u2014 THOMAS J SESSA [11350 MCCORMICK RD, EXECUTIVE PLAZA 3, STE 601, HUNT VALLEY, MD 21031-1002]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0502135795": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 14670 (RE, ARCHIVED, will probated), d. 7/11/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Florence Eunice Gross d. 2018-07-11 (Find a Grave)",
+   "contacts": [
+    "DENISE WILKINS (PR) \u2014 1105 HALLOWING POINT ROAD, PRINCE FREDERICK, MD 20678",
+    "Estate attorney \u2014 ROSEMARY KEFFLER ESQUIRE [PO BOX 876, PRINCE FREDERICK, MD 20678]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1401259512": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Ella Louise Long d. 2024-02 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "1801006347": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 12149 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 4/8/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "John Alfred Klecan d. 2017-04-08 (Find a Grave)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0316062528D011": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 201134 (SE, ARCHIVED, will no will), d. 12/23/2021. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Keona Schannel Holley d. 2021-12-23 (Find a Grave)",
+   "contacts": [
+    "LAWANDA SYKES (PR) \u2014 2541 W BALTIMORE ST, BALTIMORE, MD 21223"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0320052127067": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Michael S Pailer d. 2025-10-28 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0327234429008": {
+   "verdict": "PARK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 202236 (RE, OPEN, will no will), d. 11/29/2021. PR gives the property as their address \u2014 family in the house. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out.",
+   "death": "Rosalind D Gober d. 2021-11 (Legacy)",
+   "contacts": [
+    "RODNEY DAVIS (PR) \u2014 5604 PARK HEIGHTS AVENUE, BALTIMORE, MD 21215"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0315243100M027": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Garfield Aston Dunkley Sr d. 2026-04 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0316172524018": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 210199 (SE, ARCHIVED, will no will), d. 2/16/2025. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Niesha Keema Gay d. 2025-02 (Legacy)",
+   "contacts": [
+    "DESTINY TROI HOKE (PR) \u2014 1150 PELHAM WOOD RD, PARKVILLE, MD 21234-5939",
+    "Estate attorney \u2014 DAVID A CASTRO [1206 ST PAUL STREET, BALTIMORE, MD 21202]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04012300010492": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Gail Lynn Bailey Phillips d. 2022-10-27 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04141416075425": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Dennis Lee Poling d. 2026-05 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04070716060054": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 217128 (SE, CLOSED, will unprobated), d. 1/21/2022. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Hugh Melvin Poe d. 2022-01 (Legacy)",
+   "contacts": [
+    "MELVIN LEE POE (PR) \u2014 2710 MEREDITH ROAD, WHITE HALL, MD 21161"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1007156510": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 17344 (MA, CLOSED, will no will), d. 11/19/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Dawson C Betts d. 2024-11 (Legacy)",
+   "contacts": [
+    "AMY BETTS (PR) \u2014 5953 GREENPOINT RD, E NEW MARKET, MD 21631-1652"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1115318279": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 46745 (SE, ARCHIVED, will probated), d. 7/14/2020. PR gives the property as their address \u2014 family in the house.",
+   "death": "Gail Becker d. 2020-07 (Legacy)",
+   "contacts": [
+    "DANIELLE GILLIS (PR) \u2014 24 NORTH CARROLL STREET, THURMONT, MD 21788"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "2206000142": {
+   "verdict": "PARK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 83321 (RE, OPEN, will probated), d. 1/17/2026. PR gives the property as their address \u2014 family in the house.",
+   "death": "Thurman P Seabolt d. 2026-01 (Legacy)",
+   "contacts": [
+    "SARAH VAUGHN (PR) \u2014 8423 OLD NATIONAL PIKE, BOONSBORO, MD 21713-1714"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "2217030175": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Carol Ann Conrad Ronzo d. 2026-01-12 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "2304016688": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Crystal Lashawn Davis d. 2025-08 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0907036914": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 22978 (RE, CLOSED, will no will), d. 5/19/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Sadonia Ann Taylor d. 2019-05 (Legacy)",
+   "contacts": [
+    "TISHA ANN CAVE-GAUSE (PR) \u2014 2718 ADELPHI LANE, BRYANS ROAD, MD 20616"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020500011646350": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Deborah G Sweatt d. 2024 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04032500004375": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 151425 (RE, CLOSED, will probated), d. 10/31/2008. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Toby I Kaplan Weiner d. 2008-10-31 (Find a Grave)",
+   "contacts": [
+    "MARC A RESNICK (PR) \u2014 1173 GOLDFINCH LANE, MILLERSVILLE, MD 21108",
+    "Estate attorney \u2014 DENNIS C WEISBERG [1111 BENFIELD BLVD, STE 112, MILLERSVILLE, MD 21108-3003]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1302083191": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 63274 (RE, OPEN, will no will), d. 4/30/2025. Professional PR (attorney) \u2014 appointed when no family stepped up; their job is to sell. Estate still open: the PR can sign now.",
+   "death": "Ethel Elizabeth Graham d. 2025-04 (Legacy)",
+   "contacts": [
+    "MICHELLE SIMON ESQ. (PR) \u2014 110 N WASHINGTON ST, STE 500, ROCKVILLE, MD 20850-2230",
+    "Estate attorney \u2014 JULIAN J. MOSS ESQUIRE [401 N WASHINGTON ST, STE 445, ROCKVILLE, MD 20850-0707]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0134002894": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 36579 (SJ, CLOSED, will unprobated), d. 9/18/2018. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Gary Wayne Shriver Sr d. 2018-09-18 (Find a Grave)",
+   "contacts": [
+    "Estate attorney \u2014 I. WILLIAM CHASE ESQ [1190 WEST NORTHERN PARKWAY, SUITE 124, BALTIMORE, MD 21210]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0313073407162": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Kenneth Clark Sherman Jr d. 2023-02-05 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0804003853": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 22294 (SE, ARCHIVED, will no will), d. 1/19/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Kyle D Crouse Jr d. 2019-01 (Legacy)",
+   "contacts": [
+    "KYLE DAVID CROUSE SR (PR) \u2014 136 RICKHILL ROAD, ELKTON, MD 21921",
+    "SHEILA MAE SIPLE (PR) \u2014 719 DOCTOR MILLER ROAD, NORTH EAST, MD 21901"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1119387976": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 46626 (SE, CLOSED, will no will), d. 4/8/2026. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Richard Eugene Covell d. 2026-04 (Legacy)",
+   "contacts": [
+    "JANET D LONG (PR) \u2014 3516 BUFFALO RD, NEW WINDSOR, MD 21776-8233"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2403047253": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 66145 (MA, CLOSED, will no will), d. 11/12/2007. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Douglas B Roberts d. 2007-11 (Legacy)",
+   "contacts": [
+    "DEBORAH A ROBERTS (PR) \u2014 26412 CREEK WOOD CIRCLE, LONG NECK, DE 19966",
+    "Estate attorney \u2014 JOHN K GARDNER [7412 BALTIMORE ANNAPOLIS BLVD, GLEN BURNIE, MD 21061-3512]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020600008591800": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 86757 (RE, OPEN, will probated), d. 1/30/2015. Estate still open: the PR can sign now.",
+   "death": "Rachel G Lomax d. 2015-01-30 (Find a Grave)",
+   "contacts": [
+    "HARVEY BRANFORD (PR) \u2014 857 SPA ROAD, ANNAPOLIS, MD 21401",
+    "Estate attorney \u2014 MATTHEW S BALLARD [1788 FOREST DR, ANNAPOLIS, MD 21401]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1015004037": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 17572 (RE, OPEN, will no will), d. 3/4/2025. Professional PR (attorney) \u2014 appointed when no family stepped up; their job is to sell. Estate still open: the PR can sign now.",
+   "death": "Salvatore John Marino Sr d. 2025-03-04 (Find a Grave)",
+   "contacts": [
+    "MICHELLE SIMON ESQ (PR) \u2014 401 N WASHINGTON ST, STE 445, ROCKVILLE, MD 20850-0707",
+    "Estate attorney \u2014 JULIAN J. MOSS ESQ [401 N WASHINGTON ST, STE 445, ROCKVILLE, MD 20850-0707]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "2209011692": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "David William Barnhart d. 2004-04-24 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0603005119": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 8605 (SE, CLOSED, will unprobated), d. 5/1/2008. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Kathryn V Kendall Conneely d. 2008-05-01 (Find a Grave)",
+   "contacts": [
+    "THOMAS J.M. CONNEELY SR. (PR) \u2014 26320 HOBBS RD, DENTON, MD 21629"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04111700007594": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Bette M Langley d. 2006-01 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "020700100052800": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 116084 (RE, OPEN, will probated), d. 3/18/2024. Estate still open: the PR can sign now.",
+   "death": "Rebecca Hicks Lowe d. 2024 (Legacy)",
+   "contacts": [
+    "MELODY LOWE (PR) \u2014 4937 HINE DR, SHADY SIDE, MD 20764-9636",
+    "Estate attorney \u2014 MATTHEW S BALLARD [1788 FOREST DR, ANNAPOLIS, MD 21401]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0328014256154": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Jose Abel Merlos Sorto d. 2019-10-12 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0327535146008B": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Alvin Leroy Brown d. 2016 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0107028768": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 115154 (RE, OPEN, will probated), d. 4/25/2025. Estate still open: the PR can sign now.",
+   "death": "James R Kirchner d. 2025-04 (Legacy)",
+   "contacts": [
+    "ROBERT P KIRCHNER (PR) \u2014 11329 CASTLEWOOD CT, LAUREL, MD 20723-2048",
+    "Estate attorney \u2014 ANDREA C BABEST [802 INGLESIDE AVENUE, SUITE 203, CATONSVILLE, MD 21228]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "020341818568420": {
+   "verdict": "PARK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 118301 (RE, OPEN, will no will), d. 4/11/2026. PR gives the property as their address \u2014 family in the house. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out.",
+   "death": "Cynthia M Kauffman d. 2026-04 (Legacy)",
+   "contacts": [
+    "FLOYD FLOWERS III (PR) \u2014 1014 UPTON RD, GLEN BURNIE, MD 21060-7314"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "0320192243B066": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Sherman Leonard Johnson d. 2017-01-23 (Find a Grave); Beverly A Johnson d. 2020-04-13 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "04010112740580": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Kevin D Jones d. 2006-02-01 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0910006759": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Helen Treader Dotson d. 2025-07 (Legacy)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "160902754725": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate W123594 (RE, OPEN, will probated), d. 2/8/2025. Estate still open: the PR can sign now.",
+   "death": "James L Best d. 2025-02 (Legacy)",
+   "contacts": [
+    "CHARLES L BEST (PR) \u2014 26 BUCKSPARK COURT, POTOMAC, MD 20854",
+    "Estate attorney \u2014 LESLEY A MOSS [1101 WOOTTON PARKWAY, SUITE 500, ROCKVILLE, MD 20852]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1904015762": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 213348 (SE, CLOSED, will no will), d. 12/13/2024. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Agnes Elizabeth Thomas d. 2024-12 (Legacy)",
+   "contacts": [
+    "CAROLYN A GAINES (PR) \u2014 4331 DANLOU DR, GWYNN OAK, MD 21207-6407"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0602020904": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Nancy Josephine Musser White d. 2019-01-12 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0707079370": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Joyce Irene Wike Walsh d. 2021-01-07 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0805110254": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 26604 (SE, CLOSED, will no will), d. 1/30/2026. PR gives the property as their address \u2014 family in the house.",
+   "death": "Tracy Faye Oikemus d. 2026-01 (Legacy)",
+   "contacts": [
+    "EDWARD A OIKEMUS JR (PR) \u2014 385 CALVARY LN, RISING SUN, MD 21911-2636"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "04151516750800": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 188364 (SE, ARCHIVED, will no will), d. 12/1/2017. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Shirley Ann Dorsey Wilson d. 2017-12-01 (Find a Grave)",
+   "contacts": [
+    "MICHELLE BOWIE (PR) \u2014 910 LONG MANOR DRIVE, BALTIMORE, MD 21220"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "04151513855610": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 probate gap",
+   "reason": "Death documented by obituary / Find a Grave; statewide Register of Wills search found NO estate \u2014 nobody has touched the title. An heir (or a creditor) must open an estate before the house can be sold.",
+   "death": "Richard J Mueller d. 2019-01-28 (Find a Grave)",
+   "contacts": [],
+   "next": "Pull the obituary for survivors; Land Records for deed/DOT; resident check.",
+   "source": "Register of Wills statewide search (no match)"
+  },
+  "0803049450": {
+   "verdict": "WORK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 22916 (UN, ARCHIVED, will unprobated (will deposited, no estate)), d. 4/17/2019. Estate closed with the house still in the decedent's name \u2014 needs a PR deed; the PR is still the contact.",
+   "death": "Clifford A Peterson d. 2019-04 (Legacy)",
+   "contacts": [],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "1501000551": {
+   "verdict": "WORK",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file (stalled)",
+   "reason": "Register of Wills estate 14955 (RE, OPEN, will probated), d. 11/10/2022. Show-cause / removal orders on the docket \u2014 stalled estate, PR likely wants out. Estate still open: the PR can sign now.",
+   "death": "James William Scarberry d. 2022-11 (Legacy)",
+   "contacts": [
+    "JEREMY TYLER SCARBERRY (PR) \u2014 35 HICKORY DR, NORTH EAST, MD 21901-3602",
+    "Estate attorney \u2014 KELLY WALLA ALBANESE ESQ [144 E MAIN ST, ELKTON, MD 21921-5907]"
+   ],
+   "next": "Land Records DOT check, then letter/call to the PR",
+   "source": "Register of Wills docket"
+  },
+  "0116004235": {
+   "verdict": "PARK",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Dead owner \u2014 estate on file",
+   "reason": "Register of Wills estate 40899 (SE, CLOSED, will no will), d. 11/19/2025. PR gives the property as their address \u2014 family in the house.",
+   "death": "Susan Jo Lease d. 2025-11 (Legacy)",
+   "contacts": [
+    "DAVID LEASE (PR) \u2014 12725 BRICE HOLLOW RD SE, CUMBERLAND, MD 21502-8543"
+   ],
+   "next": "Do not mail \u2014 occupied by family",
+   "source": "Register of Wills docket"
+  },
+  "17010019661": {
+   "verdict": "GO",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Creditor asleep (stale tax cert) + dead owner",
+   "reason": "Free & clear since 1973; owner died 2021; the tax bill goes to a daughter's address in Reston VA; taxes unpaid since 2024, 2024 certificate (#812) void, no redemption suit.",
+   "title": "Deed 4281/159 (1973) Bernard A Downey Jr & Margaret C (TBE). DOTs 1991/1995/2003 all released (last 35309/197, 2013). Free & clear; title passed to Margaret by survivorship.",
+   "death": "Bernard A Downey Jr d. 10/28/2021 \u2014 PG small estate 125464 (closed 7/2022, will unprobated). Co-owner Margaret C Downey: no Maryland estate found; title passed to her by survivorship.",
+   "contacts": [
+    "James A Downey (son, PR per docket) \u2014 26115 Woodridge Dr, Mechanicsville MD 20659 \u2014 first call",
+    "Elizabeth Ann Lewis (daughter, PR per docket) \u2014 2406 Bugle Ln, Reston VA 20191 (also the SDAT tax-bill address)",
+    "Robert H Moreland, estate attorney (per docket) \u2014 PO Box 778, Charlotte Hall MD 20622"
+   ],
+   "numbers": "Zestimate $530K; 25% = $133K; max for $100K = $362K; back taxes \u2248 $6.6K + 2025\u201326.",
+   "next": "Letter to James Downey (written 2026-11-12), call the week after; elderly owner \u2014 one warm contact."
+  },
+  "17121227263": {
+   "verdict": "GO",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Creditor asleep (stale tax cert) + fresh heir",
+   "reason": "Estate deeded the house to Sharon Marshall (DC) 12/2024; she has never paid a tax bill; 2024 cert (#598) void; free & clear.",
+   "title": "Estate deed 50410/139 (12/13/2024) to Sharon Marshall; Jones's 2009 DOTs released 2018 (41647/351, 41651/447). SDAT owner now MARSHALL SHARON.",
+   "death": "Prentice E Jones d. 4/30/2018 \u2014 PG estate 111330 (will probated, closed).",
+   "contacts": [
+    "Sharon Marshall (owner/heir) \u2014 3819 26th St NE, Washington DC 20018",
+    "Karen Miller (former PR) \u2014 201 Blackberry Dr, Fort Washington MD 20744",
+    "Lu Juana Richardson (former PR) \u2014 15807 Baden Naylor Rd, Brandywine MD 20613"
+   ],
+   "numbers": "Redfin $535K; 25% = $134K; max $366K; back taxes \u2248 $6K + 2025\u201326.",
+   "next": "Letter to Sharon Marshall (written 2026-11-12)."
+  },
+  "020317516791400": {
+   "verdict": "GO",
+   "confidence": "HIGH",
+   "checked": "2026-11-12",
+   "play": "Creditor asleep (stale tax cert), tired landlord, waterfront",
+   "reason": "Landlord lives elsewhere; 2023 GBIF cert void; still on 2024\u201326 lists; free & clear; SDAT tags parcel WATERFRONT, 0.94 acre.",
+   "title": "Deed 28482/426 (6/11/2015) Albert F Rogall Jr. Purchase DOT 28482/431 released 2020-09-21 (35248/355). His 2021 DOT 37296/421 is on 966 Nabbs Creek, not this parcel. Free & clear.",
+   "contacts": [
+    "Albert F Rogall Jr (owner) \u2014 966 Nabbs Creek Rd, Glen Burnie MD 21060"
+   ],
+   "numbers": "Redfin $512K; 25% = $128K; max $346K; back taxes \u2248 $6.2K + 3 yrs. Check Critical Area / FEMA before the number.",
+   "next": "Letter written 2026-11-12. Investor-owner \u2014 Ray's call."
+  },
+  "020400006202500": {
+   "verdict": "GO",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Creditor asleep (stale tax cert), stalled commercial buyer",
+   "reason": "Bought for cash 11/2022, never paid a tax bill; 2024 cert (Insight Real Estate, $14.3K) void. Commercial, old structure.",
+   "title": "Deed 39275/163 (11/15/2022) Duane McKinney; no DOT of record. (2011 'vs McKinney' suits are PG, different person.)",
+   "contacts": [
+    "Duane McKinney (owner) \u2014 7004 40th Ave, Hyattsville MD 20782"
+   ],
+   "numbers": "Assessed $776K (no AVM); 25% = $194K; max $583K.",
+   "next": "Letter written 2026-11-12; commercial buyer pool."
+  },
+  "17212420750": {
+   "verdict": "GO",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Creditor asleep (stale tax cert), absentee landlord",
+   "reason": "Owners in Bowie 24 yrs; 2009 refi released 2023 then taxes stopped; 2024 cert (#944) void; free & clear.",
+   "title": "Deed 15690/49 (4/11/2002) William S Kirk (& Hilary J). 2009 DOT 30472/272 released 2023-03-22 (48676/126). Free & clear. Not the deceased William A Kirk Sr (different parcel).",
+   "contacts": [
+    "William S & Hilary J Kirk (owners) \u2014 11700 Locust Glen Dr, Bowie MD 20721"
+   ],
+   "numbers": "Zestimate $513K (5bd/3ba); 25% = $128K; max $347K; back taxes \u2248 $8.5K + 2025\u201326.",
+   "next": "Letter written 2026-11-12."
+  },
+  "1102218348": {
+   "verdict": "GO",
+   "confidence": "MEDIUM",
+   "checked": "2026-11-12",
+   "play": "Judgment buy (HOA) + absentee owner",
+   "reason": "Mark H Cox d. 2008, 'will \u2013 no estate'; house passed to Wendy G Cox by survivorship; mortgage released 11/2008; HOA liens 2018\u20132025 and two HOA judgments ($2.7K + $16.2K).",
+   "title": "Owned Cox Mark H & Wendy G (TBE) \u2192 Wendy sole owner by survivorship. Mortgage released 7118/514 (2008-11-18). HOA liens 12705/171, 12954/274, 13749/235, 16646/290, 17199/162; two released 2023-11-27.",
+   "death": "Mark H Cox d. 7/25/2008 \u2014 Frederick RoW 32030, will deposited, no estate (none needed).",
+   "contacts": [
+    "Wendy G Cox (owner of record) \u2014 address per SDAT tax bill / Land Records; confirm current",
+    "Worman's Mill Community Conservancy (judgment creditor) \u2014 via its attorney; buy the two judgments"
+   ],
+   "numbers": "Equity est. $386K; HOA judgments \u2248 $19K face.",
+   "next": "Confirm Wendy's current mailing address from the tax bill; letter to her + offer to the HOA attorney for the judgments."
+  },
+  "1907018126": {
+   "verdict": "GO",
+   "confidence": "HIGH",
+   "checked": "2026-11-11",
+   "play": "Right-of-redemption suit filed (Effect Inc.)",
+   "reason": "Tax-delinquent investor-owned house; Effect Inc. filed to foreclose the right of redemption 10/26/2026 (C-18-CV-26-000721) \u2014 court clock, not just a tax list.",
+   "title": "Deed SM 4694/218 (7/2017, $33,600) from four Equity Trust IRA accounts; no mortgage.",
+   "contacts": [
+    "Daniel Lynn Meyers (owner, 52) \u2014 7035 Bensville Rd, White Plains MD",
+    "J. Scott Morse, Esq. \u2014 plaintiff's attorney for Effect Inc."
+   ],
+   "numbers": "As-is \u2248 $345K; max offer \u2248 $199K; 2026 sale face $8,074, bid $67,100.",
+   "next": "Call the owner first \u2014 he is being sued and has a deadline."
+  },
+  "0905017718": {
+   "verdict": "PARK",
+   "confidence": "HIGH",
+   "checked": "2026-11-11",
+   "play": "Owner-direct (trust), waterfront",
+   "reason": "Purvis Family Trust 2014 (CH 8514/86), free & clear; trustees William J Purvis III (83) and Doris (81) alive in Naples FL; tenant Tomas Gallardo Sr in the house; flood VE.",
+   "contacts": [
+    "William J & Doris Purvis (trustees) \u2014 1302 Westlake Blvd, Naples FL"
+   ],
+   "next": "Owner-direct letter; Lot 24 (09-05017726) first."
+  },
+  "020600090040199": {
+   "verdict": "PARK",
+   "checked": "2026-11-12",
+   "reason": "Karen Samaras signed new leases on 1925 West St in 2021; her open DOT is on her condo, not this parcel. Active commercial landlord, $1.2K cert \u2014 late, not asleep."
+  },
+  "17101121821": {
+   "verdict": "PARK",
+   "checked": "2026-11-12",
+   "reason": "Jude Onyebuchi & Joy Davis also own 4217 Enterprise Rd (refinanced 6/2026). 2007 DOT on Main St foreclosed 2018, released 2020. Sophisticated owners juggling debt."
+  },
+  "17215584563": {
+   "verdict": "PARK",
+   "checked": "2026-11-12",
+   "reason": "Yingqiao Gou bought 1/2023 cash; HOA liens 10/2024 and 10/2026; tax bill goes to 8100 Greenbelt Station Pkwy which he sold 7/2024 \u2014 not receiving mail. Needs skip trace."
+  },
+  "17070770883": {
+   "verdict": "PARK",
+   "checked": "2026-11-12",
+   "reason": "Warner / Warner-Davidson investor family (5+ deeds); 2017 DOT with substitute trustee 11/2017; HOA liens 2015\u20132021. Ray skips investor-owners."
+  },
+  "17050406199": {
+   "verdict": "KILL",
+   "checked": "2026-11-12",
+   "reason": "3001 E Ridge Rd \u2014 SDAT tax bill goes to the property (mail-mismatch was a spelling artifact); treat as owner-occupied. Lien list only."
+  },
+  "020680990035338": {
+   "verdict": "KILL",
+   "checked": "2026-11-12",
+   "reason": "2A3 Spa Creek Landing \u2014 tax-bill address is the same building; owner-occupied condo."
+  },
+  "17181986603": {
+   "verdict": "KILL",
+   "checked": "2026-11-12",
+   "reason": "Margaret H Lucas d. 4/28/2022 (PG small estate 125494); PR James T Lucas Sr lives at the house \u2014 family-occupied."
+  },
+  "0804039130": {
+   "verdict": "PARK",
+   "checked": "2026-11-12",
+   "reason": "Marcella E Moore \u2014 no estate anywhere in Maryland; death claim unconfirmed (only a 1955 Marcella Moore estate exists). Needs an obituary before anything else."
+  },
+  "020200006629000": {
+   "verdict": "PARK",
+   "checked": "2026-11-12",
+   "reason": "Alvarado \u2014 Columbia Liens filed a redemption suit 12/2024 (C-02-CV-24-003203, closed); 2022 DOT 39207/88 unreleased. Creditor is not asleep."
+  },
+  "020600090031249": {
+   "verdict": "KILL",
+   "checked": "2026-11-12",
+   "reason": "McFarland 133 Eastern Ave \u2014 substitute trustee appointed 12/17/2025, foreclosure C-02-CV-25-003627 filed. Lender is awake."
+  }
+ }
+}
