@@ -1,0 +1,16 @@
+{
+ "account": "0908012997",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "GRACE A BUTLER",
+   "decedent_searched": "GRACE A BUTLER",
+   "date_of_death": "1983-12-06",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-13",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}

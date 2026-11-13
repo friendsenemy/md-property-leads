@@ -1,0 +1,359 @@
+{
+ "account": "0902001101",
+ "estates": [
+  {
+   "estate_number": "18031",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "01/21/2015",
+   "date_closed": "12/16/2015",
+   "decedent": "NEAL REX MCELHANEY SR",
+   "date_of_death": "8/27/2011",
+   "date_of_filing": "02/21/2012",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "WILMER R. TICER [9375 CHESAPEAKE ST, SUITE 225, LA PLATA, MD 20646]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JOHN D HARDEE",
+     "address": "6050 ROSE COURT, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/21/2012",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 08/22/1996",
+     "pages": 6
+    },
+    {
+     "filed": "02/21/2012",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 6,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2015",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "01/21/2015",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/21/2015",
+     "n": 9,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "01/21/2015",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2015",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 12,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- MICHAEL HARDEE",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 13,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- KATHY HARDEE",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 14,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- NEAL MCELHANEY, JR",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 15,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- KELLY LOWTHER",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 16,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- LOTTIE MCELHANEY",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2015",
+     "n": 17,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "03/26/2015",
+     "n": 18,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/26/2015",
+     "n": 19,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "04/30/2015",
+     "n": 20,
+     "code": "1244",
+     "desc": "REQUEST FOR TRIPLE SEAL OF FILINGS",
+     "pages": 1
+    },
+    {
+     "filed": "06/01/2015",
+     "n": 21,
+     "code": "1244",
+     "desc": "INCORRECT AMENDED INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "06/04/2015",
+     "n": 22,
+     "code": "1124",
+     "desc": "INFORMATION REPORT AMENDED",
+     "pages": 3
+    },
+    {
+     "filed": "09/16/2015",
+     "n": 23,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2015",
+     "n": 24,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO COMPLETE  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2015",
+     "n": 25,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO FILE ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2015",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2015",
+     "n": 27,
+     "code": "1122",
+     "desc": "2ND AMENDED INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "11/13/2015",
+     "n": 28,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEES AND PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 10
+    },
+    {
+     "filed": "11/13/2015",
+     "n": 29,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "11/16/2015",
+     "n": 30,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM MR TICER RE SALE OF PROPERTY",
+     "pages": 2
+    },
+    {
+     "filed": "11/24/2015",
+     "n": 31,
+     "code": "1284",
+     "desc": "ORDER OF COURT ISSUED DENYING THE ATTY FEES AND COMMISSION AND DIRECTING THAT THE FINAL ACCOUNT BE AMENDED",
+     "pages": 1
+    },
+    {
+     "filed": "11/24/2015",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/30/2015",
+     "n": 33,
+     "code": "1245",
+     "desc": "AMENDED PETITION FOR ATTORNEY'S FEES AND PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 3
+    },
+    {
+     "filed": "11/30/2015",
+     "n": 34,
+     "code": "1385",
+     "desc": "AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "12/15/2015",
+     "n": 35,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING AMENDED FIRST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/15/2015",
+     "n": 36,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING COMMISSIONS AND PR FEES",
+     "pages": 1
+    },
+    {
+     "filed": "12/16/2015",
+     "n": 37,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2017",
+     "n": 38,
+     "code": "1382",
+     "desc": "INVENTORY SUPPLEMENTAL",
+     "pages": 3
+    },
+    {
+     "filed": "10/02/2017",
+     "n": 39,
+     "code": "1385",
+     "desc": "AMENDED FIRST AND FINAL ADMINISTRATION ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "10/17/2017",
+     "n": 40,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/17/2017",
+     "n": 41,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/17/2017",
+     "n": 42,
+     "code": "1124",
+     "desc": "SECOND AMENDED INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/27/2017",
+     "n": 43,
+     "code": "1330",
+     "desc": "DOCUMENTATION FOR INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "08/27/2020",
+     "n": 44,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2020-08-27",
+   "interested_persons": [
+    {
+     "name": "JOHN D HARDEE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "MR TICER RE SALE OF PROPERTY",
+     "role": "CORRESPONDENT",
+     "source": "docket 30"
+    }
+   ],
+   "death_to_probate_days": 1243,
+   "probate_age_days": 329,
+   "days_since_last_docket": 2269,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-13",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1923739255",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1923739255",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "NEAL R MCELHANEY JR"
+  }
+ ]
+}

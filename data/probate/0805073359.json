@@ -1,0 +1,49 @@
+{
+ "account": "0805073359",
+ "estates": [
+  {
+   "estate_number": "7151",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "04/24/1986",
+   "date_closed": "09/13/1987",
+   "decedent": "RICHARD HAYES PROCTOR",
+   "date_of_death": "10/5/1985",
+   "date_of_filing": "04/24/1986",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "04/24/1986",
+     "n": 1,
+     "code": "1210",
+     "desc": "DOCKET SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "07/29/1994",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 05/08/1981",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "1994-07-29",
+   "interested_persons": [],
+   "death_to_probate_days": 201,
+   "probate_age_days": 507,
+   "days_since_last_docket": 11795,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-13",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1923745760",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1923745760",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "RICHARD H PROCTOR"
+  }
+ ]
+}
