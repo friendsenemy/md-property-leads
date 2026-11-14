@@ -1,0 +1,130 @@
+{
+ "account": "0908059764",
+ "estates": [
+  {
+   "estate_number": "12726",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "08/16/2001",
+   "date_closed": "08/16/2001",
+   "decedent": "ROBERT MICHAEL GLOVER",
+   "date_of_death": "7/24/2001",
+   "date_of_filing": "08/16/2001",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ANN D. GLOVER",
+     "address": "2141 CEDAR TREE LANE, WALDORF, MD 20601"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/16/2001",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "08/16/2001",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2001",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2001",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/16/2001",
+     "n": 5,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "08/16/2001",
+     "n": 6,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE -",
+     "pages": 2
+    },
+    {
+     "filed": "08/16/2001",
+     "n": 7,
+     "code": "1336",
+     "desc": "RECEIPT #9551 - SMALL ESTATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "08/16/2001",
+     "n": 8,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "05/13/2004",
+     "n": 9,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/13/2004",
+     "n": 10,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/17/2004",
+     "n": 11,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 2
+    },
+    {
+     "filed": "08/23/2004",
+     "n": 12,
+     "code": "1331",
+     "desc": "STATUS ON  UNCLAIMED PROPERTY - STILL NOT RECEIVED ANYTING",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2004-08-23",
+   "interested_persons": [
+    {
+     "name": "ANN D. GLOVER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 23,
+   "probate_age_days": 0,
+   "days_since_last_docket": 8118,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-14",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924704993",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924704993",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROBERT M GLOVER"
+  }
+ ]
+}

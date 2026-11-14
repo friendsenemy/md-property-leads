@@ -1,0 +1,309 @@
+{
+ "account": "0501053981",
+ "estates": [
+  {
+   "estate_number": "19644",
+   "status": "ARCHIVED",
+   "type": "SE",
+   "date_opened": "11/14/2014",
+   "date_closed": "02/25/2015",
+   "decedent": "GARY JOHN UNDERWOOD",
+   "date_of_death": "10/27/2014",
+   "date_of_filing": "11/14/2014",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "TAMMY  LABROSSE",
+     "address": "11455 DOBBINS LANE, LA PLATA, MD 20646"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/14/2014",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "11/14/2014",
+     "n": 2,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2014",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2014",
+     "n": 4,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2014",
+     "n": 5,
+     "code": "1244",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "11/14/2014",
+     "n": 6,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "12/08/2014",
+     "n": 7,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)- JUDICIAL",
+     "pages": 1
+    },
+    {
+     "filed": "12/11/2014",
+     "n": 8,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL-JEFF UNDERWOOD",
+     "pages": 1
+    },
+    {
+     "filed": "12/11/2014",
+     "n": 9,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL- ROBERT UNDERWOOD",
+     "pages": 1
+    },
+    {
+     "filed": "12/09/2014",
+     "n": 10,
+     "code": "1244",
+     "desc": "RETURNED CERTIFIED MAIL FOR TAMMY LABROSSE RESENT VIA REGULAR MAIL",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2015",
+     "n": 11,
+     "code": "1113",
+     "desc": "RESCHEDULED NOTICE OF JUDICIAL PROBATE (DATE CORRECTED)",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 13,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING 11:04.21-11:06.04",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 14,
+     "code": "1284",
+     "desc": "ORDER OF COURT REGARDING JUDICIAL HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 15,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 2/10/2015",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 16,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 17,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION JUDICIAL PROBATE FILED BY TAMMY L LABROSSE",
+     "pages": 2
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 18,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE) JUDICIAL",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2015",
+     "n": 19,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE FUNERAL BILL",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2015",
+     "n": 21,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING -10:01.51-10:10.11",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2015",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2015",
+     "n": 24,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2015",
+     "n": 25,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR AMENDED SCH B",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 26,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 27,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 5
+    },
+    {
+     "filed": "03/04/2015",
+     "n": 28,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 03/02/2015 BY BANK OF AMERICA NA FOR $5,620.00",
+     "pages": 3
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 29,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/25/2015",
+     "n": 30,
+     "code": "1252",
+     "desc": "REQUEST FOR HEARING/INCOMPLETE COS",
+     "pages": 2
+    },
+    {
+     "filed": "04/08/2015",
+     "n": 31,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 3
+    },
+    {
+     "filed": "04/22/2015",
+     "n": 32,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW SECOND REMINDER",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2015",
+     "n": 33,
+     "code": "1285",
+     "desc": "CERTIFICATE OF SERVICE FOR HEARING",
+     "pages": 2
+    },
+    {
+     "filed": "05/06/2015",
+     "n": 34,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 9 JUNE",
+     "pages": 2015
+    },
+    {
+     "filed": "05/06/2015",
+     "n": 35,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/09/2015",
+     "n": 37,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING 10:02.14-10:34.50",
+     "pages": 1
+    },
+    {
+     "filed": "06/16/2015",
+     "n": 38,
+     "code": "1284",
+     "desc": "ORDER OF COURT  REGARDING HEARING HELD ON 6/9/2015",
+     "pages": 1
+    },
+    {
+     "filed": "06/16/2015",
+     "n": 39,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2025",
+     "n": 40,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-09-10",
+   "interested_persons": [
+    {
+     "name": "TAMMY LABROSSE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 18,
+   "probate_age_days": 103,
+   "days_since_last_docket": 430,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-14",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924710795",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924710795",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "GARY J UNDERWOOD"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "LAURA J UNDERWOOD",
+   "decedent_searched": "LAURA J UNDERWOOD",
+   "date_of_death": "2008-10-29",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-14",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}

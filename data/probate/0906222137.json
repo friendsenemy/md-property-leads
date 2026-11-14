@@ -1,0 +1,42 @@
+{
+ "account": "0906222137",
+ "estates": [
+  {
+   "estate_number": "18814",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "12/01/2010",
+   "date_closed": "12/01/2010",
+   "decedent": "NORA LEE JONES",
+   "date_of_death": "11/14/2010",
+   "date_of_filing": "11/29/2010",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "11/29/2010",
+     "n": 1,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE WILL DATED DECEMBER 3,",
+     "pages": 1975
+    }
+   ],
+   "last_docket_activity": "2010-11-29",
+   "interested_persons": [],
+   "death_to_probate_days": 17,
+   "probate_age_days": 0,
+   "days_since_last_docket": 5829,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-14",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1925407053",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1925407053",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "NORA L JONES"
+  }
+ ]
+}

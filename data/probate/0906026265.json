@@ -1,0 +1,109 @@
+{
+ "account": "0906026265",
+ "estates": [
+  {
+   "estate_number": "64802",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "01/21/2010",
+   "date_closed": "09/08/2010",
+   "decedent": "ROBERT A BOLTON",
+   "date_of_death": "11/27/2009",
+   "date_of_filing": "01/21/2010",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DEBORAH A CARDER",
+     "address": "3514 CHESTNUT GROVE ROAD, KEEDYSVILLE, MD 21756"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/21/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JUNE 28,",
+     "pages": 1999
+    },
+    {
+     "filed": "01/25/2010",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION WITH SCHEDULE B #",
+     "pages": 47776
+    },
+    {
+     "filed": "01/25/2010",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/25/2010",
+     "n": 4,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 3
+    },
+    {
+     "filed": "01/25/2010",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/25/2010",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/25/2010",
+     "n": 7,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "01/25/2010",
+     "n": 8,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/08/2010",
+     "n": 9,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 3
+    }
+   ],
+   "last_docket_activity": "2010-09-08",
+   "interested_persons": [
+    {
+     "name": "DEBORAH A CARDER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 55,
+   "probate_age_days": 230,
+   "days_since_last_docket": 5911,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-14",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1925359497",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1925359497",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROBERT A BOLTON"
+  }
+ ]
+}
