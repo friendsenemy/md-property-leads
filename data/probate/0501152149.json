@@ -1,0 +1,368 @@
+{
+ "account": "0501152149",
+ "estates": [
+  {
+   "estate_number": "7674",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/14/2002",
+   "date_closed": "04/18/2006",
+   "decedent": "ROBERT LEE HORSMON",
+   "date_of_death": "3/6/2002",
+   "date_of_filing": "03/14/2002",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "MARK J. DAVIS ESQUIRE [132 MAIN STREET, PRINCE FREDERICK, MD 20678]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "BONNIE H. MILLER",
+     "address": "3942 SHAMROCK LANE, PORT REPUBLIC, MD 20676"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/14/2002",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED MARCH 2,",
+     "pages": 1994
+    },
+    {
+     "filed": "03/19/2002",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "03/19/2002",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/19/2002",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2002",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2002",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2002",
+     "n": 7,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/11/2002",
+     "n": 8,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2002",
+     "n": 9,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO JULY 19, 2002, FOR FILING INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "06/19/2002",
+     "n": 10,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO JULY 19, 2002, FOR FILING INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "08/02/2002",
+     "n": 11,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/02/2002",
+     "n": 12,
+     "code": "1122",
+     "desc": "PARTIAL INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "11/14/2002",
+     "n": 13,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT & COMPLETE INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "01/17/2003",
+     "n": 14,
+     "code": "1231",
+     "desc": "PETITION TO EXTEND TIME TO FILE INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "02/04/2003",
+     "n": 15,
+     "code": "1233",
+     "desc": "ORDER APPROVING PETITION TO EXTEND TIME TO FILE INVENTORY UNTIL MARCH 15,",
+     "pages": 2003
+    },
+    {
+     "filed": "02/04/2003",
+     "n": 16,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/24/2003",
+     "n": 17,
+     "code": "1122",
+     "desc": "INVENTORY - SECOND PARTIAL",
+     "pages": 57
+    },
+    {
+     "filed": "02/24/2003",
+     "n": 18,
+     "code": "1383",
+     "desc": "FIRST  ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "03/04/2003",
+     "n": 19,
+     "code": "1396",
+     "desc": "ORDER APPROVING FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/04/2003",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/13/2003",
+     "n": 21,
+     "code": "1275",
+     "desc": "MARYLAND ESTATE TAX RETURN CERTIFIED & MAILED",
+     "pages": 1
+    },
+    {
+     "filed": "08/01/2003",
+     "n": 22,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/2003",
+     "n": 23,
+     "code": "1122",
+     "desc": "COMPLETE INVENTORY",
+     "pages": 47
+    },
+    {
+     "filed": "09/25/2003",
+     "n": 24,
+     "code": "1383",
+     "desc": "SECOND  ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "09/30/2003",
+     "n": 25,
+     "code": "1396",
+     "desc": "ORDER APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2003",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/27/2004",
+     "n": 27,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/2004",
+     "n": 28,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "04/13/2004",
+     "n": 29,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2004",
+     "n": 30,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2004",
+     "n": 31,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/20/2004",
+     "n": 32,
+     "code": "1383",
+     "desc": "FOURTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "10/26/2004",
+     "n": 33,
+     "code": "1396",
+     "desc": "ORDER APPROVING FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/26/2004",
+     "n": 34,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2005",
+     "n": 35,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/12/2005",
+     "n": 36,
+     "code": "1383",
+     "desc": "FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2005",
+     "n": 37,
+     "code": "1396",
+     "desc": "ORDER APPROVING FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2005",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2005",
+     "n": 39,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/13/2005",
+     "n": 40,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO FEBRUARY 1, 2006,  FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/30/2006",
+     "n": 41,
+     "code": "1275",
+     "desc": "AMENDED MARYLAND ESTATE TAX RETURN CERTIFIED & MAILED",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2006",
+     "n": 42,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 6
+    },
+    {
+     "filed": "04/10/2006",
+     "n": 43,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2006",
+     "n": 44,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "04/18/2006",
+     "n": 45,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/18/2006",
+     "n": 46,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2006-04-18",
+   "interested_persons": [
+    {
+     "name": "BONNIE H. MILLER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 8,
+   "probate_age_days": 1496,
+   "days_since_last_docket": 7516,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924588946",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924588946",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROBERT LEE HORSMON"
+  }
+ ]
+}

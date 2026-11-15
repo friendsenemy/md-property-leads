@@ -1,0 +1,188 @@
+{
+ "account": "0501028367",
+ "estates": [
+  {
+   "estate_number": "46341",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "07/27/2000",
+   "date_closed": "05/10/2001",
+   "decedent": "ANNE MARGARET HOLMES",
+   "date_of_death": "5/25/2000",
+   "date_of_filing": "07/27/2000",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "S KENNON SCOTT [1495 RIEDEL ROAD, CROFTON, MD 21114]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "PHILIP WALLACE HOLMES JR",
+     "address": "478 RUNNYMEDE DRIVE, ROCK HILL, SC 29732"
+    },
+    {
+     "name": "RONALD TIMOTHY HOLMES",
+     "address": "5211 GILPIN DRIVE, SPRINGFIELD, VA 22151"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/27/2000",
+     "n": 1,
+     "code": "1106",
+     "desc": "2 APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 2
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 2,
+     "code": "1117",
+     "desc": "2 WAIVERS OF BOND",
+     "pages": 2
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 3,
+     "code": "1118",
+     "desc": "2 CONSENTS TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 4,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 5,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 6,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 7,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 8,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2000",
+     "n": 10,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "11/22/2000",
+     "n": 11,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2001",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT(JSW)",
+     "pages": 4
+    },
+    {
+     "filed": "02/22/2001",
+     "n": 14,
+     "code": "1122",
+     "desc": "INVENTORY($352,765.60)(JSW)",
+     "pages": 14
+    },
+    {
+     "filed": "03/07/2001",
+     "n": 15,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS/ JOINT TENANT/PDC",
+     "pages": 4
+    },
+    {
+     "filed": "03/09/2001",
+     "n": 16,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS/JOINT TENANT/PDC",
+     "pages": 4
+    },
+    {
+     "filed": "03/20/2001",
+     "n": 17,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS / JOINT TENANT / BE",
+     "pages": 3
+    },
+    {
+     "filed": "05/10/2001",
+     "n": 18,
+     "code": "1138",
+     "desc": "CONSENT (4) TO COMPENSATION FOR  ATTORNEY (PM)",
+     "pages": 4
+    },
+    {
+     "filed": "05/10/2001",
+     "n": 19,
+     "code": "1382",
+     "desc": "INVENTORY SUPPLEMENTAL $5,700.00 (PM)",
+     "pages": 2
+    },
+    {
+     "filed": "05/10/2001",
+     "n": 20,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT $358,465.60 (PM) PASSED BY COURT ORDER 5-10-2001 (5 COPIES MAILED PER NEW RULE 1-1-91)",
+     "pages": 5
+    }
+   ],
+   "last_docket_activity": "2001-05-10",
+   "interested_persons": [
+    {
+     "name": "PHILIP WALLACE HOLMES JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "RONALD TIMOTHY HOLMES",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 63,
+   "probate_age_days": 287,
+   "days_since_last_docket": 9320,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924313188",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924313188",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ANNE M HOLMES"
+  }
+ ]
+}

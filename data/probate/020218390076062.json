@@ -1,0 +1,585 @@
+{
+ "account": "020218390076062",
+ "estates": [
+  {
+   "estate_number": "56435",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "01/03/2000",
+   "date_closed": "04/11/2002",
+   "decedent": "OTIS D MURPHY",
+   "date_of_death": "12/25/1999",
+   "date_of_filing": "01/03/2000",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "WILLIAM E. DAVIS [1120 20TH STREET NW, SOUTH TOWER, WASHINGTON, DC 20036]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "WILLIAM E DAVIS",
+     "address": "920 PENNSYLVANIA AVE SE, WASHINGTON, DC 20003"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/03/2000",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED __020394_ REGISTER OF WILLS PROOF OF CUSTODY",
+     "pages": 10
+    },
+    {
+     "filed": "01/03/2000",
+     "n": 2,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS' MEMORANDUM - INCOMPLETE FILING - NO PERSONAL REPRESENTATIVE APPOINTED",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 5,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S)",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 6,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 7,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 8,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 9,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 10,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE - NO. OF LETTERS ISSUED _12",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2000",
+     "n": 11,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR  COPIES OF FIRST PUBLISHED NOTICE, INVT & INFO REPORT, FIRST & FINAL ACCT",
+     "pages": 1
+    },
+    {
+     "filed": "02/04/2000",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "04/07/2000",
+     "n": 13,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVT",
+     "pages": 1
+    },
+    {
+     "filed": "04/13/2000",
+     "n": 14,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "04/13/2000",
+     "n": 15,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "07/12/2000",
+     "n": 16,
+     "code": "1132",
+     "desc": "PUBLIC NOTICE OF CAVEAT",
+     "pages": 2
+    },
+    {
+     "filed": "07/12/2000",
+     "n": 17,
+     "code": "1131",
+     "desc": "NOTICE OF CAVEAT",
+     "pages": 5
+    },
+    {
+     "filed": "07/12/2000",
+     "n": 18,
+     "code": "1214",
+     "desc": "ANSWER TO PETITION TO CAVEAT",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2000",
+     "n": 19,
+     "code": "1212",
+     "desc": "LIST OF PERSONS AFFECTED BY CAVEAT PROCEEDINGS",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2000",
+     "n": 20,
+     "code": "1211",
+     "desc": "PETITION TO CAVEAT",
+     "pages": 3
+    },
+    {
+     "filed": "07/24/2000",
+     "n": 21,
+     "code": "1132",
+     "desc": "PUBLIC NOTICE OF CAVEAT",
+     "pages": 1
+    },
+    {
+     "filed": "07/26/2000",
+     "n": 22,
+     "code": "1286",
+     "desc": "RESPONSE OF THE PR TO THE PETITION TO CAVEAT",
+     "pages": 3
+    },
+    {
+     "filed": "07/27/2000",
+     "n": 23,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2000",
+     "n": 24,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2000",
+     "n": 25,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 12/12/2000 MAILED",
+     "pages": 2
+    },
+    {
+     "filed": "10/13/2000",
+     "n": 26,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 46
+    },
+    {
+     "filed": "10/13/2000",
+     "n": 27,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT",
+     "pages": 8
+    },
+    {
+     "filed": "11/01/2000",
+     "n": 28,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "11/22/2000",
+     "n": 29,
+     "code": "1285",
+     "desc": "CERTIFICATE REGARDING DISCOVERY (2 COPIES)",
+     "pages": 4
+    },
+    {
+     "filed": "11/22/2000",
+     "n": 30,
+     "code": "1308",
+     "desc": "NOTICE OF DEPOSITION AND CERTIFICATE REGARDING DISCOVERY",
+     "pages": 4
+    },
+    {
+     "filed": "11/22/2000",
+     "n": 31,
+     "code": "1308",
+     "desc": "NOTICE OF DEPOSITION AND CERTIFICATE REGARDING DISCOVERY",
+     "pages": 4
+    },
+    {
+     "filed": "11/22/2000",
+     "n": 32,
+     "code": "1308",
+     "desc": "NOTICE OF DEPOSITION AND CERTIFICATE REGARDING DISCOVERY",
+     "pages": 4
+    },
+    {
+     "filed": "11/22/2000",
+     "n": 33,
+     "code": "1308",
+     "desc": "NOTICE OF DEPOSITION AND CERTIFICATE REGARDING DISCOVERY",
+     "pages": 4
+    },
+    {
+     "filed": "11/29/2000",
+     "n": 34,
+     "code": "1273",
+     "desc": "PETITION FOR CONTINUANCE",
+     "pages": 2
+    },
+    {
+     "filed": "11/29/2000",
+     "n": 35,
+     "code": "1253",
+     "desc": "PETITION TO DISMISS ACTION",
+     "pages": 2
+    },
+    {
+     "filed": "12/01/2000",
+     "n": 36,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "12/05/2000",
+     "n": 37,
+     "code": "1284",
+     "desc": "ORDER OF COURT  1ST ACCT APPD",
+     "pages": 1
+    },
+    {
+     "filed": "12/01/2000",
+     "n": 38,
+     "code": "1286",
+     "desc": "RESPONSE TO MOTION TO DISMISS ACTION",
+     "pages": 4
+    },
+    {
+     "filed": "12/01/2000",
+     "n": 39,
+     "code": "1276",
+     "desc": "OPPOSITION TO PLEADING IN THE NATURE OF A MOTION FOR PROTECTIVE ORDER",
+     "pages": 9
+    },
+    {
+     "filed": "12/01/2000",
+     "n": 40,
+     "code": "1276",
+     "desc": "OPPOSITION TO MOTION FOR CONTINUANCE",
+     "pages": 4
+    },
+    {
+     "filed": "12/07/2000",
+     "n": 41,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "01/10/2001",
+     "n": 43,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2001",
+     "n": 44,
+     "code": "1255",
+     "desc": "NOTICE OF APPEAL",
+     "pages": 2
+    },
+    {
+     "filed": "01/16/2001",
+     "n": 45,
+     "code": "1300",
+     "desc": "REQUEST FOR TAPES OF HEARING",
+     "pages": 4
+    },
+    {
+     "filed": "01/31/2001",
+     "n": 46,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN - MET RECEIVED 01312001 , WITH ATTACHMENT NONE , AMOUNT OF INHERITANCE TAX PAID AS CERTIFIED ON RETURN $ -0-",
+     "pages": 1
+    },
+    {
+     "filed": "02/09/2001",
+     "n": 47,
+     "code": "1217",
+     "desc": "TRANSFER OF RECORDS TO CIRCUIT COURT INCLUDING CERTIFICATION OF RECORD",
+     "pages": 8
+    },
+    {
+     "filed": "06/06/2001",
+     "n": 48,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/13/2001",
+     "n": 49,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "07/13/2001",
+     "n": 50,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 12
+    },
+    {
+     "filed": "07/13/2001",
+     "n": 51,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2001",
+     "n": 52,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "07/16/2001",
+     "n": 53,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "07/16/2001",
+     "n": 54,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2001",
+     "n": 55,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 2ND  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/20/2001",
+     "n": 56,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 6
+    },
+    {
+     "filed": "12/19/2001",
+     "n": 57,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "01/15/2002",
+     "n": 58,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/15/2002",
+     "n": 59,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO    FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/04/2002",
+     "n": 60,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "02/21/2002",
+     "n": 61,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT",
+     "pages": 8
+    },
+    {
+     "filed": "02/21/2002",
+     "n": 62,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 17
+    },
+    {
+     "filed": "02/22/2002",
+     "n": 63,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING 3RD  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2002",
+     "n": 64,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "04/05/2002",
+     "n": 65,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "04/05/2002",
+     "n": 66,
+     "code": "1385",
+     "desc": "FOURTH AND FINAL ACCOUNT",
+     "pages": 7
+    },
+    {
+     "filed": "04/05/2002",
+     "n": 67,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEES",
+     "pages": 22
+    },
+    {
+     "filed": "04/05/2002",
+     "n": 68,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "04/08/2002",
+     "n": 69,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "04/09/2002",
+     "n": 70,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/2002",
+     "n": 71,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2002",
+     "n": 72,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 4TH & FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2002",
+     "n": 73,
+     "code": "1284",
+     "desc": "ORDER OF COURT THAT THE P.R. IS AUTHORIZED TO PAY WILLIAM E DAVIS, ESQ IN THE AMOUNT OF $36,213.75.",
+     "pages": 1
+    },
+    {
+     "filed": "04/11/2002",
+     "n": 74,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "04/08/2002",
+     "n": 75,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2002",
+     "n": 76,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "08/07/2002",
+     "n": 77,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "10/24/2002",
+     "n": 78,
+     "code": "1218",
+     "desc": "RECEIPT OF RECORDS FROM CIRCUIT COURT:   2/1/02 STIPULATION OF DISMISSAL OF PROCEEDING FILED.",
+     "pages": 49
+    }
+   ],
+   "last_docket_activity": "2002-10-24",
+   "interested_persons": [
+    {
+     "name": "WILLIAM E DAVIS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 9,
+   "probate_age_days": 829,
+   "days_since_last_docket": 8788,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1925202201",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1925202201",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "OTIS D MURPHY"
+  }
+ ]
+}

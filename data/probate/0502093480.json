@@ -1,0 +1,116 @@
+{
+ "account": "0502093480",
+ "estates": [
+  {
+   "estate_number": "10898",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "05/14/2010",
+   "date_closed": "07/06/2011",
+   "decedent": "CYNTHIA ROY MALMROSE",
+   "date_of_death": "8/10/2009",
+   "date_of_filing": "05/14/2010",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "PATRICK J. HOWLEY ESQUIRE [12505 PARK POTOMAC AVENUE, 6TH FLOOR, POTOMAC, MD 20854]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ROY A MALMROSE",
+     "address": "6610 JUPITER DRIVE, HUNTINGTOWN, MD 20639"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/14/2010",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 9
+    },
+    {
+     "filed": "05/14/2010",
+     "n": 2,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/14/2010",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "05/14/2010",
+     "n": 4,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "05/14/2010",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/14/2010",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/24/2010",
+     "n": 7,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "05/25/2010",
+     "n": 8,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/01/2010",
+     "n": 9,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/06/2011",
+     "n": 10,
+     "code": "1244",
+     "desc": "LETTER FROM ATTORNEY - NOT PURSUING ANY FURTHER LITIGATION - NO PROCEEDS WERE RECEIVED BY ESTATE.  ESTATE CLOSED",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2011-07-06",
+   "interested_persons": [
+    {
+     "name": "ROY A MALMROSE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 277,
+   "probate_age_days": 418,
+   "days_since_last_docket": 5611,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924596435",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924596435",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CYNTHIA R MALMROSE"
+  }
+ ]
+}

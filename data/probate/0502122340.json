@@ -1,0 +1,144 @@
+{
+ "account": "0502122340",
+ "estates": [
+  {
+   "estate_number": "9163",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "12/14/2005",
+   "date_closed": "06/13/2006",
+   "decedent": "JOEY CARNELL THOMAS",
+   "date_of_death": "11/29/2005",
+   "date_of_filing": "12/14/2005",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "PHYLLIS A. BAKER ESQUIRE [P.O. BOX 840, 481 MAIN STREET, PRINCE FREDERICK, MD 20678]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CATHERINE  THOMAS",
+     "address": "P O BOX 3906, PRINCE FREDERICK, MD 20678"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/14/2005",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "12/14/2005",
+     "n": 2,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "12/14/2005",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "12/14/2005",
+     "n": 4,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "12/14/2005",
+     "n": 5,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "12/14/2005",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/29/2005",
+     "n": 7,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/12/2006",
+     "n": 8,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2006",
+     "n": 9,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "03/15/2006",
+     "n": 10,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 13
+    },
+    {
+     "filed": "06/07/2006",
+     "n": 11,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "06/07/2006",
+     "n": 12,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "06/13/2006",
+     "n": 13,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/13/2006",
+     "n": 14,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2006-06-13",
+   "interested_persons": [
+    {
+     "name": "CATHERINE THOMAS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 15,
+   "probate_age_days": 181,
+   "days_since_last_docket": 7460,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924593732",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924593732",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOEY C THOMAS"
+  }
+ ]
+}

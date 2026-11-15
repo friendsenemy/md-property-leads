@@ -1,0 +1,56 @@
+{
+ "account": "0503166163",
+ "estates": [
+  {
+   "estate_number": "60885",
+   "status": "CLOSED",
+   "type": "NP",
+   "date_opened": "03/17/2006",
+   "date_closed": "03/17/2006",
+   "decedent": "PHYLLIS ELIZABETH REID",
+   "date_of_death": "10/26/1996",
+   "date_of_filing": "03/17/2006",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "03/17/2006",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 09-16-1993 (UNPROBATED)",
+     "pages": 2
+    },
+    {
+     "filed": "03/17/2006",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "10/30/1996",
+     "n": 3,
+     "code": "1125",
+     "desc": "APPLICATION TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS",
+     "pages": 5
+    }
+   ],
+   "last_docket_activity": "2006-03-17",
+   "interested_persons": [],
+   "death_to_probate_days": 3429,
+   "probate_age_days": 0,
+   "days_since_last_docket": 7548,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-15",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924367605",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924367605",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "PHYLLIS E REID"
+  }
+ ]
+}
