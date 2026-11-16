@@ -1,0 +1,249 @@
+{
+ "account": "0501008153",
+ "estates": [
+  {
+   "estate_number": "9018",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "07/21/2005",
+   "date_closed": "06/27/2006",
+   "decedent": "THOMAS HARRY EUGENE GANTT",
+   "date_of_death": "7/8/2005",
+   "date_of_filing": "07/21/2005",
+   "will": "NO WILL",
+   "aliases": "THOMAS  GANTT",
+   "attorney": "RICHARD D. LLOYD ESQUIRE [P.O. BOX 29, PRINCE FREDERICK, MD 20678]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "GLADYS E. GANTT",
+     "address": "250 MASON ROAD, PRINCE FREDERICK, MD 20678"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/21/2005",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "07/21/2005",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 4
+    },
+    {
+     "filed": "07/21/2005",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2005",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/14/2005",
+     "n": 5,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/09/2005",
+     "n": 6,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "12/08/2005",
+     "n": 7,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "12/08/2005",
+     "n": 8,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "12/08/2005",
+     "n": 9,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 3
+    },
+    {
+     "filed": "12/08/2005",
+     "n": 10,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "12/08/2005",
+     "n": 11,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "12/08/2005",
+     "n": 12,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/23/2005",
+     "n": 13,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/05/2006",
+     "n": 14,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2006",
+     "n": 15,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE) FILED BY ATTORNEY",
+     "pages": 2
+    },
+    {
+     "filed": "01/13/2006",
+     "n": 16,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS",
+     "pages": 3
+    },
+    {
+     "filed": "01/13/2006",
+     "n": 17,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2006",
+     "n": 18,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "03/10/2006",
+     "n": 19,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "06/20/2006",
+     "n": 20,
+     "code": "1245",
+     "desc": "PETITION FOR ALLOWANCE OF COUNSEL FEES",
+     "pages": 4
+    },
+    {
+     "filed": "06/20/2006",
+     "n": 21,
+     "code": "1245",
+     "desc": "PETITION FOR PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 4
+    },
+    {
+     "filed": "06/20/2006",
+     "n": 22,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "06/20/2006",
+     "n": 23,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM",
+     "pages": 2
+    },
+    {
+     "filed": "06/27/2006",
+     "n": 24,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR ALLOWANCE OF COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2006",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2006",
+     "n": 26,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2006",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2006",
+     "n": 28,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/27/2006",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2006-06-27",
+   "interested_persons": [
+    {
+     "name": "GLADYS E. GANTT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 13,
+   "probate_age_days": 341,
+   "days_since_last_docket": 7447,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924592909",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924592909",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "THOMAS GANTT"
+  }
+ ]
+}

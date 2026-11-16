@@ -1,0 +1,27 @@
+{
+ "account": "0502132354",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "DUC H HUYNH",
+   "decedent_searched": "DUC H HUYNH",
+   "date_of_death": "2006-09-26",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "THU T TRAN",
+   "decedent_searched": "THU T TRAN",
+   "date_of_death": "2006-08-09",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  }
+ ]
+}

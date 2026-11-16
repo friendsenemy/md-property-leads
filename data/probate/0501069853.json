@@ -1,0 +1,165 @@
+{
+ "account": "0501069853",
+ "estates": [
+  {
+   "estate_number": "33355",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "01/03/2001",
+   "date_closed": "03/18/2002",
+   "decedent": "EDWARD JOSEPH KERN",
+   "date_of_death": "3/6/1992",
+   "date_of_filing": "01/03/2001",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "STANLEY  GETZ ESQUIRE [26 S. MAIN STREET, BEL AIR, MD 21014]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "GEORGE H. KERN JR.",
+     "address": "2450 WINTERS RUN ROAD, JOPPA, MD 21085"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/03/2001",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED-JUNE 20,1991",
+     "pages": 3
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 3,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT-NO JOINT ASSETS",
+     "pages": 2
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 8,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/03/2001",
+     "n": 9,
+     "code": "1336",
+     "desc": "RECEIPTS-$400.00-PROBATE FEE WITH 5 LOA TO THE ATTY.",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2001",
+     "n": 10,
+     "code": "1122",
+     "desc": "INVENTORY-$185,500.00",
+     "pages": 31
+    },
+    {
+     "filed": "01/25/2001",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/20/2001",
+     "n": 12,
+     "code": "1336",
+     "desc": "RECEIPTS-$17,890.10=10% INH. TAX",
+     "pages": 1
+    },
+    {
+     "filed": "07/20/2001",
+     "n": 13,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE-$2,100.00",
+     "pages": 2
+    },
+    {
+     "filed": "07/20/2001",
+     "n": 14,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "08/02/2001",
+     "n": 15,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING FEE",
+     "pages": 1
+    },
+    {
+     "filed": "08/02/2001",
+     "n": 16,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2006",
+     "n": 17,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED SEPTEMBER 23, 1976 - FOUND IN SAFEKEEPING",
+     "pages": 3
+    }
+   ],
+   "last_docket_activity": "2006-02-03",
+   "interested_persons": [
+    {
+     "name": "GEORGE H. KERN JR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 3225,
+   "probate_age_days": 439,
+   "days_since_last_docket": 7591,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924823089",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924823089",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "EDWARD J KERN"
+  }
+ ]
+}

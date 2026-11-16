@@ -72,6 +72,17 @@
    "title_class": "D3",
    "title_class_label": "Estate closed — property still titled to decedent",
    "decedent_searched": "LILLIAN MAE WALTON"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "RUSSELL A WALTON",
+   "decedent_searched": "RUSSELL A WALTON",
+   "date_of_death": "1977-06-17",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
   }
  ]
 }

@@ -1,0 +1,305 @@
+{
+ "account": "0502053497",
+ "estates": [
+  {
+   "estate_number": "12262",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "06/26/2013",
+   "date_closed": "06/02/2015",
+   "decedent": "MICHAEL J FUNCHION",
+   "date_of_death": "5/18/2013",
+   "date_of_filing": "06/26/2013",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "JAY G MERWIN JR. [29 WEST SUSQUEHANNA AVENUE, 6TH FLOOR, TOWSON, MD 21204]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "KATHLEEN  FUNCHION",
+     "address": "905 AUGUSTUS DRIVE, PRINCE FREDERICK, MD 20678"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/26/2013",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "06/26/2013",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2013",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2013",
+     "n": 4,
+     "code": "1244",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 5,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 6,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE (2)",
+     "pages": 2
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 7,
+     "code": "1117",
+     "desc": "WAIVER OF BOND (2)",
+     "pages": 2
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 8,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 9,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 3
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 10,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 11,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 12,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "09/26/2013",
+     "n": 13,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 14,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2013",
+     "n": 15,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/26/2013",
+     "n": 16,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "12/23/2013",
+     "n": 17,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO JANUARY 27, 2014, FOR FILING INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "12/23/2013",
+     "n": 18,
+     "code": "1202",
+     "desc": "MOTION TO STRIKE APPEARANCE OF COUNSEL",
+     "pages": 5
+    },
+    {
+     "filed": "12/27/2013",
+     "n": 19,
+     "code": "1254",
+     "desc": "LINE ENTERING APPEARANCE OF JAY G. MERWIN, JR., ESQUIRE",
+     "pages": 2
+    },
+    {
+     "filed": "01/07/2014",
+     "n": 20,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING MOTION TO STRIKE APPEARANCE OF COUNSEL",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2014",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2014",
+     "n": 22,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 6
+    },
+    {
+     "filed": "02/03/2014",
+     "n": 23,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "05/15/2014",
+     "n": 24,
+     "code": "1289",
+     "desc": "ASSIGNMENT BETWEEN KATHLEEN A FUNCHION, JERRY FUNCHION & RICK FUNCHION",
+     "pages": 3
+    },
+    {
+     "filed": "05/15/2014",
+     "n": 25,
+     "code": "1383",
+     "desc": "FIRST ADMINISTRATION ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "05/20/2014",
+     "n": 26,
+     "code": "1396",
+     "desc": "ORDER APPROVING FIRST ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/20/2014",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/21/2014",
+     "n": 28,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/19/2014",
+     "n": 29,
+     "code": "1244",
+     "desc": "LETTER REQUESTING EXTENSION OF TIME TO FILE ACCOUNT - NO ACTION TAKEN - ACCOUNT FOLLOWED WITHIN 2 DAYS",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2014",
+     "n": 30,
+     "code": "1383",
+     "desc": "SECOND ADMINISTRATION ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "12/02/2014",
+     "n": 31,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT - SECOND",
+     "pages": 1
+    },
+    {
+     "filed": "12/02/2014",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/04/2015",
+     "n": 33,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/20/2015",
+     "n": 34,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT -THIRD",
+     "pages": 4
+    },
+    {
+     "filed": "06/02/2015",
+     "n": 35,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT - THIRD AND",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2015",
+     "n": 36,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "06/17/2015",
+     "n": 37,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS FOR: JERRY FUNCHION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2015-06-17",
+   "interested_persons": [
+    {
+     "name": "KATHLEEN FUNCHION",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 39,
+   "probate_age_days": 706,
+   "days_since_last_docket": 4170,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-16",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1924577719",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1924577719",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MICHAEL J FUNCHION"
+  }
+ ]
+}
