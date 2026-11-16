@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-14T17:07:42+00:00",
- "window_from": "2026.02.17",
- "recent_transfers": 40330,
+ "generated_at": "2026-11-16T21:02:20+00:00",
+ "window_from": "2026.02.19",
+ "recent_transfers": 40125,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -36,10 +36,6 @@
    16
   ],
   [
-   "US BANK TRUST NATIONAL ASSOCIATION",
-   15
-  ],
-  [
    "FEDERAL HOME LOAN MORTGAGE",
    15
   ],
@@ -50,6 +46,10 @@
   [
    "CARRINGTON MORTGAGE SERVICES LLC",
    15
+  ],
+  [
+   "US BANK TRUST NATIONAL ASSOCIATION",
+   13
   ],
   [
    "US BANK NATIONAL ASSOCIATION",
@@ -332,10 +332,6 @@
    3
   ],
   [
-   "U S BANK TRUST COMPANY NATIONAL AS",
-   3
-  ],
-  [
    "U S BANK NATIONAL ASSOCIATION TRUS",
    3
   ],
@@ -373,10 +369,6 @@
   ],
   [
    "SRNEC FAMILY REVOCABLE TRUST",
-   3
-  ],
-  [
-   "SENSENEY JUANITA S TRUSTEE",
    3
   ],
   [
@@ -445,10 +437,6 @@
   ],
   [
    "KUZMACK LINDA M G REV TR",
-   3
-  ],
-  [
-   "KUHN HARRIET LURENSKY TRUSTEE",
    3
   ],
   [
@@ -601,6 +589,18 @@
   ],
   [
    "WINELANDER RICHARD  (TR)",
+   2
+  ],
+  [
+   "WILCOXON JAMES W TRUSTEE",
+   2
+  ],
+  [
+   "WILBER PAUL D CO-TRUSTEE",
+   2
+  ],
+  [
+   "WILBANKS ASSOCIATES LLC",
    2
   ]
  ]
