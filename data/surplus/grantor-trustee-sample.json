@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-16T21:02:20+00:00",
- "window_from": "2026.02.19",
- "recent_transfers": 40125,
+ "generated_at": "2026-11-17T19:51:49+00:00",
+ "window_from": "2026.02.20",
+ "recent_transfers": 39952,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -48,10 +48,6 @@
    15
   ],
   [
-   "US BANK TRUST NATIONAL ASSOCIATION",
-   13
-  ],
-  [
    "US BANK NATIONAL ASSOCIATION",
    13
   ],
@@ -62,6 +58,10 @@
   [
    "FEDERAL HOME LOAN MORTGAGE CORPORA",
    13
+  ],
+  [
+   "US BANK TRUST NATIONAL ASSOCIATION",
+   12
   ],
   [
    "SULLIVAN BRENDAN V JR TRUSTEE",
@@ -148,10 +148,6 @@
    6
   ],
   [
-   "CHEVEZ LUIS ENRIQUEZ LIVING TRUST",
-   6
-  ],
-  [
    "CHACONAS FAMILY REV LVNG TR",
    6
   ],
@@ -177,6 +173,10 @@
   ],
   [
    "CITIGROUP MORTGAGE LOAN TRUST",
+   5
+  ],
+  [
+   "CHEVEZ LUIS ENRIQUEZ LIVING TRUST",
    5
   ],
   [
@@ -252,10 +252,6 @@
    4
   ],
   [
-   "M&T BANK",
-   4
-  ],
-  [
    "M & T BANK",
    4
   ],
@@ -305,10 +301,6 @@
   ],
   [
    "ZIFF RUTH L (TR)",
-   3
-  ],
-  [
-   "WOOLSEY SUZANNE H TRUSTEE",
    3
   ],
   [
@@ -421,6 +413,10 @@
   ],
   [
    "MAJERLE METHENY REV TRUST",
+   3
+  ],
+  [
+   "M&T BANK",
    3
   ],
   [
@@ -601,6 +597,10 @@
   ],
   [
    "WILBANKS ASSOCIATES LLC",
+   2
+  ],
+  [
+   "WENDY NADINE JOE TRUST",
    2
   ]
  ]
