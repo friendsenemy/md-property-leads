@@ -1,0 +1,130 @@
+{
+ "account": "0905014026",
+ "estates": [
+  {
+   "estate_number": "17414",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "01/10/2011",
+   "date_closed": "07/11/2011",
+   "decedent": "HELEN ARLENE SWANN",
+   "date_of_death": "12/11/2010",
+   "date_of_filing": "01/10/2011",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "WILLIAM DOUGLAS SWANN SR",
+     "address": "15440 MATHEW MANOR RD, NEWBURG, MD 20664"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/10/2011",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 3,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 4,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 10
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 5,
+     "code": "1105",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 6,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 8,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2011",
+     "n": 9,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2011",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - KEITH SWANN",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2011",
+     "n": 11,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - JOANNA SWANN",
+     "pages": 1
+    },
+    {
+     "filed": "01/24/2011",
+     "n": 12,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2011-01-24",
+   "interested_persons": [
+    {
+     "name": "WILLIAM DOUGLAS SWANN SR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 30,
+   "probate_age_days": 182,
+   "days_since_last_docket": 5776,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1925221273",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1925221273",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "HELEN A SWANN"
+  }
+ ]
+}

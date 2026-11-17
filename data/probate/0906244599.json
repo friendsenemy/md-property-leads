@@ -1,0 +1,207 @@
+{
+ "account": "0906244599",
+ "estates": [
+  {
+   "estate_number": "19012",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "10/16/2013",
+   "date_closed": "06/25/2014",
+   "decedent": "JOHN F. MAKLE",
+   "date_of_death": "11/30/2012",
+   "date_of_filing": "10/16/2013",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MELODY MELISSA MAKLE",
+     "address": "3910 TURNER RD, BRANDYWINE, MD 20613"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "10/16/2013",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOV. 21,",
+     "pages": 2011
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 4,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 6,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - MARVA MAKLE",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 7,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 8,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 9,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2013",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE - JOHN MAKLE",
+     "pages": 1
+    },
+    {
+     "filed": "11/08/2013",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2013",
+     "n": 12,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "01/28/2014",
+     "n": 13,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE FOR FAILURE TO FILE THE INVENTORY AND INFORMATION REPORT HEARING SCHEDULED FOR 18 FEBRUARY 2014 @ 1: 10 PM",
+     "pages": 1
+    },
+    {
+     "filed": "01/28/2014",
+     "n": 14,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2014",
+     "n": 16,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING - TAPE NOS.1:13.23-1:14.31",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2014",
+     "n": 17,
+     "code": "1284",
+     "desc": "ORDER OF COURT  REGARDING NO SHOW HEARING OF 2/18/2014",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2014",
+     "n": 18,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR 3/11/2014 @11:00",
+     "pages": 1
+    },
+    {
+     "filed": "02/18/2014",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/20/2014",
+     "n": 20,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 8
+    },
+    {
+     "filed": "02/20/2014",
+     "n": 21,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/06/2014",
+     "n": 22,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "06/24/2014",
+     "n": 23,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND  FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2014",
+     "n": 24,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2014-06-24",
+   "interested_persons": [
+    {
+     "name": "MELODY MELISSA MAKLE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 320,
+   "probate_age_days": 252,
+   "days_since_last_docket": 4529,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-17",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1925214574",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1925214574",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOHN F MAKLE"
+  }
+ ]
+}
