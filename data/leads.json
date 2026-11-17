@@ -422666,6 +422666,14 @@
  ],
  "runs": [
   {
+   "started_at": "2026-11-17T18:48:14+00:00",
+   "completed_at": "2026-11-17T18:48:15+00:00",
+   "obituaries_scraped": 0,
+   "obituaries_checked": 0,
+   "properties_matched": 0,
+   "leads_created": 0
+  },
+  {
    "started_at": "2026-11-16T19:54:33+00:00",
    "completed_at": "2026-11-16T20:00:39+00:00",
    "obituaries_scraped": 2036,
@@ -423074,13 +423082,13 @@
    "leads_created": 295
   }
  ],
- "generated_at": "2026-11-16T20:00:39+00:00",
+ "generated_at": "2026-11-17T18:48:15+00:00",
  "last_run": {
-  "started_at": "2026-11-16T19:54:33+00:00",
-  "completed_at": "2026-11-16T20:00:39+00:00",
-  "obituaries_scraped": 2036,
-  "obituaries_checked": 89,
-  "properties_matched": 107,
-  "leads_created": 36
+  "started_at": "2026-11-17T18:48:14+00:00",
+  "completed_at": "2026-11-17T18:48:15+00:00",
+  "obituaries_scraped": 0,
+  "obituaries_checked": 0,
+  "properties_matched": 0,
+  "leads_created": 0
  }
 }
