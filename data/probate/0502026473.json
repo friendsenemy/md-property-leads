@@ -1,0 +1,106 @@
+{
+ "account": "0502026473",
+ "estates": [
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "MURIEL J HEIGH JR",
+   "decedent_searched": "MURIEL J HEIGH JR",
+   "date_of_death": "1989-09-18",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "18842",
+   "status": "OPEN",
+   "type": "RE",
+   "date_opened": "10/21/2026",
+   "date_closed": "",
+   "decedent": "SADIE L HEIGH",
+   "date_of_death": "6/18/1998",
+   "date_of_filing": "10/21/2026",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "PATRICIA  CAMPBELL",
+     "address": "8105 HAYFIELD CT, CLINTON, MD 20735-1905"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "10/21/2026",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "10/21/2026",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE (2)",
+     "pages": 2
+    },
+    {
+     "filed": "10/21/2026",
+     "n": 3,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "10/21/2026",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (4)",
+     "pages": 4
+    },
+    {
+     "filed": "10/21/2026",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "10/21/2026",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "11/10/2026",
+     "n": 7,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2026-11-10",
+   "interested_persons": [
+    {
+     "name": "PATRICIA CAMPBELL",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 10352,
+   "probate_age_days": 28,
+   "days_since_last_docket": 8,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926065341",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926065341",
+   "title_class": "D2",
+   "title_class_label": "Estate currently open",
+   "decedent_searched": "SADIE L HEIGH"
+  }
+ ]
+}

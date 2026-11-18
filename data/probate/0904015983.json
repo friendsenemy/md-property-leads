@@ -1,0 +1,81 @@
+{
+ "account": "0904015983",
+ "estates": [
+  {
+   "estate_number": "61374",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "12/17/2001",
+   "date_closed": "12/17/2001",
+   "decedent": "JOHN W FUNK",
+   "date_of_death": "12/6/2001",
+   "date_of_filing": "12/17/2001",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "BERNARD L FUNK SR",
+     "address": "16804 LIVINGTON ROAD, ACCOKEEK, MD 20607"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/17/2001",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 6
+    },
+    {
+     "filed": "12/17/2001",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2001",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2001",
+     "n": 4,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE 2/2",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2001",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2001-12-17",
+   "interested_persons": [
+    {
+     "name": "BERNARD L FUNK SR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 11,
+   "probate_age_days": 0,
+   "days_since_last_docket": 9102,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926479733",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926479733",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOHN W FUNK"
+  }
+ ]
+}

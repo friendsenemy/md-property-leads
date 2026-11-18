@@ -1,0 +1,214 @@
+{
+ "account": "0503100839",
+ "estates": [
+  {
+   "estate_number": "W80060",
+   "status": "CLOSED",
+   "type": "MA",
+   "date_opened": "05/27/2014",
+   "date_closed": "07/23/2015",
+   "decedent": "JERRY W NORTON",
+   "date_of_death": "12/15/2013",
+   "date_of_filing": "05/27/2014",
+   "will": "PROBATED",
+   "aliases": "JERRY WILLIAM NORTON",
+   "attorney": "JOSEPH D GALLAGHER [98 CHURCH ST, ROCKVILLE, MD 20850-4123]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "KIM  NORTON",
+     "address": "204 FIRST ST., ROCKVILLE, MD 20851"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/27/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED OCTOBER 09,",
+     "pages": 2012
+    },
+    {
+     "filed": "05/27/2014",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "05/27/2014",
+     "n": 3,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2014",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (2  )",
+     "pages": 2
+    },
+    {
+     "filed": "05/27/2014",
+     "n": 5,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 1
+    },
+    {
+     "filed": "05/28/2014",
+     "n": 6,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 9,
+     "code": "1141",
+     "desc": "ELECTION OF PERSONAL REPRESENTATIVE FOR MODIFIED ADMINISTRATION (FILED 5/27/2014)",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 10,
+     "code": "1142",
+     "desc": "CONSENT TO ELECTION FOR MODIFIED ADMINISTRATION  (FILED 5/27/2014)",
+     "pages": 2
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 11,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 2
+    },
+    {
+     "filed": "06/03/2014",
+     "n": 12,
+     "code": "1380",
+     "desc": "NOTICES NOT REQUIRED",
+     "pages": 2
+    },
+    {
+     "filed": "06/27/2014",
+     "n": 13,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/04/2014",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "08/19/2014",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/21/2014",
+     "n": 16,
+     "code": "1356",
+     "desc": "NON-PROBATE INHERITANCE TAX ADVICE: NO INHERITANCE TAX DUE",
+     "pages": 1
+    },
+    {
+     "filed": "03/04/2015",
+     "n": 17,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "04/02/2015",
+     "n": 18,
+     "code": "1146",
+     "desc": "CONSENT TO EXTEND TIME TO FILE FINAL REPORT AND TO MAKE DISTRIBUTION IN A MODIFIED ADMINISTRATION UNTIL 7/2/15",
+     "pages": 2
+    },
+    {
+     "filed": "07/01/2015",
+     "n": 19,
+     "code": "1143",
+     "desc": "FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "07/20/2015",
+     "n": 20,
+     "code": "1143",
+     "desc": "AMENDED FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 5
+    },
+    {
+     "filed": "07/20/2015",
+     "n": 21,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "07/23/2015",
+     "n": 22,
+     "code": "1436",
+     "desc": "REGISTER OF WILLS NOTICE OF REVIEW OF FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "09/25/2015",
+     "n": 23,
+     "code": "1275",
+     "desc": "REGISTER OF WILLS' CERTIFICATION OF MARYLAND ESTATE TAX RETURN",
+     "pages": 1
+    },
+    {
+     "filed": "03/31/2016",
+     "n": 24,
+     "code": "1244",
+     "desc": "REQUEST FOR ADDITIONAL LETTERS OF ADMINISTRATION",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2016-03-31",
+   "interested_persons": [
+    {
+     "name": "KIM NORTON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 163,
+   "probate_age_days": 422,
+   "days_since_last_docket": 3884,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1925014615",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1925014615",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JERRY W NORTON"
+  }
+ ]
+}

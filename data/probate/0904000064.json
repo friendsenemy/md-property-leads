@@ -1,0 +1,109 @@
+{
+ "account": "0904000064",
+ "estates": [
+  {
+   "estate_number": "10812",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "01/09/2002",
+   "date_closed": "01/09/2002",
+   "decedent": "MARGARET A. ALVEY",
+   "date_of_death": "12/13/2001",
+   "date_of_filing": "01/09/2002",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "BERNARD A. ALVEY",
+     "address": "39360 ALVEY WAY, CLEMENTS, MD 20624"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "01/09/2002",
+     "n": 1,
+     "code": "1428",
+     "desc": "PROOF OF CUSTODY OF PURPORTED WILL",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 2,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED DECEMBER 17,",
+     "pages": 1996
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 3,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 7,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 8,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE - (1)",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2002",
+     "n": 9,
+     "code": "1336",
+     "desc": "RECEIPTS - #10605",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2002-01-09",
+   "interested_persons": [
+    {
+     "name": "BERNARD A. ALVEY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 27,
+   "probate_age_days": 0,
+   "days_since_last_docket": 9079,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926578155",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926578155",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARGARET A ALVEY"
+  }
+ ]
+}

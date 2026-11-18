@@ -90,6 +90,467 @@
    "title_class": "D3",
    "title_class_label": "Estate closed — property still titled to decedent",
    "decedent_searched": "BETTY L WEEMS"
+  },
+  {
+   "estate_number": "6563",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "09/15/1998",
+   "date_closed": "01/03/2002",
+   "decedent": "ROBERT E WEEMS",
+   "date_of_death": "1/3/1998",
+   "date_of_filing": "09/15/1998",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "DALLAS S. WARD ESQUIRE [P.O. BOX 310, PRINCE FREDERICK, MD 20678]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DALE  WEEMS",
+     "address": "1745 FOREST GLEN DRIVE, PRINCE FREDERICK, MD 20678"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/23/1998",
+     "n": 1,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "06/23/1998",
+     "n": 2,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "06/30/1998",
+     "n": 3,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "09/15/1998",
+     "n": 4,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/1998",
+     "n": 5,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/1998",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/1998",
+     "n": 7,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/1998",
+     "n": 8,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "09/15/1998",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "09/15/1998",
+     "n": 10,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/08/1998",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/1998",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 4
+    },
+    {
+     "filed": "11/09/1998",
+     "n": 13,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "12/11/1998",
+     "n": 14,
+     "code": "1231",
+     "desc": "PETITION FOR EXTENSION OF TIME TO FILE INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "12/15/1998",
+     "n": 15,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR EXTENSION OF TIME TO FILE INVENTORY UNTIL JANUARY 15,",
+     "pages": 1999
+    },
+    {
+     "filed": "12/15/1998",
+     "n": 16,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/19/1999",
+     "n": 17,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 19
+    },
+    {
+     "filed": "01/25/1999",
+     "n": 18,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "01/20/1999",
+     "n": 19,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 4
+    },
+    {
+     "filed": "03/15/1999",
+     "n": 20,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/23/1999",
+     "n": 21,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "06/02/1999",
+     "n": 22,
+     "code": "1231",
+     "desc": "PETITION FOR EXTENSION OF TIME TO FILE ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "06/08/1999",
+     "n": 23,
+     "code": "1284",
+     "desc": "ORDER APPROVING PETITION FOR EXTENSION OF TIME TO FILE ACCOUNT UNTIL SEPTEMBER 15,",
+     "pages": 1999
+    },
+    {
+     "filed": "06/08/1999",
+     "n": 24,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/17/1999",
+     "n": 25,
+     "code": "1231",
+     "desc": "PETITION FOR EXTENSION OF TIME TO FILE ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "09/21/1999",
+     "n": 26,
+     "code": "1284",
+     "desc": "ORDER APPROVING PETITION FOR EXTENSION OF TIME TO FILE ACCOUNT UNTIL APRIL 1,",
+     "pages": 2000
+    },
+    {
+     "filed": "09/21/1999",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/15/2000",
+     "n": 28,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE RE CLAIM FILED MARCH 15,",
+     "pages": 1999
+    },
+    {
+     "filed": "02/15/2000",
+     "n": 29,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE RE CLAIM FILED MARCH 23,",
+     "pages": 1999
+    },
+    {
+     "filed": "03/31/2000",
+     "n": 30,
+     "code": "1245",
+     "desc": "PETITION FOR EXTENSION OF TIME TO FILE ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "04/04/2000",
+     "n": 31,
+     "code": "1284",
+     "desc": "ORDER APPROVING PETITION FOR EXTENSION OF TIME TO FILE ACCOUNT UNTIL OCTOBER 1,",
+     "pages": 2000
+    },
+    {
+     "filed": "04/04/2000",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/28/2000",
+     "n": 33,
+     "code": "1245",
+     "desc": "PETITION FOR EXTENSION OF TIME TO FIILE ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "10/03/2000",
+     "n": 34,
+     "code": "1284",
+     "desc": "ORDER APPROVING PETITION FOR EXTENSION OF TIME FOR FILING OF FIRST ACCOUNT UNTIL DECEMBER 1, 2000 AT 9:00 A.M.",
+     "pages": 1
+    },
+    {
+     "filed": "10/03/2000",
+     "n": 35,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2000",
+     "n": 36,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE RE CLAIM FILED JANUARY 25,",
+     "pages": 1999
+    },
+    {
+     "filed": "10/06/2000",
+     "n": 37,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE RE CLAIM FILED NOVEMBER 9,",
+     "pages": 1998
+    },
+    {
+     "filed": "10/06/2000",
+     "n": 38,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE RE CLAIM FILED OCTOBER 14,",
+     "pages": 1998
+    },
+    {
+     "filed": "11/29/2000",
+     "n": 39,
+     "code": "1231",
+     "desc": "PETITION FOR EXTENSION OF TIME FOR FILING  ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "12/05/2000",
+     "n": 40,
+     "code": "1284",
+     "desc": "ORDER APPROVING PETITION FOR EXTENSION OF TIME TO FILE ACCOUNT UNTIL JUNE 1,",
+     "pages": 2001
+    },
+    {
+     "filed": "12/05/2000",
+     "n": 41,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/12/2001",
+     "n": 42,
+     "code": "1261",
+     "desc": "SHOW CAUSE ORDER WHY AN ACCOUNT HAS NOT BEEN FILED ISSUED. HEARING SET FOR AUGUST 7, 2001 AT 9:00 A.M.",
+     "pages": 2
+    },
+    {
+     "filed": "06/12/2001",
+     "n": 43,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2001",
+     "n": 44,
+     "code": "1390",
+     "desc": "REPORT IN LIEU OF FIRST & FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "07/10/2001",
+     "n": 45,
+     "code": "1284",
+     "desc": "ORDER PASSED APPROVING REPORT IN LIEU OF FIRST AND FINAL ACCOUNT AS AN AFFIDAVIT IN LIEU OF FIRST ACCOUNT, AND DISCHARGING SHOW CAUSE ORDER ENTERED ON JUNE 12, 2001.",
+     "pages": 1
+    },
+    {
+     "filed": "07/10/2001",
+     "n": 46,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2001",
+     "n": 47,
+     "code": "1390",
+     "desc": "REPORT IN LIEU OF FIRST AND FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "11/13/2001",
+     "n": 48,
+     "code": "1284",
+     "desc": "ORDER APPROVING REPORT IN LIEU OF FIRST AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2001",
+     "n": 49,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/28/2001",
+     "n": 50,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FILED APRIL 23,",
+     "pages": 1998
+    },
+    {
+     "filed": "12/28/2001",
+     "n": 51,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FILED JUNE 23,",
+     "pages": 1998
+    },
+    {
+     "filed": "12/28/2001",
+     "n": 52,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FILED JUNE 30,",
+     "pages": 1998
+    },
+    {
+     "filed": "12/28/2001",
+     "n": 53,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FILED FEBRUARY 12,",
+     "pages": 1999
+    },
+    {
+     "filed": "12/28/2001",
+     "n": 54,
+     "code": "1245",
+     "desc": "PETITION FOR COUNSEL FEES",
+     "pages": 4
+    },
+    {
+     "filed": "12/28/2001",
+     "n": 55,
+     "code": "1385",
+     "desc": "FIRST & FINAL ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "01/02/2002",
+     "n": 56,
+     "code": "1284",
+     "desc": "ORDER APPROVING PETITION FOR COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "01/02/2002",
+     "n": 57,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/02/2002",
+     "n": 58,
+     "code": "1386",
+     "desc": "ORDER APPROVING FIRST AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/02/2002",
+     "n": 59,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2002",
+     "n": 60,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM FD. 6/23/98",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2002-01-14",
+   "interested_persons": [
+    {
+     "name": "DALE WEEMS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 255,
+   "probate_age_days": 1206,
+   "days_since_last_docket": 9074,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926068084",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926068084",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "ROBERT D WEEMS"
   }
  ]
 }

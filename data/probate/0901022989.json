@@ -1,0 +1,130 @@
+{
+ "account": "0901022989",
+ "estates": [
+  {
+   "estate_number": "15017",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "04/20/2006",
+   "date_closed": "08/06/2007",
+   "decedent": "WILLIAM CLINTON TRAVIS",
+   "date_of_death": "12/6/2005",
+   "date_of_filing": "04/20/2006",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "CHERYL ANN TRAVIS",
+     "address": "5604 WINDSOR CT., SUITLAND, MD 20746"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/20/2006",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED APRIL 26,",
+     "pages": 1977
+    },
+    {
+     "filed": "04/20/2006",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "04/20/2006",
+     "n": 3,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 4
+    },
+    {
+     "filed": "08/06/2007",
+     "n": 4,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 11
+    },
+    {
+     "filed": "03/27/2024",
+     "n": 5,
+     "code": "1244",
+     "desc": "ARCHIVES FILE REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2024",
+     "n": 6,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 5
+    },
+    {
+     "filed": "04/10/2024",
+     "n": 7,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "04/10/2024",
+     "n": 8,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2024",
+     "n": 9,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "04/10/2024",
+     "n": 10,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "04/10/2024",
+     "n": 11,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)-NOTICE NOT REQUIRED",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2024",
+     "n": 12,
+     "code": "1244",
+     "desc": "ARCHIVES ESTATE FILE RECEIVED",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2024-04-10",
+   "interested_persons": [
+    {
+     "name": "CHERYL ANN TRAVIS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 135,
+   "probate_age_days": 473,
+   "days_since_last_docket": 952,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926183077",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926183077",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WILLIAM C TRAVIS"
+  }
+ ]
+}

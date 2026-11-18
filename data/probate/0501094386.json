@@ -1,0 +1,207 @@
+{
+ "account": "0501094386",
+ "estates": [
+  {
+   "estate_number": "12217",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "05/21/2013",
+   "date_closed": "03/31/2015",
+   "decedent": "VINCENT BALLENGER GOLDSMITH JR",
+   "date_of_death": "4/14/2013",
+   "date_of_filing": "05/21/2013",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "GEORGE E. MENG ESQUIRE [85 SHERRY LANE, SUITE 1B, PRINCE FREDERICK, MD 20678]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "VINCENT B GOLDSMITH III",
+     "address": "707 SPRINGDALE AVE, ANNAPOLIS, MD 21403"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/21/2013",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED DECEMBER 20,",
+     "pages": 2010
+    },
+    {
+     "filed": "05/21/2013",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 3,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 2
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 7,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 9,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "12/30/2013",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/17/2014",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2014",
+     "n": 12,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "03/04/2014",
+     "n": 13,
+     "code": "1122",
+     "desc": "INVENTORY FILED W/O SCHEDULE F",
+     "pages": 73
+    },
+    {
+     "filed": "04/28/2014",
+     "n": 14,
+     "code": "1123",
+     "desc": "INVENTORY SUPPORTING SCHEDULE F FILED (NOT INCLUDED IN INVENTORY)",
+     "pages": 1
+    },
+    {
+     "filed": "08/04/2014",
+     "n": 15,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - FIRST",
+     "pages": 9
+    },
+    {
+     "filed": "01/12/2015",
+     "n": 16,
+     "code": "1383",
+     "desc": "REVISED FIRST ACCOUNT FILED W/O VERIFICATION & CERTIFICATE OF SERVICE",
+     "pages": 8
+    },
+    {
+     "filed": "01/12/2015",
+     "n": 17,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT FILED W/O VERIFICATION & CERTIFICATE OF SERVICE",
+     "pages": 8
+    },
+    {
+     "filed": "03/03/2015",
+     "n": 18,
+     "code": "1385",
+     "desc": "REVISED FINAL ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "03/25/2015",
+     "n": 19,
+     "code": "1382",
+     "desc": "INVENTORY SUPPLEMENTAL",
+     "pages": 2
+    },
+    {
+     "filed": "03/31/2015",
+     "n": 20,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT - REVISED FIRST",
+     "pages": 1
+    },
+    {
+     "filed": "03/31/2015",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/31/2015",
+     "n": 22,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT - REVISED FIRST",
+     "pages": 1
+    },
+    {
+     "filed": "03/31/2015",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2015-03-31",
+   "interested_persons": [
+    {
+     "name": "VINCENT B GOLDSMITH III",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 37,
+   "probate_age_days": 679,
+   "days_since_last_docket": 4250,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-18",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926072683",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926072683",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "VINCENT B GOLDSMITH III"
+  }
+ ]
+}
