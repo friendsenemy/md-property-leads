@@ -1,0 +1,263 @@
+{
+ "account": "0501010433",
+ "estates": [
+  {
+   "estate_number": "62502",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "05/09/2002",
+   "date_closed": "01/30/2004",
+   "decedent": "JOYCE C WILSON",
+   "date_of_death": "4/29/2002",
+   "date_of_filing": "05/09/2002",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DJUANA D PITTMAN",
+     "address": "14517 FOUST STREET, ACCOKEEK, MD 20607"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/09/2002",
+     "n": 1,
+     "code": "1112",
+     "desc": "QUALIFIED REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 5
+    },
+    {
+     "filed": "05/09/2002",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/09/2002",
+     "n": 3,
+     "code": "1408",
+     "desc": "QUALIFIED ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "05/09/2002",
+     "n": 4,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE ONE QUALIFIED",
+     "pages": 1
+    },
+    {
+     "filed": "05/09/2002",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/09/2002",
+     "n": 6,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2002",
+     "n": 7,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 10
+    },
+    {
+     "filed": "05/21/2002",
+     "n": 8,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2002",
+     "n": 9,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2002",
+     "n": 10,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2002",
+     "n": 11,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE - LETTERS ISSUED (5)",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2002",
+     "n": 12,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/06/2002",
+     "n": 13,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/27/2002",
+     "n": 14,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "10/21/2002",
+     "n": 15,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "10/21/2002",
+     "n": 16,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "11/22/2002",
+     "n": 17,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CERTIFICATE OF COMPLIANCE   HEARING SCHEDULED FOR",
+     "pages": 20603
+    },
+    {
+     "filed": "12/17/2002",
+     "n": 18,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "01/13/2003",
+     "n": 19,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/06/2003",
+     "n": 20,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SC/CERTIFICATE OF COMPLIANCE",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2003",
+     "n": 21,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT(041503)",
+     "pages": 1
+    },
+    {
+     "filed": "04/15/2003",
+     "n": 22,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -CONTEMPT",
+     "pages": 1
+    },
+    {
+     "filed": "04/29/2003",
+     "n": 23,
+     "code": "1299",
+     "desc": "WRIT ISSUED FOR  DJUANA D PITTMAN",
+     "pages": 2
+    },
+    {
+     "filed": "12/29/2003",
+     "n": 24,
+     "code": "1299",
+     "desc": "BAIL BOND",
+     "pages": 16
+    },
+    {
+     "filed": "12/31/2003",
+     "n": 25,
+     "code": "1270",
+     "desc": "HEARING SCHEDULED 01/22/2004",
+     "pages": 2
+    },
+    {
+     "filed": "01/22/2004",
+     "n": 26,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -CONTEMPT(WRIT SERVED)",
+     "pages": 1
+    },
+    {
+     "filed": "02/04/2004",
+     "n": 27,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE",
+     "pages": 12
+    },
+    {
+     "filed": "02/03/2004",
+     "n": 28,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 2
+    },
+    {
+     "filed": "02/06/2004",
+     "n": 29,
+     "code": "1284",
+     "desc": "ORDER OF COURT CLOSING THE ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2004",
+     "n": 30,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "02/20/2004",
+     "n": 31,
+     "code": "1310",
+     "desc": "COURT COSTS/FEES REFUND FORM",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2004-02-20",
+   "interested_persons": [
+    {
+     "name": "DJUANA D PITTMAN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 10,
+   "probate_age_days": 631,
+   "days_since_last_docket": 8308,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1927052110",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1927052110",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOYCE C WILSON"
+  }
+ ]
+}

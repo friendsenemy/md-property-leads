@@ -11,6 +11,17 @@
    "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
    "imported_at": "2026-11-15",
    "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
+  },
+  {
+   "estate_number": "",
+   "status": "NONE FOUND",
+   "decedent": "MARY C LAPADULA",
+   "decedent_searched": "MARY C LAPADULA",
+   "date_of_death": "2010-08-28",
+   "title_class": "D1",
+   "title_class_label": "No Maryland estate found (statewide search by last name + date of death)",
+   "imported_at": "2026-11-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)"
   }
  ]
 }

@@ -1,0 +1,649 @@
+{
+ "account": "0501088971",
+ "estates": [
+  {
+   "estate_number": "46478",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "08/22/2000",
+   "date_closed": "08/26/2016",
+   "decedent": "FRANCIS M LOWMAN",
+   "date_of_death": "8/24/1998",
+   "date_of_filing": "08/01/2014",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "BRUCE  LOWMAN",
+     "address": "7326 LAUREL CREEK COURT, SPRINGFIELD, VA 22150"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/22/2000",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "08/22/2000",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "08/22/2000",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2000",
+     "n": 4,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/22/2000",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "08/22/2000",
+     "n": 6,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 9/30/92 (UNPROBATED)",
+     "pages": 4
+    },
+    {
+     "filed": "02/21/2002",
+     "n": 7,
+     "code": "1103",
+     "desc": "SUPPLEMENTAL SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 5
+    },
+    {
+     "filed": "04/07/2003",
+     "n": 8,
+     "code": "1103",
+     "desc": "(SUPPLEMENTAL) SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "10/08/2004",
+     "n": 9,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT LITIGATION STATUS",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2004",
+     "n": 10,
+     "code": "1244",
+     "desc": "STATUS LETTER",
+     "pages": 1
+    },
+    {
+     "filed": "10/20/2004",
+     "n": 11,
+     "code": "1244",
+     "desc": "STATUS LETTER",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2006",
+     "n": 12,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT LITIGATION STATUS (BE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2006",
+     "n": 13,
+     "code": "1244",
+     "desc": "STATUS LETTER (BE)",
+     "pages": 1
+    },
+    {
+     "filed": "11/28/2007",
+     "n": 14,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT  LITIGATION STATUS (DR)",
+     "pages": 1
+    },
+    {
+     "filed": "12/05/2007",
+     "n": 15,
+     "code": "1244",
+     "desc": "STATUS LETTER (DR)",
+     "pages": 1
+    },
+    {
+     "filed": "06/26/2009",
+     "n": 16,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT LITIGATION STATUS (KEK)",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2009",
+     "n": 17,
+     "code": "1244",
+     "desc": "LETTER TO PR REQUESTING RESIDENT AGENT (KEK)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2009",
+     "n": 18,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S) (KEK)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2009",
+     "n": 19,
+     "code": "1244",
+     "desc": "STATUS LETTER (KEK)",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2009",
+     "n": 20,
+     "code": "1137",
+     "desc": "4TH (SUPPLEMENTAL) SCHEDULE B (SMALL ESTATE) (EFO)",
+     "pages": 2
+    },
+    {
+     "filed": "07/21/2009",
+     "n": 21,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE, PASSED BY ORDER OF COURT ON JULY 23, 2009 (2) COPIES MAILED (EFO)",
+     "pages": 3
+    },
+    {
+     "filed": "01/21/2011",
+     "n": 22,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT LITIGATION STATUS",
+     "pages": 1
+    },
+    {
+     "filed": "01/26/2011",
+     "n": 23,
+     "code": "1244",
+     "desc": "STATUS LETTER (LRH)",
+     "pages": 1
+    },
+    {
+     "filed": "03/29/2011",
+     "n": 24,
+     "code": "1244",
+     "desc": "LETTER TO ATTORNEY REQUESTING SUCCESSOR PERSONAL REPRESENTATIVE _________________________",
+     "pages": 1
+    },
+    {
+     "filed": "08/01/2014",
+     "n": 25,
+     "code": "1376",
+     "desc": "PETITION TO APPOINT SUCCESSOR PERSONAL REPRESENTATIVE OF A SMALL ESTATE (LRH)",
+     "pages": 4
+    },
+    {
+     "filed": "08/01/2014",
+     "n": 26,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS (LRH)",
+     "pages": 1
+    },
+    {
+     "filed": "08/01/2014",
+     "n": 27,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S) (LRH)",
+     "pages": 1
+    },
+    {
+     "filed": "08/01/2014",
+     "n": 28,
+     "code": "1400",
+     "desc": "CONTRACT OF REPRESENTATION (LRH)",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2014",
+     "n": 29,
+     "code": "2003",
+     "desc": "FILE REQUESTED FROM HALL OF RECORDS",
+     "pages": 1
+    },
+    {
+     "filed": "08/27/2014",
+     "n": 30,
+     "code": "2001",
+     "desc": "FILE RECEIVED FROM HALL OF RECORDS (CAL)",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/2014",
+     "n": 31,
+     "code": "1284",
+     "desc": "ORDER OF COURT",
+     "pages": 1
+    },
+    {
+     "filed": "08/28/2014",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "12/23/2014",
+     "n": 33,
+     "code": "1137",
+     "desc": "4TH SUPPLEMENTAL SCHEDULE B (SMALL ESTATE) (GTJ FOR JSC)",
+     "pages": 2
+    },
+    {
+     "filed": "12/20/2016",
+     "n": 34,
+     "code": "2002",
+     "desc": "FILE SENT TO HALL OF RECORDS",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2025",
+     "n": 35,
+     "code": "1202",
+     "desc": "MOTION TO WITHDRAW AS ATTORNEY (KNS)",
+     "pages": 5
+    },
+    {
+     "filed": "01/30/2025",
+     "n": 36,
+     "code": "1284",
+     "desc": "ORDER OF COURT REMOVING JULIE A SWANN, ESQ. AS ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "01/30/2025",
+     "n": 37,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "05/06/2026",
+     "n": 38,
+     "code": "2002",
+     "desc": "FILE SENT TO HALL OF RECORDS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2026-05-06",
+   "interested_persons": [
+    {
+     "name": "BRUCE LOWMAN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 729,
+   "probate_age_days": 5848,
+   "days_since_last_docket": 197,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926346869",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926346869",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "FRANCIS MARION LOWMAN JR"
+  },
+  {
+   "estate_number": "67136",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "06/20/2008",
+   "date_closed": "10/01/2009",
+   "decedent": "VIRGINIA CATHERINE LOWMAN",
+   "date_of_death": "5/27/2008",
+   "date_of_filing": "06/20/2008",
+   "will": "PROBATED",
+   "aliases": "VIRGINIA C LOWMAN",
+   "attorney": "JULIA ANDERSON REINHART [92 FRANKLIN STREET, PO BOX 64, ANNAPOLIS, MD 21404]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LAWRENCE R PRATT",
+     "address": "304 EAST FOREST TRAIL, CROWNSVILLE, MD 21032"
+    },
+    {
+     "name": "MARY J PRATT",
+     "address": "304 EAST FOREST TRAIL, CROWNSVILLE, MD 21032"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/20/2008",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JUNE 1, 2007 (PROBATED)",
+     "pages": 23
+    },
+    {
+     "filed": "06/20/2008",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "06/20/2008",
+     "n": 3,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/20/2008",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2008",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2008",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2008",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/18/2008",
+     "n": 8,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE) (SDB)",
+     "pages": 1
+    },
+    {
+     "filed": "09/18/2008",
+     "n": 9,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE-MEALS ON WHEELS OF CENTRAL MARYLAND, INC (SC)",
+     "pages": 3
+    },
+    {
+     "filed": "09/18/2008",
+     "n": 10,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING INVENTORY TO NOVEMBER 20, 2008 PASSED BY ORDER OF COURT THE 23RD DAY OF SEPTEMBER 2008 (2 COPIES MAILED 9/24/2008) (GA)",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2008",
+     "n": 11,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE-CITIBANK (SOUTH DAKOTA), N.A.(GA)",
+     "pages": 5
+    },
+    {
+     "filed": "10/14/2008",
+     "n": 12,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE-STATE OF MD MEDICAL ASSISTANCE (GA)",
+     "pages": 2
+    },
+    {
+     "filed": "11/24/2008",
+     "n": 13,
+     "code": "1122",
+     "desc": "INVENTORY  $248,520.00 (DMR)",
+     "pages": 21
+    },
+    {
+     "filed": "11/25/2008",
+     "n": 14,
+     "code": "1332",
+     "desc": "ROW LETTER TO LAWRENCE PRATT AND MARY PRATT RE: RIDER FOR BOND (DR)",
+     "pages": 1
+    },
+    {
+     "filed": "12/01/2008",
+     "n": 15,
+     "code": "1244",
+     "desc": "LETTER TO ROW AACO FROM STATE OF MD MEDICAL ASSISTANCE REQUESTING ASSET INFORMATION (GA)",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2008",
+     "n": 16,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE-BANK OF AMERICA (GA)",
+     "pages": 2
+    },
+    {
+     "filed": "01/08/2009",
+     "n": 17,
+     "code": "1200",
+     "desc": "ENTRY OF APPEARANCE OF JULIA ANDERSON REINHART, ESQ (DR)",
+     "pages": 1
+    },
+    {
+     "filed": "01/26/2009",
+     "n": 18,
+     "code": "1331",
+     "desc": "LETTER TO ROW FROM MICHAEL LEVINE, CONCERNING STATE OF MARYLAND CLAIM (DR) COPY ATTACHED",
+     "pages": 3
+    },
+    {
+     "filed": "01/29/2009",
+     "n": 19,
+     "code": "1128",
+     "desc": "DUPLICATE CLAIM AGAINST DECEDENT'S ESTATE-BANK OF AMERICA (GA)",
+     "pages": 2
+    },
+    {
+     "filed": "02/19/2009",
+     "n": 20,
+     "code": "1128",
+     "desc": "DUPLICATE CLAIM AGAINST DECEDENT'S ESTATE-BANK OF AMERICA (GA)",
+     "pages": 2
+    },
+    {
+     "filed": "02/26/2009",
+     "n": 21,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT - FILED $248,520.00  (LCR)",
+     "pages": 4
+    },
+    {
+     "filed": "02/26/2009",
+     "n": 22,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE (CLAIM NEVER FILED WITH ROW AACO)-CITICARDS/CITICORP CREDIT SERVICES, INC./CITIBANK AND HOME DEPOT CREDIT SERVICES (GA)",
+     "pages": 5
+    },
+    {
+     "filed": "02/26/2009",
+     "n": 23,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE-BANK OF AMERICA (GA)",
+     "pages": 3
+    },
+    {
+     "filed": "02/26/2009",
+     "n": 24,
+     "code": "1129",
+     "desc": "NOTICE OF DISALLOWANCE-CITIBANK (SOUTH DAKOTA), N.A. (GA)",
+     "pages": 3
+    },
+    {
+     "filed": "03/03/2009",
+     "n": 25,
+     "code": "1125",
+     "desc": "2 APPLICATIONS TO FIX INHERITANCE TAX ON NON-PROBATE ASSETS -- **PAID** -- REC# 87319 -- MJG",
+     "pages": 2
+    },
+    {
+     "filed": "03/16/2009",
+     "n": 27,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE-MAREX CORPORATION D/B/A PETRO (GA)",
+     "pages": 2
+    },
+    {
+     "filed": "07/23/2009",
+     "n": 28,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE-LAWRENCE R. PRATT & MARY J. PRATT (GA)",
+     "pages": 8
+    },
+    {
+     "filed": "08/31/2009",
+     "n": 29,
+     "code": "1230",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING SECOND ADMINISTRATION ACCOUNT UNTIL 09/26/2009(4 COPIES MAILED 08/31/2009 PER NEW RULES 1-1-91)   (PPC)",
+     "pages": 2
+    },
+    {
+     "filed": "09/14/2009",
+     "n": 30,
+     "code": "1285",
+     "desc": "AFFIDAVIT OF SERVICE (LCR)",
+     "pages": 5
+    },
+    {
+     "filed": "09/17/2009",
+     "n": 32,
+     "code": "1223",
+     "desc": "PARTIAL SATISFACTION OF CLAIM-STATE OF MD MEDICAL ASSISTANCE (GA)",
+     "pages": 2
+    },
+    {
+     "filed": "09/23/2009",
+     "n": 33,
+     "code": "1382",
+     "desc": "REVISED INVENTORY $200,520.00  (LCR)",
+     "pages": 2
+    },
+    {
+     "filed": "09/24/2009",
+     "n": 34,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM-MAREX CORPORATION (GA)",
+     "pages": 3
+    },
+    {
+     "filed": "09/24/2009",
+     "n": 35,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM-MEALS ON WHEELS OF CENTRAL MD (GA)",
+     "pages": 3
+    },
+    {
+     "filed": "09/24/2009",
+     "n": 36,
+     "code": "1223",
+     "desc": "DUPLICATE PARTIAL SATISFACTION OF CLAIM-STATE OF MD MEDICAL ASSISTANCE (GA)",
+     "pages": 3
+    },
+    {
+     "filed": "09/25/2009",
+     "n": 37,
+     "code": "1385",
+     "desc": "SECOND & FINAL ACCOUNT - $195,161.05 (LCR)",
+     "pages": 6
+    },
+    {
+     "filed": "09/25/2009",
+     "n": 38,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY  (LCR)",
+     "pages": 1
+    },
+    {
+     "filed": "09/28/2009",
+     "n": 39,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM - LAWRENCE R PRATT & MARY J PRATT (GA)",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2009",
+     "n": 40,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM - MEALS ON WHEELS (GA)",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2009",
+     "n": 42,
+     "code": "1334",
+     "desc": "AFFIDAVIT FILED BY JULIA A. REINHART, ESQUIRE  (LCR)",
+     "pages": 5
+    },
+    {
+     "filed": "10/19/2009",
+     "n": 43,
+     "code": "1391",
+     "desc": "PETITION TO CLOSE ESTATE AND DISCHARGE PERSONAL REPRESENTATIVE (LCR)",
+     "pages": 2
+    },
+    {
+     "filed": "10/22/2009",
+     "n": 45,
+     "code": "1223",
+     "desc": "DUPLICATE SATISFACTION OF CLAIM-STATE OF MD MEDICAL ASSISTANCE (GA)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2009-10-22",
+   "interested_persons": [
+    {
+     "name": "LAWRENCE R PRATT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "MARY J PRATT",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 24,
+   "probate_age_days": 468,
+   "days_since_last_docket": 6237,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-19",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1926385464",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1926385464",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "VIRGINIA TECKLA LOWMAN"
+  }
+ ]
+}
