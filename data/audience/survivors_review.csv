@@ -1,4 +1,25 @@
 heir_name,relation,heir_town,heir_state,town_is_guess,decedent,date_of_death,property_address,property_city,county,sdat_account,obituary_url
+Bobby Smith,spouse,Baltimore,MD,yes,Pamela Rae Smith,2026,1407 GARDMAN AVE,Baltimore,Baltimore,04030306021800,https://www.legacy.com/us/obituaries/name/pamela-smith-obituary?id=63012904
+July Smith,in-law,Baltimore,MD,yes,Pamela Rae Smith,2026,1407 GARDMAN AVE,Baltimore,Baltimore,04030306021800,https://www.legacy.com/us/obituaries/name/pamela-smith-obituary?id=63012904
+Robert Martin,child,Hagerstown,MD,yes,Robert (Bob) Monroe Martin,2026,53 VERMONT AVE,Earleville,Cecil,0801015451,https://www.legacy.com/us/obituaries/name/robert-martin-obituary?id=63015198
+Edward Burns,spouse,Calvert County,MD,yes,Linda Dianne Burns,2026,1720 RENAISSANCE DR,Baltimore,Baltimore,04152500005302,https://www.legacy.com/us/obituaries/name/linda-burns-obituary?id=63012405
+Stuart Brown,spouse,Baltimore,MD,yes,Theresa (Terre) L. Brown,2026,1114 N MONTFORD AVE,Baltimore,Baltimore City,0308131554 039,https://www.legacy.com/us/obituaries/name/theresa-brown-obituary?id=63015281
+Mary Hantske,child,Lothian,MD,,Robert (Bob) Stallings Moreland,2026,8774 ENDLESS OCEAN WAY,Columbia,Howard,1416215635,https://www.legacy.com/us/obituaries/name/robert-moreland-obituary?id=63014647
+Mark Hantske,in-law,Lothian,MD,,Robert (Bob) Stallings Moreland,2026,8774 ENDLESS OCEAN WAY,Columbia,Howard,1416215635,https://www.legacy.com/us/obituaries/name/robert-moreland-obituary?id=63014647
+Barbara Rowland,child,Galesville,MD,,Robert (Bob) Stallings Moreland,2026,8774 ENDLESS OCEAN WAY,Columbia,Howard,1416215635,https://www.legacy.com/us/obituaries/name/robert-moreland-obituary?id=63014647
+Wayne Rowland,in-law,Galesville,MD,,Robert (Bob) Stallings Moreland,2026,8774 ENDLESS OCEAN WAY,Columbia,Howard,1416215635,https://www.legacy.com/us/obituaries/name/robert-moreland-obituary?id=63014647
+Robin Bembe,child,Galesville,MD,,Robert (Bob) Stallings Moreland,2026,8774 ENDLESS OCEAN WAY,Columbia,Howard,1416215635,https://www.legacy.com/us/obituaries/name/robert-moreland-obituary?id=63014647
+Jennifer Seibert,child,Dunkirk,MD,,Robert (Bob) Stallings Moreland,2026,8774 ENDLESS OCEAN WAY,Columbia,Howard,1416215635,https://www.legacy.com/us/obituaries/name/robert-moreland-obituary?id=63014647
+Jim Seibert,in-law,Dunkirk,MD,,Robert (Bob) Stallings Moreland,2026,8774 ENDLESS OCEAN WAY,Columbia,Howard,1416215635,https://www.legacy.com/us/obituaries/name/robert-moreland-obituary?id=63014647
+Katherine Lindsay,child,Timonium,MD,yes,Sharon Mann,,646 SEVERN RD,Severna Park,Anne Arundel,020312690048946,https://www.legacy.com/us/obituaries/name/sharon-mann-obituary?id=63019455
+Mark Horowitz,child,Timonium,MD,yes,Sharon Mann,,646 SEVERN RD,Severna Park,Anne Arundel,020312690048946,https://www.legacy.com/us/obituaries/name/sharon-mann-obituary?id=63019455
+Bernice Todaro,spouse,Chevy Chase,MD,yes,James Michael Todaro,2026-11-07,2102 E PRATT ST,Baltimore,Baltimore City,0301011748 039,https://www.legacy.com/us/obituaries/washingtonpost/name/james-todaro-obituary?id=62982015
+Linda Simpson,spouse,Gaithersburg,MD,yes,Gary Wayne Simpson,2026-11-16,18804 KEIFFER WAY,Gaithersburg,Montgomery,160900802284,https://www.legacy.com/us/obituaries/name/gary-simpson-obituary?id=63014380
+Jennifer Shaw,child,Gaithersburg,MD,yes,Gary Wayne Simpson,2026-11-16,18804 KEIFFER WAY,Gaithersburg,Montgomery,160900802284,https://www.legacy.com/us/obituaries/name/gary-simpson-obituary?id=63014380
+Brandon Simpson,child,Gaithersburg,MD,yes,Gary Wayne Simpson,2026-11-16,18804 KEIFFER WAY,Gaithersburg,Montgomery,160900802284,https://www.legacy.com/us/obituaries/name/gary-simpson-obituary?id=63014380
+Matthew Alexander,child,Gaithersburg,MD,yes,Gary Wayne Simpson,2026-11-16,18804 KEIFFER WAY,Gaithersburg,Montgomery,160900802284,https://www.legacy.com/us/obituaries/name/gary-simpson-obituary?id=63014380
+Ricky Alexander,child,Gaithersburg,MD,yes,Gary Wayne Simpson,2026-11-16,18804 KEIFFER WAY,Gaithersburg,Montgomery,160900802284,https://www.legacy.com/us/obituaries/name/gary-simpson-obituary?id=63014380
+Robert Hayes,child,Carroll County,MD,yes,Robert Hayes Sr.,,333 WILMA CT,North East,Cecil,0805138525,https://www.legacy.com/us/obituaries/carrollcountytimes/name/robert-hayes-obituary?id=63017011
 April Walkovic,niece/nephew,her extended family,MD,,Catherine E. Walkovic,2026-10-29,4 NEWPORT DR,Ocean Pines,Worcester,2403074137,https://www.legacy.com/us/obituaries/name/catherine-walkovic-obituary?id=63010396
 Kimberly Walkovic,niece/nephew,her extended family,MD,,Catherine E. Walkovic,2026-10-29,4 NEWPORT DR,Ocean Pines,Worcester,2403074137,https://www.legacy.com/us/obituaries/name/catherine-walkovic-obituary?id=63010396
 David Walkovic,niece/nephew,her extended family,MD,,Catherine E. Walkovic,2026-10-29,4 NEWPORT DR,Ocean Pines,Worcester,2403074137,https://www.legacy.com/us/obituaries/name/catherine-walkovic-obituary?id=63010396
@@ -2472,8 +2493,6 @@ Terri Schmidt,in-law,Rising Sun,MD,yes,Theresa Cecilia Schmidt,2026,20 CYPRESS D
 David Williams,child,Rising Sun,MD,yes,Rose Emma Williams,,1901 HOLLINS ST,Baltimore,Baltimore City,20130224035,https://www.legacy.com/us/obituaries/cecildaily/name/rose-williams-obituary?id=62176325
 Gail Frazier,spouse,Rising Sun,MD,yes,David Lee Frazier,2026,1000 WEST RD,Salisbury,Wicomico,2309019863,https://www.legacy.com/us/obituaries/cecildaily/name/david-frazier-obituary?id=62201566
 Joanne Koch,spouse,Cockeysville,MD,yes,Rev.  John R. Koch,2026-08-03,9613 LABRADOR LN,Cockeysville,Baltimore,04081600000173,https://www.legacy.com/us/obituaries/cecildaily/name/john-koch-obituary?id=62206073
-David Berry,sibling,Colora,MD,yes,"Mary Francis ""Fran"" Gibson",2026-07-22,4923 SILVERADO CT,Whtie Plains,Charles,0906339301,https://www.legacy.com/us/obituaries/cecildaily/name/mary-gibson-obituary?id=62215344
-Phyllis Berry,in-law,Colora,MD,yes,"Mary Francis ""Fran"" Gibson",2026-07-22,4923 SILVERADO CT,Whtie Plains,Charles,0906339301,https://www.legacy.com/us/obituaries/cecildaily/name/mary-gibson-obituary?id=62215344
 TJ Allen,child,Parkville,MD,yes,"John Thomas ""Jack"" Allen Jr.",2026,1 OVERPARK CT,Parkville,Baltimore,04090919718430,https://www.legacy.com/us/obituaries/cecildaily/name/john-allen-obituary?id=62241301
 Terrie Dorezas,spouse,Rising Sun,MD,yes,Stephen A. Dorezas,2026,4201 COASTAL HWY,Ocean City,Worcester,2410759161,https://www.legacy.com/us/obituaries/cecildaily/name/stephen-dorezas-obituary?id=62258035
 Emily Dorezas,child,Rising Sun,MD,yes,Stephen A. Dorezas,2026,4201 COASTAL HWY,Ocean City,Worcester,2410759161,https://www.legacy.com/us/obituaries/cecildaily/name/stephen-dorezas-obituary?id=62258035
@@ -2577,7 +2596,6 @@ JB Barron,in-law,Chestertown,MD,yes,"William Craig ""Bill"" Barron",2026,12745 I
 Bill McMullan,sibling,Chestertown,MD,yes,"William Craig ""Bill"" Barron",2026,12745 INDIAN FIELD CT,Worton,Kent,1503010791,https://www.legacy.com/us/obituaries/myeasternshoremd-kent/name/william-barron-obituary?id=62028219
 Kathy Dowling,spouse,Chestertown,MD,yes,Robert David Dowling,2026-08-03,6164 BROAD NECK RD,Chestertown,Kent,1507001649,https://www.legacy.com/us/obituaries/myeasternshoremd-kent/name/robert-dowling-obituary?id=62139869
 Ginger Collier,spouse,Chestertown,MD,yes,Thomas Austin Collier,2026,5306 JOHNSONTOWN RD,Chestertown,Kent,1507007248,https://www.legacy.com/us/obituaries/myeasternshoremd-kent/name/thomas-collier-obituary?id=62276959
-Portia Gsell,spouse,Chestertown,MD,yes,Joseph Clifford Gsell,2026-07-22,8603 ROCK HALL RD,Chestertown,Kent,1506024297,https://www.legacy.com/us/obituaries/myeasternshoremd-kent/name/joseph-gsell-obituary?id=62062815
 Richard Nickerson,child,Chestertown,MD,yes,"Richard L. ""Nick"" Nickerson Sr.",2026-08-07,310 MAYFAIR DR,Chestertown,Kent,1504024605,https://www.legacy.com/us/obituaries/myeasternshoremd-kent/name/richard-nickerson-obituary?id=62153531
 Hedvig Angell,spouse,Rock Hall,MD,yes,"Oddmund Sigbjorn ""Artie"" Angell",2026-08-13,,,Kent County,1505020468,https://www.legacy.com/us/obituaries/myeasternshoremd-kent/name/oddmund-angell-obituary?id=62203945
 Heidi Tortu,child,Rock Hall,MD,yes,"Oddmund Sigbjorn ""Artie"" Angell",2026-08-13,,,Kent County,1505020468,https://www.legacy.com/us/obituaries/myeasternshoremd-kent/name/oddmund-angell-obituary?id=62203945
