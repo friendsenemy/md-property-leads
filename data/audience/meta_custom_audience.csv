@@ -1,4 +1,8 @@
 fn,ln,ct,st,zip,country
+Christopher,Farver,Richmond,VA,,US
+Shannon,Jones,Richmond,VA,,US
+Linda,Smith,Sparrows Point,MD,21403,US
+Beth,Bolen,Bethesda,MD,20816,US
 Bobby,Smith,Baltimore,MD,21209,US
 July,Smith,Baltimore,MD,21209,US
 Robert,Martin,Hagerstown,MD,21919,US
@@ -2112,8 +2116,6 @@ Mikaela,Alexander,Oakland,MD,21239,US
 Scott,Alexander,Oakland,MD,21239,US
 Joshua,Porter,Oakland,MD,21239,US
 Amy,Porter,Oakland,MD,21239,US
-Sharon,DiGioia,Oakland,MD,21550,US
-July,DiGioia,Oakland,MD,21550,US
 Harriett,Weeks,Oakland,MD,21550,US
 Amanda,Winters,Frederick,MD,21228,US
 Angela,Svara,Mt. Airy,MD,21771,US
