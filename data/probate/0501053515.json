@@ -1,0 +1,116 @@
+{
+ "account": "0501053515",
+ "estates": [
+  {
+   "estate_number": "4901",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "07/05/1991",
+   "date_closed": "02/09/2026",
+   "decedent": "LOUIS J. MOSCHETTO SR.",
+   "date_of_death": "5/16/1991",
+   "date_of_filing": "07/05/1991",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JOSEPH A. MOSCHETTO SR.",
+     "address": "21843 LADYSLIPPER SQUARE, ASHBURN, VA 20147"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/05/1991",
+     "n": 1,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 25
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 2,
+     "code": "1103",
+     "desc": "AMENDED SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 3,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 4,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 5,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 6,
+     "code": "1108",
+     "desc": "AMENDED ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 7,
+     "code": "1124",
+     "desc": "AMENDED INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 8,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "07/30/2025",
+     "n": 9,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/15/2025",
+     "n": 10,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2025-08-15",
+   "interested_persons": [
+    {
+     "name": "JOSEPH A. MOSCHETTO SR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 50,
+   "probate_age_days": 12638,
+   "days_since_last_docket": 462,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1927384674",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1927384674",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "LOUIS J MOSCHETTO JR"
+  }
+ ]
+}

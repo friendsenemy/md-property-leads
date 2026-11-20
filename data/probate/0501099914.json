@@ -1,0 +1,193 @@
+{
+ "account": "0501099914",
+ "estates": [
+  {
+   "estate_number": "W67245",
+   "status": "CLOSED",
+   "type": "MA",
+   "date_opened": "12/14/2010",
+   "date_closed": "02/10/2012",
+   "decedent": "MARJORIE A. BIERSNER",
+   "date_of_death": "4/8/2007",
+   "date_of_filing": "12/14/2010",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ROBERT J. BIERSNER",
+     "address": "9914 CAPITOL VIEW AVENUE, SILVER SPRING, MD 20910"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "12/14/2010",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "12/14/2010",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (3  )",
+     "pages": 2
+    },
+    {
+     "filed": "12/14/2010",
+     "n": 3,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS' MEMORANDUM - INCOMPLETE FILING - NO PERSONAL REPRESENTATIVE APPOINTED",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2011",
+     "n": 4,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2011",
+     "n": 5,
+     "code": "1117",
+     "desc": "WAIVER OF BOND-FILED 12/28/2010",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 6,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 9,
+     "code": "1141",
+     "desc": "ELECTION OF PERSONAL REPRESENTATIVE FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 10,
+     "code": "1142",
+     "desc": "CONSENT TO ELECTION FOR MODIFIED ADMINSTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "01/06/2011",
+     "n": 11,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 2
+    },
+    {
+     "filed": "01/19/2011",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/01/2011",
+     "n": 13,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "03/07/2011",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "04/05/2011",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "04/07/2011",
+     "n": 16,
+     "code": "1356",
+     "desc": "NON-PROBATE INHERITANCE TAX ADVICE: NO INHERITANCE TAX DUE",
+     "pages": 1
+    },
+    {
+     "filed": "10/07/2011",
+     "n": 17,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "10/31/2011",
+     "n": 18,
+     "code": "1143",
+     "desc": "FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 5
+    },
+    {
+     "filed": "12/15/2011",
+     "n": 19,
+     "code": "1146",
+     "desc": "CONSENT TO EXTEND TIME TO FILE FINAL REPORT AND TO MAKE DISTRIBUTION IN A MODIFIED ADMINISTRATION UNTIL 2/6/12",
+     "pages": 2
+    },
+    {
+     "filed": "01/31/2012",
+     "n": 20,
+     "code": "1143",
+     "desc": "AMENDED FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 11
+    },
+    {
+     "filed": "02/10/2012",
+     "n": 21,
+     "code": "1436",
+     "desc": "REGISTER OF WILLS NOTICE OF REVIEW OF FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2012-02-10",
+   "interested_persons": [
+    {
+     "name": "ROBERT J. BIERSNER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 1346,
+   "probate_age_days": 423,
+   "days_since_last_docket": 5397,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-20",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1927732933",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1927732933",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARJORIE A BIERSNER"
+  }
+ ]
+}
