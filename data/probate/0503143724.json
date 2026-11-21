@@ -1,0 +1,193 @@
+{
+ "account": "0503143724",
+ "estates": [
+  {
+   "estate_number": "80152",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "09/20/2012",
+   "date_closed": "07/02/2013",
+   "decedent": "HEWITT W. MAUS JR",
+   "date_of_death": "3/26/2011",
+   "date_of_filing": "09/20/2012",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "RICHARD J HAM [164 SPRING PLACE WAY, ANNAPOLIS, MD 21401-7298]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "PATRICIA  MAUS",
+     "address": "3841 PONDER DRIVE, EDGEWATER, MD 21037"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/20/2012",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOVEMBER 21, 2003 (PROBATED)",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/20/2012",
+     "n": 8,
+     "code": "1102",
+     "desc": "PROOF OF EXECUTION OF WILL",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2012",
+     "n": 9,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "10/22/2012",
+     "n": 10,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL",
+     "pages": 1
+    },
+    {
+     "filed": "12/05/2012",
+     "n": 11,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "12/19/2012",
+     "n": 12,
+     "code": "1122",
+     "desc": "INVENTORY (TMM)",
+     "pages": 15
+    },
+    {
+     "filed": "12/21/2012",
+     "n": 13,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST (TMM)",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2013",
+     "n": 14,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED (TMM)",
+     "pages": 14
+    },
+    {
+     "filed": "06/05/2013",
+     "n": 15,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 16,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED (MBF)",
+     "pages": 4
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 17,
+     "code": "1130",
+     "desc": "PETITION AND ORDER FOR FUNERAL EXPENSES (MBF)",
+     "pages": 4
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 18,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE (MBF)",
+     "pages": 8
+    },
+    {
+     "filed": "06/24/2013",
+     "n": 19,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT (MBF)",
+     "pages": 12
+    },
+    {
+     "filed": "07/02/2013",
+     "n": 20,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND FINAL ACCOUNT (MF)",
+     "pages": 1
+    },
+    {
+     "filed": "07/02/2013",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS (DSC)",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2013-07-02",
+   "interested_persons": [
+    {
+     "name": "PATRICIA MAUS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 544,
+   "probate_age_days": 285,
+   "days_since_last_docket": 4890,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1927875202",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1927875202",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "HEWITT W MAUS IV"
+  }
+ ]
+}

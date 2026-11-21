@@ -1,0 +1,81 @@
+{
+ "account": "0501178938",
+ "estates": [
+  {
+   "estate_number": "113207",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "09/20/2000",
+   "date_closed": "09/20/2000",
+   "decedent": "JOHN BARTLETT BROCK",
+   "date_of_death": "8/29/2000",
+   "date_of_filing": "09/20/2000",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "FLORENCE LEE BROCK",
+     "address": "14013 JARRETTSVILLE PIKE, PHOENIX, MD 21131"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/20/2000",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 09/22/1979 REGISTER OF WILLS PROOF OF CUSTODY",
+     "pages": 2
+    },
+    {
+     "filed": "09/20/2000",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2000",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2000",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2000",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2000-09-20",
+   "interested_persons": [
+    {
+     "name": "FLORENCE LEE BROCK",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 22,
+   "probate_age_days": 0,
+   "days_since_last_docket": 9558,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1927980926",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1927980926",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOHN B BROCK"
+  }
+ ]
+}

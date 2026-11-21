@@ -1,0 +1,333 @@
+{
+ "account": "0501201824",
+ "estates": [
+  {
+   "estate_number": "96073",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/19/2014",
+   "date_closed": "08/19/2015",
+   "decedent": "SUSAN DIANE EVANS",
+   "date_of_death": "2/13/2013",
+   "date_of_filing": "03/13/2014",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "WILLIAM L. CALLAHAN [11304 RHODE ISLAND AVE, BELTSVILLE, MD 20705]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "KATHERINE Z CONNOR",
+     "address": "8242 WELLINGTON PLACE, JESSUP, MD 20794"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/13/2014",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 4
+    },
+    {
+     "filed": "03/13/2014",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE (4)",
+     "pages": 4
+    },
+    {
+     "filed": "03/13/2014",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2014",
+     "n": 4,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 1
+    },
+    {
+     "filed": "03/19/2014",
+     "n": 5,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- INCOMPLETE FILING",
+     "pages": 1
+    },
+    {
+     "filed": "03/28/2014",
+     "n": 6,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "04/15/2014",
+     "n": 7,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "04/15/2014",
+     "n": 8,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "04/15/2014",
+     "n": 9,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "04/15/2014",
+     "n": 10,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "05/09/2014",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "05/14/2014",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "05/15/2014",
+     "n": 13,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/16/2014",
+     "n": 14,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2014",
+     "n": 15,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "08/06/2014",
+     "n": 16,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR INVENTORY   HEARING SCHEDULED FOR 09/16/2014",
+     "pages": 1
+    },
+    {
+     "filed": "08/11/2014",
+     "n": 17,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "09/09/2014",
+     "n": 18,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 10
+    },
+    {
+     "filed": "09/12/2014",
+     "n": 19,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "09/12/2014",
+     "n": 20,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2014",
+     "n": 21,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 3
+    },
+    {
+     "filed": "12/16/2014",
+     "n": 22,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "01/14/2015",
+     "n": 23,
+     "code": "1282",
+     "desc": "REQUEST FOR EXTENSION OF TIME TO COMPLETE OR CORRECT ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "01/15/2015",
+     "n": 24,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO FILE FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2015",
+     "n": 25,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT  HEARING SCHEDULED FOR APRIL 7,",
+     "pages": 2015
+    },
+    {
+     "filed": "03/09/2015",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "04/01/2015",
+     "n": 27,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 13
+    },
+    {
+     "filed": "04/01/2015",
+     "n": 28,
+     "code": "1385",
+     "desc": "FINAL ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "04/01/2015",
+     "n": 29,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 6
+    },
+    {
+     "filed": "04/01/2015",
+     "n": 30,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "04/15/2015",
+     "n": 31,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 2
+    },
+    {
+     "filed": "04/24/2015",
+     "n": 32,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/01/2015",
+     "n": 33,
+     "code": "1384",
+     "desc": "AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "06/02/2015",
+     "n": 34,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "07/07/2015",
+     "n": 35,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCOUNT  HEARING SCHEDULED FOR AUGUST 11,",
+     "pages": 2015
+    },
+    {
+     "filed": "07/08/2015",
+     "n": 36,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/06/2015",
+     "n": 37,
+     "code": "1384",
+     "desc": "SECOND AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "08/18/2015",
+     "n": 38,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2015",
+     "n": 39,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING PETITION FOR ATTORNEY FEES",
+     "pages": 1
+    },
+    {
+     "filed": "08/18/2015",
+     "n": 40,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 2ND AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/20/2015",
+     "n": 41,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    }
+   ],
+   "last_docket_activity": "2015-08-20",
+   "interested_persons": [
+    {
+     "name": "KATHERINE Z CONNOR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 399,
+   "probate_age_days": 518,
+   "days_since_last_docket": 4111,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928656883",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928656883",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "SUSAN D EVANS"
+  }
+ ]
+}

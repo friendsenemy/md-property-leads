@@ -1,0 +1,193 @@
+{
+ "account": "0502016796",
+ "estates": [
+  {
+   "estate_number": "84725",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "07/03/2014",
+   "date_closed": "04/07/2015",
+   "decedent": "SAMUEL WALTER SAUNDERS",
+   "date_of_death": "6/6/2014",
+   "date_of_filing": "07/03/2014",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "KENDALL  SCRIVEN",
+     "address": "1325 HALLOCK DRIVE, ODENTON, MD 21113"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/03/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED APRIL 29,",
+     "pages": 2014
+    },
+    {
+     "filed": "07/03/2014",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE WITH ATTACHMENT",
+     "pages": 3
+    },
+    {
+     "filed": "07/03/2014",
+     "n": 3,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "07/03/2014",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/03/2014",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS (FILED ONLY)",
+     "pages": 1
+    },
+    {
+     "filed": "07/03/2014",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "07/03/2014",
+     "n": 7,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/03/2014",
+     "n": 8,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2014",
+     "n": 9,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2014",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2014",
+     "n": 11,
+     "code": "1246",
+     "desc": "RETURN RECEIPT FOR CERTIFIED/REGISTERED MAIL",
+     "pages": 4
+    },
+    {
+     "filed": "08/08/2014",
+     "n": 12,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "08/22/2014",
+     "n": 13,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 08/22/2014 BY BALTIMORE WASHINGTON MEDICAL CENTER/ A.R.M. FOR $250.00",
+     "pages": 7
+    },
+    {
+     "filed": "09/18/2014",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/2014",
+     "n": 15,
+     "code": "1122",
+     "desc": "INVENTORY AF",
+     "pages": 41
+    },
+    {
+     "filed": "03/13/2015",
+     "n": 16,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM- BALTIMORE WASHINGTON MEDICAL CENTER/ A.R.M. (VW/SC)",
+     "pages": 6
+    },
+    {
+     "filed": "03/19/2015",
+     "n": 17,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2015",
+     "n": 18,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY (SC)",
+     "pages": 1
+    },
+    {
+     "filed": "03/27/2015",
+     "n": 19,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT (SC)",
+     "pages": 13
+    },
+    {
+     "filed": "04/07/2015",
+     "n": 20,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND FINAL ACCOUNT (SC)",
+     "pages": 1
+    },
+    {
+     "filed": "04/07/2015",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS (DSC)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2015-04-07",
+   "interested_persons": [
+    {
+     "name": "KENDALL SCRIVEN",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 27,
+   "probate_age_days": 278,
+   "days_since_last_docket": 4246,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1927806129",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1927806129",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "SAMUEL SAUNDERS"
+  }
+ ]
+}

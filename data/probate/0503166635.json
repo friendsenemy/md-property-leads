@@ -1,0 +1,552 @@
+{
+ "account": "0503166635",
+ "estates": [
+  {
+   "estate_number": "11661",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/22/2012",
+   "date_closed": "01/29/2019",
+   "decedent": "CLIFTON R MORSELL SR",
+   "date_of_death": "4/21/2011",
+   "date_of_filing": "02/22/2012",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "ROSEMARY  KEFFLER ESQUIRE [PO BOX 876, PRINCE FREDERICK, MD 20678]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DELORES L. HICKS",
+     "address": "795 PUSHAW STATION ROAD, SUNDERLAND, MD 20689"
+    },
+    {
+     "name": "TIMOTHY M. MORSELL SR.",
+     "address": "655 PUSHAW STATION ROAD, SUNDERLAND, MD 20689"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/22/2012",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED - SEE LATER WILL",
+     "pages": 5
+    },
+    {
+     "filed": "02/22/2012",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "03/20/2012",
+     "n": 3,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED  - FEBRUARY 24,",
+     "pages": 2011
+    },
+    {
+     "filed": "03/20/2012",
+     "n": 4,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "03/20/2012",
+     "n": 5,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE WITH ATTACHED RIDER",
+     "pages": 3
+    },
+    {
+     "filed": "03/20/2012",
+     "n": 6,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (2)",
+     "pages": 7
+    },
+    {
+     "filed": "03/20/2012",
+     "n": 7,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "03/20/2012",
+     "n": 8,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "04/11/2012",
+     "n": 9,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/16/2012",
+     "n": 10,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2012",
+     "n": 11,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "07/05/2012",
+     "n": 12,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "07/05/2012",
+     "n": 13,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "11/20/2012",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/20/2012",
+     "n": 15,
+     "code": "1230",
+     "desc": "REGISTER OF WILLS APPROVAL OF EXTENSION OF TIME TO JANUARY 22, 2013, FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2013",
+     "n": 16,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - FIRST",
+     "pages": 3
+    },
+    {
+     "filed": "02/26/2013",
+     "n": 17,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT - FIRST",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2013",
+     "n": 18,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/02/2013",
+     "n": 19,
+     "code": "1266",
+     "desc": "MEMORANDUM OF THE COURT ISSUED TO DELORES L HICKS, CO-PERSONAL REPRESENTATIVE, TIMOTHY M. MORSELL, SR CO-PERSONAL REPRESENTATIVE & ROSEMARY KEFFLER, ESQUIRE",
+     "pages": 1
+    },
+    {
+     "filed": "04/02/2013",
+     "n": 20,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/08/2013",
+     "n": 21,
+     "code": "1286",
+     "desc": "RESPONSE TO MEMORANDUM OF COURT ISSUED 4-2-2013 FILED BY ROSEMARY KEFFLER, ESQUIRE",
+     "pages": 6
+    },
+    {
+     "filed": "07/29/2013",
+     "n": 22,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/2013",
+     "n": 23,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - SECOND",
+     "pages": 3
+    },
+    {
+     "filed": "09/03/2013",
+     "n": 24,
+     "code": "1396",
+     "desc": "ORDER APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/03/2013",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/03/2014",
+     "n": 26,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/11/2014",
+     "n": 27,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - THIRD",
+     "pages": 2
+    },
+    {
+     "filed": "03/25/2014",
+     "n": 28,
+     "code": "1396",
+     "desc": "ORDER APPROVING THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/25/2014",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/26/2014",
+     "n": 30,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/24/2014",
+     "n": 31,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - FOURTH",
+     "pages": 15
+    },
+    {
+     "filed": "09/30/2014",
+     "n": 32,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT - FOURTH",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2014",
+     "n": 33,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/02/2015",
+     "n": 34,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/26/2015",
+     "n": 35,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - FIFTH",
+     "pages": 2
+    },
+    {
+     "filed": "04/14/2015",
+     "n": 36,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT - FIFTH",
+     "pages": 1
+    },
+    {
+     "filed": "04/14/2015",
+     "n": 37,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2015",
+     "n": 38,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/22/2015",
+     "n": 39,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - SIXTH",
+     "pages": 15
+    },
+    {
+     "filed": "12/29/2015",
+     "n": 40,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT - SIXTH",
+     "pages": 1
+    },
+    {
+     "filed": "12/29/2015",
+     "n": 41,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/31/2016",
+     "n": 42,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/27/2016",
+     "n": 43,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - SEVENTH",
+     "pages": 15
+    },
+    {
+     "filed": "08/02/2016",
+     "n": 44,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING INTERIM ACCOUNT - SEVENTH",
+     "pages": 1
+    },
+    {
+     "filed": "08/02/2016",
+     "n": 45,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2017",
+     "n": 46,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2017",
+     "n": 47,
+     "code": "1383",
+     "desc": "INTERIM ACCOUNT - EIGHTH",
+     "pages": 2
+    },
+    {
+     "filed": "02/14/2017",
+     "n": 48,
+     "code": "1396",
+     "desc": "ORDER APPROVING EIGHTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/14/2017",
+     "n": 49,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/21/2017",
+     "n": 50,
+     "code": "1312",
+     "desc": "CHANGE OF ADDRESS FOR: MICHAEL GREGORY MORSELL",
+     "pages": 1
+    },
+    {
+     "filed": "07/17/2017",
+     "n": 51,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/21/2017",
+     "n": 52,
+     "code": "1383",
+     "desc": "NINTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/29/2017",
+     "n": 53,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING NINTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2017",
+     "n": 54,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2018",
+     "n": 55,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/08/2018",
+     "n": 56,
+     "code": "1383",
+     "desc": "TENTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "03/13/2018",
+     "n": 57,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING TENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/13/2018",
+     "n": 58,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2018",
+     "n": 59,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2018",
+     "n": 60,
+     "code": "1383",
+     "desc": "ELEVENTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "10/02/2018",
+     "n": 61,
+     "code": "1284",
+     "desc": "ORDER PASSED DENYING ELEVENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2018",
+     "n": 62,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2018",
+     "n": 63,
+     "code": "1261",
+     "desc": "SHOW CAUSE ORDER FOR ACCOUNT ISSUED. HEARING SCHEDULED ON NOVEMBER 13, 2018, AT 9:00 A.M.",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2018",
+     "n": 64,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/13/2018",
+     "n": 65,
+     "code": "1301",
+     "desc": "DAILY SHEET",
+     "pages": 5
+    },
+    {
+     "filed": "01/09/2019",
+     "n": 66,
+     "code": "1245",
+     "desc": "PETITION FOR THE ALLOWANCE OF ATTORNEY'S FEES",
+     "pages": 3
+    },
+    {
+     "filed": "01/09/2019",
+     "n": 67,
+     "code": "1385",
+     "desc": "ELEVENTH AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "01/29/2019",
+     "n": 68,
+     "code": "1284",
+     "desc": "ORDER APPROVING PETITION FOR THE ALLOWANCE OF ATTORNEY'S FEES",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2019",
+     "n": 69,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2019",
+     "n": 70,
+     "code": "1386",
+     "desc": "ORDER APPROVING ELEVENTH AND FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/29/2019",
+     "n": 71,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2019-01-29",
+   "interested_persons": [
+    {
+     "name": "DELORES L. HICKS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "TIMOTHY M. MORSELL SR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 307,
+   "probate_age_days": 2533,
+   "days_since_last_docket": 2853,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-21",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928058469",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928058469",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "CLIFTON R MORSELL JR"
+  }
+ ]
+}
