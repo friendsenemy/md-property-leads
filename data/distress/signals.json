@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T18:09:15+00:00",
+ "generated_at": "2026-11-21T17:03:57+00:00",
  "note": "Fire / vacancy / code-enforcement / foreclosure-registry signals matched to SDAT parcels. A block-level fire lists every candidate parcel and is never a confirmed match.",
  "sources": {
   "osfm": {
@@ -11,20 +11,20 @@
    "fetched": 0
   },
   "montgomery": {
-   "fetched": 322,
-   "matched": 298
+   "fetched": 321,
+   "matched": 297
   },
   "prince_georges": {
-   "fetched": 5196,
-   "matched": 5112
+   "fetched": 5188,
+   "matched": 5104
   },
   "charles_code": {
-   "fetched": 2380,
-   "matched": 2362
+   "fetched": 2383,
+   "matched": 2365
   },
   "accela_code": {
-   "fetched": 10751,
-   "matched": 9214
+   "fetched": 10777,
+   "matched": 9235
   },
   "water_usage": {
    "fetched": 2045,
@@ -32,19 +32,19 @@
    "bare_lot": 79
   }
  },
- "accounts": 14874,
+ "accounts": 14881,
  "kinds": {
-  "CODE_VIOLATIONS": 3160,
-  "DEMO_PERMIT": 234,
+  "CODE_VIOLATIONS": 3170,
+  "DEMO_PERMIT": 233,
   "FIRE": 6,
   "FIRE_REPAIR_PERMIT": 1,
-  "FORECLOSURE_REGISTRY": 5112,
-  "NUISANCE_CASE": 3525,
-  "REPEAT_CODE_CASES": 3826,
+  "FORECLOSURE_REGISTRY": 5104,
+  "NUISANCE_CASE": 3536,
+  "REPEAT_CODE_CASES": 3831,
   "VACANT_NOTICE": 378,
   "WATER_SHUTOFF": 74,
   "ZERO_WATER_USAGE": 1677,
-  "ZONING_CASE": 924,
+  "ZONING_CASE": 925,
   "STALE_TAX_CERT": 596,
   "ZOMBIE_DOT": 10
  },
@@ -67,7 +67,7 @@
     "cause": null,
     "matched_address": "1151 MIDDLENECK RD",
     "candidates": 1,
-    "days_since": 224,
+    "days_since": 225,
     "cooling": false
    }
   ],
@@ -89,7 +89,7 @@
     "cause": null,
     "matched_address": "510 ACADEMY ST",
     "candidates": 1,
-    "days_since": 246,
+    "days_since": 247,
     "cooling": false
    }
   ],
@@ -111,7 +111,7 @@
     "cause": null,
     "matched_address": "145 S PROSPECT ST",
     "candidates": 1,
-    "days_since": 248,
+    "days_since": 249,
     "cooling": false
    }
   ],
@@ -133,7 +133,7 @@
     "cause": null,
     "matched_address": "860 ERIE ST",
     "candidates": 1,
-    "days_since": 254,
+    "days_since": 255,
     "cooling": false
    }
   ],
@@ -155,7 +155,7 @@
     "cause": null,
     "matched_address": "39580 WALNUT CIR",
     "candidates": 1,
-    "days_since": 273,
+    "days_since": 274,
     "cooling": false
    }
   ],
@@ -177,7 +177,7 @@
     "cause": null,
     "matched_address": "6904 PENTRIDGE LN",
     "candidates": 1,
-    "days_since": 279,
+    "days_since": 280,
     "cooling": false
    }
   ],
@@ -1397,22 +1397,6 @@
     "residential": true,
     "open": false,
     "matched_address": "1717 FLORA LN",
-    "candidates": 1
-   }
-  ],
-  "161301203777": [
-   {
-    "kind": "DEMO_PERMIT",
-    "source": "Montgomery County DPS \u2014 demolition permit",
-    "url": "https://data.montgomerycountymd.gov/d/b6ht-fw3x",
-    "date": "2025-11-20",
-    "county": "Montgomery",
-    "address": "4215 ANTHONY ST",
-    "precision": "exact",
-    "detail": "Permit 1141505 \u00b7 Issued \u00b7 DEMOLISH \u00b7 Single Family Dwelling",
-    "ref": "1141505",
-    "residential": true,
-    "matched_address": "4215 ANTHONY ST",
     "candidates": 1
    }
   ],
@@ -5054,176 +5038,6 @@
     "candidates": 1
    }
   ],
-  "17101073584": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "9314 Player  DR",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "1073584",
-    "residential": true,
-    "matched_address": "9314 PLAYER DR",
-    "candidates": 1
-   }
-  ],
-  "17060637793": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "4309  23rd  PL",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Unavailable",
-    "ref": "0637793",
-    "residential": false,
-    "matched_address": "4309 23RD PL",
-    "candidates": 1
-   }
-  ],
-  "17161809037": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-27",
-    "county": "Prince George's",
-    "address": "3536 MADISON ST",
-    "precision": "exact",
-    "detail": "Registered 2024-11-27 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "1809037",
-    "residential": true,
-    "matched_address": "3536 MADISON ST",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "3536 MADISON ST",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "1809037",
-    "residential": true,
-    "matched_address": "3536 MADISON ST",
-    "candidates": 1
-   }
-  ],
-  "17010008292": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "4211 BRANDON  LN",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "008292",
-    "residential": true,
-    "matched_address": "4211 BRANDON LN",
-    "candidates": 1
-   }
-  ],
-  "17013675873": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-12-17",
-    "county": "Prince George's",
-    "address": "13118  CROSSVIEW  CT",
-    "precision": "exact",
-    "detail": "Registered 2024-12-17 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "675873",
-    "residential": true,
-    "matched_address": "13118 CROSSVIEW CT",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "13118 CROSSVIEW  CT",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "675873",
-    "residential": true,
-    "matched_address": "13118 CROSSVIEW CT",
-    "candidates": 1
-   }
-  ],
-  "17090964882": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2025-08-14",
-    "county": "Prince George's",
-    "address": "8109 Johnsam RD",
-    "precision": "exact",
-    "detail": "Registered 2025-08-14 \u00b7 occupied: Unavailable \u00b7 Unavailable",
-    "ref": "0964882",
-    "residential": false,
-    "matched_address": "8109 JOHNSAM RD",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "8109 JOHNSAM  RD",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "964882",
-    "residential": true,
-    "matched_address": "8109 JOHNSAM RD",
-    "candidates": 1
-   }
-  ],
-  "17090905653": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "6329 SPRINGBROOK  LN",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "905653",
-    "residential": true,
-    "matched_address": "6329 SPRINGBROOK LN",
-    "candidates": 1
-   }
-  ],
-  "17141572528": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-20",
-    "county": "Prince George's",
-    "address": "7032  PALAMAR TURN",
-    "precision": "exact",
-    "detail": "Registered 2024-11-20 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "1415725",
-    "residential": true,
-    "matched_address": "7032 PALAMAR TURN",
-    "candidates": 1
-   }
-  ],
   "17101007285": [
    {
     "kind": "FORECLOSURE_REGISTRY",
@@ -6025,6 +5839,22 @@
     "ref": "2735876",
     "residential": true,
     "matched_address": "2337 BARKLEY PL",
+    "candidates": 1
+   }
+  ],
+  "17161809037": [
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2024-11-27",
+    "county": "Prince George's",
+    "address": "3536 MADISON ST",
+    "precision": "exact",
+    "detail": "Registered 2024-11-27 \u00b7 occupied: Unavailable \u00b7 Residential",
+    "ref": "1809037",
+    "residential": true,
+    "matched_address": "3536 MADISON ST",
     "candidates": 1
    }
   ],
@@ -8665,6 +8495,22 @@
     "ref": "347724",
     "residential": true,
     "matched_address": "9209 GENOA AVE",
+    "candidates": 1
+   }
+  ],
+  "17013675873": [
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2024-12-17",
+    "county": "Prince George's",
+    "address": "13118  CROSSVIEW  CT",
+    "precision": "exact",
+    "detail": "Registered 2024-12-17 \u00b7 occupied: Unavailable \u00b7 Residential",
+    "ref": "675873",
+    "residential": true,
+    "matched_address": "13118 CROSSVIEW CT",
     "candidates": 1
    }
   ],
@@ -37767,6 +37613,22 @@
     "ref": "738515",
     "residential": true,
     "matched_address": "8013 SPORT VIEW RD",
+    "candidates": 1
+   }
+  ],
+  "17090964882": [
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2025-08-14",
+    "county": "Prince George's",
+    "address": "8109 Johnsam RD",
+    "precision": "exact",
+    "detail": "Registered 2025-08-14 \u00b7 occupied: Unavailable \u00b7 Unavailable",
+    "ref": "0964882",
+    "residential": false,
+    "matched_address": "8109 JOHNSAM RD",
     "candidates": 1
    }
   ],
@@ -114393,13 +114255,28 @@
    {
     "kind": "CODE_VIOLATIONS",
     "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/d31db524-0208-48a9-bc1f-9070a14c27ed",
+    "date": "2026-11-20",
+    "county": "Charles",
+    "address": "5100   GWYNN RD",
+    "precision": "exact",
+    "ref": "0907037694",
+    "detail": "BCV-261349 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 2 cases at this parcel since 2020",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "5100 GWYNN RD",
+    "candidates": 1
+   },
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Charles County Code Enforcement (Civic Access)",
     "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/909b8dd1-a1d2-4d0f-b1b5-d1fbabd0a090",
     "date": "2026-11-09",
     "county": "Charles",
     "address": "5100   GWYNN RD",
     "precision": "exact",
     "ref": "0907037694",
-    "detail": "BCV-261327 \u00b7 Building Code Violation \u00b7 In Progress",
+    "detail": "BCV-261327 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 2 cases at this parcel since 2020",
     "residential": true,
     "escalated": false,
     "matched_address": "5100 GWYNN RD",
@@ -114845,6 +114722,40 @@
     "residential": true,
     "escalated": false,
     "matched_address": "3197 HIGH TIMBER CT",
+    "candidates": 1
+   }
+  ],
+  "0908009554": [
+   {
+    "kind": "ZONING_CASE",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/51a3c885-c392-4460-9eb0-46c2dfb77994",
+    "date": "2026-11-20",
+    "county": "Charles",
+    "address": "5680 BRYANTOWN RD",
+    "precision": "exact",
+    "ref": "0908009554",
+    "detail": "ZV-260234 \u00b7 Zoning \u00b7 In Progress",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "5680 BRYANTOWN RD",
+    "candidates": 1
+   }
+  ],
+  "0906244963": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/d9a7ff76-1cc2-461f-9d91-f437afc04713",
+    "date": "2026-11-20",
+    "county": "Charles",
+    "address": "11230   SEWICKLEY ST",
+    "precision": "exact",
+    "ref": "0906244963",
+    "detail": "BCV-261350 \u00b7 Building Code Violation \u00b7 In Progress",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "11230 SEWICKLEY ST",
     "candidates": 1
    }
   ],
@@ -126113,12 +126024,53 @@
    {
     "kind": "NUISANCE_CASE",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULQ&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "1011 COLD SPRING RD",
+    "precision": "exact",
+    "detail": "CC2617276 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: 30\u2019 sailboat not used in over 10 years is stored on property line without the 2.5\u2019 setback required by zoning regulations. Also 6 trash cans in the middle of the yard ! Wheelbarrow s are left behind in the y \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1011 COLD SPRING RD",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULQ&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "1011 COLD SPRING RD",
+    "precision": "exact",
+    "detail": "3 code cases at this address: CC2617276 (Constituent Complaint, Pending), CC2617262 (Constituent Complaint, Inspection Scheduled), CC2615451 (Constituent Complaint, Correction Notice Mailed)",
+    "residential": true,
+    "matched_address": "1011 COLD SPRING RD",
+    "candidates": 1
+   },
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UIO&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "1011 COLD SPRING RD",
+    "precision": "exact",
+    "detail": "CC2617262 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 TJD Large pile construction materials in front yard (water front property) \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1011 COLD SPRING RD",
+    "candidates": 1
+   },
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
     "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01KOR&agencyCode=BALTCO&IsToShowInspection=",
     "date": "2026-10-02",
     "county": "Baltimore County",
     "address": "1011 COLD SPRING RD",
     "precision": "exact",
-    "detail": "CC2615451 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 PROPERTY IS WATERFRONT AND HAS TOO MANY BOATS - THEY'RE ALLOWED 2 DURING WINTER AND 1 ANY OTHER TIME (APPARENTLY, FOR WATERFRONT PROPS) COMPL IS CONCERNED THAT TO COMPLY, THEY'LL JUST PUT ONE OF THE BOATS IN THE WATER. B",
+    "detail": "CC2615451 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 PROPERTY IS WATERFRONT AND HAS TOO MANY BOATS - THEY'RE ALLOWED 2 DURING WINTER AND 1 ANY OTHER TIME (APPARENTLY, FOR WATERFRONT PROPS) COMPL IS CONCERNED THAT TO COMPLY, THEY'LL JUST PUT ONE OF THE BOATS IN THE WATER. B \u00b7 3 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "1011 COLD SPRING RD",
@@ -188367,20 +188319,6 @@
   ],
   "04111600013896": [
    {
-    "kind": "NUISANCE_CASE",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UG7&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-11-20",
-    "county": "Baltimore County",
-    "address": "37 SLAVIN CT",
-    "precision": "exact",
-    "detail": "CC2617260 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: super tall grass n weeds front n back OneView Id: 318100 Device Type: Android Device Model: sun Approximate Address: 37 SLAVIN CT, NOTTINGHAM, MD, 21236 Lat/Lng Coordinates: 39.38663, -76.5022 \u00b7 18 cases at this address",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "37 SLAVIN CT",
-    "candidates": 1
-   },
-   {
     "kind": "REPEAT_CODE_CASES",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
     "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UG7&agencyCode=BALTCO&IsToShowInspection=",
@@ -188388,7 +188326,7 @@
     "county": "Baltimore County",
     "address": "37 SLAVIN CT",
     "precision": "exact",
-    "detail": "18 code cases at this address: CC2617260 (Constituent Complaint, Pending), CC2615965 (Constituent Complaint, Duplicate Reviewed), CC2613345 (Constituent Complaint, No Violation), CC2610104 (Constituent Complaint, Duplicate Reviewed), CC2609129 (Constituent Complaint, Duplicate Reviewed), CC2608660 (Constituent Complaint, Duplicate Reviewed)",
+    "detail": "18 code cases at this address: CC2617260 (Constituent Complaint, Duplicate Reviewed), CC2615965 (Constituent Complaint, Duplicate Reviewed), CC2613345 (Constituent Complaint, No Violation), CC2610104 (Constituent Complaint, Duplicate Reviewed), CC2609129 (Constituent Complaint, Duplicate Reviewed), CC2608660 (Constituent Complaint, Duplicate Reviewed)",
     "residential": true,
     "matched_address": "37 SLAVIN CT",
     "candidates": 1
@@ -202638,14 +202576,28 @@
   ],
   "04022200009887": [
    {
-    "kind": "REPEAT_CODE_CASES",
+    "kind": "NUISANCE_CASE",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=00XH6&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-06-13",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UII&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
     "county": "Baltimore County",
     "address": "9136 SUNSET RIDGE RD",
     "precision": "exact",
-    "detail": "7 code cases at this address: CC2608196 (Constituent Complaint, Duplicate Reviewed), CC2607980 (Constituent Complaint, Order Filed), CC2506114 (Constituent Complaint, Duplicate Reviewed), CC2506099 (Constituent Complaint, In Compliance), CC2502295 (Constituent Complaint, No Violation), CC2502136 (Constituent Complaint, Duplicate Reviewed)",
+    "detail": "CC2617261 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: I submitted a request about a month ago about this same build up of trash located at 9136 Sunset Ridge. The same trash cans I complained about have been moved from the front of the driveway to the side of th \u00b7 8 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "9136 SUNSET RIDGE RD",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UII&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "9136 SUNSET RIDGE RD",
+    "precision": "exact",
+    "detail": "8 code cases at this address: CC2617261 (Constituent Complaint, Inspection Scheduled), CC2608196 (Constituent Complaint, Duplicate Reviewed), CC2607980 (Constituent Complaint, Order Filed), CC2506114 (Constituent Complaint, Duplicate Reviewed), CC2506099 (Constituent Complaint, In Compliance), CC2502295 (Constituent Complaint, No Violation)",
     "residential": true,
     "matched_address": "9136 SUNSET RIDGE RD",
     "candidates": 1
@@ -202658,7 +202610,7 @@
     "county": "Baltimore County",
     "address": "9136 SUNSET RIDGE RD",
     "precision": "exact",
-    "detail": "CC2607980 \u00b7 Constituent Complaint \u00b7 Order Filed \u00b7 complaint, not yet inspected \u00b7 Description: Trash receptacles too small for amount of trash at this residence. Trash can lids always off, or don\u2019t have any\u2026Obviously the residents know they have a pest problem due to the large rat traps placed outside \u00b7 7 cases at this address",
+    "detail": "CC2607980 \u00b7 Constituent Complaint \u00b7 Order Filed \u00b7 complaint, not yet inspected \u00b7 Description: Trash receptacles too small for amount of trash at this residence. Trash can lids always off, or don\u2019t have any\u2026Obviously the residents know they have a pest problem due to the large rat traps placed outside \u00b7 8 cases at this address",
     "residential": true,
     "escalated": false,
     "matched_address": "9136 SUNSET RIDGE RD",
@@ -220570,12 +220522,39 @@
    {
     "kind": "CODE_VIOLATIONS",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UJL&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "1905 TYLER RD",
+    "precision": "exact",
+    "detail": "CRH2601808 \u00b7 Rental Registration Compliance \u00b7 Pending \u00b7 Description: We have been renting 1905 Tyler Rd Dundalk Md 21222 for the past 7 months. I have made several requests to the landlord request a copy of the valid rental license. Not response. I have also requested a copy  \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1905 TYLER RD",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UJL&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "1905 TYLER RD",
+    "precision": "exact",
+    "detail": "3 code cases at this address: CRH2601808 (Rental Registration Compliance, Pending), CRH2601615 (Rental Registration Compliance, Correction Notice Mailed), CC2516717 (Constituent Complaint, Closed)",
+    "residential": true,
+    "matched_address": "1905 TYLER RD",
+    "candidates": 1
+   },
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
     "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01OU7&agencyCode=BALTCO&IsToShowInspection=",
     "date": "2026-10-26",
     "county": "Baltimore County",
     "address": "1905 TYLER RD",
     "precision": "exact",
-    "detail": "CRH2601615 \u00b7 Rental Registration Compliance \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 UNREGISTERED RENTAL \u00b7 2 cases at this address",
+    "detail": "CRH2601615 \u00b7 Rental Registration Compliance \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 UNREGISTERED RENTAL \u00b7 3 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "1905 TYLER RD",
@@ -229240,12 +229219,12 @@
    {
     "kind": "REPEAT_CODE_CASES",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01TZW&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-11-19",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UKC&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
     "county": "Baltimore County",
     "address": "301 BIGLEY AVE",
     "precision": "exact",
-    "detail": "4 code cases at this address: CC2617214 (Constituent Complaint, Duplicate Reviewed), CC2616964 (Constituent Complaint, Correction Notice Issued), CB2500410 (Building Complaint, No Violation), CP2500095 (Plumbing Complaint, No Violation)",
+    "detail": "5 code cases at this address: CC2617267 (Constituent Complaint, Duplicate Reviewed), CC2617214 (Constituent Complaint, Duplicate Reviewed), CC2616964 (Constituent Complaint, Correction Notice Issued), CB2500410 (Building Complaint, No Violation), CP2500095 (Plumbing Complaint, No Violation)",
     "residential": true,
     "matched_address": "301 BIGLEY AVE",
     "candidates": 1
@@ -229258,7 +229237,7 @@
     "county": "Baltimore County",
     "address": "301 BIGLEY AVE",
     "precision": "exact",
-    "detail": "CC2616964 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 FENCE HEIGHT, UNTAGGED/INOPERABLE VEHICLES, CHICKENS, PARKING VEHICLES ON FRONT GRASS \u00b7 4 cases at this address",
+    "detail": "CC2616964 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 FENCE HEIGHT, UNTAGGED/INOPERABLE VEHICLES, CHICKENS, PARKING VEHICLES ON FRONT GRASS \u00b7 5 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "301 BIGLEY AVE",
@@ -230514,7 +230493,7 @@
     "county": "Baltimore County",
     "address": "57 BURKSHIRE RD",
     "precision": "exact",
-    "detail": "CC2617255 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: cans without tight fitting lids. overflowing trash. JTD out back. old door. thick padding OneView Id: 318080 Device Type: Apple Device Model: iPhone 6 Approximate Address: 57 BURKSHIRE RD, LOCH RAVEN, MD, 21 \u00b7 14 cases at this address",
+    "detail": "CC2617255 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: cans without tight fitting lids. overflowing trash. JTD out back. old door. thick padding OneView Id: 318080 Device Type: Apple Device Model: iPhone 6 Approximate Address: 57 BURKSHIRE RD, LOCH RAVEN, MD, 21 \u00b7 14 cases at this address",
     "residential": true,
     "escalated": false,
     "matched_address": "57 BURKSHIRE RD",
@@ -230528,7 +230507,7 @@
     "county": "Baltimore County",
     "address": "57 BURKSHIRE RD",
     "precision": "exact",
-    "detail": "14 code cases at this address: CC2617255 (Constituent Complaint, Pending), CC2617055 (Constituent Complaint, Correction Notice Mailed), CC2615610 (Constituent Complaint, In Compliance), CC2611106 (Constituent Complaint, In Compliance), CC2609102 (Constituent Complaint, In Compliance), CC2606932 (Constituent Complaint, Duplicate Reviewed)",
+    "detail": "14 code cases at this address: CC2617255 (Constituent Complaint, Inspection Scheduled), CC2617055 (Constituent Complaint, Correction Notice Mailed), CC2615610 (Constituent Complaint, In Compliance), CC2611106 (Constituent Complaint, In Compliance), CC2609102 (Constituent Complaint, In Compliance), CC2606932 (Constituent Complaint, Duplicate Reviewed)",
     "residential": true,
     "matched_address": "57 BURKSHIRE RD",
     "candidates": 1
@@ -234011,7 +233990,7 @@
     "county": "Baltimore County",
     "address": "857 MILDRED AVE",
     "precision": "block",
-    "detail": "CC2617234 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 LIVING ROOM SOFA ON FRONT PORCH WITH RATS CRAWLING IN IT, BUSTED CONCRETE UNDER RAMP IN BACK/RAT HOLES \u00b7 4 cases at this address",
+    "detail": "CC2617234 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 LIVING ROOM SOFA ON FRONT PORCH WITH RATS CRAWLING IN IT, BUSTED CONCRETE UNDER RAMP IN BACK/RAT HOLES \u00b7 4 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "857 MILDRED AVE",
@@ -234025,7 +234004,7 @@
     "county": "Baltimore County",
     "address": "857 MILDRED AVE",
     "precision": "block",
-    "detail": "4 code cases at this address: CC2617234 (Constituent Complaint, Correction Notice Issued), CC2615187 (Constituent Complaint, No Violation), CC2605354 (Constituent Complaint, In Compliance), CC2509254 (Constituent Complaint, In Compliance)",
+    "detail": "4 code cases at this address: CC2617234 (Constituent Complaint, Correction Notice Mailed), CC2615187 (Constituent Complaint, No Violation), CC2605354 (Constituent Complaint, In Compliance), CC2509254 (Constituent Complaint, In Compliance)",
     "residential": true,
     "matched_address": "857 MILDRED AVE",
     "candidates": 2
@@ -234040,7 +234019,7 @@
     "county": "Baltimore County",
     "address": "857 MILDRED AVE",
     "precision": "block",
-    "detail": "CC2617234 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 LIVING ROOM SOFA ON FRONT PORCH WITH RATS CRAWLING IN IT, BUSTED CONCRETE UNDER RAMP IN BACK/RAT HOLES \u00b7 4 cases at this address",
+    "detail": "CC2617234 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 LIVING ROOM SOFA ON FRONT PORCH WITH RATS CRAWLING IN IT, BUSTED CONCRETE UNDER RAMP IN BACK/RAT HOLES \u00b7 4 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "857 MILDRED AVE",
@@ -234054,7 +234033,7 @@
     "county": "Baltimore County",
     "address": "857 MILDRED AVE",
     "precision": "block",
-    "detail": "4 code cases at this address: CC2617234 (Constituent Complaint, Correction Notice Issued), CC2615187 (Constituent Complaint, No Violation), CC2605354 (Constituent Complaint, In Compliance), CC2509254 (Constituent Complaint, In Compliance)",
+    "detail": "4 code cases at this address: CC2617234 (Constituent Complaint, Correction Notice Mailed), CC2615187 (Constituent Complaint, No Violation), CC2605354 (Constituent Complaint, In Compliance), CC2509254 (Constituent Complaint, In Compliance)",
     "residential": true,
     "matched_address": "857 MILDRED AVE",
     "candidates": 2
@@ -234454,38 +234433,6 @@
     "residential": true,
     "escalated": true,
     "matched_address": "6727 FORDCREST RD",
-    "candidates": 1
-   }
-  ],
-  "04092500004324": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01U4J&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-11-19",
-    "county": "Baltimore County",
-    "address": "707 YORK RD",
-    "precision": "exact",
-    "detail": "CC2617223 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: Call taken by 311. Caller states business is using the public roadway to store their dumpster. OneView Id: 317995 Device Type: Unknown Device Model: Platform API Approximate Address: 707 YORK RD, TOWSON, MD,",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "707 YORK RD",
-    "candidates": 1
-   }
-  ],
-  "04090906573480": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01U4G&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-11-19",
-    "county": "Baltimore County",
-    "address": "8647 BLACK OAK RD",
-    "precision": "exact",
-    "detail": "CC2617222 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 TJD - BAGS OF TRASH ON THE BACK PORCH; BEEN THERE FOR SEVERAL DAYS",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "8647 BLACK OAK RD",
     "candidates": 1
    }
   ],
@@ -235016,22 +234963,6 @@
     "candidates": 1
    }
   ],
-  "04010114100380": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01U19&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-11-19",
-    "county": "Baltimore County",
-    "address": "1007 MARKSWORTH RD",
-    "precision": "exact",
-    "detail": "CC2617216 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: Yesterday afternoon my neighbour from 1005 marksworth rd baltimore md used a leaf blower and blew all his property leaves onto my driveway then from my driveway outward onto the sidewalk and street of 1007 m",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "1007 MARKSWORTH RD",
-    "candidates": 1
-   }
-  ],
   "04131308550100": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -235486,7 +235417,7 @@
     "county": "Baltimore County",
     "address": "9 STRABANE CT",
     "precision": "exact",
-    "detail": "CC2617207 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 Description: refrigerator in front yard OneView Id: 317943 Device Type: Apple Device Model: iPhone 12 Pro Approximate Address: 9 STRABANE CT, PARKVILLE, MD, 21234 Lat/Lng Coordinates: 39.41192, -76.53014 \u00b7 2 cases at this address",
+    "detail": "CC2617207 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 Description: refrigerator in front yard OneView Id: 317943 Device Type: Apple Device Model: iPhone 12 Pro Approximate Address: 9 STRABANE CT, PARKVILLE, MD, 21234 Lat/Lng Coordinates: 39.41192, -76.53014 \u00b7 2 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "9 STRABANE CT",
@@ -236220,7 +236151,7 @@
     "county": "Baltimore County",
     "address": "6218 COMMONS RD",
     "precision": "exact",
-    "detail": "CC2617257 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Debris and furniture items on the front lawn. OneView Id: 318085 Device Type: Apple Device Model: iPhone 11 Approximate Address: 6218 COMMONS RD, ROSEDALE, MD, 21237 Lat/Lng Coordinates: 39.33762, -76.51273 \u00b7 2 cases at this address",
+    "detail": "CC2617257 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: Debris and furniture items on the front lawn. OneView Id: 318085 Device Type: Apple Device Model: iPhone 11 Approximate Address: 6218 COMMONS RD, ROSEDALE, MD, 21237 Lat/Lng Coordinates: 39.33762, -76.51273 \u00b7 2 cases at this address",
     "residential": true,
     "escalated": false,
     "matched_address": "6218 COMMONS RD",
@@ -236236,7 +236167,7 @@
     "county": "Baltimore County",
     "address": "1721 REISTERSTOWN RD",
     "precision": "exact",
-    "detail": "CC2617256 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Excessive trash around all sides of the property. Large quantities in the back, Reisterstown Road frontage covered with litter. OneView Id: 318083 Device Type: HTML5 Device Model: BaltimoreCountyMd Approxima \u00b7 6 cases at this address",
+    "detail": "CC2617256 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: Excessive trash around all sides of the property. Large quantities in the back, Reisterstown Road frontage covered with litter. OneView Id: 318083 Device Type: HTML5 Device Model: BaltimoreCountyMd Approxima \u00b7 6 cases at this address",
     "residential": true,
     "escalated": false,
     "matched_address": "1721 REISTERSTOWN RD",
@@ -236250,7 +236181,7 @@
     "county": "Baltimore County",
     "address": "1721 REISTERSTOWN RD",
     "precision": "exact",
-    "detail": "6 code cases at this address: CC2617256 (Constituent Complaint, Pending), CB2600610 (Building Complaint, Pre Hearing Insp Complete), CC2605449 (Constituent Complaint, No Violation), CC2602609 (Constituent Complaint, Duplicate Reviewed), CC2511811 (Constituent Complaint, In Compliance), CC2510066 (Constituent Complaint, In Compliance)",
+    "detail": "6 code cases at this address: CC2617256 (Constituent Complaint, Inspection Scheduled), CB2600610 (Building Complaint, Pre Hearing Insp Complete), CC2605449 (Constituent Complaint, No Violation), CC2602609 (Constituent Complaint, Duplicate Reviewed), CC2511811 (Constituent Complaint, In Compliance), CC2510066 (Constituent Complaint, In Compliance)",
     "residential": true,
     "matched_address": "1721 REISTERSTOWN RD",
     "candidates": 1
@@ -236265,7 +236196,7 @@
     "county": "Baltimore County",
     "address": "1607 THETFORD RD",
     "precision": "exact",
-    "detail": "CC2617254 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Ongoing accumulation of uncollected trash, bulk items, and unsanitary waste in the rear alley behind 1605 Thetford Road in Knettishall, Towson, violating Baltimore County Code \u00a7 13-4-201 and \u00a7 35-5-204 (Liva",
+    "detail": "CC2617254 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: Ongoing accumulation of uncollected trash, bulk items, and unsanitary waste in the rear alley behind 1605 Thetford Road in Knettishall, Towson, violating Baltimore County Code \u00a7 13-4-201 and \u00a7 35-5-204 (Liva",
     "residential": true,
     "escalated": false,
     "matched_address": "1607 THETFORD RD",
@@ -236297,7 +236228,7 @@
     "county": "Baltimore County",
     "address": "1330 DALTON RD",
     "precision": "exact",
-    "detail": "CE2600104 \u00b7 Electrical Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: noise complaint. someone has been running a generator all night for the last two nights and most of the morning. OneView Id: 317953 Device Type: Apple Device Model: iPhone 6s Approximate Address: 1330 DALTON \u00b7 2 cases at this address",
+    "detail": "CE2600104 \u00b7 Electrical Complaint \u00b7 Monitor \u00b7 complaint, not yet inspected \u00b7 Description: noise complaint. someone has been running a generator all night for the last two nights and most of the morning. OneView Id: 317953 Device Type: Apple Device Model: iPhone 6s Approximate Address: 1330 DALTON \u00b7 2 cases at this address",
     "residential": true,
     "escalated": false,
     "matched_address": "1330 DALTON RD",
@@ -236313,7 +236244,7 @@
     "county": "Baltimore County",
     "address": "28 EDELWEISS WAY",
     "precision": "exact",
-    "detail": "CC2617253 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Untagged vehicle on property OneView Id: 318060 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 28 EDELWEISS WAY, PARKTON, MD, 21120 Lat/Lng Coordinates: 39.68737, -76.65678",
+    "detail": "CC2617253 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: Untagged vehicle on property OneView Id: 318060 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 28 EDELWEISS WAY, PARKTON, MD, 21120 Lat/Lng Coordinates: 39.68737, -76.65678",
     "residential": true,
     "escalated": false,
     "matched_address": "28 EDELWEISS WAY",
@@ -236393,7 +236324,7 @@
     "county": "Baltimore County",
     "address": "2015 HOLBORN RD",
     "precision": "exact",
-    "detail": "CC2617241 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 Description: Taken by 311 - Karen Cruz reporting a neighbor for having a sectional sofa in the yard - Been there for several weeks OneView Id: 318030 Device Type: Unknown Device Model: Platform API Approximate Address: 2",
+    "detail": "CC2617241 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 Description: Taken by 311 - Karen Cruz reporting a neighbor for having a sectional sofa in the yard - Been there for several weeks OneView Id: 318030 Device Type: Unknown Device Model: Platform API Approximate Address: 2",
     "residential": true,
     "escalated": true,
     "matched_address": "2015 HOLBORN RD",
@@ -236438,7 +236369,7 @@
     "county": "Baltimore County",
     "address": "1408 DELVALE AVE",
     "precision": "exact",
-    "detail": "CC2617240 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 Description: 15 rat holes in the backyard. trash bags on the ground. no trash lids. junk in the yard. OneView Id: 318029 Device Type: Apple Device Model: iPhone14,7 Approximate Address: 1408 DELVALE AVE, DUNDALK, MD, 212 \u00b7 8 cases at this address",
+    "detail": "CC2617240 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 Description: 15 rat holes in the backyard. trash bags on the ground. no trash lids. junk in the yard. OneView Id: 318029 Device Type: Apple Device Model: iPhone14,7 Approximate Address: 1408 DELVALE AVE, DUNDALK, MD, 212 \u00b7 8 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "1408 DELVALE AVE",
@@ -236452,7 +236383,7 @@
     "county": "Baltimore County",
     "address": "1408 DELVALE AVE",
     "precision": "exact",
-    "detail": "8 code cases at this address: CC2617240 (Constituent Complaint, Correction Notice Issued), CC2514132 (Constituent Complaint, In Compliance), VP2500340 (Vacant Property Inventory, Closed), CC2510643 (Constituent Complaint, In Compliance), CC2508516 (Constituent Complaint, Duplicate Reviewed), CC2508092 (Constituent Complaint, Dismissed by Inspector)",
+    "detail": "8 code cases at this address: CC2617240 (Constituent Complaint, Correction Notice Mailed), CC2514132 (Constituent Complaint, In Compliance), VP2500340 (Vacant Property Inventory, Closed), CC2510643 (Constituent Complaint, In Compliance), CC2508516 (Constituent Complaint, Duplicate Reviewed), CC2508092 (Constituent Complaint, Dismissed by Inspector)",
     "residential": true,
     "matched_address": "1408 DELVALE AVE",
     "candidates": 1
@@ -236467,7 +236398,7 @@
     "county": "Baltimore County",
     "address": "6822 DULUTH AVE",
     "precision": "exact",
-    "detail": "CC2617239 \u00b7 Constituent Complaint \u00b7 Correction Notice Issued \u00b7 INSPECTOR CONFIRMED \u00b7 Description: no trash lids and holes in the bottom of trash cans bc of rats chewing! junk in yard. and rat holes OneView Id: 318028 Device Type: Apple Device Model: iPhone14,7 Approximate Address: 6822 DULUTH AVE, DUNDAL \u00b7 2 cases at this address",
+    "detail": "CC2617239 \u00b7 Constituent Complaint \u00b7 Correction Notice Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 Description: no trash lids and holes in the bottom of trash cans bc of rats chewing! junk in yard. and rat holes OneView Id: 318028 Device Type: Apple Device Model: iPhone14,7 Approximate Address: 6822 DULUTH AVE, DUNDAL \u00b7 2 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "6822 DULUTH AVE",
@@ -236628,6 +236559,414 @@
     "residential": true,
     "escalated": true,
     "matched_address": "2980 SOLLERS POINT RD",
+    "candidates": 1
+   }
+  ],
+  "04141419052550": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UM4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "3216 TEXAS AVE",
+    "precision": "exact",
+    "detail": "CC2617281 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: someone left a bicycle in front of my house three days ago on sidewalk OneView Id: 318166 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 3216 TEXAS AVE, PARKVILLE, MD, 21234 Lat/Lng  \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "3216 TEXAS AVE",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UM4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "3216 TEXAS AVE",
+    "precision": "exact",
+    "detail": "3 code cases at this address: CC2617281 (Constituent Complaint, Pending), CC2510774 (Constituent Complaint, No Violation), CC2504246 (Constituent Complaint, No Violation)",
+    "residential": true,
+    "matched_address": "3216 TEXAS AVE",
+    "candidates": 1
+   }
+  ],
+  "04111600009225": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UM2&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "35 ARWELL CT",
+    "precision": "exact",
+    "detail": "CB2600795 \u00b7 Building Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: I\u2019m writing with a question about a deck currently being built at or near 35 Arwell Ct. Could you please let me know whether a permit is required for this project and, if possible, whether the appropriate pe \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "35 ARWELL CT",
+    "candidates": 1
+   }
+  ],
+  "04151502653360": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UM0&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "279 MONTROSE AVE",
+    "precision": "exact",
+    "detail": "CC2617280 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: This vehicle has been abandoned almost completely blocking firemen access to a fire hydrant that with fireplaces being used and winter with fire chances being raised . It putting people and their homes at ri",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "279 MONTROSE AVE",
+    "candidates": 1
+   }
+  ],
+  "04092300001780": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULW&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "1 E JOPPA RD",
+    "precision": "block",
+    "detail": "CC2617279 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Shopping carts all over public side walks OneView Id: 318162 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 1 E JOPPA RD, LOCH RAVEN, MD, 21286 Lat/Lng Coordinates: 39.40181, -76.601 \u00b7 12 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1 E JOPPA RD",
+    "candidates": 2
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULW&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "1 E JOPPA RD",
+    "precision": "block",
+    "detail": "12 code cases at this address: CC2617279 (Constituent Complaint, Pending), CC2613971 (Constituent Complaint, Duplicate Reviewed), CC2613967 (Constituent Complaint, No Violation), CC2610716 (Constituent Complaint, No Violation), CC2607042 (Constituent Complaint, No Violation), CC2603811 (Constituent Complaint, No Violation)",
+    "residential": true,
+    "matched_address": "1 E JOPPA RD",
+    "candidates": 2
+   }
+  ],
+  "04092300001781": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULW&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "1 E JOPPA RD",
+    "precision": "block",
+    "detail": "CC2617279 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Shopping carts all over public side walks OneView Id: 318162 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 1 E JOPPA RD, LOCH RAVEN, MD, 21286 Lat/Lng Coordinates: 39.40181, -76.601 \u00b7 12 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1 E JOPPA RD",
+    "candidates": 2
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULW&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "1 E JOPPA RD",
+    "precision": "block",
+    "detail": "12 code cases at this address: CC2617279 (Constituent Complaint, Pending), CC2613971 (Constituent Complaint, Duplicate Reviewed), CC2613967 (Constituent Complaint, No Violation), CC2610716 (Constituent Complaint, No Violation), CC2607042 (Constituent Complaint, No Violation), CC2603811 (Constituent Complaint, No Violation)",
+    "residential": true,
+    "matched_address": "1 E JOPPA RD",
+    "candidates": 2
+   }
+  ],
+  "04152200022464": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULU&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "100 BOWLEYS QUARTERS RD",
+    "precision": "exact",
+    "detail": "CC2617278 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Second request: previous case #316456 was quickly closed. our neighbor at 100 bowleys quarters road burns leaves all the time causing large clouds of smoke that drift to surrounding homes. when it comes over \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "100 BOWLEYS QUARTERS RD",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULU&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "100 BOWLEYS QUARTERS RD",
+    "precision": "exact",
+    "detail": "3 code cases at this address: CC2617278 (Constituent Complaint, Pending), CC2616654 (Constituent Complaint, Duplicate Reviewed), CC2616653 (Constituent Complaint, Closed)",
+    "residential": true,
+    "matched_address": "100 BOWLEYS QUARTERS RD",
+    "candidates": 1
+   }
+  ],
+  "04010116750560": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULT&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "6416 FREDERICK RD",
+    "precision": "exact",
+    "detail": "CC2617277 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: abandoned vehicles and tire dumping are piling up on county property from an old abandoned house that was razed. the garage was not demolished with the house and there\u2019s maybe 30 tires dumped behind it. ther \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "6416 FREDERICK RD",
+    "candidates": 1
+   }
+  ],
+  "04040404020200": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULJ&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "10 SUNSET RD",
+    "precision": "exact",
+    "detail": "CRH2601810 \u00b7 Rental Registration Compliance \u00b7 Pending \u00b7 I think there is at least 6 people living here. There are always 6-10 cars, lots of traffic at all hours of the day/night. I think they turned the 4 bedroom house into a 7-8 bedroom house.",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "10 SUNSET RD",
+    "candidates": 1
+   }
+  ],
+  "04121213023540": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01ULL&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "2505 GRAY MANOR TER",
+    "precision": "exact",
+    "detail": "CC2617275 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: The property next to use is now vacant after the tenants moved out. Large trash cans with debris and who knows what else are in the driveway and have been sitting there for months. I\u2019ve noticed random small ",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "2505 GRAY MANOR TER",
+    "candidates": 1
+   }
+  ],
+  "04090906100820": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UL6&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "1824 REDWOOD AVE",
+    "precision": "exact",
+    "detail": "CC2617273 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: 1824 the house next door has construction material sitting in the driveway it has been there for weeks In addition to that there is a grocery car full of trash and trash bags on the ground The owner has not ",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1824 REDWOOD AVE",
+    "candidates": 1
+   }
+  ],
+  "04010113102031": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UL4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "5898 OLD FREDERICK RD",
+    "precision": "block",
+    "detail": "CC2617272 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Here we are again reporting the same address for bringing the truck back in a residential area. And the owner has had paperwork sent to them about not parking in the area over and over again. Please call me  \u00b7 7 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "5898 OLD FREDERICK RD",
+    "candidates": 3
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UL4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "5898 OLD FREDERICK RD",
+    "precision": "block",
+    "detail": "7 code cases at this address: CC2617272 (Constituent Complaint, Pending), CC2615867 (Constituent Complaint, Duplicate Reviewed), CC2615834 (Constituent Complaint, Duplicate Reviewed), CC2615820 (Constituent Complaint, No Violation), CC2606351 (Constituent Complaint, No Violation), CC2601460 (Constituent Complaint, In Compliance)",
+    "residential": true,
+    "matched_address": "5898 OLD FREDERICK RD",
+    "candidates": 3
+   }
+  ],
+  "04010113102032": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UL4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "5898 OLD FREDERICK RD",
+    "precision": "block",
+    "detail": "CC2617272 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Here we are again reporting the same address for bringing the truck back in a residential area. And the owner has had paperwork sent to them about not parking in the area over and over again. Please call me  \u00b7 7 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "5898 OLD FREDERICK RD",
+    "candidates": 3
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UL4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "5898 OLD FREDERICK RD",
+    "precision": "block",
+    "detail": "7 code cases at this address: CC2617272 (Constituent Complaint, Pending), CC2615867 (Constituent Complaint, Duplicate Reviewed), CC2615834 (Constituent Complaint, Duplicate Reviewed), CC2615820 (Constituent Complaint, No Violation), CC2606351 (Constituent Complaint, No Violation), CC2601460 (Constituent Complaint, In Compliance)",
+    "residential": true,
+    "matched_address": "5898 OLD FREDERICK RD",
+    "candidates": 3
+   }
+  ],
+  "04012500002400": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UL4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "5898 OLD FREDERICK RD",
+    "precision": "block",
+    "detail": "CC2617272 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Here we are again reporting the same address for bringing the truck back in a residential area. And the owner has had paperwork sent to them about not parking in the area over and over again. Please call me  \u00b7 7 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "5898 OLD FREDERICK RD",
+    "candidates": 3
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UL4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "5898 OLD FREDERICK RD",
+    "precision": "block",
+    "detail": "7 code cases at this address: CC2617272 (Constituent Complaint, Pending), CC2615867 (Constituent Complaint, Duplicate Reviewed), CC2615834 (Constituent Complaint, Duplicate Reviewed), CC2615820 (Constituent Complaint, No Violation), CC2606351 (Constituent Complaint, No Violation), CC2601460 (Constituent Complaint, In Compliance)",
+    "residential": true,
+    "matched_address": "5898 OLD FREDERICK RD",
+    "candidates": 3
+   }
+  ],
+  "04151502572080": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UKG&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "1423 CHESAPEAKE AVE",
+    "precision": "exact",
+    "detail": "CC2617269 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 FENCE IN FRONT AND BACK OF WATERFRONT PTY.",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1423 CHESAPEAKE AVE",
+    "candidates": 1
+   }
+  ],
+  "04151502572081": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UKE&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "1421 CHESAPEAKE AVE",
+    "precision": "exact",
+    "detail": "CC2617268 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 FENCE IN FRONT AND BACK OF WATERFRONT PTY.",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1421 CHESAPEAKE AVE",
+    "candidates": 1
+   }
+  ],
+  "04111700005054": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UKB&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "12 PICKENS CT",
+    "precision": "exact",
+    "detail": "CC2617266 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Dear Baltimore County Code Enforcement, I am requesting Baltimore County's assistance with a severe and ongoing mice infestation in our home that has continued despite extensive professional treatment, structural repairs",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "12 PICKENS CT",
+    "candidates": 1
+   }
+  ],
+  "04141422044041": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UK5&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "24 FULLER AVE",
+    "precision": "exact",
+    "detail": "CRH2601809 \u00b7 Rental Registration Compliance \u00b7 Pending \u00b7 Description: unlicensed rental . 4 rooms are rented. no license. owner: William Gillespie OneView Id: 318129 Device Type: Android Device Model: fogona Approximate Address: 24 FULLER AVE, RASPEBURG, MD, 21206 Lat/Lng Coor \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "24 FULLER AVE",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UK5&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "24 FULLER AVE",
+    "precision": "exact",
+    "detail": "3 code cases at this address: CRH2601809 (Rental Registration Compliance, Pending), CC2604020 (Constituent Complaint, Closed), CB2600241 (Building Complaint, Duplicate Reviewed)",
+    "residential": true,
+    "matched_address": "24 FULLER AVE",
+    "candidates": 1
+   }
+  ],
+  "04111700005056": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UJF&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "16 PICKENS CT",
+    "precision": "exact",
+    "detail": "CC2617264 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Dear Baltimore County Code Enforcement, I am requesting Baltimore County's assistance with a severe and ongoing mice infestation in our home (our address is 14 Pickens) that has continued despite extensive professional t",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "16 PICKENS CT",
+    "candidates": 1
+   }
+  ],
+  "04111600006779": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UIX&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-20",
+    "county": "Baltimore County",
+    "address": "6 KNAVES CT",
+    "precision": "exact",
+    "detail": "CC2617263 \u00b7 Constituent Complaint \u00b7 Inspection Scheduled \u00b7 complaint, not yet inspected \u00b7 Description: Call taken by 311. Caller states neighbor is leaving water on for pool and the pool is overflowing and flooding her property. OneView Id: 318121 Device Type: Unknown Device Model: Platform API Approximate Ad",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "6 KNAVES CT",
     "candidates": 1
    }
   ],
@@ -236839,51 +237178,6 @@
     "residential": true,
     "matched_address": "738 OVERBROOK RD",
     "candidates": 1
-   }
-  ],
-  "04010113102031": [
-   {
-    "kind": "REPEAT_CODE_CASES",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01MFK&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-10-13",
-    "county": "Baltimore County",
-    "address": "5898 OLD FREDERICK RD",
-    "precision": "block",
-    "detail": "6 code cases at this address: CC2615867 (Constituent Complaint, Duplicate Reviewed), CC2615834 (Constituent Complaint, Duplicate Reviewed), CC2615820 (Constituent Complaint, No Violation), CC2606351 (Constituent Complaint, No Violation), CC2601460 (Constituent Complaint, In Compliance), CC2503099 (Constituent Complaint, In Compliance)",
-    "residential": true,
-    "matched_address": "5898 OLD FREDERICK RD",
-    "candidates": 3
-   }
-  ],
-  "04010113102032": [
-   {
-    "kind": "REPEAT_CODE_CASES",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01MFK&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-10-13",
-    "county": "Baltimore County",
-    "address": "5898 OLD FREDERICK RD",
-    "precision": "block",
-    "detail": "6 code cases at this address: CC2615867 (Constituent Complaint, Duplicate Reviewed), CC2615834 (Constituent Complaint, Duplicate Reviewed), CC2615820 (Constituent Complaint, No Violation), CC2606351 (Constituent Complaint, No Violation), CC2601460 (Constituent Complaint, In Compliance), CC2503099 (Constituent Complaint, In Compliance)",
-    "residential": true,
-    "matched_address": "5898 OLD FREDERICK RD",
-    "candidates": 3
-   }
-  ],
-  "04012500002400": [
-   {
-    "kind": "REPEAT_CODE_CASES",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01MFK&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-10-13",
-    "county": "Baltimore County",
-    "address": "5898 OLD FREDERICK RD",
-    "precision": "block",
-    "detail": "6 code cases at this address: CC2615867 (Constituent Complaint, Duplicate Reviewed), CC2615834 (Constituent Complaint, Duplicate Reviewed), CC2615820 (Constituent Complaint, No Violation), CC2606351 (Constituent Complaint, No Violation), CC2601460 (Constituent Complaint, In Compliance), CC2503099 (Constituent Complaint, In Compliance)",
-    "residential": true,
-    "matched_address": "5898 OLD FREDERICK RD",
-    "candidates": 3
    }
   ],
   "04151523153900": [
@@ -240784,36 +241078,6 @@
     "residential": true,
     "matched_address": "926 RADCLIFFE RD",
     "candidates": 1
-   }
-  ],
-  "04092300001780": [
-   {
-    "kind": "REPEAT_CODE_CASES",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01G18&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-09-08",
-    "county": "Baltimore County",
-    "address": "1 E JOPPA RD",
-    "precision": "block",
-    "detail": "11 code cases at this address: CC2613971 (Constituent Complaint, Duplicate Reviewed), CC2613967 (Constituent Complaint, No Violation), CC2610716 (Constituent Complaint, No Violation), CC2607042 (Constituent Complaint, No Violation), CC2603811 (Constituent Complaint, No Violation), CC2513551 (Constituent Complaint, No Violation)",
-    "residential": true,
-    "matched_address": "1 E JOPPA RD",
-    "candidates": 2
-   }
-  ],
-  "04092300001781": [
-   {
-    "kind": "REPEAT_CODE_CASES",
-    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
-    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01G18&agencyCode=BALTCO&IsToShowInspection=",
-    "date": "2026-09-08",
-    "county": "Baltimore County",
-    "address": "1 E JOPPA RD",
-    "precision": "block",
-    "detail": "11 code cases at this address: CC2613971 (Constituent Complaint, Duplicate Reviewed), CC2613967 (Constituent Complaint, No Violation), CC2610716 (Constituent Complaint, No Violation), CC2607042 (Constituent Complaint, No Violation), CC2603811 (Constituent Complaint, No Violation), CC2513551 (Constituent Complaint, No Violation)",
-    "residential": true,
-    "matched_address": "1 E JOPPA RD",
-    "candidates": 2
    }
   ],
   "04142300008101": [
