@@ -15,12 +15,21 @@ const MyLeadsApp = {
        colored badge and a tinted row so a whole batch stands out. Unknown types get teal. */
     TYPES: {
         STRIKE: { label: "⚖ TAX-SALE STRIKE", tip: "Tax-sale judgment with no deed recorded 90+ days later (TP 14-847 strike angle)", color: "#bf5af2" },
+        COMMERCIAL: { label: "🏢 COMMERCIAL", tip: "Commercial, industrial or mixed-use zoning / county use code", color: "#0a84ff" },
     },
-    typeOf(rows) {
-        for (const r of rows) { const m = /^TYPE:\s*([A-Z0-9_ -]+)\s*$/m.exec(r.notes || ""); if (m) return m[1].trim(); }
-        return "";
+    /* every TYPE: line on any note of the lead, in the order first seen (a lead can be STRIKE and COMMERCIAL) */
+    typesOf(rows) {
+        const out = [];
+        for (const r of rows.slice().reverse()) for (const m of (r.notes || "").matchAll(/^TYPE:\s*([A-Z0-9_ -]+?)\s*$/gm)) if (!out.includes(m[1])) out.push(m[1]);
+        return out;
     },
     typeInfo(t) { return this.TYPES[t] || { label: t, tip: t, color: "#30b0c7" }; },
+    typeBadges(ts) { return (ts || []).map((t) => this.typeBadge(t)).join(" "); },
+    rowStyle(ts) {
+        if (!ts || !ts.length) return "";
+        const c = ts.map((t) => this.typeInfo(t).color);
+        return ` style="background:${c[0]}22; box-shadow:${c.map((x, i) => `inset ${4 * (i + 1)}px 0 0 ${x}`).reverse().join(", ")}"`;
+    },
     typeBadge(t) {
         if (!t) return "";
         const i = this.typeInfo(t);
@@ -62,7 +71,7 @@ const MyLeadsApp = {
             const labelRow = rows.find((r) => /\d/.test(r.label || "") && /[a-z]{3}/i.test(r.label || "")) || rows.find((r) => (r.label || "").trim()) || latest;
             const noteRow = rows.find((r) => (r.notes || "").trim() && !/^(Added to My Leads|Status changed to |TYPE:)/.test(r.notes.trim())) || latest;
             return {
-                key: k, rows, latest, status: latest.status || "new", tab: latest.tab || "", type: this.typeOf(rows),
+                key: k, rows, latest, status: latest.status || "new", tab: latest.tab || "", types: this.typesOf(rows),
                 tabs: [...new Set(rows.map((r) => r.tab).filter(Boolean))],
                 label: (labelRow.label || "").trim() || k, lastNote: (noteRow.notes || "").trim(),
                 // "last touch" = last real note, not the add/remove bookkeeping rows
@@ -115,7 +124,7 @@ const MyLeadsApp = {
             if (s.status === "upcoming" && !(l.inList && l.followUp)) return false;
             if (s.status === "stale" && !(l.inList && !l.followUp && age(l) > 7)) return false;
             if (s.status === "notmine" && l.inList) return false;
-            if (s.status.startsWith("type:")) { if (l.type !== s.status.slice(5)) return false; }
+            if (s.status.startsWith("type:")) { if (!l.types.includes(s.status.slice(5))) return false; }
             else if (!["all", "mine", "due", "upcoming", "stale", "notmine"].includes(s.status) && l.status !== s.status) return false;
             if (maxAge && age(l) > maxAge) return false;
             return !s.search || s.search.split(/\s+/).every((w) => l.blob.includes(w));
@@ -128,10 +137,10 @@ const MyLeadsApp = {
         document.getElementById("mlEmpty").style.display = page.length ? "none" : "block";
         const tTop = this.today();
         const body = document.getElementById("mlBody");
-        body.innerHTML = page.map((l) => `<tr data-k="${this.esc(l.key)}"${l.type ? ` style="background:${this.typeInfo(l.type).color}22; box-shadow:inset 4px 0 0 ${this.typeInfo(l.type).color}"` : ""}>
+        body.innerHTML = page.map((l) => `<tr data-k="${this.esc(l.key)}"${this.rowStyle(l.types)}>
             <td class="date-cell" title="${this.esc(SharedNotes.fmt(l.ts))}">${this.esc(this.ago(l.ts))}<div class="meta">${this.esc(l.who)}</div></td>
             <td class="property-cell"><div class="address">${this.esc(l.label)}</div>
-                <div class="meta">${this.esc(l.tabs.map((t) => this.TAB_NAME[t] || t).join(" · "))}</div>${this.typeBadge(l.type)}</td>
+                <div class="meta">${this.esc(l.tabs.map((t) => this.TAB_NAME[t] || t).join(" · "))}</div>${this.typeBadges(l.types)}</td>
             <td><span class="status-badge ${this.esc(l.status)}">${this.esc((this.STATUS[l.status] || l.status).toUpperCase())}</span>${l.inList ? "" : '<div class="meta" style="margin-top:4px">not in My Leads</div>'}</td>
             <td style="font-family:var(--font-mono); font-size:0.78rem; white-space:nowrap; color:${l.followUp && l.followUp <= tTop ? "var(--red, #ff453a)" : "var(--yellow)"}">${this.esc(this.fuLabel(l.followUp))}</td>
             <td style="font-size:0.8rem; color:var(--text-secondary); max-width:520px">${this.esc(l.lastNote.slice(0, 220))}${l.lastNote.length > 220 ? "…" : ""}</td>
@@ -152,7 +161,7 @@ const MyLeadsApp = {
         document.getElementById("modalBody").innerHTML = `
             <div class="detail-section">
                 <h3>My Leads · <span class="status-badge ${this.esc(l.status)}">${this.esc((this.STATUS[l.status] || l.status).toUpperCase())}</span></h3>
-                <div class="detail-row"><span class="label">Property</span><span class="value" style="font-weight:600">${this.esc(l.label)}${l.type ? "<br>" + this.typeBadge(l.type) : ""}</span></div>
+                <div class="detail-row"><span class="label">Property</span><span class="value" style="font-weight:600">${this.esc(l.label)}${l.types.length ? "<br>" + this.typeBadges(l.types) : ""}</span></div>
                 <div class="detail-row"><span class="label">ID</span><span class="value" style="font-family:var(--font-mono)">${this.esc(l.rows[0].id)}</span></div>
                 <div class="detail-row"><span class="label">In My Leads</span><span class="value">${l.inList ? "Yes" : "No"}${l.followUp ? ` · follow up <b>${this.esc(this.fuLabel(l.followUp))}</b>` : ""}</span></div>
                 <div class="detail-row"><span class="label">Found in</span><span class="value">${this.esc(l.tabs.map((t) => this.TAB_NAME[t] || t).join(" · "))}</span></div>
