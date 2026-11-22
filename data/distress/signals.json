@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T17:03:57+00:00",
+ "generated_at": "2026-11-22T17:38:42+00:00",
  "note": "Fire / vacancy / code-enforcement / foreclosure-registry signals matched to SDAT parcels. A block-level fire lists every candidate parcel and is never a confirmed match.",
  "sources": {
   "osfm": {
@@ -11,20 +11,20 @@
    "fetched": 0
   },
   "montgomery": {
-   "fetched": 321,
-   "matched": 297
+   "fetched": 314,
+   "matched": 290
   },
   "prince_georges": {
-   "fetched": 5188,
-   "matched": 5104
+   "fetched": 5183,
+   "matched": 5099
   },
   "charles_code": {
-   "fetched": 2383,
-   "matched": 2365
+   "fetched": 2354,
+   "matched": 2337
   },
   "accela_code": {
-   "fetched": 10777,
-   "matched": 9235
+   "fetched": 10797,
+   "matched": 9251
   },
   "water_usage": {
    "fetched": 2045,
@@ -32,19 +32,19 @@
    "bare_lot": 79
   }
  },
- "accounts": 14881,
+ "accounts": 14858,
  "kinds": {
-  "CODE_VIOLATIONS": 3170,
-  "DEMO_PERMIT": 233,
+  "CODE_VIOLATIONS": 3158,
+  "DEMO_PERMIT": 232,
   "FIRE": 6,
   "FIRE_REPAIR_PERMIT": 1,
-  "FORECLOSURE_REGISTRY": 5104,
-  "NUISANCE_CASE": 3536,
-  "REPEAT_CODE_CASES": 3831,
+  "FORECLOSURE_REGISTRY": 5099,
+  "NUISANCE_CASE": 3529,
+  "REPEAT_CODE_CASES": 3833,
   "VACANT_NOTICE": 378,
   "WATER_SHUTOFF": 74,
   "ZERO_WATER_USAGE": 1677,
-  "ZONING_CASE": 925,
+  "ZONING_CASE": 924,
   "STALE_TAX_CERT": 596,
   "ZOMBIE_DOT": 10
  },
@@ -67,7 +67,7 @@
     "cause": null,
     "matched_address": "1151 MIDDLENECK RD",
     "candidates": 1,
-    "days_since": 225,
+    "days_since": 226,
     "cooling": false
    }
   ],
@@ -89,7 +89,7 @@
     "cause": null,
     "matched_address": "510 ACADEMY ST",
     "candidates": 1,
-    "days_since": 247,
+    "days_since": 248,
     "cooling": false
    }
   ],
@@ -111,7 +111,7 @@
     "cause": null,
     "matched_address": "145 S PROSPECT ST",
     "candidates": 1,
-    "days_since": 249,
+    "days_since": 250,
     "cooling": false
    }
   ],
@@ -133,7 +133,7 @@
     "cause": null,
     "matched_address": "860 ERIE ST",
     "candidates": 1,
-    "days_since": 255,
+    "days_since": 256,
     "cooling": false
    }
   ],
@@ -155,7 +155,7 @@
     "cause": null,
     "matched_address": "39580 WALNUT CIR",
     "candidates": 1,
-    "days_since": 274,
+    "days_since": 275,
     "cooling": false
    }
   ],
@@ -177,7 +177,7 @@
     "cause": null,
     "matched_address": "6904 PENTRIDGE LN",
     "candidates": 1,
-    "days_since": 280,
+    "days_since": 281,
     "cooling": false
    }
   ],
@@ -445,23 +445,6 @@
     "residential": true,
     "open": false,
     "matched_address": "18715 N FREDERICK AVE",
-    "candidates": 1
-   }
-  ],
-  "161302474308": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Montgomery County DHCA \u2014 housing code case",
-    "url": "https://data.montgomerycountymd.gov/d/k9nj-z35d",
-    "date": "2025-11-21",
-    "county": "Montgomery",
-    "address": "514 PICKWICK VILLAGE WAY",
-    "precision": "exact",
-    "detail": "Case 195809 \u00b7 3 item(s): Door: Trim; General Condition: Gutter/ Downspout; Mold/ Mildew: Walls/ Ceiling - Exterior",
-    "ref": "195809",
-    "residential": true,
-    "open": true,
-    "matched_address": "514 PICKWICK VILLAGE WAY",
     "candidates": 1
    }
   ],
@@ -890,23 +873,6 @@
     "candidates": 1
    }
   ],
-  "160800722706": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Montgomery County DHCA \u2014 housing code case",
-    "url": "https://data.montgomerycountymd.gov/d/k9nj-z35d",
-    "date": "2026-04-17",
-    "county": "Montgomery",
-    "address": "18050 GEORGIA AVE",
-    "precision": "exact",
-    "detail": "Case 199117 \u00b7 2 item(s): General Condition: Parking Lot",
-    "ref": "199117",
-    "residential": true,
-    "open": true,
-    "matched_address": "18050 GEORGIA AVE",
-    "candidates": 1
-   }
-  ],
   "160800727936": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -938,23 +904,6 @@
     "residential": true,
     "open": true,
     "matched_address": "14124 SCHAEFFER RD",
-    "candidates": 1
-   }
-  ],
-  "160800718874": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Montgomery County DHCA \u2014 housing code case",
-    "url": "https://data.montgomerycountymd.gov/d/k9nj-z35d",
-    "date": "2026-04-22",
-    "county": "Montgomery",
-    "address": "18062 GEORGIA AVE",
-    "precision": "exact",
-    "detail": "Case 199175 \u00b7 4 item(s): General Condition: Parking Lot",
-    "ref": "199175",
-    "residential": true,
-    "open": true,
-    "matched_address": "18062 GEORGIA AVE",
     "candidates": 1
    }
   ],
@@ -1060,23 +1009,6 @@
     "candidates": 1
    }
   ],
-  "161301063673": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Montgomery County DHCA \u2014 housing code case",
-    "url": "https://data.montgomerycountymd.gov/d/k9nj-z35d",
-    "date": "2026-05-07",
-    "county": "Montgomery",
-    "address": "7777 MAPLE AVE",
-    "precision": "exact",
-    "detail": "Case 199506 \u00b7 6 item(s): General Condition: Sink; Water/ Mold-Light: Walls/ Ceiling - Interior",
-    "ref": "199506",
-    "residential": true,
-    "open": true,
-    "matched_address": "7777 MAPLE AVE",
-    "candidates": 1
-   }
-  ],
   "160900786412": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -1091,23 +1023,6 @@
     "residential": true,
     "open": true,
     "matched_address": "7214 MILLCREST TER",
-    "candidates": 1
-   }
-  ],
-  "160401969500": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Montgomery County DHCA \u2014 housing code case",
-    "url": "https://data.montgomerycountymd.gov/d/k9nj-z35d",
-    "date": "2026-05-13",
-    "county": "Montgomery",
-    "address": "17111 OVERHILL RD",
-    "precision": "exact",
-    "detail": "Case 199664 \u00b7 2 item(s): General Condition: Tree/ Tree Limbs/ Shrubbery",
-    "ref": "199664",
-    "residential": true,
-    "open": true,
-    "matched_address": "17111 OVERHILL RD",
     "candidates": 1
    }
   ],
@@ -1227,23 +1142,6 @@
     "residential": true,
     "open": true,
     "matched_address": "20317 HIGHLAND HALL DR",
-    "candidates": 1
-   }
-  ],
-  "160700441284": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Montgomery County DHCA \u2014 housing code case",
-    "url": "https://data.montgomerycountymd.gov/d/k9nj-z35d",
-    "date": "2026-07-06",
-    "county": "Montgomery",
-    "address": "5207 WILSON LN",
-    "precision": "exact",
-    "detail": "Case 200923 \u00b7 2 item(s): Grass and Weeds: Yard; Rubbish (branches/ brush/ litter): Solid Waste",
-    "ref": "200923",
-    "residential": true,
-    "open": true,
-    "matched_address": "5207 WILSON LN",
     "candidates": 1
    }
   ],
@@ -1397,22 +1295,6 @@
     "residential": true,
     "open": false,
     "matched_address": "1717 FLORA LN",
-    "candidates": 1
-   }
-  ],
-  "160700503877": [
-   {
-    "kind": "DEMO_PERMIT",
-    "source": "Montgomery County DPS \u2014 demolition permit",
-    "url": "https://data.montgomerycountymd.gov/d/b6ht-fw3x",
-    "date": "2025-11-21",
-    "county": "Montgomery",
-    "address": "6413 DAHLONEGA RD",
-    "precision": "exact",
-    "detail": "Permit 1141709 \u00b7 Issued \u00b7 DEMOLISH \u00b7 Single Family Dwelling",
-    "ref": "1141709",
-    "residential": true,
-    "matched_address": "6413 DAHLONEGA RD",
     "candidates": 1
    }
   ],
@@ -5038,156 +4920,6 @@
     "candidates": 1
    }
   ],
-  "17101007285": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-25",
-    "county": "Prince George's",
-    "address": "12805 Cedarbrook  LN",
-    "precision": "exact",
-    "detail": "Registered 2024-11-25 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "007285",
-    "residential": true,
-    "matched_address": "12805 CEDARBROOK LN",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-21",
-    "county": "Prince George's",
-    "address": "12805  CEDARBROOK LN",
-    "precision": "exact",
-    "detail": "Registered 2024-11-21 \u00b7 occupied: Unavailable \u00b7 Unavailable",
-    "ref": "1007285",
-    "residential": false,
-    "matched_address": "12805 CEDARBROOK LN",
-    "candidates": 1
-   }
-  ],
-  "17101114073": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2026-07-24",
-    "county": "Prince George's",
-    "address": "6002 Maple TER",
-    "precision": "exact",
-    "detail": "Registered 2026-07-24 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "114073",
-    "residential": true,
-    "matched_address": "6002 MAPLE TER",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2026-07-20",
-    "county": "Prince George's",
-    "address": "6002  Maple  TER",
-    "precision": "exact",
-    "detail": "Registered 2026-07-20 \u00b7 occupied: Unavailable \u00b7 Unavailable",
-    "ref": "1114073",
-    "residential": false,
-    "matched_address": "6002 MAPLE TER",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-21",
-    "county": "Prince George's",
-    "address": "6002 Maple TER",
-    "precision": "exact",
-    "detail": "Registered 2024-11-21 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "114073",
-    "residential": true,
-    "matched_address": "6002 MAPLE TER",
-    "candidates": 1
-   }
-  ],
-  "17133622347": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-21",
-    "county": "Prince George's",
-    "address": "9905  Oxbridge  WAY",
-    "precision": "exact",
-    "detail": "Registered 2024-11-21 \u00b7 occupied: Unavailable \u00b7 Unavailable",
-    "ref": "1336223",
-    "residential": false,
-    "matched_address": "9905 OXBRIDGE WAY",
-    "candidates": 1
-   }
-  ],
-  "17010044933": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-27",
-    "county": "Prince George's",
-    "address": "3710 Evans Trail WAY",
-    "precision": "exact",
-    "detail": "Registered 2024-11-27 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "0044933",
-    "residential": true,
-    "matched_address": "3710 EVANS TRAIL WAY",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-21",
-    "county": "Prince George's",
-    "address": "3710 Evans Trail WAY",
-    "precision": "exact",
-    "detail": "Registered 2024-11-21 \u00b7 occupied: Unavailable \u00b7 Residential",
-    "ref": "0044933",
-    "residential": true,
-    "matched_address": "3710 EVANS TRAIL WAY",
-    "candidates": 1
-   }
-  ],
-  "17121313568": [
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2026-03-19",
-    "county": "Prince George's",
-    "address": "3607  Portal  AVE",
-    "precision": "exact",
-    "detail": "Registered 2026-03-19 \u00b7 occupied: Unavailable \u00b7 Unavailable",
-    "ref": "1213135",
-    "residential": false,
-    "matched_address": "3607 PORTAL AVE",
-    "candidates": 1
-   },
-   {
-    "kind": "FORECLOSURE_REGISTRY",
-    "source": "Prince George's County \u2014 Foreclosed Property Registry",
-    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
-    "date": "2024-11-21",
-    "county": "Prince George's",
-    "address": "3607  Portal  AVE",
-    "precision": "exact",
-    "detail": "Registered 2024-11-21 \u00b7 occupied: Unavailable \u00b7 Unavailable",
-    "ref": "1313568",
-    "residential": false,
-    "matched_address": "3607 PORTAL AVE",
-    "candidates": 1
-   }
-  ],
   "17151770593": [
    {
     "kind": "FORECLOSURE_REGISTRY",
@@ -5427,6 +5159,22 @@
     "ref": "0659086",
     "residential": true,
     "matched_address": "12704 PRINCELEIGH ST",
+    "candidates": 1
+   }
+  ],
+  "17101007285": [
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2024-11-25",
+    "county": "Prince George's",
+    "address": "12805 Cedarbrook  LN",
+    "precision": "exact",
+    "detail": "Registered 2024-11-25 \u00b7 occupied: Unavailable \u00b7 Residential",
+    "ref": "007285",
+    "residential": true,
+    "matched_address": "12805 CEDARBROOK LN",
     "candidates": 1
    }
   ],
@@ -5855,6 +5603,22 @@
     "ref": "1809037",
     "residential": true,
     "matched_address": "3536 MADISON ST",
+    "candidates": 1
+   }
+  ],
+  "17010044933": [
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2024-11-27",
+    "county": "Prince George's",
+    "address": "3710 Evans Trail WAY",
+    "precision": "exact",
+    "detail": "Registered 2024-11-27 \u00b7 occupied: Unavailable \u00b7 Residential",
+    "ref": "0044933",
+    "residential": true,
+    "matched_address": "3710 EVANS TRAIL WAY",
     "candidates": 1
    }
   ],
@@ -62718,6 +62482,22 @@
     "candidates": 1
    }
   ],
+  "17121313568": [
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2026-03-19",
+    "county": "Prince George's",
+    "address": "3607  Portal  AVE",
+    "precision": "exact",
+    "detail": "Registered 2026-03-19 \u00b7 occupied: Unavailable \u00b7 Unavailable",
+    "ref": "1213135",
+    "residential": false,
+    "matched_address": "3607 PORTAL AVE",
+    "candidates": 1
+   }
+  ],
   "17111175553": [
    {
     "kind": "FORECLOSURE_REGISTRY",
@@ -78523,6 +78303,36 @@
     "ref": "0720391",
     "residential": false,
     "matched_address": "15900 PEACH WALKER DR",
+    "candidates": 1
+   }
+  ],
+  "17101114073": [
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2026-07-24",
+    "county": "Prince George's",
+    "address": "6002 Maple TER",
+    "precision": "exact",
+    "detail": "Registered 2026-07-24 \u00b7 occupied: Unavailable \u00b7 Residential",
+    "ref": "114073",
+    "residential": true,
+    "matched_address": "6002 MAPLE TER",
+    "candidates": 1
+   },
+   {
+    "kind": "FORECLOSURE_REGISTRY",
+    "source": "Prince George's County \u2014 Foreclosed Property Registry",
+    "url": "https://data.princegeorgescountymd.gov/d/cni6-nr5g",
+    "date": "2026-07-20",
+    "county": "Prince George's",
+    "address": "6002  Maple  TER",
+    "precision": "exact",
+    "detail": "Registered 2026-07-20 \u00b7 occupied: Unavailable \u00b7 Unavailable",
+    "ref": "1114073",
+    "residential": false,
+    "matched_address": "6002 MAPLE TER",
     "candidates": 1
    }
   ],
@@ -96752,67 +96562,6 @@
     "candidates": 1
    }
   ],
-  "0906024491": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/6c895390-f2f1-46f4-a3dc-f9e52b5cc900",
-    "date": "2026-10-22",
-    "county": "Charles",
-    "address": "2064 CRAIN HWY",
-    "precision": "exact",
-    "ref": "0906024491",
-    "detail": "BCV-261223 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 28 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "2056 CRAIN HWY",
-    "candidates": 1
-   },
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/c6bb92e8-990c-4a5a-b40a-ed5c777e4e9d",
-    "date": "2026-10-22",
-    "county": "Charles",
-    "address": "2066 CRAIN HWY",
-    "precision": "exact",
-    "ref": "0906024491",
-    "detail": "BCV-261224 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 28 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "2056 CRAIN HWY",
-    "candidates": 1
-   },
-   {
-    "kind": "REPEAT_CODE_CASES",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/search",
-    "date": "2026-10-22",
-    "county": "Charles",
-    "address": "2064 CRAIN HWY",
-    "precision": "exact",
-    "ref": "0906024491",
-    "detail": "28 code cases at this parcel: BCV-261223 (Building Code Violation, In Progress), BCV-261224 (Building Code Violation, In Progress), BCV-260771 (Building Code Violation, Closed - Unfounded), BCV-260144 (Building Code Violation, Closed - Resolved), BCV-260080 (Building Code Violation, Closed - Resolved), BCV-260077 (Building Code Violation, Closed - Unfounded)",
-    "residential": true,
-    "matched_address": "2056 CRAIN HWY",
-    "candidates": 1
-   },
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/ccaee9c6-1f2a-4a76-b711-8e6961908539",
-    "date": "2024-07-18",
-    "county": "Charles",
-    "address": "2056 CRAIN HWY",
-    "precision": "exact",
-    "ref": "0906024491",
-    "detail": "VIOL-240113 \u00b7 Infrastructure Violation \u00b7 Escalated \u00b7 ESCALATED \u00b7 28 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": true,
-    "matched_address": "2056 CRAIN HWY",
-    "candidates": 1
-   }
-  ],
   "0904030664": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -101285,23 +101034,6 @@
     "residential": true,
     "escalated": false,
     "matched_address": "3105 S DECLARATION CT",
-    "candidates": 1
-   }
-  ],
-  "0908026572": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/08a3160a-428a-4d10-930d-c9751bae227e",
-    "date": "2025-08-21",
-    "county": "Charles",
-    "address": "5695 TED BOWLING RD",
-    "precision": "exact",
-    "ref": "0908026572",
-    "detail": "BCV-250295 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 2 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "5695 TED BOWLING RD",
     "candidates": 1
    }
   ],
@@ -105962,23 +105694,6 @@
     "candidates": 1
    }
   ],
-  "0904008626": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/13bb34e5-49f6-48b4-9681-44cfdea1a5e5",
-    "date": "2026-06-09",
-    "county": "Charles",
-    "address": "11040 CRAIN HWY",
-    "precision": "exact",
-    "ref": "0904008626",
-    "detail": "BCV-260610 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 2 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "11040 CRAIN HWY",
-    "candidates": 1
-   }
-  ],
   "0908008043": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -106321,23 +106036,6 @@
     "residential": true,
     "escalated": false,
     "matched_address": "9563 RANDALL DR",
-    "candidates": 1
-   }
-  ],
-  "0906364353": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/17209525-98fe-4c5c-aabd-5cd3df646360",
-    "date": "2026-06-02",
-    "county": "Charles",
-    "address": "9739 GAELIC PL",
-    "precision": "exact",
-    "ref": "0906364353",
-    "detail": "BCV-260524 \u00b7 Building Code Violation \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": null,
     "candidates": 1
    }
   ],
@@ -107032,52 +106730,6 @@
     "candidates": 1
    }
   ],
-  "0909011463": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/582de66a-aafb-45a3-a7a5-a84068302c56",
-    "date": "2026-08-26",
-    "county": "Charles",
-    "address": "6997 OAK GLEN DR",
-    "precision": "exact",
-    "ref": "0909011463",
-    "detail": "NV-260216 \u00b7 Nuisance \u00b7 In Progress \u00b7 4 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "6997 OAK GLEN DR",
-    "candidates": 1
-   },
-   {
-    "kind": "REPEAT_CODE_CASES",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/search",
-    "date": "2026-08-26",
-    "county": "Charles",
-    "address": "6997 OAK GLEN DR",
-    "precision": "exact",
-    "ref": "0909011463",
-    "detail": "4 code cases at this parcel: NV-260216 (Nuisance, In Progress), BCV-260877 (Building Code Violation, Closed - Unfounded), ZV-260140 (Zoning, Escalated), VIOL-260033 (Infrastructure Violation, Closed - Unfounded)",
-    "residential": true,
-    "matched_address": "6997 OAK GLEN DR",
-    "candidates": 1
-   },
-   {
-    "kind": "ZONING_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/505691c3-6098-46f6-a4cd-86eea73540c9",
-    "date": "2026-06-29",
-    "county": "Charles",
-    "address": "6997 OAK GLEN DR",
-    "precision": "exact",
-    "ref": "0909011463",
-    "detail": "ZV-260140 \u00b7 Zoning \u00b7 Escalated \u00b7 ESCALATED \u00b7 4 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": true,
-    "matched_address": "6997 OAK GLEN DR",
-    "candidates": 1
-   }
-  ],
   "0904000153": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -107745,23 +107397,6 @@
     "candidates": 1
    }
   ],
-  "0902004968": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/de1b2d0b-254b-4857-a6c8-c4957b470879",
-    "date": "2026-07-30",
-    "county": "Charles",
-    "address": "8010 ANNAPOLIS WOODS RD",
-    "precision": "exact",
-    "ref": "0902004968",
-    "detail": "BCV-260893 \u00b7 Building Code Violation \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "8010 ANNAPOLIS WOODS RD",
-    "candidates": 1
-   }
-  ],
   "0907357769": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -107827,23 +107462,6 @@
     "residential": true,
     "escalated": false,
     "matched_address": "5990 BICKNELL RD",
-    "candidates": 1
-   }
-  ],
-  "0906019188": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/90d7028c-b720-4435-a582-56ebd6642416",
-    "date": "2026-07-22",
-    "county": "Charles",
-    "address": "1109   CLARK AVE",
-    "precision": "exact",
-    "ref": "0906019188",
-    "detail": "BCV-260841 \u00b7 Building Code Violation \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "1109 CLARK AVE",
     "candidates": 1
    }
   ],
@@ -108021,23 +107639,6 @@
     "residential": true,
     "escalated": false,
     "matched_address": "7215 HEDGES PL",
-    "candidates": 1
-   }
-  ],
-  "0906186351": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/b4f5fa5e-7b69-4eb2-9233-f2fb5b9ecb13",
-    "date": "2026-07-20",
-    "county": "Charles",
-    "address": "3015 CRAIN HWY",
-    "precision": "exact",
-    "ref": "0906186351",
-    "detail": "BCV-260834 \u00b7 Building Code Violation \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "3015 CRAIN HWY",
     "candidates": 1
    }
   ],
@@ -108356,312 +107957,6 @@
     "candidates": 1
    }
   ],
-  "0908355989": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/87c035bf-bf68-482e-a5de-5d2e78795ca8",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "",
-    "precision": "exact",
-    "ref": "0908355989",
-    "detail": "NV-260183 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": null,
-    "candidates": 1
-   }
-  ],
-  "0908355994": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/94ce77d9-a3ac-4de5-99fb-87efa814947a",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13891 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355994",
-    "detail": "NV-260188 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13891 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355992": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/9b274206-eeec-4591-8040-e62ff6d882af",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13875 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355992",
-    "detail": "NV-260186 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13875 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355993": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/46d6e143-1949-4aa2-9358-9f57294a041b",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13883 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355993",
-    "detail": "NV-260187 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13883 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355991": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/cfafe620-0ef0-4bb0-9d3b-e995969ffa58",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13867 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355991",
-    "detail": "NV-260185 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13867 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355990": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/72b0a991-a8b2-4818-afac-44763c83592d",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "",
-    "precision": "exact",
-    "ref": "0908355990",
-    "detail": "NV-260184 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": null,
-    "candidates": 1
-   }
-  ],
-  "0908355983": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/1acc2dcc-c83e-4d76-988f-89efe4561f02",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "5751 SARAH PEARL PL",
-    "precision": "exact",
-    "ref": "0908355983",
-    "detail": "NV-260177 \u00b7 Nuisance \u00b7 In Progress \u00b7 2 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "5751 SARAH PEARL PL",
-    "candidates": 1
-   }
-  ],
-  "0908355984": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/2180f8cf-8603-43e4-b3f5-a29fa910778a",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "5755 SARAH PEARL PL",
-    "precision": "exact",
-    "ref": "0908355984",
-    "detail": "NV-260178 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "5755 SARAH PEARL PL",
-    "candidates": 1
-   }
-  ],
-  "0908355985": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/8c0445b3-914e-491d-9ef8-38d8f08dee2d",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "5754 SARAH PEARL PL",
-    "precision": "exact",
-    "ref": "0908355985",
-    "detail": "NV-260179 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "5754 SARAH PEARL PL",
-    "candidates": 1
-   }
-  ],
-  "0908355988": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/97052150-164a-488f-a4c1-ee0a21f22476",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13854 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355988",
-    "detail": "NV-260182 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13854 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355979": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/975688bf-23a1-40ac-8041-2d7b454c5225",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13884 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355979",
-    "detail": "NV-260173 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13884 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355980": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/8ca5d133-153b-4b0f-afe7-ede0517612ed",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13880 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355980",
-    "detail": "NV-260174 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13880 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355982": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/4745e49b-ab6f-4d0f-9818-245853c12861",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13870 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355982",
-    "detail": "NV-260176 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13870 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355981": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/8d5c0eaa-a220-42bb-ba7d-b02fa19b411a",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13876 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355981",
-    "detail": "NV-260175 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13876 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355987": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/b31719a4-5b60-463c-9b69-644207d6ca73",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13860 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355987",
-    "detail": "NV-260181 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13860 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355986": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/eb7c077e-de6c-4c81-9cda-b807466be6b0",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13864 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355986",
-    "detail": "NV-260180 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13864 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355978": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/76e31182-4e0d-40f4-8819-6e79194bb2e0",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13888 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355978",
-    "detail": "NV-260172 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13888 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
-  "0908355977": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/c0ae19a7-718e-4d16-8879-0667ac82006c",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "13896 SARATOGA LN",
-    "precision": "exact",
-    "ref": "0908355977",
-    "detail": "NV-260171 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "13896 SARATOGA LN",
-    "candidates": 1
-   }
-  ],
   "0910022843": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -108889,23 +108184,6 @@
     "precision": "exact",
     "ref": "0906364350",
     "detail": "BCV-260896 \u00b7 Building Code Violation \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": null,
-    "candidates": 1
-   }
-  ],
-  "0906364348": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/11fca271-36a2-4c3a-a954-6c1f3aca7022",
-    "date": "2026-08-03",
-    "county": "Charles",
-    "address": "9751 GAELIC PL",
-    "precision": "exact",
-    "ref": "0906364348",
-    "detail": "BCV-260897 \u00b7 Building Code Violation \u00b7 In Progress",
     "residential": true,
     "escalated": false,
     "matched_address": null,
@@ -109723,23 +109001,6 @@
     "candidates": 1
    }
   ],
-  "0906023215": [
-   {
-    "kind": "NUISANCE_CASE",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/1faf82d7-741d-479d-a765-26b5cea163c6",
-    "date": "2026-08-24",
-    "county": "Charles",
-    "address": "4335 MIDDLETOWN RD",
-    "precision": "exact",
-    "ref": "0906023215",
-    "detail": "NV-260210 \u00b7 Nuisance \u00b7 In Progress",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "4335 MIDDLETOWN RD",
-    "candidates": 1
-   }
-  ],
   "0910012457": [
    {
     "kind": "ZONING_CASE",
@@ -109754,23 +109015,6 @@
     "residential": true,
     "escalated": false,
     "matched_address": "5580 STUCKEY RD",
-    "candidates": 1
-   }
-  ],
-  "0909007156": [
-   {
-    "kind": "CODE_VIOLATIONS",
-    "source": "Charles County Code Enforcement (Civic Access)",
-    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/8b72ec95-5a67-4602-ae9e-b1b69a999680",
-    "date": "2026-08-07",
-    "county": "Charles",
-    "address": "8132   OLD LEONARDTOWN RD",
-    "precision": "exact",
-    "ref": "0909007156",
-    "detail": "BCV-260921 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 2 cases at this parcel since 2020",
-    "residential": true,
-    "escalated": false,
-    "matched_address": "8130 OLD LEONARDTOWN RD",
     "candidates": 1
    }
   ],
@@ -110698,6 +109942,23 @@
     "candidates": 1
    }
   ],
+  "0906283977": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/bb8a095f-40ec-4f7f-9298-d201b300b592",
+    "date": "2026-09-14",
+    "county": "Charles",
+    "address": "10846   SMUGGLERS NOTCH CT",
+    "precision": "exact",
+    "ref": "0906283977",
+    "detail": "BCV-261069 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 2 cases at this parcel since 2020",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "10846 SMUGGLERS NOTCH CT",
+    "candidates": 1
+   }
+  ],
   "0906285872": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -110988,6 +110249,23 @@
     "detail": "3 code cases at this parcel: BCV-261121 (Building Code Violation, In Progress), NV-210060 (Nuisance, Closed - Resolved), NV-200344 (Nuisance, Closed - Unfounded)",
     "residential": true,
     "matched_address": "1009 COPPERFIELD CT",
+    "candidates": 1
+   }
+  ],
+  "0903012239": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/9da4c6f3-4be7-4ffd-b922-974a12ff17c6",
+    "date": "2026-09-08",
+    "county": "Charles",
+    "address": "7885   ZIMMERMAN PL",
+    "precision": "exact",
+    "ref": "0903012239",
+    "detail": "BCV-261056 \u00b7 Building Code Violation \u00b7 In Progress",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "7885 ZIMMERMAN PL",
     "candidates": 1
    }
   ],
@@ -112387,6 +111665,52 @@
     "residential": true,
     "escalated": false,
     "matched_address": "16956 RIVERS REACH LN",
+    "candidates": 1
+   }
+  ],
+  "0906024491": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/6c895390-f2f1-46f4-a3dc-f9e52b5cc900",
+    "date": "2026-10-22",
+    "county": "Charles",
+    "address": "2064 CRAIN HWY",
+    "precision": "exact",
+    "ref": "0906024491",
+    "detail": "BCV-261223 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 28 cases at this parcel since 2020",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "2056 CRAIN HWY",
+    "candidates": 1
+   },
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/c6bb92e8-990c-4a5a-b40a-ed5c777e4e9d",
+    "date": "2026-10-22",
+    "county": "Charles",
+    "address": "2066 CRAIN HWY",
+    "precision": "exact",
+    "ref": "0906024491",
+    "detail": "BCV-261224 \u00b7 Building Code Violation \u00b7 In Progress \u00b7 28 cases at this parcel since 2020",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "2056 CRAIN HWY",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/search",
+    "date": "2026-10-22",
+    "county": "Charles",
+    "address": "2064 CRAIN HWY",
+    "precision": "exact",
+    "ref": "0906024491",
+    "detail": "28 code cases at this parcel: BCV-261223 (Building Code Violation, In Progress), BCV-261224 (Building Code Violation, In Progress), BCV-260771 (Building Code Violation, Closed - Unfounded), BCV-260144 (Building Code Violation, Closed - Resolved), BCV-260080 (Building Code Violation, Closed - Resolved), BCV-260077 (Building Code Violation, Closed - Unfounded)",
+    "residential": true,
+    "matched_address": "2056 CRAIN HWY",
     "candidates": 1
    }
   ],
@@ -121349,6 +120673,22 @@
     "candidates": 1
    }
   ],
+  "0909011463": [
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Charles County Code Enforcement (Civic Access)",
+    "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/search",
+    "date": "2026-08-26",
+    "county": "Charles",
+    "address": "6997 OAK GLEN DR",
+    "precision": "exact",
+    "ref": "0909011463",
+    "detail": "4 code cases at this parcel: NV-260216 (Nuisance, Closed - Resolved), BCV-260877 (Building Code Violation, Closed - Unfounded), ZV-260140 (Zoning, Closed - Resolved), VIOL-260033 (Infrastructure Violation, Closed - Unfounded)",
+    "residential": true,
+    "matched_address": "6997 OAK GLEN DR",
+    "candidates": 1
+   }
+  ],
   "04090907152180": [
    {
     "kind": "CODE_VIOLATIONS",
@@ -128778,12 +128118,39 @@
    {
     "kind": "NUISANCE_CASE",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UPN&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "7133 EASTBROOK AVE",
+    "precision": "exact",
+    "detail": "CC2617296 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Rats living by both sheds. Trash is never cleaned up and dog waste OneView Id: 318203 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 7133 EASTBROOK AVE, HIGHLANDTOWN, MD, 21224 Lat/L \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "7133 EASTBROOK AVE",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UPN&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "7133 EASTBROOK AVE",
+    "precision": "exact",
+    "detail": "3 code cases at this address: CC2617296 (Constituent Complaint, Pending), TS2600793 (Ticket Sweep, Order Filed), CC2602341 (Constituent Complaint, No Violation)",
+    "residential": true,
+    "matched_address": "7133 EASTBROOK AVE",
+    "candidates": 1
+   },
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
     "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01JEV&agencyCode=BALTCO&IsToShowInspection=",
     "date": "2026-09-25",
     "county": "Baltimore County",
     "address": "7133 EASTBROOK AVE",
     "precision": "exact",
-    "detail": "TS2600793 \u00b7 Ticket Sweep \u00b7 Order Filed \u00b7 2 cases at this address",
+    "detail": "TS2600793 \u00b7 Ticket Sweep \u00b7 Order Filed \u00b7 3 cases at this address",
     "residential": true,
     "escalated": false,
     "matched_address": "7133 EASTBROOK AVE",
@@ -227236,12 +226603,26 @@
    {
     "kind": "NUISANCE_CASE",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UOV&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "1911 BARRY RD",
+    "precision": "exact",
+    "detail": "CS2601209 \u00b7 Community Sweep \u00b7 Inspection Scheduled \u00b7 Open dump; chest freezer and TV laying in rear yard \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1911 BARRY RD",
+    "candidates": 1
+   },
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
     "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01QU6&agencyCode=BALTCO&IsToShowInspection=",
     "date": "2026-11-04",
     "county": "Baltimore County",
     "address": "1911 BARRY RD",
     "precision": "exact",
-    "detail": "TS2600989 \u00b7 Ticket Sweep \u00b7 Citation Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 cwol",
+    "detail": "TS2600989 \u00b7 Ticket Sweep \u00b7 Citation Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 cwol \u00b7 2 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "1911 BARRY RD",
@@ -227252,12 +226633,26 @@
    {
     "kind": "NUISANCE_CASE",
     "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UOX&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "1928 BARRY RD",
+    "precision": "exact",
+    "detail": "CS2601211 \u00b7 Community Sweep \u00b7 Inspection Scheduled \u00b7 Uv. Ford Focus with exp tags. Need to update registration or remove vehicle from property. Tags expired 8/22. \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1928 BARRY RD",
+    "candidates": 1
+   },
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
     "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01QU4&agencyCode=BALTCO&IsToShowInspection=",
     "date": "2026-11-04",
     "county": "Baltimore County",
     "address": "1928 BARRY RD",
     "precision": "exact",
-    "detail": "TS2600988 \u00b7 Ticket Sweep \u00b7 Citation Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 feces",
+    "detail": "TS2600988 \u00b7 Ticket Sweep \u00b7 Citation Mailed \u00b7 INSPECTOR CONFIRMED \u00b7 feces \u00b7 2 cases at this address",
     "residential": true,
     "escalated": true,
     "matched_address": "1928 BARRY RD",
@@ -236967,6 +236362,193 @@
     "residential": true,
     "escalated": false,
     "matched_address": "6 KNAVES CT",
+    "candidates": 1
+   }
+  ],
+  "04121202070190": [
+   {
+    "kind": "CODE_VIOLATIONS",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UPO&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "7129 EASTBROOK AVE",
+    "precision": "exact",
+    "detail": "CRH2601811 \u00b7 Rental Registration Compliance \u00b7 Pending \u00b7 Description: at least 3 families living in house. rooms being rented. This is a small townhouse. It causes trash issues. Too much trash. No where to park. OneView Id: 318204 Device Type: HTML5 Device Model: BaltimoreCoun \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "7129 EASTBROOK AVE",
+    "candidates": 1
+   },
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UPL&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "7129 EASTBROOK AVE",
+    "precision": "exact",
+    "detail": "CC2617294 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Rats running crazy. too much stuff in yard. They are living there OneView Id: 318201 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 7129 EASTBROOK AVE, HIGHLANDTOWN, MD, 21224 Lat/Ln \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "7129 EASTBROOK AVE",
+    "candidates": 1
+   }
+  ],
+  "04121211000860": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UPM&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "7234 GOUGH ST",
+    "precision": "exact",
+    "detail": "CC2617295 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Rat holes every wear. The over growth is insane. They are living under shed. This has been going on for years any nothing is done. Rats are everywhere. Trash left outside OneView Id: 318202 Device Type: HTML \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "7234 GOUGH ST",
+    "candidates": 1
+   }
+  ],
+  "04042200001066": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UPE&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "11974 LONG LAKE DR",
+    "precision": "exact",
+    "detail": "CC2617291 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: On 11974 Long Lake drive for several of yrs three cars have been parked with expired tags and car cover. A SUV is parked with a completely flat tire and a rim holding it as support. They are not following ou",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "11974 LONG LAKE DR",
+    "candidates": 1
+   }
+  ],
+  "04011900014181": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UPB&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "1915 VALLEY RD",
+    "precision": "exact",
+    "detail": "CC2617289 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Trash piled in the driveway of 1915 Valley Rd. OneView Id: 318196 Device Type: HTML5 Device Model: BaltimoreCountyMd Approximate Address: 1915 VALLEY RD, GWYNN OAK, MD, 21207 Lat/Lng Coordinates: 39.30914, - \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1915 VALLEY RD",
+    "candidates": 1
+   }
+  ],
+  "04121219077570": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UOW&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "1921 BARRY RD",
+    "precision": "exact",
+    "detail": "CS2601210 \u00b7 Community Sweep \u00b7 Inspection Scheduled \u00b7 Tgw on property, overgrowth into alley needs cut and trimmed.",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1921 BARRY RD",
+    "candidates": 1
+   }
+  ],
+  "04121216000330": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UOT&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-22",
+    "county": "Baltimore County",
+    "address": "1903 BARRY RD",
+    "precision": "exact",
+    "detail": "CS2601208 \u00b7 Community Sweep \u00b7 Inspection Scheduled \u00b7 Tgw \u00b7 2 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "1903 BARRY RD",
+    "candidates": 1
+   }
+  ],
+  "04121201054623": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UN4&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "112 SOLLERS POINT RD",
+    "precision": "exact",
+    "detail": "CC2617285 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 The property at 112 sollerspoint road dundalk maryland 21222 stores numerous unlicened autos in the back yard on any given day. Also the owner has put auto towing bars half way into the alley behind the house obstructing",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "112 SOLLERS POINT RD",
+    "candidates": 1
+   }
+  ],
+  "04142200022391": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UON&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "4423 KENWOOD AVE",
+    "precision": "exact",
+    "detail": "CC2617288 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Not sure what the exact address is, but it's a new \"family food shop,\" that sells (I can't even type this easily) fake urine pouches below the front counter. Is this allowed (even if fake?) by the health dep \u00b7 3 cases at this address",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "4423 KENWOOD AVE",
+    "candidates": 1
+   },
+   {
+    "kind": "REPEAT_CODE_CASES",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UON&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "4423 KENWOOD AVE",
+    "precision": "exact",
+    "detail": "3 code cases at this address: CC2617288 (Constituent Complaint, Pending), VP2500069 (Vacant Property Inventory, Closed), CC2503269 (Constituent Complaint, Dismissed by Inspector)",
+    "residential": true,
+    "matched_address": "4423 KENWOOD AVE",
+    "candidates": 1
+   }
+  ],
+  "04141406001030": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UOH&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "6626 KENWOOD AVE",
+    "precision": "exact",
+    "detail": "CC2617287 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: Neighbor keep blowing leaves off there lawn into the street which blows them on the property to houses across the street as cars go up and down the street OneView Id: 318186 Device Type: HTML5 Device Model: ",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "6626 KENWOOD AVE",
+    "candidates": 1
+   }
+  ],
+  "04010106450070": [
+   {
+    "kind": "NUISANCE_CASE",
+    "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26CAP&capID2=00000&capID3=01UN0&agencyCode=BALTCO&IsToShowInspection=",
+    "date": "2026-11-21",
+    "county": "Baltimore County",
+    "address": "6336 FREDERICK RD",
+    "precision": "exact",
+    "detail": "CC2617284 \u00b7 Constituent Complaint \u00b7 Pending \u00b7 complaint, not yet inspected \u00b7 Description: There are rats running throughout the alley, from the woods behind Paradise Assisted a living under the shed at 6366 Frederick, along the garages on Symington. They dig through the trash at 6340 Frederick. O",
+    "residential": true,
+    "escalated": false,
+    "matched_address": "6336 FREDERICK RD",
     "candidates": 1
    }
   ],
@@ -303043,16 +302625,6 @@
   {
    "kind": "CODE_VIOLATIONS",
    "source": "Charles County Code Enforcement (Civic Access)",
-   "date": "2026-07-13",
-   "county": "Charles",
-   "address": "",
-   "detail": "BCV-260818 \u00b7 Building Code Violation \u00b7 In Progress",
-   "url": "https://land.charlescountymd.gov/energov_prod/selfservice#/codeCase/35d1da3f-440c-4a47-a61b-d109fdfe7563",
-   "why": "none"
-  },
-  {
-   "kind": "CODE_VIOLATIONS",
-   "source": "Charles County Code Enforcement (Civic Access)",
    "date": "2026-08-17",
    "county": "Charles",
    "address": "11637 Terrance DR",
@@ -305818,6 +305390,16 @@
    "address": "2228 SEARLES RD",
    "detail": "CRH2500856 \u00b7 Rental Registration Compliance \u00b7 Order Filed",
    "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=25CAP&capID2=00000&capID3=00JZY&agencyCode=BALTCO&IsToShowInspection=",
+   "why": "none"
+  },
+  {
+   "kind": "VACANT_NOTICE",
+   "source": "Baltimore County \u2014 Code Enforcement (CitizenAccess)",
+   "date": "2025-05-23",
+   "county": "Baltimore County",
+   "address": "7923 CHARLESMONT RD",
+   "detail": "VP2500186 \u00b7 Vacant Property Inventory \u00b7 Active \u00b7 Description: house ha excessive tall grass and weeds that are along fence lines and are encroaching into my yard. Wild ivy and other plants scaling the side of the house. The property is owned by Baltimore County. The ne \u00b7 4 cases at this address",
+   "url": "https://citizenaccess.baltimorecountymd.gov/CitizenAccess/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=25CAP&capID2=00000&capID3=00J9X&agencyCode=BALTCO&IsToShowInspection=",
    "why": "none"
   }
  ]
