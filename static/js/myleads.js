@@ -16,6 +16,7 @@ const MyLeadsApp = {
     TYPES: {
         STRIKE: { label: "⚖ TAX-SALE STRIKE", tip: "Tax-sale judgment with no deed recorded 90+ days later (TP 14-847 strike angle)", color: "#bf5af2" },
         COMMERCIAL: { label: "🏢 COMMERCIAL", tip: "Commercial, industrial or mixed-use zoning / county use code", color: "#0a84ff" },
+        TAXTROUBLE: { label: "💸 TAX TROUBLE", tip: "Owner had a tax-sale suit that was paid off / dismissed - regular deal, not a strike", color: "#ff9f0a" },
         TEXT: { label: "💬 TEXT REPLY", tip: "Owner or family replied to a Text Blaster text (2026 tax-sale owner/heir lists)", color: "#30d158" },
     },
     /* every TYPE: line on any note of the lead, in the order first seen (a lead can be STRIKE and COMMERCIAL) */
