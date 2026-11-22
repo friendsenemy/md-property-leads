@@ -1,4 +1,17 @@
 heir_name,relation,heir_town,heir_state,town_is_guess,decedent,date_of_death,property_address,property_city,county,sdat_account,obituary_url
+Jane Willhoite,child,Annapolis,MD,yes,Marilyn Hansen,2026-11-17,3239 CHRISLAND DR,Annapolis,Anne Arundel,020216690045327,https://www.legacy.com/person/marilyn-hansen-62943173
+Dr Anderson,spouse,Cambridge,MD,yes,Mary Ellen Anderson,2026,601 SCHOOL HOUSE LN,Cambridge,Dorchester,1007126980,https://www.legacy.com/us/obituaries/name/mary-anderson-obituary?id=63037585
+Cherylene Wright,child,Arnold,MD,yes,Thomas Holland,2026-11-16,508 WOODBINE AVE,Towson,Baltimore,04090902650560,https://www.legacy.com/us/obituaries/capitalgazette/name/thomas-holland-obituary?id=63037534
+Roderic Holland,child,Arnold,MD,yes,Thomas Holland,2026-11-16,508 WOODBINE AVE,Towson,Baltimore,04090902650560,https://www.legacy.com/us/obituaries/capitalgazette/name/thomas-holland-obituary?id=63037534
+Troy Holland,child,Arnold,MD,yes,Thomas Holland,2026-11-16,508 WOODBINE AVE,Towson,Baltimore,04090902650560,https://www.legacy.com/us/obituaries/capitalgazette/name/thomas-holland-obituary?id=63037534
+Laura DeLoriea,child,Eldersburg,MD,,Irma Kadish Brown,2026-11-13,930 SHIRLEY MANOR RD,Reisterstown,Baltimore,04040403037681,https://www.legacy.com/us/obituaries/carrollcountytimes/name/irma-brown-obituary?id=63037533
+Glenn DeLoriea,in-law,Eldersburg,MD,,Irma Kadish Brown,2026-11-13,930 SHIRLEY MANOR RD,Reisterstown,Baltimore,04040403037681,https://www.legacy.com/us/obituaries/carrollcountytimes/name/irma-brown-obituary?id=63037533
+Barbara Fairbanks,spouse,Baltimore,MD,yes,Richard Walter Fairbanks,2026-11-14,406 OLD ORCHARD RD,Baltimore,Baltimore City,0328058019 015,https://www.legacy.com/us/obituaries/baltimoresun/name/richard-fairbanks-obituary?id=63037530
+Carol Richardson,spouse,Waldorf,MD,yes,Stephen Page,,305 STODDERT CT,Waldorf,Charles,0906021077,https://www.legacy.com/us/obituaries/baltimoresun/name/stephen-page-obituary?id=63037535
+Dylan Page,child,Waldorf,MD,yes,Stephen Page,,305 STODDERT CT,Waldorf,Charles,0906021077,https://www.legacy.com/us/obituaries/baltimoresun/name/stephen-page-obituary?id=63037535
+Christine Barnes,sibling,Waldorf,MD,yes,Stephen Page,,305 STODDERT CT,Waldorf,Charles,0906021077,https://www.legacy.com/us/obituaries/baltimoresun/name/stephen-page-obituary?id=63037535
+Jeffrey Page,sibling,Waldorf,MD,yes,Stephen Page,,305 STODDERT CT,Waldorf,Charles,0906021077,https://www.legacy.com/us/obituaries/baltimoresun/name/stephen-page-obituary?id=63037535
+Margaret Hoffman,spouse,Ocean Pines,MD,yes,Alan Hoffman,2026-11-10,52 DRAWBRIDGE RD,Ocean Pines,Worcester,2403094413,https://www.legacy.com/us/obituaries/baltimoresun/name/alan-hoffman-obituary?id=63037538
 Caroline Fitzgerald,spouse,Randallstown,MD,yes,Edward (Ed) F. Fitzgerald Jr.,2026-11-18,3818 ELMCROFT RD,Randallstown,Baltimore,04020213400490,https://www.legacy.com/us/obituaries/name/edward-fitzgerald-obituary?id=63029095
 Sandra Ale,spouse,Crofton,MD,,James (Jimmy) Walter Ale,2026-11-19,1709 JONES FALLS CT,Crofton,Anne Arundel,020220790035081,https://www.legacy.com/us/obituaries/name/james-ale-obituary?id=63031169
 Anita Foder,child,Columbia,MD,yes,Thomas C. Wivell,,6754 CARLINDA AVE,Columbia,Howard,1406437427,https://www.legacy.com/us/obituaries/fredericknewspost/name/thomas-wivell-obituary?id=63030026
@@ -2710,8 +2723,6 @@ Dennis Mercer,child,Hollywood,MD,yes,Dennis Raae Mercer,2026,24010 RUSTIC WAY,Ho
 Jennifer Mercer,child,Hollywood,MD,yes,Dennis Raae Mercer,2026,24010 RUSTIC WAY,Hollywood,St. Mary's,1906010687,https://www.legacy.com/us/obituaries/somdnews-independent/name/dennis-mercer-obituary?id=61603085
 Richard Mclean,child,Hollywood,MD,yes,Dennis Raae Mercer,2026,24010 RUSTIC WAY,Hollywood,St. Mary's,1906010687,https://www.legacy.com/us/obituaries/somdnews-independent/name/dennis-mercer-obituary?id=61603085
 Lynette Mclean,in-law,Hollywood,MD,yes,Dennis Raae Mercer,2026,24010 RUSTIC WAY,Hollywood,St. Mary's,1906010687,https://www.legacy.com/us/obituaries/somdnews-independent/name/dennis-mercer-obituary?id=61603085
-Jim Morgan,sibling,Pomfret,MD,yes,Hillen Jerome Morgan Jr.,2026-07-25,4250 FOXBURROW PL,Pomfret,Charles,0906037232,https://www.legacy.com/us/obituaries/somdnews-independent/name/hillen-morgan-obituary?id=62159220
-Janet Morgan,sibling,Pomfret,MD,yes,Hillen Jerome Morgan Jr.,2026-07-25,4250 FOXBURROW PL,Pomfret,Charles,0906037232,https://www.legacy.com/us/obituaries/somdnews-independent/name/hillen-morgan-obituary?id=62159220
 Carolyn Moore,spouse,White Plains,MD,yes,"Benjamin W. ""Skip"" Moore Jr.",2026-08-17,6805 UNIVERSITY DR,Baltimore,Baltimore,04151523501020,https://www.legacy.com/us/obituaries/somdnews-independent/name/benjamin-moore-obituary?id=62224675
 Sarah Burch,spouse,Charlotte Hall,MD,yes,Joseph Morris Burch,2026-09-15,30370 PINE ST,Charlotte Hall,St. Mary's,1905003121,https://www.legacy.com/us/obituaries/somdnews-independent/name/joseph-burch-obituary?id=62577309
 Kathy Tomaszewski,child,Catonsville,MD,yes,Kenneth Anthony Songy,2026-09-03,40895 LARK WAY,Leonardtown,St. Mary's,1903052524,https://www.legacy.com/us/obituaries/somdnews-independent/name/kenneth-songy-obituary?id=62606463
