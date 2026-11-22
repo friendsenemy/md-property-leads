@@ -1,0 +1,445 @@
+{
+ "account": "0501013904",
+ "estates": [
+  {
+   "estate_number": "82659",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/28/2008",
+   "date_closed": "07/13/2020",
+   "decedent": "JOSEPH A JEFFERSON",
+   "date_of_death": "1/18/2008",
+   "date_of_filing": "02/28/2008",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MARGARET  JEFFERSON",
+     "address": "3511 W. GARRISON AVE, BALTIMORE, MD 21215"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/28/2008",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "02/28/2008",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2008",
+     "n": 3,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE",
+     "pages": 3
+    },
+    {
+     "filed": "02/28/2008",
+     "n": 4,
+     "code": "1336",
+     "desc": "RECEIPTS #141225, $2.00 SMALL ESTATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2008",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2008",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "01/07/2016",
+     "n": 7,
+     "code": "1400",
+     "desc": "SETTLEMENT & DISTRIBUTION SHEET  (GDS)",
+     "pages": 3
+    },
+    {
+     "filed": "01/07/2016",
+     "n": 8,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2016",
+     "n": 9,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE SHOW CAUSE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/11/2016",
+     "n": 10,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/16/2016",
+     "n": 11,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR COURT'S MOTION TO REMOVE PERSONAL REPRESENTATIVE ON MAY 3, 2016 AT 10:00AM",
+     "pages": 1
+    },
+    {
+     "filed": "03/16/2016",
+     "n": 12,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 13,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 14,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 15,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 16,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 17,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 2
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 18,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 19,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "03/18/2016",
+     "n": 20,
+     "code": "1253",
+     "desc": "REQUEST TO CANCEL HEARING SCHEDULE FOR MAY 3, 2016 FILED BY MARGARET JEFFERSON",
+     "pages": 1
+    },
+    {
+     "filed": "04/08/2016",
+     "n": 21,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2016",
+     "n": 22,
+     "code": "1284",
+     "desc": "ORDER OF COURT DATED APRIL 20, 2016 COURT'S MOTION TO REMOVE PERSONAL REPRESENTATIE, MOTION IS HEREBY DISMISSED.THE HEARING SCHEDULED FOR MAY 3, 2016 IS HEREBY CANCELED. COSTS ASSOCIATED WITH THIS PROCEEDING BE PAID BY ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2016",
+     "n": 23,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/19/2016",
+     "n": 24,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR 1ST   ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/21/2016",
+     "n": 25,
+     "code": "1400",
+     "desc": "SETTLEMENT AND DISTRIBUTION SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "01/12/2017",
+     "n": 26,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE THE FIRST ADMINISTRATION ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/12/2017",
+     "n": 27,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2017",
+     "n": 28,
+     "code": "1400",
+     "desc": "SETTLEMENT AND DISTRIBUTION SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "08/09/2017",
+     "n": 29,
+     "code": "1260",
+     "desc": "NOTICE OF HEARING DATE SCHEDULED FOR COURT'S MOTION TO REMOVE PERSONAL REPRESENTATIVE ON SEPTEMBER 25, 2017 AT 10:00 AM",
+     "pages": 1
+    },
+    {
+     "filed": "08/09/2017",
+     "n": 30,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/27/2017",
+     "n": 31,
+     "code": "1260",
+     "desc": "RESCHEDULE NOTICE OF HEARING DATE SCHEDULED FOR COURT'S MOTION TO REMOVE PERSONAL REPRESENTATIVE ON OCTOBER 3,2017 AT 10:00 AM",
+     "pages": 1
+    },
+    {
+     "filed": "09/27/2017",
+     "n": 32,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/03/2017",
+     "n": 33,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ADMINISTRATION ACCOUNT- TO COURT 10/16/2017",
+     "pages": 4
+    },
+    {
+     "filed": "10/03/2017",
+     "n": 34,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT- SETTLEMENT AND DISTRIBUTION SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "10/03/2017",
+     "n": 35,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2017",
+     "n": 36,
+     "code": "1284",
+     "desc": "ORDER OF COURT DATED OCTOBER 3, 2017, THAT THE AFOREMENTIONED MOTION IS HEREBY CONTINUED.",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2017",
+     "n": 37,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/24/2017",
+     "n": 38,
+     "code": "1386",
+     "desc": "ORDER OF COURT FIRST AND FINAL ADMINISTRATION ACCOUNT APPROVED. DATED-10/20/2017",
+     "pages": 1
+    },
+    {
+     "filed": "10/24/2017",
+     "n": 39,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/13/2018",
+     "n": 40,
+     "code": "1400",
+     "desc": "SETTLEMENT AND DISTRIBUTION SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "06/13/2018",
+     "n": 41,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2018",
+     "n": 42,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE 2ND  ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2018",
+     "n": 43,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/27/2018",
+     "n": 44,
+     "code": "1293",
+     "desc": "RESPONSE TO SHOW CAUSE ORDER",
+     "pages": 3
+    },
+    {
+     "filed": "09/20/2018",
+     "n": 45,
+     "code": "1284",
+     "desc": "ORDER OF COURT DATED SEPTEMBER 19, 2018, THAT THE AFOREMENTIONED ORDER IS HEREBY CONTINUED.",
+     "pages": 1
+    },
+    {
+     "filed": "09/20/2018",
+     "n": 46,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "10/30/2018",
+     "n": 47,
+     "code": "1385",
+     "desc": "SECOND AND FINAL ADMINISTRATION ACCOUNT- TO COURT 10/31/2018",
+     "pages": 3
+    },
+    {
+     "filed": "12/03/2018",
+     "n": 48,
+     "code": "1386",
+     "desc": "ORDER OF COURT SECOND AND FINAL ADMINISTRATION ACCOUNT APPROVED 11/30/18",
+     "pages": 1
+    },
+    {
+     "filed": "12/03/2018",
+     "n": 49,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "03/28/2019",
+     "n": 50,
+     "code": "1400",
+     "desc": "SETTLEMENT AND DISTRIBUTION SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "03/28/2019",
+     "n": 51,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "04/30/2019",
+     "n": 52,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE 3RD & FINAL ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/30/2019",
+     "n": 53,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/2020",
+     "n": 54,
+     "code": "1260",
+     "desc": "NOTICE OF REMOTE HEARING DATE SCHEDULED FOR JULY 13, 2020 AT 10:30 AM COURT'S MTION TO REMOVE PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/22/2020",
+     "n": 55,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/13/2020",
+     "n": 56,
+     "code": "1394",
+     "desc": "ORDER CLOSING ESTATE DATED JULY 13, 2020, ORDERED THAT MARGARET JEFFERSON IS HEREBY REMOVED, ESTATE IS HEREBY CLASED AND REGISTER OF WILLS IS HEREBY AUTHORIZED TO RECOVER ANY OUTSTANDING COSTS.",
+     "pages": 1
+    },
+    {
+     "filed": "07/13/2020",
+     "n": 57,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2020-07-13",
+   "interested_persons": [
+    {
+     "name": "MARGARET JEFFERSON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 41,
+   "probate_age_days": 4519,
+   "days_since_last_docket": 2323,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-22",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928957137",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928957137",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "JOSEPH ADOLPH JEFFERSON"
+  }
+ ]
+}
