@@ -929,3 +929,7 @@ a:hover { text-decoration: underline; }
 .ws-paste { margin-bottom: 12px; font-size: 0.82rem; color: var(--text-secondary); }
 .ws-paste summary { cursor: pointer; color: var(--cyan); margin-bottom: 8px; }
 .ws-paste textarea { width: 100%; box-sizing: border-box; min-height: 110px; background: var(--bg-primary); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 8px; font-family: var(--font-mono); font-size: 0.78rem; margin-bottom: 8px; }
+
+.status-badge.warm { background: rgba(255,159,10,0.15); color: #ff9f0a; }
+.status-badge.cool { background: rgba(100,210,255,0.15); color: #64d2ff; }
+.status-badge.dead { background: rgba(255,69,58,0.12); color: #ff453a; }

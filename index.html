@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css?v=types1">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
     <style>
         .county-filter { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
@@ -755,8 +755,11 @@
             <option value="stale">My Leads quiet 7+ days, no follow-up</option>
             <option value="notmine">Noted but NOT in My Leads (browse to add)</option>
             <option value="all">Everything with a note</option>
+            <option value="type:STRIKE">⚖ Tax-sale strike leads</option>
             <option value="pursuing">Working it</option>
             <option value="hot">Hot</option>
+            <option value="warm">Warm</option>
+            <option value="cool">Cool</option>
             <option value="contacted">Contacted</option>
             <option value="followup">Follow up</option>
             <option value="new">New</option>
@@ -811,6 +814,8 @@
                     <option value="new">New</option>
                     <option value="pursuing">Working it (My Leads)</option>
                     <option value="hot">Hot</option>
+                    <option value="warm">Warm</option>
+                    <option value="cool">Cool</option>
                     <option value="contacted">Contacted</option>
                     <option value="followup">Follow up</option>
                     <option value="dead">Dead / pass</option>
@@ -847,7 +852,7 @@
 <script src="static/js/liens.js?v=find1"></script>
 <script src="static/js/writ.js?v=13"></script>
 <script src="static/js/d4d.js?v=sync1"></script>
-<script src="static/js/myleads.js?v=liens1"></script>
+<script src="static/js/myleads.js?v=types1"></script>
 <script src="static/js/worksheet.js?v=1"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
