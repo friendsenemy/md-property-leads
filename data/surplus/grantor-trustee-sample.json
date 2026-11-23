@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-21T17:58:10+00:00",
- "window_from": "2026.02.24",
- "recent_transfers": 39807,
+ "generated_at": "2026-11-23T22:39:27+00:00",
+ "window_from": "2026.02.26",
+ "recent_transfers": 39563,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -9,7 +9,7 @@
   ],
   [
    "U.S. BANK TRUST NATIONAL",
-   24
+   23
   ],
   [
    "FREEDOM MORTGAGE CORPORATION",
@@ -17,7 +17,7 @@
   ],
   [
    "OPENDOOR PROPERTY TRUST I",
-   21
+   20
   ],
   [
    "FEDERAL NATIONAL MORTGAGE",
@@ -56,16 +56,16 @@
    13
   ],
   [
-   "US BANK TRUST NATIONAL ASSOCIATION",
-   12
-  ],
-  [
    "SULLIVAN BRENDAN V JR TRUSTEE",
    12
   ],
   [
    "FEDERAL HOME LOAN MORTGAGE CORPORA",
    12
+  ],
+  [
+   "US BANK TRUST NATIONAL ASSOCIATION",
+   11
   ],
   [
    "PRESLEY PAMELA LYNN TRUST ETAL",
@@ -97,10 +97,6 @@
   ],
   [
    "CASEY EUGENE B FOUND TRUST",
-   8
-  ],
-  [
-   "CASCADE FUNDING MORTGAGE TRUST",
    8
   ],
   [
@@ -149,6 +145,10 @@
   ],
   [
    "CHACONAS FAMILY REV LVNG TR",
+   6
+  ],
+  [
+   "CASCADE FUNDING MORTGAGE TRUST",
    6
   ],
   [
@@ -269,10 +269,6 @@
   ],
   [
    "GLASS ERIC E TR",
-   4
-  ],
-  [
-   "ESHELMAN JONAS W (TR)",
    4
   ],
   [
@@ -412,10 +408,6 @@
    3
   ],
   [
-   "MAJERLE METHENY REV TRUST",
-   3
-  ],
-  [
    "M&T BANK",
    3
   ],
@@ -472,10 +464,6 @@
    3
   ],
   [
-   "GITSIT MORTGAGE LOAN TRUST BBPLC1",
-   3
-  ],
-  [
    "GARTEN ALEGN F.M. (TR)",
    3
   ],
@@ -489,6 +477,10 @@
   ],
   [
    "EVANS PATRICIA C TRUSTEE",
+   3
+  ],
+  [
+   "ESHELMAN JONAS W (TR)",
    3
   ],
   [
@@ -601,6 +593,14 @@
   ],
   [
    "WENDY NADINE JOE TRUST",
+   2
+  ],
+  [
+   "WEISSINGER THOMAS R II TRUSTEE",
+   2
+  ],
+  [
+   "WAMPLER JOHN C TR",
    2
   ]
  ]
