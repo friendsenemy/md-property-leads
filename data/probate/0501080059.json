@@ -1,0 +1,354 @@
+{
+ "account": "0501080059",
+ "estates": [
+  {
+   "estate_number": "17045",
+   "status": "OPEN",
+   "type": "RE",
+   "date_opened": "07/03/2023",
+   "date_closed": "",
+   "decedent": "CARL AARON PUMPHREY JR",
+   "date_of_death": "5/1/2013",
+   "date_of_filing": "07/03/2023",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "JULIAN J MOSS ESQUIRE [401 NORTH WASHINGTON STREET, SUITE 445, ROCKVILLE, MD 20850]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "THOMAS J KOKOLIS ESQUIRE",
+     "address": "110 N WASHINGTON ST, ROCKVILLE, MD 20850"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/03/2023",
+     "n": 1,
+     "code": "1112",
+     "desc": "JUDICIAL REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 32
+    },
+    {
+     "filed": "07/03/2023",
+     "n": 2,
+     "code": "1244",
+     "desc": "AFFIDAVIT IN SUPPORT OF PETITION FOR JUDICIAL PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "07/03/2023",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS (2 PAGES)",
+     "pages": 2
+    },
+    {
+     "filed": "07/05/2023",
+     "n": 4,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE.  HEARING SCHEDULED ON AUGUST 29, 2023 AT 9:00 A.M.",
+     "pages": 1
+    },
+    {
+     "filed": "07/05/2023",
+     "n": 5,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 3
+    },
+    {
+     "filed": "07/19/2023",
+     "n": 6,
+     "code": "1244",
+     "desc": "ROW LETTER - REQUESTING CHANGE OF ADDRESS FOR: ESTATE OF LAURA E. PUMPHREY",
+     "pages": 1
+    },
+    {
+     "filed": "07/20/2023",
+     "n": 7,
+     "code": "1113",
+     "desc": "NOTICE OF JUDICIAL PROBATE WITH PUCLICATION DATE:  7/21/2023",
+     "pages": 1
+    },
+    {
+     "filed": "07/20/2023",
+     "n": 8,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "07/24/2023",
+     "n": 9,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/24/2023",
+     "n": 10,
+     "code": "1272",
+     "desc": "AMENDED CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/31/2023",
+     "n": 11,
+     "code": "1244",
+     "desc": "CERTIFICATE OF PUBLICATION - JUDICIAL",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2023",
+     "n": 12,
+     "code": "1301",
+     "desc": "DAILY SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2023",
+     "n": 13,
+     "code": "1373",
+     "desc": "JUDICIAL PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2023",
+     "n": 14,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/29/2023",
+     "n": 15,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "08/29/2023",
+     "n": 16,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/05/2023",
+     "n": 17,
+     "code": "1104",
+     "desc": "SECOND AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/29/2023",
+     "n": 18,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/30/2023",
+     "n": 19,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "12/13/2023",
+     "n": 20,
+     "code": "1261",
+     "desc": "SHOW CAUSE ORDER FOR INVENTORY ISSUED.  HEARING SCHEDULED ON FEBRUARY 13, 2024 AT 9:00 A.M.",
+     "pages": 1
+    },
+    {
+     "filed": "12/12/2023",
+     "n": 21,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/22/2023",
+     "n": 22,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "04/26/2024",
+     "n": 23,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "04/30/2024",
+     "n": 24,
+     "code": "1396",
+     "desc": "ORDER APPROVING FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/30/2024",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/30/2024",
+     "n": 26,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/14/2024",
+     "n": 27,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "11/19/2024",
+     "n": 28,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/19/2024",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/21/2025",
+     "n": 30,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/18/2025",
+     "n": 31,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "06/23/2025",
+     "n": 32,
+     "code": "1201",
+     "desc": "NOTICE OF WITHDRAWAL AS ATTORNEY FOR PERSONAL REPRESENTATIVE AND ENTRY OF APPEARANCE OF NEW COUNSEL",
+     "pages": 4
+    },
+    {
+     "filed": "07/03/2025",
+     "n": 33,
+     "code": "1244",
+     "desc": "DUPLICATE THIRD ACCOUNT RE THIRD ACCOUNT FILED 6-18-2025.  NO ACTION TAKEN.",
+     "pages": 11
+    },
+    {
+     "filed": "07/15/2025",
+     "n": 34,
+     "code": "1396",
+     "desc": "ORDER APPROVING THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2025",
+     "n": 35,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/09/2025",
+     "n": 36,
+     "code": "1383",
+     "desc": "FOURTH ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "12/16/2025",
+     "n": 37,
+     "code": "1396",
+     "desc": "ORDER APPROVING FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/16/2025",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "05/18/2026",
+     "n": 39,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2026",
+     "n": 40,
+     "code": "1383",
+     "desc": "FIFTH ACCOUNT",
+     "pages": 10
+    },
+    {
+     "filed": "06/02/2026",
+     "n": 41,
+     "code": "1396",
+     "desc": "ORDER APPROVING FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2026",
+     "n": 42,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "11/02/2026",
+     "n": 43,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/20/2026",
+     "n": 44,
+     "code": "1383",
+     "desc": "SIXTH ACCOUNT",
+     "pages": 10
+    }
+   ],
+   "last_docket_activity": "2026-11-20",
+   "interested_persons": [
+    {
+     "name": "THOMAS J KOKOLIS ESQUIRE",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 3715,
+   "probate_age_days": 1239,
+   "days_since_last_docket": 3,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928059712",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928059712",
+   "title_class": "D2-S",
+   "title_class_label": "Estate open and stale",
+   "decedent_searched": "CARL A PUMPHREY JR"
+  }
+ ]
+}

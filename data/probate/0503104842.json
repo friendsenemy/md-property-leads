@@ -1,0 +1,88 @@
+{
+ "account": "0503104842",
+ "estates": [
+  {
+   "estate_number": "68733",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "06/30/2004",
+   "date_closed": "07/01/2004",
+   "decedent": "SANDRA LEE NELSON",
+   "date_of_death": "6/29/2004",
+   "date_of_filing": "06/30/2004",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JOHN PAUL NELSON",
+     "address": "1524 ELMTREE STREET #2, BALTIMORE, MD 21226"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/30/2004",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "06/30/2004",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2004",
+     "n": 3,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2004",
+     "n": 4,
+     "code": "1336",
+     "desc": "RECEIPTS #99580 $12.26 SMALL ESTATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2004",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/30/2004",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2004-06-30",
+   "interested_persons": [
+    {
+     "name": "JOHN PAUL NELSON",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 1,
+   "probate_age_days": 1,
+   "days_since_last_docket": 8181,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1929035902",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1929035902",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "SANDRA L NELSON"
+  }
+ ]
+}

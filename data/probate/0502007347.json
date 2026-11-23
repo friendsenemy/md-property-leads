@@ -1,0 +1,88 @@
+{
+ "account": "0502007347",
+ "estates": [
+  {
+   "estate_number": "11297",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "04/08/2011",
+   "date_closed": "04/08/2011",
+   "decedent": "RAYMOND H FOWLER",
+   "date_of_death": "3/16/2011",
+   "date_of_filing": "04/08/2011",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "COLETTE C FOWLER",
+     "address": "950 ADELINA ROAD, PRINCE FREDERICK, MD 20678"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "04/08/2011",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED  -  MAY 4,",
+     "pages": 2007
+    },
+    {
+     "filed": "04/08/2011",
+     "n": 2,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 4
+    },
+    {
+     "filed": "04/08/2011",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "04/08/2011",
+     "n": 4,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "04/08/2011",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "04/30/2014",
+     "n": 6,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2014-04-30",
+   "interested_persons": [
+    {
+     "name": "COLETTE C FOWLER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 23,
+   "probate_age_days": 0,
+   "days_since_last_docket": 4590,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928042323",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928042323",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "RAYMOND H FOWLER"
+  }
+ ]
+}

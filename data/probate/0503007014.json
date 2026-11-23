@@ -1,0 +1,42 @@
+{
+ "account": "0503007014",
+ "estates": [
+  {
+   "estate_number": "5192",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "12/16/1992",
+   "date_closed": "03/23/1994",
+   "decedent": "VIRGINIA LEE GRIERSON",
+   "date_of_death": "6/1/1992",
+   "date_of_filing": "12/16/1992",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "12/16/1992",
+     "n": 1,
+     "code": "1244",
+     "desc": "MISCELLANEOUS MATTERS (PERMANENT RETENTION ITEMS ONLY)",
+     "pages": 11
+    }
+   ],
+   "last_docket_activity": "1992-12-16",
+   "interested_persons": [],
+   "death_to_probate_days": 198,
+   "probate_age_days": 462,
+   "days_since_last_docket": 12395,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928057470",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928057470",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "VIRGINIA L GRIERSON"
+  }
+ ]
+}

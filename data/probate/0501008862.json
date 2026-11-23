@@ -1,0 +1,151 @@
+{
+ "account": "0501008862",
+ "estates": [
+  {
+   "estate_number": "20503",
+   "status": "ARCHIVED",
+   "type": "FP",
+   "date_opened": "06/28/2016",
+   "date_closed": "09/14/2016",
+   "decedent": "BEDFORD COOK GLASCOCK",
+   "date_of_death": "9/8/2014",
+   "date_of_filing": "06/28/2016",
+   "will": "FOREIGN WILL",
+   "aliases": "",
+   "attorney": "GEORGE E MENG ESQUIRE [85 SHERRY LANE, SUITE 1B, PRINCE FREDERICK, MD 20678]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "WILLIAM B GLASCOCK II",
+     "address": "315 STRATHMORE LANE, SOLOMONS, MD 20688"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "06/28/2016",
+     "n": 1,
+     "code": "1237",
+     "desc": "EXEMPLIFIED COPY OF FOREIGN PROCEEDINGS",
+     "pages": 13
+    },
+    {
+     "filed": "06/28/2016",
+     "n": 2,
+     "code": "1133",
+     "desc": "APPLICATION BY FOREIGN PERSONAL REPRESENTATIVE TO SET INHERITANCE TAX",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2016",
+     "n": 3,
+     "code": "1238",
+     "desc": "LIST OF RECIPIENTS- INCOMPLETE",
+     "pages": 1
+    },
+    {
+     "filed": "06/28/2016",
+     "n": 4,
+     "code": "1239",
+     "desc": "AGREEMENT OF SALE FOR REAL ESTATE DATED JUNE 23",
+     "pages": 2014
+    },
+    {
+     "filed": "06/28/2016",
+     "n": 5,
+     "code": "1239",
+     "desc": "ASSIGNMENT OF SALE PROCEEDS DATED SEPTEMBER 4",
+     "pages": 2014
+    },
+    {
+     "filed": "06/28/2016",
+     "n": 6,
+     "code": "1239",
+     "desc": "AGREEMENT OF SALE DATED MAY 3",
+     "pages": 2016
+    },
+    {
+     "filed": "06/28/2016",
+     "n": 7,
+     "code": "1244",
+     "desc": "COPY OF DEEDS (2)",
+     "pages": 5
+    },
+    {
+     "filed": "06/28/2016",
+     "n": 8,
+     "code": "1247",
+     "desc": "PETITION TO AUTHORIZE USE OF CONTRACT SALES PRICE FOR VALUE OF PROPERTY",
+     "pages": 2
+    },
+    {
+     "filed": "07/12/2016",
+     "n": 9,
+     "code": "1284",
+     "desc": "ORDER OF COURT DATED JULY 12 2016 TO DENY PETITION",
+     "pages": 1
+    },
+    {
+     "filed": "07/13/2016",
+     "n": 10,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS OF ORDER OF COURT DATED JULY 12 2016 TO DENY PETITION",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2016",
+     "n": 11,
+     "code": "1238",
+     "desc": "(AMENDED) LIST OF RECIPIENTS OF MARYLAND PROPERTY",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2016",
+     "n": 12,
+     "code": "1134",
+     "desc": "NOTICE TO CREDITORS OF APPOINTMENT OF FOREIGN PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "09/12/2016",
+     "n": 13,
+     "code": "1240",
+     "desc": "CERTIFICATE(S) OF PUBLICATION (FOREIGN REPRESENTATIVE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/14/2016",
+     "n": 14,
+     "code": "1240",
+     "desc": "CORRECTED CERTIFICATE(S) OF PUBLICATION (FOREIGN REPRESENTATIVE)",
+     "pages": 1
+    },
+    {
+     "filed": "09/05/2018",
+     "n": 15,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2018-09-05",
+   "interested_persons": [
+    {
+     "name": "WILLIAM B GLASCOCK II",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 659,
+   "probate_age_days": 78,
+   "days_since_last_docket": 3001,
+   "foreign_proceeding": true,
+   "imported_at": "2026-11-23",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928121508",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928121508",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "BEDFORD C GLASCOCK"
+  }
+ ]
+}
