@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-23T22:39:27+00:00",
- "window_from": "2026.02.26",
- "recent_transfers": 39563,
+ "generated_at": "2026-11-24T21:11:34+00:00",
+ "window_from": "2026.02.27",
+ "recent_transfers": 39395,
  "top_trust_like_grantors": [
   [
    "RYE ROBERT L TRUSTEE",
@@ -36,16 +36,16 @@
    16
   ],
   [
-   "FEDERAL HOME LOAN MORTGAGE",
-   15
-  ],
-  [
    "ESHELMAN JONAS (TR)",
    15
   ],
   [
    "CARRINGTON MORTGAGE SERVICES LLC",
    15
+  ],
+  [
+   "FEDERAL HOME LOAN MORTGAGE",
+   14
   ],
   [
    "US BANK NATIONAL ASSOCIATION",
@@ -476,10 +476,6 @@
    3
   ],
   [
-   "EVANS PATRICIA C TRUSTEE",
-   3
-  ],
-  [
    "ESHELMAN JONAS W (TR)",
    3
   ],
@@ -601,6 +597,10 @@
   ],
   [
    "WAMPLER JOHN C TR",
+   2
+  ],
+  [
+   "WALSH JR TRUSTEE  FRANK B",
    2
   ]
  ]
