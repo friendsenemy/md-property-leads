@@ -1,0 +1,56 @@
+{
+ "account": "0501223593",
+ "estates": [
+  {
+   "estate_number": "38559",
+   "status": "CLOSED",
+   "type": "UN",
+   "date_opened": "07/09/2014",
+   "date_closed": "04/10/2015",
+   "decedent": "MARY E. WILLIAMSON",
+   "date_of_death": "7/7/2014",
+   "date_of_filing": "04/10/2015",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [],
+   "docket": [
+    {
+     "filed": "07/09/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED JANUARY 20,",
+     "pages": 2014
+    },
+    {
+     "filed": "04/10/2015",
+     "n": 2,
+     "code": "1135",
+     "desc": "WILL - NO ESTATE",
+     "pages": 2
+    },
+    {
+     "filed": "04/10/2015",
+     "n": 3,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2015-04-10",
+   "interested_persons": [],
+   "death_to_probate_days": 2,
+   "probate_age_days": 275,
+   "days_since_last_docket": 4246,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-24",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1928977885",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1928977885",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARY E WILLIAMSON"
+  }
+ ]
+}

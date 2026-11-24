@@ -1,0 +1,249 @@
+{
+ "account": "0910016576",
+ "estates": [
+  {
+   "estate_number": "21585",
+   "status": "ARCHIVED",
+   "type": "RE",
+   "date_opened": "11/20/2014",
+   "date_closed": "05/26/2015",
+   "decedent": "CATHERINE L. FRENCH",
+   "date_of_death": "11/19/2014",
+   "date_of_filing": "11/20/2014",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "W. THOMAS FOUNTAIN ESQ [16 SOUTH WASHINGTON ST., EASTON, MD 21601]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "PATRICK J. FITZGERALD",
+     "address": "16 S WASHINGTON ST, EASTON, MD 21601"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "11/20/2014",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED NOVEMBER 12,",
+     "pages": 2012
+    },
+    {
+     "filed": "11/20/2014",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "11/20/2014",
+     "n": 3,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "11/20/2014",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "11/20/2014",
+     "n": 5,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "11/20/2014",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2014",
+     "n": 7,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR LIST OF INTERESTED PERSONS, CERTIFICATE OF PUBLICATION, INFORMATION REPORT, INVENTORY, AND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2014",
+     "n": 8,
+     "code": "1378",
+     "desc": "AFFIDAVIT OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "12/19/2014",
+     "n": 9,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/05/2015",
+     "n": 10,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INFORMATION REPORT AND INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "02/13/2015",
+     "n": 11,
+     "code": "1128",
+     "desc": "CLAIM AGAINST DECEDENT'S ESTATE - ORIGINALLY FILED ON 02/13/2015 BY BAYLEIGH CHASE FOR $11,778.64 (#1)",
+     "pages": 2
+    },
+    {
+     "filed": "02/25/2015",
+     "n": 12,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 3
+    },
+    {
+     "filed": "03/02/2015",
+     "n": 13,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "03/02/2015",
+     "n": 14,
+     "code": "1151",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE LOST HEIRS",
+     "pages": 2
+    },
+    {
+     "filed": "03/02/2015",
+     "n": 15,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2015",
+     "n": 16,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 4
+    },
+    {
+     "filed": "03/10/2015",
+     "n": 17,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "03/20/2015",
+     "n": 18,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR FAILURE TO SUBMIT INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "03/24/2015",
+     "n": 19,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "05/21/2015",
+     "n": 20,
+     "code": "1223",
+     "desc": "SATISFACTION OF CLAIM (#1)",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2015",
+     "n": 21,
+     "code": "1285",
+     "desc": "CERTIFICATE OF SERVICE AND NOTICE OF FILING",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2015",
+     "n": 22,
+     "code": "1285",
+     "desc": "CERTIFICATE OF SERVICE AND NOTICE OF FILING",
+     "pages": 1
+    },
+    {
+     "filed": "05/21/2015",
+     "n": 23,
+     "code": "1245",
+     "desc": "PETITION FOR ALLOWANCE OF ATTORNEYS' FEES",
+     "pages": 2
+    },
+    {
+     "filed": "05/21/2015",
+     "n": 24,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 9
+    },
+    {
+     "filed": "05/26/2015",
+     "n": 25,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR ALLOWANCE OF ATTORNEYS' FEES",
+     "pages": 1
+    },
+    {
+     "filed": "05/26/2015",
+     "n": 26,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "05/26/2015",
+     "n": 27,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND FINAL ACCOUNT (DATED MAY 21, 2015)",
+     "pages": 1
+    },
+    {
+     "filed": "05/26/2015",
+     "n": 28,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/2017",
+     "n": 29,
+     "code": "1505",
+     "desc": "DOCUMENT DISPOSAL ACTION",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2017-04-20",
+   "interested_persons": [
+    {
+     "name": "PATRICK J. FITZGERALD",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 1,
+   "probate_age_days": 187,
+   "days_since_last_docket": 3505,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-24",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1929528407",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1929528407",
+   "title_class": "UNKNOWN",
+   "title_class_label": "Estate status 'ARCHIVED'",
+   "decedent_searched": "CATHERINE L FRENCH"
+  }
+ ]
+}
