@@ -32,7 +32,7 @@ CACHE = os.path.join(".cache", "zoning")
 OUT = os.path.join("data", "zoning")
 TITLE = os.path.join("data", "title")
 
-STATEWIDE = ("https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Generalized_Zoning_2025_Draft/FeatureServer/0", None)
+STATEWIDE = ("https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0", "GENZONE")  # MDP Generalized Zoning 2021, whole state
 
 # slug -> (layer url, zone field or None=autodetect)
 LAYERS = {
@@ -45,7 +45,7 @@ LAYERS = {
     "harford": ("https://services.arcgis.com/q8r0H9SbF6PzNpYE/arcgis/rest/services/2017Zoning/FeatureServer/0", None),
     "carroll": ("https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/Zoning/FeatureServer/0", None),
     "washington": ("https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Washington_County_Zoning/FeatureServer/21", None),
-    "frederick": ("https://fcgis.frederickcountymd.gov/server_pub/rest/services/PlanningAndPermitting/Zoning/MapServer/1", None),
+    "frederick": ("https://fcgis.frederickcountymd.gov/server_pub/rest/services/PlanningAndPermitting/Zoning/MapServer/1", "TYPE"),
     "caroline": ("https://services6.arcgis.com/M2dyOQipFC1IggF3/arcgis/rest/services/ZONING/FeatureServer/0", None),
 }
 FALLBACK = ["howard", "calvert", "st-mary-s", "cecil", "queen-anne-s", "kent", "talbot", "wicomico", "worcester", "dorchester", "somerset", "allegany", "garrett"]  # no usable county layer found; MDP statewide
@@ -64,8 +64,8 @@ RULES = {
         (r"^(IM|IL|IH|CBD|CSP)", "HIGH", "{z}: industrial / commercial"),
     ],
     "prince-george-s": [
-        (r"^(RMF|RTO|RSF-A|LCD|TAC|NAC|CGO|CN|CS|IE|IH|LTO|C-S-C|C-O|C-M|M-X-T|M-U|MU-|M-A-C|R-T\b|R-18|R-30|R-35|R-10\b|R-20\b|I-[1-4]|TDO|L-A-C|D-D-O|R-U|RSF-A|RSF-65)", "HIGH", "{z}: multifamily / townhouse / commercial / mixed-use / small-lot zone"),
-        (r"^(RSF-95|R-55|R-80)", "MEDIUM", "{z}: small single-family lots — an extra lot only if the parcel is 2× the minimum"),
+        (r"^(RMF|RTO|RSF-A|LCD|TAC|NAC|CGO|CN|CS|IE|IH|LTO|C-S-C|C-O|C-M|M-X-T|M-U|MU-|M-A-C|R-T\b|R-18|R-30|R-35|R-10\b|R-20\b|I-[1-4]|TDO|L-A-C|D-D-O|R-U)", "HIGH", "{z}: multifamily / townhouse / commercial / mixed-use / small-lot zone"),
+        (r"^(RSF-95|RSF-65|R-55|R-80)", "MEDIUM", "{z}: small single-family lots — an extra lot only if the parcel is 2× the minimum"),
     ],
     "anne-arundel": [
         (r"^(R10|R15|R22|C[1-4]|W[1-3]|MXD|OT|MA|MC|TC|OTC|MB)", "HIGH", "{z}: 10+ units/acre, commercial, industrial or mixed-use"),
@@ -73,6 +73,7 @@ RULES = {
     ],
     "baltimore-city": [
         (r"^(R-(9|10)|C-[1-5]|OR-|IMU|TOD|D-|I-|BSC|EC|H|PC|MI|OIC|OR)", "HIGH", "{z}: multifamily, commercial, mixed-use or industrial"),
+        (r"^R-[1-6]\b", None, ""),
         (r"^R-[78]\b", "MEDIUM", "{z}: rowhouse zone allowing multifamily conversion on larger lots"),
     ],
     "charles": [
@@ -88,6 +89,11 @@ RULES = {
     ],
     "calvert": [
         (r"^(TC|MX|MC|I-?1|I-?2|LI|CMC|ETC|VD|RCD-?TC|PUD)", "HIGH", "{z}: town center / commercial / industrial"),
+    ],
+    "_statewide": [
+        (r"^(MIXED USE|COMMERCIAL|INDUSTRIAL|HIGH DENSITY RESIDENTIAL|RURAL HIGH DENSITY)", "HIGH", "{z} (MDP generalized class): more than a single house allowed — confirm the county code"),
+        (r"^(MEDIUM DENSITY RESIDENTIAL|RURAL MEDIUM DENSITY)", "MEDIUM", "{z} (MDP generalized class): small-lot residential — extra lot on a larger parcel; confirm the county code"),
+        (r".", None, ""),
     ],
     "carroll": [
         (r"^(C-[1-3]|I-[1-2]|B-|R-7,500)", "HIGH", "{z}: commercial / industrial / small-lot"),
@@ -189,7 +195,7 @@ def classify(slug, zone, label):
     txt = f"{z} {label or ''}"
     for pat, lvl, why in RULES.get(slug, []):
         if re.search(pat, z, re.I):
-            return lvl, why.format(z=z)
+            return (lvl, why.format(z=z)) if lvl else (None, "")
     if NONE_HINT.search(z):
         return None, ""
     for pat, lvl, why in GENERIC:
@@ -219,6 +225,7 @@ def run(slug, refresh=False):
     from shapely.geometry import Point
     url, field = LAYERS.get(slug, STATEWIDE)
     src = "county" if slug in LAYERS else "MDP generalized (statewide)"
+    rule_slug = slug if slug in LAYERS else "_statewide"
     layer = download(slug if slug in LAYERS else "_statewide", url, refresh)
     field = field or detect_zone_field(layer["fields"])
     label_field = next((f["name"] for f in layer["fields"] if re.search(r"DESC|NAME|LABEL|TYPE", f["name"], re.I) and f["name"] != field and f.get("type") == "esriFieldTypeString"), None)
@@ -236,7 +243,7 @@ def run(slug, refresh=False):
             continue
         zone = str(hit.get(field) or hit.get("LONGZONE") or hit.get("CODE") or "").strip()
         label = str(hit.get(label_field) or "").strip() if label_field else ""
-        lvl, why = classify(slug, zone, label)
+        lvl, why = classify(rule_slug, zone, label)
         sf = (p.get("property_type") or "").startswith("Residential")
         if lvl and not sf:
             lvl, why = (lvl, why + " (parcel is not coded residential — may already be commercial)")
