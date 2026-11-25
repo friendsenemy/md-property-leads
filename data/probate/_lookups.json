@@ -223,6 +223,15 @@
    "results": 3,
    "status": "NONE FOUND"
   },
+  "ALPHONSE J CAPLINS|2010-10-12": {
+   "accounts": [
+    "0502091747"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2010-10-12",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "ALTON J BOWIE|2014-08-02": {
    "accounts": [
     "0901025953"
@@ -1782,6 +1791,20 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "CHARLES A GILLETT JR|1994-01-03": {
+   "accounts": [
+    "0503029751"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "1994-01-03",
+   "estate_number": "5407",
+   "record_ids": [
+    "1929524391"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "CHARLES A HOOKER|2002-04-01": {
    "accounts": [
     "0909018123"
@@ -2038,6 +2061,15 @@
    "results": 8,
    "status": "ARCHIVED"
   },
+  "CHARLES L MESSINA|1993-11-08": {
+   "accounts": [
+    "0502111616"
+   ],
+   "checked": "2026-11-25",
+   "dod": "1993-11-08",
+   "results": 1,
+   "status": "NONE FOUND"
+  },
   "CHARLES O ASHTON|2003-10-14": {
    "accounts": [
     "0906222366"
@@ -2088,6 +2120,20 @@
     "1927378504"
    ],
    "results": 7,
+   "status": "CLOSED"
+  },
+  "CHARLES W DOSSEY|2009-12-28": {
+   "accounts": [
+    "0503123758"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2009-12-28",
+   "estate_number": "10832",
+   "record_ids": [
+    "1929519259"
+   ],
+   "results": 1,
    "status": "CLOSED"
   },
   "CHARLES W HUBER|1992-10-02": {
@@ -2270,6 +2316,20 @@
    "estate_number": "11626",
    "record_ids": [
     "1919425628"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
+  "CLARENCE L TIPPETT|2011-03-18": {
+   "accounts": [
+    "0502112809"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2011-03-18",
+   "estate_number": "11341",
+   "record_ids": [
+    "1929520005"
    ],
    "results": 1,
    "status": "CLOSED"
@@ -2749,6 +2809,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "DAVID Q ANDES|2000-01-21": {
+   "accounts": [
+    "0503130177"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2000-01-21",
+   "estate_number": "6985",
+   "record_ids": [
+    "1929518261"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "DAVID R SPENCER|2013-11-25": {
    "accounts": [
     "0906126871"
@@ -2776,6 +2850,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "DAVID W PENN JR|2006-06-01": {
+   "accounts": [
+    "0502095297"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2006-06-01",
+   "results": 7,
+   "status": "NONE FOUND"
   },
   "DAVID W TAYMAN|2003-08-23": {
    "accounts": [
@@ -3062,6 +3145,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "DONALD A FREELAND|2012-10-28": {
+   "accounts": [
+    "0503137449"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2012-10-28",
+   "estate_number": "15370",
+   "record_ids": [
+    "1929529582"
+   ],
+   "results": 1,
+   "status": "ARCHIVED"
+  },
   "DONALD E FRANTZ|1990-11-30": {
    "accounts": [
     "0906137695"
@@ -3206,6 +3303,20 @@
    ],
    "results": 3,
    "status": "ARCHIVED"
+  },
+  "DONALD R FAIRCLOTH|2000-10-02": {
+   "accounts": [
+    "0502049082"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2000-10-02",
+   "estate_number": "7323",
+   "record_ids": [
+    "1929529746"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "DONNA L WRIGHT|1992-07-22": {
    "accounts": [
@@ -3726,6 +3837,20 @@
    "dod": "1989-08-14",
    "results": 3,
    "status": "NONE FOUND"
+  },
+  "ELIZABETH C FOLEY|1994-09-20": {
+   "accounts": [
+    "0501066021"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "1994-09-20",
+   "estate_number": "1994-75",
+   "record_ids": [
+    "1929530884"
+   ],
+   "results": 2,
+   "status": "CLOSED"
   },
   "ELIZABETH D SPENCE|1977-03-19": {
    "accounts": [
@@ -4707,6 +4832,20 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "GERALD J OLEXA II|2010-04-17": {
+   "accounts": [
+    "0502058847"
+   ],
+   "checked": "2026-11-25",
+   "county": "Prince George's",
+   "dod": "2010-04-17",
+   "estate_number": "86859",
+   "record_ids": [
+    "1930003735"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "GERALD L BATTLE|2009-02-10": {
    "accounts": [
     "0906238386"
@@ -4749,6 +4888,20 @@
     "1924409375"
    ],
    "results": 11,
+   "status": "CLOSED"
+  },
+  "GERARD F RIPPLE|2006-12-26": {
+   "accounts": [
+    "0502093367"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2006-12-26",
+   "estate_number": "9586",
+   "record_ids": [
+    "1929520018"
+   ],
+   "results": 1,
    "status": "CLOSED"
   },
   "GERTRUDE A YOUNG|1991-02-26": {
@@ -4866,6 +5019,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "GLENN A FIGGINS|2014-06-15": {
+   "accounts": [
+    "0503079082"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2014-06-15",
+   "results": 0,
+   "status": "NONE FOUND"
   },
   "GLORIA A NEWBERRY|2013-01-05": {
    "accounts": [
@@ -5010,6 +5172,20 @@
    "results": 3,
    "status": "CLOSED"
   },
+  "GREGORY A EDMUNDS|2014-12-28": {
+   "accounts": [
+    "0503097269"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2014-12-28",
+   "estate_number": "14325",
+   "record_ids": [
+    "1929533650"
+   ],
+   "results": 1,
+   "status": "ARCHIVED"
+  },
   "GREGORY A WEBB|2007-02-16": {
    "accounts": [
     "0905031192"
@@ -5045,6 +5221,20 @@
     "1923277191"
    ],
    "results": 2,
+   "status": "CLOSED"
+  },
+  "GREGORY STEVEN HARMON|2008-08-15": {
+   "accounts": [
+    "0503081885"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2008-08-15",
+   "estate_number": "10257",
+   "record_ids": [
+    "1929530758"
+   ],
+   "results": 1,
    "status": "CLOSED"
   },
   "GUY E SMITH|1987-01-08": {
@@ -5625,6 +5815,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "JAMES D FINK|2011-02-11": {
+   "accounts": [
+    "0501140388"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2011-02-11",
+   "estate_number": "12237",
+   "record_ids": [
+    "1929524520"
+   ],
+   "results": 7,
+   "status": "CLOSED"
+  },
   "JAMES DARRYL RENNER|2014-12-06": {
    "accounts": [
     "0503065804"
@@ -6133,6 +6337,15 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "JAY EDWARD PORTER|2013-03-13": {
+   "accounts": [
+    "0503131653"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2013-03-13",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "JAYNE R WILLIAMS|1996-10-21": {
    "accounts": [
     "0906004423"
@@ -6320,6 +6533,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "JESSE HALL BOWEN|2004-02-01": {
+   "accounts": [
+    "0502010941"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2004-02-01",
+   "estate_number": "8448",
+   "record_ids": [
+    "1929535262"
+   ],
+   "results": 3,
+   "status": "CLOSED"
+  },
   "JESSE L PORTER JR|2014-12-11": {
    "accounts": [
     "0501186302"
@@ -6328,6 +6555,20 @@
    "dod": "2014-12-11",
    "results": 3,
    "status": "NONE FOUND"
+  },
+  "JIMMIE D CROSS|2012-09-05": {
+   "accounts": [
+    "0503034607"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2012-09-05",
+   "estate_number": "11897",
+   "record_ids": [
+    "1929530185"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "JIMMIE L CANNON JR|2005-01-14": {
    "accounts": [
@@ -6383,6 +6624,20 @@
    "dod": "2009-01-12",
    "results": 0,
    "status": "NONE FOUND"
+  },
+  "JOAN A REYNOLDS|1993-03-21": {
+   "accounts": [
+    "0501194879"
+   ],
+   "checked": "2026-11-25",
+   "county": "Prince George's",
+   "dod": "1993-03-21",
+   "estate_number": "RE-40542",
+   "record_ids": [
+    "1930120997"
+   ],
+   "results": 4,
+   "status": "CLOSED"
   },
   "JOAN B HARRIS|2011-06-05": {
    "accounts": [
@@ -7203,6 +7458,15 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "JOSEPH E CAREY|2001-11-18": {
+   "accounts": [
+    "0502077930"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2001-11-18",
+   "results": 8,
+   "status": "NONE FOUND"
+  },
   "JOSEPH E PADGETT|2010-08-28": {
    "accounts": [
     "0909006745"
@@ -7526,6 +7790,15 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "JUANITA L EDGER|2010-11-26": {
+   "accounts": [
+    "0502091828"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2010-11-26",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "JUANITA L FOX|2004-05-01": {
    "accounts": [
     "0904022637"
@@ -7538,6 +7811,20 @@
     "1921527050"
    ],
    "results": 1,
+   "status": "CLOSED"
+  },
+  "JUDITH A GRAY|2012-01-25": {
+   "accounts": [
+    "0502051877"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2012-01-25",
+   "estate_number": "11663",
+   "record_ids": [
+    "1929535472"
+   ],
+   "results": 4,
    "status": "CLOSED"
   },
   "JUDITH A MYERS|2005-02-17": {
@@ -7628,7 +7915,7 @@
     "0907019246",
     "0907019262"
    ],
-   "checked": "2026-10-26",
+   "checked": "2026-11-25",
    "county": "Charles",
    "dod": "2007-03-14",
    "estate_number": "15600",
@@ -7926,6 +8213,20 @@
     "1925312528"
    ],
    "results": 3,
+   "status": "CLOSED"
+  },
+  "KENNETH M LOMBARDO|2013-09-02": {
+   "accounts": [
+    "0502096439"
+   ],
+   "checked": "2026-11-25",
+   "county": "Calvert",
+   "dod": "2013-09-02",
+   "estate_number": "12368",
+   "record_ids": [
+    "1929528148"
+   ],
+   "results": 1,
    "status": "CLOSED"
   },
   "KENNETH R ZIMMERMAN|2010-12-12": {
@@ -8553,6 +8854,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "LOIS S NORFOLK|1996-05-14": {
+   "accounts": [
+    "0503123316"
+   ],
+   "checked": "2026-11-25",
+   "county": "Anne Arundel",
+   "dod": "1996-05-14",
+   "estate_number": "1379X",
+   "record_ids": [
+    "1929274740"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "LORETTA A COOKSEY|1997-08-15": {
    "accounts": [
     "0909003924"
@@ -8848,6 +9163,15 @@
    ],
    "results": 3,
    "status": "CLOSED"
+  },
+  "MARGARET A KUHN|2005-05-15": {
+   "accounts": [
+    "0503100596"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2005-05-15",
+   "results": 2,
+   "status": "NONE FOUND"
   },
   "MARGARET E COCHRAN|2002-05-13": {
    "accounts": [
@@ -9539,6 +9863,20 @@
    "results": 1,
    "status": "CLOSED"
   },
+  "MAUREEN A JONES|2013-09-13": {
+   "accounts": [
+    "0502067692"
+   ],
+   "checked": "2026-11-25",
+   "county": "Anne Arundel",
+   "dod": "2013-09-13",
+   "estate_number": "83961",
+   "record_ids": [
+    "1929305916"
+   ],
+   "results": 2,
+   "status": "CLOSED"
+  },
   "MAUREEN M KILLBY|1993-01-29": {
    "accounts": [
     "0906180949"
@@ -10077,6 +10415,20 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "NANCY A MASSIE|2007-05-12": {
+   "accounts": [
+    "0501225286"
+   ],
+   "checked": "2026-11-25",
+   "county": "Prince George's",
+   "dod": "2007-05-12",
+   "estate_number": "76493",
+   "record_ids": [
+    "1930041145"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "NANCY HUGHES|2002-04-04": {
    "accounts": [
     "0502064723"
@@ -10126,6 +10478,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "NANCY LEE PORTER|2011-11-29": {
+   "accounts": [
+    "0502009064"
+   ],
+   "checked": "2026-11-25",
+   "dod": "2011-11-29",
+   "results": 3,
+   "status": "NONE FOUND"
   },
   "NATALIE TSONEV|2009-07-12": {
    "accounts": [
@@ -11390,6 +11751,20 @@
     "1921685277"
    ],
    "results": 1,
+   "status": "CLOSED"
+  },
+  "RICHARD C ARNOLD|2004-01-12": {
+   "accounts": [
+    "0502002256"
+   ],
+   "checked": "2026-11-25",
+   "county": "Somerset",
+   "dod": "2004-01-12",
+   "estate_number": "6136",
+   "record_ids": [
+    "1930224603"
+   ],
+   "results": 10,
    "status": "CLOSED"
   },
   "RICHARD E DANIELS|1997-08-02": {
@@ -14396,5 +14771,5 @@
    "status": "NONE FOUND"
   }
  },
- "updated": "2026-11-24"
+ "updated": "2026-11-25"
 }

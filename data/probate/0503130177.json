@@ -1,0 +1,88 @@
+{
+ "account": "0503130177",
+ "estates": [
+  {
+   "estate_number": "6985",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "02/29/2000",
+   "date_closed": "02/29/2000",
+   "decedent": "DAVID Q. ANDES",
+   "date_of_death": "1/21/2000",
+   "date_of_filing": "02/29/2000",
+   "will": "UNPROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "JOY V. ANDES",
+     "address": "8999 ST. ANDREWS DRIVE, CHESAPEAKE BEACH, MD 20732"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/29/2000",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "02/29/2000",
+     "n": 2,
+     "code": "1137",
+     "desc": "SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/29/2000",
+     "n": 3,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "02/29/2000",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/29/2000",
+     "n": 5,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "03/02/2000",
+     "n": 6,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 9/9/98 BROUGHT IN BY JOY ANDES 3/2/00",
+     "pages": 8
+    }
+   ],
+   "last_docket_activity": "2000-03-02",
+   "interested_persons": [
+    {
+     "name": "JOY V. ANDES",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 39,
+   "probate_age_days": 0,
+   "days_since_last_docket": 9764,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-25",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1929518261",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1929518261",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "DAVID Q ANDES"
+  }
+ ]
+}
