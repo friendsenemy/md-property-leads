@@ -243,3 +243,31 @@ const Findings = {
         </div>`;
     },
 };
+
+// ── Zoning / entitlement upside (data/zoning/*.json, built by engine2/zoning.py) ──
+const Zoning = {
+    byAcct: {}, upside: null, loadedCounty: null,
+    key(id) { return String(id || "").replace(/[\s-]+/g, ""); },
+    async loadUpside() {
+        if (this.upside) return;
+        try { const r = await fetch(`data/zoning/upside.json?t=${Date.now()}`, { cache: "no-store" }); this.upside = await r.json(); } catch { this.upside = {}; }
+    },
+    async loadCounty(slug) {
+        if (!slug || slug === this.loadedCounty) return;
+        try { const r = await fetch(`data/zoning/${slug}.json?t=${Date.now()}`, { cache: "no-store" }); this.byAcct = await r.json(); } catch { this.byAcct = {}; }
+        this.loadedCounty = slug;
+    },
+    get(id) { const k = this.key(id); return this.byAcct[k] || (this.upside && this.upside[k]) || null; },
+    color(l) { return l === "HIGH" ? "var(--green)" : l === "MEDIUM" ? "var(--yellow)" : "var(--text-dim)"; },
+    chip(id) {
+        const z = this.get(id); if (!z || !z.zone) return "";
+        const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+        if (!z.upside) return `<span class="chip" style="border-color:var(--border); color:var(--text-dim)" title="Zoning ${esc(z.zone)}">🗺 ${esc(z.zone)}</span>`;
+        return `<span class="chip" style="border-color:${this.color(z.upside)}; color:${this.color(z.upside)}" title="${esc(z.why)}">🏗 ${esc(z.zone)} · ${z.upside === "HIGH" ? "BUILDER LOT" : "SPLIT/ADD"}</span>`;
+    },
+    row(id) {
+        const z = this.get(id); if (!z || !z.zone) return "";
+        const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+        return `<div class="detail-row"><span class="label">Zoning</span><span class="value" style="color:${this.color(z.upside)}"><b>${esc(z.zone)}</b>${z.label ? ` · ${esc(z.label)}` : ""}${z.upside ? ` — <b>${esc(z.upside)} upside:</b> ${esc(z.why)}. Exit to a builder at land value, not house value.` : " — single-family / rural; no density upside"}${z.src ? ` <span style="font-size:0.7rem; color:var(--text-dim)">(${esc(z.src)})</span>` : ""}</span></div>`;
+    },
+};
