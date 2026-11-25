@@ -1,15 +1,52 @@
 {
- "generated_at": "2026-11-24T21:32:44+00:00",
+ "generated_at": "2026-11-25T20:41:28+00:00",
  "sources": {
   "montgomery": {
-   "checked": "2026-11-24T21:31:56+00:00",
-   "count": 0
+   "checked": "2026-11-25T20:40:47+00:00",
+   "count": 2
   },
   "pasted": {
    "count": 43
   }
  },
  "rows": [
+  {
+   "case": "D-06-CV-25-028378",
+   "source": "montgomery-sheriff",
+   "from": "Montgomery Sheriff sale notice",
+   "notice_url": "https://assets.montgomerycountymd.gov/files/2026-11/2354%20Sun%20Valley%20Circle%2C%20Unit%202-E%2C%20Silver%20Spring%2C%20Maryland%2020906.pdf",
+   "county": "MONT",
+   "court": "Montgomery County",
+   "address": "2354 Sun Valley Circle, Unit 2-E, Silver Spring, Maryland 20906",
+   "city": "",
+   "plaintiff": "Mont - gomery County, Maryland, and to me as Sheriff of said County, directed at the suit of Kimberly Place Condominium",
+   "defendant": "Benjamin and Augustina Sube in the District Court for Montgomery County",
+   "caption": "Mont - gomery County, Maryland, and to me as Sheriff of said County, directed at the suit of Kimberly Place Condominium vs. Benjamin and Augustina Sube in the District Court for Montgomery County",
+   "hoa": true,
+   "sale_date": "1972-02-01",
+   "sale_time": "",
+   "deposit": "",
+   "subject_to": true,
+   "notice_excerpt": "SHERIFF\u2019S SALE VALUABLE REAL PROPERTY STATE OF MARYLAND MONTGOMERY COUNTY , TO WIT: By virtue of a Writ of Execution issued by the District Court for Mont - gomery County, Maryland, and to me as Sheriff of said County, directed at the suit of Kimberly Place Condominium v. Benjamin and Augustina Sube in the District Court for Montgomery County, Maryland Case No. D-06-CV-25-028378 this 13th day of August 2026, seized and taken into execution all the right and title, claim, interest, and estate, at the time the judgment became a lien on the property, both at law and in equity of the said Benjamin and Augustina Sube of, in, to, and about the following described property to wit: Real property of Benjamin and Augustina Sube located at 2354 Sun Valley Circle, Unit 2E, Silver Spring, Maryland 20906 and fur - ther described as Unit Numbered and Letter 2-E in \u201cKimberly Place Condominium\u201d, a horizo",
+   "prop": {
+    "acct": "161301530251",
+    "address": "2354 SUN VALLEY CIR",
+    "city": "SILVER SPRING",
+    "zip": "20906",
+    "ooi": "H",
+    "value": 280000,
+    "tradate": "20091109",
+    "price": 175000,
+    "deed": "38317/0386",
+    "jurs": "MONT",
+    "mail": "2354 SUN VALLEY CIR # 2E, SILVER SPRING",
+    "use": "Residential Condominium",
+    "built": "1971",
+    "sdat": "https://sdat.dat.maryland.gov/RealPropertyAdmin/Pages/view.aspx?County=16&SearchType=ACCT&District=13&AccountNumber=01530251",
+    "matches": 1
+   },
+   "first_seen": "2026-11-25T20:41:28+00:00"
+  },
   {
    "case": "018607",
    "source": "montgomery-sheriff",
@@ -317,6 +354,27 @@
    "updated": "2026-10-20T17:42:55.927100+00:00",
    "source": "pasted",
    "first_seen": "2026-10-21T16:08:36+00:00"
+  },
+  {
+   "case": "D-06-CV-26-008564",
+   "source": "montgomery-sheriff",
+   "from": "Montgomery Sheriff sale notice",
+   "notice_url": "https://assets.montgomerycountymd.gov/files/2026-11/18872%20Mc%20Farlin%20Drive%2C%20Germantown%2C%20Maryland%2020874.pdf",
+   "county": "MONT",
+   "court": "Montgomery County",
+   "address": "18872 Mc Farlin Drive, Germantown, Maryland 20874",
+   "city": "",
+   "plaintiff": "County, Maryland, and to me as Sheriff of said County, directed at the suit of McFarlin South Community Association, Inc.",
+   "defendant": "Kossi D. Klassou in the District Court for Montgomery County",
+   "caption": "County, Maryland, and to me as Sheriff of said County, directed at the suit of McFarlin South Community Association, Inc. vs. Kossi D. Klassou in the District Court for Montgomery County",
+   "hoa": true,
+   "sale_date": "2026-12-16",
+   "sale_time": "10:00 am.",
+   "deposit": "",
+   "subject_to": true,
+   "notice_excerpt": "SHERIFF\u2019S SALE VALUABLE REAL PROPERTY STATE OF MARYLAND MONTGOMERY COUNTY , TO WIT: By virtue of a Writ of Execution issued by the District Court for Mont - gomery County, Maryland, and to me as Sheriff of said County, directed at the suit of McFarlin South Community Association, Inc. v. Kossi D. Klassou in the District Court for Montgomery County, Maryland Case No. D-06-CV-26-008564 this 10th day of June 2026, seized and taken into execution all the right and title, claim, interest, and estate, at the time the judgment became a lien on the property, both at law and in equity of the said Kossi D. Klassou of, in, to, and about the following described property to wit: Real property of Kossi D. Klassou located at 18872 McFarlin Drive, Germantown, Maryland 20874 and further described as Lot num - bered One Hundred Nine (109) in Block lettered \u201cG\u201d as shown on plat of subdivision entitled \u201cPla",
+   "prop": null,
+   "first_seen": "2026-11-25T20:41:28+00:00"
   },
   {
    "case": "05-02-0006814-2018",
