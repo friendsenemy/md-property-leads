@@ -85,7 +85,9 @@ RULES = {
         (r"\(R2\)", "MEDIUM", "{z}: 2 units/acre — splittable on a 1+ acre lot"),
     ],
     "frederick": [
-        (r"^(R-?(3|5|8|12|16)|VC|GC|LI|GI|MXD|ORI|PUD|MU|TC|CDD)", "HIGH", "{z}: medium/high-density residential, commercial, mixed-use or industrial"),
+        (r"^(MUN|ROW)\b", None, ""),
+        (r"^(R-?(5|8|12|16)|VC|GC|LI|GI|MXD|ORI|MX|MU|TC|CDD|HS)", "HIGH", "{z}: medium/high-density residential, commercial, mixed-use or industrial"),
+        (r"^(R-?3|PUD)\b", "MEDIUM", "{z}: low-density / planned development — extra units only on a larger parcel"),
     ],
     "calvert": [
         (r"^(TC|MX|MC|I-?1|I-?2|LI|CMC|ETC|VD|RCD-?TC|PUD)", "HIGH", "{z}: town center / commercial / industrial"),
@@ -127,6 +129,16 @@ def http_json(url, tries=3):
             if i == tries - 1:
                 raise
             time.sleep(3 * (i + 1))
+
+
+def statewide_point(lon, lat):
+    """MDP's server will not hand out its polygons (geometry exceeds its transfer limit), so the
+    statewide fallback is a point-in-polygon query per parcel, paced at ~4/sec."""
+    q = urllib.parse.urlencode({"f": "json", "geometry": f"{lon},{lat}", "geometryType": "esriGeometryPoint", "inSR": 4326,
+                                "spatialRel": "esriSpatialRelIntersects", "outFields": "GENZONE,JURSCODE,MUNICIPALITY_NAME", "returnGeometry": "false"})
+    d = http_json(f"{STATEWIDE[0]}/query?{q}")
+    f = (d.get("features") or [{}])[0].get("attributes") or {}
+    return str(f.get("GENZONE") or "").strip(), str(f.get("MUNICIPALITY_NAME") or "").strip()
 
 
 def detect_zone_field(fields):
@@ -226,7 +238,9 @@ def run(slug, refresh=False):
     url, field = LAYERS.get(slug, STATEWIDE)
     src = "county" if slug in LAYERS else "MDP generalized (statewide)"
     rule_slug = slug if slug in LAYERS else "_statewide"
-    layer = download(slug if slug in LAYERS else "_statewide", url, refresh)
+    if slug not in LAYERS:
+        return run_statewide(slug, refresh)
+    layer = download(slug, url, refresh)
     field = field or detect_zone_field(layer["fields"])
     label_field = next((f["name"] for f in layer["fields"] if re.search(r"DESC|NAME|LABEL|TYPE", f["name"], re.I) and f["name"] != field and f.get("type") == "esriFieldTypeString"), None)
     tree, geoms, attrs = build_tree(layer, field)
@@ -249,27 +263,63 @@ def run(slug, refresh=False):
             lvl, why = (lvl, why + " (parcel is not coded residential — may already be commercial)")
         res[acct] = {"zone": zone, "label": label, "upside": lvl, "why": why, "src": src}
         n_up += bool(lvl)
-    # rows the county layer did not cover (towns, holes): statewide generalized zoning
-    if unmatched and slug in LAYERS:
+    # rows the county layer did not cover (towns, holes): statewide generalized zoning, point by point
+    prev = {}
+    pfn = os.path.join(OUT, f"{slug}.json")
+    if os.path.exists(pfn) and not refresh:
+        prev = {k: v for k, v in json.load(open(pfn)).items() if v.get("src", "").startswith("MDP")}
+    for acct, lon, lat, p in unmatched:
+        if acct in prev:
+            res[acct] = prev[acct]
+            n_up += bool(prev[acct].get("upside"))
+            continue
         try:
-            sl = download("_statewide", STATEWIDE[0], refresh)
-            sfield = detect_zone_field(sl["fields"])
-            stree, sgeoms, sattrs = build_tree(sl, sfield)
-            for acct, lon, lat, p in unmatched:
-                pt = Point(lon, lat)
-                for i in stree.query(pt):
-                    if sgeoms[i].contains(pt):
-                        zone = str(sattrs[i].get(sfield) or "").strip()
-                        lvl, why = classify("_statewide", zone, "")
-                        res[acct] = {"zone": zone, "label": "", "upside": lvl, "why": why, "src": "MDP generalized (statewide)"}
-                        n_up += bool(lvl)
-                        break
+            zone, muni = statewide_point(lon, lat)
         except Exception as e:
-            print(f"  statewide fallback failed: {e}")
+            print(f"  statewide point failed: {e}")
+            break
+        time.sleep(0.25)
+        if not zone:
+            continue
+        lvl, why = classify("_statewide", zone, muni)
+        res[acct] = {"zone": zone, "label": muni, "upside": lvl, "why": why, "src": "MDP generalized (statewide)"}
+        n_up += bool(lvl)
     os.makedirs(OUT, exist_ok=True)
     json.dump(res, open(os.path.join(OUT, f"{slug}.json"), "w"), separators=(",", ":"))
     print(f"{slug}: {len(res)} zoned ({n_up} with upside) · field {field} · {src}")
     return {"zoned": len(res), "upside": n_up, "field": field, "src": src, "layer": url, "fetched": layer.get("fetched")}
+
+
+def run_statewide(slug, refresh=False):
+    """Counties with no usable county layer: MDP generalized zoning, one point query per parcel (incremental)."""
+    pfn = os.path.join(OUT, f"{slug}.json")
+    res = {} if refresh or not os.path.exists(pfn) else json.load(open(pfn))
+    n_new = 0
+    for acct, lon, lat, p in rows_for(slug):
+        if acct in res:
+            continue
+        try:
+            zone, muni = statewide_point(lon, lat)
+        except Exception as e:
+            print(f"  {slug}: statewide point failed after {n_new}: {e}")
+            break
+        n_new += 1
+        time.sleep(0.25)
+        if not zone:
+            res[acct] = {"zone": "", "label": muni, "upside": None, "why": "", "src": "MDP generalized (statewide)"}
+            continue
+        lvl, why = classify("_statewide", zone, muni)
+        res[acct] = {"zone": zone, "label": muni, "upside": lvl, "why": why, "src": "MDP generalized (statewide)"}
+        if n_new % 200 == 0:
+            os.makedirs(OUT, exist_ok=True)
+            json.dump(res, open(pfn, "w"), separators=(",", ":"))
+            print(f"  {slug}: {n_new} queried", flush=True)
+    os.makedirs(OUT, exist_ok=True)
+    json.dump(res, open(pfn, "w"), separators=(",", ":"))
+    n_up = sum(1 for v in res.values() if v.get("upside"))
+    zoned = sum(1 for v in res.values() if v.get("zone"))
+    print(f"{slug}: {zoned} zoned ({n_up} with upside) · MDP generalized (statewide), {n_new} new point queries")
+    return {"zoned": zoned, "upside": n_up, "field": "GENZONE", "src": "MDP generalized (statewide)", "layer": STATEWIDE[0], "fetched": date.today().isoformat()}
 
 
 def finish():

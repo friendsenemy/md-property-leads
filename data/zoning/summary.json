@@ -1,0 +1,197 @@
+{
+ "generated": "2026-11-25",
+ "counties": {
+  "wicomico": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "frederick": {
+   "zoned": 1456,
+   "upside": 345,
+   "field": "TYPE",
+   "src": "county",
+   "layer": "https://fcgis.frederickcountymd.gov/server_pub/rest/services/PlanningAndPermitting/Zoning/MapServer/1",
+   "fetched": "2026-11-25"
+  },
+  "calvert": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "talbot": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "washington": {
+   "zoned": 1179,
+   "upside": 227,
+   "field": "Zone",
+   "src": "county",
+   "layer": "https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Washington_County_Zoning/FeatureServer/21",
+   "fetched": "2026-11-25"
+  },
+  "worcester": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "charles": {
+   "zoned": 3606,
+   "upside": 1393,
+   "field": "ZONING",
+   "src": "county",
+   "layer": "https://services7.arcgis.com/3BMWkdyrt45RNCrq/arcgis/rest/services/Zoning/FeatureServer/0",
+   "fetched": "2026-11-25"
+  },
+  "st-mary-s": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "caroline": {
+   "zoned": 711,
+   "upside": 37,
+   "field": "ZONING",
+   "src": "county",
+   "layer": "https://services6.arcgis.com/M2dyOQipFC1IggF3/arcgis/rest/services/ZONING/FeatureServer/0",
+   "fetched": "2026-11-25"
+  },
+  "garrett": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "prince-george-s": {
+   "zoned": 8464,
+   "upside": 6479,
+   "field": "CLASS",
+   "src": "county",
+   "layer": "https://gisdata.pgplanning.org/arcgis/rest/services/Applications/ZoningCertificationLetter/MapServer/59",
+   "fetched": "2026-11-25"
+  },
+  "allegany": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "baltimore-city": {
+   "zoned": 1864,
+   "upside": 930,
+   "field": "Zoning",
+   "src": "county",
+   "layer": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/ArcGIS/rest/services/Zoning_/FeatureServer/0",
+   "fetched": "2026-11-25"
+  },
+  "cecil": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "queen-anne-s": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "carroll": {
+   "zoned": 313,
+   "upside": 74,
+   "field": "Zoning",
+   "src": "county",
+   "layer": "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/Zoning/FeatureServer/0",
+   "fetched": "2026-11-25"
+  },
+  "harford": {
+   "zoned": 1233,
+   "upside": 495,
+   "field": "CLASSIFICATION",
+   "src": "county",
+   "layer": "https://services.arcgis.com/q8r0H9SbF6PzNpYE/arcgis/rest/services/2017Zoning/FeatureServer/0",
+   "fetched": "2026-11-25"
+  },
+  "kent": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "howard": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "dorchester": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  },
+  "montgomery": {
+   "zoned": 4567,
+   "upside": 2200,
+   "field": "ZONE_",
+   "src": "county",
+   "layer": "https://mcmaps.org/server11/rest/services/Overlays/MCAtlas_Zoning/MapServer/4",
+   "fetched": "2026-11-25"
+  },
+  "baltimore-county": {
+   "zoned": 4921,
+   "upside": 3201,
+   "field": "ZONE_CLASS",
+   "src": "county",
+   "layer": "https://bcgis.baltimorecountymd.gov/arcgis/rest/services/DevelopmentManagement/Zoning/MapServer/1",
+   "fetched": "2026-11-25"
+  },
+  "anne-arundel": {
+   "zoned": 4115,
+   "upside": 2377,
+   "field": "ZONED",
+   "src": "county",
+   "layer": "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_OpenData/MapServer/29",
+   "fetched": "2026-11-25"
+  },
+  "somerset": {
+   "zoned": 0,
+   "upside": 0,
+   "field": "GENZONE",
+   "src": "MDP generalized (statewide)",
+   "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
+   "fetched": "2026-11-25"
+  }
+ }
+}
