@@ -42,8 +42,8 @@
    "fetched": "2026-11-25"
   },
   "worcester": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 4386,
+   "upside": 3963,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -74,32 +74,32 @@
    "fetched": "2026-11-25"
   },
   "garrett": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 1715,
+   "upside": 274,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
    "fetched": "2026-11-25"
   },
   "prince-george-s": {
-   "zoned": 8464,
-   "upside": 6479,
+   "zoned": 8672,
+   "upside": 6681,
    "field": "CLASS",
    "src": "county",
    "layer": "https://gisdata.pgplanning.org/arcgis/rest/services/Applications/ZoningCertificationLetter/MapServer/59",
    "fetched": "2026-11-25"
   },
   "allegany": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 928,
+   "upside": 902,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
    "fetched": "2026-11-25"
   },
   "baltimore-city": {
-   "zoned": 1864,
-   "upside": 930,
+   "zoned": 2178,
+   "upside": 1244,
    "field": "Zoning",
    "src": "county",
    "layer": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/ArcGIS/rest/services/Zoning_/FeatureServer/0",
@@ -122,16 +122,16 @@
    "fetched": "2026-11-25"
   },
   "carroll": {
-   "zoned": 313,
-   "upside": 74,
+   "zoned": 737,
+   "upside": 232,
    "field": "Zoning",
    "src": "county",
    "layer": "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/Zoning/FeatureServer/0",
    "fetched": "2026-11-25"
   },
   "harford": {
-   "zoned": 1233,
-   "upside": 495,
+   "zoned": 1238,
+   "upside": 500,
    "field": "CLASSIFICATION",
    "src": "county",
    "layer": "https://services.arcgis.com/q8r0H9SbF6PzNpYE/arcgis/rest/services/2017Zoning/FeatureServer/0",
@@ -154,8 +154,8 @@
    "fetched": "2026-11-25"
   },
   "dorchester": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 868,
+   "upside": 304,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -170,24 +170,24 @@
    "fetched": "2026-11-25"
   },
   "baltimore-county": {
-   "zoned": 4921,
-   "upside": 3201,
+   "zoned": 5726,
+   "upside": 3961,
    "field": "ZONE_CLASS",
    "src": "county",
    "layer": "https://bcgis.baltimorecountymd.gov/arcgis/rest/services/DevelopmentManagement/Zoning/MapServer/1",
    "fetched": "2026-11-25"
   },
   "anne-arundel": {
-   "zoned": 4115,
-   "upside": 2377,
+   "zoned": 4569,
+   "upside": 2677,
    "field": "ZONED",
    "src": "county",
    "layer": "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_OpenData/MapServer/29",
    "fetched": "2026-11-25"
   },
   "somerset": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 729,
+   "upside": 323,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
