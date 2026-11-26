@@ -94,7 +94,8 @@ RULES = {
     ],
     "_statewide": [
         (r"^(MIXED USE|COMMERCIAL|INDUSTRIAL|HIGH DENSITY RESIDENTIAL|RURAL HIGH DENSITY)", "HIGH", "{z} (MDP generalized class): more than a single house allowed — confirm the county code"),
-        (r"^(MEDIUM DENSITY RESIDENTIAL|RURAL MEDIUM DENSITY)", "MEDIUM", "{z} (MDP generalized class): small-lot residential — extra lot on a larger parcel; confirm the county code"),
+        # MDP's MEDIUM DENSITY bucket is ordinary single-family subdivision zoning (R-10/R-20 type) and
+        # RURAL MEDIUM is large-lot rural — neither is a builder-upside signal, so no MEDIUM flag statewide.
         (r".", None, ""),
     ],
     "carroll": [
@@ -295,6 +296,9 @@ def run_statewide(slug, refresh=False):
     pfn = os.path.join(OUT, f"{slug}.json")
     res = {} if refresh or not os.path.exists(pfn) else json.load(open(pfn))
     n_new = 0
+    for v in res.values():  # re-apply current rules to cached MDP answers
+        if v.get("zone"):
+            v["upside"], v["why"] = classify("_statewide", v["zone"], v.get("label"))
     for acct, lon, lat, p in rows_for(slug):
         if acct in res:
             continue

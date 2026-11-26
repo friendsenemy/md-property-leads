@@ -3,7 +3,7 @@
  "counties": {
   "wicomico": {
    "zoned": 1231,
-   "upside": 830,
+   "upside": 173,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -19,7 +19,7 @@
   },
   "calvert": {
    "zoned": 1173,
-   "upside": 149,
+   "upside": 114,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -27,7 +27,7 @@
   },
   "talbot": {
    "zoned": 896,
-   "upside": 298,
+   "upside": 75,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -43,7 +43,7 @@
   },
   "worcester": {
    "zoned": 4386,
-   "upside": 3963,
+   "upside": 792,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -59,7 +59,7 @@
   },
   "st-mary-s": {
    "zoned": 1834,
-   "upside": 1026,
+   "upside": 848,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -75,7 +75,7 @@
   },
   "garrett": {
    "zoned": 1715,
-   "upside": 274,
+   "upside": 165,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -91,7 +91,7 @@
   },
   "allegany": {
    "zoned": 928,
-   "upside": 902,
+   "upside": 291,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -107,7 +107,7 @@
   },
   "cecil": {
    "zoned": 1758,
-   "upside": 1454,
+   "upside": 150,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -115,7 +115,7 @@
   },
   "queen-anne-s": {
    "zoned": 858,
-   "upside": 187,
+   "upside": 91,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -139,7 +139,7 @@
   },
   "kent": {
    "zoned": 1025,
-   "upside": 464,
+   "upside": 194,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -147,7 +147,7 @@
   },
   "howard": {
    "zoned": 1418,
-   "upside": 1046,
+   "upside": 656,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -155,7 +155,7 @@
   },
   "dorchester": {
    "zoned": 868,
-   "upside": 304,
+   "upside": 154,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -187,7 +187,7 @@
   },
   "somerset": {
    "zoned": 729,
-   "upside": 323,
+   "upside": 202,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
