@@ -2,8 +2,8 @@
  "generated": "2026-11-25",
  "counties": {
   "wicomico": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 1231,
+   "upside": 830,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -18,16 +18,16 @@
    "fetched": "2026-11-25"
   },
   "calvert": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 1173,
+   "upside": 149,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
    "fetched": "2026-11-25"
   },
   "talbot": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 896,
+   "upside": 298,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -58,8 +58,8 @@
    "fetched": "2026-11-25"
   },
   "st-mary-s": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 1834,
+   "upside": 1026,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -106,16 +106,16 @@
    "fetched": "2026-11-25"
   },
   "cecil": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 1758,
+   "upside": 1454,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
    "fetched": "2026-11-25"
   },
   "queen-anne-s": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 858,
+   "upside": 187,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -138,16 +138,16 @@
    "fetched": "2026-11-25"
   },
   "kent": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 1025,
+   "upside": 464,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
    "fetched": "2026-11-25"
   },
   "howard": {
-   "zoned": 0,
-   "upside": 0,
+   "zoned": 1418,
+   "upside": 1046,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
