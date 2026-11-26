@@ -59,7 +59,7 @@
   },
   "st-mary-s": {
    "zoned": 1834,
-   "upside": 848,
+   "upside": 50,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
@@ -139,7 +139,7 @@
   },
   "kent": {
    "zoned": 1025,
-   "upside": 194,
+   "upside": 97,
    "field": "GENZONE",
    "src": "MDP generalized (statewide)",
    "layer": "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0",
