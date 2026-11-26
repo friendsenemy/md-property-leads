@@ -2122,6 +2122,20 @@
    "results": 7,
    "status": "CLOSED"
   },
+  "CHARLES T HOWES JR|1988-01-21": {
+   "accounts": [
+    "0503009998"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "1988-01-21",
+   "estate_number": "8991",
+   "record_ids": [
+    "1930293058"
+   ],
+   "results": 7,
+   "status": "CLOSED"
+  },
   "CHARLES W DOSSEY|2009-12-28": {
    "accounts": [
     "0503123758"
@@ -2153,6 +2167,20 @@
    "dod": "2012-05-24",
    "results": 1,
    "status": "NONE FOUND"
+  },
+  "CHERI L STROUP|2014-11-08": {
+   "accounts": [
+    "0503123405"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2014-11-08",
+   "estate_number": "12869",
+   "record_ids": [
+    "1930282336"
+   ],
+   "results": 1,
+   "status": "ARCHIVED"
   },
   "CHERYL A ROBINSON|2006-07-06": {
    "accounts": [
@@ -2648,6 +2676,20 @@
    "results": 0,
    "status": "NONE FOUND"
   },
+  "DARLENE HOLLAND|2006-08-17": {
+   "accounts": [
+    "0503147908"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2006-08-17",
+   "estate_number": "9491",
+   "record_ids": [
+    "1930291385"
+   ],
+   "results": 2,
+   "status": "CLOSED"
+  },
   "DARRELL L TOWNSEND|2003-11-18": {
    "accounts": [
     "0906168744"
@@ -3034,6 +3076,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "DENISE R DAVIS|2007-03-27": {
+   "accounts": [
+    "0502086379"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2007-03-27",
+   "results": 3,
+   "status": "NONE FOUND"
   },
   "DENNIS A MEADOWS|2012-10-23": {
    "accounts": [
@@ -3428,6 +3479,16 @@
    "checked": "2026-10-19",
    "dod": "2009-08-26",
    "results": 2,
+   "status": "NONE FOUND"
+  },
+  "DOROTHY A YORK|2012-05-02": {
+   "accounts": [
+    "0501076116",
+    "0501076124"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2012-05-02",
+   "results": 1,
    "status": "NONE FOUND"
   },
   "DOROTHY C SWANN|1990-11-28": {
@@ -4002,6 +4063,20 @@
     "1909158247"
    ],
    "results": 4,
+   "status": "CLOSED"
+  },
+  "ELMER LEROY JENKINS JR|2002-06-17": {
+   "accounts": [
+    "0503010279"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2002-06-17",
+   "estate_number": "8171",
+   "record_ids": [
+    "1930288435"
+   ],
+   "results": 3,
    "status": "CLOSED"
   },
   "ELMER MACKALL|2005-05-22": {
@@ -6032,6 +6107,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "JAMES L MACKALL|2013-04-03": {
+   "accounts": [
+    "0502014947"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2013-04-03",
+   "estate_number": "12178",
+   "record_ids": [
+    "1930295818"
+   ],
+   "results": 7,
+   "status": "CLOSED"
+  },
   "JAMES L SISSON|2014-08-16": {
    "accounts": [
     "0906034748"
@@ -6413,6 +6502,15 @@
    "checked": "2026-11-02",
    "dod": "2009-08-11",
    "results": 5,
+   "status": "NONE FOUND"
+  },
+  "JEFFREY A DAVIS|2007-08-11": {
+   "accounts": [
+    "0502086379"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2007-08-11",
+   "results": 10,
    "status": "NONE FOUND"
   },
   "JENNIFER L JOHNSON|2009-07-08": {
@@ -8479,6 +8577,20 @@
    "results": 4,
    "status": "CLOSED"
   },
+  "LAWRENCE I MOXEY|2004-09-28": {
+   "accounts": [
+    "0503027309"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2004-09-28",
+   "estate_number": "8671",
+   "record_ids": [
+    "1930282096"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "LAWRENCE J BEAVERS|2010-09-04": {
    "accounts": [
     "0907000308"
@@ -9877,6 +9989,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "MAUREEN A PROUT|2007-01-24": {
+   "accounts": [
+    "0503084698"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2007-01-24",
+   "estate_number": "9760",
+   "record_ids": [
+    "1930284308"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "MAUREEN M KILLBY|1993-01-29": {
    "accounts": [
     "0906180949"
@@ -10155,6 +10281,15 @@
    "results": 3,
    "status": "NONE FOUND"
   },
+  "MICHAEL GENE BOOTHE|2011-05-08": {
+   "accounts": [
+    "0502115360"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2011-05-08",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "MICHAEL HENRY SCHWARTZ|2013-02-05": {
    "accounts": [
     "0906183506"
@@ -10414,6 +10549,20 @@
    "dod": "1989-09-18",
    "results": 0,
    "status": "NONE FOUND"
+  },
+  "NANCY A HILL|2011-12-24": {
+   "accounts": [
+    "0502053926"
+   ],
+   "checked": "2026-11-26",
+   "county": "Prince George's",
+   "dod": "2011-12-24",
+   "estate_number": "89581",
+   "record_ids": [
+    "1930909595"
+   ],
+   "results": 10,
+   "status": "CLOSED"
   },
   "NANCY A MASSIE|2007-05-12": {
    "accounts": [
@@ -10798,6 +10947,15 @@
    ],
    "results": 3,
    "status": "ARCHIVED"
+  },
+  "PATRICIA A BOWEN|2003-12-01": {
+   "accounts": [
+    "0501202901"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2003-12-01",
+   "results": 2,
+   "status": "NONE FOUND"
   },
   "PATRICIA A BREWER|2000-02-25": {
    "accounts": [
@@ -11776,6 +11934,34 @@
    "results": 4,
    "status": "NONE FOUND"
   },
+  "RICHARD E HUMPHREYS|2004-01-11": {
+   "accounts": [
+    "0502036193"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2004-01-11",
+   "estate_number": "8956",
+   "record_ids": [
+    "1930294093"
+   ],
+   "results": 3,
+   "status": "CLOSED"
+  },
+  "RICHARD EUGENE POTTIER|2012-12-13": {
+   "accounts": [
+    "0502102706"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2012-12-13",
+   "estate_number": "12025",
+   "record_ids": [
+    "1930283934"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "RICHARD H PROCTOR|1985-10-05": {
    "accounts": [
     "0805073359",
@@ -11957,6 +12143,15 @@
    ],
    "results": 16,
    "status": "CLOSED"
+  },
+  "ROBERT C STRATTON|1988-11-15": {
+   "accounts": [
+    "0501190806"
+   ],
+   "checked": "2026-11-26",
+   "dod": "1988-11-15",
+   "results": 1,
+   "status": "NONE FOUND"
   },
   "ROBERT D WEEMS|1998-01-03": {
    "accounts": [
@@ -12301,6 +12496,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "ROBERT P BURNETT|2000-02-18": {
+   "accounts": [
+    "0502125099"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2000-02-18",
+   "estate_number": "14262",
+   "record_ids": [
+    "1930295898"
+   ],
+   "results": 4,
+   "status": "ARCHIVED"
+  },
   "ROBERT PAUL BURNETT|2000-02-18": {
    "accounts": [
     "0502253389"
@@ -12526,6 +12735,20 @@
    "dod": "2014-03-06",
    "results": 10,
    "status": "NONE FOUND"
+  },
+  "RONALD LYLE ESSEX|2005-08-28": {
+   "accounts": [
+    "0502006715"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2005-08-28",
+   "estate_number": "9110",
+   "record_ids": [
+    "1930283975"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "RONNIE L TURNER|2008-11-02": {
    "accounts": [
@@ -12785,6 +13008,20 @@
    "dod": "1977-06-17",
    "results": 1,
    "status": "NONE FOUND"
+  },
+  "RUSSELL B TALKINGTON|2013-09-19": {
+   "accounts": [
+    "0503127869"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2013-09-19",
+   "estate_number": "12408",
+   "record_ids": [
+    "1930293584"
+   ],
+   "results": 1,
+   "status": "CLOSED"
   },
   "RUTH ANN WADE|1985-04-19": {
    "accounts": [
@@ -13074,6 +13311,15 @@
    "results": 9,
    "status": "NONE FOUND"
   },
+  "SHARON E MALDONADO|2014-04-29": {
+   "accounts": [
+    "0501143603"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2014-04-29",
+   "results": 0,
+   "status": "NONE FOUND"
+  },
   "SHARON L CARROLL|2011-01-06": {
    "accounts": [
     "0804036301",
@@ -13106,6 +13352,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "SHEILA P RICE|1996-10-08": {
+   "accounts": [
+    "0503016374"
+   ],
+   "checked": "2026-11-26",
+   "dod": "1996-10-08",
+   "results": 0,
+   "status": "NONE FOUND"
   },
   "SHEILAH C LEVIN|2009-10-13": {
    "accounts": [
@@ -13339,6 +13594,20 @@
    "results": 2,
    "status": "NONE FOUND"
   },
+  "STEVEN L MCCOY|2013-10-23": {
+   "accounts": [
+    "0501202693"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2013-10-23",
+   "estate_number": "12940",
+   "record_ids": [
+    "1930282736"
+   ],
+   "results": 4,
+   "status": "ARCHIVED"
+  },
   "STEVEN L PATTERSON|1992-07-14": {
    "accounts": [
     "0906125514"
@@ -13435,6 +13704,15 @@
    "checked": "2026-11-18",
    "dod": "2009-08-19",
    "results": 0,
+   "status": "NONE FOUND"
+  },
+  "SYLVIA HOLLAND|2013-05-24": {
+   "accounts": [
+    "0503147908"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2013-05-24",
+   "results": 3,
    "status": "NONE FOUND"
   },
   "TAMARA L COPELAND|2013-02-27": {
@@ -13736,6 +14014,20 @@
    "results": 14,
    "status": "NONE FOUND"
   },
+  "THOMAS J KILCULLEN|1997-12-17": {
+   "accounts": [
+    "0501193333"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "1997-12-17",
+   "estate_number": "6414",
+   "record_ids": [
+    "1930296709"
+   ],
+   "results": 2,
+   "status": "CLOSED"
+  },
   "THOMAS L ALEXANDER|1990-01-22": {
    "accounts": [
     "0502093359"
@@ -13829,6 +14121,20 @@
    "results": 17,
    "status": "NONE FOUND"
   },
+  "THOMAS W MUDD|2014-01-24": {
+   "accounts": [
+    "0502047985"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2014-01-24",
+   "estate_number": "12521",
+   "record_ids": [
+    "1930294377"
+   ],
+   "results": 1,
+   "status": "CLOSED"
+  },
   "THU T TRAN|2006-08-09": {
    "accounts": [
     "0502132354"
@@ -13874,6 +14180,15 @@
    ],
    "results": 2,
    "status": "CLOSED"
+  },
+  "TIMOTHY W BURDEAUX|2005-01-05": {
+   "accounts": [
+    "0503107221"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2005-01-05",
+   "results": 0,
+   "status": "NONE FOUND"
   },
   "TINA M JONES|2010-05-25": {
    "accounts": [
@@ -13931,6 +14246,15 @@
    ],
    "results": 1,
    "status": "CLOSED"
+  },
+  "VERONICA LEE JONES|1997-06-11": {
+   "accounts": [
+    "0503154882"
+   ],
+   "checked": "2026-11-26",
+   "dod": "1997-06-11",
+   "results": 3,
+   "status": "NONE FOUND"
   },
   "VERONICA M TAYLOR|1997-11-06": {
    "accounts": [
@@ -14445,6 +14769,15 @@
    "results": 6,
    "status": "NONE FOUND"
   },
+  "WILLIAM A JACKS SR|2011-11-19": {
+   "accounts": [
+    "0502022761"
+   ],
+   "checked": "2026-11-26",
+   "dod": "2011-11-19",
+   "results": 143,
+   "status": "UNCERTAIN"
+  },
   "WILLIAM A SAVOY JR|2013-07-11": {
    "accounts": [
     "0907004591"
@@ -14660,6 +14993,20 @@
    "results": 6,
    "status": "CLOSED"
   },
+  "WILLIAM O FLOWERS|2008-05-15": {
+   "accounts": [
+    "0502106485"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2008-05-15",
+   "estate_number": "10181",
+   "record_ids": [
+    "1930292170"
+   ],
+   "results": 10,
+   "status": "CLOSED"
+  },
   "WILLIAM PUFFENBARGER|1997-10-02": {
    "accounts": [
     "0910009669"
@@ -14734,6 +15081,20 @@
    "results": 2,
    "status": "CLOSED"
   },
+  "WILLIS M DURHAM|2014-11-16": {
+   "accounts": [
+    "0503003329"
+   ],
+   "checked": "2026-11-26",
+   "county": "Calvert",
+   "dod": "2014-11-16",
+   "estate_number": "13007",
+   "record_ids": [
+    "1930286715"
+   ],
+   "results": 1,
+   "status": "ARCHIVED"
+  },
   "WOODLAND A MCCONKEY|2013-07-20": {
    "accounts": [
     "0906044174"
@@ -14771,5 +15132,5 @@
    "status": "NONE FOUND"
   }
  },
- "updated": "2026-11-25"
+ "updated": "2026-11-26"
 }
