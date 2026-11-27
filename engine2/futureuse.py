@@ -180,7 +180,7 @@ for _s in NO_PLAN_LAYER:
     SOURCES[_s] = [MDP_PLACE]
 
 
-TOWN_CODES = re.compile(r"^(MUN|MUNI|Town|Municipality|M|N/A|ROW|CITY|TOWN|MUNICIPAL|INCORPORATED)\b", re.I)
+TOWN_CODES = re.compile(r"^(MUN|MUNI|TOWN|MUNICIPALITY|M|N/A|ROW|CITY|MUNICIPAL|INCORPORATED)$", re.I)  # whole code only: M-1 / M-2 are industrial zones
 
 
 def zone_class(z):
@@ -268,7 +268,7 @@ def run(slug, refresh=False, requery=False):
     for acct, lon, lat, p in rows:
         pt = Point(lon, lat)
         plan, plan_rank_v, plan_src, label, notes, pending, extra = "", None, "", "", [], "", {}
-        plan_raw, queried, zc_equiv = "", False, None  # queried: a per-point source answered (even with no hit) -> keep a stub so re-runs skip it
+        plan_raw, queried, zc_equiv, raised_by = "", False, None, []  # queried: a per-point source answered (even with no hit) -> keep a stub so re-runs skip it
         for src, mode, data in loaded:
             # ── get the hit(s) for this parcel from this source
             hits = []
@@ -319,8 +319,8 @@ def run(slug, refresh=False, requery=False):
                         oc = str(o.get(src["field"]) or "")
                         notes.append(f"inside {oc}")
                         orank = next((r for k, r in (src.get("overlay_ranks") or {}).items() if oc.startswith(k)), None)
-                        if orank is not None:
-                            plan_rank_v = max(plan_rank_v, orank)
+                        if orank is not None and orank > plan_rank_v:
+                            plan_rank_v, raised_by = orank, raised_by + [oc]
                 elif src.get("miss") and not hits:
                     plan, plan_raw = src["miss"], ""
                     plan_rank_v = src["miss_rank"] if "miss_rank" in src else plan_rank(plan, src.get("ranks"))
@@ -328,9 +328,10 @@ def run(slug, refresh=False, requery=False):
             elif kind == "overlay" and hits:
                 c = category(src, hits[0])
                 lb = str(hits[0].get(src.get("label")) or "").strip() if src.get("label") else ""
-                notes.append(f"{src['name']}: {c}{' — ' + lb if lb else ''}")
-                if src.get("rank") and (plan_rank_v is None or plan_rank_v >= 1):  # never promote parks / institutional / water
-                    plan_rank_v = max(plan_rank_v or 0, src["rank"])
+                note = f"{src['name']}: {c}{' — ' + lb if lb else ''}"
+                notes.append(note)
+                if src.get("rank") and (plan_rank_v is None or plan_rank_v >= 1) and src["rank"] > (plan_rank_v or 0):  # never promote parks / institutional / water
+                    plan_rank_v, raised_by = src["rank"], raised_by + [note]
             elif kind == "pending" and hits:
                 c = category(src, hits[0])
                 lb = str(hits[0].get(src.get("label")) or "").strip() if src.get("label") else ""
@@ -354,9 +355,14 @@ def run(slug, refresh=False, requery=False):
         if not model and ((zc is not None and pr > zc and pr >= 2) or (zc is None and pr == 3)):
             upside = "UPZONE"
             cur = f"current zoning {zone} ({'builder lot' if zc == 3 else 'split/add' if zc == 2 else 'single-family / rural'})" if zc else f"current zoning {zone or 'unknown'} (town / not classified)"
-            why = f"plan calls for {plan or 'higher intensity'} ({RANK_NAMES[pr]}) vs {cur}"
-            if notes:
-                why += "; " + "; ".join(notes)
+            if raised_by:
+                why = f"{raised_by[-1]} ({RANK_NAMES[pr]}) vs {cur}; plan: {plan or '—'}"
+                rest = [n for n in notes if not any(r in n for r in raised_by)]
+            else:
+                why = f"plan calls for {plan or 'higher intensity'} ({RANK_NAMES[pr]}) vs {cur}"
+                rest = notes
+            if rest:
+                why += "; " + "; ".join(rest)
         elif pending:
             upside = "PENDING"
             why = f"{pending} — plan/zoning may change before the estate settles" + (f"; plan: {plan}" if plan else "")

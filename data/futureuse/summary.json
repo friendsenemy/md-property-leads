@@ -333,7 +333,7 @@
   },
   "howard": {
    "planned": 1418,
-   "upzone": 124,
+   "upzone": 114,
    "pending": 0,
    "rows": 1418,
    "src": "HoCo By Design (2023) character area",
@@ -360,15 +360,9 @@
    "point_failed": false
   }
  },
- "note": "Adopted comprehensive-plan Future Land Use layers for 19 jurisdictions (SOURCES in engine2/futureuse.py) plus pending-rezoning / sector-plan layers where published (Prince George's active sector plans & SMAs; Montgomery plans in progress + ZTA 25-02 attainable-housing parcels; Carroll comprehensive-rezoning requests; Baltimore County CZMP 2024 issues as notes). No adopted-plan GIS layer exists for Kent, Caroline, Somerset, Allegany and Garrett (plans are PDF-only): they carry the MDP Growth & Conservation place-area model, labelled as such and never counted as UPZONE. Queen Anne's publishes growth areas only (its 2023 comprehensive rezoning already implemented the plan). Wicomico's layer covers growth areas only (outside = rural/agricultural). St. Mary's 2050 plan (approved Oct 2026) is not yet published as a layer. Prince George's FLU is an AGOL copy of M-NCPPC's Future_Land_Use_Py (official download: gisdata.pgplanning.org/opendata, Future_Land_Use_Py.zip).",
- "partial_plan_layer": {
-  "queen-anne-s": "growth-area boundaries only",
-  "wicomico": "growth areas only; outside inferred rural/agricultural",
-  "montgomery": "no county-wide FLU; Thrive 2050 tiers + ZTA 25-02 eligibility + plans in progress"
- },
  "totals": {
   "planned": 52363,
-  "upzone": 2001,
+  "upzone": 1991,
   "pending": 1462
  }
 }
