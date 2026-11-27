@@ -1,0 +1,374 @@
+{
+ "generated": "2026-11-27",
+ "no_plan_layer": [
+  "kent",
+  "caroline",
+  "somerset",
+  "allegany",
+  "garrett"
+ ],
+ "counties": {
+  "calvert": {
+   "planned": 1173,
+   "upzone": 25,
+   "pending": 0,
+   "rows": 1173,
+   "src": "Calvert 2019 Comprehensive Plan Future Land Use (Jul 2022)",
+   "model_only": false,
+   "layers": [
+    "https://gis.calvertcountymd.gov/server/rest/services/Planning/Future_Land_Use__July_2022/MapServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "kent": {
+   "planned": 1015,
+   "upzone": 0,
+   "pending": 0,
+   "rows": 1015,
+   "src": "MDP Growth & Conservation place-area model (no adopted-plan layer published by the county)",
+   "model_only": true,
+   "layers": [
+    "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Place_Areas_GC/MapServer/2"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "dorchester": {
+   "planned": 866,
+   "upzone": 6,
+   "pending": 0,
+   "rows": 866,
+   "src": "Dorchester 2019 Comprehensive Plan Future Land Use",
+   "model_only": false,
+   "layers": [
+    "https://services7.arcgis.com/yqhlYKSnzjiOzQig/arcgis/rest/services/Future_Land_Use/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "talbot": {
+   "planned": 896,
+   "upzone": 16,
+   "pending": 0,
+   "rows": 896,
+   "src": "Talbot 2016 Comprehensive Plan Land Use",
+   "model_only": false,
+   "layers": [
+    "https://services6.arcgis.com/ScyqVZ3lUUihZ0ky/arcgis/rest/services/Septic_Tier_Land_Use_Plan_Aug2016/FeatureServer/16"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "charles": {
+   "planned": 3252,
+   "upzone": 118,
+   "pending": 0,
+   "rows": 3252,
+   "src": "2016 Comprehensive Plan Land Use",
+   "model_only": false,
+   "layers": [
+    "https://services7.arcgis.com/3BMWkdyrt45RNCrq/arcgis/rest/services/LandUse3/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "harford": {
+   "planned": 1238,
+   "upzone": 54,
+   "pending": 0,
+   "rows": 1238,
+   "src": "HarfordNEXT (2016) Land Use Plan",
+   "model_only": false,
+   "layers": [
+    "https://services.arcgis.com/q8r0H9SbF6PzNpYE/arcgis/rest/services/2016LandUse/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "washington": {
+   "planned": 1179,
+   "upzone": 101,
+   "pending": 0,
+   "rows": 1179,
+   "src": "Comprehensive Plan 2040 (adopted Sep 2025) Land Use Policy",
+   "model_only": false,
+   "layers": [
+    "https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/ZoningLULC_CP_2025/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "cecil": {
+   "planned": 1754,
+   "upzone": 95,
+   "pending": 0,
+   "rows": 1754,
+   "src": "Cecil 2010 Comprehensive Plan Land Use",
+   "model_only": false,
+   "layers": [
+    "https://cecilmaps.org/arcgis/rest/services/Hosted/Land_Use_Plan_Comprehensive_Plan/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "worcester": {
+   "planned": 4361,
+   "upzone": 2,
+   "pending": 0,
+   "rows": 4361,
+   "src": "Worcester Land Use Plan (adopted Oct 2026)",
+   "model_only": false,
+   "layers": [
+    "https://wcg-gisweb.co.worcester.md.us/arcgis/rest/services/Worcester_Data/Worcester_Future_Land_Use/MapServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "wicomico": {
+   "planned": 1231,
+   "upzone": 18,
+   "pending": 0,
+   "rows": 1231,
+   "src": "Wicomico 2017 Comprehensive Plan growth-area land use",
+   "model_only": false,
+   "layers": [
+    "https://services8.arcgis.com/qHmLtrNEAttmEZfU/arcgis/rest/services/Sewer_GrowthAreas/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "queen-anne-s": {
+   "planned": 864,
+   "upzone": 0,
+   "pending": 0,
+   "rows": 864,
+   "src": "Queen Anne's 2022 Comprehensive Plan growth area (plan implemented by ORD 23-13 comprehensive rezoning; no category map published)",
+   "model_only": false,
+   "layers": [
+    "https://gis.qac.org/arcgis/rest/services/QAC_PUBLIC/QAC_Planning/MapServer/1"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "anne-arundel": {
+   "planned": 4564,
+   "upzone": 67,
+   "pending": 0,
+   "rows": 4564,
+   "src": "Plan2040 GDP Planned Land Use (amended Jul 2026)",
+   "model_only": false,
+   "layers": [
+    "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_GDP_OpenData/MapServer/2",
+    "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_GDP_OpenData/MapServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "baltimore-county": {
+   "planned": 5722,
+   "upzone": 264,
+   "pending": 0,
+   "rows": 5722,
+   "src": "Master Plan 2030 Place Types",
+   "model_only": false,
+   "layers": [
+    "https://bcgisapps.baltimorecountymd.gov/arcgis/rest/services/MasterPlans2030Retrofit/MapServer/7",
+    "https://bcgisdata.baltimorecountymd.gov/arcgis/rest/services/DevelopmentManagement/Zoning/MapServer/14"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "carroll": {
+   "planned": 582,
+   "upzone": 82,
+   "pending": 0,
+   "rows": 582,
+   "src": "Carroll 2014 Master Plan (2019 amendment) Future Land Use",
+   "model_only": false,
+   "layers": [
+    "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/LU_FutureLandUse_County/FeatureServer/0",
+    "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/DesLandUse_Freedom/FeatureServer/0",
+    "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/DesLandUse_Finksburg/FeatureServer/0",
+    "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/LU_DesLandUse_Hampstead/FeatureServer/0",
+    "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/DesLandUse_Sykesville/FeatureServer/0",
+    "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/LU_DesLandUse_MtAiry/FeatureServer/0",
+    "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/ComprehensiveRezoning/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "frederick": {
+   "planned": 1171,
+   "upzone": 156,
+   "pending": 0,
+   "rows": 1171,
+   "src": "Livable Frederick / Comprehensive Plan designation (county)",
+   "model_only": false,
+   "layers": [
+    "https://fcgis.frederickcountymd.gov/server_pub/rest/services/PlanningAndPermitting/ComprehensivePlan/MapServer/7",
+    "https://services7.arcgis.com/kzGLdibqPsT2oxPF/arcgis/rest/services/2020_LU/FeatureServer/9"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "st-mary-s": {
+   "planned": 1827,
+   "upzone": 210,
+   "pending": 0,
+   "rows": 1828,
+   "src": "St. Mary's Comprehensive Plan Land Use (2010 as amended; 2050 plan approved Oct 2026 not yet published)",
+   "model_only": false,
+   "layers": [
+    "https://gis.stmaryscountymd.gov/server/rest/services/Public/General4/MapServer/2",
+    "https://gis.stmaryscountymd.gov/server/rest/services/Public/General4/MapServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "prince-george-s": {
+   "planned": 8471,
+   "upzone": 386,
+   "pending": 1255,
+   "rows": 8481,
+   "src": "M-NCPPC Future Land Use (Plan 2035 + master/sector plans; AGOL copy of Future_Land_Use_Py 2026-09)",
+   "model_only": false,
+   "layers": [
+    "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Future_Land_Use/FeatureServer/0",
+    "https://gisdata.pgplanning.org/arcgis/rest/services/Map_Services/C_I_Z/MapServer/0",
+    "https://gisdata.pgplanning.org/arcgis/rest/services/Applications/PGCPOngoingandActiveProjects/MapServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "montgomery": {
+   "planned": 4567,
+   "upzone": 227,
+   "pending": 207,
+   "rows": 4567,
+   "src": "Thrive Montgomery 2050 growth tier",
+   "model_only": false,
+   "layers": [
+    "https://montgomeryplans.org/server/rest/services/Thrive_General_Plan_Growth_Map/MapServer/8",
+    "https://montgomeryplans.org/server9/rest/services/Overlays/Master_Plans_Adopted/MapServer/0",
+    "https://montgomeryplans.org/server/rest/services/AHOM_MIL1/MapServer/4",
+    "https://montgomeryplans.org/server/rest/services/Overlays/Master_Plan_Stack/MapServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "baltimore-city": {
+   "planned": 2178,
+   "upzone": 50,
+   "pending": 0,
+   "rows": 2178,
+   "src": "Our Baltimore comprehensive plan 2024 Proposed Land Use",
+   "model_only": false,
+   "layers": [
+    "https://services1.arcgis.com/43Lm3JYE3nM91DAF/arcgis/rest/services/ProposedLandUse_final/FeatureServer/1"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "caroline": {
+   "planned": 711,
+   "upzone": 0,
+   "pending": 0,
+   "rows": 711,
+   "src": "MDP Growth & Conservation place-area model (no adopted-plan layer published by the county)",
+   "model_only": true,
+   "layers": [
+    "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Place_Areas_GC/MapServer/2"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "garrett": {
+   "planned": 1692,
+   "upzone": 0,
+   "pending": 0,
+   "rows": 1692,
+   "src": "MDP Growth & Conservation place-area model (no adopted-plan layer published by the county)",
+   "model_only": true,
+   "layers": [
+    "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Place_Areas_GC/MapServer/2"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "allegany": {
+   "planned": 929,
+   "upzone": 0,
+   "pending": 0,
+   "rows": 929,
+   "src": "MDP Growth & Conservation place-area model (no adopted-plan layer published by the county)",
+   "model_only": true,
+   "layers": [
+    "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Place_Areas_GC/MapServer/2"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "howard": {
+   "planned": 1418,
+   "upzone": 124,
+   "pending": 0,
+   "rows": 1418,
+   "src": "HoCo By Design (2023) character area",
+   "model_only": false,
+   "layers": [
+    "https://services1.arcgis.com/67LSIn5CxTeTDnwV/arcgis/rest/services/FLUM_ExportFeatures/FeatureServer/0"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  },
+  "somerset": {
+   "planned": 702,
+   "upzone": 0,
+   "pending": 0,
+   "rows": 702,
+   "src": "MDP Growth & Conservation place-area model (no adopted-plan layer published by the county)",
+   "model_only": true,
+   "layers": [
+    "https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Place_Areas_GC/MapServer/2"
+   ],
+   "fetched": "2026-11-27",
+   "point_queries": 0,
+   "point_failed": false
+  }
+ },
+ "note": "Adopted comprehensive-plan Future Land Use layers for 19 jurisdictions (SOURCES in engine2/futureuse.py) plus pending-rezoning / sector-plan layers where published (Prince George's active sector plans & SMAs; Montgomery plans in progress + ZTA 25-02 attainable-housing parcels; Carroll comprehensive-rezoning requests; Baltimore County CZMP 2024 issues as notes). No adopted-plan GIS layer exists for Kent, Caroline, Somerset, Allegany and Garrett (plans are PDF-only): they carry the MDP Growth & Conservation place-area model, labelled as such and never counted as UPZONE. Queen Anne's publishes growth areas only (its 2023 comprehensive rezoning already implemented the plan). Wicomico's layer covers growth areas only (outside = rural/agricultural). St. Mary's 2050 plan (approved Oct 2026) is not yet published as a layer. Prince George's FLU is an AGOL copy of M-NCPPC's Future_Land_Use_Py (official download: gisdata.pgplanning.org/opendata, Future_Land_Use_Py.zip).",
+ "partial_plan_layer": {
+  "queen-anne-s": "growth-area boundaries only",
+  "wicomico": "growth areas only; outside inferred rural/agricultural",
+  "montgomery": "no county-wide FLU; Thrive 2050 tiers + ZTA 25-02 eligibility + plans in progress"
+ },
+ "totals": {
+  "planned": 52363,
+  "upzone": 2001,
+  "pending": 1462
+ }
+}
