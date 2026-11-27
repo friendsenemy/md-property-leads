@@ -1,0 +1,648 @@
+{
+ "account": "0502076101",
+ "estates": [
+  {
+   "estate_number": "30667",
+   "status": "OPEN",
+   "type": "RE",
+   "date_opened": "05/17/2011",
+   "date_closed": "",
+   "decedent": "GARY LEE BENTON",
+   "date_of_death": "5/4/2011",
+   "date_of_filing": "05/17/2011",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MARY C. EVERLY",
+     "address": "215 UNITED MORGAN CIRCLE, BERKLEY SPRINGS, WV 25411"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "05/17/2011",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 10/16/02",
+     "pages": 3
+    },
+    {
+     "filed": "05/17/2011",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2011",
+     "n": 3,
+     "code": "1151",
+     "desc": "AFFIDAVIT OF ATTEMPTS TO LOCATE INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2011",
+     "n": 4,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION + SCH. B",
+     "pages": 6
+    },
+    {
+     "filed": "05/17/2011",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "05/17/2011",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 3
+    },
+    {
+     "filed": "05/17/2011",
+     "n": 7,
+     "code": "1407",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/14/2011",
+     "n": 8,
+     "code": "1137",
+     "desc": "AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "06/14/2011",
+     "n": 9,
+     "code": "1109",
+     "desc": "SMALL ESTATE NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "06/14/2011",
+     "n": 10,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2011",
+     "n": 11,
+     "code": "1402",
+     "desc": "CERTIFICATE OF PUBLICATION (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/12/2011",
+     "n": 12,
+     "code": "1124",
+     "desc": "REVISED INFORMATION REPORT",
+     "pages": 25
+    },
+    {
+     "filed": "12/21/2011",
+     "n": 13,
+     "code": "1210",
+     "desc": "DOCKET SHEET",
+     "pages": 1
+    },
+    {
+     "filed": "10/30/2014",
+     "n": 14,
+     "code": "1400",
+     "desc": "*****CONTRACT OF REPRESENTATION*****",
+     "pages": 4
+    },
+    {
+     "filed": "11/19/2014",
+     "n": 15,
+     "code": "1137",
+     "desc": "SECOND AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "12/16/2015",
+     "n": 16,
+     "code": "1137",
+     "desc": "THIRD AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 13
+    },
+    {
+     "filed": "03/17/2016",
+     "n": 17,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "04/18/2016",
+     "n": 18,
+     "code": "1137",
+     "desc": "FOURTH AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 3
+    },
+    {
+     "filed": "06/09/2016",
+     "n": 19,
+     "code": "1329",
+     "desc": "DOCUMENTATION FOR SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "06/22/2016",
+     "n": 20,
+     "code": "1137",
+     "desc": "FIFTH AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "03/23/2018",
+     "n": 21,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "06/07/2018",
+     "n": 22,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW",
+     "pages": 1
+    },
+    {
+     "filed": "06/20/2018",
+     "n": 23,
+     "code": "1376",
+     "desc": "PETITION FOR APPOINTMENT OF SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/25/2018",
+     "n": 24,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPOINTING SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "06/25/2018",
+     "n": 25,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/25/2018",
+     "n": 26,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT",
+     "pages": 1
+    },
+    {
+     "filed": "06/25/2018",
+     "n": 27,
+     "code": "1137",
+     "desc": "SIXTH AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 5
+    },
+    {
+     "filed": "09/03/2019",
+     "n": 28,
+     "code": "1137",
+     "desc": "SEVENTH AMENDED SCHEDULE B (SMALL ESTATE)",
+     "pages": 2
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 29,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 30,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE AND SCHEDULE A",
+     "pages": 3
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 31,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 32,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 33,
+     "code": "1101",
+     "desc": "WAIVER OF NOTICE",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 34,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 35,
+     "code": "1370",
+     "desc": "ACKNOWLEDGEMENT OF RESPONSIBILITIES",
+     "pages": 1
+    },
+    {
+     "filed": "02/26/2020",
+     "n": 36,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 23
+    },
+    {
+     "filed": "02/27/2020",
+     "n": 37,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "02/28/2020",
+     "n": 38,
+     "code": "1400",
+     "desc": "*****CONTRACT OF REPRESENTATION*****",
+     "pages": 2
+    },
+    {
+     "filed": "02/28/2020",
+     "n": 39,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "03/09/2020",
+     "n": 40,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "04/15/2020",
+     "n": 41,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/28/2020",
+     "n": 42,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "10/28/2020",
+     "n": 43,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT OF SUCCESSOR PERSONAL REPRESENTATIVE  R #77204",
+     "pages": 4
+    },
+    {
+     "filed": "11/10/2020",
+     "n": 44,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 2
+    },
+    {
+     "filed": "11/19/2020",
+     "n": 45,
+     "code": "1384",
+     "desc": "AMENDED FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/01/2020",
+     "n": 46,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING AMENDED FIRST ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/01/2020",
+     "n": 47,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/24/2021",
+     "n": 48,
+     "code": "1270",
+     "desc": "HEARING SCHEDULED SHOW CAUSE ON OCTOBER 5, 2021 AT 10:45 AM FOR FAILURE TO FILE THE ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/27/2021",
+     "n": 49,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "10/05/2021",
+     "n": 50,
+     "code": "1287",
+     "desc": "MINUTES OF HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "11/01/2021",
+     "n": 51,
+     "code": "1270",
+     "desc": "HEARING SCHEDULED SHOW CAUSE FOR CONTEMPT ON DECEMBER 6, 2021 AT 10:00 AM FOR FAILURE TO APPEAR AT HEARING SCHEDULED ON OCTOBER 5,",
+     "pages": 2021
+    },
+    {
+     "filed": "11/01/2021",
+     "n": 52,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "11/18/2021",
+     "n": 53,
+     "code": "1383",
+     "desc": "SECOND ACCOUNT OF SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 5
+    },
+    {
+     "filed": "12/06/2021",
+     "n": 54,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "12/06/2021",
+     "n": 55,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2022",
+     "n": 56,
+     "code": "1383",
+     "desc": "THIRD ACCOUNT OF SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "06/13/2022",
+     "n": 57,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING THIRD ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/13/2022",
+     "n": 58,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "12/05/2022",
+     "n": 59,
+     "code": "1383",
+     "desc": "FOURTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "01/09/2023",
+     "n": 60,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FOURTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/09/2023",
+     "n": 61,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/07/2023",
+     "n": 62,
+     "code": "1383",
+     "desc": "FIFTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "07/31/2023",
+     "n": 63,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIFTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/31/2023",
+     "n": 64,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/23/2024",
+     "n": 65,
+     "code": "1383",
+     "desc": "SIXTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/20/2024",
+     "n": 66,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SIXTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/20/2024",
+     "n": 67,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2024",
+     "n": 68,
+     "code": "1383",
+     "desc": "SEVENTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2024",
+     "n": 69,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/12/2024",
+     "n": 70,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SEVENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/12/2024",
+     "n": 71,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2025",
+     "n": 72,
+     "code": "1383",
+     "desc": "EIGHTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "03/03/2025",
+     "n": 73,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING EIGHTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/03/2025",
+     "n": 74,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2025",
+     "n": 75,
+     "code": "1383",
+     "desc": "NINTH ACCOUNT R#96503",
+     "pages": 3
+    },
+    {
+     "filed": "07/28/2025",
+     "n": 76,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING NINTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/28/2025",
+     "n": 77,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2026",
+     "n": 78,
+     "code": "1383",
+     "desc": "TENTH ACCOUNT R#98374",
+     "pages": 3
+    },
+    {
+     "filed": "01/16/2026",
+     "n": 79,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2026",
+     "n": 80,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING TENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/20/2026",
+     "n": 81,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "07/20/2026",
+     "n": 82,
+     "code": "1383",
+     "desc": "ELEVENTH ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/13/2026",
+     "n": 83,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "08/24/2026",
+     "n": 84,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING ELEVENTH ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/24/2026",
+     "n": 85,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2026",
+     "n": 86,
+     "code": "1328",
+     "desc": "DOCUMENTATION FOR ACCOUNT",
+     "pages": 3
+    }
+   ],
+   "last_docket_activity": "2026-09-10",
+   "interested_persons": [
+    {
+     "name": "MARY C. EVERLY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 13,
+   "probate_age_days": 5673,
+   "days_since_last_docket": 78,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-27",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1931020444",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1931020444",
+   "title_class": "D2-S",
+   "title_class_label": "Estate open and stale",
+   "decedent_searched": "GARY L BENTON"
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+{
+ "account": "0503154122",
+ "estates": [
+  {
+   "estate_number": "144941",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "07/19/2007",
+   "date_closed": "06/02/2008",
+   "decedent": "WILLIAM S. PHIPPS",
+   "date_of_death": "1/26/2007",
+   "date_of_filing": "07/19/2007",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "PHYLLIS J ERLICH [10000 GREENSIDE DR, STE A, COCKEYSVILLE, MD 21030-3600]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DEBORAH M. HANEY",
+     "address": "2309 TUCHAHOE ROAD, FOREST HILL, MD 21050"
+    },
+    {
+     "name": "WILLIAM R. PHIPPS",
+     "address": "1055 PIPERCOVE WAY, BEL AIR, MD 21014"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "07/19/2007",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 3
+    },
+    {
+     "filed": "07/19/2007",
+     "n": 2,
+     "code": "1115",
+     "desc": "BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "07/19/2007",
+     "n": 3,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2007",
+     "n": 4,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS-=THE JEFFERSONIAN",
+     "pages": 1
+    },
+    {
+     "filed": "07/19/2007",
+     "n": 5,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "08/10/2007",
+     "n": 6,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE) - JEFFERSONIAN",
+     "pages": 1
+    },
+    {
+     "filed": "09/19/2007",
+     "n": 7,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY INFORMATION REPORT",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2007",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/19/2007",
+     "n": 9,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 8
+    },
+    {
+     "filed": "12/24/2007",
+     "n": 10,
+     "code": "1312",
+     "desc": "LINE OF CHANGE OF ADDRESS",
+     "pages": 1
+    },
+    {
+     "filed": "03/20/2008",
+     "n": 11,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "04/16/2008",
+     "n": 12,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING  THE ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/22/2008",
+     "n": 13,
+     "code": "1130",
+     "desc": "PETITION AND ORDER FOR FUNERAL EXPENSES",
+     "pages": 2
+    },
+    {
+     "filed": "05/22/2008",
+     "n": 14,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 2
+    },
+    {
+     "filed": "05/22/2008",
+     "n": 15,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 3
+    },
+    {
+     "filed": "05/22/2008",
+     "n": 16,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "05/23/2008",
+     "n": 17,
+     "code": "1281",
+     "desc": "AUDIT MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2008",
+     "n": 18,
+     "code": "1104",
+     "desc": "SUPPLEMENTAL LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2008",
+     "n": 19,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FIRST AND  FINAL ACCOUNT (DATED __5/22/08_____)",
+     "pages": 1
+    },
+    {
+     "filed": "06/02/2008",
+     "n": 20,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING PETITION FOR COUNSEL FEES DATED 5/22/2008",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2008-06-02",
+   "interested_persons": [
+    {
+     "name": "DEBORAH M. HANEY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "WILLIAM R. PHIPPS",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 174,
+   "probate_age_days": 319,
+   "days_since_last_docket": 6752,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-27",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1930810899",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1930810899",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "WILLIAM S PHIPPS"
+  }
+ ]
+}

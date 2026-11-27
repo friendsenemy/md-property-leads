@@ -1,0 +1,214 @@
+{
+ "account": "0502022729",
+ "estates": [
+  {
+   "estate_number": "13325",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "08/14/2000",
+   "date_closed": "04/27/2001",
+   "decedent": "MARY EVELYN WILLETT",
+   "date_of_death": "7/17/2000",
+   "date_of_filing": "08/14/2000",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "FREDERIC E. WIERMAN ESQUIRE [P O BOX 138, SALISBURY, MD 21803]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "MANETTA W PUSEY",
+     "address": "26299 HIGH BANKS DR, SALISBURY, MD 21801"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "08/14/2000",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED AUGUST 15, 1988;  REGISTER OF WILLS PROOF OF CUSTODY",
+     "pages": 3
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE & SCHEDULE A",
+     "pages": 3
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 3,
+     "code": "1121",
+     "desc": "PERSONAL REPRESENTATIVE'S ACCEPTANCE AND CONSENT",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 5,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE - FIDELITY & DEPOSIT CO OF MD",
+     "pages": 2
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 6,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 7,
+     "code": "1120",
+     "desc": "LETTER OF ADMINISTRATION _____ NO OF LETTERS ISSUED -",
+     "pages": 2
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 8,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 9,
+     "code": "1278",
+     "desc": "ACKNOWLEDGEMENT OF RECEIPT OR DELIVERY OF SCHEDULE OF MANDATORY FILING DEADLINES, FORMS AND INSTRUCTIONS",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2000",
+     "n": 10,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "08/31/2000",
+     "n": 11,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/31/2000",
+     "n": 12,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 5
+    },
+    {
+     "filed": "04/12/2001",
+     "n": 13,
+     "code": "1300",
+     "desc": "REQUEST FOR EXEMPLIFIED COPY OF WILL - 1 ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "04/20/2001",
+     "n": 14,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION -",
+     "pages": 1
+    },
+    {
+     "filed": "04/23/2001",
+     "n": 15,
+     "code": "1138",
+     "desc": "CONSENT TO COMPENSATION FOR PERSONAL REPRESENTATIVE AND/OR ATTORNEY",
+     "pages": 1
+    },
+    {
+     "filed": "04/23/2001",
+     "n": 16,
+     "code": "1385",
+     "desc": "FIRST AND FINAL ADMINISTRATION AND DISTRIBUTION ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "04/24/2001",
+     "n": 17,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING FINAL ACCOUNT (DATED APRIL 24, 2001)",
+     "pages": 1
+    },
+    {
+     "filed": "04/24/2001",
+     "n": 18,
+     "code": "1336",
+     "desc": "RECEIPTS #49749 - PROBATE FEES/COSTS",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2001",
+     "n": 19,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS OF MAILING OF ORDER APPROVING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/01/2001",
+     "n": 20,
+     "code": "1336",
+     "desc": "RECEIPTS  49788 - EX. COPY OF WILL",
+     "pages": 1
+    },
+    {
+     "filed": "11/02/2001",
+     "n": 21,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION -",
+     "pages": 1
+    },
+    {
+     "filed": "11/16/2001",
+     "n": 22,
+     "code": "1336",
+     "desc": "RECEIPTS #50465 - PROBATE FEES/COSTS - EXEMPLIFIED COPY",
+     "pages": 1
+    },
+    {
+     "filed": "04/09/2004",
+     "n": 23,
+     "code": "1120",
+     "desc": "LETTERS OF ADMINISTRATION -",
+     "pages": 2
+    },
+    {
+     "filed": "02/09/2022",
+     "n": 24,
+     "code": "1331",
+     "desc": "ACCOUNT BOOK KAL 12, PG",
+     "pages": 126
+    }
+   ],
+   "last_docket_activity": "2022-02-09",
+   "interested_persons": [
+    {
+     "name": "MANETTA W PUSEY",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 28,
+   "probate_age_days": 256,
+   "days_since_last_docket": 1752,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-27",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1931740079",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1931740079",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARY E WILLETT"
+  }
+ ]
+}
