@@ -82,12 +82,12 @@ def plan_rank(cat, overrides=None):
 SOURCES = {
     "anne-arundel": [
         {"kind": "flu", "name": "Plan2040 GDP Planned Land Use (amended Jul 2026)", "url": "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_GDP_OpenData/MapServer/2", "field": "PLU_Description"},
-        {"kind": "overlay", "name": "Plan2040 Development Policy Area overlay", "url": "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_GDP_OpenData/MapServer/0", "field": "subarea", "rank": 3},
+        {"kind": "overlay", "name": "Plan2040 Development Policy Area overlay", "url": "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_GDP_OpenData/MapServer/0", "field": "subarea", "rank": 3, "tag": "DPA {c}"},
     ],
     "prince-george-s": [
         {"kind": "flu", "name": "M-NCPPC Future Land Use (Plan 2035 + master/sector plans; AGOL copy of Future_Land_Use_Py 2026-09)", "url": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Future_Land_Use/FeatureServer/0", "field": "FLU_GENERALIZED", "label": "ACTIVE_PLAN",
          "ranks": {"Residential High": 3, "Residential Medium-High": 3, "Residential Medium": 2, "Residential Low": 1, "Neighborhood Mixed Use": 3, "Office": 3}},
-        {"kind": "overlay", "name": "Plan 2035 Center", "url": "https://gisdata.pgplanning.org/arcgis/rest/services/Map_Services/C_I_Z/MapServer/0", "field": "TYPE_CODE", "label": "NAME", "rank": 3},
+        {"kind": "overlay", "name": "Plan 2035 Center", "url": "https://gisdata.pgplanning.org/arcgis/rest/services/Map_Services/C_I_Z/MapServer/0", "field": "TYPE_CODE", "label": "NAME", "rank": 3, "tag": "Plan 2035 {c}"},
         {"kind": "pending", "name": "M-NCPPC active sector plan / SMA / plan amendment", "url": "https://gisdata.pgplanning.org/arcgis/rest/services/Applications/PGCPOngoingandActiveProjects/MapServer/0", "field": "PROJECT_NAME", "label": "CATEGORY",
          "where": "CATEGORY IN ('Sector Plan','Sectional Map Amendment (SMA)','Minor Plan Amendment') AND STATUS IN ('ACTIVE','PROPOSED')"},
     ],
@@ -100,7 +100,7 @@ SOURCES = {
         {"kind": "flu", "name": "Thrive Montgomery 2050 growth tier", "url": "https://montgomeryplans.org/server/rest/services/Thrive_General_Plan_Growth_Map/MapServer/8", "field": "NAMES",
          "ranks": {"Corridor Focused Growth Areas": 1, "Suburban Transition Areas": 1, "Rural Tier": 1}},  # tiers are county-wide swaths: context only; UPZONE in MoCo comes from ZTA 25-02 eligibility
         {"kind": "note", "name": "master plan", "url": "https://montgomeryplans.org/server9/rest/services/Overlays/Master_Plans_Adopted/MapServer/0", "field": "NAME"},
-        {"kind": "overlay", "name": "ZTA 25-02 attainable-housing eligible parcel (duplex/triplex/quadplex by right on an SF lot)", "url": "https://montgomeryplans.org/server/rest/services/AHOM_MIL1/MapServer/4", "field": "STATUS", "mode": "acct", "acct": "ACCT", "acct_len": 8, "rank": 3, "const": "AHOM eligible"},
+        {"kind": "overlay", "name": "ZTA 25-02 attainable-housing eligible parcel (duplex/triplex/quadplex by right on an SF lot)", "url": "https://montgomeryplans.org/server/rest/services/AHOM_MIL1/MapServer/4", "field": "STATUS", "mode": "acct", "acct": "ACCT", "acct_len": 8, "rank": 3, "const": "AHOM eligible", "tag": "ZTA 25-02 eligible"},
         {"kind": "pending", "name": "master / sector plan in progress", "url": "https://montgomeryplans.org/server/rest/services/Overlays/Master_Plan_Stack/MapServer/0", "field": "NAME", "where": "(PLANPDF = 'In Progress' OR ((PLANPDF IS NULL OR PLANPDF = '') AND APPROVALDATE IS NULL)) AND NAME IS NOT NULL"},  # Friendship Heights, Eastern Silver Spring Communities (Nov 2026)
     ],
     "baltimore-city": [
@@ -268,7 +268,7 @@ def run(slug, refresh=False, requery=False):
     for acct, lon, lat, p in rows:
         pt = Point(lon, lat)
         plan, plan_rank_v, plan_src, label, notes, pending, extra = "", None, "", "", [], "", {}
-        plan_raw, queried, zc_equiv, raised_by = "", False, None, []  # queried: a per-point source answered (even with no hit) -> keep a stub so re-runs skip it
+        plan_raw, queried, zc_equiv, raised_by, tag = "", False, None, [], ""  # queried: a per-point source answered (even with no hit) -> keep a stub so re-runs skip it
         for src, mode, data in loaded:
             # ── get the hit(s) for this parcel from this source
             hits = []
@@ -320,7 +320,7 @@ def run(slug, refresh=False, requery=False):
                         notes.append(f"inside {oc}")
                         orank = next((r for k, r in (src.get("overlay_ranks") or {}).items() if oc.startswith(k)), None)
                         if orank is not None and orank > plan_rank_v:
-                            plan_rank_v, raised_by = orank, raised_by + [oc]
+                            plan_rank_v, raised_by, tag = orank, raised_by + [oc], oc
                 elif src.get("miss") and not hits:
                     plan, plan_raw = src["miss"], ""
                     plan_rank_v = src["miss_rank"] if "miss_rank" in src else plan_rank(plan, src.get("ranks"))
@@ -332,6 +332,7 @@ def run(slug, refresh=False, requery=False):
                 notes.append(note)
                 if src.get("rank") and (plan_rank_v is None or plan_rank_v >= 1) and src["rank"] > (plan_rank_v or 0):  # never promote parks / institutional / water
                     plan_rank_v, raised_by = src["rank"], raised_by + [note]
+                    tag = (src.get("tag") or "{c}").format(c=c)
             elif kind == "pending" and hits:
                 c = category(src, hits[0])
                 lb = str(hits[0].get(src.get("label")) or "").strip() if src.get("label") else ""
@@ -373,6 +374,8 @@ def run(slug, refresh=False, requery=False):
         row = {"plan": plan, "plan_class": pr, "zone": zone, "zone_class": zc, "upside": upside, "pending": pending, "why": why, "src": plan_src or (loaded[0][0]["name"] if loaded else "")}
         if label:
             row["label"] = label
+        if tag and upside == "UPZONE":
+            row["tag"] = tag  # short chip text naming what raised the class
         if extra:
             row["extra"] = extra
         if plan and plan_raw != plan:
@@ -398,7 +401,7 @@ def finish():
         if fn.endswith(".json") and fn not in ("summary.json", "upside.json"):
             for k, v in json.load(open(os.path.join(OUT, fn))).items():
                 if v.get("upside"):
-                    up[k] = {"plan": v["plan"], "upside": v["upside"], "why": v["why"], "zone": v.get("zone"), "pending": v.get("pending"), "county": fn[:-5]}
+                    up[k] = {"plan": v["plan"], "upside": v["upside"], "why": v["why"], "zone": v.get("zone"), "pending": v.get("pending"), "county": fn[:-5], **({"tag": v["tag"]} if v.get("tag") else {})}
     json.dump(up, open(os.path.join(OUT, "upside.json"), "w"), separators=(",", ":"))
     return up
 

@@ -275,7 +275,7 @@ const Zoning = {
     futureChip(id) {
         const f = this.getFuture(id); if (!f || !f.upside) return "";
         const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-        const what = f.upside === "PENDING" ? (f.pending || "").split(":").pop().replace(/\(.*\)$/, "").trim() : f.plan;
+        const what = f.upside === "PENDING" ? (f.pending || "").split(":").pop().replace(/\(.*\)$/, "").trim() : (f.tag || f.plan);
         return `<span class="chip" style="border-color:${this.futColor(f.upside)}; color:${this.futColor(f.upside)}" title="${esc(f.why)}">📈 ${f.upside === "PENDING" ? "PENDING REZONING" : "FUTURE"}: ${esc(what)}</span>`;
     },
     row(id) {
