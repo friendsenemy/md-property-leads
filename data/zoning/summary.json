@@ -3,9 +3,9 @@
  "counties": {
   "wicomico": {
    "zoned": 1231,
-   "upside": 307,
-   "county_layer": 781,
-   "in_town": 450,
+   "upside": 322,
+   "county_layer": 796,
+   "in_town": 435,
    "field": "COUNTY_ZON",
    "src": "county",
    "layer": "https://gisapps.wicomicocounty.org/server/rest/services/WicomicoZoningMar12026/MapServer/1",
@@ -13,11 +13,13 @@
   },
   "frederick": {
    "zoned": 1456,
-   "upside": 345,
+   "upside": 351,
+   "county_layer": 1456,
+   "in_town": 0,
    "field": "TYPE",
    "src": "county",
    "layer": "https://fcgis.frederickcountymd.gov/server_pub/rest/services/PlanningAndPermitting/Zoning/MapServer/1",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "calvert": {
    "zoned": 1173,
@@ -31,8 +33,8 @@
   },
   "talbot": {
    "zoned": 896,
-   "upside": 245,
-   "county_layer": 626,
+   "upside": 251,
+   "county_layer": 628,
    "in_town": 268,
    "field": "Zoning2018",
    "src": "county",
@@ -41,16 +43,18 @@
   },
   "washington": {
    "zoned": 1179,
-   "upside": 227,
+   "upside": 321,
+   "county_layer": 768,
+   "in_town": 411,
    "field": "Zone",
    "src": "county",
    "layer": "https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Washington_County_Zoning/FeatureServer/21",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "worcester": {
    "zoned": 4389,
-   "upside": 1576,
-   "county_layer": 1228,
+   "upside": 1598,
+   "county_layer": 1250,
    "in_town": 3118,
    "field": "Designation_1",
    "src": "county",
@@ -59,11 +63,13 @@
   },
   "charles": {
    "zoned": 3606,
-   "upside": 1393,
+   "upside": 1446,
+   "county_layer": 3474,
+   "in_town": 132,
    "field": "ZONING",
    "src": "county",
    "layer": "https://services7.arcgis.com/3BMWkdyrt45RNCrq/arcgis/rest/services/Zoning/FeatureServer/0",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "st-mary-s": {
    "zoned": 1837,
@@ -87,7 +93,7 @@
   },
   "garrett": {
    "zoned": 1715,
-   "upside": 256,
+   "upside": 263,
    "county_layer": 1180,
    "in_town": 0,
    "field": "flu",
@@ -96,17 +102,19 @@
    "fetched": "2026-11-27"
   },
   "prince-george-s": {
-   "zoned": 8672,
-   "upside": 6681,
+   "zoned": 8683,
+   "upside": 6677,
+   "county_layer": 8468,
+   "in_town": 1,
    "field": "CLASS",
    "src": "county",
    "layer": "https://gisdata.pgplanning.org/arcgis/rest/services/Applications/ZoningCertificationLetter/MapServer/59",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "allegany": {
    "zoned": 931,
-   "upside": 472,
-   "county_layer": 589,
+   "upside": 481,
+   "county_layer": 592,
    "in_town": 339,
    "field": "zone",
    "src": "county",
@@ -115,11 +123,13 @@
   },
   "baltimore-city": {
    "zoned": 2178,
-   "upside": 1244,
+   "upside": 1247,
+   "county_layer": 2178,
+   "in_town": 0,
    "field": "Zoning",
    "src": "county",
    "layer": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/ArcGIS/rest/services/Zoning_/FeatureServer/0",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "cecil": {
    "zoned": 1758,
@@ -144,23 +154,27 @@
   "carroll": {
    "zoned": 737,
    "upside": 232,
+   "county_layer": 553,
+   "in_town": 0,
    "field": "Zoning",
    "src": "county",
    "layer": "https://services.arcgis.com/Uf0DiYpD9NOFO5YH/arcgis/rest/services/Zoning/FeatureServer/0",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "harford": {
    "zoned": 1238,
-   "upside": 500,
+   "upside": 569,
+   "county_layer": 988,
+   "in_town": 245,
    "field": "CLASSIFICATION",
    "src": "county",
    "layer": "https://services.arcgis.com/q8r0H9SbF6PzNpYE/arcgis/rest/services/2017Zoning/FeatureServer/0",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "kent": {
    "zoned": 1026,
    "upside": 304,
-   "county_layer": 625,
+   "county_layer": 739,
    "in_town": 0,
    "field": "zoning",
    "src": "county",
@@ -169,8 +183,8 @@
   },
   "howard": {
    "zoned": 1418,
-   "upside": 530,
-   "county_layer": 1246,
+   "upside": 542,
+   "county_layer": 1418,
    "in_town": 0,
    "field": "ZONE",
    "src": "county",
@@ -179,8 +193,8 @@
   },
   "dorchester": {
    "zoned": 868,
-   "upside": 217,
-   "county_layer": 622,
+   "upside": 221,
+   "county_layer": 639,
    "in_town": 229,
    "field": "CLASS_1",
    "src": "county",
@@ -189,37 +203,52 @@
   },
   "montgomery": {
    "zoned": 4567,
-   "upside": 2200,
+   "upside": 3177,
+   "county_layer": 3951,
+   "in_town": 0,
    "field": "ZONE_",
    "src": "county",
    "layer": "https://mcmaps.org/server11/rest/services/Overlays/MCAtlas_Zoning/MapServer/4",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "baltimore-county": {
    "zoned": 5726,
-   "upside": 3961,
+   "upside": 3962,
+   "county_layer": 5723,
+   "in_town": 0,
    "field": "ZONE_CLASS",
    "src": "county",
    "layer": "https://bcgis.baltimorecountymd.gov/arcgis/rest/services/DevelopmentManagement/Zoning/MapServer/1",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "anne-arundel": {
-   "zoned": 4569,
-   "upside": 2677,
+   "zoned": 4573,
+   "upside": 2737,
+   "county_layer": 4197,
+   "in_town": 367,
    "field": "ZONED",
    "src": "county",
    "layer": "https://gis.aacounty.org/arcgis/rest/services/OpenData/Planning_OpenData/MapServer/29",
-   "fetched": "2026-11-25"
+   "fetched": "2026-11-27"
   },
   "somerset": {
    "zoned": 729,
    "upside": 266,
-   "county_layer": 621,
+   "county_layer": 628,
    "in_town": 0,
    "field": "ELEM_TEXT",
    "src": "county",
    "layer": "https://services1.arcgis.com/X3lKekbdaBmNjCHu/arcgis/rest/services/Somerset_County_GIS/FeatureServer/3",
    "fetched": "2026-11-27"
   }
+ },
+ "note": "All 24 jurisdictions classify against their own county/city zoning layer (LAYERS in engine2/zoning.py); parcels inside incorporated towns fall through to the MDP statewide Generalized Zoning point query. 2026-11-27: Howard, Calvert, St. Mary's, Cecil, Queen Anne's, Kent, Talbot, Wicomico, Worcester, Dorchester, Somerset, Allegany and Garrett moved from the MDP fallback to county layers; build_tree now honours polygon holes (towns carved out of county zones) and no longer drops invalid rings. geodata.md.gov imap still 503 on 2026-11-27 (mirror mdgeodata.md.gov up, but it serves no zoning layer).",
+ "fallback_counties": [],
+ "county_layers": 24,
+ "totals": {
+  "zoned": 53489,
+  "upside": 26265,
+  "from_county_layer": 45286,
+  "in_towns_mdp": 6172
  }
 }

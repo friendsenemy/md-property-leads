@@ -236,7 +236,7 @@ def detect_zone_field(fields):
     return names[0] if names else None
 
 
-def download(slug, url, refresh=False, out_fields="*", geometry=True, extra=None, cache_dir=CACHE):
+def download(slug, url, refresh=False, out_fields="*", geometry=True, extra=None, cache_dir=CACHE, page=None):
     """Page a whole layer into .cache/<dir>/<slug>.json. geometry=False fetches attributes only
     (parcel-level layers joined by account); extra = additional query params (e.g. maxAllowableOffset)."""
     os.makedirs(cache_dir, exist_ok=True)
@@ -247,7 +247,7 @@ def download(slug, url, refresh=False, out_fields="*", geometry=True, extra=None
     if "error" in meta:
         raise RuntimeError(f"{slug}: {meta['error']}")
     fields = meta.get("fields", [])
-    page = min(int(meta.get("maxRecordCount") or 1000), 2000)
+    page = page or min(int(meta.get("maxRecordCount") or 1000), 2000)
     feats, off = [], 0
     while True:
         params = {"f": "json", "where": "1=1", "outFields": out_fields, "returnGeometry": "true" if geometry else "false",
@@ -269,8 +269,36 @@ def download(slug, url, refresh=False, out_fields="*", geometry=True, extra=None
     return out
 
 
+def arcgis_geom(rings):
+    """ArcGIS JSON rings -> shapely geometry. Exterior rings are clockwise, holes counter-clockwise
+    (so a town carved out of a county zone stays a hole). Invalid rings are repaired with buffer(0),
+    which may yield MultiPolygons — hence unary_union rather than MultiPolygon([...])."""
+    from shapely.geometry import Polygon, LinearRing
+    from shapely.ops import unary_union
+    outers, holes = [], []
+    for r in rings:
+        if len(r) < 4:
+            continue
+        try:
+            p = Polygon(r)
+        except Exception:
+            continue
+        if p.is_empty or p.area == 0:
+            continue
+        if not p.is_valid:
+            p = p.buffer(0)
+        (holes if LinearRing(r).is_ccw else outers).append(p)
+    if not outers:  # some servers emit every ring counter-clockwise: treat them all as exteriors
+        outers, holes = holes, []
+    if not outers:
+        return None
+    g = unary_union(outers)
+    if holes:
+        g = g.difference(unary_union(holes))
+    return None if g.is_empty else g
+
+
 def build_tree(layer, zone_field):
-    from shapely.geometry import Polygon, MultiPolygon
     from shapely.strtree import STRtree
     geoms, attrs = [], []
     for f in layer["features"]:
@@ -279,12 +307,10 @@ def build_tree(layer, zone_field):
         if not rings:
             continue
         try:
-            polys = [Polygon(r) for r in rings if len(r) >= 4]
-            polys = [p.buffer(0) if not p.is_valid else p for p in polys]
-            if not polys:
-                continue
-            geom = polys[0] if len(polys) == 1 else MultiPolygon(polys).buffer(0)
+            geom = arcgis_geom(rings)
         except Exception:
+            geom = None
+        if geom is None:
             continue
         geoms.append(geom)
         attrs.append(f.get("attributes") or {})
