@@ -6,9 +6,12 @@ The play: a dead-owner / distressed single-family house on a lot zoned for more
 housing zones) sells to a builder for land value, not house value.
 
 Sources (all free public county/state ArcGIS REST layers; polygons are downloaded
-once per county into .cache/zoning/ and matched locally by point-in-polygon):
-  county zoning layers where the county publishes one, else the Maryland Dept of
-  Planning statewide Generalized Zoning (coarser classes, still tells SF vs MF/C).
+once per county into .cache/zoning/ and matched locally by point-in-polygon, or —
+for parcel-level layers that carry the SDAT account id — attributes are joined by
+account): every county now has its own layer (LAYERS). Parcels inside incorporated
+towns (town-coded or holes in the county layer) fall through to the Maryland Dept of
+Planning statewide Generalized Zoning, one point query each (coarser classes, still
+tells SF vs MF/C).
 
 Outputs
   data/zoning/<county>.json   {acct: {zone, label, upside: HIGH|MEDIUM|null, why, src}}
@@ -34,7 +37,13 @@ TITLE = os.path.join("data", "title")
 
 STATEWIDE = ("https://mdpgis.mdp.state.md.us/arcgis/rest/services/PlanningCadastre/Generalized_Zoning/MapServer/0", "GENZONE")  # MDP Generalized Zoning 2021, whole state
 
-# slug -> (layer url, zone field or None=autodetect)
+# slug -> (layer url, zone field or None=autodetect[, options])
+#   options: label   = description field to show next to the code
+#            town    = regex of codes that mean "inside an incorporated town" (county layer says nothing;
+#                      the parcel falls through to the MDP statewide point query like an unmatched point)
+#            overlay = regex of overlay codes to skip when a point also sits in a base-zone polygon
+#            acct    = attribute field holding the SDAT account id -> parcel-level layer, matched by account
+#                      (attributes only, no polygon download)
 LAYERS = {
     "baltimore-county": ("https://bcgis.baltimorecountymd.gov/arcgis/rest/services/DevelopmentManagement/Zoning/MapServer/1", "ZONE_CLASS"),
     "montgomery": ("https://mcmaps.org/server11/rest/services/Overlays/MCAtlas_Zoning/MapServer/4", "ZONE_"),
@@ -47,8 +56,22 @@ LAYERS = {
     "washington": ("https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Washington_County_Zoning/FeatureServer/21", None),
     "frederick": ("https://fcgis.frederickcountymd.gov/server_pub/rest/services/PlanningAndPermitting/Zoning/MapServer/1", "TYPE"),
     "caroline": ("https://services6.arcgis.com/M2dyOQipFC1IggF3/arcgis/rest/services/ZONING/FeatureServer/0", None),
+    # ── added 2026-11-27 (were MDP statewide fallbacks) ──
+    "howard": ("https://services1.arcgis.com/67LSIn5CxTeTDnwV/arcgis/rest/services/Zoning_Oct2025/FeatureServer/0", "ZONE", {"label": "CATEGORY"}),  # HoCoGIS, Oct 2025; no municipalities
+    "calvert": ("https://gis.calvertcountymd.gov/server/rest/services/Planning/Zoning/MapServer/0", "ZONING", {"label": "ZONING_DESC", "acct": "ACCTID", "town": r"^(N/A|ROW)$"}),  # 2025 code, parcel-level; Chesapeake Beach / North Beach = N/A
+    "st-mary-s": ("https://gis.stmaryscountymd.gov/server/rest/services/Public/General4/MapServer/4", "CATEGORY", {}),  # Leonardtown not covered
+    "cecil": ("https://cecilmaps.org/arcgis/rest/services/ConsolidatedWebService/MapServer/33", "ZONING", {"acct": "ACCTID", "town": r"^(Town|Water)$"}),  # parcel-level; 8 towns = Town
+    "queen-anne-s": ("https://gis.qac.org/arcgis/rest/services/QAC_PUBLIC/QAC_Planning/MapServer/0", "Zone", {"label": "GeneralZone", "town": r"^(Barclay|Centr|ChHill|Mill|QnAnne|Qnstown|Sudl|Temp)$"}),  # ORD 23-13 comprehensive rezoning
+    "kent": ("https://services6.arcgis.com/RWHujKM5TItecIqp/arcgis/rest/services/Parcel_Viewer_experience_builder/FeatureServer/17", "zoning", {"label": "Zoning_full_name"}),  # unincorporated only
+    "talbot": ("https://services6.arcgis.com/ScyqVZ3lUUihZ0ky/arcgis/rest/services/Zoning_Effective_With_Annexations/FeatureServer/8", "Zoning2018", {"town": r"^MUNI$"}),  # Easton/St Michaels/Oxford/Trappe = MUNI
+    "wicomico": ("https://gisapps.wicomicocounty.org/server/rest/services/WicomicoZoningMar12026/MapServer/1", "COUNTY_ZON", {"label": "Zone_Long", "town": r"^Municipality$"}),
+    "worcester": ("https://wcg-gisweb.co.worcester.md.us/arcgis/rest/services/Zoning/MapServer/1", "Designation_1", {"town": r"^MUN$"}),  # Ocean City/Berlin/Snow Hill/Pocomoke = MUN
+    "dorchester": ("https://services7.arcgis.com/yqhlYKSnzjiOzQig/arcgis/rest/services/Zoning_Layer2021/FeatureServer/0", "CLASS_1", {"town": r"^MUNI$"}),
+    "somerset": ("https://services1.arcgis.com/X3lKekbdaBmNjCHu/arcgis/rest/services/Somerset_County_GIS/FeatureServer/3", "ELEM_TEXT", {"label": "ZoneDesc", "town": r"^ANNEXED", "overlay": r"^(AP|OC)$"}),  # ESRGC-hosted for Somerset P&Z; AP/OC are overlays
+    "allegany": ("https://services6.arcgis.com/dQQCC5HsocVNGmxM/arcgis/rest/services/Zoning_Districts_V260817CC/FeatureServer/1", "zone", {"town": r"^M$"}),  # Cumberland/Frostburg etc = M
+    "garrett": ("https://gis.garrettcounty.org/server/rest/services/Zoning/FeatureServer/8", "flu", {"label": "db_8hla5_1"}),  # Deep Creek watershed + 6 towns only; rest of county is unzoned
 }
-FALLBACK = ["howard", "calvert", "st-mary-s", "cecil", "queen-anne-s", "kent", "talbot", "wicomico", "worcester", "dorchester", "somerset", "allegany", "garrett"]  # no usable county layer found; MDP statewide
+FALLBACK = []  # counties with no usable county layer -> MDP statewide (none as of 2026-11-27; kept for the summary / tests)
 TOWN_ZONES = re.compile(r"^(CITY|TOWN|TOWN ZONING|LA PLATA|INDIAN HEAD|MUNICIPAL|INCORPORATED|MUNI)\b", re.I)
 
 # ── upside rules: (regex on the zone code, level, why). County-specific first, then generic.
@@ -89,8 +112,72 @@ RULES = {
         (r"^(R-?(5|8|12|16)|VC|GC|LI|GI|MXD|ORI|MX|MU|TC|CDD|HS)", "HIGH", "{z}: medium/high-density residential, commercial, mixed-use or industrial"),
         (r"^(R-?3|PUD)\b", "MEDIUM", "{z}: low-density / planned development — extra units only on a larger parcel"),
     ],
-    "calvert": [
-        (r"^(TC|MX|MC|I-?1|I-?2|LI|CMC|ETC|VD|RCD-?TC|PUD)", "HIGH", "{z}: town center / commercial / industrial"),
+    "calvert": [  # 2025 zoning ordinance codes (EC/FFD/I-1/I-2/MC/RC/RCD/RD/RND/TC/WCD); older codes kept for cached rows
+        (r"^(TC|EC|MC|RC|I-?[12]|MX|LI|CMC|ETC|VD|RCD-?TC|PUD)\b", "HIGH", "{z}: town center / employment / commercial / industrial"),
+        (r"^RD\b", "MEDIUM", "RD: Residential District — suburban lots; an extra lot only on a larger parcel, check acreage"),
+        (r"^(WCD|RCD|RND|FFD)\b", None, ""),
+    ],
+    "howard": [
+        (r"(MXD|TNC|TOD)", "HIGH", "{z}: mixed-use / traditional-neighborhood / transit overlay — density by plan"),
+        (r"^(R-SA-8|R-A-15|R-APT|R-MH|R-VH|R-SI|RSI|R-H-ED|B-[12]|BR|SC|CCT|CAC|CE-|CEF|POR|PEC|M-[12]|HC|HO|OT|PSC|PGCC)", "HIGH", "{z}: 8+ units/acre, apartments, commercial, office or industrial"),
+        (r"^(R-12|R-SC)\b", "MEDIUM", "{z}: 3.5–4 units/acre single-family — extra lot on a half-acre-plus parcel"),
+        (r"^(NT|R-20|R-ED|RR|RC)\b", None, ""),  # NT = Columbia New Town: use fixed by the village Final Development Plan, no by-right upside
+    ],
+    "st-mary-s": [  # CM CMX I LCI MXH MXL MXM OBP RCL RH RL RL-T RM RMX RNC RPD RSC TMX VMX
+        (r"^(CMX|MXH|MXM|MXL|TMX|VMX|RMX|CM|I|LCI|OBP|RH|RSC)$", "HIGH", "{z}: mixed-use / commercial / industrial / high-density residential"),
+        (r"^RM$", "MEDIUM", "RM: Residential Medium-density — an extra lot or two on a larger parcel (Development District)"),
+        (r"^(RL|RL-T|RNC|RPD|RCL)$", None, ""),
+    ],
+    "cecil": [  # BG BI BL EMU LDR M1 M2 MB MEA MH NAR OS RM RMU RR SAR Split ST UR VR
+        (r"^(BG|BI|BL|EMU|RMU|RM|UR|M[12]|MB|MH)$", "HIGH", "{z}: business / industrial / mixed-use / multifamily / urban residential"),
+        (r"^VR$", "MEDIUM", "VR: Village Residential small lots — extra lot on a larger parcel"),
+        (r"^Split$", "MEDIUM", "Split-zoned parcel — part of it may carry a higher zone; check the split-zoning layer"),
+        (r"^(LDR|ST|RR|NAR|SAR|OS|MEA)$", None, ""),
+    ],
+    "queen-anne-s": [  # NC-x = Neighborhood Conservation at 1 unit per x acres; SR/UR = suburban/urban residential
+        (r"^(UR|UC|SC|CS|SI|LIHS|SIBE|VC|GVC|WVC|SHVC|GNC|GGMC|KISC|CMPD|SMPD|TC|APKIG)$", "HIGH", "{z}: urban residential, commercial, industrial, village center or planned development"),
+        (r"^SR$", "MEDIUM", "SR: Suburban Residential ~3.5 units/acre — extra lot on a half-acre-plus parcel"),
+        (r"^(NC-|AG|E$|SE$|GPRN)", None, ""),
+    ],
+    "kent": [
+        (r"^(C|CCA|EC|ECCA|IV|M|MXD|MXDCA)$", "HIGH", "{z}: commercial / employment / intense village / mixed-use / marine"),
+        (r"^(CR|V)$", "MEDIUM", "{z}: community residential / village small lots — extra lot on a larger parcel"),
+        (r"^(CAR|AZD|RC|RCD)$", None, ""),
+    ],
+    "talbot": [
+        (r"^(GC|LC|LI|TC|VM|WRC|VC)$", "HIGH", "{z}: commercial / industrial / town center / village mixed-use"),
+        (r"^(TR|VR)$", "MEDIUM", "{z}: town / village residential small lots — extra lot on a larger parcel"),
+        (r"^(VH|RR|RC|CP|AC)$", None, ""),
+    ],
+    "wicomico": [  # numbers are minimum lot size in 1,000 sq ft
+        (r"^(C-[123]|CID|I-[12]|LB-[12]|LBR|ABP)$", "HIGH", "{z}: commercial / light business & residential / industrial"),
+        (r"^(R-8|R-15|TT)$", "MEDIUM", "{z}: small single-family lots (8–15k sq ft) or town-transitional — extra lot on a larger parcel"),
+        (r"^(R-20|R-30|A-1|VC|REC)$", None, ""),
+    ],
+    "worcester": [
+        (r"^(C[123]|CM|I[12]|R[34])$", "HIGH", "{z}: commercial / industrial / general residential (multifamily allowed)"),
+        (r"^(R2|V1)$", "MEDIUM", "{z}: suburban / village residential small lots — extra lot on a larger parcel"),
+        (r"^(R1|E1|A[12]|RP|CA)$", None, ""),
+    ],
+    "dorchester": [
+        (r"^(B-[12]|I-[12])", "HIGH", "{z}: business / industrial"),
+        (r"^(SR|V)(-RCA)?$", "MEDIUM", "{z}: suburban residential / village — extra lot on a larger parcel (RCA overlay limits density)"),
+        (r"^(AC|RC|RR)", None, ""),
+    ],
+    "somerset": [
+        (r"^(C-[12]|I-[12]|MRC|R-3|OC)$", "HIGH", "{z}: commercial / industrial / maritime residential-commercial / high-density residential"),
+        (r"^R-2$", "MEDIUM", "R-2: medium-density residential — extra lot on a larger parcel"),
+        (r"^(R-1|AR|CO|AP)$", None, ""),
+    ],
+    "allegany": [
+        (r"^(B-[12]|GU|I)$", "HIGH", "{z}: business / general urban / industrial"),
+        (r"^R-2$", "MEDIUM", "R-2: residential district allowing two-family and higher-density housing — check the ordinance"),
+        (r"^(R-1|A|C)$", None, ""),
+    ],
+    "garrett": [  # Deep Creek watershed + town codes; everything else in the county is unzoned
+        (r"^(C|CBA|GC|TC|EC|PD)$", "HIGH", "{z}: commercial / central business / town center / planned development"),
+        (r"^(TR|SR)$", "MEDIUM", "{z}: town / suburban residential small lots — extra lot on a larger parcel"),
+        (r"^(AR|RD|RR|CR[12]|LR[12]|R|RIP|ROW)$", None, ""),  # LR1/LR2 = platted Deep Creek lake lots, not splittable
     ],
     "_statewide": [
         (r"^(MIXED USE|COMMERCIAL|INDUSTRIAL|HIGH DENSITY RESIDENTIAL)", "HIGH", "{z} (MDP generalized class): more than a single house allowed — confirm the county code"),
@@ -104,9 +191,6 @@ RULES = {
     ],
     "washington": [
         (r"^(RM|RU|BL|BG|HI|IR|PI|ORI|RB|RT|ORT)\b", "HIGH", "{z}: multifamily / business / industrial"),
-    ],
-    "st-mary-s": [
-        (r"^(RMX|CMX|DMX|TMX|VMX|CC|I|CRM|RSC|RH|RM|TMX)", "HIGH", "{z}: mixed-use / commercial / medium-density"),
     ],
 }
 GENERIC = [
@@ -152,29 +236,35 @@ def detect_zone_field(fields):
     return names[0] if names else None
 
 
-def download(slug, url, refresh=False):
-    os.makedirs(CACHE, exist_ok=True)
-    fn = os.path.join(CACHE, f"{slug}.json")
+def download(slug, url, refresh=False, out_fields="*", geometry=True, extra=None, cache_dir=CACHE):
+    """Page a whole layer into .cache/<dir>/<slug>.json. geometry=False fetches attributes only
+    (parcel-level layers joined by account); extra = additional query params (e.g. maxAllowableOffset)."""
+    os.makedirs(cache_dir, exist_ok=True)
+    fn = os.path.join(cache_dir, f"{slug}.json")
     if os.path.exists(fn) and not refresh:
         return json.load(open(fn))
     meta = http_json(url + "?f=json")
+    if "error" in meta:
+        raise RuntimeError(f"{slug}: {meta['error']}")
     fields = meta.get("fields", [])
     page = min(int(meta.get("maxRecordCount") or 1000), 2000)
     feats, off = [], 0
     while True:
-        q = urllib.parse.urlencode({"f": "json", "where": "1=1", "outFields": "*", "returnGeometry": "true", "outSR": 4326,
-                                    "geometryPrecision": 6, "resultOffset": off, "resultRecordCount": page})
+        params = {"f": "json", "where": "1=1", "outFields": out_fields, "returnGeometry": "true" if geometry else "false",
+                  "outSR": 4326, "geometryPrecision": 6, "resultOffset": off, "resultRecordCount": page}
+        params.update(extra or {})
+        q = urllib.parse.urlencode(params)
         d = http_json(f"{url}/query?{q}")
         if "error" in d:
             raise RuntimeError(f"{slug}: {d['error']}")
         f = d.get("features", [])
         feats.extend(f)
-        print(f"  {slug}: {len(feats)} polygons", flush=True)
+        print(f"  {slug}: {len(feats)} {'polygons' if geometry else 'rows'}", flush=True)
         if len(f) < page or not d.get("exceededTransferLimit", len(f) == page):
             break
         off += len(f)
         time.sleep(0.5)
-    out = {"url": url, "fetched": date.today().isoformat(), "fields": fields, "features": feats, "name": meta.get("name")}
+    out = {"url": url, "fetched": date.today().isoformat(), "fields": fields, "features": feats, "name": meta.get("name"), "geometry": geometry}
     json.dump(out, open(fn, "w"))
     return out
 
@@ -201,8 +291,25 @@ def build_tree(layer, zone_field):
     return STRtree(geoms), geoms, attrs
 
 
+def norm_code(z):
+    """'R - 15' -> 'R-15' (Wicomico pads its hyphens); collapse inner whitespace."""
+    return re.sub(r"\s+", " ", re.sub(r"\s*-\s*", "-", str(z or ""))).strip()
+
+
+def acct_key(a):
+    return re.sub(r"[\s-]", "", str(a or ""))
+
+
+def hits_for(tree, geoms, attrs, pt):
+    out = []
+    for i in tree.query(pt):
+        if geoms[i].contains(pt) or geoms[i].touches(pt):
+            out.append(attrs[i])
+    return out
+
+
 def classify(slug, zone, label):
-    z = (zone or "").strip()
+    z = norm_code(zone)
     if not z or TOWN_ZONES.search(z):
         return None, ""
     txt = f"{z} {label or ''}"
@@ -236,27 +343,46 @@ def rows_for(slug):
 
 def run(slug, refresh=False):
     from shapely.geometry import Point
-    url, field = LAYERS.get(slug, STATEWIDE)
-    src = "county" if slug in LAYERS else "MDP generalized (statewide)"
-    rule_slug = slug if slug in LAYERS else "_statewide"
     if slug not in LAYERS:
         return run_statewide(slug, refresh)
-    layer = download(slug, url, refresh)
+    url, field, *rest = LAYERS[slug]
+    opts = rest[0] if rest else {}
+    src = "county"
+    rule_slug = slug
+    town_re = re.compile(opts["town"], re.I) if opts.get("town") else None
+    overlay_re = re.compile(opts["overlay"], re.I) if opts.get("overlay") else None
+    by_acct = None
+    if opts.get("acct"):
+        # parcel-level layer: attributes only, joined on the SDAT account id
+        want = ",".join(x for x in (opts["acct"], field, opts.get("label")) if x)
+        layer = download(slug, url, refresh, out_fields=want, geometry=False)
+        by_acct = {acct_key(f["attributes"].get(opts["acct"])): f["attributes"] for f in layer["features"] if f.get("attributes")}
+    else:
+        layer = download(slug, url, refresh)
     field = field or detect_zone_field(layer["fields"])
-    label_field = next((f["name"] for f in layer["fields"] if re.search(r"DESC|NAME|LABEL|TYPE", f["name"], re.I) and f["name"] != field and f.get("type") == "esriFieldTypeString"), None)
-    tree, geoms, attrs = build_tree(layer, field)
-    res, n_up, unmatched = {}, 0, []
+    if "label" in opts:
+        label_field = opts["label"]
+    else:
+        label_field = next((f["name"] for f in layer["fields"] if re.search(r"DESC|NAME|LABEL|TYPE", f["name"], re.I) and f["name"] != field and f.get("type") == "esriFieldTypeString"), None)
+    if by_acct is None:
+        tree, geoms, attrs = build_tree(layer, field)
+    res, n_up, unmatched, n_town = {}, 0, [], 0
     for acct, lon, lat, p in rows_for(slug):
-        pt = Point(lon, lat)
-        hit = None
-        for i in tree.query(pt):
-            if geoms[i].contains(pt) or geoms[i].touches(pt):
-                hit = attrs[i]
-                break
+        if by_acct is not None:
+            hit = by_acct.get(acct)
+        else:
+            hits = hits_for(tree, geoms, attrs, Point(lon, lat))
+            if overlay_re and len(hits) > 1:
+                hits = [h for h in hits if not overlay_re.search(norm_code(h.get(field)))] or hits
+            hit = hits[0] if hits else None
         if not hit:
             unmatched.append((acct, lon, lat, p))
             continue
-        zone = str(hit.get(field) or hit.get("LONGZONE") or hit.get("CODE") or "").strip()
+        zone = norm_code(hit.get(field) or hit.get("LONGZONE") or hit.get("CODE") or "")
+        if not zone or (town_re and town_re.search(zone)) or TOWN_ZONES.search(zone):
+            n_town += 1  # inside an incorporated town: the county layer carries no zone -> statewide point query
+            unmatched.append((acct, lon, lat, p))
+            continue
         label = str(hit.get(label_field) or "").strip() if label_field else ""
         lvl, why = classify(rule_slug, zone, label)
         sf = (p.get("property_type") or "").startswith("Residential")
@@ -264,10 +390,11 @@ def run(slug, refresh=False):
             lvl, why = (lvl, why + " (parcel is not coded residential — may already be commercial)")
         res[acct] = {"zone": zone, "label": label, "upside": lvl, "why": why, "src": src}
         n_up += bool(lvl)
-    # rows the county layer did not cover (towns, holes): statewide generalized zoning, point by point
+    # rows the county layer did not cover (towns, holes): statewide generalized zoning, point by point.
+    # MDP answers are reused even on --refresh (the statewide layer is a 2021 snapshot; --refresh is about county polygons).
     prev = {}
     pfn = os.path.join(OUT, f"{slug}.json")
-    if os.path.exists(pfn) and not refresh:
+    if os.path.exists(pfn):
         prev = {k: v for k, v in json.load(open(pfn)).items() if v.get("src", "").startswith("MDP")}
     for acct, lon, lat, p in unmatched:
         if acct in prev:
@@ -280,15 +407,14 @@ def run(slug, refresh=False):
             print(f"  statewide point failed: {e}")
             break
         time.sleep(0.25)
-        if not zone:
-            continue
-        lvl, why = classify("_statewide", zone, muni)
+        lvl, why = classify("_statewide", zone, muni) if zone else (None, "")
         res[acct] = {"zone": zone, "label": muni, "upside": lvl, "why": why, "src": "MDP generalized (statewide)"}
         n_up += bool(lvl)
     os.makedirs(OUT, exist_ok=True)
     json.dump(res, open(os.path.join(OUT, f"{slug}.json"), "w"), separators=(",", ":"))
-    print(f"{slug}: {len(res)} zoned ({n_up} with upside) · field {field} · {src}")
-    return {"zoned": len(res), "upside": n_up, "field": field, "src": src, "layer": url, "fetched": layer.get("fetched")}
+    n_county = sum(1 for v in res.values() if v.get("src") == "county")
+    print(f"{slug}: {len(res)} zoned ({n_up} with upside; {n_county} from county layer, {n_town} in towns) · field {field} · {src}")
+    return {"zoned": len(res), "upside": n_up, "county_layer": n_county, "in_town": n_town, "field": field, "src": src, "layer": url, "fetched": layer.get("fetched")}
 
 
 def run_statewide(slug, refresh=False):
