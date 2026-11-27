@@ -357,18 +357,19 @@
   "next": "Letter + call to the PR: 'I buy properties stuck in estates; the Register has been asking you for accounts for 20 years because of the house; I can close the estate for the family — I pay the county/legal and the three of you split the rest.' Order the will from the Register (estate 61296). Call AA Planning & Zoning: confirm C4 and whether the Rt 100 ROW allows a commercial curb cut on Crain Hwy S."
  },
  "020500006340100": {
-  "verdict": "GO",
-  "confidence": "MEDIUM",
+  "verdict": "PARK",
+  "confidence": "HIGH",
   "checked": "2026-11-27",
-  "play": "29-year probate gap on a 2.2-ac C1 parcel — house never left the dead father's name; zoning upside already entitled (C1)",
-  "reason": "7304 E Furnace Branch Rd, Glen Burnie (AA 5-000-0634-0100). 2.177 ac, 1940 house, assessed $1.06M, zoned C1 today; neglect/below-average condition flags; tax bill mails to the property. Albert S. Grzech Sr. died 7/25/1997; estate AA 40334 was a SMALL estate (closed 12/1997, PR Albert S. Grzech Jr., atty Noel Wilkinson) — the house was never run through it, and no deed out has been recorded in 29 years. Will dated 10/8/1954 was probated — the house passes under that will (order it). Albert Jr was a landlord in 2017 (AA district court rent cases) and is ~70 — alive as far as the record shows; confirm with an obit search before calling. The 1996 instrument in Sr's name (AA 7655/483) is only a 2,675-sf right-of-way strip to neighbor Joseph Nazario for 'development of their adjoining properties' — the neighbor built; this lot didn't.",
-  "title": "Vesting: Florence Grzech → Albert S. Grzech by deed 4/10/1961, AA Liber 1471/338 (cited in 7655/483). Sr died 1997; small estate did not pass the realty; no deed since. Cure: reopen 40334 as a regular estate (or new administration), PR deed to the devisees, then to Ray — or buy the heirs' interests and quiet title. DOT search clean on Sr's name after 1994 (6571/126 is Sr & Jr jointly on another parcel).",
+  "play": "Title still in the dead father's name (29-yr probate gap) — but the heir runs the building as a rental: income property, not distress. Long-game letter only.",
+  "reason": "7304 E Furnace Branch Rd, Glen Burnie (AA 5-000-0634-0100). 2.177 ac, C1 (Plan2040 also says Commercial — no future upzone, already entitled). NOT a teardown: a 6,112 sf two-story brick commercial building (1940) on E Furnace Branch Rd (MD-270) — ground floor is CRW Flags Inc (operational, ~150 Google reviews), upstairs was the heir's dental office (Google: temporarily closed) and at one time the family's law firm (now in Lutherville). P&G Automotive sits behind. The 'below average / neglect' flags are SDAT condition codes on an old building, not vacancy. Albert S. Grzech Sr. died 7/25/1997 (age 82); small estate AA 40334 never passed the realty; vesting is still the 1961 deed (AA 1471/338). The son, Dr. Albert S. Grzech Jr. DDS (Anne Arundel native, UMd dental degree, opened his practice in 1991), controls the building and collects the rent. A family member is a lawyer — they know the title is uncured and haven't cared.",
+  "title": "Record title: Albert S. Grzech (Sr) by deed 4/10/1961, AA 1471/338 (from Florence Grzech). Died 1997, will dated 10/8/1954 probated in small estate 40334 (no real property administered). No deed, DOT or lien of record since the 1996 right-of-way strip (7655/483). Cure: reopen 40334 / new regular administration, PR deed to devisees. Who the devisees are depends on the 1954 will (order it — $0.50/page); Jr may have siblings.",
   "contacts": [
-   "Albert S. Grzech Jr. — son / 1997 PR, Pasadena (address in local/zoning-cross-contacts.md)",
+   "Dr. Albert S. Grzech Jr. DDS — son/heir, controls the building (Arnold MD; details in local/zoning-cross-contacts.md)",
+   "CRW Flags Inc — tenant",
    "Noel G. Wilkinson, Esq. — 1997 estate attorney, Annapolis"
   ],
-  "numbers": "2.2 ac C1 on E Furnace Branch Rd: land value likely $700K–$1M (confirm comps). House is a teardown. Legal to reopen/administer ≈ $6–10K, 4–8 months. Offer ladder to the heirs $300K / $400K / walk $500K → $300K+ profit at $900K land.",
-  "next": "1) Obit search on Albert S. Grzech Jr. and identify siblings; 2) drive-by/USPS — is anyone living in the 1940 house?; 3) order will from RoW estate 40334; 4) letter to Albert Jr: buyer, will close the estate at my cost."
+  "numbers": "As-is income property: 2.2 ac C1 + 6,112 sf leased building ≈ $1.0–1.3M. No distress discount; a $100K spread only exists if Dr. Grzech wants out of landlording and will trade a probate-cure-at-Ray's-cost for a below-market price (≤$750K). Otherwise it's a broker listing, not a Ray deal.",
+  "next": "One letter to Dr. Grzech (home, not the office): 'The building is still in your father's name; when you decide to sell, that has to be fixed first — I buy and handle the estate work at my cost.' Re-check yearly."
  },
  "020400003690400": {
   "verdict": "PARK",
