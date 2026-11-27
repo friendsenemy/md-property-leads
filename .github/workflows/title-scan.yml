@@ -89,7 +89,9 @@ jobs:
           python -m engine2.title_scan --backfill-only
           # zoning / entitlement upside for every shard (county ArcGIS layers; MDP statewide fallback)
           pip install -q shapely==2.0.6 && python -m engine2.zoning --refresh || true
-          git add data/title data/leads.json data/zoning
+          # future land use / pending rezoning vs today's zoning (county comprehensive-plan layers)
+          python -m engine2.futureuse --refresh || true
+          git add data/title data/leads.json data/zoning data/futureuse
           git add data/surplus 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes to commit."

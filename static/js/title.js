@@ -88,7 +88,7 @@ const TitleApp = {
             _equity: p.estimated_equity != null ? parseFloat(p.estimated_equity) : null,
             _assessed: parseFloat(p.assessed_value) || 0,
             _years: p.years_since_transfer || 0,
-            _search: `${(Zoning.get(p.account_number) || {}).zone || ""} ${(Zoning.get(p.account_number) || {}).upside ? "zoning-upside builder" : ""} ${p.owner_name} ${p.owner_name_2} ${p.property_address} ${p.city} ${p.zip_code} ${p.county} ${r.title_class} ${(r.flags || []).join(" ")} ${(p.signals || []).map((x) => `${x.kind} ${x.source} ${x.detail || ""}`).join(" ")}`.toLowerCase(),
+            _search: `${(Zoning.get(p.account_number) || {}).zone || ""} ${(Zoning.get(p.account_number) || {}).upside ? "zoning-upside builder" : ""} ${(Zoning.getFuture(p.account_number) || {}).upside ? `future-${(Zoning.getFuture(p.account_number) || {}).upside.toLowerCase()} ${(Zoning.getFuture(p.account_number) || {}).plan || ""}` : ""} ${p.owner_name} ${p.owner_name_2} ${p.property_address} ${p.city} ${p.zip_code} ${p.county} ${r.title_class} ${(r.flags || []).join(" ")} ${(p.signals || []).map((x) => `${x.kind} ${x.source} ${x.detail || ""}`).join(" ")}`.toLowerCase(),
         });
     },
 
@@ -182,7 +182,7 @@ const TitleApp = {
                     <td>${this.vacBadge(r._vac)}</td>
                     <td class="property-cell">
                         <div class="address">${this.esc(p.property_address || "N/A")}${p.city ? `, ${this.esc(p.city)}` : ""}</div>
-                        <div class="meta">${Findings.chip(p.account_number)}${Zoning.chip(p.account_number)} ${this.esc(p.property_type || "")}${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? ` • owner on +${r.other_parcels_same_owner.length} parcels` : ""}</div>
+                        <div class="meta">${Findings.chip(p.account_number)}${Zoning.chip(p.account_number)}${Zoning.futureChip(p.account_number)} ${this.esc(p.property_type || "")}${r.other_parcels_same_owner && r.other_parcels_same_owner.length ? ` • owner on +${r.other_parcels_same_owner.length} parcels` : ""}</div>
                     </td>
                     <td class="name-cell" style="font-family:var(--font-mono); font-size:0.8rem">${this.esc(p.owner_name)}${p.owner_name_2 ? `<div style="color:var(--text-secondary); font-size:0.72rem">${this.esc(p.owner_name_2)}</div>` : ""}${this.notesOf(r) ? '<span class="note-badge" title="Has notes">✎</span>' : ""}</td>
                     <td><span class="cls cls-${r.title_class[0]}" title="${this.esc(r.title_class_label)}">${r.title_class}</span> <span class="flags">${this.flagChips(r.flags)}</span></td>
@@ -215,6 +215,7 @@ const TitleApp = {
                 <div class="detail-row"><span class="label">Address</span><span class="value" style="font-weight:600">${this.esc(p.property_address)}, ${this.esc(p.city)} ${this.esc(p.zip_code)}</span></div>
                 <div class="detail-row"><span class="label">County</span><span class="value" style="color:var(--purple)">${this.esc(p.county)}</span></div>
                 ${Zoning.row(p.account_number)}
+                ${Zoning.futureRow(p.account_number)}
                 <div class="detail-row"><span class="label">Account #</span><span class="value" style="font-family:var(--font-mono)">${this.esc(p.account_number)}</span></div>
                 <div class="detail-row"><span class="label">Type</span><span class="value">${this.esc(p.property_type)}${p.year_built ? ` · built ${this.esc(p.year_built)}` : ""}${p.square_footage ? ` · ${this.esc(p.square_footage)} sq ft` : ""}</span></div>
                 <div class="detail-row"><span class="label">Assessed</span><span class="value" style="color:var(--green); font-family:var(--font-mono)">${money(p.assessed_value)} <span style="color:var(--text-dim)">(${money(p.land_value)} land / ${money(p.improvement_value)} impr)</span></span></div>
