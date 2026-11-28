@@ -1,0 +1,88 @@
+{
+ "account": "0502129434",
+ "estates": [
+  {
+   "estate_number": "73668",
+   "status": "CLOSED",
+   "type": "SE",
+   "date_opened": "09/09/2005",
+   "date_closed": "06/03/2015",
+   "decedent": "SANDRA L HUNTER",
+   "date_of_death": "8/26/2005",
+   "date_of_filing": "09/09/2005",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "ALEXANDER  HUNTER",
+     "address": "1134 SHIELDS PLACE, BALTIMORE, MD 21201"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "09/09/2005",
+     "n": 1,
+     "code": "1103",
+     "desc": "SMALL ESTATE PETITION FOR ADMINISTRATION",
+     "pages": 3
+    },
+    {
+     "filed": "09/09/2005",
+     "n": 2,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2005",
+     "n": 3,
+     "code": "1107",
+     "desc": "LETTER OF ADMINISTRATION OF SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2005",
+     "n": 4,
+     "code": "1336",
+     "desc": "RECEIPTS #113473 SMALL ESTATE FEE",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2005",
+     "n": 5,
+     "code": "1108",
+     "desc": "ORDER APPOINTING PERSONAL REPRESENTATIVE OF A SMALL ESTATE",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2005",
+     "n": 6,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    }
+   ],
+   "last_docket_activity": "2005-09-09",
+   "interested_persons": [
+    {
+     "name": "ALEXANDER HUNTER",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 14,
+   "probate_age_days": 3554,
+   "days_since_last_docket": 7750,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-28",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1932825000",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1932825000",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "SANDRA LEE HUNTER"
+  }
+ ]
+}

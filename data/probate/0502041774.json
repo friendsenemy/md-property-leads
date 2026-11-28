@@ -1,0 +1,718 @@
+{
+ "account": "0502041774",
+ "estates": [
+  {
+   "estate_number": "84164",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "03/23/2010",
+   "date_closed": "07/09/2014",
+   "decedent": "DONALD A CAMERON",
+   "date_of_death": "8/31/2009",
+   "date_of_filing": "03/23/2010",
+   "will": "PROBATED",
+   "aliases": "",
+   "attorney": "JAMES BREWSTER HOPEWELL [6309 BALTIMORE AVE, SUITE 201, RIVERDALE, MD 20737]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "LELAND  MINK",
+     "address": "29712 STATE HIGHWAY 51, BRUNEAU, ID 83604"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "03/23/2010",
+     "n": 1,
+     "code": "1424",
+     "desc": "PURPORTED LAST WILL AND TESTAMENT DATED 11/15/2006",
+     "pages": 13
+    },
+    {
+     "filed": "03/23/2010",
+     "n": 2,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 5
+    },
+    {
+     "filed": "03/23/2010",
+     "n": 3,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT",
+     "pages": 1
+    },
+    {
+     "filed": "03/23/2010",
+     "n": 4,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "03/23/2010",
+     "n": 5,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- ADDITIONAL REQUIREMENT",
+     "pages": 1
+    },
+    {
+     "filed": "04/06/2010",
+     "n": 6,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- ADDITIONAL REQUIREMENT",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2010",
+     "n": 7,
+     "code": "1104",
+     "desc": "AMENDED LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/03/2010",
+     "n": 8,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "06/04/2010",
+     "n": 9,
+     "code": "1274",
+     "desc": "REGISTER OF WILLS MEMORANDUM- ADDITIONAL REQUIREMENT",
+     "pages": 1
+    },
+    {
+     "filed": "03/23/2010",
+     "n": 10,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "06/11/2010",
+     "n": 11,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "06/11/2010",
+     "n": 12,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2010",
+     "n": 13,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 3
+    },
+    {
+     "filed": "07/22/2010",
+     "n": 14,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2010",
+     "n": 15,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2010",
+     "n": 16,
+     "code": "1278",
+     "desc": "SCHEDULE OF MANDATORY FILING DEADLINES",
+     "pages": 1
+    },
+    {
+     "filed": "10/15/2010",
+     "n": 17,
+     "code": "1380",
+     "desc": "ROW CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/18/2010",
+     "n": 18,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "10/06/2010",
+     "n": 19,
+     "code": "1302",
+     "desc": "OP-REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "11/18/2010",
+     "n": 20,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR INVENTORY  HEARING SCHEDULED FOR FEBRUARY 2,",
+     "pages": 2011
+    },
+    {
+     "filed": "02/02/2011",
+     "n": 21,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE/ INVENTORY- MATTER CONTINUED TO 03/02/2011",
+     "pages": 1
+    },
+    {
+     "filed": "03/02/2011",
+     "n": 22,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE/ INVENTORY- ISSUE CONTEMPT ATTORNEY TO PROVIDE BETTER ADDRESS FOR PR",
+     "pages": 1
+    },
+    {
+     "filed": "03/08/2011",
+     "n": 23,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT",
+     "pages": 3
+    },
+    {
+     "filed": "03/09/2011",
+     "n": 24,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 4
+    },
+    {
+     "filed": "03/09/2011",
+     "n": 25,
+     "code": "1124",
+     "desc": "INFORMATION REPORT AMENDED",
+     "pages": 2
+    },
+    {
+     "filed": "03/15/2011",
+     "n": 26,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "03/23/2011",
+     "n": 27,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "05/05/2011",
+     "n": 28,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT  HEARING SCHEDULED FOR AUGUST 5, 2011.",
+     "pages": 1
+    },
+    {
+     "filed": "05/11/2011",
+     "n": 29,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "07/06/2011",
+     "n": 30,
+     "code": "1260",
+     "desc": "AMENDED NOTICE OF HEARING DATE SCHEDULED FOR 08/08/2011",
+     "pages": 2
+    },
+    {
+     "filed": "08/08/2011",
+     "n": 31,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -SHOW CAUSE/ACCOUNT-CASE CALLED; JAMES BREWSTER HOPEWELL, ESQ. APPEARED SHOW CAUSE CONTINUED UNTIL AUG. 23, 2011 NO FURTHER NOTICE.",
+     "pages": 1
+    },
+    {
+     "filed": "08/23/2011",
+     "n": 32,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -SHOW CAUSE/ACCOUNT-CASE CALLED-JAMES BREWSTER HOPEWELL, ESQ. MATTER CONTINUED SEPTEMBER 6, 2011. NO FURTHER CONTINUANCES, NO FURTHER NOTICE.",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2011",
+     "n": 33,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -SHOW CAUSE/ACCOUNT-CASE CALLED-NO ONE APPEARED. ISSUE CONTEMPT.",
+     "pages": 1
+    },
+    {
+     "filed": "09/06/2011",
+     "n": 34,
+     "code": "1383",
+     "desc": "FIRST ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "09/06/2011",
+     "n": 35,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "09/23/2011",
+     "n": 36,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "11/02/2011",
+     "n": 37,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCT  HEARING SCHEDULED FOR 02/02/2012",
+     "pages": 1
+    },
+    {
+     "filed": "11/04/2011",
+     "n": 38,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "02/03/2012",
+     "n": 39,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) -SHOW CAUSE/ CORRECTED ACCOUNT- MATTER CONTINUED TO 02/16/2012",
+     "pages": 1
+    },
+    {
+     "filed": "02/09/2012",
+     "n": 40,
+     "code": "1384",
+     "desc": "AMENDED FIRST ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "02/13/2012",
+     "n": 41,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 2
+    },
+    {
+     "filed": "03/19/2012",
+     "n": 42,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 2
+    },
+    {
+     "filed": "05/01/2012",
+     "n": 43,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ADD'L REQUIREMENTS  HEARING SCHEDULED FOR 08/10/2012",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2012",
+     "n": 44,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "08/10/2012",
+     "n": 45,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE ADD'L REQUIREMENTS- ISSUE CONTEMPT",
+     "pages": 1
+    },
+    {
+     "filed": "08/14/2012",
+     "n": 46,
+     "code": "1297",
+     "desc": "ORDER TO SHOW CAUSE FOR CONTEMPT AND/OR REMOVAL",
+     "pages": 1
+    },
+    {
+     "filed": "08/15/2012",
+     "n": 47,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    },
+    {
+     "filed": "09/25/2012",
+     "n": 48,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - CONTEMPT ADD'L REQUIREMENTS- MATTER CONTIJNUED TO 10/02/2012",
+     "pages": 1
+    },
+    {
+     "filed": "09/25/2012",
+     "n": 49,
+     "code": "1311",
+     "desc": "ORDER OF COURT GRANTING CONTINUANCE TO 10/02/2012",
+     "pages": 2
+    },
+    {
+     "filed": "09/26/2012",
+     "n": 50,
+     "code": "1254",
+     "desc": "LINE REQUESTING CONTINUANCE OF 09/25/2012 HEARING",
+     "pages": 2
+    },
+    {
+     "filed": "09/27/2012",
+     "n": 51,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "10/02/2012",
+     "n": 52,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - CONTEMPT ADD'L REQUIREMENTS- AMENDED INVENTORY AND INFORMATION REPORT FILED IN OPEN COURT, COUNSEL WILL BE FILING AN ACCOUNT TO CLOSE ESTATE CONTEMPT SATISFIED",
+     "pages": 1
+    },
+    {
+     "filed": "10/02/2012",
+     "n": 53,
+     "code": "1382",
+     "desc": "INVENTORY AMENDED",
+     "pages": 2
+    },
+    {
+     "filed": "10/02/2012",
+     "n": 54,
+     "code": "1124",
+     "desc": "INFORMATION REPORT",
+     "pages": 2
+    },
+    {
+     "filed": "10/10/2012",
+     "n": 55,
+     "code": "1302",
+     "desc": "REMINDER NOTICE ISSUED",
+     "pages": 1
+    },
+    {
+     "filed": "10/15/2012",
+     "n": 56,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "11/07/2012",
+     "n": 57,
+     "code": "1330",
+     "desc": "DOCUMENTATION FOR INFORMATION REPORT/APPLICATION TO FIX INHERITANCE TAX FOR NON-PROBATE ASSETS",
+     "pages": 6
+    },
+    {
+     "filed": "11/19/2012",
+     "n": 58,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 1
+    },
+    {
+     "filed": "11/27/2012",
+     "n": 59,
+     "code": "1354",
+     "desc": "INHERITANCE TAX BILLED ON NON-PROBATE ASSET - INVOICE #19062",
+     "pages": 2
+    },
+    {
+     "filed": "12/12/2012",
+     "n": 60,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR ACCOUNT   HEARING SCHEDULED FOR 03/07/2013",
+     "pages": 1
+    },
+    {
+     "filed": "12/17/2012",
+     "n": 61,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "03/07/2013",
+     "n": 62,
+     "code": "1384",
+     "desc": "SECOND AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "03/07/2013",
+     "n": 63,
+     "code": "1245",
+     "desc": "PETITION FOR PERSONAL REPRESENTATIVE'S COMMISSION",
+     "pages": 10
+    },
+    {
+     "filed": "03/07/2013",
+     "n": 64,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 13
+    },
+    {
+     "filed": "03/18/2013",
+     "n": 65,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "04/12/2013",
+     "n": 66,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "05/08/2013",
+     "n": 67,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCT   HEARING SCHEDULED FOR 07/24/2013",
+     "pages": 1
+    },
+    {
+     "filed": "05/10/2013",
+     "n": 68,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 69,
+     "code": "1384",
+     "desc": "THIRD AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 7
+    },
+    {
+     "filed": "07/19/2013",
+     "n": 70,
+     "code": "1382",
+     "desc": "THIRD AMENDED INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "07/30/2013",
+     "n": 71,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "08/05/2013",
+     "n": 72,
+     "code": "1382",
+     "desc": "THIRD AMENDED INVENTORY(DUPLICATE)",
+     "pages": 1
+    },
+    {
+     "filed": "08/05/2013",
+     "n": 73,
+     "code": "1384",
+     "desc": "THIRD AMENDED FIRST AND FINAL ACCOUNT (DUPLICATE)",
+     "pages": 4
+    },
+    {
+     "filed": "10/08/2013",
+     "n": 74,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE  PERSONAL REPRESENTATIVE FOR CORRECTED ACCOUNT   HEARING SCHEDULED FOR 11/07/2013",
+     "pages": 1
+    },
+    {
+     "filed": "10/10/2013",
+     "n": 75,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "11/07/2013",
+     "n": 76,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE CORRECTED ACCOUNT- MATTER CONTINUED TO 11/21/2013",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2013",
+     "n": 77,
+     "code": "1273",
+     "desc": "PETITION FOR CONTINUANCE",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2013",
+     "n": 78,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - CONTEMPT CORRECTED ACCOUNT- MATTER CONTINUED TO 01/30/2014 NO FURTHER CONTINUANCES PR TO HAVE AN ATTY",
+     "pages": 1
+    },
+    {
+     "filed": "12/04/2013",
+     "n": 79,
+     "code": "1253",
+     "desc": "MOTION TO CONTINUE DECEMBER 5, 2013 HEARING",
+     "pages": 5
+    },
+    {
+     "filed": "12/05/2013",
+     "n": 80,
+     "code": "1301",
+     "desc": "DAILY SHEET (HEARING) - SHOW CAUSE CORRECTED ACCOUNT- MATTER CONTINUED TO 01/30/2014",
+     "pages": 1
+    },
+    {
+     "filed": "12/05/2013",
+     "n": 81,
+     "code": "1311",
+     "desc": "ORDER OF COURT GRANTING CONTINUANCE TO 01/30/2014",
+     "pages": 1
+    },
+    {
+     "filed": "12/11/2013",
+     "n": 82,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 2
+    },
+    {
+     "filed": "12/16/2013",
+     "n": 83,
+     "code": "1384",
+     "desc": "FOURTH AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 6
+    },
+    {
+     "filed": "12/23/2013",
+     "n": 84,
+     "code": "1384",
+     "desc": "4TH AMENDED FIRST AND FINAL ACCOUNT (COPY)",
+     "pages": 4
+    },
+    {
+     "filed": "01/15/2014",
+     "n": 85,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 2
+    },
+    {
+     "filed": "01/07/2014",
+     "n": 86,
+     "code": "1331",
+     "desc": "CORRESPONDENCE RECEIVED",
+     "pages": 1
+    },
+    {
+     "filed": "02/07/2014",
+     "n": 87,
+     "code": "1384",
+     "desc": "FIFTH AMENDED FIRST AND FINAL ACCOUNT (ORIGINAL SIGNATURES)",
+     "pages": 4
+    },
+    {
+     "filed": "04/05/2014",
+     "n": 88,
+     "code": "1389",
+     "desc": "REGISTER OF WILLS AUDIT REQUEST",
+     "pages": 2
+    },
+    {
+     "filed": "06/19/2014",
+     "n": 89,
+     "code": "1382",
+     "desc": "FOURTH AMENDED INVENTORY",
+     "pages": 2
+    },
+    {
+     "filed": "06/19/2014",
+     "n": 90,
+     "code": "1384",
+     "desc": "SIXTH AMENDED FIRST AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "07/09/2014",
+     "n": 91,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2014",
+     "n": 92,
+     "code": "1307",
+     "desc": "REGISTER OF WILLS' MEMORANDUM",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2014",
+     "n": 93,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING ATTY FEES",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2014",
+     "n": 94,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING PR'S COMMISSION",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2014",
+     "n": 95,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING 6TH AMENDED 1ST AND  FINAL ACCOUNT; THAT $24,455.84 TOTAL SHARE OF UNKNOWN HEIRS OF THE DECEDENT WHOSE WHEREABOUTS ARE UNKNOWN SHALL DEPOSITED WITH THE BOARD OF EDUCATION PRINCE GEORGE'S COUNTY, MARYLAND",
+     "pages": 1
+    },
+    {
+     "filed": "07/11/2014",
+     "n": 96,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 4
+    }
+   ],
+   "last_docket_activity": "2014-07-11",
+   "interested_persons": [
+    {
+     "name": "LELAND MINK",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    }
+   ],
+   "death_to_probate_days": 204,
+   "probate_age_days": 1569,
+   "days_since_last_docket": 4523,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-28",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1932321573",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1932321573",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "DONALD A CAMERON"
+  }
+ ]
+}

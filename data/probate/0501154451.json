@@ -1,0 +1,784 @@
+{
+ "account": "0501154451",
+ "estates": [
+  {
+   "estate_number": "41568",
+   "status": "CLOSED",
+   "type": "RE",
+   "date_opened": "02/10/2009",
+   "date_closed": "01/10/2017",
+   "decedent": "MARY MARIE SEYMOUR",
+   "date_of_death": "12/15/2008",
+   "date_of_filing": "02/10/2009",
+   "will": "NO WILL",
+   "aliases": "",
+   "attorney": "DOUGLAS A. JONES ESQUIRE [604 ROCK SPRING AVENUE, BEL AIR, MD 21014]",
+   "county": "",
+   "personal_reps": [
+    {
+     "name": "DAVID  SEYMOUR",
+     "address": "143 TAYLOR RD, KOKOMO, MS 39643"
+    }
+   ],
+   "docket": [
+    {
+     "filed": "02/10/2009",
+     "n": 1,
+     "code": "1112",
+     "desc": "REGULAR ESTATE PETITION FOR PROBATE",
+     "pages": 2
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 2,
+     "code": "1118",
+     "desc": "CONSENT TO APPOINTMENT OF PERSONAL REPRESENTATIVE",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 3,
+     "code": "1117",
+     "desc": "WAIVER OF BOND",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 4,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 5,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 6,
+     "code": "1114",
+     "desc": "NOTICE OF APPOINTMENT, NOTICE TO CREDITORS, NOTICE TO UNKNOWN HEIRS / AEGIS",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 7,
+     "code": "1119",
+     "desc": "ADMINISTRATIVE PROBATE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 8,
+     "code": "1124",
+     "desc": "INFORMATION REPORT- NO JOINTLY HELD TAXABLE ASSETS",
+     "pages": 2
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 9,
+     "code": "1136",
+     "desc": "SCHEDULE A (REGULAR ESTATE)- $128,625.00",
+     "pages": 1
+    },
+    {
+     "filed": "02/10/2009",
+     "n": 10,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)- WAIVER OF NOTICE TO BE FILED",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2009",
+     "n": 11,
+     "code": "1335",
+     "desc": "CHARGE SHEETS- 1 CERT. NOTICE MAILED- $5.32 DUE",
+     "pages": 1
+    },
+    {
+     "filed": "02/12/2009",
+     "n": 12,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)- CERT. NOTICE MAILED TO SON.",
+     "pages": 1
+    },
+    {
+     "filed": "03/20/2009",
+     "n": 13,
+     "code": "1378",
+     "desc": "CERTIFICATE OF PUBLICATION (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "04/10/2009",
+     "n": 14,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2009",
+     "n": 15,
+     "code": "1141",
+     "desc": "ELECTION OF PERSONAL REPRESENTATIVE FOR MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "04/22/2009",
+     "n": 16,
+     "code": "1142",
+     "desc": "CONSENT TO ELECTION FOR MODIFIED ADMINSTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "11/10/2009",
+     "n": 17,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR FINAL REPORT UNDER MODIFIED ADMINISTRATION",
+     "pages": 1
+    },
+    {
+     "filed": "12/16/2009",
+     "n": 18,
+     "code": "1432",
+     "desc": "REGISTER OF WILLS NOTICE OF REVOCATION OF MODIFIED ADMINISTRATION",
+     "pages": 2
+    },
+    {
+     "filed": "12/17/2009",
+     "n": 19,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INVENTORY INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/08/2010",
+     "n": 20,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO COMPLETE INVENTORY AND ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/22/2010",
+     "n": 21,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO COMPLETE INVENTORY AND ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "02/22/2010",
+     "n": 22,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INVENTORY INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "02/22/2010",
+     "n": 23,
+     "code": "1200",
+     "desc": "ENTRY OF APPEARANCE OF DOUGLAS A. JONES ESQUIRE FOR THE ESTATE AND THE PR",
+     "pages": 1
+    },
+    {
+     "filed": "05/27/2010",
+     "n": 24,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM KRISTAL L. HIGINBOTHOM, ESQUIRE TO DOUGLAS A. JONES, ESQUIRE INFORMING HIM THE IP LIST NEEDS TO BE AMENDED TO INCLUDE GRANDCHILDREN OF A DECEASED CHILD",
+     "pages": 2
+    },
+    {
+     "filed": "06/24/2010",
+     "n": 25,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS - SUPPLEMENTAL",
+     "pages": 1
+    },
+    {
+     "filed": "06/25/2010",
+     "n": 26,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE)",
+     "pages": 1
+    },
+    {
+     "filed": "07/02/2010",
+     "n": 27,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM KRISTAL HIGINBOTHOM ESQUIRE NOTIFYING ROW THATSHE  REPRESENTS LARRY SEYMOUR, MARY SEYMOUR AND TAMMI TROUT AND ALSO STATING THEIR ADDRESSES",
+     "pages": 1
+    },
+    {
+     "filed": "07/06/2010",
+     "n": 28,
+     "code": "1380",
+     "desc": "REGISTER OF WILLS CERTIFICATE OF SERVICE OF NOTICE OF APPOINTMENT (REGULAR ESTATE) - L.SEYMOUR;T.TROUT;M.SEYMOUR",
+     "pages": 1
+    },
+    {
+     "filed": "04/25/2011",
+     "n": 29,
+     "code": "1335",
+     "desc": "CHARGE SHEETS",
+     "pages": 1
+    },
+    {
+     "filed": "04/26/2011",
+     "n": 30,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INVENTORY INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/18/2011",
+     "n": 31,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING INVENTORY AND INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/24/2011",
+     "n": 32,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INVENTORY INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/14/2011",
+     "n": 33,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INVENTORY INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/21/2011",
+     "n": 34,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO COMPLETE AND CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/28/2011",
+     "n": 35,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING THE INVENTORY AND ACCOUNT HAS BEEN GRANTED UNTIL DECEMBER 28,",
+     "pages": 2011
+    },
+    {
+     "filed": "12/12/2011",
+     "n": 36,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT INVENTORY AND LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/03/2012",
+     "n": 37,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INVENTORY INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/24/2012",
+     "n": 38,
+     "code": "1104",
+     "desc": "LIST OF INTERESTED PERSONS",
+     "pages": 1
+    },
+    {
+     "filed": "01/24/2012",
+     "n": 39,
+     "code": "1122",
+     "desc": "INVENTORY",
+     "pages": 9
+    },
+    {
+     "filed": "01/30/2012",
+     "n": 40,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING INTERIM ACCOUNT THROUGH 2/29/2012",
+     "pages": 1
+    },
+    {
+     "filed": "03/06/2012",
+     "n": 41,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/11/2012",
+     "n": 42,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING ACCOUNT - GRANTED THROUGH 1/9/2013",
+     "pages": 1
+    },
+    {
+     "filed": "01/02/2013",
+     "n": 43,
+     "code": "1376",
+     "desc": "PETITION FOR APPOINTMENT OF SUCCESSOR PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "01/24/2013",
+     "n": 44,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPOINTING DAVID SEYMOUR AS SUCCESSOR P.R.",
+     "pages": 1
+    },
+    {
+     "filed": "01/24/2013",
+     "n": 45,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS- ORDER SIGNED BY JUDGE",
+     "pages": 1
+    },
+    {
+     "filed": "02/07/2013",
+     "n": 46,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "03/12/2013",
+     "n": 47,
+     "code": "1116",
+     "desc": "NOMINAL BOND OF PERSONAL REPRESENTATIVE",
+     "pages": 2
+    },
+    {
+     "filed": "03/12/2013",
+     "n": 48,
+     "code": "1106",
+     "desc": "APPOINTMENT OF RESIDENT AGENT(S) - DOUGLAS A JONES",
+     "pages": 1
+    },
+    {
+     "filed": "10/16/2013",
+     "n": 50,
+     "code": "1253",
+     "desc": "PETITION FOR ALLOWANCE OF ATTORNEY'S FEE AND EXPENSES",
+     "pages": 5
+    },
+    {
+     "filed": "11/04/2013",
+     "n": 51,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING ATTORNEY FEE AND EXPENSES NOVEMBER 4,",
+     "pages": 2013
+    },
+    {
+     "filed": "11/04/2013",
+     "n": 52,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS ORDER SIGNED BY JUDGE",
+     "pages": 1
+    },
+    {
+     "filed": "11/06/2013",
+     "n": 53,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM THOMAS CINDA SEYMOUR",
+     "pages": 2
+    },
+    {
+     "filed": "04/02/2014",
+     "n": 54,
+     "code": "1252",
+     "desc": "ROW REQUEST FOR HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "04/11/2014",
+     "n": 56,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-SHOW CAUSE ORDER (2)",
+     "pages": 2
+    },
+    {
+     "filed": "05/15/2014",
+     "n": 57,
+     "code": "1253",
+     "desc": "RESPONSE TO SHOW CAUSE ORDER AND MOTION FOR EXTENSION",
+     "pages": 2
+    },
+    {
+     "filed": "05/16/2014",
+     "n": 58,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING EXTENSION OF 90 DAYS TO FILE ADMINISTRATIVE ACCOUNT DATED MAY 16,",
+     "pages": 2014
+    },
+    {
+     "filed": "05/16/2014",
+     "n": 59,
+     "code": "1257",
+     "desc": "HEARING SCHEDULED DID NOT TAKE PLACE FOR THE FOLLOWING REASON: JUDGE BALDWIN GRANTED 90 DAY EXTENSION TO FILE ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "05/16/2014",
+     "n": 60,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-ORDER SIGNED BY JUDGE AND CANCELLATION OF HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "08/20/2014",
+     "n": 61,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "09/23/2014",
+     "n": 62,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING ACCOUNT NOT GRANTED",
+     "pages": 1
+    },
+    {
+     "filed": "10/01/2014",
+     "n": 63,
+     "code": "1228",
+     "desc": "LETTER TO JUDGE BALDWIN FOR EXTENSION OF TIME FOR FILING ACCOUNT",
+     "pages": 2
+    },
+    {
+     "filed": "10/06/2014",
+     "n": 64,
+     "code": "1284",
+     "desc": "ORDER OF COURT GRANTING EXTENSION TO FILE ADMINISTRATIVE ACCOUNT UNTIL JANUARY 12,",
+     "pages": 2015
+    },
+    {
+     "filed": "10/06/2014",
+     "n": 65,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-ORDER SIGNED BY JUDGE",
+     "pages": 1
+    },
+    {
+     "filed": "01/12/2015",
+     "n": 66,
+     "code": "1228",
+     "desc": "LETTER TO JUDGE BALDWIN FOR EXTENSION OF TIME FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 67,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING EXTENSION OF TIME FOR FILING AN ADMINISTRATION ACCOUNT (DATED JANUARY 16, 2015)",
+     "pages": 1
+    },
+    {
+     "filed": "01/16/2015",
+     "n": 68,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-ORDER SIGNED BY JUDGE PLITT",
+     "pages": 1
+    },
+    {
+     "filed": "04/21/2015",
+     "n": 69,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/09/2015",
+     "n": 70,
+     "code": "1252",
+     "desc": "REQUEST FOR HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "07/10/2015",
+     "n": 71,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE ACCOUNT HEARING SCHEDULED FOR SEPTEMBER 10, 2015 @ 9:00AM",
+     "pages": 1
+    },
+    {
+     "filed": "07/15/2015",
+     "n": 72,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-2",
+     "pages": 2
+    },
+    {
+     "filed": "09/03/2015",
+     "n": 73,
+     "code": "1286",
+     "desc": "RESPONSE TO SHOW CAUSE ORDER",
+     "pages": 1
+    },
+    {
+     "filed": "09/09/2015",
+     "n": 74,
+     "code": "1284",
+     "desc": "ORDER OF COURT DENYING REQUEST FOR CANCELLATION OF HEARING DATED SEPTEMBER 9,",
+     "pages": 2015
+    },
+    {
+     "filed": "09/09/2015",
+     "n": 75,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS",
+     "pages": 1
+    },
+    {
+     "filed": "09/10/2015",
+     "n": 76,
+     "code": "1287",
+     "desc": "HEARING RESULT - 30 DAYS TO FILE ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/19/2015",
+     "n": 77,
+     "code": "1383",
+     "desc": "FIRST INTERIM ACCOUNT",
+     "pages": 5
+    },
+    {
+     "filed": "12/01/2015",
+     "n": 78,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING FIRST INTERIM ACCOUNT (DATED DECEMBER 1, 2015)",
+     "pages": 1
+    },
+    {
+     "filed": "12/01/2015",
+     "n": 79,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-ORDER SIGNED BY JUDGE",
+     "pages": 1
+    },
+    {
+     "filed": "01/07/2016",
+     "n": 80,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW TO ESQUIRE RE: ADDRESS REQUEST FORM AND AFFIDAVIT OF ATTEMPTS TO LOCATE IP (THOMAS CINDA SEYMOUR)",
+     "pages": 1
+    },
+    {
+     "filed": "05/02/2016",
+     "n": 81,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "06/07/2016",
+     "n": 82,
+     "code": "1404",
+     "desc": "PAST DUE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "07/18/2016",
+     "n": 83,
+     "code": "1252",
+     "desc": "REQUEST FOR HEARING",
+     "pages": 1
+    },
+    {
+     "filed": "07/21/2016",
+     "n": 84,
+     "code": "1261",
+     "desc": "ORDER TO SHOW CAUSE WHY PERSONAL REPRESENTATIVE SHOULD NOT BE REMOVED FOR FAILURE TO FILE ACCOUNT  HEARING SCHEDULED FOR AUGUST 25, 2016 @ 1:00PM",
+     "pages": 1
+    },
+    {
+     "filed": "07/22/2016",
+     "n": 85,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-2",
+     "pages": 2
+    },
+    {
+     "filed": "08/19/2016",
+     "n": 86,
+     "code": "1293",
+     "desc": "ANSWER TO SHOW CAUSE",
+     "pages": 1
+    },
+    {
+     "filed": "08/24/2016",
+     "n": 87,
+     "code": "1280",
+     "desc": "REGISTER OF WILLS NOTICE TO AMEND, COMPLETE OR CORRECT ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "08/25/2016",
+     "n": 88,
+     "code": "1287",
+     "desc": "HEARING RESULTS FOR AUGUST 25,",
+     "pages": 2016
+    },
+    {
+     "filed": "09/06/2016",
+     "n": 89,
+     "code": "1383",
+     "desc": "SECOND INTERIM ACCOUNT",
+     "pages": 3
+    },
+    {
+     "filed": "09/19/2016",
+     "n": 90,
+     "code": "1332",
+     "desc": "GENERAL CORRESPONDENCE OF ROW TO ESQUIRE RE:  ADDRESS REQUEST FORM AND AFFIDAVIT OF ATTEMPTS TO LOCATE IP",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2016",
+     "n": 91,
+     "code": "1396",
+     "desc": "ORDER OF COURT APPROVING SECOND INTERIM ACCOUNT (DATED SEPTEMBER 22, 2016)",
+     "pages": 1
+    },
+    {
+     "filed": "09/22/2016",
+     "n": 92,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-ORDER SIGNED BY JUDGE",
+     "pages": 1
+    },
+    {
+     "filed": "10/25/2016",
+     "n": 93,
+     "code": "1302",
+     "desc": "ADVANCE NOTICE ISSUED FOR INTERIM ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "10/31/2016",
+     "n": 94,
+     "code": "1228",
+     "desc": "LETTER FOR EXTENSION OF TIME FOR FILING ACCOUNT",
+     "pages": 1
+    },
+    {
+     "filed": "11/10/2016",
+     "n": 95,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING LETTER FOR EXTENSION OF TIME FOR FILING ACCOUNT (DATED NOVEMBER 10, 2016)-EXTENSION GRANTED UNTIL JANUARY 3,",
+     "pages": 2017
+    },
+    {
+     "filed": "11/14/2016",
+     "n": 96,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS-ORDER SIGNED BY JUDGE",
+     "pages": 1
+    },
+    {
+     "filed": "01/05/2017",
+     "n": 97,
+     "code": "1245",
+     "desc": "PETITION FOR ATTORNEY'S FEE",
+     "pages": 4
+    },
+    {
+     "filed": "01/05/2017",
+     "n": 98,
+     "code": "1385",
+     "desc": "THIRD AND FINAL ACCOUNT",
+     "pages": 4
+    },
+    {
+     "filed": "01/05/2017",
+     "n": 99,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM DOUGLAS A. JONES, ESQURE",
+     "pages": 2
+    },
+    {
+     "filed": "01/05/2017",
+     "n": 100,
+     "code": "1424",
+     "desc": "COPY OF PURPORTED LAST WILL AND TESTAMENT DATED AUGUST 8, 2008 (INVALID)",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2017",
+     "n": 101,
+     "code": "1284",
+     "desc": "ORDER OF COURT APPROVING COUNSEL FEES",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2017",
+     "n": 102,
+     "code": "1386",
+     "desc": "ORDER OF COURT APPROVING THIRD AND FINAL ACCOUNT (DATED 1/10/17)",
+     "pages": 1
+    },
+    {
+     "filed": "01/10/2017",
+     "n": 103,
+     "code": "1272",
+     "desc": "CERTIFICATE OF SERVICE OF REGISTER OF WILLS- ORDERS SIGNED BY JUDGE",
+     "pages": 1
+    },
+    {
+     "filed": "01/30/2017",
+     "n": 104,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM DOUGLAS A. JONES",
+     "pages": 2
+    },
+    {
+     "filed": "01/30/2017",
+     "n": 105,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED FROM DOUGLAS A. JONES ESQUIRE (CERTIFICATE OF SERVICE)",
+     "pages": 1
+    },
+    {
+     "filed": "01/30/2017",
+     "n": 106,
+     "code": "1331",
+     "desc": "MISCELLANEOUS CORRESPONDENCE RECEIVED DOUGLAS A. JONES, ESQUIRE (CERTIFICATE OF SERVICE)",
+     "pages": 1
+    }
+   ],
+   "last_docket_activity": "2017-01-30",
+   "interested_persons": [
+    {
+     "name": "DAVID SEYMOUR",
+     "role": "PERSONAL_REP",
+     "source": "estate header"
+    },
+    {
+     "name": "THOMAS CINDA SEYMOUR",
+     "role": "CORRESPONDENT",
+     "source": "docket 53"
+    },
+    {
+     "name": "DOUGLAS A. JONES",
+     "role": "CORRESPONDENT",
+     "source": "docket 104"
+    }
+   ],
+   "death_to_probate_days": 57,
+   "probate_age_days": 2891,
+   "days_since_last_docket": 3589,
+   "foreign_proceeding": false,
+   "imported_at": "2026-11-28",
+   "source": "Register of Wills Estate Search (automated, permission 2026-10-15)",
+   "record_id": "1931983424",
+   "record_url": "https://registers.maryland.gov/RowNetWeb/Estates/frmDocketImages.aspx?src=row&RecordId=1931983424",
+   "title_class": "D3",
+   "title_class_label": "Estate closed — property still titled to decedent",
+   "decedent_searched": "MARY M SEYMOUR"
+  }
+ ]
+}
